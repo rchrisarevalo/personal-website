@@ -1,5 +1,5 @@
 import React from "react";
-import { FaRegFlag } from "react-icons/fa";
+import { IoWarningOutline } from "react-icons/io5";
 import { FaCloudSun } from "react-icons/fa";
 
 const Nav = () => {
@@ -39,7 +39,7 @@ const Nav = () => {
         <a href={"./"}>Ruben C. Arevalo</a>
       </div>
       <div className = "mobile-report">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSu_sZqwO_m42GKlmXKrA30hyTglQQY1N3V2PIcdGc87WbXg/viewform" rel="noopener noreferrer" target="_blank" title="Report an issue"><FaRegFlag size="25px"/></a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSu_sZqwO_m42GKlmXKrA30hyTglQQY1N3V2PIcdGc87WbXg/viewform" rel="noopener noreferrer" target="_blank" title="Report an issue"><IoWarningOutline size="25px"/></a>
       </div>
       <ul className = "nav-list">
         <li><a href="#about">About Me</a></li>
