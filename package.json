@@ -1,6 +1,6 @@
 {
-  "homepage": "https://rchrisarevalo.github.io/personal-web",
-  "name": "personal-web",
+  "homepage": "https://rchrisarevalo.github.io/personal-website",
+  "name": "personal-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
