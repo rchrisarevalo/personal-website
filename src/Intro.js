@@ -24,7 +24,6 @@ const Intro = () => (
             </p>
             <br></br>
         </div>
-        <br></br>
         <img src={thumb} alt="thumb"></img>
         <h1>About the Author</h1>
         <p>
