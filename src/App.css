@@ -149,6 +149,7 @@ hr{
 }
 
 .update-message{
+  display: none;
   font-family: 'Poppins', sans-serif;
   margin: .5em;
   background: rgb(80, 144, 218);
