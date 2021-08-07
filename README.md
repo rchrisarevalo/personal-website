@@ -1,3 +1,9 @@
 # Personal Website
 
-UPDATE: This website's background and font color has been changed. I usually like a dark background with a white font color as it allows other people to read the website more easily.
+UPDATE: New features have been introduced. 
+
+* They include the ability to change from night mode to light mode by clicking/tapping the sun/cloud icon.
+
+* A new mobile navigation bar has been introduced.
+
+* A multi-page system is introduced with no refreshing.
