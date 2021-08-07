@@ -22,7 +22,7 @@ const Nav = () => {
     var nav = document.querySelector(".nav-list")
 
       if (nav.classList.toggle("active") === true){
-        document.body.style.cssText = 'overflow: hidden; background: rgba(0, 0, 0, 0.055); transition: .5s;'
+        document.body.style.cssText = 'overflow: hidden; background: rgba(0, 0, 0, 0.055); z-index: -1; transition: .5s;'
       } else {
         document.body.style.cssText = 'transition: .5s;'
       }
