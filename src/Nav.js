@@ -1,6 +1,6 @@
 import React from "react";
 import { IoWarningOutline } from "react-icons/io5";
-import { FaCloudSun } from "react-icons/fa";
+import { IoPartlySunnyOutline } from "react-icons/io5";
 
 const Nav = () => {
 
@@ -18,7 +18,7 @@ const Nav = () => {
   }
 
   function change_theme_web(){
-    var web_change = document.querySelector(".theme-changer-web")
+    var web_change = document.querySelector(".button-theme")
     web_change.addEventListener("click", () => {
 
       if (web_change.classList.toggle("is-active")){
@@ -33,10 +33,10 @@ const Nav = () => {
   return (
     <nav className = "nav-bar">
       <div className = "change-theme" onClick={change_theme}>
-        <FaCloudSun size = "25px" color = "white"/>
+        <IoPartlySunnyOutline size = "25px" color = "white"/>
       </div>
       <div className = "logo">
-        <a href={"./"}>Ruben C. Arevalo</a>
+        <a href={"./home"}>Ruben C. Arevalo</a>
       </div>
       <div className = "mobile-report">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSu_sZqwO_m42GKlmXKrA30hyTglQQY1N3V2PIcdGc87WbXg/viewform" rel="noopener noreferrer" target="_blank" title="Report an issue"><IoWarningOutline size="25px"/></a>
@@ -46,10 +46,10 @@ const Nav = () => {
         <li><a href="#work">Works</a></li>
         <li><a href="#contacts">Contact Me</a></li>
         <div className = "button">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSu_sZqwO_m42GKlmXKrA30hyTglQQY1N3V2PIcdGc87WbXg/viewform" rel="noopener noreferrer" target="_blank">Report</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSu_sZqwO_m42GKlmXKrA30hyTglQQY1N3V2PIcdGc87WbXg/viewform" rel="noopener noreferrer" target="_blank"><IoWarningOutline size="22px" id="report-icon"/>Report</a>
         </div>
-        <div className = "theme-changer-web" onClick={change_theme_web}>
-          <FaCloudSun size = "25px" color="white"/>
+        <div className = "button-theme" onClick={change_theme_web}>
+          <a href="#change-theme" rel="noopener noreferrer" title="Click twice to activate!"><IoPartlySunnyOutline size="22px" id="report-icon"/>Light/Dark</a>
         </div>
       </ul>
     </nav>
