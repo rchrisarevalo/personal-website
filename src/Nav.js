@@ -1,12 +1,14 @@
 import React from "react";
 import { IoWarningOutline } from "react-icons/io5";
 import { IoPartlySunnyOutline } from "react-icons/io5";
+import { IoIosMenu } from "react-icons/io";
+
+import {Link} from "react-router-dom";
 
 const Nav = () => {
 
- function change_theme(){
+  function change_theme(){
     var change_background = document.querySelector(".change-theme")
-    change_background.addEventListener("click", () => {
 
       if (change_background.classList.toggle("active") === true){
         document.body.style.cssText = 'background: white; color: black; transition: .5s;'
@@ -14,37 +16,46 @@ const Nav = () => {
         document.body.style.cssText = 'background: #24252B; color: white; transition: .5s;'
       }
 
-    });
+  }
+
+  function activateNav(){
+    var nav = document.querySelector(".nav-list")
+
+      if (nav.classList.toggle("active") === true){
+        document.body.style.cssText = 'overflow: hidden;'
+      } else {
+        document.body.style.cssText = ' '
+      }
+
   }
 
   function change_theme_web(){
     var web_change = document.querySelector(".button-theme")
-    web_change.addEventListener("click", () => {
 
       if (web_change.classList.toggle("is-active")){
         document.body.style.cssText = 'background: white; color: black; transition: .5s;'
       } else {
         document.body.style.cssText = 'background: #24252B; color: white; transition: .5s;'
       }
-
-    });
   }
 
   return (
     <nav className = "nav-bar">
-      <div className = "change-theme" onClick={change_theme}>
-        <IoPartlySunnyOutline size = "25px" color = "white"/>
+
+      <div className = "burger-icon" onClick={activateNav}>
+        <IoIosMenu size = "27px" color = "white"/>
       </div>
       <div className = "logo">
         <a href={"./"}>Ruben C. Arevalo</a>
       </div>
-      <div className = "mobile-report">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSu_sZqwO_m42GKlmXKrA30hyTglQQY1N3V2PIcdGc87WbXg/viewform" rel="noopener noreferrer" target="_blank" title="Report an issue"><IoWarningOutline size="25px"/></a>
+      <div className = "change-theme" onClick={change_theme}>
+        <IoPartlySunnyOutline size = "25px" color = "white" id="change-theme-style"/>
       </div>
+
       <ul className = "nav-list">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#work">Works</a></li>
-        <li><a href="#contacts">Contact Me</a></li>
+        <li><Link to = "/">About Me</Link></li>
+        <li><Link to = "/works">Works</Link></li>
+        <li><Link to = "/contact">Contact Me</Link></li>
         <div className = "button">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSu_sZqwO_m42GKlmXKrA30hyTglQQY1N3V2PIcdGc87WbXg/viewform" rel="noopener noreferrer" target="_blank"><IoWarningOutline size="22px" id="report-icon"/>Report</a>
         </div>

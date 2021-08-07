@@ -9,10 +9,9 @@ const Intro = () => (
                 <BsExclamationCircle size="18px" id="update-icon"/> UPDATE:
             </p>
             <p>
-                I am pleased to introduce a new feature for my website. With this new update, anyone
-                is allowed to change the website's theme to either dark or light, depending on personal
-                preference. In order to activate it, one has to press the cloud/sun icon two times when switching
-                from light to dark and vice versa.
+                I have now moved the sections (as shown in the navigation bar) into separate pages. This allows
+                for more easier navigation between pages. But it will be a huge transition, and I hope any of
+                you that are on this page can get used to the new layout.
             </p>
             <p>
                 This message will stay up for three days. After the set time has expired, I will take down this
@@ -24,6 +23,7 @@ const Intro = () => (
             </p>
             <br></br>
         </div>
+        <br></br>
         <img src={thumb} alt="thumb"></img>
         <h1>About the Author</h1>
         <p>

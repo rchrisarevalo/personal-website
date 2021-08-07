@@ -7,15 +7,15 @@ import Works from "./Works";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
+import { Route } from "react-router-dom";
+
 const App = () => {
   return (
     <div className="App">
       <Nav />
-      <Intro />
-      <hr id="work"></hr>
-      <Works />
-      <hr id="contacts"></hr>
-      <Contact />
+      <Route exact path ="/" component={Intro}/>
+      <Route exact path="/works" component={Works}/>
+      <Route exact path="/contact" component={Contact}/>
       <Footer />
     </div>
   );
