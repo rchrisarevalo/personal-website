@@ -18,8 +18,9 @@ const Intro = () => (
                 message. Enjoy the rest of the day!
             </p>
             <p>
-                If you happen to have any issues, you can report them by clicking on the report button or the little
-                warning icon on the top right of the page (for mobile users only).
+                If you happen to have any issues, you can report them by clicking on the report button. For
+                mobile users, you can click on the three bars on the top left of the header to open the navigation
+                menu. There, you will find the report button, which you can tap to access the form.
             </p>
             <br></br>
         </div>
