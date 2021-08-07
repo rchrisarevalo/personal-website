@@ -36,7 +36,7 @@ const Nav = () => {
         <IoPartlySunnyOutline size = "25px" color = "white"/>
       </div>
       <div className = "logo">
-        <a href={"./home"}>Ruben C. Arevalo</a>
+        <a href={"./"}>Ruben C. Arevalo</a>
       </div>
       <div className = "mobile-report">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSu_sZqwO_m42GKlmXKrA30hyTglQQY1N3V2PIcdGc87WbXg/viewform" rel="noopener noreferrer" target="_blank" title="Report an issue"><IoWarningOutline size="25px"/></a>
