@@ -10,8 +10,8 @@ const Contact = () => (
         </p>
         <p>
             If you have any complaints or issues with this website, please feel free to click on the
-            report button on the web version. On the mobile version, to submit a report, click on
-            the warning icon on the top right corner of the header.
+            report button on the web version. On the mobile version, click on the three bars on the
+            top left of the header to access the navigation menu, and click on the report button.
         </p>
         <p>
             I will most likely respond to complaints/reports in about 3-5 days. If I am super available
