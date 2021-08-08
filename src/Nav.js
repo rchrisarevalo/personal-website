@@ -22,9 +22,9 @@ const Nav = () => {
     var nav = document.querySelector(".nav-list")
 
       if (nav.classList.toggle("active") === true){
-        document.body.style.cssText = 'overflow: hidden; background: rgba(0, 0, 0, 0.055); z-index: -1; transition: .5s;'
+        document.body.style.cssText = 'overflow: hidden;'
       } else {
-        document.body.style.cssText = 'transition: .5s;'
+        document.body.style.cssText = ' '
       }
 
   }
@@ -46,7 +46,7 @@ const Nav = () => {
         <IoIosMenu size = "27px" color = "white"/>
       </div>
       <div className = "logo">
-        <a href={"./"}>Ruben C. Arevalo</a>
+        <a href = {"./"}>Ruben C. Arevalo</a>
       </div>
       <div className = "change-theme" onClick={change_theme}>
         <IoPartlySunnyOutline size = "25px" color = "white" id="change-theme-style"/>
@@ -55,6 +55,7 @@ const Nav = () => {
       <ul className = "nav-list">
         <li><Link to = "/personal-website">About Me</Link></li>
         <li><Link to = "/personal-website/works">Works</Link></li>
+        <li><Link to = "/personal-website/posts">Posts</Link></li>
         <li><Link to = "/personal-website/contact">Contact Me</Link></li>
         <div className = "button">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSu_sZqwO_m42GKlmXKrA30hyTglQQY1N3V2PIcdGc87WbXg/viewform" rel="noopener noreferrer" target="_blank"><IoWarningOutline size="22px" id="report-icon"/>Report</a>

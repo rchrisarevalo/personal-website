@@ -14,7 +14,13 @@ const Intro = () => (
                 you that are on this page can get used to the new layout.
             </p>
             <p>
-                This message will stay up for three days. After the set time has expired, I will take down this
+                In addition, I have also introduced a new Posts page. I will be posting regular updates I will
+                be making (or have made) on that page. As I have stated on the aforementioned Posts page, I
+                will delete posts that are 30 days old, and leave the other ones intact that have not met
+                the deadline.
+            </p>
+            <p>
+                This message will stay up for two more days. After the set time has expired, I will take down this
                 message. Enjoy the rest of the day!
             </p>
             <p>
