@@ -53,7 +53,7 @@ const Nav = () => {
       </div>
 
       <ul className = "nav-list">
-        <li><Link to = "/personal-website">About Me</Link></li>
+        <li><Link to = "/personal-website/about">About Me</Link></li>
         <li><Link to = "/personal-website/works">Works</Link></li>
         <li><Link to = "/personal-website/posts">Posts</Link></li>
         <li><Link to = "/personal-website/contact">Contact Me</Link></li>
