@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div className="App">
       <Nav />
-      <Route exact path ="/personal-website" component={Intro}/>
+      <Route exact path ="/personal-website/" component={Intro}/>
       <Route exact path="/personal-website/works" component={Works}/>
       <Route exact path="/personal-website/posts" component={Posts}/>
       <Route exact path="/personal-website/contact" component={Contact}/>
