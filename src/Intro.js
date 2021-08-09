@@ -20,8 +20,8 @@ const Intro = () => (
                 the deadline.
             </p>
             <p>
-                This message will stay up for two more days. After the set time has expired, I will take down this
-                message. Enjoy the rest of the day!
+                This message will stay up for one more day. I will take down this
+                message on August 10 at 12 AM. Enjoy the rest of the day!
             </p>
             <p>
                 If you happen to have any issues, you can report them by clicking on the report button. For
