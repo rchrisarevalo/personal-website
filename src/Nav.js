@@ -46,14 +46,14 @@ const Nav = () => {
         <IoIosMenu size = "27px" color = "white"/>
       </div>
       <div className = "logo">
-        <a href = {"./about"}>Ruben C. Arevalo</a>
+        <a href = {"./"}>Ruben C. Arevalo</a>
       </div>
       <div className = "change-theme" onClick={change_theme}>
         <IoPartlySunnyOutline size = "25px" color = "white" id="change-theme-style"/>
       </div>
 
       <ul className = "nav-list">
-        <li><Link to = "/personal-website/about">About Me</Link></li>
+        <li><Link to = "/personal-website/">About Me</Link></li>
         <li><Link to = "/personal-website/works">Works</Link></li>
         <li><Link to = "/personal-website/posts">Posts</Link></li>
         <li><Link to = "/personal-website/contact">Contact Me</Link></li>
