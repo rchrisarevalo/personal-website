@@ -46,7 +46,7 @@ const Nav = () => {
         <IoIosMenu size = "27px" color = "white"/>
       </div>
       <div className = "logo">
-        <a href = {"./personal-website/about"}>Ruben C. Arevalo</a>
+        <a href = {"./about"}>Ruben C. Arevalo</a>
       </div>
       <div className = "change-theme" onClick={change_theme}>
         <IoPartlySunnyOutline size = "25px" color = "white" id="change-theme-style"/>
