@@ -540,6 +540,9 @@ footer{
   .posts-container{
     margin: 0.25em;
   }
+  .posts-container-intro{
+    margin: 0.25em;
+  }
   #posts-title{
     margin-top: 45px;
     text-align: center;
