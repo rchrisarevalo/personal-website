@@ -22,9 +22,9 @@ const Nav = () => {
     var nav = document.querySelector(".nav-list")
 
       if (nav.classList.toggle("is_active") === true){
-        document.body.style.cssText = 'overflow: hidden;'
-      } else {
         document.body.style.cssText = ' '
+      } else {
+        document.body.style.cssText = 'overflow: scroll;'
       }
 
   }
@@ -41,7 +41,6 @@ const Nav = () => {
 
   return (
     <nav className = "nav-bar">
-
       <div className = "burger-icon" onClick={activateNav}>
         <IoIosMenu size = "27px" color = "white"/>
       </div>
@@ -53,8 +52,7 @@ const Nav = () => {
       </div>
 
       <ul className = "nav-list">
-        <li><Link to = "/personal-website/">About Me</Link></li>
-        <li><Link to = "/personal-website/works">Works</Link></li>
+        <li><Link to = "/personal-website/about">About Me</Link></li>
         <li><Link to = "/personal-website/posts">Posts</Link></li>
         <li><Link to = "/personal-website/contact">Contact Me</Link></li>
         <div className = "button">
