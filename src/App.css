@@ -323,6 +323,12 @@ hr{
 }
 
 .posts-container{
+  margin: 5.5em;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.posts-container-intro{
   margin: 2.5em;
   text-align: center;
   font-family: 'Lato', sans-serif;

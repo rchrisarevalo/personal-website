@@ -42,7 +42,7 @@ const Intro = () => {
             whether they'd be web applications, server-side applications, etc. Without them, we wouldn't be where we are 
             today in terms of how much technology has impacted our lives.
             </p>
-            <div className = "posts-container">
+            <div className = "posts-container-intro">
                 <h1 id = "posts-title-intro">Recent Posts</h1>
                 <p id = "posts-description-intro">
                     The last three recent posts will be posted here. This page will be updated daily.
