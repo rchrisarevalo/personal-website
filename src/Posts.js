@@ -12,16 +12,21 @@ const Posts = () => {
             </p>
             <div className = "post">
                 <p id = "post-content">
-                    Hi everyone! This is a test post to keep y'all updated on upcoming updates and
-                    new features. I don't know how long this post will be, so I will try my best to
-                    write a long one like this (and I am deliberately stalling to see if this feature
-                    works).
+                    Hi everyone! The update message has been taken down after
+                    appearing on the home screen after three days, as I
+                    intended. I am going to include the latest 3 posts on the home
+                    page so all of y'all can be up to date with how the website is
+                    being operated.
+                </p>
+                <p id = "post-content">
+                    Anyways, have a wonderful night and have a great rest of the day
+                    tomorrow!
                 </p>
                 <p id = "post-content">
                     -- Ruben Christopher Arevalo
                 </p>
                 <p id = "post-date">
-                   Posted on 8/8/2021 at 4:55 PM.
+                    Posted on August 10, 2021 at 12:00 AM.
                 </p>
             </div>
             <div className = "post">
@@ -37,6 +42,20 @@ const Posts = () => {
                 </p>
                 <p id = "post-date">
                     Posted on 8/8/2021 at 4:56 PM.
+                </p>
+            </div>
+            <div className = "post">
+                <p id = "post-content">
+                    Hi everyone! This is a test post to keep y'all updated on upcoming updates and
+                    new features. I don't know how long this post will be, so I will try my best to
+                    write a long one like this (and I am deliberately stalling to see if this feature
+                    works).
+                </p>
+                <p id = "post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id = "post-date">
+                   Posted on 8/8/2021 at 4:55 PM.
                 </p>
             </div>
         </div>

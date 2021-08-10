@@ -192,6 +192,7 @@ hr{
 }
 
 .update-message{
+  display: none;
   font-family: 'Poppins', sans-serif;
   text-align: left;
   margin: .5em;
@@ -335,8 +336,26 @@ hr{
   margin-right: 10%;
 }
 
+#posts-title-intro{
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 #posts-description{
   text-align: left;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-weight: 300;
+}
+
+#posts-description-intro{
+  text-align: center;
   font-family: 'Poppins', sans-serif;
   margin-left: 10%;
   margin-right: 10%;
@@ -474,6 +493,7 @@ footer{
     padding-bottom: 14px;
   }
   .nav-list{
+    display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     position: fixed;
@@ -488,9 +508,9 @@ footer{
     z-index: -1;
     transition: 1.2s;
   }
-  .nav-list.active{
+  .nav-list.is_active{
     right: 0px;
-    transition: 1.0s;
+    transition: 0.9s;
   }
   .burger-icon{
     display: block;

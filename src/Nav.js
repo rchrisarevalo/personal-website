@@ -13,7 +13,7 @@ const Nav = () => {
       if (change_background.classList.toggle("active") === true){
         document.body.style.cssText = 'background: white; color: black; transition: .5s;'
       } else {
-        document.body.style.cssText = 'background: #24252B; color: white; transition: .5s;'
+        document.body.style.cssText = 'transition: .5s;'
       }
 
   }
@@ -21,7 +21,7 @@ const Nav = () => {
   function activateNav(){
     var nav = document.querySelector(".nav-list")
 
-      if (nav.classList.toggle("active") === true){
+      if (nav.classList.toggle("is_active") === true){
         document.body.style.cssText = 'overflow: hidden;'
       } else {
         document.body.style.cssText = ' '
