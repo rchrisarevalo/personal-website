@@ -15,6 +15,26 @@ const Posts = () => {
                     Old posts will be removed in 30 days. Any posts that have not reached this deadline yet
                     will stay on this page.
                 </p>
+                <div className="post">
+                    <p id="post-content">
+                        I have introduced a new UI (User Interface) for this website. It might look the same,
+                        but there a few differences with this update. For instance, there is now a loading
+                        screen when you first enter the page. In addition, the content in the "Works" page 
+                        has been moved to the "About Me" page. This was due to the difficulties in styling
+                        the page after I integrated the Bootstrap spinner components for the loading page.
+                    </p>
+                    <p id="post-content">
+                        If you happen to have any issues, please feel free to contact me by clicking the "Report"
+                        button, which can be found on the navigation bar of both the web and mobile versions of
+                        this site.
+                    </p>
+                    <p id = "post-content">
+                        -- Ruben Christopher Arevalo
+                    </p>
+                    <p id = "post-date">
+                        Posted on 8/10/2021 at 8:28 PM.
+                    </p>
+                </div>
                 <div className = "post">
                     <p id = "post-content">
                         Hi everyone! The update message has been taken down after
@@ -31,7 +51,7 @@ const Posts = () => {
                         -- Ruben Christopher Arevalo
                     </p>
                     <p id = "post-date">
-                        Posted on August 10, 2021 at 12:00 AM.
+                        Posted on 8/10/2021 at 12:00 AM.
                     </p>
                 </div>
                 <div className = "post">

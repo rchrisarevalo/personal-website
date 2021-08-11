@@ -14,11 +14,9 @@ const Load = (props) => {
     return (
         <div className = "loading-screen">
             <div className = "loading-animation">
-            <Spinner animation="grow" variant="white" id="delay-1"/>
-            <br></br>
-            <Spinner animation="grow" variant="white" id="delay-2"/>
-            <br></br>
-            <Spinner animation="grow" variant="white" id="delay-3"/>
+                <Spinner animation="grow" variant="white" id="delay-1"/>
+                <Spinner animation="grow" variant="white" id="delay-2"/>
+                <Spinner animation="grow" variant="white" id="delay-3"/>
             </div>
         </div>
     )

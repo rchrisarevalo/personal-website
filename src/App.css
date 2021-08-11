@@ -61,14 +61,18 @@ hr{
 
 #delay-1{
   animation-delay: 0s;
+  margin-right: 10px;
 }
 
 #delay-2{
   animation-delay: 0.1s;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #delay-3{
   animation-delay: 0.2s;
+  margin-left: 10px;
 }
 
 .change-theme{
@@ -424,6 +428,7 @@ hr{
 
 #post-date{
   margin: 2em;
+  font-style: italic;
 }
 
 .contact-info h1{
