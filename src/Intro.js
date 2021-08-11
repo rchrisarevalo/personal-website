@@ -52,6 +52,7 @@ const Intro = () => {
                     <h1 id = "posts-title-intro">Recent Posts</h1>
                     <p id = "posts-description-intro">
                         The last three recent posts will be posted here. This page will be updated daily.
+                        To view all posts, click on the Posts link on the navigation bar.
                     </p>
                     <div className="post">
                         <p id="post-content">
