@@ -14,11 +14,11 @@ const App = () => {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/personal-website/" component={Load}/>
-        <Route exact path ="/personal-website/about" component={Intro}/>
-        <Route exact path="/personal-website/posts" component={Posts}/>
-        <Route exact path="/personal-website/contact" component={Contact}/>
-        <Route component={Error404}/>
+        <Route path="/personal-website/" exact component={Load}/>
+        <Route path ="/personal-website/about" exact component={Intro}/>
+        <Route path="/personal-website/posts" exact component={Posts}/>
+        <Route path="/personal-website/contact" exact component={Contact}/>
+        <Route exact component={Error404}/>
       </Switch>
     </div>
   );
