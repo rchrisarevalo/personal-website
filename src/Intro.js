@@ -1,5 +1,5 @@
 import React from "react";
-import thumb from './images/IMG_20210614_192736_373.jpg';
+import profilepic from './images/August 2021 Profile Pic.jpg';
 import { BsExclamationCircle } from "react-icons/bs";
 
 import Nav from "./Nav";
@@ -37,7 +37,7 @@ const Intro = () => {
                     </p>
                     <br></br>
                 </div>
-                <img src={thumb} alt="thumb"></img>
+                <img src={profilepic} alt="thumb"></img>
                 <h1>About the Author</h1>
                 <p>
                 Hi everyone! My name is Ruben Christopher Arevalo, and I am a student attending the University of Texas-Rio Grande Valley. 
