@@ -9,7 +9,7 @@ const Load = (props) => {
 
     setTimeout(() => {
         props.history.push('/personal-website/about')
-    }, 5000)
+    }, 3000)
 
     return (
         <div className = "loading-screen">
