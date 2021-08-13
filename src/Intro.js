@@ -1,5 +1,5 @@
 import React from "react";
-import profilepic from './images/August 2021 Profile Pic.jpg';
+import profilepic from './images/August 2021 Profile Pic 2.jpg';
 import { BsExclamationCircle } from "react-icons/bs";
 
 import Nav from "./Nav";
