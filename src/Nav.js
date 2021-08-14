@@ -52,9 +52,9 @@ const Nav = () => {
       </div>
 
       <ul className = "nav-list">
-        <li><Link to = "/personal-website/about">About Me</Link></li>
-        <li><Link to = "/personal-website/posts">Posts</Link></li>
-        <li><Link to = "/personal-website/contact">Contact Me</Link></li>
+        <li><Link to = "/about">About Me</Link></li>
+        <li><Link to = "/posts">Posts</Link></li>
+        <li><Link to = "/contact">Contact Me</Link></li>
         <div className = "button">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSu_sZqwO_m42GKlmXKrA30hyTglQQY1N3V2PIcdGc87WbXg/viewform" rel="noopener noreferrer" target="_blank"><IoWarningOutline size="22px" id="report-icon"/>Report</a>
         </div>
