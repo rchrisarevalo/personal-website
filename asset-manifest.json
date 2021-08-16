@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.d1259a20.chunk.css",
-    "main.js": "/personal-website/static/js/main.fed0586e.chunk.js",
-    "main.js.map": "/personal-website/static/js/main.fed0586e.chunk.js.map",
+    "main.css": "/personal-website/static/css/main.daf2147f.chunk.css",
+    "main.js": "/personal-website/static/js/main.5766e944.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.5766e944.chunk.js.map",
     "runtime-main.js": "/personal-website/static/js/runtime-main.809a9b93.js",
     "runtime-main.js.map": "/personal-website/static/js/runtime-main.809a9b93.js.map",
     "static/css/2.818011ed.chunk.css": "/personal-website/static/css/2.818011ed.chunk.css",
-    "static/js/2.98bb7950.chunk.js": "/personal-website/static/js/2.98bb7950.chunk.js",
-    "static/js/2.98bb7950.chunk.js.map": "/personal-website/static/js/2.98bb7950.chunk.js.map",
+    "static/js/2.bd6e3b92.chunk.js": "/personal-website/static/js/2.bd6e3b92.chunk.js",
+    "static/js/2.bd6e3b92.chunk.js.map": "/personal-website/static/js/2.bd6e3b92.chunk.js.map",
     "static/js/3.ace95d9a.chunk.js": "/personal-website/static/js/3.ace95d9a.chunk.js",
     "static/js/3.ace95d9a.chunk.js.map": "/personal-website/static/js/3.ace95d9a.chunk.js.map",
     "index.html": "/personal-website/index.html",
     "static/css/2.818011ed.chunk.css.map": "/personal-website/static/css/2.818011ed.chunk.css.map",
-    "static/css/main.d1259a20.chunk.css.map": "/personal-website/static/css/main.d1259a20.chunk.css.map",
-    "static/js/2.98bb7950.chunk.js.LICENSE.txt": "/personal-website/static/js/2.98bb7950.chunk.js.LICENSE.txt",
+    "static/css/main.daf2147f.chunk.css.map": "/personal-website/static/css/main.daf2147f.chunk.css.map",
+    "static/js/2.bd6e3b92.chunk.js.LICENSE.txt": "/personal-website/static/js/2.bd6e3b92.chunk.js.LICENSE.txt",
     "static/media/August 2021 Profile Pic 2.3c2d9123.jpg": "/personal-website/static/media/August 2021 Profile Pic 2.3c2d9123.jpg",
     "static/media/cv-website-education.1f5c2914.png": "/personal-website/static/media/cv-website-education.1f5c2914.png",
     "static/media/look-website.1d365c48.png": "/personal-website/static/media/look-website.1d365c48.png",
@@ -23,8 +23,8 @@
   "entrypoints": [
     "static/js/runtime-main.809a9b93.js",
     "static/css/2.818011ed.chunk.css",
-    "static/js/2.98bb7950.chunk.js",
-    "static/css/main.d1259a20.chunk.css",
-    "static/js/main.fed0586e.chunk.js"
+    "static/js/2.bd6e3b92.chunk.js",
+    "static/css/main.daf2147f.chunk.css",
+    "static/js/main.5766e944.chunk.js"
   ]
 }
