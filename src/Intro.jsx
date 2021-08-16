@@ -2,9 +2,9 @@ import React from "react";
 import profilepic from './images/August 2021 Profile Pic 2.jpg';
 import { BsExclamationCircle } from "react-icons/bs";
 
-import Nav from "./Nav";
-import Footer from "./Footer";
-import Works from "./Works";
+import Nav from "./Nav.jsx";
+import Footer from "./Footer.jsx";
+import Works from "./Works.jsx";
 
 const Intro = () => {
     return (

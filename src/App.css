@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 *{
   margin: 0;
@@ -273,11 +274,11 @@ hr{
 }
 
 .intro-container{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
   margin: 1.5em;
   text-align: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 17.5px;
   font-weight: 300;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -287,7 +288,7 @@ hr{
 
 .intro h1{
   font-weight: 800;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: left;
   margin: 0.7em;
   text-transform: uppercase;
@@ -310,9 +311,9 @@ hr{
 }
 
 .works-container{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
   margin: 0.5em;
-  font-size: 16px;
+  font-size: 17.5px;
   text-align: center;
   align-items: center;
   font-weight: 300;
@@ -321,7 +322,7 @@ hr{
 }
 
 .works h1{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -331,7 +332,7 @@ hr{
   margin-right: 10%;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 16px;
+  font-size: 17.5px;
   font-weight: 300;
   text-align: center;
 }
@@ -374,13 +375,17 @@ hr{
 
 .contact-info{
   margin: 1.5em;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-size: 17.5px;
   text-align: center;
   align-items: center;
   font-weight: 300;
   padding-top: 30px;
   padding-bottom: 15px;
+}
+
+.contact-info h1{
+  font-family: 'Poppins', sans-serif;
 }
 
 .posts-container{
@@ -417,23 +422,25 @@ hr{
 
 #posts-description{
   text-align: left;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
   margin-left: 10%;
   margin-right: 10%;
   font-weight: 300;
+  font-size: 17.5px;
 }
 
 #posts-description-intro{
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
   margin-left: 10%;
   margin-right: 10%;
   font-weight: 300;
+  font-size: 17.5px;
 }
 
 .post{
-  background: grey;
-  font-family: 'Poppins', sans-serif;
+  background: rgb(59, 59, 59);
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: white;
   border-radius: 5px;
@@ -443,6 +450,7 @@ hr{
   margin-right: 10%;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 17.5px;
 }
 
 #post-content{
