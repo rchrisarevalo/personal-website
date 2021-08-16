@@ -59,7 +59,9 @@ const Nav = () => {
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSu_sZqwO_m42GKlmXKrA30hyTglQQY1N3V2PIcdGc87WbXg/viewform" rel="noopener noreferrer" target="_blank"><IoWarningOutline size="22px" id="report-icon"/>Report</a>
         </div>
         <div className = "button-theme" onClick={change_theme_web}>
-          <a href="#change-theme" rel="noopener noreferrer" title="Click twice to activate!"><IoPartlySunnyOutline size="22px" id="report-icon"/>Light/Dark</a>
+          <div id = "light-dark-button">
+            <IoPartlySunnyOutline size="22px" id="report-icon"/>Light/Dark  
+          </div>
         </div>
       </ul>
     </nav>
