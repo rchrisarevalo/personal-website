@@ -17,6 +17,25 @@ const Posts = () => {
                 </p>
                 <div className="post">
                     <p id="post-content">
+                        Hi everyone!
+                    </p>
+                    <p id = "post-content">
+                        I am just letting y'all know that I am going to update the "Posts" page and move the Posts
+                        to separate pages (5 posts per page, with the exception of this post) to avoid any
+                        overflow issues.
+                    </p>
+                    <p id="post-content">
+                        Thank you, and have a great day!
+                    </p>
+                    <p id = "post-content">
+                        -- Ruben Christopher Arevalo
+                    </p>
+                    <p id = "post-date">
+                        Posted on 8/16/2021 at 6:29 PM.
+                    </p>
+                </div>
+                <div className="post">
+                    <p id="post-content">
                         Hello everyone! Today, I have made several updates regarding this website.
                     </p>
                     <p id="post-content">

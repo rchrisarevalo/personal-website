@@ -289,7 +289,7 @@ hr{
 
 .intro h1{
   font-weight: 800;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
   text-align: left;
   margin: 0.7em;
   text-transform: uppercase;
@@ -385,10 +385,6 @@ hr{
   padding-bottom: 15px;
 }
 
-.contact-info h1{
-  font-family: 'Lato', sans-serif;
-}
-
 .posts-container{
   margin: 5.5em;
   text-align: center;
@@ -419,6 +415,7 @@ hr{
   padding-bottom: 5px;
   margin-left: 10%;
   margin-right: 10%;
+  font-family: 'Lato', sans-serif;
 }
 
 #posts-description{
@@ -550,8 +547,8 @@ footer{
     overflow-x: hidden;
   }
   .error-message{
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .intro-container{
     margin: 0em;
@@ -650,7 +647,6 @@ footer{
     text-align: center;
   }
   #posts-description{
-    margin: 1.5em;
     text-align: center;
     margin-bottom: 45px;
   }

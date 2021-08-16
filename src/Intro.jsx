@@ -56,6 +56,25 @@ const Intro = () => {
                     </p>
                     <div className="post">
                         <p id="post-content">
+                            Hi everyone!
+                        </p>
+                        <p id = "post-content">
+                            I am just letting y'all know that I am going to update the "Posts" page and move the Posts
+                            to separate pages (5 posts per page, with the exception of this post) to avoid any
+                            overflow issues.
+                        </p>
+                        <p id="post-content">
+                            Thank you, and have a great day!
+                        </p>
+                        <p id = "post-content">
+                            -- Ruben Christopher Arevalo
+                        </p>
+                        <p id = "post-date">
+                            Posted on 8/16/2021 at 6:29 PM.
+                        </p>
+                    </div>
+                    <div className="post">
+                        <p id="post-content">
                             Hello everyone! Today, I have made several updates regarding this website.
                         </p>
                         <p id="post-content">
@@ -103,25 +122,6 @@ const Intro = () => {
                         </p>
                         <p id = "post-date">
                             Posted on 8/10/2021 at 8:28 PM.
-                        </p>
-                    </div>
-                    <div className = "post">
-                        <p id = "post-content">
-                            Hi everyone! The update message has been taken down after
-                            appearing on the home screen after three days, as I
-                            intended. I am going to include the latest 3 posts on the home
-                            page so all of y'all can be up to date with how the website is
-                            being operated.
-                        </p>
-                        <p id = "post-content">
-                            Anyways, have a wonderful night and have a great rest of the day
-                            tomorrow!
-                        </p>
-                        <p id = "post-content">
-                            -- Ruben Christopher Arevalo
-                        </p>
-                        <p id = "post-date">
-                            Posted on 8/10/2021 at 12:00 AM.
                         </p>
                     </div>
                 </div>
