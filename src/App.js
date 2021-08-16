@@ -15,9 +15,9 @@ const App = () => {
     <div className="App">
       <Switch>
         <Route path="/" exact component={Load}/>
-        <Route path ="/personal-website/about" exact component={Intro}/>
-        <Route path="/personal-website/posts" exact component={Posts}/>
-        <Route path="/personal-website/contact" exact component={Contact}/>
+        <Route path ="/about" exact component={Intro}/>
+        <Route path="/posts" exact component={Posts}/>
+        <Route path="/contact" exact component={Contact}/>
         <Route exact component={Error404}/>
       </Switch>
     </div>
