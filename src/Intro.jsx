@@ -56,6 +56,37 @@ const Intro = () => {
                     </p>
                     <div className="post">
                         <p id="post-content">
+                            Hello everyone! Today, I have made several updates regarding this website.
+                        </p>
+                        <p id="post-content">
+                            Once again, I made another UI update. This time, the font has changed
+                            for the description for each page! Pretty cool, right? I know it sounds
+                            like I am bragging, but I am going to get to explaining the real update 
+                            right now.
+                        </p>
+                        <p id="post-content">
+                            There have been some issues with the routing of this website, particularly
+                            when someone tries to reload a page and instead end up with an "Error 404"
+                            message from the server.
+                        </p>
+                        <p id="post-content">
+                            Fortunately, I fixed it, and it should be able to run the way I intended it
+                            to be so that all of you can interact with this website with almost no bugs
+                            whatsoever. I also added my own custom "Error 404" message so that way it
+                            feels more personalized for the site!
+                        </p>
+                        <p id="post-content">
+                            If you have any issues, please feel free to contact me!
+                        </p>
+                        <p id = "post-content">
+                            -- Ruben Christopher Arevalo
+                        </p>
+                        <p id = "post-date">
+                            Posted on 8/16/2021 at 3:29 AM.
+                        </p>
+                    </div>
+                    <div className="post">
+                        <p id="post-content">
                             I have introduced a new UI (User Interface) for this website. It might look the same,
                             but there a few differences with this update. For instance, there is now a loading
                             screen when you first enter the page. In addition, the content in the "Works" page 
@@ -91,21 +122,6 @@ const Intro = () => {
                         </p>
                         <p id = "post-date">
                             Posted on 8/10/2021 at 12:00 AM.
-                        </p>
-                    </div>
-                    <div className = "post">
-                        <p id = "post-content">
-                            And the post feature works!
-                        </p>
-                        <p id = "post-content">
-                            Keep in mind that I am the only one that will be posting on this website, sort of like my
-                            own personal blog to share any updates I will be making.
-                        </p>
-                        <p id = "post-content">
-                            -- Ruben Christopher Arevalo
-                        </p>
-                        <p id = "post-date">
-                            Posted on 8/8/2021 at 4:56 PM.
                         </p>
                     </div>
                 </div>

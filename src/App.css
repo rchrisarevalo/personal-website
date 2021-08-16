@@ -58,13 +58,15 @@ hr{
 
 .error-message h1{
   font-size: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .error-message p{
   font-family: 'Lato', sans-serif;
   text-align: center;
   letter-spacing: none;
-  font-size: 19px;
+  font-size: 18.5px;
   font-weight: 300;
 }
 
@@ -546,6 +548,10 @@ footer{
 {
   body{
     overflow-x: hidden;
+  }
+  .error-message{
+    margin-left: 15%;
+    margin-right: 15%;
   }
   .intro-container{
     margin: 0em;
