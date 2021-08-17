@@ -20,7 +20,7 @@ const Posts = () => {
                     <p id = "post-content">
                         I have already included a page directory below for the "Posts" page.
                         Each page will have 5 posts. The 30 day post removal policy for
-                        posts matching this deadline will be in effect on September 7.
+                        posts matching this deadline will be take effect on September 7.
                     </p>
                     <p id = "post-content">
                         -- Ruben Christopher Arevalo
