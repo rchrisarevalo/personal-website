@@ -460,6 +460,16 @@ hr{
   font-style: italic;
 }
 
+.post-pages{
+  font-weight: 400;
+}
+
+.post-pages li{
+  list-style: none;
+  display: inline-block;
+  margin: 8px;
+}
+
 .contact-info h1{
   font-family: 'Lato', sans-serif;
   font-weight: 800;
@@ -649,6 +659,11 @@ footer{
   #posts-description{
     text-align: center;
     margin-bottom: 45px;
+  }
+  .post-pages{
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 30px;
   }
   .contact-info{
     margin: 0;

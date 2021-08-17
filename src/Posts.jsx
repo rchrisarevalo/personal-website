@@ -2,6 +2,7 @@ import React from 'react';
 
 import Nav from "./Nav.jsx";
 import NewFooter from "./NewFooter.jsx";
+import {Link} from "react-router-dom";
 
 const Posts = () => {
     return (
@@ -16,13 +17,25 @@ const Posts = () => {
                     will stay on this page.
                 </p>
                 <div className="post">
+                    <p id = "post-content">
+                        I have already included a page directory below for the "Posts" page.
+                        Each page will have 5 posts. The 30 day post removal policy for
+                        posts matching this deadline will be removed on September 7.
+                    </p>
+                    <p id = "post-content">
+                        -- Ruben Christopher Arevalo
+                    </p>
+                    <p id = "post-date">
+                        Posted on 8/16/2021 at 7:42 PM.
+                    </p>
+                </div>
+                <div className="post">
                     <p id="post-content">
                         Hi everyone!
                     </p>
                     <p id = "post-content">
                         I am just letting y'all know that I am going to update the "Posts" page and move the Posts
-                        to separate pages (5 posts per page, with the exception of this post) to avoid any
-                        overflow issues.
+                        to separate pages (5 posts per page) to avoid any overflow issues.
                     </p>
                     <p id="post-content">
                         Thank you, and have a great day!
@@ -104,34 +117,10 @@ const Posts = () => {
                         Posted on 8/10/2021 at 12:00 AM.
                     </p>
                 </div>
-                <div className = "post">
-                    <p id = "post-content">
-                        And the post feature works!
-                    </p>
-                    <p id = "post-content">
-                        Keep in mind that I am the only one that will be posting on this website, sort of like my
-                        own personal blog to share any updates I will be making.
-                    </p>
-                    <p id = "post-content">
-                        -- Ruben Christopher Arevalo
-                    </p>
-                    <p id = "post-date">
-                        Posted on 8/8/2021 at 4:56 PM.
-                    </p>
-                </div>
-                <div className = "post">
-                    <p id = "post-content">
-                        Hi everyone! This is a test post to keep y'all updated on upcoming updates and
-                        new features. I don't know how long this post will be, so I will try my best to
-                        write a long one like this (and I am deliberately stalling to see if this feature
-                        works).
-                    </p>
-                    <p id = "post-content">
-                        -- Ruben Christopher Arevalo
-                    </p>
-                    <p id = "post-date">
-                    Posted on 8/8/2021 at 4:55 PM.
-                    </p>
+                <div class="post-pages">
+                    <li>Pages (filtered from recent to past posts):</li>
+                    <li><Link to="/posts">1</Link></li>
+                    <li><Link to="/posts/2">2</Link></li>
                 </div>
             </div>
             <NewFooter/>
