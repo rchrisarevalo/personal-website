@@ -13,9 +13,28 @@ const Posts_2 = () => {
                 <br></br>
                 <p id = "posts-description">
                     This is the page where I will be posting regular updates that are being made to this site.
-                    Old posts will be removed in 30 days. Any posts that have not reached this deadline yet
+                    Old posts will be <b>archived</b> in 30 days. Any posts that have not reached this deadline yet
                     will stay on this page.
                 </p>
+                <div className = "post">
+                    <p id = "post-content">
+                        Hi everyone! The update message has been taken down after
+                        appearing on the home screen after three days, as I
+                        intended. I am going to include the latest 3 posts on the home
+                        page so all of y'all can be up to date with how the website is
+                        being operated.
+                    </p>
+                    <p id = "post-content">
+                        Anyways, have a wonderful night and have a great rest of the day
+                        tomorrow!
+                    </p>
+                    <p id = "post-content">
+                        -- Ruben Christopher Arevalo
+                    </p>
+                    <p id = "post-date">
+                        Posted on 8/10/2021 at 12:00 AM.
+                    </p>
+                </div>
                 <div className = "post">
                     <p id = "post-content">
                         And the post feature works!
