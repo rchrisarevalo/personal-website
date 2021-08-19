@@ -46,7 +46,11 @@ const Intro = () => {
                 much several lines of code can change the world in so many ways. This led to me to develop a huge interest in 
                 learning about software development, since there are so many software programs out there in the Internet, 
                 whether they'd be web applications, server-side applications, etc. Without them, we wouldn't be where we are 
-                today in terms of how much technology has impacted our lives.
+                today in terms of how much technology has impacted our lives and changed the world for the better.
+                </p>
+                <p>
+                    Feel free to contact me through either Github or Linkedin. The profile links are attached in the footer below
+                    the page. You may also feel free to contact me through my email at <a href="mailto:rubenplayer105@gmail.com">rubenplayer105@gmail.com</a>.
                 </p>
                 <div className = "posts-container-intro">
                     <h1 id = "posts-title-intro">Recent Posts</h1>
@@ -58,7 +62,7 @@ const Intro = () => {
                         <p id = "post-content">
                             I have already included a page directory for the "Posts" page.
                             Each page will have 5 posts. The 30 day post removal policy for
-                            posts matching this deadline will take effect on September 7.
+                            posts matching this deadline will take effect on <b>September 7</b>.
                         </p>
                         <p id = "post-content">
                             -- Ruben Christopher Arevalo
