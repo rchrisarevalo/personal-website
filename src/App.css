@@ -71,11 +71,12 @@ hr{
 }
 
 .error-message a{
-  margin-left: 35%;
-  margin-right: 35%;
-  margin-bottom: 15px;
+  margin-left: 36%;
+  margin-right: 36%;
+  margin-bottom: 25px;
   padding: 10px;
   color: white;
+  background: grey;
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   font-weight: 800;
@@ -87,8 +88,8 @@ hr{
 }
 
 .error-message a:hover{
-  background: white;
-  color: black;
+  background: black;
+  color: white;
   transition: .5s;
 }
 
