@@ -7,7 +7,10 @@ const Error404 = () => {
             <div className = "error-message">
                 <h1>ERROR 404!</h1>
                 <p>Oops! It looks like what you were looking for does not exist!</p>
-                <p>Go back to the <Link to="/">Home</Link> page to reset this session.</p>
+                <p>Here are some links below that can help you resolve the issue:</p>
+                <Link to="/about">About Me</Link>
+                <Link to="/posts">Posts</Link>
+                <Link to="/contact">Contact</Link>
             </div>
         </div>
     );

@@ -70,6 +70,28 @@ hr{
   font-weight: 300;
 }
 
+.error-message a{
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-bottom: 15px;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  font-size: 18.5px;
+  border-radius: 25px;
+  transition: .5s;
+}
+
+.error-message a:hover{
+  background: white;
+  color: black;
+  transition: .5s;
+}
+
 .loading-screen{
   font-size: 20px;
 }
@@ -190,8 +212,8 @@ hr{
   color: white;
   font-family: 'Lato', sans-serif;
   width: 60%;
-  margin-top: 20px;
-  margin-bottom: 22px;
+  margin-top: 15px;
+  margin-bottom: 17px;
 }
 
 .nav-list li{
@@ -559,6 +581,10 @@ footer{
   .error-message{
     margin-left: 10%;
     margin-right: 10%;
+  }
+  .error-message a{
+     margin-left: 30%;
+     margin-right: 30%;
   }
   .intro-container{
     margin: 0em;
