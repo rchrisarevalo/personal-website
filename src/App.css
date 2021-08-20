@@ -420,8 +420,34 @@ hr{
   font-family: 'Lato', sans-serif;
 }
 
+.posts-month{
+  list-style: none;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.posts-select{
+  width: 40vh;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding: 15px;
+  background: rgb(59, 59, 59);
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.posts-select:checked{
+  transition: .5s;
+}
+
+#posts-month-unavailable{
+  color: rgb(116, 116, 116);
+}
+
 #posts-title{
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-left: 10%;
@@ -442,7 +468,7 @@ hr{
 }
 
 #posts-description{
-  text-align: left;
+  text-align: center;
   font-family: 'Lato', sans-serif;
   margin-left: 10%;
   margin-right: 10%;

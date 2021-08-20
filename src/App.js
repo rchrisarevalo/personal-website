@@ -20,6 +20,7 @@ const App = () => {
         <Route path="/posts" exact component={Posts}/>
         <Route path="/contact" exact component={Contact}/>
         <Route path="/posts/2" exact component={Posts_2}/>
+        <Route path="/posts/2021/august" exact component={Posts}/>
         <Route exact component={Error404}/>
       </Switch>
     </div>
