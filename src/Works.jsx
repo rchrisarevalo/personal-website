@@ -5,8 +5,7 @@ import skyshot1 from './images/sky-september-2020.jpg';
 import skyshot2 from './images/sky-palm-shot-november-2020.jpg'
 
 function displayNotif(){
-    var e = document.getElementById("display-notif")
-    document.body.style.cssText = 'transition: .5s;'
+    var e = document.getElementById("warning-notif")
     e.classList.toggle("active")
     setTimeout(function(){
         e.classList.remove("active")

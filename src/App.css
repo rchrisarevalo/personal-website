@@ -41,7 +41,7 @@ hr{
 }
 
 ::-webkit-input-placeholder{
-  color: rgba(37, 34, 34, 0.664);
+  background: white;
 }
 
 .error-container{
@@ -289,17 +289,20 @@ hr{
   border: 2px solid rgb(119, 24, 24);
   border-radius: 5px;
   color: black;
-  text-align: center;
-  display: none;
+  position: fixed;
+  bottom: -150px;
+  right: 25px;
+  transition: .5s;
 }
 
 .notification.active .notification-content{
-  display: block;
+  transition: .5s;
+  bottom: 30px;
 }
 
 .update-message{
-  display: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
+  display: block;
   text-align: left;
   margin: .5em;
   background: rgb(80, 144, 218);
@@ -317,8 +320,19 @@ hr{
 }
 
 #update-icon{
-  transform: translate(-4px, 2px);
+  transform: translate(-4px, -4px);
   margin-right: 3px;
+}
+
+#close-icon{
+  font-size: 35px;
+  float: right;
+  cursor: pointer;
+  margin: .3em;
+}
+
+.update-message.close{
+  display: none;
 }
 
 .intro-container{
@@ -636,6 +650,10 @@ footer{
   .error-message a{
      margin-left: 30%;
      margin-right: 30%;
+  }
+  .update-message{
+    margin-left: 7%;
+    margin-right: 7%;
   }
   .notification{
     text-align: center;

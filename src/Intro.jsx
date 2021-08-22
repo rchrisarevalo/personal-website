@@ -1,11 +1,17 @@
 import React from "react";
 import profilepic from './images/August 2021 Profile Pic 2.jpg';
 import { BsExclamationCircle } from "react-icons/bs";
+import { IoCloseCircleOutline } from "react-icons/io5";
 
 import Nav from "./Nav.jsx";
 import Footer from "./Footer.jsx";
 import Works from "./Works.jsx";
 import Notification from "./Notification.jsx";
+
+function closeUpdateMsg(){
+    var e = document.getElementById("close-msg")
+    e.classList.toggle("close")
+}
 
 const Intro = () => {
     return (
@@ -13,29 +19,20 @@ const Intro = () => {
             <Nav/>
             <Notification/>
             <div className="intro-container" id="about">
-                <div className = "update-message">
+                <div className = "update-message" id="close-msg">
+                    <IoCloseCircleOutline onClick={closeUpdateMsg} id="close-icon"/>
                     <p id="update-title">
                         <BsExclamationCircle size="18px" id="update-icon"/> UPDATE:
                     </p>
                     <p>
-                        I have now moved the sections (as shown in the navigation bar) into separate pages. This allows
-                        for more easier navigation between pages. But it will be a huge transition, and I hope any of
-                        you that are on this page can get used to the new layout.
+                        As you may have noticed by now, I included a select option in the "Posts" page that will allow
+                        you to view posts by month and year (the latter is not ready yet until 2022). I also included
+                        a notification-like message whenever you click on something like an image. For now, that function
+                        is reserved for the images.
                     </p>
                     <p>
-                        In addition, I have also introduced a new Posts page. I will be posting regular updates I will
-                        be making (or have made) on that page. As I have stated on the aforementioned Posts page, I
-                        will delete posts that are 30 days old, and leave the other ones intact that have not met
-                        the deadline.
-                    </p>
-                    <p>
-                        This message will stay up for one more day. I will take down this
-                        message on August 10 at 12 AM. Enjoy the rest of the day!
-                    </p>
-                    <p>
-                        If you happen to have any issues, you can report them by clicking on the report button. For
-                        mobile users, you can click on the three bars on the top left of the header to open the navigation
-                        menu. There, you will find the report button, which you can tap to access the form.
+                        You can also close this message without having to wait for the three days (though I will take it down
+                        eventually).
                     </p>
                     <br></br>
                 </div>
