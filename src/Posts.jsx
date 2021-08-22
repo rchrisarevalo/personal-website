@@ -5,7 +5,7 @@ import NewFooter from "./NewFooter.jsx";
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
-const Posts = (props) => {
+const Posts = () => {
     return (
         <div className = "posts-main">
             <Nav/>

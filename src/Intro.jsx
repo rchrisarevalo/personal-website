@@ -5,11 +5,13 @@ import { BsExclamationCircle } from "react-icons/bs";
 import Nav from "./Nav.jsx";
 import Footer from "./Footer.jsx";
 import Works from "./Works.jsx";
+import Notification from "./Notification.jsx";
 
 const Intro = () => {
     return (
         <div className = "intro">
             <Nav/>
+            <Notification/>
             <div className="intro-container" id="about">
                 <div className = "update-message">
                     <p id="update-title">

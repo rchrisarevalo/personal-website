@@ -4,6 +4,15 @@ import thumb2 from './images/look-website.png';
 import skyshot1 from './images/sky-september-2020.jpg';
 import skyshot2 from './images/sky-palm-shot-november-2020.jpg'
 
+function displayNotif(){
+    var e = document.getElementById("display-notif")
+    document.body.style.cssText = 'transition: .5s;'
+    e.classList.toggle("active")
+    setTimeout(function(){
+        e.classList.remove("active")
+    }, 5000)
+}
+
 const Works = () => {
 
     return (
@@ -14,19 +23,19 @@ const Works = () => {
                 of creating software projects. These projects have allowed me to develop my programming
                 skills, and I am going to try to improve as much as I can.
             </p>
-            <div className = "works-1">
+            <div className = "works-1" onClick={displayNotif}>
                 <h3><i>Curriculum Vitae (CV) Website</i></h3>
                 <img src={thumb1} alt="work-1"></img>
             </div>
-            <div className = "works-2">
+            <div className = "works-2" onClick={displayNotif}>
                 <h3><i>Look Video and Photography Website</i></h3>
                 <img src={thumb2} alt="work-2"></img>
             </div>
-            <div className = "works-3">
+            <div className = "works-3" onClick={displayNotif}>
                 <h3><i>A Sky and Palm Background</i></h3>
                 <img src={skyshot1} alt="work-2"></img>
             </div>
-            <div className = "works-4">
+            <div className = "works-4" onClick={displayNotif}>
                 <h3><i>Clear Sky with a Palm Background</i></h3>
                 <img src={skyshot2} alt="work-2"></img>
             </div>
