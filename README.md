@@ -1,4 +1,4 @@
-# Personal Website (v2.0)
+# Personal Website (v2.0.0)
 
 * This website was made using React.js.
 
