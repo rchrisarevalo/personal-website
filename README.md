@@ -2,7 +2,7 @@
 
 * This website was made using React.js.
 
-### UPDATES (made on August 22, 2021):
+# UPDATES (made on August 22, 2021):
 
 * Notification like message added.
 * Close button has been added to the update message.
