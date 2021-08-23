@@ -11,6 +11,8 @@ import Notification from "./Notification.jsx";
 function closeUpdateMsg(){
     var e = document.getElementById("close-msg")
     e.classList.toggle("close")
+    localStorage.removeItem("update-message")
+    console.log("Message removed.")
 }
 
 const Intro = () => {
@@ -59,6 +61,22 @@ const Intro = () => {
                     </p>
                     <div className="post">
                         <p id = "post-content">
+                            Good evening, everyone! I am happy to announce that I have made some new updates to this
+                            site. I included a notificiation like message that pops up whenever you interact with one 
+                            of my works displayed on the "About Me" page. Another fun fact about this update (even though
+                            it's relatively minor), is that I added a close button for the update message in the "About Me"
+                            page. I will continue to update this website as soon as I have time since I am about to start
+                            my third year of college. Thank you and have a great evening!
+                        </p>
+                        <p id = "post-content">
+                            -- Ruben Christopher Arevalo
+                        </p>
+                        <p id = "post-date">
+                            Posted on 8/22/2021 at 8:50 PM.
+                        </p>
+                    </div>
+                    <div className="post">
+                        <p id = "post-content">
                             Hi everyone! If any of you have seen my last post, I will retract my policy to delete
                             30 day old posts. I will instead archive these posts into categories sorted
                             by months. This will go in effect on <b>September 7</b>, the same date I originally
@@ -82,25 +100,6 @@ const Intro = () => {
                         </p>
                         <p id = "post-date">
                             Posted on 8/16/2021 at 7:42 PM.
-                        </p>
-                    </div>
-                    <div className="post">
-                        <p id="post-content">
-                            Hi everyone!
-                        </p>
-                        <p id = "post-content">
-                            I am just letting y'all know that I am going to update the "Posts" page and move the Posts
-                            to separate pages (5 posts per page, with the exception of this post) to avoid any
-                            overflow issues.
-                        </p>
-                        <p id="post-content">
-                            Thank you, and have a great day!
-                        </p>
-                        <p id = "post-content">
-                            -- Ruben Christopher Arevalo
-                        </p>
-                        <p id = "post-date">
-                            Posted on 8/16/2021 at 6:29 PM.
                         </p>
                     </div>
                 </div>

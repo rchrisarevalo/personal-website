@@ -4,7 +4,7 @@ const Notification = () => {
     return (
         <div className = "notification" id="warning-notif">
             <div className = "notification-content">
-                <p>This is an image. Please don't copy it without my permission. :)</p>
+                <p>This is an image I took. Please don't copy it without my permission. :)</p>
             </div>
         </div>
     );

@@ -12,8 +12,8 @@ const Posts = () => {
             <div className = "posts-container">
                 <h1 id = "posts-title">My Posts</h1>
                 <br></br>
-                <div class="posts-catalog">
-                    <div class = "posts-month">
+                <div className="posts-catalog">
+                    <div className = "posts-month">
                         <DropdownButton
                             id="dropdown-button-dark-example2"
                             variant="secondary"
@@ -35,6 +35,22 @@ const Posts = () => {
                     Old posts will be <b>archived</b> in 30 days. Any posts that have not reached this deadline yet
                     will stay on this page.
                 </p>
+                <div className="post">
+                    <p id = "post-content">
+                        Good evening, everyone! I am happy to announce that I have made some new updates to this
+                        site. I included a notificiation like message that pops up whenever you interact with one 
+                        of my works displayed on the "About Me" page. Another fun fact about this update (even though
+                        it's relatively minor), is that I added a close button for the update message in the "About Me"
+                        page. I will continue to update this website as soon as I have time since I am about to start
+                        my third year of college. Thank you and have a great evening!
+                    </p>
+                    <p id = "post-content">
+                        -- Ruben Christopher Arevalo
+                    </p>
+                    <p id = "post-date">
+                        Posted on 8/22/2021 at 8:50 PM.
+                    </p>
+                </div>
                 <div className="post">
                     <p id = "post-content">
                         Hi everyone! If any of you have seen my last post, I will retract my policy to delete

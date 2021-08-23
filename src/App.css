@@ -329,6 +329,12 @@ hr{
   float: right;
   cursor: pointer;
   margin: .3em;
+  transition: .5s;
+}
+
+#close-icon:hover{
+  color: white;
+  transition: .5s;
 }
 
 .update-message.close{
@@ -658,12 +664,11 @@ footer{
   .notification{
     text-align: center;
     z-index: 500;
-    margin: 0;
   }
   .notification .notification-content{
-    margin: 0;
-    right: 30px;
+    right: -3px;
     text-align: center;
+    margin: 2em;
   }
   .intro-container{
     margin: 0em;
