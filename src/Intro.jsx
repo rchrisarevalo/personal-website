@@ -61,6 +61,20 @@ const Intro = () => {
                     </p>
                     <div className="post">
                         <p id = "post-content">
+                            I am posting this to let y'all know that today is the first time I go back to college
+                            in person since the pandemic started last March. What this means is that I won't be able
+                            to update this website regularly like I used to during the summer. So expect this website
+                            to be updated every 2-3 weeks or so (if time permits). Thank you for understanding!
+                        </p>
+                        <p id = "post-content">
+                            -- Ruben Christopher Arevalo
+                        </p>
+                        <p id = "post-date">
+                            Posted on 8/23/2021 at 10:21 AM.
+                        </p>
+                    </div>
+                    <div className="post">
+                        <p id = "post-content">
                             Good evening, everyone! I am happy to announce that I have made some new updates to this
                             site. I included a notificiation like message that pops up whenever you interact with one 
                             of my works displayed on the "About Me" page. Another fun fact about this update (even though
@@ -87,19 +101,6 @@ const Intro = () => {
                         </p>
                         <p id = "post-date">
                             Posted on 8/19/2021 at 3:41 PM.
-                        </p>
-                    </div>
-                    <div className="post">
-                        <p id = "post-content">
-                            I have already included a page directory for the "Posts" page.
-                            Each page will have 5 posts. The 30 day post removal policy for
-                            posts matching this deadline will take effect on <b>September 7</b>.
-                        </p>
-                        <p id = "post-content">
-                            -- Ruben Christopher Arevalo
-                        </p>
-                        <p id = "post-date">
-                            Posted on 8/16/2021 at 7:42 PM.
                         </p>
                     </div>
                 </div>

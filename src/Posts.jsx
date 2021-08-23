@@ -36,6 +36,20 @@ const Posts = () => {
                     will stay on this page.
                 </p>
                 <div className="post">
+                        <p id = "post-content">
+                            I am posting this to let y'all know that today is the first time I go back to college
+                            in person since the pandemic started last March. What this means is that I won't be able
+                            to update this website regularly like I used to during the summer. So expect this website
+                            to be updated every 2-3 weeks or so (if time permits). Thank you for understanding!
+                        </p>
+                        <p id = "post-content">
+                            -- Ruben Christopher Arevalo
+                        </p>
+                        <p id = "post-date">
+                            Posted on 8/23/2021 at 10:21 AM.
+                        </p>
+                </div>
+                <div className="post">
                     <p id = "post-content">
                         Good evening, everyone! I am happy to announce that I have made some new updates to this
                         site. I included a notificiation like message that pops up whenever you interact with one 
