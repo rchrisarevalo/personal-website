@@ -1,10 +1,10 @@
 # Personal Website
 
-UPDATES:
+UPDATES (made on August 22, 2021):
 
-* Additional details have been added to the ERROR 404 page.
-* Style changes on loading screen.
-* Some bug fixes.
+* Notification like message added.
+* Close button has been added to the update message.
+* Text alignment in "Recent Posts" section in "About Me" page for the mobile version has been set to the left.
 
 # Copyright Notice
 
