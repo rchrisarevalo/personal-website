@@ -9,7 +9,7 @@
 body{
   color: white;
   background-color: #000000;
-  background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+  background-image: linear-gradient(147deg, #000000 -20%, #04619f 74%, #000000 110%);
 }
 
 img{

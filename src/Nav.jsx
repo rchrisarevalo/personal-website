@@ -18,6 +18,14 @@ const Nav = () => {
 
   }
 
+  function displayNotif(){
+    var e = document.getElementById("warning-notif-2")
+    e.classList.toggle("active")
+    setTimeout(function(){
+        e.classList.remove("active")
+    }, 5000)
+  } 
+
   return (
     <nav className = "nav-bar">
     
@@ -27,7 +35,7 @@ const Nav = () => {
       <div className = "logo">
         <a href = {"./"}>Ruben C. Arevalo</a>
       </div>
-      <div class = "contact-icon">
+      <div class = "contact-icon" onClick={displayNotif}>
         <IoSendOutline id="contact-style"/>
       </div>
 
