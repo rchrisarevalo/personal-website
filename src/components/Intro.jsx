@@ -1,11 +1,11 @@
 import React from "react";
-import profilepic from './images/August 2021 Profile Pic 2.jpg';
+import profilepic from '../images/August 2021 Profile Pic 2.jpg';
 import { BsExclamationCircle } from "react-icons/bs";
 import { IoCloseCircleOutline } from "react-icons/io5";
 
-import Nav from "./Nav.jsx";
-import Footer from "./Footer.jsx";
-import Works from "./Works.jsx";
+import Nav from "../Nav.jsx";
+import Footer from "../Footer.jsx";
+import Works from "../Works.jsx";
 import Notification from "./Notification.jsx";
 
 function closeUpdateMsg(){

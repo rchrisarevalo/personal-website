@@ -1,7 +1,7 @@
 import React from "react";
 
-import Nav from "./Nav.jsx";
-import NewFooter from "./NewFooter.jsx";
+import Nav from "../Nav.jsx";
+import NewFooter from "../NewFooter.jsx";
 import {Link} from "react-router-dom";
 
 const Posts_2 = () => {

@@ -1,6 +1,6 @@
 import React from "react";
-import Nav from "./Nav.jsx";
-import NewFooter from "./NewFooter.jsx";
+import Nav from "../Nav.jsx";
+import NewFooter from "../NewFooter.jsx";
 
 const Contact = () => (
     <div className = "contact">
