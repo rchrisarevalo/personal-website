@@ -47,7 +47,7 @@ const Nav = () => {
         <div className = "button">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSu_sZqwO_m42GKlmXKrA30hyTglQQY1N3V2PIcdGc87WbXg/viewform" rel="noopener noreferrer" target="_blank"><IoWarningOutline size="22px" id="report-icon"/>Report</a>
         </div>
-        <div className = "button" onClick={displayNotif}>
+        <div className = "button" onClick={displayNotif} id="mobile-remove">
           <Link to = "/about"><IoSendOutline size="22px" id="report-icon"/>Contact Form</Link>
         </div>
       </ul>
