@@ -2,6 +2,7 @@ import React from 'react';
 
 import Nav from "../Nav.jsx";
 import NewFooter from "../NewFooter.jsx";
+import Notification from "./Notification.jsx";
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
@@ -9,6 +10,7 @@ const Posts = () => {
     return (
         <div className = "posts-main">
             <Nav/>
+            <Notification/>
             <div className = "posts-container">
                 <h1 id = "posts-title">My Posts</h1>
                 <br></br>

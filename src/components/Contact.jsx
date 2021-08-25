@@ -1,10 +1,12 @@
 import React from "react";
 import Nav from "../Nav.jsx";
 import NewFooter from "../NewFooter.jsx";
+import Notification from "./Notification.jsx";
 
 const Contact = () => (
     <div className = "contact">
         <Nav/>
+        <Notification/>
         <div className = "contact-info">
             <br></br>
             <h1>Contact Information</h1>
