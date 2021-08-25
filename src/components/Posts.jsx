@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Nav from "./Nav.jsx";
-import NewFooter from "./NewFooter.jsx";
+import Nav from "../Nav.jsx";
+import NewFooter from "../NewFooter.jsx";
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
