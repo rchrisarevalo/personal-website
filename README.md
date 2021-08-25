@@ -1,13 +1,12 @@
-# Personal Website (v2.0.0)
+# Personal Website (v2.1.0)
 
 * This website was made using React.js.
 
-# UPDATES (made on August 22, 2021):
+# UPDATES (made on August 25, 2021):
 
-* Notification like message added.
-* Close button has been added to the update message.
-* Text alignment in "Recent Posts" section in "About Me" page for the mobile version has been set to the left.
-* Dependabot alert added.
+* Light/dark theme changer has been removed.
+* Contact icon will replace the icon for changing themes on the mobile version.
+* A Q&A form (the contact form) has yet to be set up.
 
 # Copyright Notice
 
