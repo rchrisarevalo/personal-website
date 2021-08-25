@@ -261,14 +261,21 @@ hr{
   border-radius: 5px;
   color: black;
   position: fixed;
-  bottom: -150px;
+  bottom: -200px;
   right: 25px;
   transition: .5s;
 }
 
 .notification.active .notification-content{
   transition: .5s;
-  bottom: 30px;
+  bottom: 25px;
+}
+
+#notif-2{
+  padding-top: 25px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .update-message{
@@ -314,7 +321,7 @@ hr{
 
 .intro-container{
   font-family: 'Lato', sans-serif;
-  margin: 0.5em;
+  margin: 0.2em;
   text-align: center;
   align-items: center;
   font-size: 17.5px;
@@ -423,6 +430,11 @@ hr{
   padding-bottom: 15px;
 }
 
+.contact-info h1{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .posts-container{
   margin: 1.5em;
   padding-top: 60px;
@@ -432,7 +444,6 @@ hr{
 }
 
 .posts-container-intro{
-  margin: 2.5em;
   text-align: center;
   font-family: 'Lato', sans-serif;
 }
@@ -607,7 +618,7 @@ footer{
   transition: .5s;
 }
 
-@media screen and (max-width: 850px)
+@media screen and (max-width: 1050px)
 {
   body{
     overflow-x: hidden;
@@ -632,6 +643,17 @@ footer{
     right: -3px;
     text-align: center;
     margin: 2em;
+  }
+  .notification.active .notification-content{
+    bottom: -5px;
+  }
+  #notif-2{
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+  #notif-2 p{
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .intro-container{
     margin: 0em;

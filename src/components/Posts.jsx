@@ -2,7 +2,6 @@ import React from 'react';
 
 import Nav from "../Nav.jsx";
 import NewFooter from "../NewFooter.jsx";
-import Notification from "./Notification.jsx";
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
@@ -10,7 +9,11 @@ const Posts = () => {
     return (
         <div className = "posts-main">
             <Nav/>
-            <Notification/>
+            <div className = "notification" id="warning-notif-2">
+                <div className = "notification-content" id="notif-2">
+                    <p>A contact form is being set up. I sincerely apologize for the delay.</p>
+                </div>
+            </div>
             <div className = "posts-container">
                 <h1 id = "posts-title">My Posts</h1>
                 <br></br>
@@ -41,7 +44,7 @@ const Posts = () => {
                         <p id = "post-content">
                             Hi, y'all! I regret to inform everyone using this website that the dark/light theme toggler
                             has been removed. I made this decision because I thought a darker theme would be more
-                            appealing and interesting for those who visit, in addition to most internet users preferring
+                            appealing and interesting for those who visit, in addition to most internet users that preferred
                             a dark mode more as the years have passed by. I replaced the dark/light theme icon with a
                             message icon, which will take you to a contact form (which I am still creating) that will 
                             allow you to ask questions instead of having to use the report form to do so.

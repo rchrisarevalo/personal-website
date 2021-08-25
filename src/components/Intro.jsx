@@ -63,7 +63,7 @@ const Intro = () => {
                         <p id = "post-content">
                             Hi, y'all! I regret to inform everyone using this website that the dark/light theme toggler
                             has been removed. I made this decision because I thought a darker theme would be more
-                            appealing and interesting for those who visit, in addition to most internet users preferring
+                            appealing and interesting for those who visit, in addition to most internet users that preferred
                             a dark mode more as the years have passed by. I replaced the dark/light theme icon with a
                             message icon, which will take you to a contact form (which I am still creating) that will 
                             allow you to ask questions instead of having to use the report form to do so.
