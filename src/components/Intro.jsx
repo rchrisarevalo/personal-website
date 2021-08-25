@@ -61,6 +61,25 @@ const Intro = () => {
                     </p>
                     <div className="post">
                         <p id = "post-content">
+                            Hi, y'all! I regret to inform everyone using this website that the dark/light theme toggler
+                            has been removed. I made this decision because I thought a darker theme would be more
+                            appealing and interesting for those who visit, in addition to most internet users preferring
+                            a dark mode more as the years have passed by. I replaced the dark/light theme icon with a
+                            message icon, which will take you to a contact form (which I am still creating) that will 
+                            allow you to ask questions instead of having to use the report form to do so.
+                        </p>
+                        <p id = "post-content">
+                            If you have any questions, please feel free to contact me through my email!
+                        </p>
+                        <p id = "post-content">
+                            -- Ruben Christopher Arevalo
+                        </p>
+                        <p id = "post-date">
+                            Posted on 8/25/2021 at 10:36 AM.
+                        </p>
+                    </div>
+                    <div className="post">
+                        <p id = "post-content">
                             I am posting this to let y'all know that today is the first time I go back to college
                             in person since the pandemic started last March. What this means is that I won't be able
                             to update this website regularly like I used to during the summer. So expect this website
@@ -87,20 +106,6 @@ const Intro = () => {
                         </p>
                         <p id = "post-date">
                             Posted on 8/22/2021 at 8:50 PM.
-                        </p>
-                    </div>
-                    <div className="post">
-                        <p id = "post-content">
-                            Hi everyone! If any of you have seen my last post, I will retract my policy to delete
-                            30 day old posts. I will instead archive these posts into categories sorted
-                            by months. This will go in effect on <b>September 7</b>, the same date I originally
-                            intended to delete my posts after the specific deadline I mentioned above.
-                        </p>
-                        <p id = "post-content">
-                            -- Ruben Christopher Arevalo
-                        </p>
-                        <p id = "post-date">
-                            Posted on 8/19/2021 at 3:41 PM.
                         </p>
                     </div>
                 </div>
