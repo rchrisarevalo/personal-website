@@ -168,6 +168,10 @@ hr{
   cursor: pointer;
 }
 
+#burger-style{
+  transform: translateY(-1px);
+}
+
 #contact-style{
   font-size: 25px;
   transform: translateY(-1px);

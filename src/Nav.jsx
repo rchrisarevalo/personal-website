@@ -1,7 +1,7 @@
 import React from "react";
 import { IoWarningOutline } from "react-icons/io5";
 import { IoIosMenu } from "react-icons/io";
-import { IoIosContact } from "react-icons/io";
+import { IoSendOutline } from "react-icons/io5";
 
 import {Link} from "react-router-dom";
 
@@ -22,13 +22,13 @@ const Nav = () => {
     <nav className = "nav-bar">
     
       <div className = "burger-icon" onClick={activateNav}>
-        <IoIosMenu size = "27px" color = "white"/>
+        <IoIosMenu id="burger-style" size = "28px" color = "white"/>
       </div>
       <div className = "logo">
         <a href = {"./"}>Ruben C. Arevalo</a>
       </div>
       <div class = "contact-icon">
-        <IoIosContact id="contact-style"/>
+        <IoSendOutline id="contact-style"/>
       </div>
 
       <ul className = "nav-list">
