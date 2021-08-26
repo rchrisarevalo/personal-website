@@ -1,4 +1,5 @@
 import React from 'react';
+import {Helmet} from "react-helmet";
 
 import Nav from "../Nav.jsx";
 import NewFooter from "../NewFooter.jsx";
@@ -8,6 +9,9 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 const Posts = () => {
     return (
         <div className = "posts-main">
+            <Helmet>
+                <title>Ruben C. Arevalo - Personal Website - Posts</title>
+            </Helmet>
             <Nav/>
             <div className = "notification" id="warning-notif-2">
                 <div className = "notification-content" id="notif-2">

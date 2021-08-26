@@ -1,4 +1,5 @@
 import React from "react";
+import {Helmet} from 'react-helmet';
 import profilepic from '../images/August 2021 Profile Pic 2.jpg';
 import { BsExclamationCircle } from "react-icons/bs";
 import { IoCloseCircleOutline } from "react-icons/io5";
@@ -18,6 +19,9 @@ function closeUpdateMsg(){
 const Intro = () => {
     return (
         <div className = "intro">
+            <Helmet>
+                <title>Ruben C. Arevalo - Personal Website - About Me</title>
+            </Helmet>
             <Nav/>
             <Notification/>
             <div className="intro-container" id="about">
