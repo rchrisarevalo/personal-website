@@ -9,7 +9,7 @@ function displayNotif(){
     e.classList.toggle("active")
     setTimeout(function(){
         e.classList.remove("active")
-    }, 5000)
+    }, 3000)
 }
 
 const Works = () => {

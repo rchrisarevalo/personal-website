@@ -272,10 +272,18 @@ hr{
 }
 
 #notif-2{
+  background: rgb(137, 231, 137);
+  border: 2px solid green;
   padding-top: 25px;
   padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  right: 25px;
+}
+
+#background-green{
+  background: rgb(137, 231, 137);
+  border: 2px solid green;
 }
 
 .update-message{
@@ -643,20 +651,29 @@ footer{
     z-index: 500;
   }
   .notification .notification-content{
-    right: -3px;
+    right: 30px;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: 2em;
   }
   .notification.active .notification-content{
     bottom: -5px;
   }
+  #notif-1{
+    right: -3px;
+  }
   #notif-2{
     padding-top: 25px;
     padding-bottom: 10px;
+    right: 5px;
   }
   #notif-2 p{
     margin-left: 10%;
     margin-right: 10%;
+  }
+  #background-green{
+    right: 15px;
   }
   .intro-container{
     margin: 0em;

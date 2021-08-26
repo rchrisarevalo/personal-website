@@ -20,11 +20,12 @@ const Nav = () => {
 
   function displayNotif(){
     var e = document.getElementById("warning-notif-2")
+
     e.classList.toggle("active")
 
     setTimeout(function(){
-        e.classList.remove("active")
-    }, 5000)
+      e.classList.remove("active")
+    }, 3000)
   }
 
   return (
@@ -37,7 +38,7 @@ const Nav = () => {
         <a href = {"./"}>Ruben C. Arevalo</a>
       </div>
       <div className = "contact-icon" onClick={displayNotif}>
-        <IoSendOutline id="contact-style"/>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1nR8hmOAMRTU3fDZsbLRGkjzKvA9uRLZW_YdvsyBEctqDOw/viewform" target="_blank" rel="noreferrer"><IoSendOutline id="contact-style" color="white"/></a>
       </div>
 
       <ul className = "nav-list">
@@ -48,7 +49,7 @@ const Nav = () => {
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSu_sZqwO_m42GKlmXKrA30hyTglQQY1N3V2PIcdGc87WbXg/viewform" rel="noopener noreferrer" target="_blank"><IoWarningOutline size="22px" id="report-icon"/>Report</a>
         </div>
         <div className = "button" onClick={displayNotif} id="mobile-remove">
-          <Link to = "/about"><IoSendOutline size="22px" id="report-icon"/>Contact Form</Link>
+          <a href = "https://docs.google.com/forms/d/e/1FAIpQLSe1nR8hmOAMRTU3fDZsbLRGkjzKvA9uRLZW_YdvsyBEctqDOw/viewform" target="_blank" rel="noreferrer"><IoSendOutline size="22px" id="report-icon"/>Contact Form</a>
         </div>
       </ul>
     </nav>

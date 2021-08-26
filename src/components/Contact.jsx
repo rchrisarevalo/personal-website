@@ -7,7 +7,7 @@ const Contact = () => (
         <Nav/>
         <div className = "notification" id="warning-notif-2">
             <div className = "notification-content" id="notif-2">
-                <p>A contact form is being set up. I sincerely apologize for the delay.</p>
+                <p>Redirecting to contact form page...</p>
             </div>
         </div>  
         <div className = "contact-info">
