@@ -57,6 +57,9 @@ const Intro = () => {
                     Feel free to contact me through either Github or Linkedin. The profile links are attached in the footer below
                     the page. You may also feel free to contact me through my email at <a href="mailto:rubenplayer105@gmail.com">rubenplayer105@gmail.com</a>.
                 </p>
+                <br></br>
+                <hr></hr>
+                <br></br>
                 <div className = "posts-container-intro">
                     <h1 id = "posts-title-intro">Recent Posts</h1>
                     <p id = "posts-description-intro">
@@ -113,6 +116,10 @@ const Intro = () => {
                         </p>
                     </div>
                 </div>
+                <br></br>
+                <br></br>
+                <hr></hr>
+                <br></br>
                 <Works/>
             </div>
             <Footer/>
