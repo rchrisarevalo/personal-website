@@ -392,33 +392,41 @@ hr{
 
 .works-1, .works-2, .works-3, .works-4{
   display: inline-block;
-  width: 50%;
+  width: 100%;
   padding-top: 25px;
   padding-bottom: 25px;
-}
-
-.works-1 a{
-  text-decoration: none;
-  cursor: pointer;
-  color: white;
-  transition: .5s;
-}
-
-.works-1 a:hover{
-  color: rgb(0, 132, 255);
-  transition: .5s;
 }
 
 .works-1 h3, .works-2 h3, .works-3 h3, .works-4 h3{
   font-weight: 500;
   text-transform: uppercase;
   font-size: 23px;
+  text-align: center;
 }
 
 .works-1 img, .works-2 img, .works-3 img, .works-4 img{
-  width: 75%;
-  border-radius: 25%;
-  transform: translateX(-30px);
+  width: 35%;
+  border-radius: 2%;
+  float: left;
+}
+
+#photo{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.works-description{
+  float: right;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  width: 50%;
+  border-radius: 2%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 75px;
+  margin-top: 75px;
+  margin-right: 50px;
+  font-size: 17px;
 }
 
 .work-update{
@@ -738,15 +746,23 @@ footer{
     padding-top: 30px;
   }
   .works-1 img, .works-2 img, .works-3 img, .works-4 img{
-    width: 100%;
+    width: 75%;
     align-items: center;
     text-align: center;
-    transform: translateX(-40px);
   }
   .works-1, .works-2, .works-3, .works-4{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin: 1.5em;
+    margin: 0em;
+  }
+  .works-description{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 30px;
+    float: unset;
+    width: 85%;
+  }
+  .works-description p{
+    text-align: left;
   }
   .work-update{
     margin-left: 7%;
