@@ -68,6 +68,30 @@ const Intro = () => {
                     </p>
                     <div className="post">
                         <p id = "post-content">
+                            Hello everyone:
+                        </p>
+                        <p id = "post-content">
+                            As you may have noticed, the UI for the "Works" section in the "About Me" page has been updated,
+                            along with the mobile version of this site as well. I decided to organize it a little more by
+                            moving the photo of my works to one side and a brief description of it one the other. That way,
+                            it looks a little bit more organized and professional for those visiting the site.
+                        </p>
+                        <p id = "post-content">
+                            Aside from that, there is nothing new. Just a reminder that 30 day old posts will be archived 
+                            starting on <b><i>September 7, 2021</i></b>.
+                        </p>
+                        <p id = "post-content">
+                            Thank you everyone, and have a great evening!
+                        </p>
+                        <p id = "post-content">
+                            -- Ruben Christopher Arevalo
+                        </p>
+                        <p id = "post-date">
+                            Posted on 8/29/2021 at 11:25 PM.
+                        </p>
+                    </div>
+                    <div className="post">
+                        <p id = "post-content">
                             Hi, y'all! I regret to inform everyone using this website that the dark/light theme toggler
                             has been removed. I made this decision because I thought a darker theme would be more
                             appealing and interesting for those who visit, in addition to most internet users that preferred
@@ -97,22 +121,6 @@ const Intro = () => {
                         </p>
                         <p id = "post-date">
                             Posted on 8/23/2021 at 10:21 AM.
-                        </p>
-                    </div>
-                    <div className="post">
-                        <p id = "post-content">
-                            Good evening, everyone! I am happy to announce that I have made some new updates to this
-                            site. I included a notificiation like message that pops up whenever you interact with one 
-                            of my works displayed on the "About Me" page. Another fun fact about this update (even though
-                            it's relatively minor), is that I added a close button for the update message in the "About Me"
-                            page. I will continue to update this website as soon as I have time since I am about to start
-                            my third year of college. Thank you and have a great evening!
-                        </p>
-                        <p id = "post-content">
-                            -- Ruben Christopher Arevalo
-                        </p>
-                        <p id = "post-date">
-                            Posted on 8/22/2021 at 8:50 PM.
                         </p>
                     </div>
                 </div>
