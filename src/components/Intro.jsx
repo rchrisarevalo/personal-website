@@ -31,14 +31,8 @@ const Intro = () => {
                         <BsExclamationCircle size="18px" id="update-icon"/> UPDATE:
                     </p>
                     <p>
-                        As you may have noticed by now, I included a select option in the "Posts" page that will allow
-                        you to view posts by month and year (the latter is not ready yet until 2022). I also included
-                        a notification-like message whenever you click on something like an image. For now, that function
-                        is reserved for the images.
-                    </p>
-                    <p>
-                        You can also close this message without having to wait for the three days (though I will take it down
-                        eventually).
+                        A new UI (user interface) design for the "Works" section for this page has been made for
+                        both the mobile and web version of this site.
                     </p>
                     <br></br>
                 </div>
@@ -64,7 +58,7 @@ const Intro = () => {
                     <h1 id = "posts-title-intro">Recent Posts</h1>
                     <p id = "posts-description-intro">
                         The last three recent posts will be posted here. This page will be updated daily.
-                        To view all posts, click on the Posts link on the navigation bar.
+                        To view all posts, click on "Posts" on the navigation bar.
                     </p>
                     <div className="post">
                         <p id = "post-content">
