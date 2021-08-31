@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+.form{
+    margin-left: 35%;
+    margin-right: 35%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: 300;
+    background: rgb(80, 79, 79);
+    border-radius: 20px;
+}
+
+.form label{
+    font-weight: 400;
+}
+
+input[type="text"]{
+    transition: .5s;
+}
+
+.form input{
+    font-family: 'Lato', sans-serif;
+    border: none;
+    outline: none;
+    padding: 10px 35px;
+    margin-top: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: .25s;
+}
+
+.form input:focus{
+    box-shadow: 0 0 0 5px blue;
+    border: 1px solid blue;
+    transition: .25s;
+}
+
+.form textarea{
+    font-family: 'Lato', sans-serif;
+    border: none;
+    outline: none;
+    padding: 20px 35px;
+    margin-top: 10px;
+    border-radius: 25px;
+    transition: .25s;
+}
+
+.form textarea:focus{
+    box-shadow: 0 0 0 5px blue;
+    border: 1px solid blue;
+    transition: .25s;
+}
+
+.form button{
+    border: 1px solid white;
+    background: transparent;
+    outline: none;
+    color: white;
+    padding: 7px 25px;
+    border-radius: 20px;
+    transition: all ease-in 300ms;
+}
+
+.form button:hover{
+    background: white;
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    transition: all ease-in 300ms;
+}

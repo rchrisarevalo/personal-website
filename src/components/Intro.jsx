@@ -62,6 +62,18 @@ const Intro = () => {
                     </p>
                     <div className="post">
                         <p id = "post-content">
+                            Today is the last day of the month! I am going to make the September select option
+                            available tomorrow by 12:30 AM or earlier!
+                        </p>
+                        <p id = "post-content">
+                            -- Ruben Christopher Arevalo
+                        </p>
+                        <p id = "post-date">
+                            Posted on 8/31/2021 at 6:54 PM.
+                        </p>
+                    </div>
+                    <div className="post">
+                        <p id = "post-content">
                             Hello everyone:
                         </p>
                         <p id = "post-content">
@@ -101,20 +113,6 @@ const Intro = () => {
                         </p>
                         <p id = "post-date">
                             Posted on 8/25/2021 at 10:36 AM.
-                        </p>
-                    </div>
-                    <div className="post">
-                        <p id = "post-content">
-                            I am posting this to let y'all know that today is the first time I go back to college
-                            in person since the pandemic started last March. What this means is that I won't be able
-                            to update this website regularly like I used to during the summer. So expect this website
-                            to be updated every 2-3 weeks or so (if time permits). Thank you for understanding!
-                        </p>
-                        <p id = "post-content">
-                            -- Ruben Christopher Arevalo
-                        </p>
-                        <p id = "post-date">
-                            Posted on 8/23/2021 at 10:21 AM.
                         </p>
                     </div>
                 </div>
