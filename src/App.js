@@ -5,7 +5,7 @@ import React from 'react';
 import Load from "./components/Load.jsx";
 import Intro from "./components/Intro.jsx";
 import Posts from "./components/Posts.jsx";
-import Posts_2 from "./components/Posts_2.jsx";
+import August_Posts from "./components/August_Posts.jsx";
 import Contact from "./components/Contact.jsx";
 import Error404 from "./components/Error404.jsx";
 
@@ -19,8 +19,7 @@ const App = () => {
         <Route path ="/about" exact component={Intro}/>
         <Route path="/posts" exact component={Posts}/>
         <Route path="/contact" exact component={Contact}/>
-        <Route path="/posts/2" exact component={Posts_2}/>
-        <Route path="/posts/2021/august" exact component={Posts}/>
+        <Route path="/posts/2021/august" exact component={August_Posts}/>
         <Route exact component={Error404}/>
       </Switch>
     </div>
