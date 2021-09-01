@@ -779,7 +779,11 @@ footer{
     margin: 0.25em;
   }
   .posts-container-intro{
-    margin: 0.25em;
+    margin: 1em;
+  }
+  #post-intro-margin{
+    margin: 0.5em;
+    margin-top: 50px;
   }
   #posts-title{
     margin-top: 45px;
@@ -799,21 +803,39 @@ footer{
     margin: 0;
     margin-left: .5%;
     margin-right: .5%;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
   }
   footer{
     padding-top: 25px;
     padding-bottom: 5px;
+    text-align: center;
+  }
+  .new-footer{
+    padding-top: 20px;
+    padding-bottom: 5px;
   }
   .copyright{
-    text-align: center;
+    text-align: left;
     font-size: 15px;
     padding-top: 10px;
     padding-bottom: 15px;
   }
+  #padding-links{
+    text-align: left;
+    margin-left: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
   #padding-copyright{
-    padding-top: -2px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  #new-copyright{
+    padding-top: 10px;
     padding-bottom: 10px;
+  }
+  #new-links{
+    transform: translateX(-15px);
   }
   .footer-row{
     margin-left: 1%;
@@ -821,8 +843,11 @@ footer{
   }
   .social-media-links{
     float: none;
-    text-align: center;
+    text-align: left;
     padding-bottom: 10px;
     padding-top: 10px;
+  }
+  .social-media-links li a{
+    padding: 7px 15px;
   }
 }

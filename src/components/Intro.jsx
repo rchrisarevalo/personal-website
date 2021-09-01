@@ -44,13 +44,13 @@ const Intro = () => {
                 <img src={profilepic} alt="profile-pic"></img>
                 <h1>About the Author</h1>
                 <p>
-                Hi everyone! My name is Ruben Christopher Arevalo, and I am a student attending the University of Texas-Rio Grande Valley. 
-                I am currently pursuing my bachelor's degree in computer engineering with my concentration focusing on software. 
-                Since I was a high school student, I always found the concept of programming intriguing, thinking about how 
-                much several lines of code can change the world in so many ways. This led to me to develop a huge interest in 
-                learning about software development, since there are so many software programs out there in the Internet, 
-                whether they'd be web applications, server-side applications, etc. Without them, we wouldn't be where we are 
-                today in terms of how much technology has impacted our lives and changed the world for the better.
+                    Hi everyone! My name is Ruben Christopher Arevalo, and I am a third-year student attending the University of Texas-Rio Grande Valley. 
+                    I am currently pursuing my bachelor's degree in computer engineering with my concentration focusing on software. 
+                    Since I was a high school student, I always found the concept of programming intriguing, thinking about how 
+                    much several lines of code can change the world in so many ways. This led to me to develop a huge interest in 
+                    learning about software development, since there are so many software programs out there in the Internet, 
+                    whether they'd be web applications, server-side applications, etc. Without them, we wouldn't be where we are 
+                    today in terms of how much technology has impacted our lives and changed the world for the better.
                 </p>
                 <p>
                     Feel free to contact me through either Github or Linkedin. The profile links are attached in the footer below
@@ -65,7 +65,7 @@ const Intro = () => {
                         The last three recent posts will be posted here. This page will be updated daily.
                         To view all posts, click on "Posts" on the navigation bar.
                     </p>
-                    <div className="post">
+                    <div className="post" id="post-intro-margin">
                         <p id = "post-content">
                             I want to make another major announcement regarding my post archival policy. I have decided to
                             archive all posts <b>by the last day of each month</b>. In other words, I will completely wipe off
@@ -85,7 +85,7 @@ const Intro = () => {
                             Posted on 9/1/2021 at 12:00 AM.
                         </p>
                     </div>
-                    <div className="post">
+                    <div className="post" id="post-intro-margin">
                         <p id = "post-content">
                             Today is the last day of the month! I am going to make the September select option
                             available tomorrow by 12:30 AM or earlier!
@@ -97,7 +97,7 @@ const Intro = () => {
                             Posted on 8/31/2021 at 6:54 PM.
                         </p>
                     </div>
-                    <div className="post">
+                    <div className="post" id="post-intro-margin">
                         <p id = "post-content">
                             Hello everyone:
                         </p>
