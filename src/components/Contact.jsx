@@ -19,7 +19,6 @@ const Contact = () => (
             <br></br>
             <h1>Contact Information</h1>
             <br></br>
-            <h1>UPDATE!</h1>
             <p>
                 You can now contact me by clicking the "Contact Form" button the navigation bar on the web version of
                 this site. On the mobile version, you can click on the paper airplane icon to access the contact form
@@ -28,8 +27,6 @@ const Contact = () => (
             <p>
                 If you have any questions, please feel free to contact me through my email, <a href="mailto:rubenplayer105@gmail.com" id="contact-link"><b>rubenplayer105@gmail.com</b></a>,
                 LinkedIn, or Github. The links for both my LinkedIn and Github profiles are located on the footer below.
-            </p>
-            <p>
                 If you have any complaints or issues with this website, please feel free to click on the
                 report button on the web version. On the mobile version, click on the three bars on the
                 top left of the header to access the navigation menu, and click on the report button.
