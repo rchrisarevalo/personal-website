@@ -358,7 +358,8 @@ hr{
 }
 
 #works-title{
-  text-align: center;
+  text-align: left;
+  margin-left: 45px;
 }
 
 .works-container{
@@ -379,13 +380,13 @@ hr{
 }
 
 #work-description{
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 3.5%;
+  margin-right: 3.5%;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 17.5px;
   font-weight: 300;
-  text-align: center;
+  text-align: left;
 }
 
 .works-1, .works-2, .works-3, .works-4{
@@ -396,10 +397,11 @@ hr{
 }
 
 .works-1 h3, .works-2 h3, .works-3 h3, .works-4 h3{
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 23px;
-  text-align: center;
+  text-align: left;
+  margin-left: 45px;
 }
 
 .works-1 img, .works-2 img, .works-3 img, .works-4 img{
@@ -418,11 +420,11 @@ hr{
   border: 1px solid white;
   border-left: 1px solid white;
   width: 50%;
-  border-radius: 2%;
+  border-radius: 1%;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-bottom: 75px;
-  margin-top: 75px;
+  margin-bottom: 45px;
+  margin-top: 45px;
   margin-right: 50px;
   font-size: 17px;
 }
@@ -498,13 +500,13 @@ hr{
 }
 
 #posts-title-intro{
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding-top: 15px;
   padding-bottom: 5px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 4%;
+  margin-right: 4%;
   font-family: 'Lato', sans-serif;
 }
 
@@ -518,10 +520,10 @@ hr{
 }
 
 #posts-description-intro{
-  text-align: center;
+  text-align: left;
   font-family: 'Lato', sans-serif;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 4%;
+  margin-right: 4%;
   font-weight: 300;
   font-size: 17.5px;
 }
@@ -554,6 +556,7 @@ hr{
   font-family: 'Lato', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .contact-info p{
@@ -561,6 +564,7 @@ hr{
   margin-right: 10%;
   padding-top: 15px;
   padding-bottom: 15px;
+  text-align: left;
 }
 
 #contact-link{
@@ -691,18 +695,15 @@ footer{
     float: none;
   }
   .intro h1{
-    margin-left: 7%;
-    margin-right: 7%;
-    text-align: center;
-    align-items: center;
-    margin: 0;
+    text-align: left;
+    margin-left: 8%;
+    margin-right: 8%;
     text-transform: uppercase;
   }
   .intro p{
-    text-align: center;
-    align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    text-align: left;
+    margin-left: 8%;
+    margin-right: 8%;
   }
   .logo a{
     font-size: 18px;
@@ -739,9 +740,13 @@ footer{
     display: block;
   }
   .works{
-    margin: 0;
     padding-bottom: 30px;
     padding-top: 30px;
+  }
+  #works-title{
+    text-align: left;
+    margin-left: 8%;
+    margin-right: 8%;
   }
   .works-1 img, .works-2 img, .works-3 img, .works-4 img{
     width: 75%;
@@ -750,6 +755,10 @@ footer{
   }
   .works-1, .works-2, .works-3, .works-4{
     margin: 0em;
+  }
+  #work-description{
+    margin-left: 8%;
+    margin-right: 8%;
   }
   .works-description{
     text-align: center;

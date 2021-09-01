@@ -30,7 +30,7 @@ const August_Posts = () => {
                             title="2021"
                             className="mt-1 rounded disabled"
                         >
-                            <Dropdown.Item href="#/posts">All posts</Dropdown.Item>
+                            <Dropdown.Item href="#/posts">Current posts</Dropdown.Item>
                             <Dropdown.Item href="#/posts/2021/august" active>
                             August
                             </Dropdown.Item>

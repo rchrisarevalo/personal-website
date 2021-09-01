@@ -31,8 +31,13 @@ const Intro = () => {
                         <BsExclamationCircle size="18px" id="update-icon"/> UPDATE:
                     </p>
                     <p>
-                        A new UI (user interface) design for the "Works" section for this page has been made for
-                        both the mobile and web version of this site.
+                        A major policy update for the archival of posts displayed on this page has been made. 
+                        The updated policy will take effect immediately on September 1, 2021 at 12:00 AM.
+                        For more details, view <b>"Recent Posts"</b> on this page or visit the <b>"Posts"</b> page.
+                    </p>
+                    <p>
+                        New changes have been made to the user interface, as the text is now aligning to the left
+                        to make it appear more modern and appealing to users visiting this site.
                     </p>
                     <br></br>
                 </div>
@@ -60,6 +65,26 @@ const Intro = () => {
                         The last three recent posts will be posted here. This page will be updated daily.
                         To view all posts, click on "Posts" on the navigation bar.
                     </p>
+                    <div className="post">
+                        <p id = "post-content">
+                            I want to make another major announcement regarding my post archival policy. I have decided to
+                            archive all posts <b>by the last day of each month</b>. In other words, I will completely wipe off
+                            the main "Posts" page at 11:59 PM on the last day of each month and move them into a separate
+                            page that contains posts for that month only (e.g. August). This will take effect immediately.
+                        </p>
+                        <p id = "post-content">
+                            In addition, I will disable the current month's selection option. For instance, if it's September,
+                            then the link to view archived posts for this month will be disabled until October. After that deadline 
+                            has expired, and as I have mentioned before, I will move the posts from that month into their own 
+                            separate page. Then, the link will be available afterwards.
+                        </p>
+                        <p id = "post-content">
+                            -- Ruben Christopher Arevalo
+                        </p>
+                        <p id = "post-date">
+                            Posted on 9/1/2021 at 12:00 AM.
+                        </p>
+                    </div>
                     <div className="post">
                         <p id = "post-content">
                             Today is the last day of the month! I am going to make the September select option
@@ -94,25 +119,6 @@ const Intro = () => {
                         </p>
                         <p id = "post-date">
                             Posted on 8/29/2021 at 11:25 PM.
-                        </p>
-                    </div>
-                    <div className="post">
-                        <p id = "post-content">
-                            Hi, y'all! I regret to inform everyone using this website that the dark/light theme toggler
-                            has been removed. I made this decision because I thought a darker theme would be more
-                            appealing and interesting for those who visit, in addition to most internet users that preferred
-                            a dark mode more as the years have passed by. I replaced the dark/light theme icon with a
-                            message icon, which will take you to a contact form (which I am still creating) that will 
-                            allow you to ask questions instead of having to use the report form to do so.
-                        </p>
-                        <p id = "post-content">
-                            If you have any questions, please feel free to contact me through my email!
-                        </p>
-                        <p id = "post-content">
-                            -- Ruben Christopher Arevalo
-                        </p>
-                        <p id = "post-date">
-                            Posted on 8/25/2021 at 10:36 AM.
                         </p>
                     </div>
                 </div>

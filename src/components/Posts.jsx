@@ -10,7 +10,7 @@ const Posts = () => {
     return (
         <div className = "posts-main">
             <Helmet>
-                <title>Ruben C. Arevalo - Personal Website - Posts</title>
+                <title>Ruben C. Arevalo - Personal Website - Current Posts</title>
             </Helmet>
             <Nav/>
             <div className = "notification" id="warning-notif-2">
@@ -19,7 +19,7 @@ const Posts = () => {
                 </div>
             </div>
             <div className = "posts-container">
-                <h1 id = "posts-title">Posts</h1>
+                <h1 id = "posts-title">Current Posts</h1>
                 <br></br>
                 <div className="posts-catalog">
                     <div className = "posts-month">
@@ -30,7 +30,7 @@ const Posts = () => {
                             title="2021"
                             className="mt-1 rounded disabled"
                         >
-                            <Dropdown.Item href="#/posts" active>All Posts</Dropdown.Item>
+                            <Dropdown.Item href="#/posts" active>Current posts</Dropdown.Item>
                             <Dropdown.Item href="#/posts/2021/august">
                             August
                             </Dropdown.Item>
@@ -62,7 +62,7 @@ const Posts = () => {
                         -- Ruben Christopher Arevalo
                     </p>
                     <p id = "post-date">
-                        Posted on 9/1/2021 at 6:54 PM.
+                        Posted on 9/1/2021 at 12:00 AM.
                     </p>
                 </div>
             </div>
