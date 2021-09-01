@@ -41,7 +41,7 @@ const Intro = () => {
                     </p>
                     <br></br>
                 </div>
-                <img src={profilepic} alt="thumb"></img>
+                <img src={profilepic} alt="profile-pic"></img>
                 <h1>About the Author</h1>
                 <p>
                 Hi everyone! My name is Ruben Christopher Arevalo, and I am a student attending the University of Texas-Rio Grande Valley. 
