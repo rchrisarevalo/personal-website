@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import './Form.css';
 import React from 'react';
 
 import Load from "./components/Load.jsx";
