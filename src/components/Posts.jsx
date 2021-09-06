@@ -47,6 +47,17 @@ const Posts = () => {
                 </p>
                 <div className="post">
                     <p id = "post-content">
+                        Happy Labor Day, everyone! I hope y'all have a wonderful one!
+                    </p>
+                    <p id = "post-content">
+                        -- Ruben Christopher Arevalo
+                    </p>
+                    <p id = "post-date">
+                        Posted on 9/6/2021 at 1:19 AM.
+                    </p>
+                </div>
+                <div className="post">
+                    <p id = "post-content">
                         I want to make another major announcement regarding my post archival policy. I have decided to
                         archive all posts <b>by the last day of each month</b>. In other words, I will completely wipe off
                         the main "Posts" page at 11:59 PM on the last day of each month and move them into a separate
