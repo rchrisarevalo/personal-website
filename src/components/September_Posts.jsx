@@ -40,6 +40,17 @@ const September_Posts = () => {
                     These are all the posts for September 2021 that were archived on this page. None of these posts will
                     be deleted or edited unless I decide otherwise.
                 </p>
+                <div className="post">
+                    <p id = "post-content">
+                        Happy Labor Day, everyone! I hope y'all have a wonderful one!
+                    </p>
+                    <p id = "post-content">
+                        -- Ruben Christopher Arevalo
+                    </p>
+                    <p id = "post-date">
+                        Posted on 9/6/2021 at 1:19 AM.
+                    </p>
+                </div>
             </div>
             <NewFooter/>
         </div>
