@@ -2,7 +2,7 @@
 
 * This website was made using React.js.
 
-# UPDATES (made on September 3, 2021):
+# UPDATES (made on September 6, 2021):
 
 * Styling error for first post on "About Me" page (mobile version) fixed.
 
