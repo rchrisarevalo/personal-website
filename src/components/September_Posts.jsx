@@ -37,7 +37,7 @@ const September_Posts = () => {
                 </div>
                 <br></br>
                 <p id = "posts-description">
-                    These are all the posts for August 2021 that were archived on this page. None of these posts will
+                    These are all the posts for September 2021 that were archived on this page. None of these posts will
                     be deleted or edited unless I decide otherwise.
                 </p>
             </div>
