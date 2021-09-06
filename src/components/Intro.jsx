@@ -65,6 +65,17 @@ const Intro = () => {
                         The last three recent posts will be posted here. This page will be updated daily.
                         To view all posts, click on "Posts" on the navigation bar.
                     </p>
+                    <div className="post">
+                        <p id = "post-content">
+                            Happy Labor Day, everyone! I hope y'all have a wonderful one!
+                        </p>
+                        <p id = "post-content">
+                            -- Ruben Christopher Arevalo
+                        </p>
+                        <p id = "post-date">
+                            Posted on 9/6/2021 at 1:19 AM.
+                        </p>
+                    </div>
                     <div className="post" id="post-intro-margin">
                         <p id = "post-content">
                             I want to make another major announcement regarding my post archival policy. I have decided to
@@ -95,30 +106,6 @@ const Intro = () => {
                         </p>
                         <p id = "post-date">
                             Posted on 8/31/2021 at 6:54 PM.
-                        </p>
-                    </div>
-                    <div className="post" id="post-intro-margin">
-                        <p id = "post-content">
-                            Hello everyone:
-                        </p>
-                        <p id = "post-content">
-                            As you may have noticed, the UI for the "Works" section in the "About Me" page has been updated,
-                            along with the mobile version of this site as well. I decided to organize it a little more by
-                            moving the photo of my works to one side and a brief description of it one the other. That way,
-                            it looks a little bit more organized and professional for those visiting the site.
-                        </p>
-                        <p id = "post-content">
-                            Aside from that, there is nothing new. Just a reminder that 30 day old posts will be archived 
-                            starting on <b><i>September 7, 2021</i></b>.
-                        </p>
-                        <p id = "post-content">
-                            Thank you everyone, and have a great evening!
-                        </p>
-                        <p id = "post-content">
-                            -- Ruben Christopher Arevalo
-                        </p>
-                        <p id = "post-date">
-                            Posted on 8/29/2021 at 11:25 PM.
                         </p>
                     </div>
                 </div>
