@@ -65,7 +65,7 @@ const Intro = () => {
                         The last three recent posts will be posted here. This page will be updated daily.
                         To view all posts, click on "Posts" on the navigation bar.
                     </p>
-                    <div className="post">
+                    <div className="post" id="post-intro-margin">
                         <p id = "post-content">
                             Happy Labor Day, everyone! I hope y'all have a wonderful one!
                         </p>
