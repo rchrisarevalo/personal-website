@@ -44,12 +44,12 @@ const Nav = () => {
       <ul className = "nav-list">
         <li><Link to = "/about">About Me</Link></li>
         <li><Link to = "/posts">Posts</Link></li>
-        <li><Link to = "/contact">Contact Me</Link></li>
+        <li><Link to = "/contact">Contact Information</Link></li>
         <div className = "button">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSu_sZqwO_m42GKlmXKrA30hyTglQQY1N3V2PIcdGc87WbXg/viewform" rel="noopener noreferrer" target="_blank"><IoWarningOutline size="22px" id="report-icon"/>Report</a>
         </div>
         <div className = "button" onClick={displayNotif} id="mobile-remove">
-          <a href = "https://docs.google.com/forms/d/e/1FAIpQLSe1nR8hmOAMRTU3fDZsbLRGkjzKvA9uRLZW_YdvsyBEctqDOw/viewform" target="_blank" rel="noreferrer"><IoSendOutline size="22px" id="report-icon"/>Contact Form</a>
+          <a href = "https://docs.google.com/forms/d/e/1FAIpQLSe1nR8hmOAMRTU3fDZsbLRGkjzKvA9uRLZW_YdvsyBEctqDOw/viewform" target="_blank" rel="noreferrer"><IoSendOutline size="22px" id="report-icon"/>Contact Me</a>
         </div>
       </ul>
     </nav>

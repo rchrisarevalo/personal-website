@@ -20,7 +20,7 @@ const Contact = () => (
             <h1>Contact Information</h1>
             <br></br>
             <p>
-                You can now contact me by clicking the "Contact Form" button the navigation bar on the web version of
+                You can now contact me by clicking the "Contact Me" button the navigation bar on the web version of
                 this site. On the mobile version, you can click on the paper airplane icon to access the contact form
                 page to leave a message or contact me.
             </p>
