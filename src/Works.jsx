@@ -53,7 +53,7 @@ const Works = () => {
             </div>
             <div className = "works-3">
                 <h3><i>A Sky and Palm Background</i></h3>
-                <img src={skyshot1} alt="work-2"></img>
+                <img src={skyshot1} alt="work-3"></img>
                 <div className = "works-description">
                     <p>
                         I took this photo in September 2020. This day was actually one of the best days I have had
@@ -71,7 +71,7 @@ const Works = () => {
             </div>
             <div className = "works-4">
                 <h3><i>Clear Sky with a Palm Background</i></h3>
-                <img src={skyshot2} alt="work-2"></img>
+                <img src={skyshot2} alt="work-4"></img>
                 <div className = "works-description">
                     <p>
                         This is a photo I took on November 2020. On this day, it was clear, sunny, and
