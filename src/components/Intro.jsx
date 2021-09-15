@@ -31,13 +31,10 @@ const Intro = () => {
                         <BsExclamationCircle size="18px" id="update-icon" /> UPDATE:
                     </p>
                     <p>
-                        A major policy update for the archival of posts displayed on this page has been made.
-                        The updated policy will take effect immediately on September 1, 2021 at 12:00 AM.
-                        For more details, view <b>"Recent Posts"</b> on this page or visit the <b>"Posts"</b> page.
-                    </p>
-                    <p>
-                        New changes have been made to the user interface, as the text is now aligning to the left
-                        to make it appear more modern and appealing to users visiting this site.
+                        If you have noticed, the font has been changed once again. I chose this font because I thought
+                        it looked really modern and fit well with the theme of this site. In addition, I might be
+                        posting less during the next three months due to me focusing on college coursework. If I have
+                        free time, I will try my best to continue to maintain this website.
                     </p>
                     <br></br>
                 </div>

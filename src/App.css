@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
   margin: 0;
@@ -9,6 +10,11 @@
 body{
   color: white;
   background: #24252B;
+  letter-spacing: 0.5px;
+}
+
+h1{
+  letter-spacing: 0px;
 }
 
 img{
@@ -63,11 +69,11 @@ hr{
 }
 
 .error-message p{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   text-align: center;
   letter-spacing: none;
   font-size: 18.5px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .error-message a{
@@ -76,9 +82,10 @@ hr{
   margin-bottom: 25px;
   padding: 10px;
   color: white;
-  background: grey;
+  background: transparent;
   text-decoration: none;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
+  border: 1px solid white;
   font-weight: 800;
   display: flex;
   flex-direction: column;
@@ -88,8 +95,8 @@ hr{
 }
 
 .error-message a:hover{
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   transition: .5s;
 }
 
@@ -181,7 +188,7 @@ hr{
   justify-content: space-around;
   align-items: center;
   color: white;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   width: 60%;
   margin-top: 15px;
   margin-bottom: 17px;
@@ -200,8 +207,9 @@ hr{
   padding: 7px 20px;
   line-height: 25px;
   border-radius: 25px;
-  font-weight: 300;
+  font-weight: 200;
   transition: .5s;
+  letter-spacing: 0.5px;
 }
 
 .nav-list li a:hover{
@@ -213,7 +221,8 @@ hr{
 
 .button{
   padding-bottom: 0px;
-  font-weight: 900;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 .button a{
@@ -221,8 +230,8 @@ hr{
   color: white;
   text-decoration: none;
   border-radius: 25px;
-  padding: 7px 25px;
-  font-family: 'Lato', sans-serif;
+  padding: 7.5px 25px;
+  font-family: 'Urbanist', sans-serif;
   font-size: 16px;
   margin-bottom: 2px;
   text-align: center;
@@ -233,6 +242,7 @@ hr{
 
 .button a:hover{
   background: white;
+  font-weight: 900;
   color: black;
   border: 1px solid black;
   transition: .5s;
@@ -244,10 +254,11 @@ hr{
 }
 
 .notification{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-weight: 400;
   margin-left: 37%;
   margin-right: 37%;
+  letter-spacing: 0.5px;
   z-index: 500;
   position: sticky;
   top: 0;
@@ -286,16 +297,15 @@ hr{
 }
 
 .update-message{
-  display: none;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   text-align: left;
   margin: .5em;
   background: rgb(80, 144, 218);
   border: 3px solid rgb(0, 119, 255);
   border-radius: 3px;
   color: black;
-  font-weight: 400;
-  letter-spacing: 0px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
   z-index: 55;
 }
 
@@ -327,11 +337,11 @@ hr{
 }
 
 .intro-container{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   text-align: center;
   align-items: center;
   font-size: 17.5px;
-  font-weight: 300;
+  font-weight: 200;
   padding-top: 40px;
   padding-bottom: 40px;
   margin-left: 5%;
@@ -340,7 +350,7 @@ hr{
 
 .intro h1{
   font-weight: 800;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   text-align: left;
   margin: 0.7em;
   text-transform: uppercase;
@@ -364,18 +374,18 @@ hr{
 }
 
 .works-container{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   margin: 0.5em;
   font-size: 17.5px;
   text-align: center;
   align-items: center;
-  font-weight: 300;
+  font-weight: 200;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
 .works h1{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -386,7 +396,7 @@ hr{
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 17.5px;
-  font-weight: 300;
+  font-weight: 200;
   text-align: left;
 }
 
@@ -437,11 +447,11 @@ hr{
 
 .contact-info{
   margin: 1.5em;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 17.5px;
   text-align: center;
   align-items: center;
-  font-weight: 300;
+  font-weight: 200;
   padding-top: 30px;
   padding-bottom: 15px;
 }
@@ -456,12 +466,12 @@ hr{
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
 }
 
 .posts-container-intro{
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
 }
 
 .posts-month{
@@ -496,7 +506,7 @@ hr{
   letter-spacing: 1px;
   margin-left: 10%;
   margin-right: 10%;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-weight: 800;
 }
 
@@ -508,31 +518,31 @@ hr{
   padding-bottom: 5px;
   margin-left: 4%;
   margin-right: 4%;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
 }
 
 #posts-description{
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   margin-left: 10%;
   margin-right: 10%;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 17.5px;
 }
 
 #posts-description-intro{
   text-align: left;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   margin-left: 4%;
   margin-right: 4%;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 17.5px;
 }
 
 .post{
   background: rgb(59, 59, 59);
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 200;
   color: white;
   border-radius: 5px;
   margin: 2em;
@@ -554,7 +564,7 @@ hr{
 }
 
 .contact-info h1{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   text-align: left;
@@ -596,18 +606,18 @@ footer{
 }
 
 .footer-row{
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .copyright{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .social-media-links{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 16px;
   font-weight: 200;
   float: right;
@@ -623,7 +633,7 @@ footer{
   color: white;
   border-radius: 25px;
   transition: .5s;
-  padding: 8px 15px;
+  padding: 7px 15px;
   margin: 5px;
   transition: .5s;
 }
@@ -645,12 +655,12 @@ footer{
     display: none;
   }
   .error-message{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .error-message a{
-     margin-left: 30%;
-     margin-right: 30%;
+     margin-left: 20%;
+     margin-right: 20%;
   }
   .update-message{
     margin-left: 7%;
