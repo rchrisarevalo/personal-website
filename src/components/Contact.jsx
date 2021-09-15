@@ -1,21 +1,21 @@
 import React from "react";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 import Nav from "../Nav.jsx";
 import NewFooter from "../NewFooter.jsx";
 
 const Contact = () => (
-    <div className = "contact">
+    <div className="contact">
         <Helmet>
             <title>Ruben C. Arevalo - Personal Website - Contact Me</title>
         </Helmet>
-        <Nav/>
-        <div className = "notification" id="warning-notif-2">
-            <div className = "notification-content" id="notif-2">
+        <Nav />
+        <div className="notification" id="warning-notif-2">
+            <div className="notification-content" id="notif-2">
                 <p>Redirecting to contact form page...</p>
             </div>
-        </div>  
-        <div className = "contact-info">
+        </div>
+        <div className="contact-info">
             <br></br>
             <h1>Contact Information</h1>
             <br></br>
@@ -33,14 +33,14 @@ const Contact = () => (
             </p>
             <p>
                 I will most likely respond to complaints/reports in about 3-5 days. If I am super available
-                (meaning if I literally have nothing to do), then I might respond to your issue much earlier 
+                (meaning if I literally have nothing to do), then I might respond to your issue much earlier
                 than anticipated response time provided above.
             </p>
             <p>
                 Have a nice day, everyone!
             </p>
         </div>
-        <NewFooter/>
+        <NewFooter />
     </div>
 );
 
