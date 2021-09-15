@@ -1,10 +1,10 @@
-# Personal Website (v2.3.2)
+# Personal Website (v2.3.3)
 
 * This website was made using React.js.
 
-# UPDATES (made on September 6, 2021):
+# UPDATES (made on September 14, 2021):
 
-* Alt tags for "Works" images changed.
+* Source code files were formatted for better organization and readability.
 
 # Copyright Notice
 
