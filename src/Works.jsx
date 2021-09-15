@@ -7,17 +7,17 @@ import skyshot2 from './images/sky-palm-shot-november-2020.jpg'
 const Works = () => {
 
     return (
-        <div className = "works-container">
-            <h1 id = "works-title">Works</h1>
-            <p id = "work-description">
+        <div className="works-container">
+            <h1 id="works-title">Works</h1>
+            <p id="work-description">
                 While I enjoy certain hobbies, such as taking photos in the outdoors, I am mostly proud
                 of creating software projects. These projects have allowed me to develop my programming
                 skills, and I am going to try to improve as much as I can.
             </p>
-            <div className = "works-1">
+            <div className="works-1">
                 <h3><i>Curriculum Vitae (CV) Website</i></h3>
                 <img src={thumb1} alt="work-1"></img>
-                <div className = "works-description">
+                <div className="works-description">
                     <p>
                         I created this website on July 2021. This website is based on my official resume,
                         except that the only difference is that it is a curriculum vitae, more commonly
@@ -28,16 +28,16 @@ const Works = () => {
                         future job, I will include them on my curriculum vitae website.
                     </p>
                     <p>
-                        I might recreate this website using React.js, just like how I did for this website. 
-                        I am going to decide whether to recreate this website during the winter break or 
+                        I might recreate this website using React.js, just like how I did for this website.
+                        I am going to decide whether to recreate this website during the winter break or
                         later in 2022.
                     </p>
                 </div>
             </div>
-            <div className = "works-2">
+            <div className="works-2">
                 <h3><i>Look Video and Photography Website</i></h3>
                 <img src={thumb2} alt="work-2"></img>
-                <div className = "works-description">
+                <div className="works-description">
                     <p>
                         This website was created on July 2020, during the early months of the pandemic. Since I was
                         bored and had nothing to do at the time (due to quarantine), I decided to make a website for
@@ -51,10 +51,10 @@ const Works = () => {
                     </p>
                 </div>
             </div>
-            <div className = "works-3">
+            <div className="works-3">
                 <h3><i>A Sky and Palm Background</i></h3>
                 <img src={skyshot1} alt="work-3"></img>
-                <div className = "works-description">
+                <div className="works-description">
                     <p>
                         I took this photo in September 2020. This day was actually one of the best days I have had
                         in my entire life, due to the fact that it was nice and warm and the sky was nice
@@ -63,16 +63,16 @@ const Works = () => {
                     </p>
                     <p>
                         So that's what I did. I used my image as a cover photo for my social media profiles, including
-                        my LinkedIn. I took another image for my social media wallpaper that I liked even more, 
-                        because during that time, I just got done going through 4 stressful days due to the 
+                        my LinkedIn. I took another image for my social media wallpaper that I liked even more,
+                        because during that time, I just got done going through 4 stressful days due to the
                         heavy school workload the same college semester I took this photo.
                     </p>
                 </div>
             </div>
-            <div className = "works-4">
+            <div className="works-4">
                 <h3><i>Clear Sky with a Palm Background</i></h3>
                 <img src={skyshot2} alt="work-4"></img>
-                <div className = "works-description">
+                <div className="works-description">
                     <p>
                         This is a photo I took on November 2020. On this day, it was clear, sunny, and
                         pretty warm, and not as hot as I hoped. I figured during this time that it would
