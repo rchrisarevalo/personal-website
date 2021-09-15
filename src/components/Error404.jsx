@@ -11,7 +11,7 @@ const Error404 = () => {
                 <br></br>
                 <Link to="/about">About Me</Link>
                 <Link to="/posts">Posts</Link>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact">Contact Info</Link>
             </div>
         </div>
     );
