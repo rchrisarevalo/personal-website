@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/" exact component={Load}/>
         <Route path ="/about" exact component={Intro}/>
         <Route path="/posts" exact component={Posts}/>
-        <Route path="/contact" exact component={Contact}/>
+        <Route path="/contact-info" exact component={Contact}/>
         <Route path="/posts/2021/august" exact component={August_Posts}/>
         <Route exact component={Error404}/>
       </Switch>
