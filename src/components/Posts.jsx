@@ -47,6 +47,18 @@ const Posts = () => {
                 </p>
                 <div className="post">
                     <p id="post-content">
+                        This will be brief. I updated the website's font to make it more appealing for users visiting
+                        this site. I hope you enjoy this update!
+                    </p>
+                    <p id="post-content">
+                        -- Ruben Christopher Arevalo
+                    </p>
+                    <p id="post-date">
+                        Posted on 9/15/2021 at 1:12 AM.
+                    </p>
+                </div>
+                <div className="post">
+                    <p id="post-content">
                         I am leaving this here to let y'all know that I am doing fine! I am really busy doing
                         college work and I am currently bombarded by a lot of homework. I am trying my best to
                         have some free time between college and maintaining this website.
