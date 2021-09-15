@@ -47,6 +47,19 @@ const Posts = () => {
                 </p>
                 <div className="post">
                     <p id = "post-content">
+                        I am leaving this here to let y'all know that I am doing fine! I am really busy doing
+                        college work and I am currently bombarded by a lot of homework. I am trying my best to
+                        have some free time between college and maintaining this website.
+                    </p>
+                    <p id = "post-content">
+                        -- Ruben Christopher Arevalo
+                    </p>
+                    <p id = "post-date">
+                        Posted on 9/14/2021 at 8:39 PM.
+                    </p>
+                </div>
+                <div className="post">
+                    <p id = "post-content">
                         Happy Labor Day, everyone! I hope y'all have a wonderful one!
                     </p>
                     <p id = "post-content">
