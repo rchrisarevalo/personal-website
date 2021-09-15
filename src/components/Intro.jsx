@@ -64,6 +64,18 @@ const Intro = () => {
                     </p>
                     <div className="post">
                         <p id="post-content">
+                            This will be brief. I updated the website's font to make it more appealing for users visiting
+                            this site. I hope you enjoy this update!
+                        </p>
+                        <p id="post-content">
+                            -- Ruben Christopher Arevalo
+                        </p>
+                        <p id="post-date">
+                            Posted on 9/15/2021 at 1:12 AM.
+                        </p>
+                    </div>
+                    <div className="post">
+                        <p id="post-content">
                             I am leaving this here to let y'all know that I am doing fine! I am really busy doing
                             college work and I am currently bombarded by a lot of homework. I am trying my best to
                             have some free time between college and maintaining this website.
@@ -84,26 +96,6 @@ const Intro = () => {
                         </p>
                         <p id="post-date">
                             Posted on 9/6/2021 at 1:19 AM.
-                        </p>
-                    </div>
-                    <div className="post" id="post-intro-margin">
-                        <p id="post-content">
-                            I want to make another major announcement regarding my post archival policy. I have decided to
-                            archive all posts <b>by the last day of each month</b>. In other words, I will completely wipe off
-                            the main "Posts" page at 11:59 PM on the last day of each month and move them into a separate
-                            page that contains posts for that month only (e.g. August). This will take effect immediately.
-                        </p>
-                        <p id="post-content">
-                            In addition, I will disable the current month's selection option. For instance, if it's September,
-                            then the link to view archived posts for this month will be disabled until October. After that deadline
-                            has expired, and as I have mentioned before, I will move the posts from that month into their own
-                            separate page. Then, the link will be available afterwards.
-                        </p>
-                        <p id="post-content">
-                            -- Ruben Christopher Arevalo
-                        </p>
-                        <p id="post-date">
-                            Posted on 9/1/2021 at 12:00 AM.
                         </p>
                     </div>
                 </div>
