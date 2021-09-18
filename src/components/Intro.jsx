@@ -31,10 +31,34 @@ const Intro = () => {
                         <BsExclamationCircle size="18px" id="update-icon" /> UPDATE:
                     </p>
                     <p>
-                        If you have noticed, the font has been changed once again. I chose this font because I thought
-                        it looked really modern and fit well with the theme of this site. In addition, I might be
-                        posting less during the next three months due to me focusing on college coursework. If I have
-                        free time, I will try my best to continue to maintain this website.
+                        The update is explained in my most recent post/announcement:
+                    </p>
+                    <p>
+                        <i>
+                            Hello everyone! I am here to announce yet another UI change, only this time, the posts appear as if they are glowing.
+                            I added a little bit of touch to the UI of the posts to make it more modern and appealing. There have also been
+                            some changes to the mobile app as well, such as centering the "About the Author" section in the "About Me"
+                            page since a left text align did not suit well in the mobile version.
+                        </i>
+                    </p>
+                    <p>
+                        <i>
+                            If you have any issues regarding the user interface or the overall function of this page, please do not hesitate to
+                            contact me through either the "Report" or "Contact Me" form by clicking one of the buttons on the top right of
+                            the page (or the top right for the former or the "Report" option that can be found in the navigation bar in the
+                            mobile version).
+                        </i>
+                    </p>
+                    <p>
+                        <i>
+                            Have a wonderful rest of the day (if you happen to be awake to see this, yes I stay up late most of the time).
+                        </i>
+                    </p>
+                    <p>
+                        <i>-- Ruben Christopher Arevalo</i>
+                    </p>
+                    <p>
+                        <i>Posted on 9/18/2021 at 1:04 AM.</i>
                     </p>
                     <br></br>
                 </div>
