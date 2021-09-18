@@ -2,7 +2,7 @@
 
 * This website was made using React.js.
 
-# UPDATES (made on September 14, 2021):
+# UPDATES (made on September 18, 2021):
 
 * The new UI contains the following:
     * A glowing-like effect has been added to the announcement posts to make it more appealing.
