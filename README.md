@@ -1,6 +1,7 @@
 # Personal Website (v2.4.0)
 
 * This website was made using React.js.
+* Updates are made every week or so, depending on how busy I am.
 
 # UPDATES (made on September 18, 2021):
 
