@@ -664,8 +664,8 @@ footer{
     margin-right: 10%;
   }
   .error-message a{
-     margin-left: 20%;
-     margin-right: 20%;
+     margin-left: 12%;
+     margin-right: 12%;
   }
   .update-message{
     margin-left: 7%;
@@ -796,6 +796,11 @@ footer{
   }
   .posts-container-intro{
     margin: 1em;
+  }
+  #post-margin{
+    margin: 1.25em;
+    margin-top: 50px;
+    box-shadow: 0 0 5px white;
   }
   #post-intro-margin{
     margin: 0.5em;

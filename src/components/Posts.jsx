@@ -10,7 +10,7 @@ const Posts = () => {
     return (
         <div className="posts-main">
             <Helmet>
-                <title>Ruben C. Arevalo - Personal Website - Current Posts</title>
+                <title>Ruben C. Arevalo - Personal Website - Current Announcements</title>
             </Helmet>
             <Nav />
             <div className="notification" id="warning-notif-2">
@@ -19,7 +19,7 @@ const Posts = () => {
                 </div>
             </div>
             <div className="posts-container">
-                <h1 id="posts-title">Current Posts</h1>
+                <h1 id="posts-title">Current Announcements</h1>
                 <br></br>
                 <div className="posts-catalog">
                     <div className="posts-month">
@@ -30,12 +30,12 @@ const Posts = () => {
                             title="2021"
                             className="mt-1 rounded disabled"
                         >
-                            <Dropdown.Item href="#/posts" active>Current posts</Dropdown.Item>
-                            <Dropdown.Item href="#/posts/2021/august">
+                            <Dropdown.Item href="#/announcements" active>Announcements</Dropdown.Item>
+                            <Dropdown.Item href="#/announcements/2021/august">
                                 August
                             </Dropdown.Item>
-                            <Dropdown.Item href="#/posts/2021/september" disabled>September</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3" disabled>October</Dropdown.Item>
+                            <Dropdown.Item href="#/announcements/2021/september" disabled>September</Dropdown.Item>
+                            <Dropdown.Item href="#/announcements/2021/october" disabled>October</Dropdown.Item>
                         </DropdownButton>
                     </div>
                 </div>
@@ -45,7 +45,21 @@ const Posts = () => {
                     Old posts will be <b>archived</b> on the last day of each month. Any posts that have not reached
                     this deadline yet will stay on this page.
                 </p>
-                <div className="post" id="post-intro-margin">
+                <div className="post" id="post-margin">
+                    <p id="post-content">
+                        Huge announcement! "Posts" has been renamed to "Announcements". The latter seems like a more
+                        appropriate title because I only release these posts as official announcements for changes
+                        that have occurred or are occurring on this website. I also use it for the holidays
+                        whenever I get the chance. I hope you enjoy the new change!
+                    </p>
+                    <p id="post-content">
+                        -- Ruben Christopher Arevalo
+                    </p>
+                    <p id="post-date">
+                        Posted on 9/18/2021 at 2:07 AM.
+                    </p>
+                </div>
+                <div className="post" id="post-margin">
                     <p id="post-content">
                         Hello everyone! I am here to announce yet another UI change, only this time, the posts appear as if they are glowing.
                         I added a little bit of touch to the UI of the posts to make it more modern and appealing. There have also been
@@ -68,7 +82,7 @@ const Posts = () => {
                         Posted on 9/18/2021 at 1:04 AM.
                     </p>
                 </div>
-                <div className="post" id="post-intro-margin">
+                <div className="post" id="post-margin">
                     <p id="post-content">
                         This will be brief. I updated the website's font to make it more appealing for users visiting
                         this site. I hope you enjoy this update!
@@ -80,7 +94,7 @@ const Posts = () => {
                         Posted on 9/15/2021 at 1:12 AM.
                     </p>
                 </div>
-                <div className="post" id="post-intro-margin">
+                <div className="post" id="post-margin">
                     <p id="post-content">
                         I am leaving this here to let y'all know that I am doing fine! I am really busy doing
                         college work and I am currently bombarded by a lot of homework. I am trying my best to
@@ -93,7 +107,7 @@ const Posts = () => {
                         Posted on 9/14/2021 at 8:39 PM.
                     </p>
                 </div>
-                <div className="post" id="post-intro-margin">
+                <div className="post" id="post-margin">
                     <p id="post-content">
                         Happy Labor Day, everyone! I hope y'all have a wonderful one!
                     </p>
@@ -104,7 +118,7 @@ const Posts = () => {
                         Posted on 9/6/2021 at 1:19 AM.
                     </p>
                 </div>
-                <div className="post" id="post-intro-margin">
+                <div className="post" id="post-margin">
                     <p id="post-content">
                         I want to make another major announcement regarding my post archival policy. I have decided to
                         archive all posts <b>by the last day of each month</b>. In other words, I will completely wipe off

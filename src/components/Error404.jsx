@@ -10,7 +10,7 @@ const Error404 = () => {
                 <p>Here are some links below that can help you resolve this issue:</p>
                 <br></br>
                 <Link to="/about">About Me</Link>
-                <Link to="/posts">Posts</Link>
+                <Link to="/announcements">Announcements</Link>
                 <Link to="/contact-info">Contact Info</Link>
             </div>
         </div>

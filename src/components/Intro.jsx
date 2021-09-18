@@ -31,7 +31,7 @@ const Intro = () => {
                         <BsExclamationCircle size="18px" id="update-icon" /> UPDATE:
                     </p>
                     <p>
-                        The update is explained in my most recent post/announcement:
+                        The update is explained in my most recent announcement:
                     </p>
                     <p>
                         <i>
@@ -81,11 +81,25 @@ const Intro = () => {
                 <hr></hr>
                 <br></br>
                 <div className="posts-container-intro">
-                    <h1 id="posts-title-intro">Recent Posts</h1>
+                    <h1 id="posts-title-intro">Recent Announcement</h1>
                     <p id="posts-description-intro">
                         The last three recent posts will be posted here. This page will be updated daily.
-                        To view all posts, click on "Posts" on the navigation bar.
+                        To view all posts, click on "Announcements" on the navigation bar.
                     </p>
+                    <div className="post" id="post-margin">
+                        <p id="post-content">
+                            Huge announcement! "Posts" has been renamed to "Announcements". The latter seems like a more
+                            appropriate title because I only release these posts as official announcements for changes
+                            that have occurred or are occurring on this website. I also use it for the holidays
+                            whenever I get the chance. I hope you enjoy the new change!
+                        </p>
+                        <p id="post-content">
+                            -- Ruben Christopher Arevalo
+                        </p>
+                        <p id="post-date">
+                            Posted on 9/18/2021 at 2:07 AM.
+                        </p>
+                    </div>
                     <div className="post" id="post-intro-margin">
                         <p id="post-content">
                             Hello everyone! I am here to announce yet another UI change, only this time, the posts appear as if they are glowing.
@@ -119,19 +133,6 @@ const Intro = () => {
                         </p>
                         <p id="post-date">
                             Posted on 9/15/2021 at 1:12 AM.
-                        </p>
-                    </div>
-                    <div className="post" id="post-intro-margin">
-                        <p id="post-content">
-                            I am leaving this here to let y'all know that I am doing fine! I am really busy doing
-                            college work and I am currently bombarded by a lot of homework. I am trying my best to
-                            have some free time between college and maintaining this website.
-                        </p>
-                        <p id="post-content">
-                            -- Ruben Christopher Arevalo
-                        </p>
-                        <p id="post-date">
-                            Posted on 9/14/2021 at 8:39 PM.
                         </p>
                     </div>
                 </div>

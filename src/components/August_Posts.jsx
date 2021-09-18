@@ -11,7 +11,7 @@ const August_Posts = () => {
         <div className="posts-main">
             <Nav />
             <Helmet>
-                <title>Ruben C. Arevalo - Personal Website - Posts (August 2021)</title>
+                <title>Ruben C. Arevalo - Personal Website - Announcements (August 2021)</title>
             </Helmet>
             <div className="notification" id="warning-notif-2">
                 <div className="notification-content" id="notif-2">
@@ -19,7 +19,7 @@ const August_Posts = () => {
                 </div>
             </div>
             <div className="posts-container">
-                <h1 id="posts-title">Posts (August 2021)</h1>
+                <h1 id="posts-title">Announcements (August 2021)</h1>
                 <br></br>
                 <div className="posts-catalog">
                     <div className="posts-month">
@@ -30,12 +30,12 @@ const August_Posts = () => {
                             title="2021"
                             className="mt-1 rounded disabled"
                         >
-                            <Dropdown.Item href="#/posts">Current posts</Dropdown.Item>
-                            <Dropdown.Item href="#/posts/2021/august" active>
+                            <Dropdown.Item href="#/announcements">Announcements</Dropdown.Item>
+                            <Dropdown.Item href="#/announcements/2021/august" active>
                                 August
                             </Dropdown.Item>
-                            <Dropdown.Item href="#/posts/2021/september" disabled>September</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3" disabled>October</Dropdown.Item>
+                            <Dropdown.Item href="#/announcements/2021/september" disabled>September</Dropdown.Item>
+                            <Dropdown.Item href="#/announcements/2021/october" disabled>October</Dropdown.Item>
                         </DropdownButton>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ const August_Posts = () => {
                     These are all the posts for August 2021 that were archived on this page. None of these posts will
                     be deleted or edited unless I decide otherwise.
                 </p>
-                <div className="post" id="post-intro-margin">
+                <div className="post" id="post-margin">
                     <p id="post-content">
                         Today is the last day of the month! I am going to make the September select option
                         available tomorrow by 12:30 AM or earlier!
@@ -56,7 +56,7 @@ const August_Posts = () => {
                         Posted on 8/31/2021 at 6:54 PM.
                     </p>
                 </div>
-                <div className="post" id="post-intro-margin">
+                <div className="post" id="post-margin">
                     <p id="post-content">
                         Hello everyone:
                     </p>
@@ -80,7 +80,7 @@ const August_Posts = () => {
                         Posted on 8/29/2021 at 11:25 PM.
                     </p>
                 </div>
-                <div className="post" id="post-intro-margin">
+                <div className="post" id="post-margin">
                     <p id="post-content">
                         Hello everyone:
                     </p>
@@ -104,7 +104,7 @@ const August_Posts = () => {
                         Posted on 8/29/2021 at 11:25 PM.
                     </p>
                 </div>
-                <div className="post" id="post-intro-margin">
+                <div className="post" id="post-margin">
                     <p id="post-content">
                         Hi, y'all! I regret to inform everyone using this website that the dark/light theme toggler
                         has been removed. I made this decision because I thought a darker theme would be more
@@ -123,7 +123,7 @@ const August_Posts = () => {
                         Posted on 8/25/2021 at 10:36 AM.
                     </p>
                 </div>
-                <div className="post" id="post-intro-margin">
+                <div className="post" id="post-margin">
                     <p id="post-content">
                         I am posting this to let y'all know that today is the first time I go back to college
                         in person since the pandemic started last March. What this means is that I won't be able
@@ -137,7 +137,7 @@ const August_Posts = () => {
                         Posted on 8/23/2021 at 10:21 AM.
                     </p>
                 </div>
-                <div className="post" id="post-intro-margin">
+                <div className="post" id="post-margin">
                     <p id="post-content">
                         Good evening, everyone! I am happy to announce that I have made some new updates to this
                         site. I included a notificiation like message that pops up whenever you interact with one
@@ -153,7 +153,7 @@ const August_Posts = () => {
                         Posted on 8/22/2021 at 8:50 PM.
                     </p>
                 </div>
-                <div className="post" id="post-intro-margin">
+                <div className="post" id="post-margin">
                     <p id="post-content">
                         Hi everyone! If any of you have seen my last post, I will retract my policy to delete
                         30 day old posts. I will instead archive these posts into categories sorted
@@ -167,7 +167,7 @@ const August_Posts = () => {
                         Posted on 8/19/2021 at 3:41 PM.
                     </p>
                 </div>
-                <div className="post" id="post-intro-margin">
+                <div className="post" id="post-margin">
                     <p id="post-content">
                         I have already included a page directory below for the "Posts" page.
                         Each page will have 5 posts. The 30 day post removal policy for
@@ -180,7 +180,7 @@ const August_Posts = () => {
                         Posted on 8/16/2021 at 7:42 PM.
                     </p>
                 </div>
-                <div className="post" id="post-intro-margin">
+                <div className="post" id="post-margin">
                     <p id="post-content">
                         Hi everyone!
                     </p>
@@ -198,7 +198,7 @@ const August_Posts = () => {
                         Posted on 8/16/2021 at 6:29 PM.
                     </p>
                 </div>
-                <div className="post" id="post-intro-margin">
+                <div className="post" id="post-margin">
                     <p id="post-content">
                         Hello everyone! Today, I have made several updates regarding this website.
                     </p>
@@ -229,7 +229,7 @@ const August_Posts = () => {
                         Posted on 8/16/2021 at 3:29 AM.
                     </p>
                 </div>
-                <div className="post" id="post-intro-margin">
+                <div className="post" id="post-margin">
                     <p id="post-content">
                         I have introduced a new UI (User Interface) for this website. It might look the same,
                         but there a few differences with this update. For instance, there is now a loading
@@ -249,7 +249,7 @@ const August_Posts = () => {
                         Posted on 8/10/2021 at 8:28 PM.
                     </p>
                 </div>
-                <div className="post" id="post-intro-margin">
+                <div className="post" id="post-margin">
                     <p id="post-content">
                         Hi everyone! The update message has been taken down after
                         appearing on the home screen after three days, as I
@@ -268,7 +268,7 @@ const August_Posts = () => {
                         Posted on 8/10/2021 at 12:00 AM.
                     </p>
                 </div>
-                <div className="post" id="post-intro-margin">
+                <div className="post" id="post-margin">
                     <p id="post-content">
                         And the post feature works!
                     </p>
@@ -283,7 +283,7 @@ const August_Posts = () => {
                         Posted on 8/8/2021 at 4:56 PM.
                     </p>
                 </div>
-                <div className="post" id="post-intro-margin">
+                <div className="post" id="post-margin">
                     <p id="post-content">
                         Hi everyone! This is a test post to keep y'all updated on upcoming updates and
                         new features. I don't know how long this post will be, so I will try my best to
