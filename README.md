@@ -1,10 +1,14 @@
-# Personal Website (v2.3.3)
+# Personal Website (v2.4.0)
 
 * This website was made using React.js.
 
 # UPDATES (made on September 14, 2021):
 
-* Source code files were formatted for better organization and readability.
+* The new UI contains the following:
+    * A glowing-like effect has been added to the announcement posts to make it more appealing.
+    * Some style changes have been made to the mobile version.
+    * "Posts" has been renamed to "Announcements".
+    * Parameters for the new "Announcements" page have been changed. It will no longer be '/posts', but instead it will be '/announcements'.  
 
 # Copyright Notice
 
