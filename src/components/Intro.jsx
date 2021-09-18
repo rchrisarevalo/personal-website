@@ -35,7 +35,7 @@ const Intro = () => {
                     </p>
                     <p>
                         <i>
-                            Hello everyone! I am here to announce yet another UI change, only this time, the posts appear as if they are glowing.
+                            Hello everyone! I am here to announce yet another UI change, only this time, the posts appear with a border outline.
                             I added a little bit of touch to the UI of the posts to make it more modern and appealing. There have also been
                             some changes to the mobile app as well, such as centering the "About the Author" section in the "About Me"
                             page since a left text align did not suit well in the mobile version.
