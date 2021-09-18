@@ -86,7 +86,7 @@ const Intro = () => {
                         The last three recent posts will be posted here. This page will be updated daily.
                         To view all posts, click on "Announcements" on the navigation bar.
                     </p>
-                    <div className="post" id="post-margin">
+                    <div className="post" id="post-intro-margin">
                         <p id="post-content">
                             Huge announcement! "Posts" has been renamed to "Announcements". The latter seems like a more
                             appropriate title because I only release these posts as official announcements for changes
@@ -102,7 +102,7 @@ const Intro = () => {
                     </div>
                     <div className="post" id="post-intro-margin">
                         <p id="post-content">
-                            Hello everyone! I am here to announce yet another UI change, only this time, the posts appear as if they are glowing.
+                            Hello everyone! I am here to announce yet another UI change, only this time, the posts appear with a border outline.
                             I added a little bit of touch to the UI of the posts to make it more modern and appealing. There have also been
                             some changes to the mobile app as well, such as centering the "About the Author" section in the "About Me"
                             page since a left text align did not suit well in the mobile version.

@@ -556,7 +556,7 @@ hr{
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 17.5px;
-  box-shadow: 0 0 5px white;
+  border: 1px solid white;
 }
 
 #post-content{
@@ -800,12 +800,12 @@ footer{
   #post-margin{
     margin: 1.25em;
     margin-top: 50px;
-    box-shadow: 0 0 5px white;
+    border: 1px solid white;
   }
   #post-intro-margin{
     margin: 0.5em;
     margin-top: 50px;
-    box-shadow: 0 0 5px white;
+    border: 1px solid white;
   }
   #posts-title{
     margin-top: 45px;

@@ -6,7 +6,7 @@
 # UPDATES (made on September 18, 2021):
 
 * The new UI contains the following:
-    * A glowing-like effect has been added to the announcement posts to make it more appealing.
+    * A border has been added to the announcement posts to make it more appealing.
     * Some style changes have been made to the mobile version.
     * "Posts" has been renamed to "Announcements".
     * Parameters for the new "Announcements" page have been changed. It will no longer be '/posts', but instead it will be '/announcements'.  
