@@ -13,6 +13,10 @@ body{
   letter-spacing: 0.5px;
 }
 
+#mobile-remove{
+  transform: translateY(-1px);
+}
+
 h1{
   letter-spacing: 0px;
 }
@@ -370,7 +374,7 @@ hr{
 
 #works-title{
   text-align: left;
-  margin-left: 45px;
+  margin-left: 75px;
 }
 
 .works-container{
@@ -416,7 +420,7 @@ hr{
 }
 
 .works-1 img, .works-2 img, .works-3 img, .works-4 img{
-  width: 35%;
+  width: 25%;
   border-radius: 2%;
   float: left;
 }

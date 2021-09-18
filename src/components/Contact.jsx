@@ -37,6 +37,25 @@ const Contact = () => (
                 than anticipated response time provided above.
             </p>
             <p>
+                <strong>
+                    Since the footer is not being pushed to the bottom of the page like any other regular website would,
+                    I am going to fill this section with a bunch of filler until the footer is pushed to the bottom. You
+                    can ignore this particular section of the page since it's just me typing a bunch of nonsense here.
+                    But anyways...
+                </strong>
+            </p>
+            <p>
+                <strong>
+                    I am going to include my official contact info here, along with a few references:
+                </strong>
+            </p>
+            <p>
+                Email: <a href="mailto:rubenplayer105@gmail.com" id="contact-link">rubenplayer105@gmail.com</a>
+            </p>
+            <p>
+                Social media: <a href="https://github.com/rchrisarevalo" id="contact-link">Github</a> and <a href="https://www.linkedin.com/in/ruben-arevalo-4944251b7/" id="contact-link">Linkedin</a>
+            </p>
+            <p>
                 Have a nice day, everyone!
             </p>
         </div>
