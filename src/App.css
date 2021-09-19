@@ -765,12 +765,16 @@ footer{
     margin-left: 5%;
     margin-right: 5%;
   }
-  .works-1 img, .works-2 img, .works-3 img, .works-4 img{
+  .works-1 img, .works-2 img, .works-3 img, .works-4 img, .works-5 img, .works-6 img{
     width: 75%;
     align-items: center;
     text-align: center;
   }
-  .works-1, .works-2, .works-3, .works-4{
+  .works-1 h3, .works-2 h3, .works-3 h3, .works-4 h3, .works-5 h3, .works-6 h3{
+    text-align: center;
+    margin-right: 40px;
+  }
+  .works-1, .works-2, .works-3, .works-4, .works-5, .works-6{
     margin: 0em;
   }
   #work-description{
@@ -787,6 +791,8 @@ footer{
   }
   .works-description p{
     text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
   }
   .work-update{
     margin-left: 7%;

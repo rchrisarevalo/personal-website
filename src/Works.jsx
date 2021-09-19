@@ -111,7 +111,7 @@ const Works = () => {
                 </div>
             </div>
             <div className="works-6">
-                <h3><i>Clear Sky with a Palm Background (July 2021)</i></h3>
+                <h3><i>Clear Sky with a Palm Background (AGAIN) (July 2021)</i></h3>
                 <img src={skyshot4} alt="work-5"></img>
                 <div className="works-description">
                     <p>
