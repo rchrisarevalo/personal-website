@@ -301,6 +301,7 @@ hr{
 }
 
 .update-message{
+  display: none;
   font-family: 'Urbanist', sans-serif;
   text-align: left;
   margin: .5em;
