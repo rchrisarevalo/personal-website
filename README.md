@@ -8,6 +8,7 @@
 * The new UI contains the following:
     * A border has been added to the announcement posts to make it more appealing.
     * Some style changes have been made to the mobile version.
+    * New works have been included in the "About Me" page.
     * "Posts" has been renamed to "Announcements".
     * Parameters for the new "Announcements" page have been changed. It will no longer be '/posts', but instead it will be '/announcements'.  
 
