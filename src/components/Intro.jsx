@@ -88,6 +88,19 @@ const Intro = () => {
                     </p>
                     <div className="post" id="post-intro-margin">
                         <p id="post-content">
+                            I am writing this to let y'all know that I expanded the size of the navigation bar for both
+                            the web and mobile versions of this site. It's nothing big; just a small change to the
+                            UI design of this website.
+                        </p>
+                        <p id="post-content">
+                            -- Ruben Christopher Arevalo
+                        </p>
+                        <p id="post-date">
+                            Posted on 9/21/2021 at 4:09 PM.
+                        </p>
+                    </div>
+                    <div className="post" id="post-intro-margin">
+                        <p id="post-content">
                             Huge announcement! "Posts" has been renamed to "Announcements". The latter seems like a more
                             appropriate title because I only release these posts as official announcements for changes
                             that have occurred or are occurring on this website. I also use it for the holidays
@@ -121,18 +134,6 @@ const Intro = () => {
                         </p>
                         <p id="post-date">
                             Posted on 9/18/2021 at 1:04 AM.
-                        </p>
-                    </div>
-                    <div className="post" id="post-intro-margin">
-                        <p id="post-content">
-                            This will be brief. I updated the website's font to make it more appealing for users visiting
-                            this site. I hope you enjoy this update!
-                        </p>
-                        <p id="post-content">
-                            -- Ruben Christopher Arevalo
-                        </p>
-                        <p id="post-date">
-                            Posted on 9/15/2021 at 1:12 AM.
                         </p>
                     </div>
                 </div>
