@@ -44,6 +44,9 @@ const August_Posts = () => {
                     These are all the posts for August 2021 that were archived on this page. None of these posts will
                     be deleted or edited unless I decide otherwise.
                 </p>
+                <p id="posts-description">
+                    Last modified: 9/21/2021 at 4:34 PM. Reason: duplicate post removed.
+                </p>
                 <div className="post" id="post-margin">
                     <p id="post-content">
                         Today is the last day of the month! I am going to make the September select option
