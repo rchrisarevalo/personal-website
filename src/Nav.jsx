@@ -44,7 +44,7 @@ const Nav = () => {
       <ul className="nav-list">
         <li><Link to="/about">About Me</Link></li>
         <li><Link to="/announcements">Announcements</Link></li>
-        <li><Link to="/contact-info">Contact Information</Link></li>
+        <li><Link to="/contact-info">Contact Info</Link></li>
         <div className="button">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSu_sZqwO_m42GKlmXKrA30hyTglQQY1N3V2PIcdGc87WbXg/viewform" rel="noopener noreferrer" target="_blank"><IoWarningOutline size="22px" id="report-icon" />Report</a>
         </div>
