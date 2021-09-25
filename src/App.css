@@ -571,6 +571,11 @@ hr{
   font-style: italic;
 }
 
+#post-margin{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
 .contact-info h1{
   font-family: 'Urbanist', sans-serif;
   font-weight: 800;
@@ -807,7 +812,7 @@ footer{
     margin: 1em;
   }
   #post-margin{
-    margin: 1.25em;
+    margin: 1.5em;
     margin-top: 50px;
     border: 1px solid white;
   }
