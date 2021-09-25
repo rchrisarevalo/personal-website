@@ -55,7 +55,7 @@ const Posts = () => {
                         -- Ruben Christopher Arevalo
                     </p>
                     <p id="post-date">
-                        Posted on 9/25/2021 at 11:24 AM.
+                        Posted on 9/25/2021 at 11:25 AM.
                     </p>
                 </div>
                 <div className="post" id="post-margin">
