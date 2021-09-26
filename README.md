@@ -1,11 +1,15 @@
-# Personal Website (v2.4.1)
+# Personal Website (v2.5.0)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on September 21, 2021):
+# UPDATES (made on September 26, 2021):
 
-* I expanded the size of the navigation bar for both web and mobile versions of this site for more flexibility.
+* The new UI design includes some of the following changes:
+    * Color scheme of the footer and navigation bar has changed.
+    * A hover-like effect has been added for more appeal.
+    * The announcement posts background has been changed.
+    * A redesign of the "Works" section in the "About Me" page has been implemented.
 
 # Copyright Notice
 
