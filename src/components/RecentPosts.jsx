@@ -10,6 +10,19 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-intro-margin">
                 <p id="post-content">
+                    Hi everyone! I am leaving this announcement here to let y'all know that this website underwent a UI
+                    (user interface) design change once again. I changed the color of the navigation bar, the posts, and
+                    redesigned the "Works" section in the "About Me" page. I hope you all enjoy the new design!
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 9/26/2021 at 3:43 PM.
+                </p>
+            </div>
+            <div className="post" id="post-intro-margin">
+                <p id="post-content">
                     In addition, I reduced the announcement margins for this page only. The ones in the "Recent Announcements"
                     section in the "About Me" page are not affected by this change. Once again, I made this change so that
                     it can be similar to the posts in the "About Me" page.
@@ -38,19 +51,6 @@ const RecentPosts = () => {
                 </p>
                 <p id="post-date">
                     Posted on 9/25/2021 at 11:24 AM.
-                </p>
-            </div>
-            <div className="post" id="post-intro-margin">
-                <p id="post-content">
-                    I am writing this to let y'all know that I expanded the size of the navigation bar for both
-                    the web and mobile versions of this site. It's nothing big; just a small change to the
-                    UI design of this website.
-                </p>
-                <p id="post-content">
-                    -- Ruben Christopher Arevalo
-                </p>
-                <p id="post-date">
-                    Posted on 9/21/2021 at 4:09 PM.
                 </p>
             </div>
         </div>
