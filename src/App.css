@@ -378,7 +378,13 @@ hr{
 
 #works-title{
   text-align: left;
-  margin-left: 75px;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+#work-description{
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .works-container{
@@ -398,19 +404,9 @@ hr{
   text-transform: uppercase;
 }
 
-#work-description{
-  margin-left: 3.5%;
-  margin-right: 3.5%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 17.5px;
-  font-weight: 200;
-  text-align: left;
-}
-
 .works-1, .works-2, .works-3, .works-4, .works-5, .works-6{
   display: inline-block;
-  width: 50%;
+  width: 30%;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -419,39 +415,22 @@ hr{
   font-weight: 700;
   text-transform: uppercase;
   font-size: 23px;
-  text-align: left;
-  margin-left: 45px;
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .works-1 img, .works-2 img, .works-3 img, .works-4 img, .works-5 img, .works-6 img{
-  width: 30%;
+  width: 40%;
+  align-items: center;
+  margin-right: 31%;
   border-radius: 2%;
   box-shadow: 0 0 4px black;
-  float: left;
 }
 
 #photo{
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.works-description{
-  float: right;
-  background: #252525;
-  box-shadow: 0 0 4px black;
-  width: 50%;
-  border-radius: 1%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 45px;
-  margin-top: 45px;
-  margin-right: 150px;
-  font-size: 17px;
-}
-
-.work-update{
-  margin-left: 15%;
-  margin-right: 15%;
 }
 
 .contact-info{
@@ -780,10 +759,12 @@ footer{
     width: 75%;
     align-items: center;
     text-align: center;
+    margin-right: 7%;
   }
   .works-1 h3, .works-2 h3, .works-3 h3, .works-4 h3, .works-5 h3, .works-6 h3{
     text-align: center;
     margin-right: 40px;
+    margin-left: 40px;
   }
   .works-1, .works-2, .works-3, .works-4, .works-5, .works-6{
     width: 100%;
@@ -791,18 +772,7 @@ footer{
   #work-description{
     margin-left: 5%;
     margin-right: 5%;
-  }
-  .works-description{
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
-    transform: translateX(150px);
-  }
-  .works-description p{
-    text-align: center;
-    margin-left: 0%;
-    margin-right: 0%;
+    text-align: left;
   }
   .posts-container{
     margin: 0.25em;
