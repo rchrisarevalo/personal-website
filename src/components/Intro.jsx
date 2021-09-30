@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import profilepic from '../images/August 2021 Profile Pic 2.jpg';
 
 import Nav from "../Nav.jsx";
-import Footer from "../Footer.jsx";
+import NewFooter from "../NewFooter.jsx";
 import Update from "./Update.jsx";
 import RecentPosts from './RecentPosts';
 import Works from "../Works.jsx";
@@ -44,7 +44,7 @@ const Intro = () => {
                 <br></br>
                 <Works />
             </div>
-            <Footer />
+            <NewFooter />
         </div>
     );
 }
