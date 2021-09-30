@@ -31,7 +31,6 @@ const September_Posts = () => {
                                 August
                             </Dropdown.Item>
                             <Dropdown.Item href="#/announcements/2021/september" active>September</Dropdown.Item>
-                            <Dropdown.Item href="#/announcements/2021/october" disabled>October</Dropdown.Item>
                         </DropdownButton>
                     </div>
                 </div>
