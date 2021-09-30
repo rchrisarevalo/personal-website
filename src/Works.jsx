@@ -7,7 +7,6 @@ import skyshot3 from './images/sky-palm-march-2021.jpg';
 import skyshot4 from './images/sky-palm-july2021.jpg';
 
 const Works = () => {
-
     return (
         <div className="works-container">
             <h1 id="works-title">Works</h1>
@@ -29,7 +28,7 @@ const Works = () => {
                 <img src={skyshot1} alt="work-3"></img>
             </div>
             <div className="works-4">
-                <h3><i>Clear Sky with a Palm Background</i></h3>
+                <h3><i>Clear Sky with a Palm Background (November 2021)</i></h3>
                 <img src={skyshot2} alt="work-4"></img>
             </div>
             <div className="works-5">

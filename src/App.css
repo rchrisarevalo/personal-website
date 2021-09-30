@@ -608,6 +608,10 @@ footer{
   margin-right: 10%;
 }
 
+#margin-description{
+  margin-right: 20px;
+}
+
 .copyright{
   font-family: 'Urbanist', sans-serif;
   font-size: 14px;
@@ -617,6 +621,8 @@ footer{
 
 .copyright p{
   text-align: center;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 #padding-copyright{
@@ -705,6 +711,8 @@ footer{
   }
   .intro-container{
     margin: 0em;
+    margin-left: 0%;
+    margin-right: 0%;
   }
   .intro{
     margin: 0em;
@@ -824,18 +832,25 @@ footer{
   }
   footer{
     padding-top: 25px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     text-align: center;
   }
   .new-footer{
     padding-top: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+  }
+  #margin-description{
+    margin: 0px;
   }
   .copyright{
     text-align: center;
     font-size: 14px;
     padding-top: 10px;
     padding-bottom: 15px;
+  }
+  .copyright p{
+    margin-left: 0%;
+    margin-right: 0%;
   }
   #padding-links{
     text-align: center;
@@ -847,8 +862,9 @@ footer{
     padding-bottom: 0px;
   }
   #new-copyright{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
   }
   #new-links{
     text-align: center;

@@ -5,7 +5,7 @@ const NewFooter = () => {
         <footer className="new-footer">
             <div className="new-footer-row">
                 <div className="social-media-links" id="new-links">
-                    <li><b>Follow me on social media:</b></li>
+                    <li id="margin-description"><b>Follow me on social media:</b></li>
                     <li><a href="https://www.linkedin.com/in/ruben-arevalo-4944251b7/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
                     <li><a href="https://github.com/rchrisarevalo" target="_blank" rel="noopener noreferrer">Github</a></li>
                 </div>
