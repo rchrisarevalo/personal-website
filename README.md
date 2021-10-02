@@ -6,8 +6,8 @@
 # UPDATES (made on October 1, 2021):
 
 * Footer has been redesigned.
-* Posts from previous months have been archived.
-* New October announcements have been posted on my website!
+* Announcements from last month have been archived.
+* Two new announcements have been posted on my website!
 
 # Copyright Notice
 
