@@ -1,12 +1,13 @@
-# Personal Website (v2.5.1)
+# Personal Website (v2.6.0)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on September 30, 2021):
+# UPDATES (made on October 1, 2021):
 
-* The footer's copyright notice has been updated with more information:
-    * Note that the information that was added to the copyright notice deters any copyright infringment attempts from anyone attempting to copy the site without permission.
+* Footer has been redesigned.
+* Posts from previous months have been archived.
+* New October announcements have been posted on my website!
 
 # Copyright Notice
 
