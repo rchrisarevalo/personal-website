@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from 'react-helmet';
-import profilepic from '../images/August 2021 Profile Pic 2.jpg';
+import profilepic from '../images/IMG-2007 (Cropped).jpg';
 
 import Nav from "../Nav.jsx";
 import NewFooter from "../NewFooter.jsx";

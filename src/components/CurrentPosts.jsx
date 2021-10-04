@@ -28,9 +28,21 @@ const CurrentPosts = () => {
             <br></br>
             <p id="posts-description">
                 This is the page where I will be posting regular updates that are being made to this site.
-                Old posts will be <b>archived</b> on the last day of each month. Any posts that have not reached
-                this deadline yet will stay on this page.
+                Old posts will be <b>archived</b> on the last day of each month. This means that after the
+                last day of each month has come to pass, then this whole page (minus the archive page) will
+                be wiped out completely and be replaced with a post for the new month.
             </p>
+            <div className="post" id="post-margin">
+                <p id="post-content">
+                    A new profile pic has been added. I hope you all like it!
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 10/4/2021 at 2:23 PM.
+                </p>
+            </div>
             <div className="post" id="post-margin">
                 <p id="post-content">
                     I hope you are all having a good day today! I will be here to make a small update probably
