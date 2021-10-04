@@ -33,6 +33,18 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-content">
+                    I hope you are all having a good day today! I will be here to make a small update probably
+                    later this week when my schedule is hopefully not so full.
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 10/4/2021 at 1:59 PM.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-content">
                     In addition, I will be having midterms around this month. So I don't expect to be writing
                     announcements as much nor making updates at the same rate as I am right now. However, I
                     will try my best to make time so I can maintain this site on a 1 to 2 week basis (or even

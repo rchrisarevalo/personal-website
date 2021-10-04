@@ -10,6 +10,18 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-intro-margin">
                 <p id="post-content">
+                    I hope you are all having a good day today! I will be here to make a small update probably
+                    later this week when my schedule is hopefully not so full.
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 10/4/2021 at 1:59 PM.
+                </p>
+            </div>
+            <div className="post" id="post-intro-margin">
+                <p id="post-content">
                     In addition, I will be having midterms around this month. So I don't expect to be writing
                     announcements as much nor making updates at the same rate as I am right now. However, I
                     will try my best to make time so I can maintain this site on a 1 to 2 week basis (or even
@@ -34,19 +46,6 @@ const RecentPosts = () => {
                 </p>
                 <p id="post-date">
                     Posted on 10/1/2021 at 12:00 AM.
-                </p>
-            </div>
-            <div className="post" id="post-intro-margin">
-                <p id="post-content">
-                   In addition, this will be the last post for this month. The whole "Announcements"
-                   section (with the exception of 'Recent Announcements') will be wiped and replaced
-                   with a post (or posts) for the new month (which is October).
-                </p>
-                <p id="post-content">
-                    -- Ruben Christopher Arevalo
-                </p>
-                <p id="post-date">
-                    Posted on 9/30/2021 at 1:06 AM.
                 </p>
             </div>
         </div>
