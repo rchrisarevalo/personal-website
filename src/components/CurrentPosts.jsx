@@ -45,6 +45,17 @@ const CurrentPosts = () => {
             </div>
             <div className="post" id="post-margin">
                 <p id="post-content">
+                    A new profile pic has been added. I hope you all like it!
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 10/4/2021 at 2:23 PM.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-content">
                     I hope you are all having a good day today! I will be here to make a small update probably
                     later this week when my schedule is hopefully not so full.
                 </p>
