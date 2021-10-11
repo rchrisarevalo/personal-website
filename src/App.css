@@ -154,7 +154,7 @@ hr{
   font-weight: 200;
   text-transform: uppercase;
   color: white;
-  font-size: 18px;
+  font-size: 17px;
   text-decoration: none;
   transition: .5s;
 }
@@ -201,7 +201,7 @@ hr{
 
 .nav-list li{
   list-style: none;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 30px;
 }
 
@@ -237,7 +237,7 @@ hr{
   border-radius: 25px;
   padding: 7.5px 25px;
   font-family: 'Urbanist', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 2px;
   text-align: center;
   align-items: center;
@@ -348,7 +348,7 @@ hr{
   font-family: 'Urbanist', sans-serif;
   text-align: center;
   align-items: center;
-  font-size: 17.5px;
+  font-size: 15px;
   font-weight: 200;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -390,7 +390,7 @@ hr{
 .works-container{
   font-family: 'Urbanist', sans-serif;
   margin: 0.5em;
-  font-size: 17.5px;
+  font-size: 15px;
   text-align: center;
   align-items: center;
   font-weight: 200;
@@ -436,7 +436,7 @@ hr{
 .contact-info{
   margin: 1.5em;
   font-family: 'Urbanist', sans-serif;
-  font-size: 17.5px;
+  font-size: 15px;
   text-align: center;
   align-items: center;
   font-weight: 200;
@@ -470,7 +470,7 @@ hr{
 
 .posts-select{
   width: 40vh;
-  font-size: 18px;
+  font-size: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding: 15px;
@@ -515,7 +515,7 @@ hr{
   margin-left: 10%;
   margin-right: 10%;
   font-weight: 200;
-  font-size: 17.5px;
+  font-size: 15px;
 }
 
 #posts-description-intro{
@@ -524,7 +524,7 @@ hr{
   margin-left: 4%;
   margin-right: 4%;
   font-weight: 200;
-  font-size: 17.5px;
+  font-size: 15px;
 }
 
 .post{
@@ -540,7 +540,7 @@ hr{
   margin-right: 10%;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 17.5px;
+  font-size: 15px;
 }
 
 #post-content{
