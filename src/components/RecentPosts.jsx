@@ -10,36 +10,43 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-intro-margin">
                 <p id="post-content">
-                    A new profile pic has been added (again). I hope you all like it!
+                    I will continue to post announcements here occasionally to let y'all know how I am doing with
+                    my life so far in case this website has not been updated in the past 7 days or so. So thank you
+                    everyone, and have a great and safe weekend!
                 </p>
                 <p id="post-content">
                     -- Ruben Christopher Arevalo
                 </p>
                 <p id="post-date">
-                    Posted on 10/11/2021 at 11:27 AM.
+                    Posted on 10/15/2021 at 9:54 AM.
                 </p>
             </div>
             <div className="post" id="post-intro-margin">
                 <p id="post-content">
-                    A new profile pic has been added. I hope you all like it!
+                    Also, I am not going to be updating this website as frequently as I did in the past three months.
+                    Since I am a college student, I am a critical point of the semester where I must be focusing on
+                    passing my courses so as to ensure my continued progress on attaining my bachelor's degree.
+                    I hope that I make enough time to work on this website and most likely restyle it for this upcoming
+                    Halloween on October 31st.
                 </p>
                 <p id="post-content">
                     -- Ruben Christopher Arevalo
                 </p>
                 <p id="post-date">
-                    Posted on 10/4/2021 at 2:23 PM.
+                    Posted on 10/15/2021 at 9:54 AM.
                 </p>
             </div>
             <div className="post" id="post-intro-margin">
                 <p id="post-content">
-                    I hope you are all having a good day today! I will be here to make a small update probably
-                    later this week when my schedule is hopefully not so full.
+                    So if you want to contact me at any given moment for any issue you have or to leave a comment, please
+                    feel free to press the "Contact Me" button on the top right of the navigation bar (or the message icon
+                    on the top right on the mobile version of this site.
                 </p>
                 <p id="post-content">
                     -- Ruben Christopher Arevalo
                 </p>
                 <p id="post-date">
-                    Posted on 10/4/2021 at 1:59 PM.
+                    Posted on 10/15/2021 at 9:54 AM.
                 </p>
             </div>
         </div>
