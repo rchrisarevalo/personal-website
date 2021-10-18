@@ -8,7 +8,7 @@ const RecentPosts = () => {
                 The last three recent posts will be posted here. This page will be updated daily.
                 To view all posts, click on "Announcements" on the navigation bar.
             </p>
-            <div className="post" id="post-margin">
+            <div className="post" id="post-intro-margin">
                 <p id="post-content">
                     In addition, I will be updating this page for this upcoming Halloween at the
                     end of the month. The page will temporarily have the colors of Halloween,
@@ -25,7 +25,7 @@ const RecentPosts = () => {
                     Posted on 10/18/2021 at 12:06 PM.
                 </p>
             </div>
-            <div className="post" id="post-margin">
+            <div className="post" id="post-intro-margin">
                 <p id="post-content">
                     Small change to the page. I changed my LinkedIn profile link and have included the
                     new link in the footer below in each page.
