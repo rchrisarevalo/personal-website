@@ -8,7 +8,7 @@ const RecentPosts = () => {
                 The last three recent posts will be posted here. This page will be updated daily.
                 To view all posts, click on "Announcements" on the navigation bar.
             </p>
-            <div className="post" id="post-margin">
+            <div className="post" id="post-intro-margin">
                 <p id="post-content">
                     I will also be changing how this website operates, especially during the holidays. I will
                     elaborate further in another post after Halloween is over. About a week before Thanksgiving,
@@ -24,7 +24,7 @@ const RecentPosts = () => {
                     Posted on 10/22/2021 at 6:07 PM.
                 </p>
             </div>
-            <div className="post" id="post-margin">
+            <div className="post" id="post-intro-margin">
                 <p id="post-content">
                     Hi everyone! I am just leaving this here to wish y'all a good weekend! I had a very
                     busy week, working on assignments and quizzes assigned to me as usual. I want to
