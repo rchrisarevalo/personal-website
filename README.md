@@ -3,9 +3,12 @@
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on October 18, 2021):
+# UPDATES (made on October 23, 2021):
 
-* I got a new link for my LinkedIn page. I updated the link to my LinkedIn page on the footer.
+* New announcement:
+    * The page has been redesigned with the Halloween colors.
+    * This new design is limited, and will be taken down on November 1st at 12 AM.
+* Once the design is taken down, then the original design before this one will be implemented.
 
 # Copyright Notice
 
