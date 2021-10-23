@@ -41,7 +41,7 @@ const CurrentPosts = () => {
                     -- Ruben Christopher Arevalo
                 </p>
                 <p id="post-date">
-                    Posted on 10/22/2021 at 6:07 PM.
+                    Posted on 10/23/2021 at 3:06 PM.
                 </p>
             </div>
             <div className="post" id="post-margin">
@@ -58,7 +58,7 @@ const CurrentPosts = () => {
                     -- Ruben Christopher Arevalo
                 </p>
                 <p id="post-date">
-                    Posted on 10/22/2021 at 6:07 PM.
+                    Posted on 10/23/2021 at 3:06 PM.
                 </p>
             </div>
             <div className="post" id="post-margin">
