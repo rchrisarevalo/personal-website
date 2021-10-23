@@ -8,7 +8,7 @@ const RecentPosts = () => {
                 The last three recent posts will be posted here. This page will be updated daily.
                 To view all posts, click on "Announcements" on the navigation bar.
             </p>
-            <div className="post" id="post-margin">
+            <div className="post" id="post-intro-margin">
                 <p id="post-content">
                     If you have any questions, please feel free to contact me through the form or my email
                     if you have any suggestions or comments about the design!
@@ -20,7 +20,7 @@ const RecentPosts = () => {
                     Posted on 10/23/2021 at 3:06 PM.
                 </p>
             </div>
-            <div className="post" id="post-margin">
+            <div className="post" id="post-intro-margin">
                 <p id="post-content">
                     Hi everyone! I hope y'all are having a great weekend! I am happy to announce that I have
                     redesigned this website to fit the theme of this year's upcoming Halloween festivites.
