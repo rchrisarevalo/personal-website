@@ -1,4 +1,4 @@
-# Personal Website (v2.7.1)
+# Personal Website (v2.8.0)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
