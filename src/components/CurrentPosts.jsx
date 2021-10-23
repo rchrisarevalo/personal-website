@@ -52,9 +52,6 @@ const CurrentPosts = () => {
                     then the website will revert to its original design.
                 </p>
                 <p id="post-content">
-                    Thank you and have a great weekend!
-                </p>
-                <p id="post-content">
                     -- Ruben Christopher Arevalo
                 </p>
                 <p id="post-date">
