@@ -12,4 +12,4 @@
 
 # Copyright Notice
 
-© 2021 Ruben Christopher Arevalo. This repository will not be copied, modified, reproduced, or distributed through unauthorized means without my consent.
+© 2021 Ruben Christopher Arevalo. This repository will not be copied, modified, reproduced, or distributed through unauthorized means.
