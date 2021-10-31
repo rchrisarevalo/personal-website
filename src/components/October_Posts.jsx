@@ -41,6 +41,18 @@ const October_Posts = () => {
                 </p>
                 <div className="post" id="post-margin">
                     <p id="post-content">
+                        Happy Halloween everyone! I hope you all had a wonderful weekend so far! Please keep yourself
+                        and others safe!
+                    </p>
+                    <p id="post-content">
+                        -- Ruben Christopher Arevalo
+                    </p>
+                    <p id="post-date">
+                        Posted on 10/31/2021 at 1:51 AM.
+                    </p>
+                </div>
+                <div className="post" id="post-margin">
+                    <p id="post-content">
                         If you have any questions, please feel free to contact me through the form or my email
                         if you have any suggestions or comments about the design!
                     </p>
