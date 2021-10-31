@@ -8,8 +8,8 @@
 }
 
 body{
-  color: white;
-  background: #24252B;
+  color: black;
+  background: #ff6c00;
   letter-spacing: 0.5px;
 }
 
@@ -30,7 +30,7 @@ html{
 }
 
 hr{
-  background: white;
+  background: black;
   margin-left: 1%;
   margin-right: 1%;
   padding: 2px;
@@ -38,11 +38,11 @@ hr{
 }
 
 ::-webkit-scrollbar{
-  width: 4px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-thumb{
-  background: grey;
+  background: black;
   border-radius: 25px;
 }
 
@@ -77,7 +77,7 @@ hr{
   text-align: center;
   letter-spacing: none;
   font-size: 18.5px;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .error-message a{
@@ -85,11 +85,11 @@ hr{
   margin-right: 31%;
   margin-bottom: 25px;
   padding: 10px;
-  color: white;
+  color: black;
   background: transparent;
   text-decoration: none;
   font-family: 'Urbanist', sans-serif;
-  border: 1px solid white;
+  border: 2px solid black;
   font-weight: 800;
   display: flex;
   flex-direction: column;
@@ -138,7 +138,7 @@ hr{
   display: flex;
   justify-content: space-around;
   width: 100%;
-  background: #121212;
+  background: #9700f8;
   box-shadow: 0 0 4px black;
   align-items: center;
   padding-top: 9px;
@@ -151,9 +151,9 @@ hr{
 .logo a{
   font-family: 'Poppins', sans-serif;
   letter-spacing: 2px;
-  font-weight: 200;
+  font-weight: 500;
   text-transform: uppercase;
-  color: white;
+  color: black;
   font-size: 17px;
   text-decoration: none;
   transition: .5s;
@@ -208,11 +208,11 @@ hr{
 .nav-list li a{
   text-decoration: none;
   align-items: center;
-  color: white;
+  color: black;
   padding: 7px 20px;
   line-height: 25px;
   border-radius: 25px;
-  font-weight: 200;
+  font-weight: 600;
   transition: .5s;
   letter-spacing: 0.5px;
 }
@@ -226,13 +226,13 @@ hr{
 
 .button{
   padding-bottom: 0px;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.5px;
 }
 
 .button a{
-  border: 1px solid white;
-  color: white;
+  border: 2px solid black;
+  color: black;
   text-decoration: none;
   border-radius: 25px;
   padding: 7.5px 25px;
@@ -249,7 +249,7 @@ hr{
   background: white;
   font-weight: 900;
   color: black;
-  border: 1px solid black;
+  border: 2px solid black;
   transition: .5s;
 }
 
@@ -393,7 +393,7 @@ hr{
   font-size: 16.5px;
   text-align: center;
   align-items: center;
-  font-weight: 200;
+  font-weight: 500;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -528,11 +528,11 @@ hr{
 }
 
 .post{
-  background: #252525;
+  background: #1df700;
   box-shadow: 0 0 4px black;
   font-family: 'Urbanist', sans-serif;
-  font-weight: 200;
-  color: white;
+  font-weight: 500;
+  color: black;
   border-radius: 5px;
   margin: 2em;
   text-align: left;
@@ -570,6 +570,7 @@ hr{
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: left;
+  font-weight: 500;
 }
 
 #contact-link{
@@ -577,20 +578,20 @@ hr{
 }
 
 footer{
-  background: #121212;
+  background: #9700f8;
   box-shadow: 0 0 4px black;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: white;
+  color: black;
   text-align: center;
 }
 
 .new-footer{
-  background: #121212;
+  background: #9700f8;
   box-shadow: 0 0 4px black;
   padding-top: 35px;
   padding-bottom: 15px;
-  color: white;
+  color: black;
   text-align: center;
 }
 
@@ -615,7 +616,7 @@ footer{
 .copyright{
   font-family: 'Urbanist', sans-serif;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -632,7 +633,7 @@ footer{
 .social-media-links{
   font-family: 'Urbanist', sans-serif;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 600;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -644,7 +645,7 @@ footer{
 
 .social-media-links li a{
   text-decoration: none;
-  color: white;
+  color: black;
   border-radius: 25px;
   transition: .5s;
   padding: 4px 12px;
@@ -744,7 +745,7 @@ footer{
     justify-content: space-evenly;
     flex-direction: column;
     position: fixed;
-    background: #121212;
+    background: #9700f8;
     width: 100%;
     height: 100%;
     padding-top: -30px;

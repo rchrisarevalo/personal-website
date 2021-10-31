@@ -12,7 +12,7 @@ const CurrentPosts = () => {
                 <div className="posts-month">
                     <DropdownButton
                         id="dropdown-button-dark-example2"
-                        variant="secondary"
+                        variant="warning"
                         menuVariant="dark"
                         title="2021"
                         className="mt-1 rounded disabled"
@@ -35,10 +35,9 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-content">
-                    Hi everyone! This is the first post for this month, and sticking with the Thanksgiving theme,
-                    I am thankful to introduce it here. As I have said in a previous post about a week ago, I will
-                    make a major announcement as to how this website operates, especially during the holidays,
-                    just before Thanksgiving later this month.
+                    I will also be changing how this website operates, especially during the holidays. I will
+                    elaborate further in another post after Halloween is over. About a week before Thanksgiving,
+                    I will provide my explanation as to what changes will be made to this website.
                 </p>
                 <p id="post-content">
                     If you have any questions, don't be afraid to contact me through my email or the contact form

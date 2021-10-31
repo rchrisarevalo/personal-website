@@ -40,8 +40,13 @@ const RecentPosts = () => {
             </div>
             <div className="post" id="post-intro-margin">
                 <p id="post-content">
-                    If you have any questions, please feel free to contact me through the form or my email
-                    if you have any suggestions or comments about the design!
+                    Hi everyone! I hope y'all are having a great weekend! I am happy to announce that I have
+                    redesigned this website to fit the theme of this year's upcoming Halloween festivites.
+                    This design will stay up until November 1st, at 12 AM. After that deadline has passed,
+                    then the website will revert to its original design.
+                </p>
+                <p id="post-content">
+                    Thank you and have a great weekend!
                 </p>
                 <p id="post-content">
                     -- Ruben Christopher Arevalo
