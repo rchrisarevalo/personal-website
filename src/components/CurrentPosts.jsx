@@ -18,10 +18,11 @@ const CurrentPosts = () => {
                         className="mt-1 rounded disabled"
                     >
                         <Dropdown.Item href="#/announcements" active>Announcements</Dropdown.Item>
-                        <Dropdown.Item href="#/announcements/2021/august">
+                        <Dropdown.Item href="#/announcements/2021/August">
                             August
                         </Dropdown.Item>
-                        <Dropdown.Item href="#/announcements/2021/september">September</Dropdown.Item>
+                        <Dropdown.Item href="#/announcements/2021/September">September</Dropdown.Item>
+                        <Dropdown.Item href="#/announcements/2021/October">October</Dropdown.Item>
                     </DropdownButton>
                 </div>
             </div>
