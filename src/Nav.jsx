@@ -31,13 +31,13 @@ const Nav = () => {
     <nav className="nav-bar">
 
       <div className="burger-icon" onClick={activateNav}>
-        <IoIosMenu id="burger-style" size="28px" color="black" />
+        <IoIosMenu id="burger-style" size="28px" color="white" />
       </div>
       <div className="logo">
         <a href={"./"}>Ruben C. Arevalo</a>
       </div>
       <div className="contact-icon" onClick={displayNotif}>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1nR8hmOAMRTU3fDZsbLRGkjzKvA9uRLZW_YdvsyBEctqDOw/viewform" target="_blank" rel="noreferrer"><IoSendOutline id="contact-style" color="black" /></a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1nR8hmOAMRTU3fDZsbLRGkjzKvA9uRLZW_YdvsyBEctqDOw/viewform" target="_blank" rel="noreferrer"><IoSendOutline id="contact-style" color="white" /></a>
       </div>
 
       <ul className="nav-list">

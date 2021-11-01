@@ -12,7 +12,7 @@ const CurrentPosts = () => {
                 <div className="posts-month">
                     <DropdownButton
                         id="dropdown-button-dark-example2"
-                        variant="warning"
+                        variant="secondary"
                         menuVariant="dark"
                         title="2021"
                         className="mt-1 rounded disabled"

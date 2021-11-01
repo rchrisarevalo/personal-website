@@ -32,7 +32,7 @@ const Intro = () => {
                 </p>
                 <p>
                     Feel free to contact me through either Github or Linkedin. The profile links are attached in the footer below
-                    the page. You may also feel free to contact me through my email at <a href="mailto:rubenplayer105@gmail.com">rubenplayer105@gmail.com</a>.
+                    the page. You may also feel free to contact me through my email at <a href="mailto:rubenplayer105@gmail.com"><b>rubenplayer105@gmail.com</b></a>.
                 </p>
                 <br></br>
                 <hr></hr>
