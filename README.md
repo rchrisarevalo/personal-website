@@ -1,14 +1,12 @@
-# Personal Website (v2.8.0)
+# Personal Website (v2.9.0)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on October 23, 2021):
+# UPDATES (made on November 1, 2021):
 
-* New announcement:
-    * The page has been redesigned with the Halloween colors.
-    * This new design is limited, and will be taken down on November 1st at 12 AM.
-* Once the design is taken down, then the original design before this one will be implemented.
+* The original design has been reverted back from its Halloween design.
+* A new design for the Thanksgiving season will be implemented during the week of Thanksgiving.
 
 # Copyright Notice
 
