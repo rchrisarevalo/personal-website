@@ -1,12 +1,11 @@
-# Personal Website (v2.9.0)
+# Personal Website (v2.9.1)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on November 1, 2021):
+# UPDATES (made on November 4, 2021):
 
-* The original design has been reverted back from its Halloween design.
-* A new design for the Thanksgiving season will be implemented during the week of Thanksgiving.
+* Dependabot detected multiple vulenerable dependencies in the codebase for this website. I am happy to say that a majority of those dependencies (minus one since there was no immediate fix for it) have been upgraded to their latest versions. 
 
 # Copyright Notice
 
