@@ -35,6 +35,50 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-content">
+                    With those two announcements out of the way, if you have any questions, please feel free to
+                    contact me! Thank you and have a great rest of the day!
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 11/4/2021 at 10:59 AM.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-content">
+                    Secondly and lastly, some of you may have noticed that new icons have appeared on the navigation
+                    bar next to the title of the links. I decided that including the links by themselves with no
+                    aesthetic wasn't appealing, as a good portion of the sites on the internet have icons next to
+                    the links on the navigation bar.
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 11/4/2021 at 10:59 AM.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-content">
+                    Good morning! I made a few fixes last night, as well making a minor design change to the
+                    UI of this page.
+                </p>
+                <p id="post-content">
+                    First, it has come to my attention that several of the dependencies that make up the codebase
+                    of this website have been found to have several vulnerabilities, most of them being severe
+                    and one of them at most being critical. Thankfully, I managed to fix the issue by upgrading
+                    the dependencies to their latest versions.
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 11/4/2021 at 10:59 AM.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-content">
                     I will also be changing how this website operates, especially during the holidays. I will
                     elaborate further in another post after Halloween is over. About a week before Thanksgiving,
                     I will provide my explanation as to what changes will be made to this website.
