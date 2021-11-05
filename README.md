@@ -5,7 +5,7 @@
 
 # UPDATES (made on November 4, 2021):
 
-* Dependabot detected multiple vulenerable dependencies in the codebase for this website. I am happy to say that a majority of those dependencies (minus one since there was no immediate fix for it) have been upgraded to their latest versions. 
+* Dependabot detected multiple vulnerable dependencies in the codebase for this website. I am happy to say that a majority of those dependencies (minus one since there was no immediate fix for it) have been upgraded to their latest versions. 
 
 # Copyright Notice
 
