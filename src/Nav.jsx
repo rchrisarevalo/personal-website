@@ -41,9 +41,9 @@ const Nav = () => {
       </div>
 
       <ul className="nav-list">
-        <li><Link to="/about"><IoIosInformationCircleOutline id="nav-icons-style" size="18px"/>About Me</Link></li>
-        <li><Link to="/announcements"><IoMegaphoneOutline id="nav-icons-style" size="18px"/>Announcements</Link></li>
-        <li><Link to="/contact-info"><IoIosContact id="nav-icons-style" size="18px"/>Contact Info</Link></li>
+        <li><Link to="/about"><IoIosInformationCircleOutline id="nav-icons-style" size="18px" />About Me</Link></li>
+        <li><Link to="/announcements"><IoMegaphoneOutline id="nav-icons-style" size="18px" />Announcements</Link></li>
+        <li><Link to="/contact-info"><IoIosContact id="nav-icons-style" size="18px" />Contact Info</Link></li>
         <div className="button" onClick={displayNotif} id="mobile-remove">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1nR8hmOAMRTU3fDZsbLRGkjzKvA9uRLZW_YdvsyBEctqDOw/viewform" target="_blank" rel="noreferrer"><IoSendOutline size="22px" id="report-icon" />Contact Me</a>
         </div>
