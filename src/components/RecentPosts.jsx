@@ -10,46 +10,40 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-intro-margin">
                 <p id="post-content">
-                    With those two announcements out of the way, if you have any questions, please feel free to
-                    contact me! Thank you and have a great rest of the day!
+                    Now that I am done delivering these announcements, I wish you all a good day. Please
+                    be happy and stay safe!
                 </p>
                 <p id="post-content">
                     -- Ruben Christopher Arevalo
                 </p>
                 <p id="post-date">
-                    Posted on 11/5/2021 at 10:59 AM.
+                    Posted on 11/10/2021 at 8:55 AM.
                 </p>
             </div>
             <div className="post" id="post-intro-margin">
                 <p id="post-content">
-                    Secondly and lastly, some of you may have noticed that new icons have appeared on the navigation
-                    bar next to the title of the links. I decided that including the links by themselves with no
-                    aesthetic wasn't appealing, as a good portion of the sites on the internet have icons next to
-                    the links on the navigation bar.
+                    Also, next week, I will announce some big changes as to how this website is going to
+                    operate (well, one big change).
                 </p>
                 <p id="post-content">
                     -- Ruben Christopher Arevalo
                 </p>
                 <p id="post-date">
-                    Posted on 11/5/2021 at 10:59 AM.
+                    Posted on 11/10/2021 at 8:55 AM.
                 </p>
             </div>
             <div className="post" id="post-intro-margin">
                 <p id="post-content">
-                    Good morning! I made a few fixes last night, as well making a minor design change to the
-                    UI of this page.
-                </p>
-                <p id="post-content">
-                    First, it has come to my attention that several of the dependencies that make up the codebase
-                    of this website have been found to have several vulnerabilities, most of them being severe
-                    and one of them at most being critical. Thankfully, I managed to fix the issue by upgrading
-                    the dependencies to their latest versions.
+                    However, that doesn't take away my time to announce that I will put up a Thanksgiving
+                    decoration makeup here on my website. During the week of Thanksgiving, I am going to
+                    be working on applying the decoration the week before the holidays, and making sure
+                    it is enjoyable for people visiting this website.
                 </p>
                 <p id="post-content">
                     -- Ruben Christopher Arevalo
                 </p>
                 <p id="post-date">
-                    Posted on 11/5/2021 at 10:59 AM.
+                    Posted on 11/10/2021 at 8:55 AM.
                 </p>
             </div>
         </div>

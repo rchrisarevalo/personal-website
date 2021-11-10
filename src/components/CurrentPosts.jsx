@@ -35,6 +35,69 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-content">
+                    Now that I am done delivering these announcements, I wish you all a good day. Please
+                    be happy and stay safe!
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 11/10/2021 at 8:55 AM.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-content">
+                    Also, next week, I will announce some big changes as to how this website is going to
+                    operate (well, one big change).
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 11/10/2021 at 8:55 AM.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-content">
+                    However, that doesn't take away my time to announce that I will put up a Thanksgiving
+                    decoration makeup here on my website. During the week of Thanksgiving, I am going to
+                    be working on applying the decoration the week before the holidays, and making sure
+                    it is enjoyable for people visiting this website.
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 11/10/2021 at 8:55 AM.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-content">
+                    As I am a college student, finals are a few weeks ahead, and I have to catch up with the
+                    material for each of my classes. So if I don't post here that often, this is the reason
+                    why.
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 11/10/2021 at 8:55 AM.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-content">
+                    Good morning! I am leaving this here to let y'all know that I am going to be a little
+                    bit busier this month and the weeks that follow.
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 11/10/2021 at 8:55 AM.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-content">
                     With those two announcements out of the way, if you have any questions, please feel free to
                     contact me! Thank you and have a great rest of the day!
                 </p>
