@@ -8,7 +8,7 @@ const RecentPosts = () => {
                 The last three recent posts will be posted here. This page will be updated daily.
                 To view all posts, click on "Announcements" on the navigation bar.
             </p>
-            <div className="post" id="post-margin">
+            <div className="post" id="post-intro-margin">
                 <p id="post-content">
                     Starting this Thanksgiving and any other holiday from that point on, the website will have a 
                     fixed size screen that will tell visitors that operations have ceased for a day due to the holidays
