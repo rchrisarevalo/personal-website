@@ -35,7 +35,9 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-content">
-                    
+                    Hello everyone! As promised, I am prepared to make an announcement that will potentially
+                    change as to how this website operates. Instead of being open during the holidays, this
+                    website, along with my CV website, will close during the holidays.
                 </p>
                 <p id="post-content">
                     -- Ruben Christopher Arevalo
