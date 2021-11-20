@@ -35,6 +35,19 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-content">
+                    Starting this Thanksgiving and any other holiday from that point on, the website will have a 
+                    fixed size screen that will tell visitors that operations have ceased for a day due to the holidays
+                    and that they will resume as normal after they are over.
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 11/20/2021 at 11:00 AM.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-content">
                     Hello everyone! As promised, I am prepared to make an announcement that will potentially
                     change as to how this website operates. Instead of being open during the holidays, this
                     website, along with my CV website, will close during the holidays.
