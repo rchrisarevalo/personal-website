@@ -1,11 +1,14 @@
-# Personal Website (v2.9.1)
+# Personal Website (v2.9.2)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on November 4, 2021):
+# UPDATES (made on November 20, 2021):
 
-* Dependabot detected multiple vulnerable dependencies in the codebase for this website. I am happy to say that all of them have been upgraded to their latest version and all vulnerabilities have been addressed.
+* I made the following announcement in the website as to how it is going to operate in the future, especially during the holidays:
+    * Starting this Thanksgiving, every time a holiday approaches, the website will close in observance of that holiday.
+
+* I also updated some information in the "Contact" page, removing a section of the page that included info as to how to report bugs through the "Report" button (which has been removed).
 
 # Copyright Notice
 
