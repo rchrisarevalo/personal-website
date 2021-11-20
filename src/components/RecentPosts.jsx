@@ -8,7 +8,7 @@ const RecentPosts = () => {
                 The last three recent posts will be posted here. This page will be updated daily.
                 To view all posts, click on "Announcements" on the navigation bar.
             </p>
-            <div className="post" id="post-margin">
+            <div className="post" id="post-intro-margin">
                 <p id="post-content">
                     Despite this, I will leave a "Contact" button where everyone is able to leave me a message that I
                     can respond to after the holidays are over. I hope you all have a fantastic Thanksgiving!
