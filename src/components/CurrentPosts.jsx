@@ -35,6 +35,17 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-content">
+                    
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 11/20/2021 at 11:00 AM.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-content">
                     Now that I am done delivering these announcements, I wish you all a good day. Please
                     be happy and stay safe!
                 </p>
