@@ -35,6 +35,31 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-content">
+                    Despite this, I will leave a "Contact" button where everyone is able to leave me a message that I
+                    can respond to after the holidays are over. I hope you all have a fantastic Thanksgiving!
+                    Please stay safe and enjoy!
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 11/20/2021 at 11:00 AM.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-content">
+                    In addition, the website navigation bar for each page will be removed so as to indicate my point
+                    that the website is closed for the holidays.
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 11/20/2021 at 11:00 AM.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-content">
                     Starting this Thanksgiving and any other holiday from that point on, the website will have a 
                     fixed size screen that will tell visitors that operations have ceased for a day due to the holidays
                     and that they will resume as normal after they are over.
