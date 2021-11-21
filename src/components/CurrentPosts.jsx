@@ -37,13 +37,13 @@ const CurrentPosts = () => {
                 <p id="post-content">
                     I already implemented the Thanksgiving decoration for this website, just as I promised.
                     The decoration just contains only the colors of the holiday to fit in with the Thanksgiving
-                    theme.
+                    theme. Have a wonderful holiday and stay safe!
                 </p>
                 <p id="post-content">
                     -- Ruben Christopher Arevalo
                 </p>
                 <p id="post-date">
-                    Posted on 11/21/2021 at 4:05 PM.
+                    Posted on 11/21/2021 at 4:01 PM.
                 </p>
             </div>
             <div className="post" id="post-margin">
