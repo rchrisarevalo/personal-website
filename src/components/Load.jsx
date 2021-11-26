@@ -8,7 +8,7 @@ import Spinner from 'react-bootstrap/Spinner';
 const Load = (props) => {
 
     setTimeout(() => {
-        props.history.push('/closed-website')
+        props.history.push('/about')
     }, 3000)
 
     return (
