@@ -10,40 +10,45 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-content">
-                    I already implemented the Thanksgiving decoration for this website, just as I promised.
-                    The decoration just contains only the colors of the holiday to fit in with the Thanksgiving
-                    theme. Have a wonderful holiday and stay safe!
+                    Anyways, that's all I have to say at the moment. Again, if you have any questions or suggestions
+                    as to how to update this site, please let me know by clicking on the "Contact Me" button on the
+                    top right corner of the page (or the paper plane icon in the mobile version of this site).
+                </p>
+                <p id="post-content">
+                    Thank you and have a great rest of the evening!
                 </p>
                 <p id="post-content">
                     -- Ruben Christopher Arevalo
                 </p>
                 <p id="post-date">
-                    Posted on 11/21/2021 at 4:01 PM.
+                    Posted on 12/03/2021 at 9:40 PM.
                 </p>
             </div>
             <div className="post" id="post-margin">
                 <p id="post-content">
-                    Despite this, I will leave a "Contact" button where everyone is able to leave me a message that I
-                    can respond to after the holidays are over. I hope you all have a fantastic Thanksgiving!
-                    Please stay safe and enjoy!
+                    After that's all said and done, I will focus on providing a new user interface for this website
+                    sometime during January or February, if time permits, as I will be back in school for another
+                    semester during that time.
                 </p>
                 <p id="post-content">
                     -- Ruben Christopher Arevalo
                 </p>
                 <p id="post-date">
-                    Posted on 11/20/2021 at 11:00 AM.
+                    Posted on 12/03/2021 at 9:40 PM.
                 </p>
             </div>
             <div className="post" id="post-margin">
                 <p id="post-content">
-                    In addition, the website navigation bar for each page will be removed so as to indicate my point
-                    that the website is closed for the holidays.
+                    Hi everyone! Sorry for the late changes, but I was busy with college as finals are already
+                    approaching. In addition, I might not post as often as I do this month because I have decided
+                    to take a 2-week hiatus from updating this site starting on December 13 and ending on December 27,
+                    right after Christmas.
                 </p>
                 <p id="post-content">
                     -- Ruben Christopher Arevalo
                 </p>
                 <p id="post-date">
-                    Posted on 11/20/2021 at 11:00 AM.
+                    Posted on 12/03/2021 at 9:40 PM.
                 </p>
             </div>
         </div>
