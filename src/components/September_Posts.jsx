@@ -32,7 +32,7 @@ const September_Posts = () => {
                             </Dropdown.Item>
                             <Dropdown.Item href="#/announcements/2021/September" active>September</Dropdown.Item>
                             <Dropdown.Item href="#/announcements/2021/October">October</Dropdown.Item>
-                            <Dropdown.Item href="#/announcements/2021/Oc">November</Dropdown.Item>
+                            <Dropdown.Item href="#/announcements/2021/November">November</Dropdown.Item>
                         </DropdownButton>
                     </div>
                 </div>
