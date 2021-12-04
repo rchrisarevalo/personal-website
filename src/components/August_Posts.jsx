@@ -36,6 +36,7 @@ const August_Posts = () => {
                             </Dropdown.Item>
                             <Dropdown.Item href="#/announcements/2021/September">September</Dropdown.Item>
                             <Dropdown.Item href="#/announcements/2021/October">October</Dropdown.Item>
+                            <Dropdown.Item href="#/announcements/2021/November">November</Dropdown.Item>
                         </DropdownButton>
                     </div>
                 </div>
