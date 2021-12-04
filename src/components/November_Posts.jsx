@@ -10,11 +10,11 @@ const November_Posts = () => {
     return (
         <div class="posts-main">
             <Helmet>
-                <title>Ruben C. Arevalo - Personal Website - Announcements (October 2021)</title>
+                <title>Ruben C. Arevalo - Personal Website - Announcements (November 2021)</title>
             </Helmet>
             <Nav />
             <div class="posts-container">
-                <h1 id="posts-title">Announcements (October 2021)</h1>
+                <h1 id="posts-title">Announcements (November 2021)</h1>
                 <br></br>
                 <div className="posts-catalog">
                     <div className="posts-month">
