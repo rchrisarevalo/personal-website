@@ -8,7 +8,7 @@ import Posts from "./components/Posts.jsx";
 import August_Posts from "./components/August_Posts.jsx";
 import September_Posts from "./components/September_Posts.jsx";
 import October_Posts from "./components/October_Posts.jsx";
-import November_Posts from "./components/November_Posts.jsx";l
+import November_Posts from "./components/November_Posts.jsx";
 import Contact from "./components/Contact.jsx";
 import Error404 from "./components/Error404.jsx";
 
