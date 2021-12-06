@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
   margin: 0;
@@ -149,12 +151,12 @@ hr{
 }
 
 .logo a{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 2px;
   font-weight: 200;
   text-transform: uppercase;
   color: white;
-  font-size: 17px;
+  font-size: 17.5px;
   text-decoration: none;
   transition: .5s;
 }
@@ -198,7 +200,7 @@ hr{
   justify-content: space-around;
   align-items: center;
   color: white;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   width: 65%;
   margin-top: 15px;
   margin-bottom: 17px;
@@ -241,7 +243,7 @@ hr{
   text-decoration: none;
   border-radius: 25px;
   padding: 7.5px 25px;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 15.5px;
   margin-bottom: 2px;
   text-align: center;
@@ -264,7 +266,7 @@ hr{
 }
 
 .notification{
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   margin-left: 37%;
   margin-right: 37%;
@@ -308,7 +310,7 @@ hr{
 
 .update-message{
   display: none;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 1.5em;
   margin-left: 25%;
   margin-right: 25%;
@@ -350,7 +352,7 @@ hr{
 }
 
 .intro-container{
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   align-items: center;
   font-size: 16.5px;
@@ -365,7 +367,7 @@ hr{
   font-weight: 800;
   font-family: 'Urbanist', sans-serif;
   text-align: left;
-  margin: 0.7em;
+  margin: 0.6em;
   text-transform: uppercase;
 }
 
@@ -393,7 +395,7 @@ hr{
 }
 
 .works-container{
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0.5em;
   font-size: 16.5px;
   text-align: center;
@@ -426,7 +428,7 @@ hr{
 }
 
 .works-1 img, .works-2 img, .works-3 img, .works-4 img, .works-5 img, .works-6 img{
-  width: 40%;
+  width: 45%;
   align-items: center;
   margin-right: 31%;
   border-radius: 2%;
@@ -440,7 +442,7 @@ hr{
 
 .contact-info{
   margin: 1.5em;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16.5px;
   text-align: center;
   align-items: center;
@@ -459,12 +461,12 @@ hr{
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .posts-container-intro{
   text-align: center;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .posts-month{
@@ -516,7 +518,7 @@ hr{
 
 #posts-description{
   text-align: center;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin-left: 10%;
   margin-right: 10%;
   font-weight: 200;
@@ -525,7 +527,7 @@ hr{
 
 #posts-description-intro{
   text-align: left;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin-left: 4%;
   margin-right: 4%;
   font-weight: 200;
@@ -533,9 +535,9 @@ hr{
 }
 
 .post{
-  background: #303030;
+  background: #3a3a3a;
   box-shadow: 0 0 4px black;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   color: white;
   border-radius: 5px;
@@ -620,7 +622,7 @@ footer{
 }
 
 .copyright{
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 200;
   text-align: center;
@@ -637,7 +639,7 @@ footer{
 }
 
 .social-media-links{
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 200;
   text-align: center;
