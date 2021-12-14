@@ -1,5 +1,11 @@
 import React from "react";
 
+function getCopyrightYear()
+{
+    const current_year = new Date().getFullYear();
+    return current_year;
+}
+
 const NewFooter = () => {
     return (
         <footer className="new-footer">
@@ -10,7 +16,7 @@ const NewFooter = () => {
                     <li><a href="https://github.com/rchrisarevalo" target="_blank" rel="noopener noreferrer">Github</a></li>
                 </div>
                 <div className="copyright" id="new-copyright">
-                    <p>&copy; 2021 Ruben Christopher Arevalo. This page will not be copied, modified, reproduced, or distributed through unauthorized means.</p>
+                    <p>&copy; {getCopyrightYear()} Ruben Christopher Arevalo. This page will not be copied, modified, reproduced, or distributed through unauthorized means.</p>
                 </div>
             </div>
         </footer>
