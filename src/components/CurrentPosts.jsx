@@ -65,7 +65,7 @@ const CurrentPosts = () => {
                 <p id="post-content">
                     Good evening, everyone. I know I am on a hiatus right now for the next two weeks, but I wanted
                     to leave this message here for anyone visiting this website to let y'all know that I am not
-                    going to be posting any content here during the break.
+                    going to be posting any content here during the holidays, especially right now.
                 </p>
                 <p id="post-content">
                     -- Ruben Christopher Arevalo
