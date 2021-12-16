@@ -3,8 +3,6 @@ import { Helmet } from "react-helmet";
 
 import Nav from "../Nav.jsx";
 import NewFooter from "../NewFooter.jsx";
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
 
 const August_Posts = () => {
     return (
@@ -20,26 +18,6 @@ const August_Posts = () => {
             </div>
             <div className="posts-container">
                 <h1 id="posts-title">Announcements (August 2021)</h1>
-                <br></br>
-                <div className="posts-catalog">
-                    <div className="posts-month">
-                        <DropdownButton
-                            id="dropdown-button-dark-example2"
-                            variant="secondary"
-                            menuVariant="dark"
-                            title="2021"
-                            className="mt-1 rounded disabled"
-                        >
-                            <Dropdown.Item href="#/announcements">Announcements</Dropdown.Item>
-                            <Dropdown.Item href="#/announcements/2021/August" active>
-                                August
-                            </Dropdown.Item>
-                            <Dropdown.Item href="#/announcements/2021/September">September</Dropdown.Item>
-                            <Dropdown.Item href="#/announcements/2021/October">October</Dropdown.Item>
-                            <Dropdown.Item href="#/announcements/2021/November">November</Dropdown.Item>
-                        </DropdownButton>
-                    </div>
-                </div>
                 <br></br>
                 <p id="posts-description">
                     These are all the posts for August 2021 that were archived on this page. None of these posts will

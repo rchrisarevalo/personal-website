@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Error404 = () => {
     return (
-        <div className="error-container">
-            <div className="error-message">
+        <div className="center-container">
+            <div className="center-message">
                 <h1>ERROR 404!</h1>
                 <p>Oops! It looks like what you were looking for does not exist on this website!</p>
                 <p>Here are some links below that can help you resolve this issue:</p>

@@ -56,7 +56,7 @@ hr{
   background: white;
 }
 
-.error-container{
+.center-container{
   font-family: 'Poppins', sans-serif;
   position: fixed;
   display: flex;
@@ -68,13 +68,13 @@ hr{
   overflow: hidden;
 }
 
-.error-message h1{
+.center-message h1{
   font-size: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.error-message p{
+.center-message p{
   font-family: 'Urbanist', sans-serif;
   text-align: center;
   letter-spacing: none;
@@ -82,7 +82,7 @@ hr{
   font-weight: 400;
 }
 
-.error-message a{
+.center-message a{
   margin-left: 31%;
   margin-right: 31%;
   margin-bottom: 25px;
@@ -100,7 +100,7 @@ hr{
   transition: .5s;
 }
 
-.error-message a:hover{
+.center-message a:hover{
   background: white;
   color: black;
   transition: .5s;
@@ -201,7 +201,7 @@ hr{
   align-items: center;
   color: white;
   font-family: 'Open Sans', sans-serif;
-  width: 65%;
+  width: 67%;
   margin-top: 15px;
   margin-bottom: 17px;
 }
@@ -217,24 +217,21 @@ hr{
   align-items: center;
   color: white;
   padding: 7px 20px;
-  line-height: 25px;
   border-radius: 25px;
   font-weight: 200;
   transition: .5s;
-  letter-spacing: 0.5px;
 }
 
 .nav-list li a:hover{
   background: white;
   color: black;
-  font-weight: 800;
+  font-weight: 600;
   transition: .5s;
 }
 
 .button{
   padding-bottom: 0px;
   font-weight: 600;
-  letter-spacing: 0.5px;
 }
 
 .button a{
@@ -242,7 +239,7 @@ hr{
   color: white;
   text-decoration: none;
   border-radius: 25px;
-  padding: 7.5px 25px;
+  padding: 5.5px 20px;
   font-family: 'Open Sans', sans-serif;
   font-size: 15.5px;
   margin-bottom: 2px;
@@ -257,6 +254,12 @@ hr{
   font-weight: 900;
   color: black;
   border: 2px solid black;
+  transition: .5s;
+}
+
+.button a:focus{
+  background: green;
+  color: white;
   transition: .5s;
 }
 
@@ -309,6 +312,7 @@ hr{
 }
 
 .update-message{
+  display: none;
   font-family: 'Open Sans', sans-serif;
   margin: 0.5em;
   margin-left: 20%;
@@ -554,25 +558,60 @@ hr{
   margin-right: 15%;
 }
 
-.contact-info h1{
-  font-family: 'Urbanist', sans-serif;
+#archive-message{
+  margin-left: 15%;
+  margin-right: 15%;
+  font-weight: 300;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16.5px;
+}
+
+#archive-header{
+  margin-top: 45px;
   font-weight: 800;
   text-transform: uppercase;
-  text-align: left;
+  font-family: 'Urbanist', sans-serif;
 }
 
-.contact-info p{
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-align: left;
-  font-weight: 200;
+#archive-year{
+  font-size: 17px;
 }
 
-#contact-link{
-  color:rgb(0, 132, 255);
-  font-weight: 500;
+.archive-row-2021{
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
+
+.archive-row-2021 li{
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+.archive-row-2021 li a{
+  display: inline-block;
+  padding: 5px 18px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  transition: .5s;
+}
+
+.archive-row-2021 li a:hover{
+  background: white;
+  color: black;
+  border: 1px solid black;
+  transform: translateY(-5px);
+  transition: .5s;
+}
+
+.archive-row-2021 li a:focus{
+  background: green;
+  color: white;
+  transition: .5s;
 }
 
 footer{
@@ -667,13 +706,18 @@ footer{
   #mobile-remove{
     display: none;
   }
-  .error-message{
+  .center-message{
     margin-left: 10%;
     margin-right: 10%;
   }
-  .error-message a{
+  .center-message a{
      margin-left: 12%;
      margin-right: 12%;
+  }
+  #archive-message{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-weight: 300;
   }
   .update-message{
     margin-left: 7%;

@@ -27,14 +27,16 @@ const Intro = () => {
                     Fun facts I want to share about myself are that I love to code, listen to music (preferrably lofi, classical, and pop),
                     play video games, and watch movies and shows in my free time.
                     Since I was a high school student, I always found the concept of programming intriguing, thinking about how
-                    much several lines of code can change the world in so many ways. This led to me to develop a huge interest in
+                    much over a million (or a few) lines of code can change the world in so many ways. This led to me to develop a huge interest in
                     learning about software development, since there are so many software programs out there in the Internet,
-                    whether they'd be web applications, server-side applications, etc. Without them, we wouldn't be where we are
-                    today in terms of how much technology has impacted our lives and changed the world for the better.
+                    whether they'd be web applications, server-side applications, etc. Regardless of whether an app is either in the web or in our phones,
+                    it has changed the way our infrastructure works, as well as impacted many of our choices when it comes to utilizing services online. 
+                    Without them, we wouldn't be where we are today in terms of how much technology has impacted our lives and how it changed the world
+                    for the better.
                 </p>
                 <p>
                     Feel free to contact me through either Github or Linkedin. The profile links are attached in the footer below
-                    the page. You may also feel free to contact me through my email at <a href="mailto:rubenplayer105@gmail.com"><b>rubenplayer105@gmail.com</b></a>.
+                    the page.
                 </p>
                 <br></br>
                 <hr></hr>
