@@ -1,11 +1,11 @@
-# Personal Website (v2.10.0)
+# Personal Website (v2.11.0)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on December 7, 2021):
+# UPDATES (made on December 15, 2021):
 
-* A font change was made to the website. Now the default font for the website will be "Open Sans" to make the website appear more appealing for visitors.
+* Instead of manually changing the copyright year for this website for each year that passes, it will automatically update. This will take effect each year on midnight, January 1st.
 
 # Copyright Notice
 
