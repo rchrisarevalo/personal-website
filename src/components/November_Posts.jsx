@@ -14,6 +14,11 @@ const November_Posts = () => {
                 <title>Ruben C. Arevalo - Personal Website - Announcements (November 2021)</title>
             </Helmet>
             <Nav />
+            <div className="notification" id="warning-notif-2">
+                <div className="notification-content" id="notif-2">
+                    <p>Redirecting to contact form page...</p>
+                </div>
+            </div>
             <div class="posts-container">
                 <HashRouter>
                     <Link to="/announcements/2021/October"><IoArrowBackOutline id="posts-arrow-left" size="40px"/></Link>
