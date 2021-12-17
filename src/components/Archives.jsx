@@ -37,6 +37,21 @@ const Archives = () => {
                     <li><Link to="/announcements/2021/November">November</Link></li>
                 </HashRouter>
             </div>
+            <br></br>
+            <br></br>
+            <div className="center-message">
+                <p id="archive-message">
+                    I will continue adding to this page as time progresses. But for now, this page will contain
+                    virtually nothing aside from the archives of the announcements associated with that particular
+                    year and month. Just like every month, I will wipe the <b>Announcements</b> page clean after
+                    the end of the month and will store the posts from the previous month into its own page.
+                    However, I will store up to only 3 years of previous announcements. Once the mentioned deadline has expired,
+                    then the old announcements will be permanently removed from this website, never to be seen
+                    again.
+                </p>
+            </div>
+            <br></br>
+            <hr></hr>
         </div>
     )
 }

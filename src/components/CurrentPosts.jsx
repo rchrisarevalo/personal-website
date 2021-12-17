@@ -7,9 +7,9 @@ const CurrentPosts = () => {
             <br></br>
             <p id="posts-description">
                 This is the page where I will be posting regular updates that are being made to this site.
-                Old posts will be <b>archived</b> on the last day of each month. This means that after the
+                Old announcements will be <b>archived</b> on the last day of each month. This means that after the
                 last day of each month has come to pass, then this whole page (minus the archive page) will
-                be wiped out completely and be replaced with posts for the new month.
+                be wiped out completely and be replaced with announcements for the new month.
             </p>
             <div className="post" id="post-margin">
                 <p id="post-content">

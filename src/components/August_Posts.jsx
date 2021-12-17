@@ -1,5 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { Link, HashRouter } from "react-router-dom";
+
+import { IoArrowForwardOutline } from "react-icons/io5";
 
 import Nav from "../Nav.jsx";
 import NewFooter from "../NewFooter.jsx";
@@ -17,6 +20,9 @@ const August_Posts = () => {
                 </div>
             </div>
             <div className="posts-container">
+                <HashRouter>
+                    <Link to="/announcements/2021/September"><IoArrowForwardOutline id="posts-arrow-right" size="40px"/></Link>
+                </HashRouter>
                 <h1 id="posts-title">Announcements (August 2021)</h1>
                 <br></br>
                 <p id="posts-description">

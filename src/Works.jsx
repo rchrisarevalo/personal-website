@@ -5,6 +5,9 @@ import skyshot1 from './images/sky-september-2020.jpg';
 import skyshot2 from './images/sky-palm-shot-november-2020.jpg';
 import skyshot3 from './images/sky-palm-march-2021.jpg';
 import skyshot4 from './images/sky-palm-july2021.jpg';
+import skyshot5 from './images/palm tree photo dec 2021.jpg';
+import skyshot6 from './images/Dec 5 2021.JPEG';
+import skyshot7 from './images/IMG-2012.jpg';
 
 const Works = () => {
     return (
@@ -17,23 +20,32 @@ const Works = () => {
                 for myself. These pictures represent some of the things I have done so far in my free time,
                 and I enjoyed doing it (and still continue to do so).
             </p>
-            <div className="works-1">
+            <div className="works-display">
                 <img src={thumb1} alt="work-1"></img>
             </div>
-            <div className="works-2">
+            <div className="works-display">
                 <img src={thumb2} alt="work-2"></img>
             </div>
-            <div className="works-3">
+            <div className="works-display">
                 <img src={skyshot1} alt="work-3"></img>
             </div>
-            <div className="works-4">
+            <div className="works-display">
                 <img src={skyshot2} alt="work-4"></img>
             </div>
-            <div className="works-5">
+            <div className="works-display">
                 <img src={skyshot3} alt="work-5"></img>
             </div>
-            <div className="works-6">
+            <div className="works-display">
                 <img src={skyshot4} alt="work-6"></img>
+            </div>
+            <div className="works-display">
+                <img src={skyshot5} alt="work-7"></img>
+            </div>
+            <div className="works-display">
+                <img src={skyshot6} alt="work-8"></img>
+            </div>
+            <div className="works-display">
+                <img src={skyshot7} alt="work-9"></img>
             </div>
         </div>
     );

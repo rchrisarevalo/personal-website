@@ -225,7 +225,7 @@ hr{
 .nav-list li a:hover{
   background: white;
   color: black;
-  font-weight: 600;
+  font-weight: 800;
   transition: .5s;
 }
 
@@ -414,14 +414,14 @@ hr{
   text-transform: uppercase;
 }
 
-.works-1, .works-2, .works-3, .works-4, .works-5, .works-6{
+.works-display{
   display: inline-block;
   width: 30%;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.works-1 img, .works-2 img, .works-3 img, .works-4 img, .works-5 img, .works-6 img{
+.works-display img{
   width: 60%;
   align-items: center;
   margin-right: 20%;
@@ -456,6 +456,16 @@ hr{
   padding-bottom: 60px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+}
+
+#posts-arrow-left{
+  float: left;
+  color: white;
+}
+
+#posts-arrow-right{
+  float: right;
+  color: white;
 }
 
 .posts-container-intro{
@@ -719,6 +729,11 @@ footer{
     margin-right: 5%;
     font-weight: 300;
   }
+  .archive-row-2021 li{
+    display: block;
+    flex-direction: column;
+    margin-top: 20px;
+  }
   .update-message{
     margin-left: 7%;
     margin-right: 7%;
@@ -818,18 +833,13 @@ footer{
     margin-left: 5%;
     margin-right: 5%;
   }
-  .works-1 img, .works-2 img, .works-3 img, .works-4 img, .works-5 img, .works-6 img{
+  .works-display img{
     width: 75%;
     align-items: center;
     text-align: center;
     margin-right: 7%;
   }
-  .works-1 h3, .works-2 h3, .works-3 h3, .works-4 h3, .works-5 h3, .works-6 h3{
-    text-align: center;
-    margin-right: 40px;
-    margin-left: 40px;
-  }
-  .works-1, .works-2, .works-3, .works-4, .works-5, .works-6{
+  .works-display{
     width: 100%;
   }
   #work-description{
