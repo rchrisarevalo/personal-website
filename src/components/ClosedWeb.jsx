@@ -11,7 +11,7 @@ const ClosedWeb = () => {
                     I decided to close this website today on December 19, 2021. Since the holiday week starts
                     tomorrow, I have decided that it was the best idea to close this website and open it up
                     again right after Christmas ends. However, the possibility of closing this website until
-                    the end of New Year's is also in the air. I will update this page on Christmas Eve when I
+                    the end of New Year's is not ruled out yet. I will update this page on Christmas Eve when I
                     make my final decision.
                 </p>
                 <p>
@@ -21,7 +21,7 @@ const ClosedWeb = () => {
                 <p id="closed-msg">Have a wonderful Merry Christmas and stay safe!</p>
                 <br/>
                 <div id="closed-button">
-                    <a href="https://youtube.com" rel="noreferrer" target="_blank">Contact Me</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1nR8hmOAMRTU3fDZsbLRGkjzKvA9uRLZW_YdvsyBEctqDOw/viewform" rel="noreferrer" target="_blank">Contact Me</a>
                 </div>
                 <br></br>
             </div>
