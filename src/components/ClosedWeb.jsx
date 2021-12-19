@@ -1,10 +1,30 @@
 import React from 'react';
 
+function currentDate()
+{
+    const month = new Date().getMonth();
+    const day = new Date().getDate();
+    const year = new Date().getFullYear();
+
+    var stringMonth = " ";
+
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+    for (var i = 0; i < months.length; i++)
+    {
+        if (i === month)
+            stringMonth = months[i];
+    }
+
+    return [stringMonth, " ", day, ", ", year];
+}
+
 const ClosedWeb = () => {
     return (
 
         <div className="error-container">
             <div className="error-message">
+                <p id="closed-msg">Today's date: <i>{currentDate()}</i></p>
                 <p id="closed-msg">
                     In accordance to the new website operation policy I have implemented in the last month,
                     I decided to close this website today on December 19, 2021. This website will most likely
