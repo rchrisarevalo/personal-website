@@ -613,6 +613,7 @@ hr{
 .archive-row-2021 li a:hover{
   background: white;
   color: black;
+  font-weight: 700;
   border: 1px solid black;
   transform: translateY(-5px);
   transition: .5s;
