@@ -17,8 +17,8 @@ const ClosedWeb = () => {
                 <br />
                 <p>Have a wonderful holiday and stay safe!</p>
                 <br/>
-                <div className="button" id="mobile-remove">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1nR8hmOAMRTU3fDZsbLRGkjzKvA9uRLZW_YdvsyBEctqDOw/viewform" target="_blank" rel="noreferrer">Contact Me</a>
+                <div id="closed-button">
+                    <a href="youtube.com">Contact Me</a>
                 </div>
                 <br></br>
             </div>
