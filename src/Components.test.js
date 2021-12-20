@@ -7,6 +7,10 @@ import RecentPosts from "./components/RecentPosts.jsx";
 import Load from "./components/Load.jsx";
 import Notification from "./components/Notification.jsx";
 import Posts from "./components/Posts.jsx";
+import August2021Posts from './components/2021 Posts Components/August2021Posts.jsx';
+import September2021Posts from './components/2021 Posts Components/September2021Posts.jsx';
+import October2021Posts from './components/2021 Posts Components/October2021Posts.jsx';
+import November2021Posts from './components/2021 Posts Components/November2021Posts.jsx';
 import Intro from "./components/Intro.jsx";
 import Update from './components/Update.jsx';
 import Works from './Works.jsx';
@@ -39,6 +43,13 @@ test('renders CurrentPosts component correctly', () => {
 
 test('renders RecentPosts component correctly', () => {
   render(<RecentPosts />);
+});
+
+test('renders archives 2021 posts components correctly', () => {
+  render(<August2021Posts/>);
+  render(<September2021Posts/>);
+  render(<October2021Posts/>);
+  render(<November2021Posts/>);
 });
 
 test('renders Archives component correctly', () => {
