@@ -1,10 +1,11 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
+import { Link, HashRouter } from "react-router-dom";
+
+import { IoArrowBackOutline, IoArrowForwardOutline } from "react-icons/io5";
 
 import Nav from "../Nav.jsx";
 import NewFooter from "../NewFooter.jsx";
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
 
 const September_Posts = () => {
 
@@ -14,28 +15,17 @@ const September_Posts = () => {
                 <title>Ruben C. Arevalo - Personal Website - Announcements (September 2021)</title>
             </Helmet>
             <Nav />
-            <div class="posts-container">
-                <h1 id="posts-title">Announcements (September 2021)</h1>
-                <br></br>
-                <div className="posts-catalog">
-                    <div className="posts-month">
-                        <DropdownButton
-                            id="dropdown-button-dark-example2"
-                            variant="secondary"
-                            menuVariant="dark"
-                            title="2021"
-                            className="mt-1 rounded disabled"
-                        >
-                            <Dropdown.Item href="#/announcements">Announcements</Dropdown.Item>
-                            <Dropdown.Item href="#/announcements/2021/August">
-                                August
-                            </Dropdown.Item>
-                            <Dropdown.Item href="#/announcements/2021/September" active>September</Dropdown.Item>
-                            <Dropdown.Item href="#/announcements/2021/October">October</Dropdown.Item>
-                            <Dropdown.Item href="#/announcements/2021/November">November</Dropdown.Item>
-                        </DropdownButton>
-                    </div>
+            <div className="notification" id="warning-notif-2">
+                <div className="notification-content" id="notif-2">
+                    <p>Redirecting to contact form page...</p>
                 </div>
+            </div>
+            <div class="posts-container">
+                <HashRouter>
+                    <Link to="/announcements/2021/August"><IoArrowBackOutline id="posts-arrow-left" size="40px"/></Link>
+                    <Link to="/announcements/2021/October"><IoArrowForwardOutline id="posts-arrow-right" size="40px"/></Link>
+                </HashRouter>
+                <h1 id="posts-title">Announcements (September 2021)</h1>
                 <br></br>
                 <p id="posts-description">
                     These are all the posts for September 2021 that were archived on this page. None of these posts will

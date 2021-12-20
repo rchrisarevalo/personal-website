@@ -1,8 +1,8 @@
 import React from "react";
-import { IoIosMenu, IoIosInformationCircleOutline, IoIosContact } from "react-icons/io";
-import { IoSendOutline, IoMegaphoneOutline } from "react-icons/io5";
+import { IoIosMenu, IoIosInformationCircleOutline } from "react-icons/io";
+import { IoSendOutline, IoMegaphoneOutline, IoArchiveOutline } from "react-icons/io5";
 
-import { Link } from "react-router-dom";
+import { Link, HashRouter } from "react-router-dom";
 
 const Nav = () => {
 
@@ -41,9 +41,11 @@ const Nav = () => {
       </div>
 
       <ul className="nav-list">
-        <li><Link to="/about"><IoIosInformationCircleOutline id="nav-icons-style" size="18px" />About Me</Link></li>
-        <li><Link to="/announcements"><IoMegaphoneOutline id="nav-icons-style" size="18px" />Announcements</Link></li>
-        <li><Link to="/contact-info"><IoIosContact id="nav-icons-style" size="18px" />Contact Info</Link></li>
+        <HashRouter>
+          <li><Link to="/about"><IoIosInformationCircleOutline id="nav-icons-style" size="18px" />About Me</Link></li>
+          <li><Link to="/announcements"><IoMegaphoneOutline id="nav-icons-style" size="18px" />Announcements</Link></li>
+          <li><Link to="/archives"><IoArchiveOutline id="nav-icons-style" size="18px" />Archives</Link></li>
+        </HashRouter>
         <div className="button" onClick={displayNotif} id="mobile-remove">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1nR8hmOAMRTU3fDZsbLRGkjzKvA9uRLZW_YdvsyBEctqDOw/viewform" target="_blank" rel="noreferrer"><IoSendOutline size="22px" id="report-icon" />Contact Me</a>
         </div>
