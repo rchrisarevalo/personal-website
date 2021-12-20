@@ -22,8 +22,8 @@ function currentDate()
 const ClosedWeb = () => {
     return (
 
-        <div className="error-container">
-            <div className="error-message">
+        <div className="center-container">
+            <div className="center-message">
                 <p id="closed-msg">Today's date: <i>{currentDate()}</i></p>
                 <p id="closed-msg">
                     In accordance to the new website operation policy I have implemented in the last month,
