@@ -75,11 +75,11 @@ hr{
 }
 
 .center-message p{
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   letter-spacing: none;
   font-size: 18.5px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .center-message a{
@@ -90,12 +90,12 @@ hr{
   color: white;
   background: transparent;
   text-decoration: none;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   border: 1px solid white;
   font-weight: 500;
   display: flex;
   flex-direction: column;
-  font-size: 18.5px;
+  font-size: 17.5px;
   border-radius: 25px;
   transition: .5s;
 }
