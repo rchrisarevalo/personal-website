@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 import { Link, HashRouter } from "react-router-dom";
 
-import { IoArrowBackCircleOutline } from "react-icons/io5";
+import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from "react-icons/io5";
 
 import Nav from "../../Nav.jsx";
 import NewFooter from "../../NewFooter.jsx";
@@ -22,6 +22,7 @@ const November2021Posts = () => {
             <div class="posts-container">
                 <HashRouter>
                     <Link to="/announcements/2021/October"><IoArrowBackCircleOutline id="posts-arrow-left" size="40px"/></Link>
+                    <Link to="/announcements/2021/December"><IoArrowForwardCircleOutline id="posts-arrow-right" size="40px"/></Link>
                 </HashRouter>
                 <h1 id="posts-title">Announcements (November 2021)</h1>
                 <br></br>
