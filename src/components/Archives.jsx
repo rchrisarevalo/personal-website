@@ -40,6 +40,7 @@ const Archives = () => {
                     <li><Link to="/announcements/2021/September">September</Link></li>
                     <li><Link to="/announcements/2021/October">October</Link></li>
                     <li><Link to="/announcements/2021/November">November</Link></li>
+                    <li><Link to="/announcements/2021/December">December</Link></li>
                 </HashRouter>
             </div>
             <br></br>
