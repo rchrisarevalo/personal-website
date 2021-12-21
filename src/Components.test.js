@@ -31,7 +31,7 @@ test('renders Intro component correctly', () => {
 
 test('renders Works component correctly', () => {
   render(<Works />);
-})
+});
 
 test('renders Posts component correctly', () => {
   render(<Posts />);
@@ -62,8 +62,8 @@ test('renders Notification component correctly', () => {
 
 test('renders Update component correctly', () => {
   render(<Update />);
-})
+});
 
 test('renders NewFooter component correctly', () => {
   render(<NewFooter />);
-})
+});
