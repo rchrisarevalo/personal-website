@@ -15,6 +15,7 @@ import Intro from "./components/Intro.jsx";
 import Update from './components/Update.jsx';
 import Works from './Works.jsx';
 import Archives from "./components/Archives.jsx";
+import WebsiteOperation from './components/policies/WebsiteOperation.jsx';
 import NewFooter from "./NewFooter.jsx";
 
 test('renders Load Screen components correctly', () => {
@@ -55,6 +56,10 @@ test('renders archives 2021 posts components correctly', () => {
 test('renders Archives component correctly', () => {
   render(<Archives />);
 });
+
+test('renders WebsiteOperation component correctly', () => {
+  render(<WebsiteOperation/>);
+})
 
 test('renders Notification component correctly', () => {
   render(<Notification />);
