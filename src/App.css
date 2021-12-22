@@ -145,8 +145,6 @@ hr{
   align-items: center;
   padding-top: 9px;
   padding-bottom: 6px;
-  position: sticky;
-  top: 0px;
   z-index: 15;
 }
 
@@ -625,17 +623,8 @@ hr{
   transition: .5s;
 }
 
-footer{
-  background: #0c0c0c;
-  box-shadow: 0 0 4px black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
-  text-align: center;
-}
-
 .new-footer{
-  background: 0c0c0c;
+  background: #0c0c0c;
   box-shadow: 0 0 4px black;
   padding-top: 35px;
   padding-bottom: 15px;
@@ -646,26 +635,23 @@ footer{
 .new-footer-row{
   margin-left: 10%;
   margin-right: 10%;
+  text-align: center;
 }
 
-#footer-edited{
-  padding-top: 20px;
-}
-
-.footer-row{
+.footer-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   margin-left: 10%;
   margin-right: 10%;
-}
-
-#margin-description{
-  margin-right: 20px;
 }
 
 .copyright{
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 200;
-  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .copyright p{
@@ -683,15 +669,71 @@ footer{
   font-size: 14px;
   font-weight: 200;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .social-media-links li{
   list-style: none;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 }
 
 .social-media-links li a{
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  padding: 4px 12px;
+  transition: .5s;
+}
+
+.social-media-links li a:hover{
+  text-decoration: underline;
+  background: white;
+  color: black;
+  font-weight: 900;
+  transition: .5s;
+}
+
+.website-operation-policy-box{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.website-operation-policy-description{
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16.5px;
+}
+
+.website-operation-policy-description h1{
+  font-family: 'Urbanist', sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.website-operation-policy-description h3{
+  font-family: 'Urbanist', sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.policies-links{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.policies-links li{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.policies-links li a{
   text-decoration: none;
   color: white;
   border-radius: 25px;
@@ -701,7 +743,7 @@ footer{
   transition: .5s;
 }
 
-.social-media-links li a:hover{
+.policies-links li a:hover{
   text-decoration: underline;
   background: white;
   color: black;
@@ -797,6 +839,9 @@ footer{
   .nav-bar{
     padding-top: 14px;
     padding-bottom: 14px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
   .nav-list{
     display: flex;
@@ -884,11 +929,6 @@ footer{
     margin-right: .5%;
     padding-bottom: 15px;
   }
-  footer{
-    padding-top: 25px;
-    padding-bottom: 10px;
-    text-align: center;
-  }
   .new-footer{
     padding-top: 20px;
     padding-bottom: 10px;
@@ -925,13 +965,13 @@ footer{
   #new-links{
     text-align: center;
   }
-  .footer-row{
-    margin-left: 1%;
-    margin-right: 1%;
-  }
   .new-footer-row{
     margin-left: 3%;
     margin-right: 3%;
+  }
+  .footer-section{
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .social-media-links{
     float: none;
@@ -941,5 +981,20 @@ footer{
   .social-media-links li a{
     padding: 4px 12px;
     margin: 2px;
+  }
+  .policies-links{
+    float: none;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .website-operation-policy-box{
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .website-operation-policy-description{
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
