@@ -1,5 +1,7 @@
 import React from "react";
 
+import {HashRouter, Link} from 'react-router-dom';
+
 function getCopyrightYear()
 {
     const current_year = new Date().getFullYear();
@@ -10,10 +12,18 @@ const NewFooter = () => {
     return (
         <footer className="new-footer">
             <div className="new-footer-row">
-                <div className="social-media-links" id="new-links">
-                    <li id="margin-description"><b>Follow me on social media:</b></li>
-                    <li><a href="https://www.linkedin.com/in/rchrisarevalo/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
-                    <li><a href="https://github.com/rchrisarevalo" target="_blank" rel="noopener noreferrer">Github</a></li>
+                <div className="footer-section">
+                    <div className="social-media-links" id="new-links">
+                        <li><b><u>Follow Me On</u></b></li>
+                        <li><a href="https://www.linkedin.com/in/rchrisarevalo/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+                        <li><a href="https://github.com/rchrisarevalo" target="_blank" rel="noopener noreferrer">Github</a></li>
+                    </div>
+                    <div className="policies-links">
+                        <li><b><u>Policies</u></b></li>
+                        <HashRouter>
+                            <li><Link to ="/site-operation">Site Operation</Link></li>
+                        </HashRouter>
+                    </div>
                 </div>
                 <div className="copyright" id="new-copyright">
                     <p>&copy; {getCopyrightYear()} Ruben Christopher Arevalo. This page will not be copied, modified, reproduced, or distributed through unauthorized means.</p>
