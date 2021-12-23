@@ -26,6 +26,11 @@ function daysLeft()
 
     var future_date = Math.abs(current_date - set_date);
 
+    if (future_date === 0)
+    {
+        future_date =  "";
+    }
+
     return future_date;
 }
 
@@ -35,10 +40,10 @@ const ClosedWeb = () => {
         <div className="center-container">
             <div className="center-message">
                 <p id="closed-msg">Today's date: <i>{currentDate()}</i></p>
-                <p id="closed-msg">Days left: <i>{daysLeft()}</i></p>
+                <p id="closed-msg">Days left until re-opening: <i>{daysLeft()}</i></p>
                 <p id="closed-msg">
                     In accordance to the new website operation policy I have implemented in the last month,
-                    I decided to close this website today on December 19, 2021. I have decided to push the
+                    I decided to close this website on December 19, 2021. I have decided to push the
                     re-opening date of this website to January 2nd, 2022 in observance of Christmas and 
                     New Year's.
                 </p>
