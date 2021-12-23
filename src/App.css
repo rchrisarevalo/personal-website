@@ -56,6 +56,24 @@ hr{
   background: white;
 }
 
+#closed-button{
+  padding: 7px 25px;
+}
+
+#closed-button a{
+  margin-left: 45%;
+  margin-right: 45%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+
+#closed-msg{
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
 .center-container{
   font-family: 'Poppins', sans-serif;
   position: absolute;
@@ -758,6 +776,14 @@ hr{
   }
   #mobile-remove{
     display: none;
+  }
+  #closed-button a{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #closed-msg{
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .center-message{
     margin-left: 10%;
