@@ -55,9 +55,18 @@ const Archives = () => {
                     then the old announcements will be permanently removed from this website, never to be seen
                     again.
                 </p>
+                <p id="archive-message">
+                    This page is still under development. However, I will continue to add to it as time passes by, including a new
+                    archive for each passing month of the year so that other people can access old announcements if they wish to do
+                    so.
+                </p>
             </div>
             <br></br>
             <hr></hr>
+            <br></br>
+            <div className="center-message">
+                <p id="archive-message">&copy; 2022 Ruben Christopher Arevalo. This page will not be copied, modified, reproduced, or distributed through unauthorized means.</p>
+            </div>
         </div>
     )
 }
