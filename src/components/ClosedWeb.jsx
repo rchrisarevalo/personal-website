@@ -44,7 +44,7 @@ const ClosedWeb = () => {
                 <p id="closed-msg">
                     In accordance to the new website operation policy I have implemented in the last month,
                     I decided to close this website on December 19, 2021. I have decided to push the
-                    re-opening date of this website to January 2nd, 2022 in observance of Christmas and 
+                    re-opening date of this website to January 3, 2022 in observance of Christmas and 
                     New Year's.
                 </p>
                 <br />
