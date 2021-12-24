@@ -22,13 +22,13 @@ function currentDate()
 function daysLeft()
 {
     const current_date = new Date().getDate();
-    const set_date = new Date().getDate() + 11;
+    var set_date = 33;
 
     var future_date = Math.abs(current_date - set_date);
 
     if (future_date === 0)
     {
-        future_date =  "";
+        future_date = "";
     }
 
     return future_date;
