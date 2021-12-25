@@ -22,7 +22,7 @@ function currentDate()
 function daysLeft()
 {
     const current_date = new Date().getDate();
-    var set_date = 33;
+    var set_date = 34;
 
     var future_date = Math.abs(current_date - set_date);
 
