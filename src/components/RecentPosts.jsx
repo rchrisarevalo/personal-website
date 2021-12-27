@@ -31,8 +31,8 @@ const RecentPosts = () => {
                     Since I am speaking about bugs right now, I will also keep an eye out on issues that might be caused
                     by a vulnerability with Log4j, which is widely used in many pieces of software around the world, such
                     as our smart phones, computers, video games, etc. As this website is running on GitHub Pages, I am
-                    going to do my best to keep an eye out for any issues that might arise in the future as a result of
-                    this vulnerability.
+                    going to do my best to make sure that this Site does not fall prey to any hacking attempts that might
+                    occur in the future, depending on the circumstances surrounding the Log4j vulnerability.
                 </p>
                 <p id="post-content">
                     -- Ruben Christopher Arevalo
