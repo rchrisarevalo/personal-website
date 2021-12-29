@@ -16,7 +16,7 @@ const WebsiteOperation = () => {
                 <div className="website-operation-policy-description">
                     <h1>Website Operation Policy</h1>
                     <br></br>
-                    <h4><i>Last Modified: December 22, 2021</i></h4>
+                    <h4><i>Last Modified: January 3, 2022</i></h4>
                     <br></br>
                     <p>
                         Hello everyone. Last month, I introduced a new policy that determined how this website
@@ -27,7 +27,7 @@ const WebsiteOperation = () => {
                     </p>
                     <p>
                         <i>
-                            Keep in mind that this is NOT a legal document, but rather my own way of outlining what
+                            Keep in mind that this is NOT a legal document, but rather my own way of explaining what
                             times this website can and cannot operate so as to make it easy for other people
                             visiting this Site to understand it.
                         </i>
@@ -75,8 +75,8 @@ const WebsiteOperation = () => {
                         This Site will close whenever a natural disaster, such as a hurricane, tornado, severe flooding, or a winter storm
                         occurs. I made this decision to include this section on this policy based on a February 2021 winter storm that left
                         my home state of Texas in a near-statewide blackout for nearly a week. Due to the circumstances at the time, I was not
-                        able to access the internet or my laptop as well since I had to conserve the battery for the latter and other portable devices,
-                        such as my phone.
+                        able to access the internet. In addition, I had to conserve the battery for the latter and other portable devices,
+                        such as my phone and laptop, where the latter is used to regularly make updates to this Site.
                     </p>
                     <p>
                         I will leave a message saying that the website will be closed for a week or two after such a
@@ -88,6 +88,25 @@ const WebsiteOperation = () => {
                     <p>
                         Again, after 2 weeks, this website will open again for the public and operations should return
                         to normal in a few days following its re-opening.
+                    </p>
+                    <br></br>
+                    <h3>Personal Affairs</h3>
+                    <br></br>
+                    <p>
+                        Should a personal matter occur, such as the loss of a family member, a friend, or any important person that has played
+                        an important role in my life, the website won't necessarily shut down, but rather, will not be maintained during the hard
+                        times. However, an update (along with an announcement) will be left on the website during the time I will be
+                        out to process the loss. Again, keep in mind that I won't be updating this website for around a week (or two if the loss
+                        happens to be profound). I want to continue this Site with a clear and conscious mind rather than let my emotions cloud
+                        my judgment, which allows me to decide what is in the best interests for this Site in the future.
+                    </p>
+                    <p>
+                        By <i>personal affairs</i>, it does not necessarily mean that there should be loss and grief involved. While the latter
+                        qualifies for this section, other personal affairs can range from legal troubles, familial problems, and serious
+                        life transitions, such as moving in to a different area in the country and post-graduation job searching. However,
+                        everyday personal problems won't qualify, such as an argument with a family member, a friend, a partner, a spouse, etc.
+                        Just as I stated above, only serious life problems like the ones I mentioned above qualify for the limitation of the
+                        operation of this Site. 
                     </p>
                     <br></br>
                     <p>
