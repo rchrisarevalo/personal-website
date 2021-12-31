@@ -700,6 +700,7 @@ hr{
   color: white;
   border-radius: 20px;
   padding: 4px 12px;
+  margin-top: 10px;
   transition: .5s;
 }
 
@@ -758,6 +759,7 @@ hr{
   transition: .5s;
   padding: 4px 12px;
   margin: 2px;
+  margin-top: 10px;
   transition: .5s;
 }
 
