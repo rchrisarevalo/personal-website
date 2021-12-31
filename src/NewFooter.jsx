@@ -1,9 +1,8 @@
 import React from "react";
 
-import {HashRouter, Link} from 'react-router-dom';
+import { HashRouter, Link } from 'react-router-dom';
 
-function getCopyrightYear()
-{
+function getCopyrightYear() {
     const current_year = new Date().getFullYear();
     return current_year;
 }
@@ -12,16 +11,20 @@ const NewFooter = () => {
     return (
         <footer className="new-footer">
             <div className="new-footer-row">
+                <div className="logo">
+                    <a href={"./"}>Ruben C. Arevalo</a>
+                </div>
+                <br></br>
                 <div className="footer-section">
                     <div className="social-media-links" id="new-links">
                         <li><b><u>Follow Me On</u></b></li>
-                        <li><a href="https://www.linkedin.com/in/rchrisarevalo/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
-                        <li><a href="https://github.com/rchrisarevalo" target="_blank" rel="noopener noreferrer">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/rchrisarevalo/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://github.com/rchrisarevalo" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                     </div>
                     <div className="policies-links">
-                        <li><b><u>Policies</u></b></li>
+                        <li><b><u>Website Policies</u></b></li>
                         <HashRouter>
-                            <li><Link to ="/site-operation">Site Operation</Link></li>
+                            <li><Link to="/site-operation">Site Operation</Link></li>
                         </HashRouter>
                     </div>
                 </div>
