@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Link, HashRouter } from "react-router-dom";
 
 import Nav from "../Nav.jsx";
+import NewFooter from "../NewFooter.jsx";
 
 const Archives = () => {
     return (
@@ -62,11 +63,11 @@ const Archives = () => {
                 </p>
             </div>
             <br></br>
-            <hr></hr>
             <br></br>
-            <div className="center-message">
-                <p id="archive-message">&copy; 2022 Ruben Christopher Arevalo. This page will not be copied, modified, reproduced, or distributed through unauthorized means.</p>
-            </div>
+            <br></br>
+            <br></br>
+            <br></br>
+            <NewFooter/>
         </div>
     )
 }
