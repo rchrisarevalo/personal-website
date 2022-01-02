@@ -16,17 +16,16 @@ const Update = () => {
                 <IoAlertCircleOutline size="23px" id="update-icon" /> UPDATE:
             </p>
             <p>
-                Hi everyone! I am leaving this message here to let everyone know that I will be in a 
-                <b> 2 week hiatus</b> that started yesterday on December 13. I will not be posting anything
-                here for the above mentioned duration as not only will I be spending my break with my family
-                and friends after a difficult college semester, but I will also be working on updating this
-                website as well. I will be designing a new user interface that will be released after New Year's
-                is over. For more details as to how my hiatus and the holidays will affect the way how I operate
-                this website, please feel free to look at the <b>"Recent Announcements"</b> section of this page, or click
-                on the <b>"Announcements"</b> link to view the posts regarding this topic.
+                Hi everyone! I am here to announce that a new policy has been introduced for this
+                Site. The policy that is titled "Website Operation" can be found at the bottom of
+                the page (at the footer). The policy covers what times the Site can and cannot
+                operate, as well as what circumstances would qualify for a temporary closure.
+                Depending on the type of situation that can occur, the Site may close for a specific
+                time period or not be updated at all until the situation is resolved.
             </p>
             <p>
-                Thank you everyone! Stay safe and happy holidays!
+                For more details, please feel free to click the "Website Operation" in the "Policies"
+                column at the bottom of the page. Have a great rest of the week, everyone!
             </p>
             <p>
                 <i>-- Ruben Christopher Arevalo</i>
