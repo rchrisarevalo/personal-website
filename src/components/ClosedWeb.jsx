@@ -32,7 +32,6 @@ function daysLeft() {
 
 const ClosedWeb = () => {
     return (
-
         <div className="center-container">
             <div className="center-message">
                 <p id="closed-msg">Today's date: <i>{currentDate()}</i></p>
