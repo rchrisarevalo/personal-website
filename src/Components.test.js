@@ -17,6 +17,7 @@ import Works from './Works.jsx';
 import Archives from "./components/Archives.jsx";
 import WebsiteOperation from './components/policies/WebsiteOperation.jsx';
 import NewFooter from "./NewFooter.jsx";
+import Error404 from "./components/Error404.jsx";
 
 test('renders Load Screen components correctly', () => {
   render(<Load />);
@@ -72,3 +73,7 @@ test('renders Update component correctly', () => {
 test('renders NewFooter component correctly', () => {
   render(<NewFooter />);
 });
+
+test('renders Error404 component correctly', () => {
+  render(<Error404/>);
+})
