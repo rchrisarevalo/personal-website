@@ -4,8 +4,8 @@ import { IoCloseCircleOutline, IoAlertCircleOutline } from "react-icons/io5";
 function closeUpdateMsg() {
     var e = document.getElementById("close-msg")
     e.classList.toggle("close")
-    localStorage.removeItem("update-message")
-    console.log("Message removed.")
+
+    console.log("Message removed.");
 }
 
 const Update = () => {
