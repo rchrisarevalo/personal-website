@@ -17,7 +17,7 @@ import Error404 from "./components/Error404.jsx";
 
 import { Route, Switch } from "react-router-dom";
 
-class App extends React.Component {
+class App extends Component {
   render(){
     return (
       <div className="App">
