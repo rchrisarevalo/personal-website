@@ -75,7 +75,7 @@ const WebsiteOperation = () => {
                         This Site will close whenever a natural disaster, such as a hurricane, tornado, severe flooding, or a winter storm
                         occurs. I made this decision to include this section on this policy based on a February 2021 winter storm that left
                         my home state of Texas in a near-statewide blackout for nearly a week. Due to the circumstances at the time, I was not
-                        able to access the internet. In addition, I had to conserve the battery for the latter and other portable devices,
+                        able to access the internet. In addition, I had to conserve the battery for my portable devices,
                         such as my phone and laptop, where the latter is used to regularly make updates to this Site.
                     </p>
                     <p>
