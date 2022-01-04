@@ -3,7 +3,7 @@
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on January 1, 2022):
+# UPDATES (made on January 3, 2022):
 
 * Major changes were made to the website:
     * A new "Archive" page has been added.
