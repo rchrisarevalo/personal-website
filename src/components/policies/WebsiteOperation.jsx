@@ -16,7 +16,7 @@ const WebsiteOperation = () => {
                 <div className="website-operation-policy-description">
                     <h1>Website Operation Policy</h1>
                     <br></br>
-                    <h4><i>Last Modified: January 3, 2022</i></h4>
+                    <h4><i>Last Modified: January 4, 2022</i></h4>
                     <br></br>
                     <p>
                         Hello everyone. Last month, I introduced a new policy that determined how this website
@@ -33,6 +33,8 @@ const WebsiteOperation = () => {
                         </i>
                     </p>
                     <br></br>
+                    <br></br>
+                    <br></br>
                     <h3>Holidays</h3>
                     <br></br>
                     <p>
@@ -48,10 +50,11 @@ const WebsiteOperation = () => {
                         <h5>Holidays that qualify for a 1-2 week Site Closure:</h5>
                         <li>Thanksgiving, Christmas, and New Year's</li>
                         <br></br>
-                        <br></br>
                         <h5>Holidays that qualify for a 1 day Site Closure:</h5>
                         <li>Easter, Halloween, and any other Federal Holidays</li>
                     </p>
+                    <br></br>
+                    <br></br>
                     <br></br>
                     <h3>Updates</h3>
                     <br></br>
@@ -68,6 +71,8 @@ const WebsiteOperation = () => {
                         will try my very best to finish as efficiently and quickly as possible, as I also want to avoid introducing
                         new bugs into this website that can cause it to break.
                     </p>
+                    <br></br>
+                    <br></br>
                     <br></br>
                     <h3>Natural Disasters</h3>
                     <br></br>
@@ -90,6 +95,8 @@ const WebsiteOperation = () => {
                         to normal in a few days following its re-opening.
                     </p>
                     <br></br>
+                    <br></br>
+                    <br></br>
                     <h3>Personal Affairs</h3>
                     <br></br>
                     <p>
@@ -101,13 +108,17 @@ const WebsiteOperation = () => {
                         my judgment, which allows me to decide what is in the best interests for this Site in the future.
                     </p>
                     <p>
-                        By <i>personal affairs</i>, it does not necessarily mean that there should be loss and grief involved. While the latter
-                        qualifies for this section, other personal affairs can range from legal troubles, familial problems, and serious
-                        life transitions, such as moving in to a different area in the country and post-graduation job searching. However,
-                        everyday personal problems won't qualify, such as an argument with a family member, a friend, a partner, a spouse, etc.
-                        Just as I stated above, only serious life problems like the ones I mentioned above qualify for the limitation of the
-                        operation of this Site. 
+                        By <i><b>personal affairs</b></i>, it does not necessarily mean that there should be loss and grief involved. While the latter
+                        qualifies for this section, other personal affairs that additionally qualify for this section range from legal troubles, familial problems, and major
+                        life transitions, such as moving in to a different area of the country and post-graduation job searching.
                     </p>
+                    <p>
+                        However, everyday personal problems won't qualify, such as an argument with a family member, a friend, a partner, a spouse, etc.
+                        Just as I stated above, only serious life problems like the ones I mentioned above qualify for the limitation of the
+                        operation of this Site.
+                    </p>
+                    <br></br>
+                    <br></br>
                     <br></br>
                     <p>
                         <i>If you have any questions regarding this policy, please feel free to click the "Contact Me" button (or the paper airplace icon in the mobile version) to leave a message.</i>
