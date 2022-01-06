@@ -12,39 +12,39 @@ import skyshot7 from './images/IMG-2012.jpg';
 const Works = () => {
     return (
         <div className="works-container">
-            <h1 id="works-title">Portfolio</h1>
-            <p id="work-description">
+            <h1 id="works-title" data-aos="fade-down">Portfolio</h1>
+            <p id="work-description" data-aos="fade-right" data-aos-delay="1000">
                 I enjoy doing certain hobbies whenever I have free time during the day. I have also taken some
                 pictures in the outdoors during a sunny day and created other projects outside from
                 photography, such as developing websites for a local photography business and a CV website
                 for myself. These pictures represent some of the things I have done so far in my free time,
                 and I enjoyed doing it (and still continue to do so).
             </p>
-            <div className="works-display">
+            <div className="works-display" data-aos="flip-right" data-aos-delay="1000">
                 <img src={thumb1} alt="work-1"></img>
             </div>
-            <div className="works-display">
+            <div className="works-display" data-aos="flip-right" data-aos-delay="1000">
                 <img src={thumb2} alt="work-2"></img>
             </div>
-            <div className="works-display">
+            <div className="works-display" data-aos="flip-right" data-aos-delay="1000">
                 <img src={skyshot1} alt="work-3"></img>
             </div>
-            <div className="works-display">
+            <div className="works-display" data-aos="flip-right" data-aos-delay="1000">
                 <img src={skyshot2} alt="work-4"></img>
             </div>
-            <div className="works-display">
+            <div className="works-display" data-aos="flip-right" data-aos-delay="1000">
                 <img src={skyshot3} alt="work-5"></img>
             </div>
-            <div className="works-display">
+            <div className="works-display" data-aos="flip-right" data-aos-delay="1000">
                 <img src={skyshot4} alt="work-6"></img>
             </div>
-            <div className="works-display">
+            <div className="works-display" data-aos="flip-right" data-aos-delay="1000">
                 <img src={skyshot5} alt="work-7"></img>
             </div>
-            <div className="works-display">
+            <div className="works-display" data-aos="flip-right" data-aos-delay="1000">
                 <img src={skyshot6} alt="work-8"></img>
             </div>
-            <div className="works-display">
+            <div className="works-display" data-aos="flip-right" data-aos-delay="1000">
                 <img src={skyshot7} alt="work-9"></img>
             </div>
         </div>

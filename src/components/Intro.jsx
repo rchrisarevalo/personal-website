@@ -17,11 +17,11 @@ const Intro = () => {
             </Helmet>
             <Nav />
             <Notification />
-            <Update/>
+            <Update />
             <div className="intro-container" id="about">
-                <img src={profilepic} alt="profile-pic"></img>
-                <h1>About the Author</h1>
-                <p>
+                <img src={profilepic} alt="profile-pic" data-aos="fade-left" data-aos-delay="1000"></img>
+                <h1 data-aos="fade-down">About the Author</h1>
+                <p data-aos="fade-down">
                     Hi everyone! My name is Ruben Christopher Arevalo, and I am a third-year student attending the University of Texas-Rio Grande Valley.
                     I am currently pursuing my bachelor's degree in computer engineering with my concentration focusing on software.
                     Fun facts I want to share about myself are that I love to code, listen to music (preferrably lofi, classical, and pop),
@@ -34,7 +34,7 @@ const Intro = () => {
                     Without them, we wouldn't be where we are today in terms of how much technology has impacted our lives and how it changed the world
                     for the better.
                 </p>
-                <p>
+                <p data-aos="fade-down">
                     Feel free to contact me through either Github or Linkedin. The profile links are attached in the footer below
                     the page.
                 </p>
