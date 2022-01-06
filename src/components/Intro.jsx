@@ -19,7 +19,7 @@ const Intro = () => {
             <Notification />
             <Update />
             <div className="intro-container" id="about">
-                <img src={profilepic} alt="profile-pic" data-aos="fade-left" data-aos-delay="1000"></img>
+                <img src={profilepic} alt="profile-pic" data-aos="fade-down" data-aos-delay="500"></img>
                 <h1 data-aos="fade-down">About the Author</h1>
                 <p data-aos="fade-down">
                     Hi everyone! My name is Ruben Christopher Arevalo, and I am a third-year student attending the University of Texas-Rio Grande Valley.
