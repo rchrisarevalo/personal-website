@@ -16,7 +16,7 @@ const WebsiteOperation = () => {
                 <div className="website-operation-policy-description">
                     <h1>Website Operation Policy</h1>
                     <br></br>
-                    <h4><i>Last Modified: January 4, 2022</i></h4>
+                    <h4><i>Last Modified: January 6, 2022</i></h4>
                     <br></br>
                     <p>
                         Hello everyone. Last month, I introduced a new policy that determined how this website
@@ -121,7 +121,7 @@ const WebsiteOperation = () => {
                     <br></br>
                     <br></br>
                     <p>
-                        <i>If you have any questions regarding this policy, please feel free to click the "Contact Me" button (or the paper airplace icon in the mobile version) to leave a message.</i>
+                        <i>If you have any questions regarding this policy, please feel free to click the "Contact Me" button (or the paper airplane icon in the mobile version) to leave a message.</i>
                     </p>
                 </div>
             </div>
