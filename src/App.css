@@ -13,6 +13,7 @@ body{
   color: white;
   background: #242525;
   letter-spacing: 0.5px;
+  overflow-x: hidden;
 }
 
 #mobile-remove{
@@ -40,11 +41,11 @@ hr{
 }
 
 ::-webkit-scrollbar{
-  width: 5px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-thumb{
-  background: black;
+  background: white;
   border-radius: 25px;
 }
 
@@ -328,6 +329,7 @@ hr{
 }
 
 .update-message{
+  display: none;
   font-family: 'Open Sans', sans-serif;
   margin: 0.5em;
   margin-left: 20%;
