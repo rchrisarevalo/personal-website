@@ -13,6 +13,18 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-content">
+                    A minor change to the Website Operation policy has been made. There was a typo in the last description
+                    near the footer in the page. That mistake has been corrected.
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 01/06/2022 at 1:40 AM.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-content">
                     That's all for now. Have a great rest of the week and please stay safe!
                 </p>
                 <p id="post-content">
