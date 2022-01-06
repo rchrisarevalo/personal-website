@@ -4,11 +4,11 @@ const RecentPosts = () => {
     return (
         <div className="posts-container-intro">
             <h1 id="posts-title-intro" data-aos="fade-down">Recent Announcements</h1>
-            <p id="posts-description-intro" data-aos="fade-down">
+            <p id="posts-description-intro" data-aos="fade-right" data-aos-delay="500">
                 The last three recent posts will be posted here. This page will be updated daily.
                 To view all posts, click on "Announcements" on the navigation bar.
             </p>
-            <div className="post" id="post-margin" data-aos="flip-down" data-aos-delay="500">
+            <div className="post" id="post-margin" data-aos="fade" data-aos-delay="500">
                 <p id="post-content">
                     A minor change to the Website Operation policy has been made. There was a typo in the last description
                     near the footer in the page. That mistake has been corrected.
@@ -20,7 +20,7 @@ const RecentPosts = () => {
                     Posted on 01/06/2022 at 1:40 AM.
                 </p>
             </div>
-            <div className="post" id="post-margin" data-aos="flip-down" data-aos-delay="500">
+            <div className="post" id="post-margin" data-aos="fade" data-aos-delay="500">
                 <p id="post-content">
                     That's all for now. Have a great rest of the week and please stay safe!
                 </p>
@@ -31,7 +31,7 @@ const RecentPosts = () => {
                     Posted on 01/03/2022 at 12:00 AM.
                 </p>
             </div>
-            <div className="post" id="post-margin" data-aos="flip-down" data-aos-delay="500">
+            <div className="post" id="post-margin" data-aos="fade" data-aos-delay="500">
                 <p id="post-content">
                     Now that I am done covering the new "Website Operation" policy, I also wanted to let y'all know
                     that I am back and will be maintaining this site as before. However, expect my activity to dwindle
