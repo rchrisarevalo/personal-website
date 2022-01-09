@@ -41,19 +41,10 @@ hr{
 }
 
 ::-webkit-scrollbar{
-  width: 6px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-thumb{
-  background: white;
-  border-radius: 25px;
-}
-
-::-webkit-scrollbar-thumb:hover{
-  background: rgba(136, 136, 136, 0.561);
-}
-
-::-webkit-input-placeholder{
   background: white;
 }
 
