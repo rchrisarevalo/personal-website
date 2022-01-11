@@ -1,15 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Nav from '../../Nav.jsx';
 import NewFooter from '../../NewFooter.jsx';
 
 import { Helmet } from 'react-helmet';
 
+import nprogress from 'nprogress';
+import "nprogress/nprogress.css";
+
 const WebsiteOperation = () => {
+
+    useEffect(() => {
+        nprogress.configure({minimum: 0.1, showSpinner: false, easing: 'ease', speed: 600, trickleSpeed: 200});
+        nprogress.start();
+        nprogress.set(0.5);
+        nprogress.inc(1.0);
+        nprogress.done(true);
+
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="website-operation-policy-container">
             <Helmet>
-                Ruben C. Arevalo - Personal Website - Website Operation Policy
+                <title>Ruben C. Arevalo - Personal Website - Website Operation Policy</title>
             </Helmet>
             <Nav />
             <div className="website-operation-policy-box">
@@ -30,6 +44,11 @@ const WebsiteOperation = () => {
                             Keep in mind that this is NOT a legal document, but rather my own way of explaining what
                             times this website can and cannot operate so as to make it easy for other people
                             visiting this Site to understand it.
+                        </i>
+                    </p>
+                    <p>
+                        <i>
+                            <b>This policy will be subject to change at the owner's discretion.</b>
                         </i>
                     </p>
                     <br></br>
