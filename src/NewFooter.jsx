@@ -24,7 +24,8 @@ const NewFooter = () => {
                     <div className="policies-links">
                         <li><b><u>Website Policies</u></b></li>
                         <HashRouter>
-                            <li><Link to="/policies">Site Operation</Link></li>
+                            <li><Link to="/policies/site-operation">Site Operation</Link></li>
+                            <li><Link to="/policies/archive">Archival</Link></li>
                         </HashRouter>
                     </div>
                 </div>
