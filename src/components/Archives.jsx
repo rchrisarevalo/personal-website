@@ -1,15 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from "react-helmet";
 import { Link, HashRouter } from "react-router-dom";
 
 import Nav from "../Nav.jsx";
 import NewFooter from "../NewFooter.jsx";
 
+import nprogress from "nprogress";
+import "nprogress/nprogress.css";
+
 const Archives = () => {
+
+    useEffect(() => {
+        nprogress.configure({minimum: 0.1, showSpinner: false, easing: 'ease', speed: 800, trickleSpeed: 200});
+        nprogress.start();
+        nprogress.set(0.5);
+        nprogress.inc(0.5);
+        nprogress.done(true);
+
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="archives-container">
             <Helmet>
-                Ruben C. Arevalo - Archives
+                <title>Ruben C. Arevalo - Personal Website - Archives</title>
             </Helmet>
             <Nav />
             <div className="notification" id="warning-notif-2">
