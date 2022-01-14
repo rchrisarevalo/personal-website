@@ -24,7 +24,7 @@ const Nav = () => {
 
     setTimeout(function () {
       e.classList.remove("active")
-    }, 3000)
+    }, 5000)
   }
 
   return (
