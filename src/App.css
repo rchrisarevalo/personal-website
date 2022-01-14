@@ -566,9 +566,19 @@ hr{
   margin: 2em;
 }
 
-#post-date{
-  margin: 2em;
+#post-info{
+  margin: 2.5em;
+  width: 14%;
   font-style: italic;
+  font-size: 14px;
+}
+
+#post-info-recent{
+  margin: 2.5em;
+  width: 14%;
+  font-style: italic;
+  font-size: 14px;
+  text-align: left;
 }
 
 #post-margin{
@@ -942,10 +952,13 @@ hr{
     text-align: center;
     margin-bottom: 45px;
   }
-  #post-content{
-    text-align: left;
+  #post-info{
+    width: 63%;
   }
-  #post-date{
+  #post-info-recent{
+    width: 63%;
+  }
+  #post-content{
     text-align: left;
   }
   .contact-info{
