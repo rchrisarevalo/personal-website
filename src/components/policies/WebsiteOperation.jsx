@@ -26,11 +26,16 @@ const WebsiteOperation = () => {
                 <title>Ruben C. Arevalo - Personal Website - Website Operation Policy</title>
             </Helmet>
             <Nav />
+            <div className="notification" id="warning-notif-2">
+                <div className="notification-content" id="notif-2">
+                    <p>Redirecting to contact form page...</p>
+                </div>
+            </div>
             <div className="website-operation-policy-box">
                 <div className="website-operation-policy-description">
                     <h1>Website Operation Policy</h1>
                     <br></br>
-                    <h4><i>Last Modified: January 6, 2022</i></h4>
+                    <h4><i>Last Modified: January 11, 2022</i></h4>
                     <br></br>
                     <p>
                         Hello everyone. Last month, I introduced a new policy that determined how this website
