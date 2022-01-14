@@ -11,6 +11,35 @@ const CurrentPosts = () => {
                 last day of each month has come to pass, then this whole page (minus the archive page) will
                 be wiped out completely and be replaced with announcements for the new month.
             </p>
+            <div className="post" id="post-margin" data-aos="fade" data-aos-delay="500">
+                <p id="post-content">
+                    Before I forget, I introduced a new policy that can be found in the link
+                    "Archival" in the footer of this Site. Again, it is not a legal document,
+                    but an outline that represents how the archival process of announcements
+                    like these works. If the language in the page happens to confuse you, please
+                    let me know, and I will try my best to make some clarifications to the outline
+                    to make it easier for you and other users to understand.
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 01/14/2022 at 5:22 AM.
+                </p>
+            </div>
+            <div className="post" id="post-margin" data-aos="fade" data-aos-delay="500">
+                <p id="post-content">
+                    I made a typo while I made a change to the Website Operation policy. I forgot to update the
+                    date where it was last modified (3 days ago at the time of writing this announcement). It
+                    should be fixed now.
+                </p>
+                <p id="post-content">
+                    -- Ruben Christopher Arevalo
+                </p>
+                <p id="post-date">
+                    Posted on 01/14/2022 at 5:22 AM.
+                </p>
+            </div>
             <div className="post" id="post-margin">
                 <p id="post-content">
                     A minor change to the Website Operation policy has been made. There was a typo in the last description
