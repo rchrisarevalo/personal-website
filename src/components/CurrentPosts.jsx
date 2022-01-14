@@ -12,6 +12,9 @@ const CurrentPosts = () => {
                 be wiped out completely and be replaced with announcements for the new month.
             </p>
             <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 01/14/2022, 5:22 AM.
+                </p>
                 <p id="post-content">
                     Before I forget, I introduced a new policy that can be found in the link
                     "Archival" in the footer of this Site. Again, it is not a legal document,
@@ -20,50 +23,38 @@ const CurrentPosts = () => {
                     let me know, and I will try my best to make some clarifications to the outline
                     to make it easier for you and other users to understand.
                 </p>
-                <p id="post-content">
-                    -- Ruben Christopher Arevalo
-                </p>
-                <p id="post-date">
-                    Posted on 01/14/2022 at 5:22 AM.
-                </p>
             </div>
             <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 01/14/2022, 5:22 AM.
+                </p>
                 <p id="post-content">
                     I made a typo while I made a change to the Website Operation policy. I forgot to update the
                     date where it was last modified (3 days ago at the time of writing this announcement). It
                     should be fixed now.
                 </p>
-                <p id="post-content">
-                    -- Ruben Christopher Arevalo
-                </p>
-                <p id="post-date">
-                    Posted on 01/14/2022 at 5:22 AM.
-                </p>
             </div>
             <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 01/06/2022, 1:40 AM.
+                </p>
                 <p id="post-content">
                     A minor change to the Website Operation policy has been made. There was a typo in the last description
                     near the footer in the page. That mistake has been corrected.
                 </p>
-                <p id="post-content">
-                    -- Ruben Christopher Arevalo
-                </p>
-                <p id="post-date">
-                    Posted on 01/06/2022 at 1:40 AM.
-                </p>
             </div>
             <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 01/03/2022, 12:00 AM.
+                </p>
                 <p id="post-content">
                     That's all for now. Have a great rest of the week and please stay safe!
                 </p>
-                <p id="post-content">
-                    -- Ruben Christopher Arevalo
-                </p>
-                <p id="post-date">
-                    Posted on 01/03/2022 at 12:00 AM.
-                </p>
             </div>
             <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 01/03/2022, 12:00 AM.
+                </p>
                 <p id="post-content">
                     Now that I am done covering the new "Website Operation" policy, I also wanted to let y'all know
                     that I am back and will be maintaining this site as before. However, expect my activity to dwindle
@@ -78,14 +69,11 @@ const CurrentPosts = () => {
                     going to do my best to make sure that this Site does not fall prey to any hacking attempts that might
                     occur in the future, depending on the circumstances surrounding the Log4j vulnerability.
                 </p>
-                <p id="post-content">
-                    -- Ruben Christopher Arevalo
-                </p>
-                <p id="post-date">
-                    Posted on 01/03/2022 at 12:00 AM.
-                </p>
             </div>
             <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 01/03/2022, 12:00 AM.
+                </p>
                 <p id="post-content">
                     In addition, I wanted to remind you all that I introduced a new policy that determines what
                     time this Site can and cannot operate. The new policy was introduced in November 2021, just
@@ -100,25 +88,16 @@ const CurrentPosts = () => {
                     other additional details. For more information, please feel free to click on the "Website Operation"
                     link on the footer in the "Policies" column.
                 </p>
-                <p id="post-content">
-                    -- Ruben Christopher Arevalo
-                </p>
-                <p id="post-date">
-                    Posted on 01/03/2022 at 12:00 AM.
-                </p>
             </div>
             <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 01/03/2022, 12:00 AM.
+                </p>
                 <p id="post-content">
                     Happy New Year's, y'all! This is the beginning of a new year, 2022, and I hope that you all
                     can make the best out of it as much as you can! As some of you may have noticed, I made
                     significant changes to this Site throughout the course of the break. These changes range
                     from UI changes, the introduction of a new "Archives" page, etc.
-                </p>
-                <p id="post-content">
-                    -- Ruben Christopher Arevalo
-                </p>
-                <p id="post-date">
-                    Posted on 01/03/2022 at 12:00 AM.
                 </p>
             </div>
         </div>
