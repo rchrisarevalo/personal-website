@@ -26,7 +26,7 @@ const August2021Posts = () => {
             </div>
             <div className="posts-container">
                 <HashRouter>
-                    <Link to="/announcements/2021/September"><IoArrowForwardCircleOutline id="posts-arrow-right" size="40px"/></Link>
+                    <Link to="/announcements/2021/September"><IoArrowForwardCircleOutline id="posts-arrow-right" title="September 2021 Announcements" size="40px"/></Link>
                 </HashRouter>
                 <h1 id="posts-title">Announcements (August 2021)</h1>
                 <br></br>
