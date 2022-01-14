@@ -815,7 +815,7 @@ hr{
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
-    margin: 2em;
+    margin: 2.5em;
   }
   .notification.active .notification-content{
     bottom: -5px;
