@@ -10,8 +10,11 @@
 
 * I also added a new feature to the Site as well:
     * Progress bar by nProgress (author: rstacruz):
-        * I added a progress bar using the nProgress bar made by rstacruz a few years ago. This library was used under the MIT license, with the nprogress being installed as a dependency. All copyright
-        notices belonging to the author should be within the respective files used to access the progress bar made by rstacruz.
+        * I added a progress bar using the nProgress bar made by rstacruz a few years ago. This library was used under the MIT license, with the nprogress being installed as a               dependency. All copyright notices belonging to the author should be within the respective files used to access the progress bar made by rstacruz.
+
+# CREDITS:
+* Progress bar by nProgress (author: rstacruz):
+        * I added a progress bar using the nProgress bar made by rstacruz a few years ago. This library was used under the MIT license, with the nprogress being installed as a               dependency. All copyright notices belonging to the author should be within the respective files used to access the progress bar made by rstacruz.
 
 # Copyright Notice
 
