@@ -19,7 +19,6 @@ const Nav = () => {
       clicked = false;
       burger_icon.innerHTML = ReactDOMServer.renderToString(<IoIosMenu id="burger-style" size="28px" color="white" />)
     }
-
   }
 
   function displayNotif() {
@@ -34,7 +33,6 @@ const Nav = () => {
 
   return (
     <nav className="nav-bar">
-
       <div className="burger-icon" onClick={activateNav}>
         <IoIosMenu id="burger-style" size="28px" color="white" />
       </div>
