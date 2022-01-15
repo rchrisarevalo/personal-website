@@ -37,7 +37,7 @@ const ArchivePolicy = () => {
                 <div className="archive-policy-description">
                     <h1>Archival Policy</h1>
                     <br></br>
-                    <h4><i>Last Modified: January 11, 2022</i></h4>
+                    <h4><i>Last Modified: January 15, 2022</i></h4>
                     <br></br>
                     <p>
                         Hello everyone. On September 2021, I started to archive posts from the
@@ -79,12 +79,12 @@ const ArchivePolicy = () => {
                         The changes should usually take effect before 12:30 AM of the first day of the new month.
                         In a more worse-case scenario, it could take longer than that, either hours or days before
                         that time. Despite that, I will try my very best to ensure that these changes take effect
-                        before the mentioned time above.
+                        on time and as early as possible.
                     </p>
                     <br></br>
                     <br></br>
                     <br></br>
-                    <h3>Storing of Old Announcements</h3>
+                    <h3>Storage of Old Announcements</h3>
                     <br></br>
                     <p>
                         As I mentioned above, old announcements will be moved somewhere else after the 30 day period
@@ -94,7 +94,7 @@ const ArchivePolicy = () => {
                     </p>
                     <p>
                         As I also mentioned in the introduction section in the first paragraph, I developed a separate page
-                        that is titled 'Archives' (not to confuse with 'Archival' as shown in the footer of each page of this Site).
+                        that is titled 'Archives' (not to be confused with 'Archival' as shown in the footer of this Site).
                         In the page, there is a brief description as to how the page will operate. There are also the months that
                         have the old announcements, and are catalogued by year. At the time of writing this policy, '2022' has not
                         appeared yet, as January is still going on and will be included once the month is over. Again, once the 30
