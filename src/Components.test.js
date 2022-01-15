@@ -16,6 +16,7 @@ import Update from './components/Update.jsx';
 import Works from './Works.jsx';
 import Archives from "./components/Archives.jsx";
 import WebsiteOperation from './components/policies/WebsiteOperation.jsx';
+import ArchivePolicy from './components/policies/ArchivePolicy.jsx';
 import NewFooter from "./NewFooter.jsx";
 import Error404 from "./components/Error404.jsx";
 
@@ -48,10 +49,10 @@ test('renders RecentPosts component correctly', () => {
 });
 
 test('renders archives 2021 posts components correctly', () => {
-  render(<August2021Posts/>);
-  render(<September2021Posts/>);
-  render(<October2021Posts/>);
-  render(<November2021Posts/>);
+  render(<August2021Posts />);
+  render(<September2021Posts />);
+  render(<October2021Posts />);
+  render(<November2021Posts />);
 });
 
 test('renders Archives component correctly', () => {
@@ -59,8 +60,12 @@ test('renders Archives component correctly', () => {
 });
 
 test('renders WebsiteOperation component correctly', () => {
-  render(<WebsiteOperation/>);
-})
+  render(<WebsiteOperation />);
+});
+
+test('renders ArchivePolicy component correctly', () => {
+  render(<ArchivePolicy />);
+});
 
 test('renders Notification component correctly', () => {
   render(<Notification />);
@@ -75,5 +80,5 @@ test('renders NewFooter component correctly', () => {
 });
 
 test('renders Error404 component correctly', () => {
-  render(<Error404/>);
-})
+  render(<Error404 />);
+});
