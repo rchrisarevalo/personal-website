@@ -9,6 +9,20 @@ const RecentPosts = () => {
                 To view all posts, click on "Announcements" on the navigation bar.
             </p>
             <div className="post" id="post-margin" data-aos="fade" data-aos-delay="500">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 01/17/2022, 5:39 PM.
+                </p>
+                <p id="post-content">
+                    Hello everyone! I am leaving this announcement here to let you all know that starting tomorrow,
+                    you will not see post or make updates on this Site as much as during the break. The reason being
+                    is because I will be starting my Spring semester tomorrow, and I will most likely be bombarded with
+                    homework as soon as the semester starts.
+                </p>
+                <p id="post-content">
+                    If any of you happen to read this, thank you for your patience!
+                </p>
+            </div>
+            <div className="post" id="post-margin" data-aos="fade" data-aos-delay="500">
                 <p id="post-info-recent">
                     By: Ruben Christopher Arevalo. Posted on 01/14/2022, 5:22 AM.
                 </p>
@@ -29,15 +43,6 @@ const RecentPosts = () => {
                     I made a typo while I made a change to the Website Operation policy. I forgot to update the
                     date where it was last modified (3 days ago at the time of writing this announcement). It
                     should be fixed now.
-                </p>
-            </div>
-            <div className="post" id="post-margin" data-aos="fade" data-aos-delay="500">
-                <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 01/06/2022, 5:22 AM.
-                </p>
-                <p id="post-content">
-                    A minor change to the Website Operation policy has been made. There was a typo in the last description
-                    near the footer in the page. That mistake has been corrected.
                 </p>
             </div>
         </div>
