@@ -13,6 +13,20 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 01/17/2022, 5:39 PM.
+                </p>
+                <p id="post-content">
+                    Hello everyone! I am leaving this announcement here to let you all know that starting tomorrow,
+                    you will not see post or make updates on this Site as much as during the break. The reason being
+                    is because I will be starting my Spring semester tomorrow, and I will most likely be bombarded with
+                    homework as soon as the semester starts.
+                </p>
+                <p id="post-content">
+                    If any of you happen to read this, thank you for your patience!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 01/14/2022, 5:22 AM.
                 </p>
                 <p id="post-content">
