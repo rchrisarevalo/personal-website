@@ -5,7 +5,7 @@
 
 # UPDATES (made on January 16, 2022):
 
-* I have upgraded a dependency to its latest version to address a vulnerability caught by dependabot.
+* I have upgraded a dependency to its latest version to address a vulnerability caught by Dependabot.
 
 # CREDITS:
 * Progress bar by nProgress (author: rstacruz)
