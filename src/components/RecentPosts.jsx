@@ -10,6 +10,17 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos="fade" data-aos-delay="500">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 01/22/2022, 10:55 AM.
+                </p>
+                <p id="post-content">
+                    Good morning! I am leaving this here to let y'all know that I made it through the first week of this
+                    semester fine, even though I have to do 1 or 2 homework assignments that are due next week. I made
+                    some bug fixes to this website for components that allow it to work. It should be working by now
+                    for some of you. If any issues arise, please contact me.
+                </p>
+            </div>
+            <div className="post" id="post-margin" data-aos="fade" data-aos-delay="500">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 01/17/2022, 5:39 PM.
                 </p>
                 <p id="post-content">
@@ -33,16 +44,6 @@ const RecentPosts = () => {
                     like these works. If the language in the page happens to confuse you, please
                     let me know, and I will try my best to make some clarifications to the outline
                     to make it easier for you and other users to understand.
-                </p>
-            </div>
-            <div className="post" id="post-margin" data-aos="fade" data-aos-delay="500">
-                <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 01/14/2022, 5:22 AM.
-                </p>
-                <p id="post-content">
-                    I made a typo while I made a change to the Website Operation policy. I forgot to update the
-                    date where it was last modified (3 days ago at the time of writing this announcement). It
-                    should be fixed now.
                 </p>
             </div>
         </div>
