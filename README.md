@@ -1,11 +1,11 @@
-# Personal Website (v2.13.1)
+# Personal Website (v2.13.2)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on January 16, 2022):
+# UPDATES (made on January 22, 2022):
 
-* I have upgraded a dependency to its latest version to address a vulnerability caught by Dependabot.
+* A vulnerability in a dependency has been fixed.
 
 # CREDITS:
 * Progress bar by nProgress (author: rstacruz)
