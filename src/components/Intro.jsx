@@ -12,6 +12,33 @@ import Notification from "./Notification.jsx";
 import nprogress from "nprogress";
 import "nprogress/nprogress.css";
 
+function currentAge(){
+
+    // I will continue updating this code to make sure it works
+    // and is in sync with real time :)
+
+    var month = new Date().getMonth();
+    var date = new Date().getDate();
+    var currentAge = 20;
+    var storeAge = 0;
+
+    storeAge = currentAge;
+
+    if (month === 7 && date === 10) {
+        currentAge++;
+        storeAge = currentAge;
+        return currentAge;
+    }
+
+    if ((month >= 7 && date > 10)){
+        storeAge++;
+        console.log(storeAge);
+        return storeAge;
+    } else {
+        return storeAge;
+    }
+}
+
 const Intro = () => {
 
     useEffect(() => {
@@ -36,7 +63,7 @@ const Intro = () => {
                 <img src={profilepic} alt="profile-pic" data-aos="fade-down" data-aos-delay="500"></img>
                 <h1 data-aos="fade-down">About the Author</h1>
                 <p data-aos="fade-down">
-                    Hi everyone! My name is Ruben Christopher Arevalo, and I am a third-year student attending the University of Texas-Rio Grande Valley.
+                    Hi everyone! My name is Ruben Christopher Arevalo, and I am a {currentAge()} year old third-year student attending the University of Texas-Rio Grande Valley.
                     I am currently pursuing my bachelor's degree in computer engineering with my concentration focusing on software.
                     Fun facts I want to share about myself are that I love to code, listen to music (preferrably lofi, classical, and pop),
                     play video games, and watch movies and shows in my free time.
