@@ -9,7 +9,7 @@ const RecentPosts = () => {
                 To view all posts, click on "Announcements" on the navigation bar.
             </p>
             <div className="post" id="post-margin" data-aos="fade" data-aos-delay="500">
-                <p id="post-info">
+                <p id="post-info-recent">
                     By: Ruben Christopher Arevalo. Posted on 01/22/2022, 10:55 AM.
                 </p>
                 <p id="post-content">
@@ -20,7 +20,7 @@ const RecentPosts = () => {
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos="fade" data-aos-delay="500">
-                <p id="post-info">
+                <p id="post-info-recent">
                     By: Ruben Christopher Arevalo. Posted on 01/17/2022, 5:39 PM.
                 </p>
                 <p id="post-content">
