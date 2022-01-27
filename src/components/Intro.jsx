@@ -19,23 +19,47 @@ function currentAge(){
 
     var month = new Date().getMonth();
     var date = new Date().getDate();
+    var currentYear = new Date().getFullYear();
+    var oldYear = currentYear - 1;
     var currentAge = 20;
-    var storeAge = 0;
+    var updatedAge = 0;
 
-    storeAge = currentAge;
+    updatedAge = currentAge;
 
-    if (month === 7 && date === 10) {
+    if (month === 7 && date === 10 && currentYear === new Date().getFullYear()) {
         currentAge++;
-        storeAge = currentAge;
+        updatedAge = currentAge;
         return currentAge;
     }
 
-    if ((month >= 7 && date > 10)){
-        storeAge++;
-        console.log(storeAge);
-        return storeAge;
+
+    if ((currentYear > oldYear) && (month < 7) && (date < 10)) {
+        updatedAge--;
+        console.log(updatedAge);
+        return updatedAge;
     } else {
-        return storeAge;
+        
+    }
+
+    if (month >= 7 && date >= 10 && currentYear === new Date().getFullYear()){
+        updatedAge++;
+        console.log(updatedAge);
+        return updatedAge;
+    } else {
+        console.log(oldYear);
+        return updatedAge;
+    }
+}
+
+function time_greeting(){
+    var hour = new Date().getHours();
+
+    if (hour >= 0 && hour <= 11){
+        return ["Good morning, "];
+    } else if (hour >= 12 && hour <= 17) {
+        return ["Good afternoon, "];
+    } else if (hour >= 18 && hour <= 23) {
+        return ["Good evening, "];
     }
 }
 
@@ -63,7 +87,7 @@ const Intro = () => {
                 <img src={profilepic} alt="profile-pic" data-aos="fade-down" data-aos-delay="500"></img>
                 <h1 data-aos="fade-down">About the Author</h1>
                 <p data-aos="fade-down">
-                    Hi everyone! My name is Ruben Christopher Arevalo, and I am a {currentAge()} year old third-year student attending the University of Texas-Rio Grande Valley.
+                    {time_greeting()} everyone! My name is Ruben Christopher Arevalo, and I am a {currentAge()} year old third-year student attending the University of Texas-Rio Grande Valley.
                     I am currently pursuing my bachelor's degree in computer engineering with my concentration focusing on software.
                     Fun facts I want to share about myself are that I love to code, listen to music (preferrably lofi, classical, and pop),
                     play video games, and watch movies and shows in my free time.
