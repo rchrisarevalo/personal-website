@@ -60,6 +60,14 @@ const Archives = () => {
             </div>
             <br></br>
             <br></br>
+            <div className="archive-row-2021">
+                <HashRouter>
+                    <li><b id="archive-year">2022:</b></li>
+                    <li><Link to="/announcements/2022/January">January</Link></li>
+                </HashRouter>
+            </div>
+            <br></br>
+            <br></br>
             <div className="center-message">
                 <p id="archive-message">
                     I will continue adding to this page as time progresses. But for now, this page will contain

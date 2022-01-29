@@ -11,6 +11,8 @@ import August2021Posts from './components/2021 Posts Components/August2021Posts.
 import September2021Posts from './components/2021 Posts Components/September2021Posts.jsx';
 import October2021Posts from './components/2021 Posts Components/October2021Posts.jsx';
 import November2021Posts from './components/2021 Posts Components/November2021Posts.jsx';
+import December2021Posts from './components/2021 Posts Components/December2021Posts.jsx';
+import January2022Posts from './components/2022 Posts Components/January2022Posts.jsx';
 import Intro from "./components/Intro.jsx";
 import Update from './components/Update.jsx';
 import Works from './Works.jsx';
@@ -53,6 +55,11 @@ test('renders archives 2021 posts components correctly', () => {
   render(<September2021Posts />);
   render(<October2021Posts />);
   render(<November2021Posts />);
+  render(<December2021Posts />);
+});
+
+test('renders archives 2022 posts components correctly', () => {
+  render(<January2022Posts />);
 });
 
 test('renders Archives component correctly', () => {
