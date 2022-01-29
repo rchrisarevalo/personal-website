@@ -8,42 +8,35 @@ const RecentPosts = () => {
                 The last three recent posts will be posted here. This page will be updated daily.
                 To view all posts, click on "Announcements" on the navigation bar.
             </p>
-            <div className="post" id="post-margin" data-aos="fade" data-aos-delay="500">
-                <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 01/22/2022, 10:55 AM.
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 01/28/2022, 12:03 AM.
                 </p>
                 <p id="post-content">
-                    Good morning! I am leaving this here to let y'all know that I made it through the first week of this
-                    semester fine, even though I have to do 1 or 2 homework assignments that are due next week. I made
-                    some bug fixes to this website for components that allow it to work. It should be working by now
-                    for some of you. If any issues arise, please contact me.
+                    That's all I have to say today. If you see this, have a good rest of the day!
                 </p>
             </div>
-            <div className="post" id="post-margin" data-aos="fade" data-aos-delay="500">
-                <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 01/17/2022, 5:39 PM.
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 01/28/2022, 12:03 AM.
                 </p>
                 <p id="post-content">
-                    Hello everyone! I am leaving this announcement here to let you all know that starting tomorrow,
-                    you will not see post or make updates on this Site as much as during the break. The reason being
-                    is because I will be starting my Spring semester tomorrow, and I will most likely be bombarded with
-                    homework as soon as the semester starts.
-                </p>
-                <p id="post-content">
-                    If any of you happen to read this, thank you for your patience!
+                    I will keep you all updated on this idea! I will make my final decision at the end of March. However,
+                    just because I made a final decision on this project that doesn't guarantee that it will appear on
+                    time or at all. However, this heavily depends on the circumstances, whether it's external factors, or
+                    other situations that require the use of my time.
                 </p>
             </div>
-            <div className="post" id="post-margin" data-aos="fade" data-aos-delay="500">
-                <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 01/14/2022, 5:22 AM.
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 01/28/2022, 12:03 AM.
                 </p>
                 <p id="post-content">
-                    Before I forget, I introduced a new policy that can be found in the link
-                    "Archival" in the footer of this Site. Again, it is not a legal document,
-                    but an outline that represents how the archival process of announcements
-                    like these works. If the language in the page happens to confuse you, please
-                    let me know, and I will try my best to make some clarifications to the outline
-                    to make it easier for you and other users to understand.
+                    Fortunately, this will not limit my ability to keep making updates to this website when needed.
+                    Speaking of updates, I am planning to start a blog on my own page sometime later this year, most likely during the
+                    summer or the fall of this year. Creating and designing the blog page will take some time,
+                    as it takes a lot of effort to make sure it is set up well and that there are no bugs
+                    during the creation process.
                 </p>
             </div>
         </div>
