@@ -10,6 +10,16 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 02/01/2022, 12:00 AM.
+                </p>
+                <p id="post-content">
+                    Good morning, everyone! It's going to be a great month as Valentine's day is approaching! I hope everyone
+                    spends time with their loved ones on this cherished day! Anyways, this is the first post for this month, so
+                    there is not much except the aforementioned greeting. Have a great rest of the week!
+                </p>
+            </div>
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 01/29/2022, 12:03 AM.
                 </p>
                 <p id="post-content">
@@ -25,18 +35,6 @@ const RecentPosts = () => {
                     just because I made a final decision on this project that doesn't guarantee that it will appear on
                     time or at all. However, this heavily depends on the circumstances, whether it's external factors, or
                     other situations that require the use of my time.
-                </p>
-            </div>
-            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
-                <p id="post-info">
-                    By: Ruben Christopher Arevalo. Posted on 01/29/2022, 12:03 AM.
-                </p>
-                <p id="post-content">
-                    Fortunately, this will not limit my ability to keep making updates to this website when needed.
-                    Speaking of updates, I am planning to start a blog on my own page sometime later this year, most likely during the
-                    summer or the fall of this year. Creating and designing the blog page will take some time,
-                    as it takes a lot of effort to make sure it is set up well and that there are no bugs
-                    during the creation process.
                 </p>
             </div>
         </div>
