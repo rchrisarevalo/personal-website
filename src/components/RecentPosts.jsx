@@ -10,7 +10,7 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info">
-                    By: Ruben Christopher Arevalo. Posted on 01/28/2022, 12:03 AM.
+                    By: Ruben Christopher Arevalo. Posted on 01/29/2022, 12:03 AM.
                 </p>
                 <p id="post-content">
                     That's all I have to say today. If you see this, have a good rest of the day!
@@ -18,7 +18,7 @@ const RecentPosts = () => {
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info">
-                    By: Ruben Christopher Arevalo. Posted on 01/28/2022, 12:03 AM.
+                    By: Ruben Christopher Arevalo. Posted on 01/29/2022, 12:03 AM.
                 </p>
                 <p id="post-content">
                     I will keep you all updated on this idea! I will make my final decision at the end of March. However,
@@ -29,7 +29,7 @@ const RecentPosts = () => {
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info">
-                    By: Ruben Christopher Arevalo. Posted on 01/28/2022, 12:03 AM.
+                    By: Ruben Christopher Arevalo. Posted on 01/29/2022, 12:03 AM.
                 </p>
                 <p id="post-content">
                     Fortunately, this will not limit my ability to keep making updates to this website when needed.
