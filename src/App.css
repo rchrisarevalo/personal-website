@@ -205,13 +205,13 @@ hr{
 
 .nav-list{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   color: white;
   font-family: 'Open Sans', sans-serif;
   width: 67%;
   margin-top: 15px;
-  margin-bottom: 17px;
+  margin-bottom: 15px;
 }
 
 .nav-list li{
