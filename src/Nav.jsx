@@ -1,20 +1,24 @@
 import React from "react";
 import { IoIosMenu, IoIosInformationCircleOutline } from "react-icons/io";
-import { IoSendOutline, IoMegaphoneOutline, IoArchiveOutline } from "react-icons/io5";
+import { IoSendOutline, IoCloseOutline, IoMegaphoneOutline, IoArchiveOutline } from "react-icons/io5";
 
 import { Link, HashRouter } from "react-router-dom";
+import ReactDOMServer from 'react-dom/server';
 
 const Nav = () => {
 
   function activateNav() {
     var nav = document.querySelector(".nav-list")
+    var burger_icon = document.querySelector(".burger-icon");
+    var clicked = false;
 
-    if (nav.classList.toggle("is_active") === true) {
-      document.body.style.cssText = ' '
+    if (clicked === false && nav.classList.toggle("is_active") === true) {
+      clicked = true;
+      burger_icon.innerHTML = ReactDOMServer.renderToString(<IoCloseOutline id="burger-style" size="28px" color="white"/>);
     } else {
-      document.body.style.cssText = 'overflow: scroll;'
+      clicked = false;
+      burger_icon.innerHTML = ReactDOMServer.renderToString(<IoIosMenu id="burger-style" size="28px" color="white" />);
     }
-
   }
 
   function displayNotif() {
@@ -24,12 +28,11 @@ const Nav = () => {
 
     setTimeout(function () {
       e.classList.remove("active")
-    }, 3000)
+    }, 5000)
   }
 
   return (
     <nav className="nav-bar">
-
       <div className="burger-icon" onClick={activateNav}>
         <IoIosMenu id="burger-style" size="28px" color="white" />
       </div>

@@ -14,9 +14,10 @@ import September2021Posts from "./components/2021 Posts Components/September2021
 import October2021Posts from "./components/2021 Posts Components/October2021Posts.jsx";
 import November2021Posts from "./components/2021 Posts Components/November2021Posts.jsx";
 import December2021Posts from './components/2021 Posts Components/December2021Posts';
+import January2022Posts from './components/2022 Posts Components/January2022Posts';
 import Archives from "./components/Archives.jsx";
-import Load_2 from "./components/Load_2.jsx";
-import WebsiteOperation from "./components/policies/WebsiteOperation.jsx"
+import WebsiteOperation from "./components/policies/WebsiteOperation.jsx";
+import ArchivePolicy from "./components/policies/ArchivePolicy.jsx";
 import Error404 from "./components/Error404.jsx";
 
 const App = () => {
@@ -40,9 +41,10 @@ const App = () => {
         <Route path="/announcements/2021/October" exact component={October2021Posts} />
         <Route path="/announcements/2021/November" exact component={November2021Posts} />
         <Route path="/announcements/2021/December" exact component={December2021Posts} />
+        <Route path="/announcements/2022/January" exact component={January2022Posts} />
         <Route path="/archives" exact component={Archives} />
-        <Route path="/policies" exact component={Load_2} />
         <Route path="/policies/site-operation" exact component={WebsiteOperation} />
+        <Route path="/policies/archive" exact component={ArchivePolicy}/>
         <Route exact component={Error404} />
       </Switch>
     </div>

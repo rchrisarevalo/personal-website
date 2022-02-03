@@ -26,7 +26,7 @@ const August2021Posts = () => {
             </div>
             <div className="posts-container">
                 <HashRouter>
-                    <Link to="/announcements/2021/September"><IoArrowForwardCircleOutline id="posts-arrow-right" size="40px"/></Link>
+                    <Link to="/announcements/2021/September"><IoArrowForwardCircleOutline id="posts-arrow-right" title="September 2021 Announcements" size="40px"/></Link>
                 </HashRouter>
                 <h1 id="posts-title">Announcements (August 2021)</h1>
                 <br></br>
@@ -38,18 +38,18 @@ const August2021Posts = () => {
                     Last modified: 9/21/2021 at 4:34 PM. Reason: duplicate post removed.
                 </p>
                 <div className="post" id="post-margin">
+                    <p id="post-info">
+                        By: Ruben Christopher Arevalo. Posted on 8/31/2021 at 6:54 PM.
+                    </p>
                     <p id="post-content">
                         Today is the last day of the month! I am going to make the September select option
                         available tomorrow by 12:30 AM or earlier!
                     </p>
-                    <p id="post-content">
-                        -- Ruben Christopher Arevalo
-                    </p>
-                    <p id="post-date">
-                        Posted on 8/31/2021 at 6:54 PM.
-                    </p>
                 </div>
                 <div className="post" id="post-margin">
+                    <p id="post-info">
+                        By: Ruben Christopher Arevalo. Posted on 8/29/2021 at 11:25 PM.
+                    </p>
                     <p id="post-content">
                         Hello everyone:
                     </p>
@@ -66,14 +66,11 @@ const August2021Posts = () => {
                     <p id="post-content">
                         Thank you everyone, and have a great evening!
                     </p>
-                    <p id="post-content">
-                        -- Ruben Christopher Arevalo
-                    </p>
-                    <p id="post-date">
-                        Posted on 8/29/2021 at 11:25 PM.
-                    </p>
                 </div>
                 <div className="post" id="post-margin">
+                    <p id="post-info">
+                        By: Ruben Christopher Arevalo. Posted on 8/25/2021 at 10:36 AM.
+                    </p>
                     <p id="post-content">
                         Hi, y'all! I regret to inform everyone using this website that the dark/light theme toggler
                         has been removed. I made this decision because I thought a darker theme would be more
@@ -85,28 +82,22 @@ const August2021Posts = () => {
                     <p id="post-content">
                         If you have any questions, please feel free to contact me through my email!
                     </p>
-                    <p id="post-content">
-                        -- Ruben Christopher Arevalo
-                    </p>
-                    <p id="post-date">
-                        Posted on 8/25/2021 at 10:36 AM.
-                    </p>
                 </div>
                 <div className="post" id="post-margin">
+                    <p id="post-info">
+                        By: Ruben Christopher Arevalo. Posted on 8/23/2021 at 10:21 AM.
+                    </p>
                     <p id="post-content">
                         I am posting this to let y'all know that today is the first time I go back to college
                         in person since the pandemic started last March. What this means is that I won't be able
                         to update this website regularly like I used to during the summer. So expect this website
                         to be updated every 2-3 weeks or so (if time permits). Thank you for understanding!
                     </p>
-                    <p id="post-content">
-                        -- Ruben Christopher Arevalo
-                    </p>
-                    <p id="post-date">
-                        Posted on 8/23/2021 at 10:21 AM.
-                    </p>
                 </div>
                 <div className="post" id="post-margin">
+                    <p id="post-info">
+                        By: Ruben Christopher Arevalo. Posted on 8/22/2021 at 8:50 AM.
+                    </p>
                     <p id="post-content">
                         Good evening, everyone! I am happy to announce that I have made some new updates to this
                         site. I included a notificiation like message that pops up whenever you interact with one
@@ -115,41 +106,32 @@ const August2021Posts = () => {
                         page. I will continue to update this website as soon as I have time since I am about to start
                         my third year of college. Thank you and have a great evening!
                     </p>
-                    <p id="post-content">
-                        -- Ruben Christopher Arevalo
-                    </p>
-                    <p id="post-date">
-                        Posted on 8/22/2021 at 8:50 PM.
-                    </p>
                 </div>
                 <div className="post" id="post-margin">
+                    <p id="post-info">
+                        By: Ruben Christopher Arevalo. Posted on 8/19/2021 at 3:41 PM.
+                    </p>
                     <p id="post-content">
                         Hi everyone! If any of you have seen my last post, I will retract my policy to delete
                         30 day old posts. I will instead archive these posts into categories sorted
                         by months. This will go in effect on <b>September 7</b>, the same date I originally
                         intended to delete my posts after the specific deadline I mentioned above.
                     </p>
-                    <p id="post-content">
-                        -- Ruben Christopher Arevalo
-                    </p>
-                    <p id="post-date">
-                        Posted on 8/19/2021 at 3:41 PM.
-                    </p>
                 </div>
                 <div className="post" id="post-margin">
+                    <p id="post-info">
+                        By: Ruben Christopher Arevalo. Posted on 8/16/2021 at 7:42 PM.
+                    </p>
                     <p id="post-content">
                         I have already included a page directory below for the "Posts" page.
                         Each page will have 5 posts. The 30 day post removal policy for
                         posts matching this deadline will take effect on <b>September 7</b>.
                     </p>
-                    <p id="post-content">
-                        -- Ruben Christopher Arevalo
-                    </p>
-                    <p id="post-date">
-                        Posted on 8/16/2021 at 7:42 PM.
-                    </p>
                 </div>
                 <div className="post" id="post-margin">
+                    <p id="post-info">
+                        By: Ruben Christopher Arevalo. Posted on 8/16/2021 at 6:29 PM.
+                    </p>
                     <p id="post-content">
                         Hi everyone!
                     </p>
@@ -160,14 +142,11 @@ const August2021Posts = () => {
                     <p id="post-content">
                         Thank you, and have a great day!
                     </p>
-                    <p id="post-content">
-                        -- Ruben Christopher Arevalo
-                    </p>
-                    <p id="post-date">
-                        Posted on 8/16/2021 at 6:29 PM.
-                    </p>
                 </div>
                 <div className="post" id="post-margin">
+                    <p id="post-info">
+                        By: Ruben Christopher Arevalo. Posted on 8/16/2021 at 3:29 AM.
+                    </p>
                     <p id="post-content">
                         Hello everyone! Today, I have made several updates regarding this website.
                     </p>
@@ -191,14 +170,11 @@ const August2021Posts = () => {
                     <p id="post-content">
                         If you have any issues, please feel free to contact me!
                     </p>
-                    <p id="post-content">
-                        -- Ruben Christopher Arevalo
-                    </p>
-                    <p id="post-date">
-                        Posted on 8/16/2021 at 3:29 AM.
-                    </p>
                 </div>
                 <div className="post" id="post-margin">
+                    <p id="post-info">
+                        By: Ruben Christopher Arevalo. Posted on 8/10/2021 at 8:28 PM.
+                    </p>
                     <p id="post-content">
                         I have introduced a new UI (User Interface) for this website. It might look the same,
                         but there a few differences with this update. For instance, there is now a loading
@@ -211,14 +187,11 @@ const August2021Posts = () => {
                         button, which can be found on the navigation bar of both the web and mobile versions of
                         this site.
                     </p>
-                    <p id="post-content">
-                        -- Ruben Christopher Arevalo
-                    </p>
-                    <p id="post-date">
-                        Posted on 8/10/2021 at 8:28 PM.
-                    </p>
                 </div>
                 <div className="post" id="post-margin">
+                    <p id="post-info">
+                        By: Ruben Christopher Arevalo. Posted on 8/10/2021 at 12:00 AM.
+                    </p>
                     <p id="post-content">
                         Hi everyone! The update message has been taken down after
                         appearing on the home screen after three days, as I
@@ -230,14 +203,11 @@ const August2021Posts = () => {
                         Anyways, have a wonderful night and have a great rest of the day
                         tomorrow!
                     </p>
-                    <p id="post-content">
-                        -- Ruben Christopher Arevalo
-                    </p>
-                    <p id="post-date">
-                        Posted on 8/10/2021 at 12:00 AM.
-                    </p>
                 </div>
                 <div className="post" id="post-margin">
+                    <p id="post-info">
+                        By: Ruben Christopher Arevalo. Posted on 8/8/2021 at 4:56 PM.
+                    </p>
                     <p id="post-content">
                         And the post feature works!
                     </p>
@@ -245,25 +215,16 @@ const August2021Posts = () => {
                         Keep in mind that I am the only one that will be posting on this website, sort of like my
                         own personal blog to share any updates I will be making.
                     </p>
-                    <p id="post-content">
-                        -- Ruben Christopher Arevalo
-                    </p>
-                    <p id="post-date">
-                        Posted on 8/8/2021 at 4:56 PM.
-                    </p>
                 </div>
                 <div className="post" id="post-margin">
+                    <p id="post-info">
+                        By: Ruben Christopher Arevalo. Posted on 8/8/2021 at 4:55 PM.
+                    </p>
                     <p id="post-content">
                         Hi everyone! This is a test post to keep y'all updated on upcoming updates and
                         new features. I don't know how long this post will be, so I will try my best to
                         write a long one like this (and I am deliberately stalling to see if this feature
                         works).
-                    </p>
-                    <p id="post-content">
-                        -- Ruben Christopher Arevalo
-                    </p>
-                    <p id="post-date">
-                        Posted on 8/8/2021 at 4:55 PM.
                     </p>
                 </div>
             </div>

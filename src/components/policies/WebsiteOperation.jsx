@@ -1,22 +1,41 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Nav from '../../Nav.jsx';
 import NewFooter from '../../NewFooter.jsx';
 
 import { Helmet } from 'react-helmet';
 
+import nprogress from 'nprogress';
+import "nprogress/nprogress.css";
+
 const WebsiteOperation = () => {
+
+    useEffect(() => {
+        nprogress.configure({minimum: 0.1, showSpinner: false, easing: 'ease', speed: 600, trickleSpeed: 200});
+        nprogress.start();
+        nprogress.set(0.5);
+        nprogress.inc(1.0);
+        nprogress.done(true);
+
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="website-operation-policy-container">
             <Helmet>
-                Ruben C. Arevalo - Personal Website - Website Operation Policy
+                <title>Ruben C. Arevalo - Personal Website - Website Operation Policy</title>
             </Helmet>
             <Nav />
+            <div className="notification" id="warning-notif-2">
+                <div className="notification-content" id="notif-2">
+                    <p>Redirecting to contact form page...</p>
+                </div>
+            </div>
             <div className="website-operation-policy-box">
                 <div className="website-operation-policy-description">
                     <h1>Website Operation Policy</h1>
                     <br></br>
-                    <h4><i>Last Modified: January 6, 2022</i></h4>
+                    <h4><i>Last Modified: January 15, 2022</i></h4>
                     <br></br>
                     <p>
                         Hello everyone. Last month, I introduced a new policy that determined how this website
@@ -30,6 +49,11 @@ const WebsiteOperation = () => {
                             Keep in mind that this is NOT a legal document, but rather my own way of explaining what
                             times this website can and cannot operate so as to make it easy for other people
                             visiting this Site to understand it.
+                        </i>
+                    </p>
+                    <p>
+                        <i>
+                            <b>This policy will be subject to change at the owner's discretion.</b>
                         </i>
                     </p>
                     <br></br>
@@ -66,7 +90,7 @@ const WebsiteOperation = () => {
                         can be time-consuming, or because the Site needs some changes that are critical if it hopes to continue
                         to operate in the future. Requests that the website be opened as soon as possible through the contact
                         form will be ignored, as I cannot guarantee that this website will open in, let's say a day. Maintaining
-                        this website and updating it every once in a while requires work, and since I have other obligations,
+                        this website and updating it every once in a while requires time and work. Since I have other obligations,
                         such as family, it can definitely play a factor as to how long this website will be closed. However, I
                         will try my very best to finish as efficiently and quickly as possible, as I also want to avoid introducing
                         new bugs into this website that can cause it to break.
@@ -91,8 +115,8 @@ const WebsiteOperation = () => {
                         and the safety of others as well.
                     </p>
                     <p>
-                        Again, after 2 weeks, this website will open again for the public and operations should return
-                        to normal in a few days following its re-opening.
+                        After the allotted time period has passed, this website will open again for the public. Operations should return
+                        to normal in the days following its re-opening.
                     </p>
                     <br></br>
                     <br></br>
@@ -113,8 +137,8 @@ const WebsiteOperation = () => {
                         life transitions, such as moving in to a different area of the country and post-graduation job searching.
                     </p>
                     <p>
-                        However, everyday personal problems won't qualify, such as an argument with a family member, a friend, a partner, a spouse, etc.
-                        Just as I stated above, only serious life problems like the ones I mentioned above qualify for the limitation of the
+                        However, everyday personal problems, such as an argument with a family member, a friend, a partner, a spouse, etc., won't qualify.
+                        Just as I stated above, only major life events mentioned above qualify for the limitation of the
                         operation of this Site.
                     </p>
                     <br></br>

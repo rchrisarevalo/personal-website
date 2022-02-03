@@ -1,36 +1,41 @@
 import React from 'react';
 import { IoCloseCircleOutline, IoAlertCircleOutline } from "react-icons/io5";
 
-function closeUpdateMsg() {
-    var e = document.getElementById("close-msg")
-    e.classList.toggle("close")
+var one_time_msg = localStorage.getItem("one-time");
 
-    console.log("Message removed.");
+function closeUpdateMsg() {
+    var e = document.querySelector(".update-message");
+    e.classList.toggle("close");
+    localStorage.setItem("one-time", "enabled");
 }
 
 const Update = () => {
     return (
-        <div className="update-message" id="close-msg">
-            <IoCloseCircleOutline onClick={closeUpdateMsg} id="close-icon" />
-            <p id="update-title">
-                <IoAlertCircleOutline size="23px" id="update-icon" /> UPDATE:
-            </p>
-            <p>
-                Hi everyone! I am here to announce that a new policy has been introduced for this
-                Site. The policy that is titled "Website Operation" can be found at the bottom of
-                the page (at the footer). The policy covers what times the Site can and cannot
-                operate, as well as what circumstances would qualify for a temporary closure.
-                Depending on the type of situation that can occur, the Site may close for a specific
-                time period or not be updated at all until the situation is resolved.
-            </p>
-            <p>
-                For more details, please feel free to click the "Website Operation" in the "Policies"
-                column at the bottom of the page. Have a great rest of the week, everyone!
-            </p>
-            <p>
-                <i>-- Ruben Christopher Arevalo</i>
-            </p>
-            <br></br>
+        <div className="update-msg-container">
+            { one_time_msg !== "enabled" &&
+                <div className="update-message" id="close-msg">
+                    <IoCloseCircleOutline onClick={closeUpdateMsg} id="close-icon" />
+                    <p id="update-title">
+                        <IoAlertCircleOutline size="23px" id="update-icon" /> UPDATE:
+                    </p>
+                    <p>
+                        Hi everyone! As per usual and in accordance to the Archival Policy, any announcements
+                        from the previous month have been stored in its respective archive. Last month's announcements
+                        can be found in the "Archives" page in the new 2022 section.
+                    </p>
+                    <p>
+                        Also, when you read this message and decide to close it, it will not appear again the next time you reload
+                        this page completely, as a cookie is used to make this description appear once.
+                        Don't worry, no cookies are being used to track your personal information as this particular cookie applies
+                        to this website only and does not track you across the Web! If you have any problems or doubts, 
+                        feel free to contact me so that I can clarify any doubts you have.
+                    </p>
+                    <p>
+                        <i>-- Ruben Christopher Arevalo</i>
+                    </p>
+                    <br></br>
+                </div>
+            }
         </div>
     );
 }

@@ -13,6 +13,7 @@ body{
   color: white;
   background: #242525;
   letter-spacing: 0.5px;
+  overflow-x: hidden;
 }
 
 #mobile-remove{
@@ -40,19 +41,10 @@ hr{
 }
 
 ::-webkit-scrollbar{
-  width: 5px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-thumb{
-  background: black;
-  border-radius: 25px;
-}
-
-::-webkit-scrollbar-thumb:hover{
-  background: rgba(136, 136, 136, 0.561);
-}
-
-::-webkit-input-placeholder{
   background: white;
 }
 
@@ -172,7 +164,7 @@ hr{
   font-weight: 200;
   text-transform: uppercase;
   color: white;
-  font-size: 17.5px;
+  font-size: 16px;
   text-decoration: none;
   transition: .5s;
 }
@@ -202,7 +194,7 @@ hr{
 }
 
 #contact-style{
-  font-size: 25px;
+  font-size: 24px;
   transform: translateY(-1px);
 }
 
@@ -213,18 +205,18 @@ hr{
 
 .nav-list{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   color: white;
   font-family: 'Open Sans', sans-serif;
   width: 67%;
   margin-top: 15px;
-  margin-bottom: 17px;
+  margin-bottom: 15px;
 }
 
 .nav-list li{
   list-style: none;
-  font-size: 15.5px;
+  font-size: 15px;
   line-height: 30px;
 }
 
@@ -257,7 +249,7 @@ hr{
   border-radius: 25px;
   padding: 5.5px 20px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 15.5px;
+  font-size: 15px;
   margin-bottom: 2px;
   text-align: center;
   align-items: center;
@@ -573,9 +565,19 @@ hr{
   margin: 2em;
 }
 
-#post-date{
-  margin: 2em;
+#post-info{
+  margin: 2.4em;
+  width: 14%;
   font-style: italic;
+  font-size: 14px;
+}
+
+#post-info-recent{
+  margin: 2.5em;
+  width: 14%;
+  font-style: italic;
+  font-size: 14px;
+  text-align: left;
 }
 
 #post-margin{
@@ -822,7 +824,7 @@ hr{
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
-    margin: 2em;
+    margin: 2.5em;
   }
   .notification.active .notification-content{
     bottom: -5px;
@@ -949,10 +951,13 @@ hr{
     text-align: center;
     margin-bottom: 45px;
   }
-  #post-content{
-    text-align: left;
+  #post-info{
+    width: 63%;
   }
-  #post-date{
+  #post-info-recent{
+    width: 63%;
+  }
+  #post-content{
     text-align: left;
   }
   .contact-info{
