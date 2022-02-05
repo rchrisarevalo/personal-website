@@ -33,7 +33,7 @@ html{
 }
 
 hr{
-  background: rgb(255, 255, 255);
+  background: rgb(136, 136, 136);
   margin-left: 1%;
   margin-right: 1%;
   padding: 2px;
@@ -99,7 +99,7 @@ hr{
   margin-bottom: 25px;
   padding: 10px;
   color: white;
-  background: transparent;
+  background: rgb(92, 92, 92);
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   border: 1px solid white;
@@ -114,6 +114,7 @@ hr{
 .center-message a:hover{
   background: white;
   color: black;
+  border: 1px solid black;
   transition: .5s;
 }
 
@@ -469,11 +470,15 @@ hr{
 #posts-arrow-left{
   float: left;
   color: white;
+  background: rgb(0, 119, 255);
+  border-radius: 20px;
 }
 
 #posts-arrow-right{
   float: right;
   color: white;
+  background: rgb(0, 119, 255);
+  border-radius: 20px;
 }
 
 .posts-container-intro{
@@ -568,14 +573,14 @@ hr{
 
 #post-info{
   margin: 2.4em;
-  width: 14%;
+  width: 50%;
   font-style: italic;
   font-size: 14px;
 }
 
 #post-info-recent{
   margin: 2.5em;
-  width: 14%;
+  width: 70%;
   font-style: italic;
   font-size: 14px;
   text-align: left;
@@ -624,6 +629,7 @@ hr{
   text-decoration: none;
   color: white;
   border: 1px solid white;
+  background: rgb(92, 92, 92);
   border-radius: 20px;
   transition: .5s;
 }
@@ -641,6 +647,64 @@ hr{
   background: green;
   color: white;
   transition: .5s;
+}
+
+.settings-section{
+  margin: .5em;
+  text-align: center;
+}
+
+.settings-options{
+  font-weight: 300;
+}
+
+.settings-options p, .settings-options i{
+  font-size: 16.5px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.settings-options button{
+  background: transparent;
+  border: 1px solid white;
+  background: rgb(92, 92, 92);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+.settings-options h1{
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: left;
+  font-weight: 800;
+}
+
+#settings-description{
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: left;
+}
+
+.settings-menu{
+  text-align: left;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#clear-storage-msg{
+  text-align: left;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: rgb(11, 175, 11);
+  font-size: 16.5px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
 }
 
 .new-footer{
@@ -953,10 +1017,10 @@ hr{
     margin-bottom: 45px;
   }
   #post-info{
-    width: 63%;
+    width: 67%;
   }
   #post-info-recent{
-    width: 63%;
+    width: 67%;
   }
   #post-content{
     text-align: left;
