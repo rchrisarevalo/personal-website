@@ -67,7 +67,7 @@ hr{
 }
 
 .center-container{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   position: absolute;
   display: flex;
   text-align: center;
@@ -82,6 +82,7 @@ hr{
   font-size: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-weight: 800;
 }
 
 .center-message p{
