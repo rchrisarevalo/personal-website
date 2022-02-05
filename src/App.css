@@ -375,7 +375,7 @@ hr{
 
 .intro h1{
   font-weight: 800;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: left;
   margin: 0.6em;
   text-transform: uppercase;
@@ -416,7 +416,7 @@ hr{
 }
 
 .works h1{
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -512,7 +512,7 @@ hr{
   letter-spacing: 1px;
   margin-left: 10%;
   margin-right: 10%;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 800;
 }
 
@@ -524,7 +524,7 @@ hr{
   padding-bottom: 5px;
   margin-left: 4%;
   margin-right: 4%;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #posts-description{
@@ -598,7 +598,7 @@ hr{
   margin-top: 45px;
   font-weight: 800;
   text-transform: uppercase;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #archive-year{
