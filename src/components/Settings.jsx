@@ -13,13 +13,13 @@ var clicked2 = false;
 function clearLocalStorage(){
     var msg = document.getElementById("clear-storage-msg");
     localStorage.clear();
-    msg.innerHTML = "All local storage values have been cleared! Save these changes for them to go into effect!";
+    msg.innerHTML = "All the local storage for this website have been cleared! Save these changes for them to go into effect!";
 }
 
 function light_dark_mode(){
     if (clicked === false){
         localStorage.setItem("d_l_mode", "changed");
-        document.body.style.cssText = 'background: white; color: black; transition: .5s;'
+        document.body.style.cssText = 'background: #242525; color: white; transition: .5s;'
         clicked = true;
     } else if (clicked2 === false && clicked === true){
         document.body.style.cssText = 'transition: .5s;';
@@ -40,7 +40,6 @@ function save(){
         window.location.reload();
     }, 500)
     msg.innerHTML = "Saving changes...";
-    document.body.style.cssText = 'z-index: 2000; overflow: hidden;';
 }
 
 const Settings = () => {
@@ -71,7 +70,7 @@ const Settings = () => {
                     <p id="settings-description">Choose from the settings below:</p>
                     <br></br>
                     <div className="settings-menu">
-                        <i>Clear all the local storage values saved for this website:</i>
+                        <i>Clear all the local storage saved for this website:</i>
                         <br></br>
                         <br></br>
                         <button onClick={clearLocalStorage}>Clear</button>
@@ -80,7 +79,7 @@ const Settings = () => {
                         <i>Switch to light or dark mode:</i>
                         <br></br>
                         <br></br>
-                        <button onClick={light_dark_mode}>Light/Dark Mode</button>
+                        <button onClick={light_dark_mode} id="mode-msg">Light/Dark Mode</button>
                         <br></br>
                         <br></br>
                         <i>Reload page for changes to take effect:</i>
