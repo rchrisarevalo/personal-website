@@ -10,8 +10,8 @@
 }
 
 body{
-  color: white;
-  background: #242525;
+  color: black;
+  background: white;
   letter-spacing: 0.5px;
   overflow-x: hidden;
 }
@@ -672,6 +672,20 @@ hr{
   color: white;
   padding: 5px 20px;
   border-radius: 20px;
+  transition: .5s;
+}
+
+.settings-options button:hover{
+  background: rgb(0, 119, 255);
+  color: black;
+  font-weight: 800;
+  transition: .5s;
+}
+
+.settings-options button:focus{
+  background: pink;
+  color: black;
+  transition: .5s;
 }
 
 .settings-options h1{
@@ -1017,10 +1031,10 @@ hr{
     margin-bottom: 45px;
   }
   #post-info{
-    width: 67%;
+    width: 69%;
   }
   #post-info-recent{
-    width: 67%;
+    width: 69%;
   }
   #post-content{
     text-align: left;
