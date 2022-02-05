@@ -8,7 +8,7 @@ const Error404 = () => {
         <div className="center-container">
             <div className="center-message">
                 <IoWarningSharp size="15vh"></IoWarningSharp>
-                <h1>ERROR 404!</h1>
+                <h1>404</h1>
                 <p>Oops! It looks like what you were looking for does not exist on this website!</p>
                 <p>Here are some links below that can help you resolve this issue:</p>
                 <br></br>
@@ -16,6 +16,7 @@ const Error404 = () => {
                     <Link to="/about">About Me</Link>
                     <Link to="/announcements">Announcements</Link>
                     <Link to="/archives">Archives</Link>
+                    <Link to="/settings">Settings</Link>
                 </HashRouter>
             </div>
         </div>
