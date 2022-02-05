@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosMenu, IoIosInformationCircleOutline } from "react-icons/io";
-import { IoSendOutline, IoCloseOutline, IoMegaphoneOutline, IoArchiveOutline } from "react-icons/io5";
+import { IoSettingsOutline, IoCloseOutline, IoMegaphoneOutline, IoArchiveOutline } from "react-icons/io5";
 
 import { Link, HashRouter } from "react-router-dom";
 import ReactDOMServer from 'react-dom/server';
@@ -21,16 +21,6 @@ const Nav = () => {
     }
   }
 
-  function displayNotif() {
-    var e = document.getElementById("warning-notif-2")
-
-    e.classList.toggle("active")
-
-    setTimeout(function () {
-      e.classList.remove("active")
-    }, 5000)
-  }
-
   return (
     <nav className="nav-bar">
       <div className="burger-icon" onClick={activateNav}>
@@ -39,19 +29,17 @@ const Nav = () => {
       <div className="logo">
         <a href={"./"}>Ruben C. Arevalo</a>
       </div>
-      <div className="contact-icon" onClick={displayNotif}>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1nR8hmOAMRTU3fDZsbLRGkjzKvA9uRLZW_YdvsyBEctqDOw/viewform" target="_blank" rel="noreferrer"><IoSendOutline id="contact-style" color="white" /></a>
+      <div className="contact-icon">
+        <Link to="/settings"><IoSettingsOutline id="contact-style" color="white" /></Link>
       </div>
 
       <ul className="nav-list">
         <HashRouter>
-          <li><Link to="/about"><IoIosInformationCircleOutline id="nav-icons-style" size="18px" />About Me</Link></li>
-          <li><Link to="/announcements"><IoMegaphoneOutline id="nav-icons-style" size="18px" />Announcements</Link></li>
-          <li><Link to="/archives"><IoArchiveOutline id="nav-icons-style" size="18px" />Archives</Link></li>
+          <li><Link to="/about"><IoIosInformationCircleOutline id="nav-icons-style" size="16px" />About Me</Link></li>
+          <li><Link to="/announcements"><IoMegaphoneOutline id="nav-icons-style" size="16px" />Announcements</Link></li>
+          <li><Link to="/archives"><IoArchiveOutline id="nav-icons-style" size="16px" />Archives</Link></li>
+          <li><Link to="/settings"><IoSettingsOutline id="nav-icons-style" size="16px" />Settings</Link></li>
         </HashRouter>
-        <div className="button" onClick={displayNotif} id="mobile-remove">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1nR8hmOAMRTU3fDZsbLRGkjzKvA9uRLZW_YdvsyBEctqDOw/viewform" target="_blank" rel="noreferrer"><IoSendOutline size="22px" id="report-icon" />Contact Me</a>
-        </div>
       </ul>
     </nav>
   );
