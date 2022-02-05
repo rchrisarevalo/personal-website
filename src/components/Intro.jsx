@@ -45,7 +45,7 @@ const Intro = () => {
             <Notification />
             <Update />
             <div className="intro-container" id="about">
-                <img src={profilepic} alt="profile-pic" data-aos="fade-down"></img>
+                <img src={profilepic} alt="profile-pic" data-aos="fade"></img>
                 <h1 data-aos="fade-down">About the Author</h1>
                 <p data-aos="fade-down" data-aos-delay="500">
                     {time_greeting()} everyone! My name is Ruben Christopher Arevalo, and I am a 20 year old third-year student attending the University of Texas-Rio Grande Valley.
