@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from "react-helmet";
 import { Link, HashRouter } from "react-router-dom";
 
@@ -8,6 +8,11 @@ import Nav from "../../Nav.jsx";
 import NewFooter from "../../NewFooter.jsx";
 
 const December2021Posts = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    })
+
     return (
         <div class="posts-main">
             <Helmet>

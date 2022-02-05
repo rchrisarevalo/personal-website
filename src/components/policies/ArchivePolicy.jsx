@@ -18,8 +18,6 @@ const ArchivePolicy = () => {
         nprogress.set(0.5);
         nprogress.inc(1.0);
         nprogress.done(true);
-
-        window.scrollTo(0, 0);
     }, []);
 
     return (
@@ -37,7 +35,7 @@ const ArchivePolicy = () => {
                 <div className="archive-policy-description">
                     <h1>Archival Policy</h1>
                     <br></br>
-                    <h4><i>Last Modified: January 15, 2022</i></h4>
+                    <h4><i>Last Modified: February 5, 2022</i></h4>
                     <br></br>
                     <p>
                         Hello everyone. On September 2021, I started to archive posts from the
@@ -104,7 +102,7 @@ const ArchivePolicy = () => {
                     <br></br>
                     <br></br>
                     <br></br>
-                    <h3>Archive Availability Period</h3>
+                    <h3>Archive Cleanup Period</h3>
                     <br></br>
                     <p>
                         Any monthly archive catalogs will generally be available for a period of 3 years. After the time
@@ -113,6 +111,14 @@ const ArchivePolicy = () => {
                         Site permanently, never to be seen again. Requests to bring back posts that have expired past the
                         deadline will automatically be denied, as the posts have already been deleted from this Site
                         and away from user's eyes in the future.
+                    </p>
+                    <p>
+                        Let me summarize. Archives containing posts from a specific past month and/or year will be available
+                        for only 3 years. After those 3 years have passed, an event known as an "archive cleanup" will take
+                        effect every August after the time period has passed. So let's say that the year is 2024, and the month
+                        is August. Starting that month, any announcements from the year 2021 will be completely wiped from the
+                        Site. The next year (2025), will see its 2022 announcements being wiped as well. I think that pattern
+                        has already been clear by now. Note that this will apply to all archives that are 3 years old.
                     </p>
                     <br></br>
                     <br></br>
