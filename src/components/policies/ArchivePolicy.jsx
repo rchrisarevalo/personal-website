@@ -18,6 +18,8 @@ const ArchivePolicy = () => {
         nprogress.set(0.5);
         nprogress.inc(1.0);
         nprogress.done(true);
+
+        window.scrollTo(0, 0);
     }, []);
 
     return (
