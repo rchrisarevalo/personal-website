@@ -1,7 +1,7 @@
 {
   "homepage": "https://rchrisarevalo.github.io/personal-website",
   "name": "personal-website",
-  "version": "2.13.2",
+  "version": "2.14.0",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^8.11.3",
