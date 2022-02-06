@@ -79,7 +79,18 @@ const Settings = () => {
                         <i>Switch to light or dark mode:</i>
                         <br></br>
                         <br></br>
-                        <button onClick={light_dark_mode} id="mode-msg">Light/Dark Mode</button>
+                        { d === "changed" &&
+                            <select id="value_check" onChange={light_dark_mode}>
+                                <option value="light">Light</option>
+                                <option value="dark" selected>Dark</option>
+                            </select>
+                        }
+                        { (d === "normal" || d === null) &&
+                            <select id="value_check" onChange={light_dark_mode}>
+                                <option value="light" selected>Light</option>
+                                <option value="dark">Dark</option>
+                            </select>
+                        }
                         <br></br>
                         <br></br>
                         <i>Reload page for changes to take effect:</i>
