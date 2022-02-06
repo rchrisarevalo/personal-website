@@ -34,12 +34,19 @@ if (d === "changed") {
 
 function save(){
     var msg = document.getElementById("clear-storage-msg");
+    
+    // eslint-disable-next-line no-restricted-globals
+    let confirm_msg = confirm("Save these changes?");
 
-    setTimeout(() => {
-        msg.innerHTML = "All changes saved!";
-        window.location.reload();
-    }, 500)
-    msg.innerHTML = "Saving changes...";
+    if (confirm_msg === true){
+        setTimeout(() => {
+            msg.innerHTML = "All changes saved!";
+            window.location.reload();
+        }, 500)
+        msg.innerHTML = "Saving changes...";
+    } else {
+        // Do nothing...
+    }
 }
 
 const Settings = () => {
