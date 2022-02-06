@@ -1,11 +1,15 @@
-# Personal Website (v2.13.2)
+# Personal Website (v2.14.0)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on January 22, 2022):
+# UPDATES (made on February 5, 2022):
 
-* A vulnerability in a dependency has been fixed.
+* New features were added for this update:
+    * A new Settings page was added to this Site. It provides a few options for now, as I plan to expand on it in the future.
+    * The aforementioned new features that I mentioned are the ability to clean any local storage stored for this site on the user's browser.
+    * The user has the ability to change from light mode to dark mode and vice versa. This feature was finally re-integrated into this site after improvements were made.
+    * For the changes to take effect fully, however, the user must save these changes. Fortunately, a "Save" button is provided for the user to make these changes.
 
 # CREDITS:
 * Progress bar by nProgress (author: rstacruz)
