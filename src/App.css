@@ -322,6 +322,7 @@ hr{
 }
 
 .update-message{
+  display: none;
   font-family: 'Open Sans', sans-serif;
   margin: 0.5em;
   margin-left: 20%;
@@ -665,7 +666,7 @@ hr{
   letter-spacing: 0.5px;
 }
 
-.settings-options button{
+.settings-options button, .settings-options select{
   background: transparent;
   border: 1px solid white;
   background: rgb(92, 92, 92);
