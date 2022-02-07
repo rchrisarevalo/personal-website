@@ -5,6 +5,8 @@ import NewFooter from '../../NewFooter.jsx';
 
 import { Helmet } from 'react-helmet';
 
+import './Policies.css';
+
 import nprogress from 'nprogress';
 import "nprogress/nprogress.css";
 
