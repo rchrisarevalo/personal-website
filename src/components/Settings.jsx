@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Helmet } from 'react-helmet';
 import Nav from "../Nav.jsx";
 import NewFooter from "../NewFooter.jsx";
+import { IoTrashOutline, IoSaveOutline } from "react-icons/io5";
 
 import nprogress from "nprogress";
 import "nprogress/nprogress.css";
@@ -80,7 +81,7 @@ const Settings = () => {
                         <i>Clear all the local storage saved for this website:</i>
                         <br></br>
                         <br></br>
-                        <button onClick={clearLocalStorage}>Clear</button>
+                        <button onClick={clearLocalStorage}><IoTrashOutline size="18px" id="setting-btn-icon"/>Clear</button>
                         <br></br>
                         <br></br>
                         <i>Switch to light or dark mode:</i>
@@ -88,6 +89,7 @@ const Settings = () => {
                         <br></br>
                         { d === "changed" &&
                             <select id="value_check" onChange={light_dark_mode}>
+                                
                                 <option value="light">Light</option>
                                 <option value="dark" selected>Dark</option>
                             </select>
@@ -103,7 +105,7 @@ const Settings = () => {
                         <i>Reload page for changes to take effect:</i>
                         <br></br>
                         <br></br>
-                        <button type="submit" onClick={save}>Save</button>
+                        <button type="submit" onClick={save}><IoSaveOutline size="18px" id="setting-btn-icon"/>Save</button>
                     </div>
                     <div id="clear-storage-msg"></div>
                 </div>
