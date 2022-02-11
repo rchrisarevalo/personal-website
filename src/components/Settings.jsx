@@ -89,7 +89,6 @@ const Settings = () => {
                         <br></br>
                         { d === "changed" &&
                             <select id="value_check" onChange={light_dark_mode}>
-                                
                                 <option value="light">Light</option>
                                 <option value="dark" selected>Dark</option>
                             </select>
