@@ -48,6 +48,10 @@ hr{
   background: grey;
 }
 
+::selection{
+  background: rgb(203, 124, 219);
+}
+
 #closed-button{
   padding: 7px 25px;
 }
