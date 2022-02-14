@@ -8,8 +8,8 @@ const RecentPosts = () => {
                 The last three recent announcements will be posted here. This page will be updated whenever there are new announcements.
                 To view all announcements, click on "Announcements" on the navigation bar.
             </p>
-            <div className="post-info-recent" id="post-margin" data-aos-delay="500" data-aos="fade">
-                <p id="post-info">
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+                <p id="post-info-recent">
                     By: Ruben Christopher Arevalo. Posted on 02/14/2022, 7:22 AM.
                 </p>
                 <p id="post-content">
@@ -17,16 +17,16 @@ const RecentPosts = () => {
                     partners, or spouses! Have a wonderful rest of the day!
                 </p>
             </div>
-            <div className="post-info-recent" id="post-margin" data-aos-delay="500" data-aos="fade">
-                <p id="post-info">
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+                <p id="post-info-recent">
                     By: Ruben Christopher Arevalo. Posted on 02/13/2022, 4:11 PM.
                 </p>
                 <p id="post-content">
                     I hope you all had a wonderful weekend and have a great Valentine's Day tomorrow!
                 </p>
             </div>
-            <div className="post-info-recent" id="post-margin" data-aos-delay="500" data-aos="fade">
-                <p id="post-info">
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+                <p id="post-info-recent">
                     By: Ruben Christopher Arevalo. Posted on 02/13/2022, 4:11 PM.
                 </p>
                 <p id="post-content">
