@@ -20,6 +20,15 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 02/14/2022, 7:22 AM.
+                </p>
+                <p id="post-content">
+                    Happy Valentine's Day, everyone! I hope you all spend time with your loved ones, whether it'd be your family, your friends,
+                    partners, or spouses! Have a wonderful rest of the day!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 02/13/2022, 4:11 PM.
                 </p>
                 <p id="post-content">
