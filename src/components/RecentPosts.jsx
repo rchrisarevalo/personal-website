@@ -9,7 +9,7 @@ const RecentPosts = () => {
                 To view all announcements, click on "Announcements" on the navigation bar.
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
-                <p id="post-info-recent">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 02/14/2022, 7:22 AM.
                 </p>
                 <p id="post-content">
@@ -18,7 +18,7 @@ const RecentPosts = () => {
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
-                <p id="post-info-recent">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 02/13/2022, 4:11 PM.
                 </p>
                 <p id="post-content">
@@ -26,7 +26,7 @@ const RecentPosts = () => {
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
-                <p id="post-info-recent">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 02/13/2022, 4:11 PM.
                 </p>
                 <p id="post-content">
