@@ -10,6 +10,16 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
+                    By: Ruben Christopher Arevalo. Posted on 02/18/2022, 2:01 PM.
+                </p>
+                <p id="post-content">
+                    I hope you all had a wonderful week! I am writing to this to let y'all know that I am thinking about
+                    whether or not I am making a blog. I announced this idea last month and I expect to make a final decision
+                    by the end of March. That is all I have for today. Have a good afternoon, everyone!
+                </p>
+            </div>
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+                <p id="post-info-recent">
                     By: Ruben Christopher Arevalo. Posted on 02/14/2022, 7:22 AM.
                 </p>
                 <p id="post-content">
@@ -23,18 +33,6 @@ const RecentPosts = () => {
                 </p>
                 <p id="post-content">
                     I hope you all had a wonderful weekend and have a great Valentine's Day tomorrow!
-                </p>
-            </div>
-            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
-                <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 02/13/2022, 4:11 PM.
-                </p>
-                <p id="post-content">
-                    In other news, tomorrow is Valentine's Day! I hope you all spend tomorrow with your loved ones in spite of everything
-                    that has been going on (the pandemic, school, work, etc.). If you don't see an announcement from me tomorrow, I am either
-                    busy with college work and/or spending my day with my loved ones. However, while I may not guarantee it, I will post
-                    an announcement here saying "Happy Valentine's Day, everyone!". Again, if this doesn't happen, I will post a similar,
-                    but subsequent announcement post-Valentine's Day.
                 </p>
             </div>
         </div>
