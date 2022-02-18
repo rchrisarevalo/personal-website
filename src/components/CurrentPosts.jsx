@@ -20,6 +20,16 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 02/18/2022, 2:01 PM.
+                </p>
+                <p id="post-content">
+                    I hope you all had a wonderful week! I am writing to this to let y'all know that I am thinking about
+                    whether or not I am making a blog. I announced this idea last month and I expect to make a final decision
+                    by the end of March. That is all I have for today. Have a good afternoon, everyone!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 02/14/2022, 7:22 AM.
                 </p>
                 <p id="post-content">
