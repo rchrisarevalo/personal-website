@@ -81,7 +81,12 @@ const Settings = () => {
                         <i>Clear all the local storage saved for this website:</i>
                         <br></br>
                         <br></br>
-                        <button onClick={clearLocalStorage}><IoTrashOutline size="18px" id="setting-btn-icon"/>Clear</button>
+                        { d !== null &&
+                            <button onClick={clearLocalStorage}><IoTrashOutline size="16px" id="setting-btn-icon"/>Clear</button>
+                        }
+                        { d === null &&
+                            <button onClick={clearLocalStorage} id="settings-disabled" disabled><IoTrashOutline size="16px" id="setting-btn-icon"/>Clear</button>
+                        }
                         <br></br>
                         <br></br>
                         <i>Switch to light or dark mode:</i>
@@ -104,7 +109,7 @@ const Settings = () => {
                         <i>Reload page for changes to take effect:</i>
                         <br></br>
                         <br></br>
-                        <button type="submit" onClick={save}><IoSaveOutline size="18px" id="setting-btn-icon"/>Save</button>
+                        <button type="submit" onClick={save}><IoSaveOutline size="16px" id="setting-btn-icon"/>Save</button>
                     </div>
                     <div id="clear-storage-msg"></div>
                 </div>
