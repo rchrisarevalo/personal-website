@@ -10,6 +10,17 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
+                    By: Ruben Christopher Arevalo. Posted on 02/22/2022, 9:50 AM.
+                </p>
+                <p id="post-content">
+                    Hello. I am writing to let you all know that whenever you decide to clear the local storage values from this website
+                    to save space on your browser on the "Settings" page and you save the changes, the "Clear" button will be disabled.
+                    However, to reactivate the "Clear" button, you have to pick a theme (e.g. dark mode or light mode if you switched from
+                    the latter). Once that is done, you save the changes you made and the "Clear" button should be enabled.
+                </p>
+            </div>
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+                <p id="post-info-recent">
                     By: Ruben Christopher Arevalo. Posted on 02/18/2022, 2:01 PM.
                 </p>
                 <p id="post-content">
@@ -25,14 +36,6 @@ const RecentPosts = () => {
                 <p id="post-content">
                     Happy Valentine's Day, everyone! I hope you all spend time with your loved ones, whether it'd be your family, your friends,
                     partners, or spouses! Have a wonderful rest of the day!
-                </p>
-            </div>
-            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
-                <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 02/13/2022, 4:11 PM.
-                </p>
-                <p id="post-content">
-                    I hope you all had a wonderful weekend and have a great Valentine's Day tomorrow!
                 </p>
             </div>
         </div>
