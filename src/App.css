@@ -635,7 +635,7 @@ hr{
   color: white;
   border: 1px solid white;
   background: rgb(92, 92, 92);
-  border-radius: 20px;
+  border-radius: 5px;
   transition: .5s;
 }
 
@@ -688,7 +688,7 @@ hr{
 
 #settings-disabled:hover{
   transition: none;
-  color: white;
+  color: rgba(138, 138, 138, 0.644);
   font-weight: 500;
 }
 
@@ -699,6 +699,10 @@ hr{
   padding: 5px 20px;
   border-radius: 5px;
   transition: .5s;
+  font-weight: 500;
+}
+
+.settings-options option{
   font-weight: 500;
 }
 
