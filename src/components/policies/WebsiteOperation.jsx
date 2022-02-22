@@ -147,7 +147,7 @@ const WebsiteOperation = () => {
                     <br></br>
                     <br></br>
                     <p>
-                        <i>If you have any questions regarding this policy, please feel free to click the "Contact Me" button (or the paper airplane icon in the mobile version) to leave a message.</i>
+                        <i>Let me know if you have any questions.</i>
                     </p>
                 </div>
             </div>
