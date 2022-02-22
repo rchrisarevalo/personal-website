@@ -20,6 +20,17 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 02/22/2022, 9:50 AM.
+                </p>
+                <p id="post-content">
+                    Hello. I am writing to let you all know that whenever you decide to clear the local storage values from this website
+                    to save space on your browser on the "Settings" page and you save the changes, the "Clear" button will be disabled.
+                    However, to reactivate the "Clear" button, you have to pick a theme (e.g. dark mode or light mode if you switched from
+                    the latter). Once that is done, you save the changes you made and the "Clear" button should be enabled.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 02/18/2022, 2:01 PM.
                 </p>
                 <p id="post-content">
