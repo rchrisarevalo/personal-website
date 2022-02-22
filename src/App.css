@@ -671,22 +671,31 @@ hr{
 }
 
 .settings-options button{
-  background: transparent;
   border: 1px solid white;
   background: rgb(92, 92, 92);
   color: white;
   padding: 5px 20px;
-  border-radius: 20px;
+  border-radius: 5px;
   transition: .5s;
 }
 
+#settings-disabled{
+  background: rgba(233, 232, 232, 0.651);
+  transition: none;
+}
+
+#settings-disabled:hover{
+  transition: none;
+  color: white;
+  font-weight: 400;
+}
+
 .settings-options select{
-  background: transparent;
   border: 1px solid white;
   background: rgb(92, 92, 92);
   color: white;
-  padding: 4px 10px;
-  border-radius: 20px;
+  padding: 5px 20px;
+  border-radius: 5px;
   transition: .5s;
 }
 
