@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.ee377367.css",
+    "main.css": "/personal-website/static/css/main.a3b0f746.css",
     "main.js": "/personal-website/static/js/main.83b9766d.js",
     "static/js/787.5809834d.chunk.js": "/personal-website/static/js/787.5809834d.chunk.js",
     "static/media/Dec 5 2021.JPEG": "/personal-website/static/media/Dec 5 2021.9ec8e141599cfdeeb424.JPEG",
@@ -14,12 +14,12 @@
     "static/media/February 2022 Pic (Min).jpg": "/personal-website/static/media/February 2022 Pic (Min).a6c4b6d8b20941178f6a.jpg",
     "static/media/cv-website-education.png": "/personal-website/static/media/cv-website-education.1f5c2914fed0bd8a8a28.png",
     "index.html": "/personal-website/index.html",
-    "main.ee377367.css.map": "/personal-website/static/css/main.ee377367.css.map",
+    "main.a3b0f746.css.map": "/personal-website/static/css/main.a3b0f746.css.map",
     "main.83b9766d.js.map": "/personal-website/static/js/main.83b9766d.js.map",
     "787.5809834d.chunk.js.map": "/personal-website/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee377367.css",
+    "static/css/main.a3b0f746.css",
     "static/js/main.83b9766d.js"
   ]
 }
