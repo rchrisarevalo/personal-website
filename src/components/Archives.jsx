@@ -64,6 +64,7 @@ const Archives = () => {
                 <HashRouter>
                     <li><b id="archive-year">2022:</b></li>
                     <li><Link to="/announcements/2022/January">January</Link></li>
+                    <li><Link to="/announcements/2022/February">February</Link></li>
                 </HashRouter>
             </div>
             <br></br>
@@ -79,12 +80,11 @@ const Archives = () => {
                     again.
                 </p>
                 <p id="archive-message">
-                    This page is still under development. However, I will continue to add to it as time passes by, including a new
+                    I will continue to add to it as time passes by, including a new
                     archive for each passing month of the year so that other people can access old announcements if they wish to do
                     so.
                 </p>
             </div>
-            <br></br>
             <br></br>
             <br></br>
             <br></br>
