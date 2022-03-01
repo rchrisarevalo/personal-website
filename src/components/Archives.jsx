@@ -71,18 +71,11 @@ const Archives = () => {
             <br></br>
             <div className="center-message">
                 <p id="archive-message">
-                    I will continue adding to this page as time progresses. But for now, this page will contain
-                    virtually nothing aside from the archives of the announcements associated with that particular
-                    year and month. Just like every month, I will wipe the <b>Announcements</b> page clean after
+                    I will continue adding to this page as time progresses. Just like every month, I will wipe the <b>Announcements</b> page clean after
                     the end of the month and will store the posts from the previous month into its own page.
-                    However, I will store up to only 3 years of previous announcements. Once the mentioned deadline has expired,
-                    then the old announcements will be permanently removed from this website, never to be seen
+                    I will store up to only 3 years of previous announcements in accordance to the archival process policy I implemented. 
+                    Once the mentioned deadline has expired, then the old announcements will be permanently removed from this website, never to be seen
                     again.
-                </p>
-                <p id="archive-message">
-                    I will continue to add to it as time passes by, including a new
-                    archive for each passing month of the year so that other people can access old announcements if they wish to do
-                    so.
                 </p>
             </div>
             <br></br>
