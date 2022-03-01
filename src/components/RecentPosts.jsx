@@ -10,32 +10,34 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 02/22/2022, 9:50 AM.
+                    By: Ruben Christopher Arevalo. Posted on 03/01/2022, 12:00 AM.
                 </p>
                 <p id="post-content">
-                    Hello. I am writing to let you all know that whenever you decide to clear the local storage values from this website
-                    to save space on your browser on the "Settings" page and you save the changes, the "Clear" button will be disabled.
-                    However, to reactivate the "Clear" button, you have to pick a theme (e.g. dark mode or light mode if you switched from
-                    the latter). Once that is done, you save the changes you made and the "Clear" button should be enabled.
+                    Apart from that, I am nevertheless excited by the idea of creating a blog since it allows me to express
+                    myself a little bit more. I am expected to make a final decision regarding my blog by the end of the month.
+                    That's all the announcements I have for today! Have a great rest of the day!
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 02/18/2022, 2:01 PM.
+                    By: Ruben Christopher Arevalo. Posted on 03/01/2022, 12:00 AM.
                 </p>
                 <p id="post-content">
-                    I hope you all had a wonderful week! I am writing to this to let y'all know that I am thinking about
-                    whether or not I am making a blog. I announced this idea last month and I expect to make a final decision
-                    by the end of March. That is all I have for today. Have a good afternoon, everyone!
+                    Should I decide to create new blog, it won't probably be ready until October 2022. The reason for
+                    this is because I am going to be a senior in college. When that happens, I will be more busier as
+                    I am going to be building a senior project that I need to do if I want to graduate. Whatever happens,
+                    and if time permits, then I will continue working on the blog. Again, keep in mind that what I mentioned
+                    above will only occur if I decide to create it.
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 02/14/2022, 7:22 AM.
+                    By: Ruben Christopher Arevalo. Posted on 03/01/2022, 12:00 AM.
                 </p>
                 <p id="post-content">
-                    Happy Valentine's Day, everyone! I hope you all spend time with your loved ones, whether it'd be your family, your friends,
-                    partners, or spouses! Have a wonderful rest of the day!
+                    Welcome to the new month, everyone! I hope you all enjoy this month as spring is approaching
+                    fast. In other news, I want to remind you all who have been keeping up with the recent announcements
+                    that I will decide whether or not to create a new blog.
                 </p>
             </div>
         </div>
