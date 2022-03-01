@@ -621,7 +621,8 @@ hr{
 }
 
 #archive-year{
-  font-size: 17px;
+  font-size: 22px;
+  font-weight: 800;
 }
 
 .archive-row-2021{
@@ -644,6 +645,10 @@ hr{
   background: rgb(92, 92, 92);
   box-shadow: 0 0 4px black;
   border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   transition: .5s;
 }
 
@@ -1055,6 +1060,10 @@ hr{
     margin-left: .5%;
     margin-right: .5%;
     padding-bottom: 15px;
+  }
+  #archive-year{
+    font-size: 30px;
+    font-weight: 800;
   }
   .new-footer{
     padding-top: 20px;
