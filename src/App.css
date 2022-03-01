@@ -237,7 +237,15 @@ hr{
 }
 
 .nav-list li a:hover{
-  background: white;
+  background: rgb(0, 119, 255);
+  border: 1px solid white;
+  color: black;
+  font-weight: 800;
+  transition: .5s;
+}
+
+.nav-list li a:focus{
+  background: pink;
   color: black;
   font-weight: 800;
   transition: .5s;
@@ -617,8 +625,8 @@ hr{
 }
 
 .archive-row-2021{
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
   text-align: center;
 }
 
@@ -633,24 +641,23 @@ hr{
   padding: 5px 18px;
   text-decoration: none;
   color: white;
-  border: 1px solid white;
   background: rgb(92, 92, 92);
+  box-shadow: 0 0 4px black;
   border-radius: 5px;
   transition: .5s;
 }
 
 .archive-row-2021 li a:hover{
-  background: white;
+  background: rgb(0, 119, 255);
   color: black;
   font-weight: 700;
-  border: 1px solid black;
-  transform: translateY(-5px);
+  transform: translateY(-4px);
   transition: .5s;
 }
 
 .archive-row-2021 li a:focus{
-  background: green;
-  color: white;
+  background: pink;
+  color: black;
   transition: .5s;
 }
 
