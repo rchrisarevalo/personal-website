@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from 'react-helmet';
-import Nav from "../Nav.jsx";
+import NavSettings from "../NavSettings.jsx";
 import NewFooter from "../NewFooter.jsx";
 import { IoTrashOutline, IoSaveOutline } from "react-icons/io5";
 
@@ -64,7 +64,7 @@ const Settings = () => {
 
     return (
         <div className="settings-container">
-            <Nav />
+            <NavSettings />
             <Helmet>
                 <title>Ruben C. Arevalo - Personal Website - Settings</title>
             </Helmet>
