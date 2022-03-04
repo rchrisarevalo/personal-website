@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Helmet } from "react-helmet";
 
-import Nav from "../Nav.jsx";
+import NavAnnouncements from "../NavAnnouncements.jsx";
 import NewFooter from "../NewFooter.jsx";
 import CurrentPosts from './CurrentPosts.jsx';
 
@@ -25,7 +25,7 @@ const Posts = () => {
             <Helmet>
                 <title>Ruben C. Arevalo - Personal Website - Current Announcements</title>
             </Helmet>
-            <Nav />
+            <NavAnnouncements />
             <div className="notification" id="warning-notif-2">
                 <div className="notification-content" id="notif-2">
                     <p>Redirecting to contact form page...</p>
