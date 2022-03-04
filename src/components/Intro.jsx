@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Helmet } from 'react-helmet';
 import profilepic from '../images/February 2022 Pic (Min).jpg';
 
-import Nav from "../Nav.jsx";
+import NavAbout from "../NavAbout.jsx";
 import NewFooter from "../NewFooter.jsx";
 import Update from "./Update.jsx";
 import RecentPosts from './RecentPosts';
@@ -41,7 +41,7 @@ const Intro = () => {
             <Helmet>
                 <title>Ruben C. Arevalo - Personal Website - About Me</title>
             </Helmet>
-            <Nav />
+            <NavAbout />
             <Notification />
             <Update />
             <div className="intro-container" id="about">
