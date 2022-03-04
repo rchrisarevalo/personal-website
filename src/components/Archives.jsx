@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Helmet } from "react-helmet";
 import { Link, HashRouter } from "react-router-dom";
 
-import Nav from "../Nav.jsx";
+import NavArchives from "../NavArchives.jsx";
 import NewFooter from "../NewFooter.jsx";
 
 import nprogress from "nprogress";
@@ -25,7 +25,7 @@ const Archives = () => {
             <Helmet>
                 <title>Ruben C. Arevalo - Personal Website - Archives</title>
             </Helmet>
-            <Nav />
+            <NavArchives />
             <div className="notification" id="warning-notif-2">
                 <div className="notification-content" id="notif-2">
                     <p>Redirecting to contact form page...</p>
