@@ -10,6 +10,16 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
+                    By: Ruben Christopher Arevalo. Posted on 03/05/2022, 1:12 PM.
+                </p>
+                <p id="post-content">
+                    For those of you that haven't noticed, there have been some style changes I made to the UI of this website.
+                    A white border surrounding one of the links is an indicator of the page you are currently in. As usual,
+                    I will continue to maintain this website whenever I have time. Thank you for your patience.
+                </p>
+            </div>
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+                <p id="post-info-recent">
                     By: Ruben Christopher Arevalo. Posted on 03/01/2022, 12:00 AM.
                 </p>
                 <p id="post-content">
@@ -28,16 +38,6 @@ const RecentPosts = () => {
                     I am going to be building a senior project that I need to do if I want to graduate. Whatever happens,
                     and if time permits, then I will continue working on the blog. Again, keep in mind that what I mentioned
                     above will only occur if I decide to create it.
-                </p>
-            </div>
-            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
-                <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 03/01/2022, 12:00 AM.
-                </p>
-                <p id="post-content">
-                    Welcome to the new month, everyone! I hope you all enjoy this month as spring is approaching
-                    fast. In other news, I want to remind you all who have been keeping up with the recent announcements
-                    that I will decide whether or not to create a new blog.
                 </p>
             </div>
         </div>
