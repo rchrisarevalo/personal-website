@@ -20,6 +20,16 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 03/05/2022, 1:12 PM.
+                </p>
+                <p id="post-content">
+                    For those of you that haven't noticed, there have been some style changes I made to the UI of this website.
+                    A white border surrounding one of the links is an indicator of the page you are currently in. As usual,
+                    I will continue to maintain this website whenever I have time. Thank you for your patience.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 03/01/2022, 12:00 AM.
                 </p>
                 <p id="post-content">
