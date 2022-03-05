@@ -4,10 +4,11 @@ import { Link, HashRouter } from "react-router-dom";
 
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 
-import Nav from "../../Nav.jsx";
+import NavArchives from "../../NavArchives.jsx";
 import NewFooter from "../../NewFooter.jsx";
 
 const February2022Posts = () => {
+    
     useEffect(() => {
         window.scrollTo(0, 0);
     })
@@ -17,7 +18,7 @@ const February2022Posts = () => {
             <Helmet>
                 <title>Ruben C. Arevalo - Personal Website - Announcements (February 2022)</title>
             </Helmet>
-            <Nav />
+            <NavArchives />
             <div className="notification" id="warning-notif-2">
                 <div className="notification-content" id="notif-2">
                     <p>Redirecting to contact form page...</p>
