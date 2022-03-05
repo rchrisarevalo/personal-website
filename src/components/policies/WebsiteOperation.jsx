@@ -37,7 +37,7 @@ const WebsiteOperation = () => {
                 <div className="website-operation-policy-description">
                     <h1>Website Operation Policy</h1>
                     <br></br>
-                    <h4><i>Last Modified: January 15, 2022</i></h4>
+                    <h4><i>Last modified on: March 5, 2022</i></h4>
                     <br></br>
                     <p>
                         Hello everyone. Last month, I introduced a new policy that determined how this website
@@ -55,7 +55,7 @@ const WebsiteOperation = () => {
                     </p>
                     <p>
                         <i>
-                            <b>This policy will be subject to change at the owner's discretion.</b>
+                            <b>THIS POLICY IS SUBJECT TO CHANGE AT THE OWNER'S DISCRETION.</b>
                         </i>
                     </p>
                     <br></br>
