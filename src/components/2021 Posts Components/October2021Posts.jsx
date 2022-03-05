@@ -4,7 +4,7 @@ import { Link, HashRouter } from "react-router-dom";
 
 import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from "react-icons/io5";
 
-import Nav from "../../Nav.jsx";
+import NavArchives from "../../NavArchives.jsx";
 import NewFooter from "../../NewFooter.jsx";
 
 const October2021Posts = () => {
@@ -18,7 +18,7 @@ const October2021Posts = () => {
             <Helmet>
                 <title>Ruben C. Arevalo - Personal Website - Announcements (October 2021)</title>
             </Helmet>
-            <Nav />
+            <NavArchives />
             <div className="notification" id="warning-notif-2">
                 <div className="notification-content" id="notif-2">
                     <p>Redirecting to contact form page...</p>
