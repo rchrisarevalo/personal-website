@@ -4,7 +4,7 @@ import { Link, HashRouter } from "react-router-dom";
 
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 
-import Nav from "../../Nav.jsx";
+import NavArchives from "../../NavArchives.jsx";
 import NewFooter from "../../NewFooter.jsx";
 
 const August2021Posts = () => {
@@ -15,7 +15,7 @@ const August2021Posts = () => {
 
     return (
         <div className="posts-main">
-            <Nav />
+            <NavArchives />
             <div className="notification" id="warning-notif-2">
                 <div className="notification-content" id="notif-2">
                     <p>Redirecting to contact form page...</p>
