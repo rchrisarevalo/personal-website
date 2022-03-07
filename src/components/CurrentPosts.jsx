@@ -20,6 +20,33 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 03/07/2022, 3:10 PM.
+                </p>
+                <p id="post-content">
+                    That is all I have for today. I hope you all have a great rest of the week!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 03/07/2022, 3:10 PM.
+                </p>
+                <p id="post-content">
+                    In other news, spring break is coming up next week, and I will have a little bit more time
+                    to continue to maintain this website provided that I don't have that much homework to begin
+                    with.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 03/07/2022, 3:10 PM.
+                </p>
+                <p id="post-content">
+                    Happy Monday, everyone! I hope you all had a good start to the week so far and will continue to
+                    have a good week!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 03/05/2022, 1:12 PM.
                 </p>
                 <p id="post-content">
