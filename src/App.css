@@ -184,9 +184,11 @@ hr{
   transition: .5s;
 }
 
-.logo a:focus{
-  outline: 1px solid white;
-  border-radius: 5px;
+.logo a:active{
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: white;
+  transition: .5s;
 }
 
 .burger-icon{
@@ -252,7 +254,7 @@ hr{
   transition: .5s;
 }
 
-.nav-list li a:focus{
+.nav-list li a:active{
   background: pink;
   color: black;
   font-weight: 800;
@@ -287,7 +289,7 @@ hr{
   transition: .5s;
 }
 
-.button a:focus{
+.button a:active{
   background: green;
   color: white;
   transition: .5s;
@@ -667,7 +669,7 @@ hr{
   transition: .5s;
 }
 
-.archive-row-2021 li a:focus{
+.archive-row-2021 li a:active{
   background: pink;
   color: black;
   transition: .5s;
@@ -732,7 +734,7 @@ hr{
   transition: .5s;
 }
 
-.settings-options button:focus{
+.settings-options button:active{
   background: pink;
   color: black;
   transition: .5s;
