@@ -14,10 +14,39 @@ const CurrentPosts = () => {
             </p>
             <p id="posts-description">
                 <i>
-                    To view past announcements, click on the link that will take you to the <Link to="/archives">Archives</Link> page
+                    To view past announcements, click on the link that will take you to the <Link to="/archives"><b>Archives</b></Link> page
                     (or the link on the navigation bar). The Archives page gets updated every month for the duration of this Site.
                 </i>
             </p>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 03/09/2022, 1:20 AM.
+                </p>
+                <p id="post-content">
+                    Here is the link to my CV website: <a href="https://rchrisarevalo.github.io/cv-website" target="_blank" rel="noreferrer"><b>https://rchrisarevalo.github.io/cv-website</b></a>
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 03/09/2022, 1:20 AM.
+                </p>
+                <p id="post-content">
+                    I might write a short outline similar to the Archive and Website Operation policies that are included
+                    on this site, but for how my work is used, sometime in the future. If there are issues or questions you'd like to ask me,
+                    please feel free to contact me using the contact form on my CV website. The contact form link on this
+                    Site has been disabled until further notice.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 03/09/2022, 1:20 AM.
+                </p>
+                <p id="post-content">
+                    I updated the copyright notice that is included in the footer below for each page on this website.
+                    It now states that the site and the contents that it contains, most notably the images I uploaded
+                    onto this Site, are not to be copied through any unauthorized means.
+                </p>
+            </div>
             <div className="post" id="post-margin">
                 <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 03/07/2022, 3:08 PM.

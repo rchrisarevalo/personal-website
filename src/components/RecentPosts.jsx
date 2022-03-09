@@ -10,29 +10,31 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 03/07/2022, 3:08 PM.
+                    By: Ruben Christopher Arevalo. Posted on 03/09/2022, 1:20 AM.
                 </p>
                 <p id="post-content">
-                    That is all I have for today. I hope you all have a great rest of the week!
+                    Here is the link to my CV website: <a href="https://rchrisarevalo.github.io/cv-website" target="_blank" rel="noreferrer"><b>https://rchrisarevalo.github.io/cv-website</b></a>
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 03/07/2022, 3:08 PM.
+                    By: Ruben Christopher Arevalo. Posted on 03/09/2022, 1:20 AM.
                 </p>
                 <p id="post-content">
-                    In other news, spring break is coming up next week, and I will have a little bit more time
-                    to continue to maintain this website provided that I don't have that much homework to begin
-                    with.
+                    I might write a short outline similar to the Archive and Website Operation policies that are included
+                    on this site, but for how my work is used, sometime in the future. If there are issues or questions you'd like to ask me,
+                    please feel free to contact me using the contact form on my CV website. The contact form link on this
+                    Site has been disabled until further notice.
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 03/07/2022, 3:08 PM.
+                    By: Ruben Christopher Arevalo. Posted on 03/09/2022, 1:20 AM.
                 </p>
                 <p id="post-content">
-                    Happy Monday, everyone! I hope you all had a good start to the week so far and will continue to
-                    have a good week!
+                    I updated the copyright notice that is included in the footer below for each page on this website.
+                    It now states that the site and the contents that it contains, most notably the images I uploaded
+                    onto this Site, are not to be copied through any unauthorized means.
                 </p>
             </div>
         </div>
