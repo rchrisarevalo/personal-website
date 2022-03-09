@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-website/static/css/main.2216e32b.css",
-    "main.js": "/personal-website/static/js/main.62a8d40d.js",
+    "main.js": "/personal-website/static/js/main.86efdef8.js",
     "static/js/787.5809834d.chunk.js": "/personal-website/static/js/787.5809834d.chunk.js",
     "static/media/Dec 5 2021.JPEG": "/personal-website/static/media/Dec 5 2021.9ec8e141599cfdeeb424.JPEG",
     "static/media/sky-palm-shot-november-2020.jpg": "/personal-website/static/media/sky-palm-shot-november-2020.085fb6c922e4194a5191.jpg",
@@ -15,11 +15,11 @@
     "static/media/cv-website-education.png": "/personal-website/static/media/cv-website-education.1f5c2914fed0bd8a8a28.png",
     "index.html": "/personal-website/index.html",
     "main.2216e32b.css.map": "/personal-website/static/css/main.2216e32b.css.map",
-    "main.62a8d40d.js.map": "/personal-website/static/js/main.62a8d40d.js.map",
+    "main.86efdef8.js.map": "/personal-website/static/js/main.86efdef8.js.map",
     "787.5809834d.chunk.js.map": "/personal-website/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2216e32b.css",
-    "static/js/main.62a8d40d.js"
+    "static/js/main.86efdef8.js"
   ]
 }
