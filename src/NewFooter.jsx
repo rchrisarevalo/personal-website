@@ -30,7 +30,7 @@ const NewFooter = () => {
                     </div>
                 </div>
                 <div className="copyright" id="new-copyright">
-                    <p>&copy; {getCopyrightYear()} Ruben Christopher Arevalo. This page will not be copied, modified, reproduced, or distributed through unauthorized means.</p>
+                    <p>&copy; {getCopyrightYear()} Ruben Christopher Arevalo. This site and its contents will not be copied, modified, reproduced, or distributed through unauthorized means.</p>
                 </div>
             </div>
         </footer>
