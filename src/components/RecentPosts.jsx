@@ -13,7 +13,7 @@ const RecentPosts = () => {
                     By: Ruben Christopher Arevalo. Posted on 03/09/2022, 1:20 AM.
                 </p>
                 <p id="post-content">
-                    Here is the link to my CV website: <a href="https://rchrisarevalo.github.io/cv-website" target="_blank" rel="noreferrer"><b>https://rchrisarevalo.github.io/cv-website</b></a>
+                    Here is the link to my CV website: <a href="https://rchrisarevalo.github.io/cv-website" target="_blank" rel="noreferrer"><b>rchrisarevalo.github.io/cv-website</b></a>
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
