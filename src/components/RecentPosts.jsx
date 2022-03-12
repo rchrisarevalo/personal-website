@@ -10,31 +10,35 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 03/09/2022, 1:20 AM.
+                    By: Ruben Christopher Arevalo. Posted on 03/11/2022, 7:11 PM.
                 </p>
                 <p id="post-content">
-                    Here is the link to my CV website: <a href="https://rchrisarevalo.github.io/cv-website" target="_blank" rel="noreferrer"><b>rchrisarevalo.github.io/cv-website</b></a>
+                    That is all I have for today. Before I conclude this, I would like to put a reminder that a decision
+                    regarding whether or not I should put a blog on my website or create a separate site will be made in
+                    almost 3 weeks from now. However, it could be later than that as I will be more busy than before once
+                    I return to school from spring break. Have a great weekend and spring break everyone. Please stay safe!
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 03/09/2022, 1:20 AM.
+                    By: Ruben Christopher Arevalo. Posted on 03/11/2022, 7:11 PM.
                 </p>
                 <p id="post-content">
-                    I might write a short outline similar to the Archive and Website Operation policies that are included
-                    on this site, but for how my work is used, sometime in the future. If there are issues or questions you'd like to ask me,
-                    please feel free to contact me using the contact form on my CV website. The contact form link on this
-                    Site has been disabled until further notice.
+                    In addition, I am not going to be updating the website as much as I do during the course of the
+                    spring break. The last 2-3 weeks have been really stressful, as homeworks, quizzes, and tests have
+                    been piling up at a fast rate during that time. I am glad that it's all over with for now. Except
+                    for having one homework to do during the spring break and catching up on a project, I get to enjoy a
+                    well-deserved break along with other people who may have been in the same predicament as me.
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 03/09/2022, 1:20 AM.
+                    By: Ruben Christopher Arevalo. Posted on 03/11/2022, 7:11 PM.
                 </p>
                 <p id="post-content">
-                    I updated the copyright notice that is included in the footer below for each page on this website.
-                    It now states that the site and the contents that it contains, most notably the images I uploaded
-                    onto this Site, are not to be copied through any unauthorized means.
+                    I hope y'all have a good spring break! I understand that some of you have been waiting for the
+                    moment in which all of you can take an entire week off so you can relax and spend time with loved
+                    ones. I am one of those people, and I am ready to make the best out of it!
                 </p>
             </div>
         </div>
