@@ -30,9 +30,9 @@ const CurrentPosts = () => {
                     my work for this site back and I am planning to do the same for my CV website as well.
                 </p>
                 <p id="post-content">
-                    I also want to take this opportunity to announce that I am going to <b>delay the decision for the blog until next month.</b>
-                    College work and other personal circumstances have made me take this decision as it has become a little difficult for me
-                    to keep up with this website.
+                    I also want to take this opportunity to announce that I am going to <b>delay the decision for the blog until next month. </b>
+                    College work and other personal circumstances have made it difficult for me to keep updating this website at the moment
+                    which is the reasoning of why I made this decision.
                 </p>
                 <p id="post-content">
                     That's all I have to say for today. Thank you and have a great day!
