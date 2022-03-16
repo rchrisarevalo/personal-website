@@ -20,6 +20,26 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 03/16/2022, 11:54 AM.
+                </p>
+                <p id="post-content">
+                    I am leaving this here to let you all know that I have experienced big setbacks during the past few days.
+                    My computer was acting up lately during the last few days, and it was a difficult period as I tried
+                    everything to fix the problem that was affecting it. Unfortunately, I had to reset my computer completely
+                    in a last-ditch attempt to fix everything. The good news is that everything is working well. I managed to get
+                    my work for this site back and I am planning to do the same for my CV website as well.
+                </p>
+                <p id="post-content">
+                    I also want to take this opportunity to announce that I am going to <b>delay the decision for the blog until next month.</b>
+                    College work and other personal circumstances have made me take this decision as it has become a little difficult for me
+                    to keep up with this website.
+                </p>
+                <p id="post-content">
+                    That's all I have to say for today. Thank you and have a great day!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 03/11/2022, 7:11 PM.
                 </p>
                 <p id="post-content">
