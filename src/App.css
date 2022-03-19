@@ -247,9 +247,9 @@ hr{
 }
 
 .nav-list li a:hover{
-  background: rgb(0, 119, 255);
+  background: rgba(128, 128, 128, 0.267);
   border: 1px solid white;
-  color: black;
+  color: white;
   font-weight: 800;
   transition: .5s;
 }
