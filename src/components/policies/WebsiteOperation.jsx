@@ -25,7 +25,7 @@ const WebsiteOperation = () => {
     return (
         <div className="website-operation-policy-container">
             <Helmet>
-                <title>Ruben C. Arevalo - Personal Website - Website Operation Policy</title>
+                <title>Ruben C. Arevalo - Personal Website - Site Operation Policy</title>
             </Helmet>
             <Nav />
             <div className="notification" id="warning-notif-2">
@@ -35,9 +35,9 @@ const WebsiteOperation = () => {
             </div>
             <div className="website-operation-policy-box">
                 <div className="website-operation-policy-description">
-                    <h1>Website Operation Policy</h1>
+                    <h1>Site Operation Policy</h1>
                     <br></br>
-                    <h4><i>Last modified on: March 5, 2022</i></h4>
+                    <h4><i>Last modified on: March 29, 2022</i></h4>
                     <br></br>
                     <p>
                         Hello everyone. Last month, I introduced a new policy that determined how this website
