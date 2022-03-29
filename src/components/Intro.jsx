@@ -7,7 +7,6 @@ import NewFooter from "../NewFooter.jsx";
 import Update from "./Update.jsx";
 import RecentPosts from './RecentPosts';
 import Works from "../Works.jsx";
-import Notification from "./Notification.jsx";
 
 import nprogress from "nprogress";
 import "nprogress/nprogress.css";
@@ -42,7 +41,6 @@ const Intro = () => {
                 <title>Ruben C. Arevalo - Personal Website - About Me</title>
             </Helmet>
             <NavAbout />
-            <Notification />
             <Update />
             <div className="intro-container" id="about">
                 <img src={profilepic} alt="profile-pic" data-aos="fade"></img>
