@@ -1,15 +1,15 @@
-# Personal Website (v2.15.0)
+# Personal Website (v2.16.0)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on March 1, 2022):
+# UPDATES (made on March 29, 2022):
 
-* New stylistic changes were made to this website:
-    * For the "Archives" page, the links to old announcements have their text and font weight changed.
-    * The hover color for each available link on this site has been changed to blue.
-    * The focus color for each available link on this site has been changed to pink.
-    * New February 2022 archive page has been added. It will be available for 3 years in accordance to the Archival policy.
+* The footer div classes have been replaced with React Bootstrap components to make it appear more organized.
+    * I will continue to do this as time progresses. The use of React Bootstrap components will make designing this website a little bit easier than before.
+    * However, custom-made classes will still be made, either for buttons, forms, etc.
+* Dependency vulnerabilities have been addressed.
+* New profile pic has been added! :)
 
 # CREDITS:
 * Progress bar by nProgress (author: rstacruz)
