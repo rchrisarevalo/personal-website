@@ -20,6 +20,16 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 03/30/2022, 5:52 PM.
+                </p>
+                <p id="post-content">
+                    I am posting this as a reminder that this month's announcements on this page will be cleared tomorrow
+                    before midnight. New announcements for April will be posted following the Archival process of this month's
+                    announcements. Have a great day!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 03/29/2022, 8:41 AM.
                 </p>
                 <p id="post-content">
