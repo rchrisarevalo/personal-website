@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Helmet } from "react-helmet";
 import { Link, HashRouter } from "react-router-dom";
 
-import { IoArrowBackCircleOutline } from "react-icons/io5";
+import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from "react-icons/io5";
 
 import NavArchives from "../../NavArchives.jsx";
 import NewFooter from "../../NewFooter.jsx";
@@ -27,11 +27,12 @@ const February2022Posts = () => {
             <div class="posts-container">
                 <HashRouter>
                     <Link to="/announcements/2022/January"><IoArrowBackCircleOutline id="posts-arrow-left" title="January 2022 Announcements" size="40px" /></Link>
+                    <Link to="/announcements/2022/March"><IoArrowForwardCircleOutline id="posts-arrow-right" title="March 2022 Announcements" size="40px" /></Link>
                 </HashRouter>
                 <h1 id="posts-title">Announcements (February 2022)</h1>
                 <br></br>
                 <p id="posts-description">
-                    These are all the posts for January 2022 that were archived on this page. None of these posts will
+                    These are all the posts for February 2022 that were archived on this page. None of these posts will
                     be deleted or edited unless I decide otherwise.
                 </p>
                 <div className="post" id="post-margin">
