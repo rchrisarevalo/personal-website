@@ -65,6 +65,7 @@ const Archives = () => {
                     <li><b id="archive-year">2022:</b></li>
                     <li><Link to="/announcements/2022/January">January</Link></li>
                     <li><Link to="/announcements/2022/February">February</Link></li>
+                    <li><Link to="/announcements/2022/March">March</Link></li>
                 </HashRouter>
             </div>
             <br></br>
