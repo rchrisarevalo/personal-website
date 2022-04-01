@@ -10,6 +10,35 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
+                    By: Ruben Christopher Arevalo. Posted on 04/01/2022, 12:12 AM.
+                </p>
+                <p id="post-content">
+                    Despite that, I will try my best to make new features when possible. Have a great rest of the day,
+                    and once again, April Fool's!
+                </p>
+            </div>
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+                <p id="post-info-recent">
+                    By: Ruben Christopher Arevalo. Posted on 04/01/2022, 12:12 AM.
+                </p>
+                <p id="post-content">
+                    But honestly, I am going to continue maintaining this website whenever I have free time in my hands and
+                    if I have less work to do than usual. This month will be important as it is the month before finals. I
+                    am going to need to use my time wisely if I am going to have a good chance of obtaining my degree next
+                    year and pass all my courses.
+                </p>
+            </div>
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+                <p id="post-info-recent">
+                    By: Ruben Christopher Arevalo. Posted on 04/01/2022, 12:12 AM.
+                </p>
+                <p id="post-content">
+                    Today is April Fool's Day! I know my attempt at an April Fool's joke was
+                    kind of lousy. But hey, I tried my best!
+                </p>
+            </div>
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+                <p id="post-info-recent">
                     By: Ruben Christopher Arevalo. Posted on 03/31/2022, 1:30 PM.
                 </p>
                 <p id="post-content">
