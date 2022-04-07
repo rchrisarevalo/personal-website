@@ -5,11 +5,31 @@ import '../App.css';
 
 import Spinner from 'react-bootstrap/Spinner';
 
+var date = new Date().getDate();
+var month = new Date().getMonth();
+
 const Load = (props) => {
 
-    setTimeout(() => {
-        props.history.push('/about')
-    }, 3000)
+    // This will be in effect from April 9th to April 30th.
+    { ((month === 4 && date >= 9) && (month === 4 && date < 30)) && 
+        setTimeout(() => {
+            props.history.push('/closed')
+        }, 3000)
+    }
+
+    // Once it's the 30th, move to '/about'.
+    { (month === 4 && date === 30) && 
+        setTimeout(() => {
+            props.history.push('/about')
+        }, 3000)
+    }
+
+    // Current dates at the time of writing this code.
+    { ((month === 4 && date >= 7) && (month === 4 && date <= 8)) &&
+        setTimeout(() => {
+            props.history.push('/about')
+        }, 3000)
+    }
 
     return (
         <div className="loading-screen">
