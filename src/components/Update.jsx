@@ -9,6 +9,9 @@ function closeUpdateMsg() {
     localStorage.setItem("one-time", "enabled");
 }
 
+var closeDate = 9;
+var currentDate = new Date().getDate();
+
 const Update = () => {
     return (
         <div className="update-msg-container">
@@ -19,16 +22,8 @@ const Update = () => {
                         <IoAlertCircleOutline size="23px" id="update-icon" /> UPDATE:
                     </p>
                     <p>
-                        Hi everyone! As per usual and in accordance to the Archival Policy, any announcements
-                        from the previous month have been stored in its respective archive. Last month's announcements
-                        can be found in the "Archives" page in the new 2022 section.
-                    </p>
-                    <p>
-                        Also, when you read this message and decide to close it, it will not appear again the next time you reload
-                        this page completely, as a cookie is used to make this description appear once.
-                        Don't worry, no cookies are being used to track your personal information as this particular cookie applies
-                        to this website only and does not track you across the Web! If you have any problems or doubts, 
-                        feel free to contact me so that I can clarify any doubts you have.
+                        Hi everyone! This website will be closing in {Math.abs(currentDate - closeDate)} day(s) as I am taking a leave of absence for the next 3 weeks. For more information, please read
+                        my recent announcements below in the "Recent Announcements" section, or in the "Announcements" page.
                     </p>
                     <p>
                         <i>-- Ruben Christopher Arevalo</i>
