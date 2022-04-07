@@ -8,7 +8,7 @@ const RecentPosts = () => {
                 The last three recent announcements will be posted here. This page will be updated whenever there are new announcements.
                 To view all announcements, click on "Announcements" on the navigation bar.
             </p>
-            <div className="post" id="post-margin">
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
                     By: Ruben Christopher Arevalo. Posted on 04/07/2022, 5:15 PM.
                 </p>
@@ -17,7 +17,7 @@ const RecentPosts = () => {
                     passed. Thank you and have a great day!
                 </p>
             </div>
-            <div className="post" id="post-margin">
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
                     By: Ruben Christopher Arevalo. Posted on 04/07/2022, 5:15 PM.
                 </p>
@@ -28,7 +28,7 @@ const RecentPosts = () => {
                     This change will take effect on Saturday, April 9, midnight.
                 </p>
             </div>
-            <div className="post" id="post-margin">
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
                     By: Ruben Christopher Arevalo. Posted on 04/07/2022, 5:15 PM.
                 </p>
