@@ -8,33 +8,34 @@ const RecentPosts = () => {
                 The last three recent announcements will be posted here. This page will be updated whenever there are new announcements.
                 To view all announcements, click on "Announcements" on the navigation bar.
             </p>
-            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+            <div className="post" id="post-margin">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 04/01/2022, 12:12 AM.
+                    By: Ruben Christopher Arevalo. Posted on 04/07/2022, 5:15 PM.
                 </p>
                 <p id="post-content">
-                    Despite that, I will try my best to make new features when possible. Have a great rest of the day,
-                    and once again, April Fool's!
+                    That is everything I have to say. Thank you for your patience and I hope to re-open this website once the timeframe has
+                    passed. Thank you and have a great day!
                 </p>
             </div>
-            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+            <div className="post" id="post-margin">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 04/01/2022, 12:12 AM.
+                    By: Ruben Christopher Arevalo. Posted on 04/07/2022, 5:15 PM.
                 </p>
                 <p id="post-content">
-                    But honestly, I am going to continue maintaining this website whenever I have free time in my hands and
-                    if I have less work to do than usual. This month will be important as it is the month before finals. I
-                    am going to need to use my time wisely if I am going to have a good chance of obtaining my degree next
-                    year and pass all my courses.
+                    As this is a matter of education, my education in fact, these circumstances qualify for the "Personal Affairs" section to be
+                    invoked. This is probably the first time I had to use the Site Operation policy in times like these. In contrast to the section
+                    stating that the website won't be necessarily shut down, I am going to have to, at least for the next two to three weeks.
+                    This change will take effect on Saturday, April 9, midnight.
                 </p>
             </div>
-            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+            <div className="post" id="post-margin">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 04/01/2022, 12:12 AM.
+                    By: Ruben Christopher Arevalo. Posted on 04/07/2022, 5:15 PM.
                 </p>
                 <p id="post-content">
-                    Today is April Fool's Day! I know my attempt at an April Fool's joke was
-                    kind of lousy. But hey, I tried my best!
+                    My circumstances have become a little bit complicated. I hope to come back before the end of the month so I can announce whether or
+                    not I will be creating a blog. If not, then I will come back in the first week of May. The workload should be lighter by then, except
+                    for a poster for a presentation that I have to do.
                 </p>
             </div>
         </div>
