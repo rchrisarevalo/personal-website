@@ -41,7 +41,7 @@ const App = () => {
 
   return (
     <div className="App">
-      {(month === 4 && (date >= 7 && date <= 8)) && 
+      { (date >= 7 && date <= 8) && 
         <Switch>
           <Route path="/" exact component={Load} />
           <Route path="/about" exact component={Intro} />
@@ -58,10 +58,11 @@ const App = () => {
           <Route path="/settings" exact component={Settings} />
           <Route path="/policies/site-operation" exact component={WebsiteOperation} />
           <Route path="/policies/archive" exact component={ArchivePolicy}/>
+          <Route path="/closed" exact component={ClosedWeb} />
           <Route exact component={Error404} />
         </Switch>
       }
-      { (month === 4 && (date >= startDate && date <= endDate)) && 
+      { (date >= startDate && date <= endDate) && 
         <Switch>
           <Route path="/" exact component={Load} />
           <Route path="/closed" exact component={ClosedWeb} />
