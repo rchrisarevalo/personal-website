@@ -58,7 +58,6 @@ const App = () => {
           <Route path="/settings" exact component={Settings} />
           <Route path="/policies/site-operation" exact component={WebsiteOperation} />
           <Route path="/policies/archive" exact component={ArchivePolicy}/>
-          <Route path="/closed" exact component={ClosedWeb} />
           <Route exact component={Error404} />
         </Switch>
       }
