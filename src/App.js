@@ -21,7 +21,13 @@ import Archives from "./components/Archives.jsx";
 import Settings from "./components/Settings.jsx";
 import WebsiteOperation from "./components/policies/WebsiteOperation.jsx";
 import ArchivePolicy from "./components/policies/ArchivePolicy.jsx";
+import ClosedWeb from "./components/ClosedWeb.jsx";
 import Error404 from "./components/Error404.jsx";
+
+var month = new Date().getMonth();
+var date = new Date().getDate();
+var startDate = 9;
+var endDate = 29;
 
 const App = () => {
 
@@ -35,24 +41,33 @@ const App = () => {
 
   return (
     <div className="App">
-      <Switch>
-        <Route path="/" exact component={Load} />
-        <Route path="/about" exact component={Intro} />
-        <Route path="/announcements" exact component={Posts} />
-        <Route path="/announcements/2021/August" exact component={August2021Posts} />
-        <Route path="/announcements/2021/September" exact component={September2021Posts} />
-        <Route path="/announcements/2021/October" exact component={October2021Posts} />
-        <Route path="/announcements/2021/November" exact component={November2021Posts} />
-        <Route path="/announcements/2021/December" exact component={December2021Posts} />
-        <Route path="/announcements/2022/January" exact component={January2022Posts} />
-        <Route path="/announcements/2022/February" exact component={February2022Posts} />
-        <Route path="/announcements/2022/March" exact component={March2022Posts} />
-        <Route path="/archives" exact component={Archives} />
-        <Route path="/settings" exact component={Settings} />
-        <Route path="/policies/site-operation" exact component={WebsiteOperation} />
-        <Route path="/policies/archive" exact component={ArchivePolicy}/>
-        <Route exact component={Error404} />
-      </Switch>
+      {(month === 4 && (date >= 7 && date <= 8)) && 
+        <Switch>
+          <Route path="/" exact component={Load} />
+          <Route path="/about" exact component={Intro} />
+          <Route path="/announcements" exact component={Posts} />
+          <Route path="/announcements/2021/August" exact component={August2021Posts} />
+          <Route path="/announcements/2021/September" exact component={September2021Posts} />
+          <Route path="/announcements/2021/October" exact component={October2021Posts} />
+          <Route path="/announcements/2021/November" exact component={November2021Posts} />
+          <Route path="/announcements/2021/December" exact component={December2021Posts} />
+          <Route path="/announcements/2022/January" exact component={January2022Posts} />
+          <Route path="/announcements/2022/February" exact component={February2022Posts} />
+          <Route path="/announcements/2022/March" exact component={March2022Posts} />
+          <Route path="/archives" exact component={Archives} />
+          <Route path="/settings" exact component={Settings} />
+          <Route path="/policies/site-operation" exact component={WebsiteOperation} />
+          <Route path="/policies/archive" exact component={ArchivePolicy}/>
+          <Route exact component={Error404} />
+        </Switch>
+      }
+      { (month === 4 && (date >= startDate && date <= endDate)) && 
+        <Switch>
+          <Route path="/" exact component={Load} />
+          <Route path="/closed" exact component={ClosedWeb} />
+          <Route exact component={Error404} />
+        </Switch>
+      }
     </div>
   );
 }
