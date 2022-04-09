@@ -24,7 +24,6 @@ import ArchivePolicy from "./components/policies/ArchivePolicy.jsx";
 import ClosedWeb from "./components/ClosedWeb.jsx";
 import Error404 from "./components/Error404.jsx";
 
-var month = new Date().getMonth();
 var date = new Date().getDate();
 var startDate = 9;
 var endDate = 29;
