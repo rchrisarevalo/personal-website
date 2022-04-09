@@ -50,6 +50,15 @@ const CurrentPosts = () => {
             </div>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 04/08/2022, 9:37 PM.
+                </p>
+                <p id="post-content">
+                    Today is the last day this website will be available until I take a leave of absence for 3 weeks. I wish you all a great rest of the
+                    month and I will see you on April 30!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 04/07/2022, 5:15 PM.
                 </p>
                 <p id="post-content">
