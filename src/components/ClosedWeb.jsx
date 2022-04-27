@@ -38,7 +38,7 @@ const ClosedWeb = () => {
                 <p id="closed-msg">Days left until re-opening: <i><b>{daysLeft()}</b></i></p>
                 <p id="closed-msg">
                     In accordance to Site Operation policy under the "Personal Affairs" section, I will
-                    be taking a leave of absence that will take/took effect on April 9, midnight. This
+                    be taking a leave of absence that will took effect on April 9, midnight. This
                     website will re-open on <b>April 30th</b>.
                 </p>
                 <br />
