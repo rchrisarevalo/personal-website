@@ -21,12 +21,7 @@ import Archives from "./components/Archives.jsx";
 import Settings from "./components/Settings.jsx";
 import WebsiteOperation from "./components/policies/WebsiteOperation.jsx";
 import ArchivePolicy from "./components/policies/ArchivePolicy.jsx";
-import ClosedWeb from "./components/ClosedWeb.jsx";
 import Error404 from "./components/Error404.jsx";
-
-var date = new Date().getDate();
-var startDate = 9;
-var endDate = 29;
 
 const App = () => {
 
@@ -40,7 +35,6 @@ const App = () => {
 
   return (
     <div className="App">
-      { (date >= 7 && date <= 8) && 
         <Switch>
           <Route path="/" exact component={Load} />
           <Route path="/about" exact component={Intro} />
@@ -59,14 +53,6 @@ const App = () => {
           <Route path="/policies/archive" exact component={ArchivePolicy}/>
           <Route exact component={Error404} />
         </Switch>
-      }
-      { (date >= startDate && date <= endDate) && 
-        <Switch>
-          <Route path="/" exact component={Load} />
-          <Route path="/closed" exact component={ClosedWeb} />
-          <Route exact component={Error404} />
-        </Switch>
-      }
     </div>
   );
 }
