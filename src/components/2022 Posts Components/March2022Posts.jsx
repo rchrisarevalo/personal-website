@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Link, HashRouter } from "react-router-dom";
 
-import { IoArrowBackCircleOutline } from "react-icons/io5";
+import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from "react-icons/io5";
 
 import NavArchives from "../../NavArchives.jsx";
 import NewFooter from "../../NewFooter.jsx";
@@ -31,6 +31,13 @@ const March2022Posts = () => {
             <IoArrowBackCircleOutline
               id="posts-arrow-left"
               title="February 2022 Announcements"
+              size="40px"
+            />
+          </Link>
+          <Link to="/announcements/2022/April">
+            <IoArrowForwardCircleOutline
+              id="posts-arrow-right"
+              title="April 2022 Announcements"
               size="40px"
             />
           </Link>
