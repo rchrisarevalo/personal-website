@@ -10,31 +10,29 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 04/08/2022, 9:37 PM.
+                    By: Ruben Christopher Arevalo. Posted on 04/27/2022, 7:16 PM.
                 </p>
                 <p id="post-content">
-                    Today is the last day this website will be available until I take a leave of absence for 3 weeks. I wish you all a great rest of the
-                    month and I will see you on April 30!
+                    That is all I have to say for today. I hope you all have a wonderful evening!
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 04/07/2022, 5:15 PM.
+                    By: Ruben Christopher Arevalo. Posted on 04/27/2022, 7:16 PM.
                 </p>
                 <p id="post-content">
-                    That is everything I have to say. Thank you for your patience and I hope to re-open this website once the timeframe has
-                    passed. Thank you and have a great day!
+                    Furthermore, I should be able to continue making updates to this website from this point on, now that the semester is near
+                    its end. In further news, I will be making a new feature in the next few months. I still haven't given it some thought,
+                    but it's a small feature that I am planning to make. I will reveal in a later announcement what it will be about.
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 04/07/2022, 5:15 PM.
+                    By: Ruben Christopher Arevalo. Posted on 04/27/2022, 7:16 PM.
                 </p>
                 <p id="post-content">
-                    As this is a matter of education, my education in fact, these circumstances qualify for the "Personal Affairs" section to be
-                    invoked. This is probably the first time I had to use the Site Operation policy in times like these. In contrast to the section
-                    stating that the website won't be necessarily shut down, I am going to have to, at least for the next two to three weeks.
-                    This change will take effect on Saturday, April 9, midnight.
+                    Aside from having finals next week and the following week, I should have enough time on my hands to make a decision as to whether
+                    or not make a blog website or something similar in the future by the end of this month.
                 </p>
             </div>
         </div>
