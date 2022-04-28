@@ -20,6 +20,52 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 04/27/2022, 7:16 PM.
+                </p>
+                <p id="post-content">
+                    That is all I have to say for today. I hope you all have a wonderful evening!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 04/27/2022, 7:16 PM.
+                </p>
+                <p id="post-content">
+                    Furthermore, I should be able to continue making updates to this website from this point on, now that the semester is near
+                    its end. In further news, I will be making a new feature in the next few months. I still haven't given it some thought,
+                    but it's a small feature that I am planning to make. I will reveal in a later announcement what it will be about.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 04/27/2022, 7:16 PM.
+                </p>
+                <p id="post-content">
+                    Aside from having finals next week and the following week, I should have enough time on my hands to make a decision as to whether
+                    or not make a blog website or something similar in the future by the end of this month.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 04/27/2022, 7:16 PM.
+                </p>
+                <p id="post-content">
+                    It's been a very difficult 3 weeks. There has been a lot of work piling on me, and it was difficult to keep up with everything,
+                    hence my decision to shut down this website for the aforementioned time period. But luckily, I managed to get through most of it,
+                    and my workload should be lighter than it has been during these last few weeks.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 04/27/2022, 7:16 PM.
+                </p>
+                <p id="post-content">
+                    Good evening, EVERYONE! I am back! After 3 weeks of a leave of absence, I am happy to say that this website is now open again to
+                    the public!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 04/07/2022, 5:15 PM.
                 </p>
                 <p id="post-content">
