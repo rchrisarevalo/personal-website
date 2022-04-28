@@ -13,10 +13,11 @@ import August2021Posts from "./components/2021 Posts Components/August2021Posts.
 import September2021Posts from "./components/2021 Posts Components/September2021Posts.jsx";
 import October2021Posts from "./components/2021 Posts Components/October2021Posts.jsx";
 import November2021Posts from "./components/2021 Posts Components/November2021Posts.jsx";
-import December2021Posts from './components/2021 Posts Components/December2021Posts';
-import January2022Posts from './components/2022 Posts Components/January2022Posts';
-import February2022Posts from './components/2022 Posts Components/February2022Posts';
-import March2022Posts from './components/2022 Posts Components/March2022Posts';
+import December2021Posts from './components/2021 Posts Components/December2021Posts.jsx';
+import January2022Posts from './components/2022 Posts Components/January2022Posts.jsx';
+import February2022Posts from './components/2022 Posts Components/February2022Posts.jsx';
+import March2022Posts from './components/2022 Posts Components/March2022Posts.jsx';
+import April2022Posts from './components/2022 Posts Components/April2022Posts.jsx';
 import Archives from "./components/Archives.jsx";
 import Settings from "./components/Settings.jsx";
 import WebsiteOperation from "./components/policies/WebsiteOperation.jsx";
@@ -47,6 +48,7 @@ const App = () => {
           <Route path="/announcements/2022/January" exact component={January2022Posts} />
           <Route path="/announcements/2022/February" exact component={February2022Posts} />
           <Route path="/announcements/2022/March" exact component={March2022Posts} />
+          <Route path="/announcements/2022/April" exact component={April2022Posts} />
           <Route path="/archives" exact component={Archives} />
           <Route path="/settings" exact component={Settings} />
           <Route path="/policies/site-operation" exact component={WebsiteOperation} />
