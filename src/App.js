@@ -48,7 +48,7 @@ const App = () => {
           <Route path="/announcements/2022/January" exact component={January2022Posts} />
           <Route path="/announcements/2022/February" exact component={February2022Posts} />
           <Route path="/announcements/2022/March" exact component={March2022Posts} />
-          <Route path="/announcements/2022/April" exact component={April2022Posts} />
+          {/* <Route path="/announcements/2022/April" exact component={April2022Posts} /> */}
           <Route path="/archives" exact component={Archives} />
           <Route path="/settings" exact component={Settings} />
           <Route path="/policies/site-operation" exact component={WebsiteOperation} />
