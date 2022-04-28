@@ -53,7 +53,8 @@ hr{
 }
 
 ::selection{
-  background: rgb(82, 228, 247);
+  background: rgb(99, 82, 247);
+  color: white;
 }
 
 #closed-button{
