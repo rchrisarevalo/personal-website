@@ -10,29 +10,28 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 04/27/2022, 7:16 PM.
+                    By: Ruben Christopher Arevalo. Posted on 05/02/2022, 10:25 AM.
                 </p>
                 <p id="post-content">
-                    That is all I have to say for today. I hope you all have a wonderful evening!
+                    Other than that, I should be good. I will see you all later! Have a great rest of the week everyone!
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 04/27/2022, 7:16 PM.
+                    By: Ruben Christopher Arevalo. Posted on 05/02/2022, 10:25 AM.
                 </p>
                 <p id="post-content">
-                    Furthermore, I should be able to continue making updates to this website from this point on, now that the semester is near
-                    its end. In further news, I will be making a new feature in the next few months. I still haven't given it some thought,
-                    but it's a small feature that I am planning to make. I will reveal in a later announcement what it will be about.
+                    I am almost done with the semester. I have a final to study for this week, so I am going to divert all of my attention to that
+                    in addition to other pending assignments that I need to complete.
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 04/27/2022, 7:16 PM.
+                    By: Ruben Christopher Arevalo. Posted on 05/02/2022, 10:25 AM.
                 </p>
                 <p id="post-content">
-                    Aside from having finals next week and the following week, I should have enough time on my hands to make a decision as to whether
-                    or not make a blog website or something similar in the future by the end of this month.
+                    Good morning, everyone! I apologize for updating this page late. I was really busy this weekend, and I did not have enough time
+                    to get rid of last month's announcements. Regardless, the archive link should be open for the announcements from April 2022.
                 </p>
             </div>
         </div>
