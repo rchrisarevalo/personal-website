@@ -20,6 +20,46 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 05/05/2022, 8:14 AM.
+                </p>
+                <p id="post-content">
+                    Now that I am done with my announcements for today, I hope you all have a wonderful day! I hope to have a good one
+                    as well!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 05/05/2022, 8:14 AM.
+                </p>
+                <p id="post-content">
+                    Creating a website like that requires a lot of work, so I am not sure how long it will exactly take, as I need to prep
+                    for my last year at the university and my senior design project. Nevertheless, I will do my <b>VERY BEST</b> to make sure that it comes out as I intend it to be and how I visualize it.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 05/05/2022, 8:14 AM.
+                </p>
+                <p id="post-content">
+                    By <i>partially</i>, I mean I am not going to construct the blog site fully yet. I need to plan out the type of blog
+                    site it will be. I am still in the planning stages yet, and I have to find out how to set up a comment system, as well
+                    as setting up a reaction system as well, similar to the ones used in today's social media applications. And since this
+                    will be my first time setting one up, I thought it'd be best to learn through experience, which may take a while
+                    depending on other external circumstances I might encounter along the way.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 05/05/2022, 8:14 AM.
+                </p>
+                <p id="post-content">
+                    Good monring, everyone! I am here to announce whether or not I would create a blogging site. Originally, I was going
+                    to announce it at the end of April, but yet again, I got sidetracked by school work, as I had a final presentation
+                    just yesterday. But anyways, I'd like to announce that <b>I will be making one starting this summer, <i>albeit partially.</i></b>
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 05/02/2022, 10:25 AM.
                 </p>
                 <p id="post-content">
