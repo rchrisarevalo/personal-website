@@ -7,6 +7,8 @@ import Archives from './components/Archives.jsx';
 import WebsiteOperation from "./components/policies/WebsiteOperation.jsx";
 import Archival from "./components/policies/ArchivePolicy.jsx";
 
+var cp_year = new Date().getFullYear();
+
 test('checks that Nav has logo', () => {
     render(<Nav />);
     const logo = screen.getByText("Ruben C. Arevalo");
@@ -48,7 +50,7 @@ test('checks that NewFooter has correct links', () => {
 test('checks that NewFooter has correct and current copyright year', () => {
     render(<NewFooter/>);
 
-    const copyright_year = screen.getByText("© 2022 Ruben Christopher Arevalo. This page will not be copied, modified, reproduced, or distributed through unauthorized means.");
+    const copyright_year = screen.getByText(`© ${cp_year} Ruben Christopher Arevalo. This page will not be copied, modified, reproduced, or distributed through unauthorized means.`);
     expect(copyright_year).toBeInTheDocument();
 });
 
