@@ -24,10 +24,6 @@ import WebsiteOperation from "./components/policies/WebsiteOperation.jsx";
 import ArchivePolicy from "./components/policies/ArchivePolicy.jsx";
 import Error404 from "./components/Error404.jsx";
 
-var month = new Date().getMonth();
-var day = new Date().getDate();
-var year = new Date().getFullYear();
-
 const App = () => {
 
   useEffect(() => {
@@ -52,9 +48,7 @@ const App = () => {
           <Route path="/announcements/2022/January" exact component={January2022Posts} />
           <Route path="/announcements/2022/February" exact component={February2022Posts} />
           <Route path="/announcements/2022/March" exact component={March2022Posts} />
-          { (month >= 4 && day >= 1 && (year >= 2022 && year <= 2025)) &&
-              <Route path="/announcements/2022/April" exact component={April2022Posts} />
-          }
+          <Route path="/announcements/2022/April" exact component={April2022Posts} />
           <Route path="/archives" exact component={Archives} />
           <Route path="/settings" exact component={Settings} />
           <Route path="/policies/site-operation" exact component={WebsiteOperation} />
