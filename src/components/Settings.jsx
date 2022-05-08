@@ -14,7 +14,7 @@ var clicked2 = false;
 function clearLocalStorage(){
     var msg = document.getElementById("clear-storage-msg");
     localStorage.clear();
-    msg.innerHTML = "All the local storage for this website have been cleared! Save these changes for them to go into effect!";
+    msg.innerHTML = "Local storage has been cleared! Please save these changes for them to go into effect!";
 }
 
 function light_dark_mode(){
