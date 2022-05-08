@@ -32,7 +32,7 @@ const RecentPosts = () => {
                 </p>
                 <p id="post-content">
                     By <i>partially</i>, I mean I am not going to construct the blog site fully yet. I need to plan out the type of blog
-                    site it will be. I am still in the planning stages yet, and I have to find out how to set up a comment system, as well
+                    site it will be. I am still in the planning stages, and I have to find out how to set up a comment system, as well
                     as setting up a reaction system as well, similar to the ones used in today's social media applications. And since this
                     will be my first time setting one up, I thought it'd be best to learn through experience, which may take a while
                     depending on other external circumstances I might encounter along the way.
