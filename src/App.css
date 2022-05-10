@@ -763,20 +763,23 @@ hr{
 }
 
 #clear-storage-msg{
-  text-align: left;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: rgb(11, 175, 11);
-  font-size: 16.5px;
-  letter-spacing: 0.5px;
+  display: none;
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  letter-spacing: 0px;
   font-weight: 700;
 }
 
 #setting-btn-icon{
   transform: translateY(-2px);
   margin-right: 5px;
+}
+
+#modal-text, #modal-text-clear{
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0px;
 }
 
 .new-footer{
@@ -1061,6 +1064,10 @@ hr{
   }
   #margin-description{
     margin: 0px;
+  }
+  #modal-text, #modal-text-clear{
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .copyright{
     text-align: center;
