@@ -28,11 +28,6 @@ const WebsiteOperation = () => {
                 <title>Ruben C. Arevalo - Personal Website - Site Operation Policy</title>
             </Helmet>
             <Nav />
-            <div className="notification" id="warning-notif-2">
-                <div className="notification-content" id="notif-2">
-                    <p>Redirecting to contact form page...</p>
-                </div>
-            </div>
             <div className="website-operation-policy-box">
                 <div className="website-operation-policy-description">
                     <h1>Site Operation Policy</h1>
