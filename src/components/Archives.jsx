@@ -30,11 +30,6 @@ const Archives = () => {
                 <title>Ruben C. Arevalo - Personal Website - Archives</title>
             </Helmet>
             <NavArchives />
-            <div className="notification" id="warning-notif-2">
-                <div className="notification-content" id="notif-2">
-                    <p>Redirecting to contact form page...</p>
-                </div>
-            </div>
             <div className="center-message">
                 <p id="archive-message">
                     <br></br>
