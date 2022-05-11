@@ -26,11 +26,6 @@ const Posts = () => {
                 <title>Ruben C. Arevalo - Personal Website - Current Announcements</title>
             </Helmet>
             <NavAnnouncements />
-            <div className="notification" id="warning-notif-2">
-                <div className="notification-content" id="notif-2">
-                    <p>Redirecting to contact form page...</p>
-                </div>
-            </div>
             <CurrentPosts />
             <NewFooter />
         </div>
