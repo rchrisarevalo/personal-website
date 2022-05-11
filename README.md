@@ -1,13 +1,13 @@
-# Personal Website (v2.17.0)
+# Personal Website (v2.18.0)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on May 9, 2022):
+# UPDATES (made on May 11, 2022):
 
-* I have made a few changes to the user interface (UI) in the Settings page:
-    * Instead of a small notice message appearing at the bottom of the page whenever you clear local storage or save changes, you will be instead be presented with an option whether you want to save your changes or clear your local storage.
-    * This is more efficient as the last version made it seem that the changes were forced, and I hope that this update hopes to resolve that problem.
+* Good news, everyone! I managed to include a contact form from formspree.io that allows anyone to send a message to me! I was surprised that this was able to work with a static website, given that a real contact form would require the use of a backend (e.g. Node.js, Python, PHP, etc.) to be able to send messages through email.
+
+* In addition, I made a few changes to the user interface of this site.
 
 * I hope you all enjoy the new changes!
 
