@@ -53,7 +53,7 @@ hr{
 }
 
 ::selection{
-  background: rgb(99, 82, 247);
+  background: rgb(23, 101, 247);
   color: white;
 }
 
@@ -296,54 +296,6 @@ hr{
   transition: .5s;
 }
 
-#report-icon{
-  transform: translateY(-2px);
-  margin-right: 8px;
-}
-
-.notification{
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  margin-left: 37%;
-  margin-right: 37%;
-  letter-spacing: 0.5px;
-  z-index: 500;
-  position: sticky;
-  top: 0;
-}
-
-.notification .notification-content{
-  background: rgb(216, 96, 96);
-  margin-top: 2vh;
-  border: 2px solid rgb(119, 24, 24);
-  border-radius: 5px;
-  color: black;
-  position: fixed;
-  bottom: -200px;
-  right: 25px;
-  transition: .5s;
-}
-
-.notification.active .notification-content{
-  transition: .5s;
-  bottom: 25px;
-}
-
-#notif-2{
-  background: rgb(137, 231, 137);
-  border: 2px solid green;
-  padding-top: 25px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  right: 25px;
-}
-
-#background-green{
-  background: rgb(137, 231, 137);
-  border: 2px solid green;
-}
-
 .update-message{
   display: none;
   font-family: 'Open Sans', sans-serif;
@@ -467,20 +419,88 @@ hr{
   padding-bottom: 10px;
 }
 
-.contact-info{
-  margin: 1.5em;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16.5px;
-  text-align: center;
-  align-items: center;
-  font-weight: 200;
-  padding-top: 30px;
-  padding-bottom: 15px;
-}
-
-.contact-info h1{
+.contact-subcontainer{
   margin-left: 10%;
   margin-right: 10%;
+  text-align: left;
+}
+
+.contact-subcontainer p{
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#contact-form{
+  background: white;
+  box-shadow: 0 0 5px black;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+}
+
+#contact-form h1{
+  font-weight: 800;
+  text-transform: none;
+  font-size: 25px;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: left;
+  color: black;
+}
+
+#contact-form label{
+  font-weight: 300;
+  height: 65px;
+  color: black;
+}
+
+#contact-form button{
+  background: #3a3a3a;
+  border: 1px solid white;
+  color: white;
+  padding: 6px 7vh;
+  border-radius: 25px;
+  transition: .5s;
+}
+
+#contact-form button:hover{
+  background: white;
+  border-color: 2px solid black;
+  color: black;
+  font-weight: 800;
+  transition: .5s;
+}
+
+#contact-form button:active{
+  background: rgb(0, 132, 255);
+  color: black;
+  transition: .5s;
+}
+
+#contact-form input{
+  padding-bottom: 5px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  color: black;
+  font-size: 15px;
+  transition: .25s;
+  background: none;
+}
+
+#contact-form textarea{
+  border: 2px solid black;
+  outline: none;
+  resize: none;
+  font-size: 15px;
+  padding-left: 2px;
+  width: 45vh;
+  height: 10vh;
+  color: black;
+  background: none;
 }
 
 .posts-container{
@@ -508,32 +528,6 @@ hr{
 .posts-container-intro{
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-}
-
-.posts-month{
-  list-style: none;
-  margin-left: 40%;
-  margin-right: 40%;
-}
-
-.posts-select{
-  width: 40vh;
-  font-size: 16.5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding: 15px;
-  background: rgb(59, 59, 59);
-  outline: none;
-  border: none;
-  color: white;
-}
-
-.posts-select:checked{
-  transition: .5s;
-}
-
-#posts-month-unavailable{
-  color: rgb(116, 116, 116);
 }
 
 #posts-title{
