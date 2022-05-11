@@ -426,7 +426,6 @@ hr{
 }
 
 .contact-subcontainer p{
-  text-align: left;
   margin-left: 0;
   margin-right: 0;
 }
@@ -457,29 +456,6 @@ hr{
   color: black;
 }
 
-#contact-form button{
-  background: #3a3a3a;
-  border: 1px solid white;
-  color: white;
-  padding: 6px 7vh;
-  border-radius: 25px;
-  transition: .5s;
-}
-
-#contact-form button:hover{
-  background: white;
-  border-color: 2px solid black;
-  color: black;
-  font-weight: 800;
-  transition: .5s;
-}
-
-#contact-form button:active{
-  background: rgb(0, 132, 255);
-  color: black;
-  transition: .5s;
-}
-
 #contact-form input{
   padding-bottom: 5px;
   outline: none;
@@ -497,10 +473,35 @@ hr{
   resize: none;
   font-size: 15px;
   padding-left: 2px;
-  width: 45vh;
-  height: 10vh;
   color: black;
   background: none;
+}
+
+#contact-form button{
+  background: #3a3a3a;
+  border: 1px solid white;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 5vh;
+  border-radius: 25px;
+  transition: .5s;
+}
+
+#contact-form button:hover{
+  background: white;
+  border: 1px solid black;
+  color: black;
+  font-weight: 800;
+  transition: .5s;
+}
+
+#contact-form button:active{
+  background: rgb(0, 132, 255);
+  letter-spacing: 2px;
+  color: black;
+  transition: .5s;
 }
 
 .posts-container{
@@ -1009,6 +1010,25 @@ hr{
     margin-right: 5%;
     text-align: left;
   }
+  #contact-form{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #contact-form input{
+    width: 33vh;
+  }
+  #contact-form textarea{
+    width: 100%;
+  }
+  .contact-subcontainer{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .contact-subcontainer p{
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 15px;
+  }
   .posts-container{
     margin: 0.25em;
   }
@@ -1093,11 +1113,14 @@ hr{
     text-align: center;
   }
   .new-footer-row{
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
   .footer-section{
     margin-left: 10%;
     margin-right: 10%;
+  }
+  .col{
+    width: 17.3vh;
   }
 }
