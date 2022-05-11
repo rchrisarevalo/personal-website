@@ -7,6 +7,7 @@ import NewFooter from "../NewFooter.jsx";
 import Update from "./Update.jsx";
 import RecentPosts from './RecentPosts';
 import Works from "../Works.jsx";
+import ContactForm from "./ContactForm";
 
 import nprogress from "nprogress";
 import "nprogress/nprogress.css";
@@ -71,6 +72,7 @@ const Intro = () => {
                 <hr></hr>
                 <br></br>
                 <Works />
+                <ContactForm />
             </div>
             <NewFooter />
         </div>
