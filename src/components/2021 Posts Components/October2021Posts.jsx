@@ -19,11 +19,6 @@ const October2021Posts = () => {
                 <title>Ruben C. Arevalo - Personal Website - Announcements (October 2021)</title>
             </Helmet>
             <NavArchives />
-            <div className="notification" id="warning-notif-2">
-                <div className="notification-content" id="notif-2">
-                    <p>Redirecting to contact form page...</p>
-                </div>
-            </div>
             <div class="posts-container">
                 <HashRouter>
                     <Link to="/announcements/2021/September"><IoArrowBackCircleOutline id="posts-arrow-left" title="September 2021 Announcements" size="40px"/></Link>
