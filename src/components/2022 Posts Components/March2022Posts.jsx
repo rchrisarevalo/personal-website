@@ -20,11 +20,6 @@ const March2022Posts = () => {
         </title>
       </Helmet>
       <NavArchives />
-      <div className="notification" id="warning-notif-2">
-        <div className="notification-content" id="notif-2">
-          <p>Redirecting to contact form page...</p>
-        </div>
-      </div>
       <div class="posts-container">
         <HashRouter>
           <Link to="/announcements/2022/February">
