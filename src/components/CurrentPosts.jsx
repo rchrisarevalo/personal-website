@@ -20,6 +20,15 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 05/15/2022, 11:06 PM.
+                </p>
+                <p id="post-content">
+                    Good evening. I am writing this announcement to share that I have included the link to my CV website. The link can be
+                    located in the front page (the "About Me" page) of the site. As always, have a wonderful rest of the upcoming week!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 05/11/2022, 7:01 PM.
                 </p>
                 <p id="post-content">
