@@ -63,6 +63,9 @@ const Intro = () => {
                     Feel free to contact me through either Github or Linkedin. The profile links are attached in the footer below
                     the page.
                 </p>
+                <p data-aos="fade-down" data-aos-delay="1000">
+                    You can also visit my CV website at this link: <a href="https://rchrisarevalo.github.io/cv-website" rel="noopener noreferrer" target="_blank"><b>rchrisarevalo.github.io/cv-website</b></a>
+                </p>
                 <br></br>
                 <hr></hr>
                 <br></br>
