@@ -50,8 +50,8 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.17.10",
-    "@babel/preset-env": "^7.17.10",
+    "@babel/core": "^7.17.12",
+    "@babel/preset-env": "^7.17.12",
     "babel-loader": "^8.2.5",
     "flatted": "^3.2.5",
     "gh-pages": "^4.0.0"
