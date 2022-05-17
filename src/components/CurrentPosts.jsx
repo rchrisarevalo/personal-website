@@ -20,6 +20,16 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 05/17/2022, 1:41 PM.
+                </p>
+                <p id="post-content">
+                    Good afternoon. I am writing this announcement to let y'all know that I changed the icon of the website. The icon
+                    of this page resembles a palm tree from one of the pictures that I took and displayed in the "About Me" page. I
+                    hope you all enjoy it!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 05/15/2022, 11:06 PM.
                 </p>
                 <p id="post-content">
