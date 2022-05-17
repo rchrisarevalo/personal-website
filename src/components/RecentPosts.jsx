@@ -10,6 +10,16 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
+                    By: Ruben Christopher Arevalo. Posted on 05/17/2022, 1:41 PM.
+                </p>
+                <p id="post-content">
+                    Good afternoon. I am writing this announcement to let y'all know that I changed the icon of the website. The icon
+                    of this page resembles a palm tree from one of the pictures that I took and displayed in the "About Me" page. I
+                    hope you all enjoy it!
+                </p>
+            </div>
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+                <p id="post-info-recent">
                     By: Ruben Christopher Arevalo. Posted on 05/15/2022, 11:06 PM.
                 </p>
                 <p id="post-content">
@@ -23,16 +33,6 @@ const RecentPosts = () => {
                 </p>
                 <p id="post-content">
                     Those are all the announcements I have for today. Thank you and have a wonderful evening and great rest of the week!
-                </p>
-            </div>
-            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
-                <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 05/11/2022, 7:01 PM.
-                </p>
-                <p id="post-content">
-                    In other news, new changes to the user interface in the "Settings" page and in the footer were made a few days ago and today respectively, especially in the mobile version.
-                    When one hovers over the links in the footer, in the "Site Operation" link, the text tends to get out of its borders, which
-                    makes the Site appear ugly and uncared for. Luckily, those problems have been solved, and the site should appear a little bit normal than from before.
                 </p>
             </div>
         </div>
