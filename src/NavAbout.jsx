@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosMenu, IoIosInformationCircle } from "react-icons/io";
-import { IoSettingsOutline, IoCloseOutline, IoMegaphoneOutline, IoArchiveOutline } from "react-icons/io5";
+import { IoSettingsOutline, IoCloseOutline, IoMegaphoneOutline, IoArchiveOutline, IoMailOutline } from "react-icons/io5";
 
 import { Link, HashRouter } from "react-router-dom";
 import ReactDOMServer from 'react-dom/server';
@@ -37,6 +37,7 @@ const NavAbout = () => {
         <HashRouter>
           <li><Link to="/about" id="current-link"><IoIosInformationCircle id="nav-icons-style" size="16px" /><b>About Me</b></Link></li>
           <li><Link to="/announcements"><IoMegaphoneOutline id="nav-icons-style" size="16px" />Announcements</Link></li>
+          <li><Link to="/contact"><IoMailOutline id="nav-icons-style" size="16px" />Contact Me</Link></li>
           <li><Link to="/archives"><IoArchiveOutline id="nav-icons-style" size="16px" />Archives</Link></li>
           <li><Link to="/settings"><IoSettingsOutline id="nav-icons-style" size="16px" />Settings</Link></li>
         </HashRouter>
