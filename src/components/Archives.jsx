@@ -47,7 +47,7 @@ const Archives = () => {
                 </p>
             </div>
             <br></br>
-            <div className="archive-row-2021">
+            <div className="archive-row">
                 <HashRouter>
                     <li><b id="archive-year">2021:</b></li>
                     <li><Link to="/announcements/2021/August">August</Link></li>
@@ -59,7 +59,7 @@ const Archives = () => {
             </div>
             <br></br>
             <br></br>
-            <div className="archive-row-2021">
+            <div className="archive-row">
                 <HashRouter>
                     <li><b id="archive-year">2022:</b></li>
                     <li><Link to="/announcements/2022/January">January</Link></li>
