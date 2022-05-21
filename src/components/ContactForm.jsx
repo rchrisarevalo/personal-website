@@ -22,15 +22,16 @@ const ContactForm = () => {
                 method="POST"
                 id="contact-form"
                 data-aos="fade-up"
-                data-aos-delay="500"
             >
                 <div className="contact-subcontainer">
+                    <br></br>
                     <h1>Contact Me</h1>
                     <label>
                         <p>Enter your email address:</p>
                     </label>
                     <br></br>
                     <input type="email" name="email" id="contact-email" autocomplete="off" size="30" maxlength="320" required></input>
+                    <br></br>
                     <br></br>
                     <label>
                         <p>Type your message (360 character limit):</p>
