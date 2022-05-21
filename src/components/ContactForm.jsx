@@ -22,6 +22,7 @@ const ContactForm = () => {
                 method="POST"
                 id="contact-form"
                 data-aos="fade-up"
+                data-aos-delay="500"
             >
                 <div className="contact-subcontainer">
                     <br></br>
