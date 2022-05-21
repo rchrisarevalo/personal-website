@@ -8,10 +8,6 @@ import NewFooter from "../NewFooter.jsx";
 import nprogress from "nprogress";
 import "nprogress/nprogress.css";
 
-var month = new Date().getMonth();
-var day = new Date().getDate();
-var year = new Date().getFullYear();
-
 const Archives = () => {
 
     useEffect(() => {
