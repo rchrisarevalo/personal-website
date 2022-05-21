@@ -92,15 +92,18 @@ const Intro = () => {
                     Feel free to contact me through either Github or Linkedin. The profile links are attached in the footer below
                     the page.
                 </p>
-                <p data-aos="fade-down" data-aos-delay="1000">
+                <p data-aos="fade-down" data-aos-delay="1200">
                     You can also visit my CV website at this link: <a href="https://rchrisarevalo.github.io/cv-website" rel="noopener noreferrer" target="_blank"><b>rchrisarevalo.github.io/cv-website</b></a>
                 </p>
-
                 {/* This will be displayed until graduation date */}
                 { (current_date < graduation_date) &&
-                    <p id="graduation-countdown" data-aos="fade-down" data-aos-delay="1000">
+                    <div>
+                        <br></br>
+                        <p id="graduation-countdown" data-aos="flip-up" data-aos-delay="2000">
                         Days left before graduation: <b>{countdown()} days!</b>
-                    </p>
+                        </p>
+                        <br></br>
+                    </div>
                 }
                 <br></br>
                 <hr></hr>
