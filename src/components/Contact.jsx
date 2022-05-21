@@ -33,13 +33,13 @@ const Contact = () => {
                     <i id="contact-page-description">
                         If you have any questions, complaints, or other concerns you might like to
                         share, feel free to fill out the form below! However, do <b>NOT</b> attempt to send
-                        spam or other potentially dangerous messages. The form has reCAPTCHA set up
-                        to prevent these types of incidents from occurring on a frequent basis.
+                        spam or other potentially dangerous messages.
                     </i>
                     <br></br>
                     <br></br>
                     <i id="contact-page-description">
-                        Once again, if you have any concerns, feel free to send a message!
+                        Please fill out all the required fields. Otherwise, your message will not be sent when you
+                        attempt to submit the form.
                     </i>
                 </div>
                 <br></br>
