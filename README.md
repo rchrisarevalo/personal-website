@@ -1,15 +1,15 @@
-# Personal Website (v2.18.0)
+# Personal Website (v2.19.0)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on May 11, 2022):
+# UPDATES (made on May 20, 2022):
 
-* Good news, everyone! I managed to include a contact form from formspree.io that allows anyone to send a message to me! I was surprised that this was able to work with a static website, given that a real contact form would require the use of a backend (e.g. Node.js, Python, PHP, etc.) to be able to send messages through email.
-
-* In addition, I made a few changes to the user interface of this site.
-
-* I hope you all enjoy the new changes!
+* The new changes for this version are as follows:
+    * A new, separate page for the contact form has been added. It can be found by clicking the "Contact" link in the navigation bar above.
+    * A graduation countdown has been added to the front of the page so that others, most importantly, future recruiters, can have an idea
+      of when I am going to graduate.
+    * Style changes were made to accommodate the visualization of the contact form in its new environment (the "Contact" page).
 
 # CREDITS:
 * Progress bar by nProgress (author: rstacruz)
