@@ -379,6 +379,7 @@ hr{
   background: rgb(54, 84, 104);
   border-radius: 20px;
   box-shadow: 0 0 6px rgb(250, 250, 250);
+  color: white;
 }
 
 #works-title{
@@ -474,6 +475,7 @@ hr{
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #contact-form h1{
@@ -489,6 +491,7 @@ hr{
 
 #contact-form label{
   font-weight: 300;
+  font-size: 16.5px;
   color: black;
 }
 
@@ -500,6 +503,7 @@ hr{
   color: black;
   font-size: 15px;
   transition: .25s;
+  font-weight: 300;
   background: none;
 }
 
@@ -510,6 +514,7 @@ hr{
   font-size: 15px;
   padding-left: 2px;
   color: black;
+  font-weight: 300;
   background: none;
 }
 
