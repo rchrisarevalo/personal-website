@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Helmet } from 'react-helmet';
 import profilepic from '../images/April 2022 Profile Pic 2 (Square).JPEG';
 
