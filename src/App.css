@@ -667,19 +667,19 @@ hr{
   font-weight: 800;
 }
 
-.archive-row-2021{
+.archive-row{
   margin-left: 15%;
   margin-right: 15%;
   text-align: center;
 }
 
-.archive-row-2021 li{
+.archive-row li{
   list-style: none;
   display: inline-block;
   margin: 10px;
 }
 
-.archive-row-2021 li a{
+.archive-row li a{
   display: inline-block;
   padding: 5px 18px;
   text-decoration: none;
@@ -693,7 +693,7 @@ hr{
   transition: .5s;
 }
 
-.archive-row-2021 li a:hover{
+.archive-row li a:hover{
   background: rgb(0, 119, 255);
   color: black;
   font-weight: 700;
@@ -701,7 +701,7 @@ hr{
   transition: .5s;
 }
 
-.archive-row-2021 li a:active{
+.archive-row li a:active{
   background: pink;
   color: black;
   transition: .5s;
@@ -926,7 +926,7 @@ hr{
     margin-right: 5%;
     font-weight: 300;
   }
-  .archive-row-2021 li{
+  .archive-row li{
     display: block;
     flex-direction: column;
     margin-top: 20px;
