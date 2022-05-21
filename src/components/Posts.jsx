@@ -23,7 +23,7 @@ const Posts = () => {
     return (
         <div className="posts-main">
             <Helmet>
-                <title>Ruben C. Arevalo - Personal Website - Current Announcements</title>
+                <title>Ruben C. Arevalo - Personal Website - Announcements</title>
             </Helmet>
             <NavAnnouncements />
             <CurrentPosts />
