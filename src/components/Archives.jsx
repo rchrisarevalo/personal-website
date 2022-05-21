@@ -65,9 +65,7 @@ const Archives = () => {
                     <li><Link to="/announcements/2022/January">January</Link></li>
                     <li><Link to="/announcements/2022/February">February</Link></li>
                     <li><Link to="/announcements/2022/March">March</Link></li>
-                    { (month >= 4 && day >= 1 && (year >= 2022 && year <= 2025)) &&
-                        <li><Link to="/announcements/2022/April">April</Link></li>
-                    }
+                    <li><Link to="/announcements/2022/April">April</Link></li>
                 </HashRouter>
             </div>
             <br></br>
