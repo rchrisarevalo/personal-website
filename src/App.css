@@ -371,6 +371,16 @@ hr{
   text-align: left;
 }
 
+#graduation-countdown{
+  text-align: center;
+  padding: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+  background: rgb(54, 84, 104);
+  border-radius: 20px;
+  box-shadow: 0 0 6px rgb(250, 250, 250);
+}
+
 #works-title{
   text-align: left;
   margin-left: 4%;
@@ -419,6 +429,32 @@ hr{
   padding-bottom: 10px;
 }
 
+#contact-title{
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 8vh;
+  font-weight: 800;
+}
+
+.contact-page-form{
+  text-align: center;
+}
+
+.contact-description{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#contact-page-description{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16.5px;
+  font-weight: 300;
+}
+
 .contact-subcontainer{
   margin-left: 10%;
   margin-right: 10%;
@@ -446,13 +482,13 @@ hr{
   font-size: 25px;
   margin-left: 0%;
   margin-right: 0%;
+  padding-bottom: 20px;
   text-align: left;
   color: black;
 }
 
 #contact-form label{
   font-weight: 300;
-  height: 65px;
   color: black;
 }
 
@@ -951,6 +987,10 @@ hr{
     margin-left: 5%;
     margin-right: 5%;
   }
+  #graduation-countdown{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
   .logo a{
     font-size: 16px;
   }
@@ -1019,6 +1059,10 @@ hr{
   }
   #contact-form textarea{
     width: 100%;
+  }
+  .contact-description{
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .contact-subcontainer{
     margin-left: 10%;

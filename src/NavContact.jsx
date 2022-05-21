@@ -1,11 +1,11 @@
 import React from "react";
 import { IoIosMenu, IoIosInformationCircleOutline } from "react-icons/io";
-import { IoSettingsOutline, IoCloseOutline, IoMegaphoneOutline, IoArchiveSharp, IoMailOutline } from "react-icons/io5";
+import { IoSettingsOutline, IoCloseOutline, IoMegaphoneOutline, IoArchiveOutline, IoMailOpenSharp } from "react-icons/io5";
 
 import { Link, HashRouter } from "react-router-dom";
 import ReactDOMServer from 'react-dom/server';
 
-const NavArchives = () => {
+const NavContact = () => {
 
   function activateNav() {
     var nav = document.querySelector(".nav-list")
@@ -37,8 +37,8 @@ const NavArchives = () => {
         <HashRouter>
           <li><Link to="/about"><IoIosInformationCircleOutline id="nav-icons-style" size="16px" />About Me</Link></li>
           <li><Link to="/announcements"><IoMegaphoneOutline id="nav-icons-style" size="16px" />Announcements</Link></li>
-          <li><Link to="/contact"><IoMailOutline id="nav-icons-style" size="16px" />Contact Me</Link></li>
-          <li><Link to="/archives" id="current-link"><IoArchiveSharp id="nav-icons-style" size="16px" /><b>Archives</b></Link></li>
+          <li><Link to="/contact" id="current-link"><IoMailOpenSharp id="nav-icons-style" size="16px" /><b>Contact Me</b></Link></li>
+          <li><Link to="/archives"><IoArchiveOutline id="nav-icons-style" size="16px" />Archives</Link></li>
           <li><Link to="/settings"><IoSettingsOutline id="nav-icons-style" size="16px" />Settings</Link></li>
         </HashRouter>
       </ul>
@@ -46,4 +46,4 @@ const NavArchives = () => {
   );
 }
 
-export default NavArchives;
+export default NavContact;
