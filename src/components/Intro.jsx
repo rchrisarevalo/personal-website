@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from 'react-helmet';
 import profilepic from '../images/April 2022 Profile Pic 2 (Square).JPEG';
 
@@ -7,10 +7,39 @@ import NewFooter from "../NewFooter.jsx";
 import Update from "./Update.jsx";
 import RecentPosts from './RecentPosts';
 import Works from "../Works.jsx";
-import ContactForm from "./ContactForm";
 
 import nprogress from "nprogress";
 import "nprogress/nprogress.css";
+
+var current_date = Date.now();
+var graduation_date = new Date(2023, 4, 13, 18);
+
+function countdown(){
+    var grad_date = new Date(2023, 4, 13, 18)
+    var today_date = Date.now()
+    var ms = grad_date - today_date
+
+    today_date = new Date(2022, 4, 18)
+
+    // The total number of days from today until my expected graduation date
+    var num_days = ms * (0.001 / 1) * (1 / 60) * (1 / 60) * (1 / 24)
+
+    // Display original unrounded number of days on the console for accuracy purposes
+    // and to ensure that the number of days continues to update per each reload
+    console.log(num_days)
+
+    num_days = num_days.toFixed(0)
+
+    console.log(num_days)
+    console.log(ms)
+    console.log(grad_date, today_date)
+
+    if (num_days <= 0){
+        return ["Graduation day!"];
+    }
+
+    return num_days
+}
 
 function time_greeting() {
     var hour = new Date().getHours();
@@ -44,7 +73,7 @@ const Intro = () => {
             <NavAbout />
             <Update />
             <div className="intro-container" id="about">
-                <img src={profilepic} alt="profile-pic" data-aos="fade"></img>
+                <img src={profilepic} alt="profile-pic"></img>
                 <h1 data-aos="fade-down">About the Author</h1>
                 <p data-aos="fade-down" data-aos-delay="500">
                     {time_greeting()} everyone! My name is Ruben Christopher Arevalo, and I am a 20 year old third-year student attending the University of Texas-Rio Grande Valley.
@@ -66,6 +95,13 @@ const Intro = () => {
                 <p data-aos="fade-down" data-aos-delay="1000">
                     You can also visit my CV website at this link: <a href="https://rchrisarevalo.github.io/cv-website" rel="noopener noreferrer" target="_blank"><b>rchrisarevalo.github.io/cv-website</b></a>
                 </p>
+
+                {/* This will be displayed until graduation date */}
+                { (current_date < graduation_date) &&
+                    <p id="graduation-countdown" data-aos="fade-down" data-aos-delay="1000">
+                        Days left before graduation: <b>{countdown()} days!</b>
+                    </p>
+                }
                 <br></br>
                 <hr></hr>
                 <br></br>
@@ -75,7 +111,6 @@ const Intro = () => {
                 <hr></hr>
                 <br></br>
                 <Works />
-                <ContactForm />
             </div>
             <NewFooter />
         </div>
