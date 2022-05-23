@@ -13,6 +13,7 @@ import "nprogress/nprogress.css";
 
 var current_date = Date.now();
 var graduation_date = new Date(2023, 4, 13, 18);
+var num_days = 0;
 
 function countdown(){
     var grad_date = new Date(2023, 4, 13, 18)
@@ -22,7 +23,7 @@ function countdown(){
     today_date = new Date(2022, 4, 18)
 
     // The total number of days from today until my expected graduation date
-    var num_days = ms * (0.001 / 1) * (1 / 60) * (1 / 60) * (1 / 24)
+    num_days = ms * (0.001 / 1) * (1 / 60) * (1 / 60) * (1 / 24)
 
     // Display original unrounded number of days on the console for accuracy purposes
     // and to ensure that the number of days continues to update per each reload
