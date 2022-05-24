@@ -3,7 +3,7 @@ import React from "react";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import { HashRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function getCopyrightYear() {
     const current_year = new Date().getFullYear();
@@ -21,18 +21,14 @@ const NewFooter = () => {
                 <div className="footer-section">
                     <Row className="links-row">
                         <Col className="links-column">
-                            <HashRouter>
-                                <Col><li><b><u>Follow Me On</u></b></li></Col>
-                                <Col><li><a href="https://www.linkedin.com/in/rchrisarevalo/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li></Col>
-                                <Col><li><a href="https://github.com/rchrisarevalo" target="_blank" rel="noopener noreferrer">GitHub</a></li></Col>
-                            </HashRouter>
+                            <Col><li><b><u>Follow Me On</u></b></li></Col>
+                            <Col><li><a href="https://www.linkedin.com/in/rchrisarevalo/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li></Col>
+                            <Col><li><a href="https://github.com/rchrisarevalo" target="_blank" rel="noopener noreferrer">GitHub</a></li></Col>
                         </Col>
                         <Col className="links-column">
-                            <HashRouter>
-                                <Col><li><b><u>Site Policies</u></b></li></Col>
-                                <Col><li><Link to="/policies/site-operation">Site Operation</Link></li></Col>
-                                <Col><li><Link to="/policies/archive">Archival</Link></li></Col>
-                            </HashRouter>
+                            <Col><li><b><u>Site Policies</u></b></li></Col>
+                            <Col><li><Link to="/policies/site-operation">Site Operation</Link></li></Col>
+                            <Col><li><Link to="/policies/archive">Archival</Link></li></Col>
                         </Col>
                     </Row>
                 </div>

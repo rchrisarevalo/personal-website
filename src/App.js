@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import React, { useEffect } from 'react';
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
@@ -25,7 +25,7 @@ import WebsiteOperation from "./components/policies/WebsiteOperation.jsx";
 import ArchivePolicy from "./components/policies/ArchivePolicy.jsx";
 import Error404 from "./components/Error404.jsx";
 
-const App = () => {
+function App() {
 
   useEffect(() => {
     AOS.init({
@@ -37,26 +37,26 @@ const App = () => {
 
   return (
     <div className="App">
-        <Switch>
-          <Route path="/" exact component={Load} />
-          <Route path="/about" exact component={Intro} />
-          <Route path="/announcements" exact component={Posts} />
-          <Route path="/announcements/2021/August" exact component={August2021Posts} />
-          <Route path="/announcements/2021/September" exact component={September2021Posts} />
-          <Route path="/announcements/2021/October" exact component={October2021Posts} />
-          <Route path="/announcements/2021/November" exact component={November2021Posts} />
-          <Route path="/announcements/2021/December" exact component={December2021Posts} />
-          <Route path="/announcements/2022/January" exact component={January2022Posts} />
-          <Route path="/announcements/2022/February" exact component={February2022Posts} />
-          <Route path="/announcements/2022/March" exact component={March2022Posts} />
-          <Route path="/announcements/2022/April" exact component={April2022Posts} />
-          <Route path="/contact" exact component={Contact} />
-          <Route path="/archives" exact component={Archives} />
-          <Route path="/settings" exact component={Settings} />
-          <Route path="/policies/site-operation" exact component={WebsiteOperation} />
-          <Route path="/policies/archive" exact component={ArchivePolicy}/>
-          <Route exact component={Error404} />
-        </Switch>
+        <Routes>
+            <Route index path="/" element={<Load />}/>
+            <Route path="/about" element={<Intro />}/>
+            <Route path="/announcements" element={<Posts />}/>
+            <Route path="/announcements/2021/August" element={<August2021Posts />}/>
+            <Route path="/announcements/2021/September" element={<September2021Posts />}/>
+            <Route path="/announcements/2021/October" element={<October2021Posts />}/>
+            <Route path="/announcements/2021/November" element={<November2021Posts />}/>
+            <Route path="/announcements/2021/December" element={<December2021Posts />}/>
+            <Route path="/announcements/2022/January" element={<January2022Posts />}/>
+            <Route path="/announcements/2022/February" element={<February2022Posts />}/>
+            <Route path="/announcements/2022/March" element={<March2022Posts />}/>
+            <Route path="/announcements/2022/April" element={<April2022Posts />}/>
+            <Route path="/contact" element={<Contact />}/>
+            <Route path="/archives" element={<Archives/>}/>
+            <Route path="/settings" element={<Settings />}/>
+            <Route path="/policies/site-operation" element={<WebsiteOperation />}/>
+            <Route path="/policies/archive" element={<ArchivePolicy />}/>
+            <Route path='*' element={<Error404 />}/>
+        </Routes>
     </div>
   );
 }

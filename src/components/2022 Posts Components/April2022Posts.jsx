@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import { Link, HashRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 
@@ -21,15 +21,13 @@ const March2022Posts = () => {
             </Helmet>
             <NavArchives />
             <div class="posts-container">
-                <HashRouter>
-                    <Link to="/announcements/2022/March">
+                <Link to="/announcements/2022/March">
                         <IoArrowBackCircleOutline
                             id="posts-arrow-left"
                             title="March 2022 Announcements"
                             size="40px"
                         />
-                    </Link>
-                </HashRouter>
+                </Link>
                 <h1 id="posts-title">Announcements (April 2022)</h1>
                 <br></br>
                 <p id="posts-description">

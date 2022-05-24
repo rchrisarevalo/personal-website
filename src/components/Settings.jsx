@@ -32,6 +32,9 @@ function clearLocalStorage() {
     }, 1000)
 }
 
+// Code below inspired by and credited to Mr. Kevin Powell: 
+// https://codepen.io/kevinpowell/pen/EMdjOV
+
 function light_dark_mode() {
     if (clicked === false) {
         localStorage.setItem("d_l_mode", "changed");
@@ -43,10 +46,11 @@ function light_dark_mode() {
         clicked = false;
     }
 }
-
 if (d === "changed") {
     light_dark_mode();
 }
+
+// ====================================
 
 function save() {
     var saveNotice = document.getElementById("save-notice");
@@ -137,7 +141,7 @@ const Settings = () => {
                         <br></br>
                         <br></br>
                         
-                        {/* Save modal (from Bootstrap) */}
+                        {/* Save modal (from React Bootstrap) */}
                         <Modal
                             show={saveShow}
                             onHide={handleSaveClose}
@@ -161,7 +165,7 @@ const Settings = () => {
                             </Modal.Footer>
                         </Modal>
 
-                        {/* Clear local storage modal (from Bootstrap) */}
+                        {/* Clear local storage modal (from React Bootstrap) */}
                         <Modal
                             show={noticeShow}
                             onHide={handleNoticeClose}

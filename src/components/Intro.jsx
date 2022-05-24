@@ -43,7 +43,7 @@ function countdown(){
     days_passed = days_year - num_days
     // console.log(days_passed)
     progress_countdown = (days_passed / num_days) * 100
-    progress_countdown = progress_countdown.toFixed(0)
+    progress_countdown = progress_countdown.toFixed(1)
 
     if (num_days <= 0){
         return ["Graduation day!"];
@@ -87,7 +87,7 @@ const Intro = () => {
                 <img src={profilepic} alt="profile-pic"></img>
                 <h1 data-aos="fade-down">About the Author</h1>
                 <p data-aos="fade-down" data-aos-delay="500">
-                    {time_greeting()} everyone! My name is Ruben Christopher Arevalo, and I am a 20 year old third-year student attending the University of Texas-Rio Grande Valley.
+                    {time_greeting()} everyone! My name is Ruben Christopher Arevalo, and I am a 20 year old third-year student <b>(soon to be a fourth-year)</b> attending the University of Texas-Rio Grande Valley.
                     I am currently pursuing my bachelor's degree in computer engineering with my concentration focusing on software.
                     Fun facts I want to share about myself are that I love to code, listen to music (preferrably lofi, classical, and pop),
                     play video games, and watch movies and shows in my free time.
