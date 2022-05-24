@@ -10,15 +10,20 @@ import Works from "../Works.jsx";
 
 import nprogress from "nprogress";
 import "nprogress/nprogress.css";
+import ProgressBar from 'react-bootstrap/ProgressBar';
 
 var current_date = Date.now();
 var graduation_date = new Date(2023, 4, 13, 18);
 var num_days = 0;
+var days_passed = 0;
+var progress_countdown = 0;
 
 function countdown(){
     var grad_date = new Date(2023, 4, 13, 18)
     var today_date = Date.now()
     var ms = grad_date - today_date
+
+    var days_year = 365
 
     today_date = new Date(2022, 4, 18)
 
@@ -27,13 +32,18 @@ function countdown(){
 
     // Display original unrounded number of days on the console for accuracy purposes
     // and to ensure that the number of days continues to update per each reload
-    console.log(num_days)
+    // console.log(num_days)
 
     num_days = num_days.toFixed(0)
 
-    console.log(num_days)
-    console.log(ms)
-    console.log(grad_date, today_date)
+    // console.log(num_days)
+    // console.log(ms)
+    // console.log(grad_date, today_date)
+
+    days_passed = days_year - num_days
+    // console.log(days_passed)
+    progress_countdown = (days_passed / num_days) * 100
+    progress_countdown = progress_countdown.toFixed(0)
 
     if (num_days <= 0){
         return ["Graduation day!"];
@@ -103,6 +113,8 @@ const Intro = () => {
                         <p id="graduation-countdown" data-aos="flip-up" data-aos-delay="2000">
                         Days left before graduation: <b>{countdown()} days!</b>
                         </p>
+                        <ProgressBar animated now={`${progress_countdown}`} id="progress-bar" data-aos="fade" data-aos-delay="2200"/>
+                        <p id="progress-count" data-aos="fade" data-aos-delay="2400">Progress until graduation day: {progress_countdown}%</p>
                         <br></br>
                     </div>
                 }
