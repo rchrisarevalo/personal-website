@@ -21,7 +21,7 @@ const Load = () => {
     return (
         <div className="loading-screen">
             <div className="loading-animation">
-                { (theme === "normal") && 
+                { (theme === "normal" || theme === null) && 
                     <div>
                         <Spinner animation="grow" variant="dark" id="delay-1" />
                         <Spinner animation="grow" variant="dark" id="delay-2" />
