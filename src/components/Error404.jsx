@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, HashRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { IoWarningSharp } from "react-icons/io5"
 
@@ -12,12 +12,11 @@ const Error404 = () => {
                 <p>Oops! It looks like what you were looking for does not exist on this website!</p>
                 <p>Here are some links below that can help you resolve this issue:</p>
                 <br></br>
-                <HashRouter>
-                    <Link to="/about">About Me</Link>
-                    <Link to="/announcements">Announcements</Link>
-                    <Link to="/archives">Archives</Link>
-                    <Link to="/settings">Settings</Link>
-                </HashRouter>
+                <Link to="/about">About Me</Link>
+                <Link to="/announcements">Announcements</Link>
+                <Link to="/contact">Contact Me</Link>
+                <Link to="/archives">Archives</Link>
+                <Link to="/settings">Settings</Link>
             </div>
         </div>
     );
