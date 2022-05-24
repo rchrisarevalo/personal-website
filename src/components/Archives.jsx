@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Helmet } from "react-helmet";
-import { Link, HashRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import NavArchives from "../NavArchives.jsx";
 import NewFooter from "../NewFooter.jsx";
@@ -44,25 +44,21 @@ const Archives = () => {
             </div>
             <br></br>
             <div className="archive-row">
-                <HashRouter>
-                    <li><b id="archive-year">2021:</b></li>
-                    <li><Link to="/announcements/2021/August">August</Link></li>
-                    <li><Link to="/announcements/2021/September">September</Link></li>
-                    <li><Link to="/announcements/2021/October">October</Link></li>
-                    <li><Link to="/announcements/2021/November">November</Link></li>
-                    <li><Link to="/announcements/2021/December">December</Link></li>
-                </HashRouter>
+                <li><b id="archive-year">2021:</b></li>
+                <li><Link to="/announcements/2021/August">August</Link></li>
+                <li><Link to="/announcements/2021/September">September</Link></li>
+                <li><Link to="/announcements/2021/October">October</Link></li>
+                <li><Link to="/announcements/2021/November">November</Link></li>
+                <li><Link to="/announcements/2021/December">December</Link></li>
             </div>
             <br></br>
             <br></br>
             <div className="archive-row">
-                <HashRouter>
-                    <li><b id="archive-year">2022:</b></li>
-                    <li><Link to="/announcements/2022/January">January</Link></li>
-                    <li><Link to="/announcements/2022/February">February</Link></li>
-                    <li><Link to="/announcements/2022/March">March</Link></li>
-                    <li><Link to="/announcements/2022/April">April</Link></li>
-                </HashRouter>
+                <li><b id="archive-year">2022:</b></li>
+                <li><Link to="/announcements/2022/January">January</Link></li>
+                <li><Link to="/announcements/2022/February">February</Link></li>
+                <li><Link to="/announcements/2022/March">March</Link></li>
+                <li><Link to="/announcements/2022/April">April</Link></li>
             </div>
             <br></br>
             <br></br>
