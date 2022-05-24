@@ -2,7 +2,7 @@ import React from "react";
 import { IoIosMenu, IoIosInformationCircleOutline } from "react-icons/io";
 import { IoSettingsOutline, IoCloseOutline, IoMegaphoneSharp, IoArchiveOutline, IoMailOutline } from "react-icons/io5";
 
-import { Link, HashRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ReactDOMServer from 'react-dom/server';
 
 const NavAnnouncements = () => {
@@ -34,13 +34,11 @@ const NavAnnouncements = () => {
       </div>
 
       <ul className="nav-list">
-        <HashRouter>
           <li><Link to="/about"><IoIosInformationCircleOutline id="nav-icons-style" size="16px" />About Me</Link></li>
           <li><Link to="/announcements" id="current-link"><IoMegaphoneSharp id="nav-icons-style" size="16px" /><b>Announcements</b></Link></li>
           <li><Link to="/contact"><IoMailOutline id="nav-icons-style" size="16px" />Contact Me</Link></li>
           <li><Link to="/archives"><IoArchiveOutline id="nav-icons-style" size="16px" />Archives</Link></li>
           <li><Link to="/settings"><IoSettingsOutline id="nav-icons-style" size="16px" />Settings</Link></li>
-        </HashRouter>
       </ul>
     </nav>
   );
