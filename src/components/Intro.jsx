@@ -43,7 +43,7 @@ function countdown(){
     days_passed = days_year - num_days
     // console.log(days_passed)
     progress_countdown = (days_passed / num_days) * 100
-    progress_countdown = progress_countdown.toFixed(0)
+    progress_countdown = progress_countdown.toFixed(1)
 
     if (num_days <= 0){
         return ["Graduation day!"];
