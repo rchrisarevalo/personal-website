@@ -7,7 +7,7 @@ const Error404 = () => {
     return (
         <div className="center-container">
             <div className="center-message">
-                <IoWarningSharp size="15vh"></IoWarningSharp>
+                <IoWarningSharp size="7vh"></IoWarningSharp>
                 <h1>404</h1>
                 <p>Oops! It looks like what you were looking for does not exist on this website!</p>
                 <p>Here are some links below that can help you resolve this issue:</p>
