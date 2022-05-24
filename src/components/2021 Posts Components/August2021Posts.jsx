@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import { Link, HashRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 
@@ -8,7 +8,7 @@ import NavArchives from "../../NavArchives.jsx";
 import NewFooter from "../../NewFooter.jsx";
 
 const August2021Posts = () => {
-    
+
     useEffect(() => {
         window.scrollTo(0, 0);
     })
@@ -20,9 +20,7 @@ const August2021Posts = () => {
                 <title>Ruben C. Arevalo - Personal Website - Announcements (August 2021)</title>
             </Helmet>
             <div className="posts-container">
-                <HashRouter>
-                    <Link to="/announcements/2021/September"><IoArrowForwardCircleOutline id="posts-arrow-right" title="September 2021 Announcements" size="40px"/></Link>
-                </HashRouter>
+                <Link to="/announcements/2021/September"><IoArrowForwardCircleOutline id="posts-arrow-right" title="September 2021 Announcements" size="40px" /></Link>
                 <h1 id="posts-title">Announcements (August 2021)</h1>
                 <br></br>
                 <p id="posts-description">
