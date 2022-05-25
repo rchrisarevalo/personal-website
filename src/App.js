@@ -24,6 +24,10 @@ import Settings from "./components/Settings.jsx";
 import WebsiteOperation from "./components/policies/WebsiteOperation.jsx";
 import ArchivePolicy from "./components/policies/ArchivePolicy.jsx";
 import Error404 from "./components/Error404.jsx";
+import ClosedWeb from './components/ClosedWeb.jsx'
+
+var today = new Date().getDate();
+var mem_day = 30;
 
 function App() {
 
@@ -37,26 +41,38 @@ function App() {
 
   return (
     <div className="App">
+
+      { (today < mem_day || today > mem_day) && 
         <Routes>
-            <Route index path="/" element={<Load />}/>
-            <Route path="/about" element={<Intro />}/>
-            <Route path="/announcements" element={<Posts />}/>
-            <Route path="/announcements/2021/August" element={<August2021Posts />}/>
-            <Route path="/announcements/2021/September" element={<September2021Posts />}/>
-            <Route path="/announcements/2021/October" element={<October2021Posts />}/>
-            <Route path="/announcements/2021/November" element={<November2021Posts />}/>
-            <Route path="/announcements/2021/December" element={<December2021Posts />}/>
-            <Route path="/announcements/2022/January" element={<January2022Posts />}/>
-            <Route path="/announcements/2022/February" element={<February2022Posts />}/>
-            <Route path="/announcements/2022/March" element={<March2022Posts />}/>
-            <Route path="/announcements/2022/April" element={<April2022Posts />}/>
-            <Route path="/contact" element={<Contact />}/>
-            <Route path="/archives" element={<Archives/>}/>
-            <Route path="/settings" element={<Settings />}/>
-            <Route path="/policies/site-operation" element={<WebsiteOperation />}/>
-            <Route path="/policies/archive" element={<ArchivePolicy />}/>
-            <Route path='*' element={<Error404 />}/>
+          <Route index path="/" element={<Load />} />
+          <Route path="/about" element={<Intro />} />
+          <Route path="/announcements" element={<Posts />} />
+          <Route path="/announcements/2021/August" element={<August2021Posts />} />
+          <Route path="/announcements/2021/September" element={<September2021Posts />} />
+          <Route path="/announcements/2021/October" element={<October2021Posts />} />
+          <Route path="/announcements/2021/November" element={<November2021Posts />} />
+          <Route path="/announcements/2021/December" element={<December2021Posts />} />
+          <Route path="/announcements/2022/January" element={<January2022Posts />} />
+          <Route path="/announcements/2022/February" element={<February2022Posts />} />
+          <Route path="/announcements/2022/March" element={<March2022Posts />} />
+          <Route path="/announcements/2022/April" element={<April2022Posts />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/archives" element={<Archives />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/policies/site-operation" element={<WebsiteOperation />} />
+          <Route path="/policies/archive" element={<ArchivePolicy />} />
+          <Route path='*' element={<Error404 />} />
         </Routes>
+      }
+
+      {/* Website will close for Memorial Day */}
+      { (today === mem_day) && 
+        <Routes>
+          <Route index path="/" element={<Load />} />
+          <Route path="/closed" element={<ClosedWeb />} />
+        </Routes>
+      }
+
     </div>
   );
 }
