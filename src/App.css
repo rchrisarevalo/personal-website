@@ -297,18 +297,18 @@ hr{
 }
 
 .update-message{
-  display: none;
   font-family: 'Open Sans', sans-serif;
   margin: 0.5em;
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 50px;
-  background: rgb(80, 144, 218);
-  border: 3px solid rgb(0, 119, 255);
+  background: rgb(78, 78, 78);
+  border: 3px solid rgb(255, 255, 255);
   border-radius: 3px;
-  color: black;
-  font-weight: 400;
+  color: white;
+  font-weight: 300;
   letter-spacing: 0.5px;
+  border-radius: 20px;
   z-index: 55;
 }
 
@@ -331,7 +331,7 @@ hr{
 }
 
 #close-icon:hover{
-  color: white;
+  color: grey;
   transition: .5s;
 }
 
