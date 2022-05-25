@@ -9,8 +9,17 @@ function closeUpdateMsg() {
     localStorage.setItem("one-time", "enabled");
 }
 
-var closeDate = 9;
-var currentDate = new Date().getDate();
+var ms = Math.abs(Date.now() - new Date(2022, 4, 30));
+var num_days = ms * (0.001 / 1) * (1 / 60) * (1 / 60) * (1 / 24)
+num_days = num_days.toFixed(0);
+var remaining_days;
+
+if (num_days > 1)
+    remaining_days = [`${num_days} days`]
+if (num_days === 1)
+{
+    remaining_days = [`${num_days} day`]
+}
 
 const Update = () => {
     return (
@@ -22,8 +31,7 @@ const Update = () => {
                         <IoAlertCircleOutline size="23px" id="update-icon" /> UPDATE:
                     </p>
                     <p>
-                        Hi everyone! This website will be closing in {Math.abs(currentDate - closeDate)} day(s) as I am taking a leave of absence for the next 3 weeks. For more information, please read
-                        my recent announcements below in the "Recent Announcements" section, or in the "Announcements" page.
+                        This website will be closing in <b>{`${remaining_days}`}</b> in observance of Memorial Day.
                     </p>
                     <p>
                         <i>-- Ruben Christopher Arevalo</i>
