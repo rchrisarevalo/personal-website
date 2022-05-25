@@ -20,6 +20,15 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 05/24/2022, 10:18 PM.
+                </p>
+                <p id="post-content">
+                    As of today, the website will be closing in 5 days in observance of Memorial Day. An update has
+                    already been provided in the "About Me" page. Thank you and have a wonderful evening!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 05/20/2022, 9:04 PM.
                 </p>
                 <p id="post-content">
