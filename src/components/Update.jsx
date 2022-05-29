@@ -9,7 +9,7 @@ function closeUpdateMsg() {
     localStorage.setItem("one-time", "enabled");
 }
 
-var ms = Math.abs(Date.now() - new Date(2022, 4, 30));
+var ms = Math.abs(Date.now() - new Date(2022, 4, 30, 0));
 
 var num_days = ms * (0.001 / 1) * (1 / 60) * (1 / 60) * (1 / 24)
 num_days = num_days.toFixed(0);
