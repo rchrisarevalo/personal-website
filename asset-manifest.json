@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.7244e35f.css",
+    "main.css": "/personal-website/static/css/main.f1533fa2.css",
     "main.js": "/personal-website/static/js/main.d9a0ba36.js",
     "static/js/27.267ae36e.chunk.js": "/personal-website/static/js/27.267ae36e.chunk.js",
     "static/media/Dec 5 2021.JPEG": "/personal-website/static/media/Dec 5 2021.9ec8e141599cfdeeb424.JPEG",
@@ -16,7 +16,7 @@
     "index.html": "/personal-website/index.html"
   },
   "entrypoints": [
-    "static/css/main.7244e35f.css",
+    "static/css/main.f1533fa2.css",
     "static/js/main.d9a0ba36.js"
   ]
 }
