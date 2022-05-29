@@ -384,6 +384,7 @@ hr{
 #progress-bar{
   margin-left: 15%;
   margin-right: 15%;
+  border-radius: 30px;
 }
 
 #progress-count{
