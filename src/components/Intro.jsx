@@ -15,41 +15,42 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 var current_date = Date.now();
 var graduation_date = new Date(2023, 4, 13, 18);
 var num_days = 0;
-var days_passed = 0;
-var progress_countdown = 0;
+var num_hours = 0;
+var num_hours_update = 0;
+var days_passed;
+var progress_countdown;
 
-function countdown(){
-    var grad_date = new Date(2023, 4, 13, 18)
-    var today_date = Date.now()
-    var ms = grad_date - today_date
+var grad_date = new Date(2023, 4, 13, 18)
+var today_date = Date.now()
+var tomorrow_date = new Date(2022, 4, 31, 18)
+console.log(tomorrow_date)
 
-    var days_year = 365
+var ms = grad_date - today_date
+var ms_tomorrow = tomorrow_date - today_date
 
-    today_date = new Date(2022, 4, 18)
+var days_year = 365
 
-    // The total number of days from today until my expected graduation date
-    num_days = ms * (0.001 / 1) * (1 / 60) * (1 / 60) * (1 / 24)
+// The total number of days from today until my expected graduation date
+num_days = ms * (0.001 / 1) * (1 / 60) * (1 / 60) * (1 / 24)
+num_days = num_days.toFixed(0)
 
-    // Display original unrounded number of days on the console for accuracy purposes
-    // and to ensure that the number of days continues to update per each reload
-    // console.log(num_days)
+// The total number of hours from today until my expected graduation date
+num_hours = ms * (0.001 / 1) * (1 / 60) * (1 / 60)
+num_hours = num_hours.toFixed(0)
 
-    num_days = num_days.toFixed(0)
+// Number of hours left to update progress bar and countdown section
+num_hours_update = ms_tomorrow * (0.001 / 1) * (1 / 60) * (1 / 60)
+num_hours_update = num_hours_update.toFixed(0)
+console.log(num_hours_update)
 
-    // console.log(num_days)
-    // console.log(ms)
-    // console.log(grad_date, today_date)
+days_passed = days_year - num_days
 
-    days_passed = days_year - num_days
-    // console.log(days_passed)
-    progress_countdown = (days_passed / num_days) * 100
-    progress_countdown = progress_countdown.toFixed(1)
+// Gives percentage of how many days have passed between today and May 13, 2023.
+progress_countdown = (days_passed / num_days) * 100
+progress_countdown = progress_countdown.toFixed(1)
 
-    if (num_days <= 0){
-        return ["Graduation day!"];
-    }
-
-    return num_days
+if (num_days < 1) {
+    days_passed = [`Graduation day in ${num_hours} hours!`]
 }
 
 function time_greeting() {
@@ -107,14 +108,16 @@ const Intro = () => {
                     You can also visit my CV website at this link: <a href="https://rchrisarevalo.github.io/cv-website" rel="noopener noreferrer" target="_blank"><b>rchrisarevalo.github.io/cv-website</b></a>
                 </p>
                 {/* This will be displayed until graduation date */}
-                { (current_date < graduation_date) &&
+                {(current_date < graduation_date) &&
                     <div>
                         <br></br>
                         <p id="graduation-countdown" data-aos="flip-up" data-aos-delay="2000">
-                        Days left before graduation: <b>{countdown()} days!</b>
+                            Days left before graduation: <b>{`${num_days}`} days!</b>
                         </p>
-                        <ProgressBar animated now={`${progress_countdown}`} id="progress-bar" data-aos="fade" data-aos-delay="2200"/>
-                        <p id="progress-count" data-aos="fade" data-aos-delay="2400">Progress until graduation day: {progress_countdown}%</p>
+                        <ProgressBar animated now={`${progress_countdown}`} id="progress-bar" data-aos="fade" data-aos-delay="2200" />
+                        <p id="progress-count" data-aos="fade" data-aos-delay="2400">Progress until graduation day: {`${progress_countdown}`}%</p>
+                        <p id="progress-count" data-aos="fade" data-aos-delay="2400"><i>This section will automatically update {`${num_hours_update}`} hours later due to this site closing in observance of Memorial Day.</i></p>
+                        <br></br>
                         <br></br>
                     </div>
                 }
