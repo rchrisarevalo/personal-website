@@ -50,12 +50,10 @@ const ClosedWeb = () => {
                 <p id="closed-msg">Today's date: <i>{currentDate()}</i></p>
                 <p id="closed-msg">Time left until re-opening: <i><b>{`${num_hours}`}</b></i></p>
                 <p id="closed-msg">
-                    In accordance to Site Operation policy under the "Personal Affairs" section, I will
-                    be taking a leave of absence that will took effect on April 9, midnight. This
-                    website will re-open on <b>April 30th</b>.
+                    This website will be closed in observance of Memorial Day. It will be reopened on <b>May 31st</b> at midnight.
                 </p>
                 <br />
-                <p id="closed-msg">Have a wonderful rest of the month! Contact me if you have any questions!</p>
+                <p id="closed-msg">Contact me if you have any questions or concerns.</p>
                 <br />
                 <div id="closed-button">
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1nR8hmOAMRTU3fDZsbLRGkjzKvA9uRLZW_YdvsyBEctqDOw/viewform" rel="noreferrer" target="_blank">Contact Me</a>
