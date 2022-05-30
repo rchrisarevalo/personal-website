@@ -1,6 +1,7 @@
 import React from 'react';
 
 var num_days = 0;
+var num_hours = 0;
 
 function currentDate() {
     const month = new Date().getMonth();
@@ -19,20 +20,25 @@ function currentDate() {
     return [stringMonth, " ", day, ", ", year];
 }
 
-var mem_day_date = new Date(2022, 4, 30)
+var mem_day_date = new Date(2022, 4, 31)
 var today_date = Date.now()
 var ms = mem_day_date - today_date
 
-// The total number of days from today until my expected graduation date
+// The total number of days from today
 num_days = ms * (0.001 / 1) * (1 / 60) * (1 / 60) * (1 / 24)
 num_days = num_days.toFixed(0)
+
+// The total number of hours left
+num_hours = ms * (0.001 / 1) * (1 / 60) * (1 / 60)
+num_hours = num_hours.toFixed(1)
+
 
 const ClosedWeb = () => {
     return (
         <div className="center-container">
             <div className="center-message">
                 <p id="closed-msg">Today's date: <i>{currentDate()}</i></p>
-                <p id="closed-msg">Days left until re-opening: <i><b>{`${num_days}`}</b></i></p>
+                <p id="closed-msg">Time left until re-opening: <i><b>{`${num_hours}`}</b></i></p>
                 <p id="closed-msg">
                     In accordance to Site Operation policy under the "Personal Affairs" section, I will
                     be taking a leave of absence that will took effect on April 9, midnight. This
