@@ -297,6 +297,7 @@ hr{
 }
 
 .update-message{
+  display: none;
   font-family: 'Open Sans', sans-serif;
   margin: 0.5em;
   margin-left: 20%;
