@@ -14,7 +14,7 @@ const Load = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            nav("/close")
+            nav("/closed")
         }, 3000)
     });
 
