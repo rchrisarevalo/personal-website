@@ -28,9 +28,19 @@ var ms = mem_day_date - today_date
 num_days = ms * (0.001 / 1) * (1 / 60) * (1 / 60) * (1 / 24)
 num_days = num_days.toFixed(0)
 
-// The total number of hours left
-num_hours = ms * (0.001 / 1) * (1 / 60) * (1 / 60)
-num_hours = num_hours.toFixed(1)
+if (num_days >= 0)
+{
+    // The total number of hours left
+    num_hours = ms * (0.001 / 1) * (1 / 60) * (1 / 60)
+    num_hours = num_hours.toFixed(0)
+    
+    if (num_hours > 1)
+    {
+        num_hours = [`${num_hours} hours`]
+    }
+    else
+        num_hours = [`${num_hours} hour`]
+}
 
 
 const ClosedWeb = () => {
