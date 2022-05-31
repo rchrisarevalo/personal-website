@@ -18,6 +18,7 @@ import January2022Posts from './components/2022 Posts Components/January2022Post
 import February2022Posts from './components/2022 Posts Components/February2022Posts.jsx';
 import March2022Posts from './components/2022 Posts Components/March2022Posts.jsx';
 import April2022Posts from './components/2022 Posts Components/April2022Posts.jsx';
+import May2022Posts from './components/2022 Posts Components/May2022Posts';
 import Contact from './components/Contact.jsx';
 import Archives from "./components/Archives.jsx";
 import Settings from "./components/Settings.jsx";
@@ -51,6 +52,9 @@ function App() {
         <Route path="/announcements/2022/February" element={<February2022Posts />} />
         <Route path="/announcements/2022/March" element={<March2022Posts />} />
         <Route path="/announcements/2022/April" element={<April2022Posts />} />
+        { (Date.now() >= new Date(2022, 5, 1)) &&
+          <Route path="/announcements/2022/May" element={<May2022Posts />} />
+        }
         <Route path="/contact" element={<Contact />} />
         <Route path="/archives" element={<Archives />} />
         <Route path="/settings" element={<Settings />} />
