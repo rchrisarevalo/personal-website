@@ -43,7 +43,6 @@ const ProgressCountdown = () => {
             <ProgressBar animated now={`${progress_countdown}`} id="progress-bar" data-aos="fade" data-aos-delay="2200" />
             <p id="progress-count" data-aos="fade" data-aos-delay="2400">Progress until graduation day: {`${progress_countdown}`}%</p>
             <br></br>
-            <br></br>
         </div>
     )
 }
