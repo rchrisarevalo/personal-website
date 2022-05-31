@@ -20,6 +20,33 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 05/31/2022, 8:40 AM.
+                </p>
+                <p id="post-content">
+                    That is all for today! I hope you all had a wonderful month and will have a wonderful
+                    June!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 05/31/2022, 8:40 AM.
+                </p>
+                <p id="post-content">
+                    I will be clearing these announcements at the end of the day before midnight. By then, everything should
+                    be gone except for a new post for the new month (which is June).
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 05/31/2022, 8:40 AM.
+                </p>
+                <p id="post-content">
+                    Hi everyone! This will be the last announcement for this month! I know I have been out for a week
+                    as I stated in an earlier post that I was taking a small break.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 05/24/2022, 10:18 PM.
                 </p>
                 <p id="post-content">
