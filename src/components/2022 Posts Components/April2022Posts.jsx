@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
-import { IoArrowBackCircleOutline } from "react-icons/io5";
+import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from "react-icons/io5";
 
 import NavArchives from "../../NavArchives.jsx";
 import NewFooter from "../../NewFooter.jsx";
@@ -22,12 +22,21 @@ const April2022Posts = () => {
             <NavArchives />
             <div class="posts-container">
                 <Link to="/announcements/2022/March">
-                        <IoArrowBackCircleOutline
-                            id="posts-arrow-left"
-                            title="March 2022 Announcements"
+                    <IoArrowBackCircleOutline
+                        id="posts-arrow-left"
+                        title="March 2022 Announcements"
+                        size="40px"
+                    />
+                </Link>
+                {Date.now() >= new Date(2022, 5, 1) &&
+                    <Link to="/announcements/2022/May">
+                        <IoArrowForwardCircleOutline
+                            id="posts-arrow-right"
+                            title="May 2022 Announcements"
                             size="40px"
                         />
-                </Link>
+                    </Link>
+                }
                 <h1 id="posts-title">Announcements (April 2022)</h1>
                 <br></br>
                 <p id="posts-description">
