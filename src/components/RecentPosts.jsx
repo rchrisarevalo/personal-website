@@ -10,29 +10,29 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 05/24/2022, 10:18 PM.
+                    By: Ruben Christopher Arevalo. Posted on 05/31/2022, 8:40 AM.
                 </p>
                 <p id="post-content">
-                    As of today, the website will be closing in 5 days in observance of Memorial Day. An update has
-                    already been provided in the "About Me" page. Thank you and have a wonderful evening!
+                    That is all for today! I hope you all had a wonderful month and will have a wonderful
+                    June!
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 05/20/2022, 9:04 PM.
+                    By: Ruben Christopher Arevalo. Posted on 05/31/2022, 8:40 AM.
                 </p>
                 <p id="post-content">
-                    Aside from a few style changes made to this site, this is everything I have to share for the day. Have a great rest of the weekend and please
-                    stay safe!
+                    I will be clearing these announcements at the end of the day before midnight. By then, everything should
+                    be gone except for a new post for the new month (which is June).
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 05/20/2022, 9:04 PM.
+                    By: Ruben Christopher Arevalo. Posted on 05/31/2022, 8:40 AM.
                 </p>
                 <p id="post-content">
-                    Furthermore, I added a graduation date countdown. The reason for this is because I am graduating next year, and I thought it'd be best
-                    to let others know when I am going to graduate, which is May of next year (2023).
+                    Hi everyone! This will be the last announcement for this month! I know I have been out for a week
+                    as I stated in an earlier post that I was taking a small break.
                 </p>
             </div>
         </div>
