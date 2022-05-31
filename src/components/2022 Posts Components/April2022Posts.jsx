@@ -7,7 +7,7 @@ import { IoArrowBackCircleOutline } from "react-icons/io5";
 import NavArchives from "../../NavArchives.jsx";
 import NewFooter from "../../NewFooter.jsx";
 
-const March2022Posts = () => {
+const April2022Posts = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     });
@@ -183,4 +183,4 @@ const March2022Posts = () => {
     );
 };
 
-export default March2022Posts;
+export default April2022Posts;
