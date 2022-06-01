@@ -11,7 +11,7 @@ import "nprogress/nprogress.css";
 const Archives = () => {
 
     useEffect(() => {
-        nprogress.configure({minimum: 0.1, showSpinner: false, easing: 'ease', speed: 800, trickleSpeed: 200});
+        nprogress.configure({ minimum: 0.1, showSpinner: false, easing: 'ease', speed: 800, trickleSpeed: 200 });
         nprogress.start();
         nprogress.set(0.5);
         nprogress.inc(0.5);
@@ -43,33 +43,41 @@ const Archives = () => {
                 </p>
             </div>
             <br></br>
-            <div className="archive-row">
-                <li><b id="archive-year">2021:</b></li>
-                <li><Link to="/announcements/2021/August">August</Link></li>
-                <li><Link to="/announcements/2021/September">September</Link></li>
-                <li><Link to="/announcements/2021/October">October</Link></li>
-                <li><Link to="/announcements/2021/November">November</Link></li>
-                <li><Link to="/announcements/2021/December">December</Link></li>
-            </div>
-            <br></br>
-            <br></br>
-            <div className="archive-row">
-                <li><b id="archive-year">2022:</b></li>
-                <li><Link to="/announcements/2022/January">January</Link></li>
-                <li><Link to="/announcements/2022/February">February</Link></li>
-                <li><Link to="/announcements/2022/March">March</Link></li>
-                <li><Link to="/announcements/2022/April">April</Link></li>
-                { (Date.now() >= new Date(2022, 5, 1)) &&
-                    <li><Link to="/announcements/2022/May">May</Link></li>
-                }
-            </div>
-            <br></br>
-            <br></br>
+            {(Date.now() >= new Date(2021, 0, 1) && Date.now() <= new Date(2024, 11, 31)) &&
+                <div>
+                    <div className="archive-row">
+                        <li><b id="archive-year">2021:</b></li>
+                        <li><Link to="/announcements/2021/August">August</Link></li>
+                        <li><Link to="/announcements/2021/September">September</Link></li>
+                        <li><Link to="/announcements/2021/October">October</Link></li>
+                        <li><Link to="/announcements/2021/November">November</Link></li>
+                        <li><Link to="/announcements/2021/December">December</Link></li>
+                    </div>
+                    <br></br>
+                    <br></br>
+                </div>
+            }
+            {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) &&
+                <div>
+                    <div className="archive-row">
+                        <li><b id="archive-year">2022:</b></li>
+                        <li><Link to="/announcements/2022/January">January</Link></li>
+                        <li><Link to="/announcements/2022/February">February</Link></li>
+                        <li><Link to="/announcements/2022/March">March</Link></li>
+                        <li><Link to="/announcements/2022/April">April</Link></li>
+                        {(Date.now() >= new Date(2022, 5, 1)) &&
+                            <li><Link to="/announcements/2022/May">May</Link></li>
+                        }
+                    </div>
+                    <br></br>
+                    <br></br>
+                </div>
+            }
             <div className="center-message">
                 <p id="archive-message">
                     I will continue adding to this page as time progresses. Just like every month, I will wipe the <b>Announcements</b> page clean after
                     the end of the month and will store the posts from the previous month into its own page.
-                    I will store up to only 3 years of previous announcements in accordance to the archival process policy I implemented. 
+                    I will store up to only <b>3 years of previous announcements</b> in accordance to the archival process policy I implemented.
                     Once the mentioned deadline has expired, then the old announcements will be permanently removed from this website, never to be seen
                     again.
                 </p>
@@ -78,7 +86,7 @@ const Archives = () => {
             <br></br>
             <br></br>
             <br></br>
-            <NewFooter/>
+            <NewFooter />
         </div>
     )
 }
