@@ -9,6 +9,8 @@ var progress_countdown;
 var grad_date = new Date(2023, 4, 13, 18)
 var today_date = Date.now()
 
+console.log(today_date, grad_date)
+
 var ms = grad_date - today_date
 
 var days_year = 365
