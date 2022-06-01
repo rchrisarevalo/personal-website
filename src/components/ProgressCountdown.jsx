@@ -8,8 +8,6 @@ var progress_countdown;
 
 var grad_date = new Date(2023, 4, 13, 18)
 var today_date = Date.now()
-var tomorrow_date = new Date(2022, 4, 31, 4)
-console.log(tomorrow_date)
 
 var ms = grad_date - today_date
 
