@@ -9,8 +9,6 @@ var progress_countdown;
 var grad_date = new Date(2023, 4, 13, 18)
 var today_date = Date.now()
 
-console.log(today_date, grad_date)
-
 var ms = grad_date - today_date
 
 var days_year = 365
@@ -23,14 +21,17 @@ num_days = num_days.toFixed(0)
 num_hours = ms * (0.001 / 1) * (1 / 60) * (1 / 60)
 num_hours = num_hours.toFixed(0)
 
+// Calculates the total number of days that have passed since the beginning of the set date
 days_passed = days_year - num_days
 
-// Gives percentage of how many days have passed between today and May 13, 2023.
-progress_countdown = (days_passed / num_days) * 100
+// Gives percentage of how many days have passed between today and May 13, 2023 (graduation day)
+progress_countdown = (days_passed / days_year) * 100
 progress_countdown = progress_countdown.toFixed(1)
 
 if (num_days < 1) {
-    days_passed = [`Graduation day in ${num_hours} hours!`]
+    num_days = [`Graduation day in ${num_hours} hours!`]
+} else {
+    num_days = [`${num_days} days!`]
 }
 
 const ProgressCountdown = () => {
@@ -38,7 +39,7 @@ const ProgressCountdown = () => {
         <div className="progress-countdown-container">
             <br></br>
             <p id="graduation-countdown" data-aos="flip-up" data-aos-delay="2000">
-                Days left before graduation: <b>{`${num_days}`} days!</b>
+                Time left before graduation: <b>{`${num_days}`}</b>
             </p>
             <ProgressBar animated now={`${progress_countdown}`} id="progress-bar" data-aos="fade" data-aos-delay="2200" />
             <p id="progress-count" data-aos="fade" data-aos-delay="2400">Progress until graduation day: {`${progress_countdown}`}%</p>
