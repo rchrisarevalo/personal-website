@@ -1,15 +1,13 @@
-# Personal Website (v3.0.0)
+# Personal Website (v3.0.1)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on May 24, 2022):
+# UPDATES (made on June 2, 2022):
 
-* I made some major changes to the infrastructure of this website:
-  * Updating react-router-dom to v6.
-  * Updating the rendering of the page to match that of React v1.18 and above.
-* This was all done so that my website's infrastructure is up-to-date.
-* Additional credits were added to give credit to the author of some of the snippets and ideas of their code I used, namely the light to dark theme feature.
+* A bug fix was made to the countdown feature/section in the "About Me" page, as it was displaying unusual percentages (e.g. over 1000%) whenever I set today's date to a later date in the year of 2023.
+
+* The progress countdown feature should work as intended.
 
 # CREDITS:
 * Progress bar by nProgress (author: rstacruz)
