@@ -70,7 +70,7 @@ const Intro = () => {
                     You can also visit my CV website at this link: <a href="https://rchrisarevalo.github.io/cv-website" rel="noopener noreferrer" target="_blank"><b>rchrisarevalo.github.io/cv-website</b></a>
                 </p>
                 {/* This component will be displayed until the graduation date and the hours leading up to it */}
-                {(current_date < graduation_date) &&
+                {(current_date <= graduation_date) &&
                     <ProgressCountdown />
                 }
                 <br></br>
