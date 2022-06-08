@@ -31,28 +31,28 @@ const Works = () => {
             <div className="works-display" data-aos="fade" data-aos-delay="500">
                 <img src={skyshot1} alt="work-3"></img>
             </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="500">
+            <div className="works-display" data-aos="fade" data-aos-delay="600">
                 <img src={skyshot2} alt="work-4"></img>
             </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="500">
+            <div className="works-display" data-aos="fade" data-aos-delay="600">
                 <img src={skyshot3} alt="work-5"></img>
             </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="500">
+            <div className="works-display" data-aos="fade" data-aos-delay="600">
                 <img src={skyshot4} alt="work-6"></img>
             </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="500">
+            <div className="works-display" data-aos="fade" data-aos-delay="700">
                 <img src={skyshot5} alt="work-7"></img>
             </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="500">
+            <div className="works-display" data-aos="fade" data-aos-delay="700">
                 <img src={skyshot6} alt="work-8"></img>
             </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="500">
+            <div className="works-display" data-aos="fade" data-aos-delay="700">
                 <img src={skyshot7} alt="work-9"></img>
             </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="500">
+            <div className="works-display" data-aos="fade" data-aos-delay="800">
                 <img src={skyshot8} alt="work-10"></img>
             </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="500">
+            <div className="works-display" data-aos="fade" data-aos-delay="800">
                 <img src={skyshot9} alt="work-11"></img>
             </div>
         </div>
