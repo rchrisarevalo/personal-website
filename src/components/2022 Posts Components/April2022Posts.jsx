@@ -44,6 +44,9 @@ const April2022Posts = () => {
                     page. None of these posts will be deleted or edited unless I decide
                     otherwise.
                 </p>
+                <p id="posts-description">
+                    Last modified: 6/8/2022 at 1:25 AM. Reason: post timeline sequence corrected.
+                </p>
                 <div className="post" id="post-margin">
                     <p id="post-info">
                         By: Ruben Christopher Arevalo. Posted on 04/27/2022, 7:16 PM.
@@ -92,6 +95,15 @@ const April2022Posts = () => {
                 </div>
                 <div className="post" id="post-margin">
                     <p id="post-info">
+                        By: Ruben Christopher Arevalo. Posted on 04/08/2022, 9:37 PM.
+                    </p>
+                    <p id="post-content">
+                        Today is the last day this website will be available until I take a leave of absence for 3 weeks. I wish you all a great rest of the
+                        month and I will see you on April 30!
+                    </p>
+                </div>
+                <div className="post" id="post-margin">
+                    <p id="post-info">
                         By: Ruben Christopher Arevalo. Posted on 04/07/2022, 5:15 PM.
                     </p>
                     <p id="post-content">
@@ -118,15 +130,6 @@ const April2022Posts = () => {
                         My circumstances have become a little bit complicated. I hope to come back before the end of the month so I can announce whether or
                         not I will be creating a blog. If not, then I will come back in the first week of May. The workload should be lighter by then, except
                         for a poster for a presentation that I have to do.
-                    </p>
-                </div>
-                <div className="post" id="post-margin">
-                    <p id="post-info">
-                        By: Ruben Christopher Arevalo. Posted on 04/08/2022, 9:37 PM.
-                    </p>
-                    <p id="post-content">
-                        Today is the last day this website will be available until I take a leave of absence for 3 weeks. I wish you all a great rest of the
-                        month and I will see you on April 30!
                     </p>
                 </div>
                 <div className="post" id="post-margin">
