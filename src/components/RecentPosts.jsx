@@ -10,6 +10,16 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
+                    By: Ruben Christopher Arevalo. Posted on 06/08/2022, 1:20 AM.
+                </p>
+                <p id="post-content">
+                    Good morning (or evening) everyone! I want to announce that I added new images in the "Portfolio"
+                    section in the "About Me" page! Go ahead and take a look of the photos I took! Please let me know
+                    if there any issues.
+                </p>
+            </div>
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+                <p id="post-info-recent">
                     By: Ruben Christopher Arevalo. Posted on 06/02/2022, 6:01 AM.
                 </p>
                 <p id="post-content">
@@ -29,16 +39,6 @@ const RecentPosts = () => {
                     the countdown feature, the progress percentage that is shown below the progress bar
                     gave me unusual numbers, such as over 1000% whenever I set today's date a day before
                     the graduation date.
-                </p>
-            </div>
-            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
-                <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 06/01/2022, 12:00 AM.
-                </p>
-                <p id="post-content">
-                    Good evening, everyone! This announcement will be the first one for this month. As usual,
-                    I am going to continue updating this website to keep it in top shape! Anyways, that will
-                    be it for today, and I hope you all have a wonderful rest of the week!
                 </p>
             </div>
         </div>
