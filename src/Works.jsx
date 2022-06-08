@@ -8,6 +8,8 @@ import skyshot4 from './images/sky-palm-july2021.jpg';
 import skyshot5 from './images/palm tree photo dec 2021.jpg';
 import skyshot6 from './images/Dec 5 2021.JPEG';
 import skyshot7 from './images/IMG-2012.jpg';
+import skyshot8 from './images/SKYFEB2022.JPEG';
+import skyshot9 from './images/SKYMAY2022.JPEG';
 
 const Works = () => {
     return (
@@ -46,6 +48,12 @@ const Works = () => {
             </div>
             <div className="works-display" data-aos="fade" data-aos-delay="500">
                 <img src={skyshot7} alt="work-9"></img>
+            </div>
+            <div className="works-display" data-aos="fade" data-aos-delay="500">
+                <img src={skyshot8} alt="work-10"></img>
+            </div>
+            <div className="works-display" data-aos="fade" data-aos-delay="500">
+                <img src={skyshot9} alt="work-11"></img>
             </div>
         </div>
     );
