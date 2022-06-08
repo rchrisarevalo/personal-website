@@ -20,6 +20,16 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 06/08/2022, 1:20 AM.
+                </p>
+                <p id="post-content">
+                    Good morning (or evening) everyone! I want to announce that I added new images in the "Portfolio"
+                    section in the "About Me" page! Go ahead and take a look of the photos I took! Please let me know
+                    if there any issues.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 06/02/2022, 6:01 AM.
                 </p>
                 <p id="post-content">
