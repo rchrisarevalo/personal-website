@@ -28,15 +28,13 @@ const April2022Posts = () => {
                         size="40px"
                     />
                 </Link>
-                {Date.now() >= new Date(2022, 5, 1) &&
-                    <Link to="/announcements/2022/May">
-                        <IoArrowForwardCircleOutline
-                            id="posts-arrow-right"
-                            title="May 2022 Announcements"
-                            size="40px"
-                        />
-                    </Link>
-                }
+                <Link to="/announcements/2022/May">
+                    <IoArrowForwardCircleOutline
+                        id="posts-arrow-right"
+                        title="May 2022 Announcements"
+                        size="40px"
+                    />
+                </Link>
                 <h1 id="posts-title">Announcements (April 2022)</h1>
                 <br></br>
                 <p id="posts-description">
