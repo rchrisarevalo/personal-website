@@ -1,46 +1,45 @@
 import React from "react";
-import { IoIosMenu, IoIosInformationCircleOutline } from "react-icons/io";
-import { IoSettingsOutline, IoCloseOutline, IoMegaphoneOutline, IoArchiveSharp, IoMailOutline } from "react-icons/io5";
+import { IoIosInformationCircleOutline } from "react-icons/io";
+import { IoSettingsOutline, IoMegaphoneOutline, IoArchiveSharp, IoMailOutline } from "react-icons/io5";
+
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 import { Link } from "react-router-dom";
-import ReactDOMServer from 'react-dom/server';
 
 const NavArchives = () => {
 
-  function activateNav() {
-    var nav = document.querySelector(".nav-list")
-    var burger_icon = document.querySelector(".burger-icon");
-    var clicked = false;
-
-    if (clicked === false && nav.classList.toggle("is_active") === true) {
-      clicked = true;
-      burger_icon.innerHTML = ReactDOMServer.renderToString(<IoCloseOutline id="burger-style" size="28px" color="white"/>);
-    } else {
-      clicked = false;
-      burger_icon.innerHTML = ReactDOMServer.renderToString(<IoIosMenu id="burger-style" size="28px" color="white" />);
-    }
-  }
-
   return (
-    <nav className="nav-bar">
-      <div className="burger-icon" onClick={activateNav}>
-        <IoIosMenu id="burger-style" size="28px" color="white" />
-      </div>
-      <div className="logo">
-        <a href={"./"}>Ruben C. Arevalo</a>
-      </div>
-      <div className="contact-icon">
-        <Link to="/settings"><IoSettingsOutline id="contact-style" color="white" /></Link>
-      </div>
-
-      <ul className="nav-list">
-          <li><Link to="/about"><IoIosInformationCircleOutline id="nav-icons-style" size="16px" />About Me</Link></li>
-          <li><Link to="/announcements"><IoMegaphoneOutline id="nav-icons-style" size="16px" />Announcements</Link></li>
-          <li><Link to="/contact"><IoMailOutline id="nav-icons-style" size="16px" />Contact Me</Link></li>
-          <li><Link to="/archives" id="current-link"><IoArchiveSharp id="nav-icons-style" size="16px" /><b>Archives</b></Link></li>
-          <li><Link to="/settings"><IoSettingsOutline id="nav-icons-style" size="16px" />Settings</Link></li>
-      </ul>
-    </nav>
+    // From React-Bootstrap
+    <Navbar expand="lg" variant="dark">
+      <Container>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <div className="logo">
+          <Navbar.Brand href="/">Ruben C. Arevalo</Navbar.Brand>
+        </div>
+        <Link to="/settings"><IoSettingsOutline size="25px" id="setting-btn-icon" /></Link>
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+          <Nav>
+            <Nav.Item>
+              <Nav.Link><Link to="/about"><IoIosInformationCircleOutline id="nav-icons-style" size="16px" />About Me</Link></Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link><Link to="/announcements"><IoMegaphoneOutline id="nav-icons-style" size="16px" />Announcements</Link></Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link><Link to="/contact"><IoMailOutline id="nav-icons-style" size="16px" />Contact Me</Link></Nav.Link>
+            </Nav.Item>
+            <Nav.Item id="current-link">
+              <Nav.Link><Link to="/archives"><IoArchiveSharp id="nav-icons-style" size="16px" /><b>Archives</b></Link></Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link><Link to="/settings"><IoSettingsOutline id="nav-icons-style" size="16px" />Settings</Link></Nav.Link>
+            </Nav.Item>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
