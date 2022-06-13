@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { IoSendOutline } from 'react-icons/io5';
 import nprogress from "nprogress";
 import "nprogress/nprogress.css";
 
@@ -26,12 +27,12 @@ const ContactForm = () => {
             >
                 <div className="contact-subcontainer">
                     <br></br>
-                    <h1>Contact Me</h1>
+                    <h2><IoSendOutline size="25px" id="contact-form-icon" />Contact Me</h2>
                     <label>
                         <p>Enter your email address:</p>
                     </label>
                     <br></br>
-                    <input type="email" name="email" id="contact-email" autocomplete="off" size="30" maxlength="320" required></input>
+                    <input type="email" name="email" id="contact-email" autocomplete="off" size="35" maxlength="320" required></input>
                     <br></br>
                     <br></br>
                     <label>
