@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from 'react-helmet';
 import NavSettings from "../NavSettings.jsx";
 import NewFooter from "../NewFooter.jsx";
-import { IoTrashOutline, IoSaveOutline } from "react-icons/io5";
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button'
 
@@ -110,10 +109,10 @@ const Settings = () => {
                         <br></br>
                         <br></br>
                         {d !== null &&
-                            <button onClick={handleNoticeShow}><IoTrashOutline size="16px" id="setting-btn-icon" />Clear</button>
+                            <button onClick={handleNoticeShow}>Clear</button>
                         }
                         {d === null &&
-                            <button onClick={handleNoticeShow} id="settings-disabled" disabled><IoTrashOutline size="16px" id="setting-btn-icon" />Clear</button>
+                            <button onClick={handleNoticeShow} id="settings-disabled" disabled>Clear</button>
                         }
                         <br></br>
                         <br></br>
@@ -137,7 +136,7 @@ const Settings = () => {
                         <i>Reload page for changes to take effect:</i>
                         <br></br>
                         <br></br>
-                        <button type="submit" onClick={handleSaveShow}><IoSaveOutline size="16px" id="setting-btn-icon" />Save</button>
+                        <button type="submit" onClick={handleSaveShow}>Save Changes</button>
                         <br></br>
                         <br></br>
                         
