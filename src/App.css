@@ -492,7 +492,7 @@ hr{
   font-family: 'Open Sans', sans-serif;
 }
 
-#contact-form h1{
+#contact-form h2{
   font-weight: 800;
   text-transform: none;
   font-size: 25px;
@@ -557,6 +557,11 @@ hr{
   letter-spacing: 2px;
   color: black;
   transition: .5s;
+}
+
+#contact-form-icon{
+  transform: translateY(-2px);
+  margin-right: .6em;
 }
 
 .posts-container{
