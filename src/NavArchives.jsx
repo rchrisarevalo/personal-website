@@ -16,7 +16,7 @@ const NavArchives = () => {
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <div className="logo">
-          <Navbar.Brand href="/">Ruben C. Arevalo</Navbar.Brand>
+          <Navbar.Brand href={"./"}>Ruben C. Arevalo</Navbar.Brand>
         </div>
         <Link to="/settings"><IoSettingsOutline size="25px" id="setting-btn-icon" /></Link>
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
