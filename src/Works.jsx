@@ -18,9 +18,8 @@ const Works = () => {
             <p id="work-description" data-aos="fade-right" data-aos-delay="500">
                 I enjoy doing certain hobbies whenever I have free time during the day. I have also taken some
                 pictures in the outdoors during a sunny day and created other projects outside from
-                photography, such as developing websites for a local photography business and a CV website
-                for myself. These pictures represent some of the things I have done so far in my free time,
-                and I enjoyed doing it (and still continue to do so).
+                photography, like developing website such as this one and my CV website. These pictures represent 
+                some of the things I have done so far in my free time, and I enjoyed doing it (and still continue to do so).
             </p>
             <div className="works-display" data-aos="fade" data-aos-delay="500">
                 <img src={thumb1} alt="work-1"></img>
