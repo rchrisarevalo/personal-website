@@ -10,31 +10,31 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 06/11/2022, 3:22 PM.
+                    By: Ruben Christopher Arevalo. Posted on 06/17/2022, 8:52 PM.
                 </p>
                 <p id="post-content">
-                    In addition, I will be developing a new, small feature for this website soon. I still
-                    don't have an idea of what it is going to be, but eventually I will get there! Thank you
-                    and have a wonderful weekend y'all!
+                    Anyways, that was everything I wanted to show you all. I hope y'all have a wonderful rest of the weekend and as always,
+                    I will continue to maintaining and updating this website to keep it up-to-date!
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 06/11/2022, 3:22 PM.
+                    By: Ruben Christopher Arevalo. Posted on 06/17/2022, 8:52 PM.
                 </p>
                 <p id="post-content">
-                    I hope you all are having a wonderful weekend! I am leaving this here to let y'all know that my mini-break will
-                    be over in 4 days. After that, I will be back to fully maintaining this website.
+                    Originally, major holidays that lasted for any time period were included on the original version.
+                    The new changes that were made recently in the Site Operation policy page now state that major holidays whose break period lasts more than one day
+                    (e.g. the Christmas/New Year's break, as well as Easter and Thanksgiving break) will only be considered for website closure.
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 06/08/2022, 1:20 AM.
+                    By: Ruben Christopher Arevalo. Posted on 06/17/2022, 8:52 PM.
                 </p>
                 <p id="post-content">
-                    Good morning (or evening) everyone! I want to announce that I added new images in the "Portfolio"
-                    section in the "About Me" page! Go ahead and take a look of the photos I took! Please let me know
-                    if there any issues.
+                    Hello everyone. There has been a major change for the Site Operation policy located
+                    in the footer below of every page in this site. In it, some details have been revised
+                    in the "Holidays" section of the policy.
                 </p>
             </div>
         </div>
