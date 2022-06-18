@@ -20,6 +20,35 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 06/17/2022, 8:52 PM.
+                </p>
+                <p id="post-content">
+                    Anyways, that was everything I wanted to show you all. I hope y'all have a wonderful rest of the weekend and as always,
+                    I will continue to maintaining and updating this website to keep it up-to-date!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 06/17/2022, 8:52 PM.
+                </p>
+                <p id="post-content">
+                    Originally, major holidays that lasted for any time period were included on the original version.
+                    The new changes that were made recently in the Site Operation policy page now state that major holidays whose break period lasts more than one day
+                    (e.g. the Christmas/New Year's break, as well as Easter and Thanksgiving break) will only be considered for website closure.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 06/17/2022, 8:52 PM.
+                </p>
+                <p id="post-content">
+                    Hello everyone. There has been a major change for the Site Operation policy located
+                    in the footer below of every page in this site. In it, some details have been revised
+                    in the "Holidays" section of the policy.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 06/11/2022, 3:22 PM.
                 </p>
                 <p id="post-content">
