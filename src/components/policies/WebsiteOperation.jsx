@@ -32,7 +32,7 @@ const WebsiteOperation = () => {
                 <div className="website-operation-policy-description">
                     <h1>Site Operation Policy</h1>
                     <br></br>
-                    <h4><i>Last modified on: March 29, 2022</i></h4>
+                    <h4><i>Last modified on: June 17, 2022</i></h4>
                     <br></br>
                     <p>
                         Hello everyone. Last month, I introduced a new policy that determined how this website
@@ -59,20 +59,19 @@ const WebsiteOperation = () => {
                     <h3>Holidays</h3>
                     <br></br>
                     <p>
-                        This Site will not operate during or a few days before the holidays. The Site is usually closed
-                        a week before a holiday approaches, such as Thanksgiving, Christmas, New Year's, etc. There will
-                        be times where this Site closes on the day of the holiday, for instance, Easter and Halloween.
-                        In other words, a week-long closure will be for holidays that will last for more than 1 week
-                        and a day-long closure will apply for holidays that will only occur once a month provided that there
-                        are no upcoming holidays for the next few weeks. If you are confused from what I am stating here, here
-                        is a specific timeframe as to how long this website will be closed depending on the holiday.
+                        This Site will not operate a few days before or during the holidays. The Site is usually closed
+                        a week before a holiday approaches, such as Thanksgiving, Christmas, New Year's, etc. Major
+                        consecutive holidays, such as Christmas, New Year's Eve, and New Year's that are nearly a week apart from one another,
+                        will count for the closure of this Site as the time period between these three holidays are close
+                        to one another. Long story short, <b>major holidays</b>, such as Easter and the other holidays mentioned above
+                        will cause this website to close, as there is usually a break period that lasts more than 1 day 
+                        for these four holidays. For example, if the break period for Christmas and New Year's is 1 week, then the Site
+                        will be closed for that time period.
                         <br></br>
                         <br></br>
-                        <h5>Holidays that qualify for a 1-2 week Site Closure:</h5>
-                        <li>Thanksgiving, Christmas, and New Year's</li>
                         <br></br>
-                        <h5>Holidays that qualify for a 1 day Site Closure:</h5>
-                        <li>Easter, Halloween, and any other Federal Holidays</li>
+                        <h5>Holidays that qualify for closure of this website:</h5>
+                        <li>Easter, Thanksgiving, Christmas, and New Year's</li>
                     </p>
                     <br></br>
                     <br></br>
