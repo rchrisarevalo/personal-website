@@ -43,7 +43,7 @@ const WebsiteOperation = () => {
                     </p>
                     <p>
                         <i>
-                            Keep in mind that this is NOT a legal document, but rather my own way of explaining what
+                            Keep in mind that this is <b>NOT</b> a legal document, but rather my own way of explaining what
                             times this website can and cannot operate so as to make it easy for other people
                             visiting this Site to understand it.
                         </i>
