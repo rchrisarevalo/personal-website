@@ -5,6 +5,8 @@ import NewFooter from "../NewFooter.jsx";
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button'
 
+import { IoTrashOutline, IoSaveOutline } from 'react-icons/io5';
+
 import nprogress from "nprogress";
 import "nprogress/nprogress.css";
 
@@ -109,7 +111,7 @@ const Settings = () => {
                         <br></br>
                         <br></br>
                         {d !== null &&
-                            <button onClick={handleNoticeShow}>Clear</button>
+                            <button onClick={handleNoticeShow}><IoTrashOutline id="settings-btns" />Clear</button>
                         }
                         {d === null &&
                             <button onClick={handleNoticeShow} id="settings-disabled" disabled>Clear</button>
@@ -136,7 +138,7 @@ const Settings = () => {
                         <i>Reload page for changes to take effect:</i>
                         <br></br>
                         <br></br>
-                        <button type="submit" onClick={handleSaveShow}>Save Changes</button>
+                        <button type="submit" onClick={handleSaveShow}><IoSaveOutline id="settings-btns" />Save</button>
                         <br></br>
                         <br></br>
                         
@@ -157,10 +159,10 @@ const Settings = () => {
                                 <div id="clear-storage-msg"></div>
                             </Modal.Body>
                             <Modal.Footer id="buttonSet-modal">
-                                <Button variant="secondary" onClick={handleSaveClose}>
+                                <Button variant="danger" onClick={handleSaveClose}>
                                     No, not yet.
                                 </Button>
-                                <Button variant="primary" onClick={save}>Yes, I am sure.</Button>
+                                <Button variant="success" onClick={save}>Yes, I am sure.</Button>
                             </Modal.Footer>
                         </Modal>
 
@@ -181,10 +183,10 @@ const Settings = () => {
                                 <div id="clear-storage-msg"></div>
                             </Modal.Body>
                             <Modal.Footer id="buttonSet-modal">
-                                <Button variant="secondary" onClick={handleNoticeClose}>
+                                <Button variant="danger" onClick={handleNoticeClose}>
                                     No, not yet.
                                 </Button>
-                                <Button variant="primary" onClick={clearLocalStorage}>Yes, clear it.</Button>
+                                <Button variant="success" onClick={clearLocalStorage}>Yes, clear it.</Button>
                             </Modal.Footer>
                         </Modal>
                     </div>
