@@ -1,13 +1,17 @@
-# Personal Website (v3.0.1)
+# Personal Website (v3.1.0)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on June 2, 2022):
+# UPDATES (made on June 23, 2022):
 
-* A bug fix was made to the countdown feature/section in the "About Me" page, as it was displaying unusual percentages (e.g. over 1000%) whenever I set today's date to a later date in the year of 2023.
+* I made some earlier changes, as well as new recent ones to the user interface of this site. As I had stated months earlier, I will be switching some components making up this website to those made by Bootstrap's React counterpart.
 
-* The progress countdown feature should work as intended.
+* I added the ability for the user to clear the contact form entirely whenever they make a mistake.
+
+* There are some users that might experience or might have experienced a zoom in whenever they are filling in the input box. That issue should be fixed.
+
+* I will add a character counter to the contact form sometime in the future. That way, it will be easier for users utilizing it to keep track of how many characters they have left before it is maxed out whilst typing their message on the form.
 
 # CREDITS:
 * Progress bar by nProgress (author: rstacruz)
