@@ -10,31 +10,29 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 06/17/2022, 8:52 PM.
+                    By: Ruben Christopher Arevalo. Posted on 06/23/2022, 11:41 PM.
                 </p>
                 <p id="post-content">
-                    Anyways, that was everything I wanted to show you all. I hope y'all have a wonderful rest of the weekend and as always,
-                    I will continue to maintaining and updating this website to keep it up-to-date!
+                    If there are any problems, please let me know by contacting me in the "Contact Me" page. Have a wonderful evening!
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 06/17/2022, 8:52 PM.
+                    By: Ruben Christopher Arevalo. Posted on 06/23/2022, 11:41 PM.
                 </p>
                 <p id="post-content">
-                    Originally, major holidays that lasted for any time period were included on the original version.
-                    The new changes that were made recently in the Site Operation policy page now state that major holidays whose break period lasts more than one day
-                    (e.g. the Christmas/New Year's break, as well as Easter and Thanksgiving break) will only be considered for website closure.
+                    Furthermore, the automatic resizing of the window in the mobile version of the website has been corrected.
+                    The font size has been adjusted to limit the resizing bug.
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 06/17/2022, 8:52 PM.
+                    By: Ruben Christopher Arevalo. Posted on 06/23/2022, 11:41 PM.
                 </p>
                 <p id="post-content">
-                    Hello everyone. There has been a major change for the Site Operation policy located
-                    in the footer below of every page in this site. In it, some details have been revised
-                    in the "Holidays" section of the policy.
+                    I have made some changes to the user interface of the page. The navigation bar has been changed, 
+                    as well as the color of the buttons in the popup messages that appear whenever one wants to
+                    change the settings for the website.
                 </p>
             </div>
         </div>
