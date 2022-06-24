@@ -20,6 +20,41 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 06/23/2022, 11:41 PM.
+                </p>
+                <p id="post-content">
+                    If there are any problems, please let me know by contacting me in the "Contact Me" page. Have a wonderful evening!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 06/23/2022, 11:41 PM.
+                </p>
+                <p id="post-content">
+                    Furthermore, the automatic resizing of the window in the mobile version of the website has been corrected.
+                    The font size has been adjusted to limit the resizing bug.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 06/23/2022, 11:41 PM.
+                </p>
+                <p id="post-content">
+                    I have made some changes to the user interface of the page. The navigation bar has been changed, 
+                    as well as the color of the buttons in the popup messages that appear whenever one wants to
+                    change the settings for the website.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 06/23/2022, 11:41 PM.
+                </p>
+                <p id="post-content">
+                    Hello everyone! I am here to share some of the following updates that I have made today.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 06/17/2022, 8:52 PM.
                 </p>
                 <p id="post-content">
