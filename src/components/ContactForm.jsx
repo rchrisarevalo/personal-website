@@ -7,8 +7,6 @@ import Col from 'react-bootstrap/Col';
 import nprogress from "nprogress";
 import "nprogress/nprogress.css";
 
-var textValues = document.getElementById("contact-message")
-
 const ContactForm = () => {
 
     useEffect(() => {
