@@ -63,7 +63,7 @@ function save() {
     closeButton.style.display = 'none';
     buttonSet.style.display = 'none';
     changesSaved.style.display = 'block';
-    changesSaved.innerHTML = 'All changes saved!'
+    changesSaved.innerHTML = 'All changes successfully saved!'
 
     setTimeout(() => {
         window.location.reload();
