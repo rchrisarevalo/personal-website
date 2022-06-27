@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,13 +10,18 @@ const theme = localStorage.getItem("d_l_mode");
 
 const Load = () => {
 
+    const [percentage, setPercentage] = useState(0)
+
     const nav = useNavigate();
 
-    useEffect(() => {
-        setTimeout(() => {
-            nav("/about")
-        }, 3000)
-    });
+    setTimeout(() => {
+        setPercentage(percentage + 1)
+    }, 30)
+
+    if (percentage === 100)
+    {
+        nav("/about")
+    }
 
     return (
         <div className="loading-screen">
@@ -26,6 +31,9 @@ const Load = () => {
                         <Spinner animation="grow" variant="dark" id="delay-1" />
                         <Spinner animation="grow" variant="dark" id="delay-2" />
                         <Spinner animation="grow" variant="dark" id="delay-3" />
+                        <br></br>
+                        <br></br>
+                        <div id="percentage-load">{`${percentage}`}%</div>
                     </div>
                 }
                 { (theme === "changed") && 
@@ -33,6 +41,9 @@ const Load = () => {
                         <Spinner animation="grow" variant="light" id="delay-1" />
                         <Spinner animation="grow" variant="light" id="delay-2" />
                         <Spinner animation="grow" variant="light" id="delay-3" />
+                        <br></br>
+                        <br></br>
+                        <div id="percentage-load">{`${percentage}`}%</div>
                     </div>
                 }
             </div>
