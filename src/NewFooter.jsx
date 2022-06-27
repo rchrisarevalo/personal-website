@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import { Link } from 'react-router-dom';
 
-function getCopyrightYear() {
-    const current_year = new Date().getFullYear();
-    return current_year;
-}
+const current_year = new Date().getFullYear();
 
 const NewFooter = () => {
+
+    const [year, setYear] = useState(0)
+
+    setTimeout(() => {
+        setYear(current_year)
+    }, 1000)
+
     return (
         <footer className="new-footer">
             <div className="new-footer-row">
@@ -33,7 +37,7 @@ const NewFooter = () => {
                     </Row>
                 </div>
                 <div className="copyright" id="new-copyright">
-                    <p>&copy; {getCopyrightYear()} Ruben Christopher Arevalo. This site and its contents will not be copied, modified, reproduced, or distributed through unauthorized means.</p>
+                    <p>&copy; {`${year}`} Ruben Christopher Arevalo. This site and its contents will not be copied, modified, reproduced, or distributed through unauthorized means.</p>
                 </div>
             </div>
         </footer>
