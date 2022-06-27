@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
 var num_days = 0;
@@ -35,13 +35,22 @@ if (num_days < 1) {
 }
 
 const ProgressCountdown = () => {
+
+    const [timeLeft, setTimeLeft] = useState(0)
+    const [progressPercentage, setProgressPercentage] = useState(0)
+
+    setTimeout(() => {
+        setTimeLeft(num_days)
+        setProgressPercentage(progress_countdown)
+    }, 1000)
+
     return (
         <div className="progress-countdown-container">
             <br></br>
             <p id="graduation-countdown" data-aos="flip-up" data-aos-delay="2000">
-                Time left before graduation: <b>{`${num_days}`}</b>
+                Time left before graduation: <b>{`${timeLeft}`}</b>
             </p>
-            <ProgressBar animated now={`${progress_countdown}`} id="progress-bar" data-aos="fade" data-aos-delay="2200" />
+            <ProgressBar animated now={`${progressPercentage}`} id="progress-bar" data-aos="fade" data-aos-delay="2200" />
             <p id="progress-count" data-aos="fade" data-aos-delay="2400">Progress until graduation day: {`${progress_countdown}`}%</p>
             <br></br>
         </div>
