@@ -141,6 +141,11 @@ hr{
   overflow: hidden;
 }
 
+#percentage-load{
+  text-align: center;
+  align-items: center;
+}
+
 #delay-1{
   animation-delay: 0s;
   margin-right: 10px;
