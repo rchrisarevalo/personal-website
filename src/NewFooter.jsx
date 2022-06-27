@@ -9,7 +9,7 @@ const current_year = new Date().getFullYear();
 
 const NewFooter = () => {
 
-    const [year, setYear] = useState(0)
+    const [year, setYear] = useState(current_year)
 
     setTimeout(() => {
         setYear(current_year)
