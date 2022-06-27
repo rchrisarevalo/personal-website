@@ -26,7 +26,7 @@ days_passed = days_year - num_days
 
 // Gives percentage of how many days have passed between today and May 13, 2023 (graduation day)
 progress_countdown = (days_passed / days_year) * 100
-progress_countdown = progress_countdown.toFixed(1)
+progress_countdown = progress_countdown.toFixed(2);
 
 if (num_days < 1) {
     num_days = [`Graduation day in ${num_hours} hours!`]
