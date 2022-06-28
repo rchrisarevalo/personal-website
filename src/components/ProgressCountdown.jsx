@@ -61,7 +61,6 @@ const ProgressCountdown = () => {
         setHours(hours)
         setMinutes(minutes)
         setSeconds(seconds + 1)
-        setPrevHours(prevHours)
 
         console.log("%d:%d:%d", hours, minutes, seconds)
 
@@ -71,11 +70,10 @@ const ProgressCountdown = () => {
             setHours(hours)
             setMinutes(minutes + 1)
             setSeconds(0)
-            setPrevHours(prevHours)
         
         // Once the number of minutes reaches 60, 1 will be added to the number of hours
         // while the number of seconds and minutes is set back to 0.
-        } else if (minutes === 59 && seconds === 59) {
+        } if (minutes === 59 && seconds === 59) {
             setHours(hours + 1)
             setMinutes(0)
             setSeconds(0)
@@ -83,11 +81,13 @@ const ProgressCountdown = () => {
 
         // Once midnight approaches, everything (the number of hours, minutes, and seconds) will
         // be set to 0.
-        } else if (hours === 23 && minutes === 59 && seconds === 59) {
+        } if (hours === 23 && minutes === 59 && seconds === 59) {
             setHours(0)
             setMinutes(0)
             setSeconds(0)
-        } else if (prevHours === 24) {
+
+        // Sets the "last updated" hour count back to 0.
+        } if (prevHours === 24) {
             setPrevHours(0)
         }
 
