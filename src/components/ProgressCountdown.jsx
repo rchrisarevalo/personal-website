@@ -7,9 +7,11 @@ var days_passed;
 var progress_countdown, prev_progress_countdown, rate;
 var days_title = ""
 
-var currentHour = new Date().getHours();
-var currentMinute = new Date().getMinutes();
-var currentSeconds = new Date().getSeconds()
+var currentHour = new Date().getHours()
+var currentMinute = new Date().getMinutes()
+
+// 3 was added to the number of seconds to try and stay in sync with the real-time clock
+var currentSeconds = new Date().getSeconds() + 3
 
 var grad_date = new Date(2023, 4, 13, 18)
 var today_date = Date.now()
@@ -61,6 +63,8 @@ const ProgressCountdown = () => {
         setHours(hours)
         setMinutes(minutes)
         setSeconds(seconds + 1)
+
+        // console.log("Seconds: ", seconds)
 
         console.log("%d:%d:%d", hours, minutes, seconds)
 
