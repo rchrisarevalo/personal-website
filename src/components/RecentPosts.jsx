@@ -10,29 +10,35 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 06/26/2022, 12:40 AM.
+                    By: Ruben Christopher Arevalo. Posted on 06/30/2022, 11:29 PM.
                 </p>
                 <p id="post-content">
-                    That is everything I have to share for today. Have a wonderful rest of the weekend
-                    and see you all later!
+                    Anyways, I hope you all had a wonderful June. I am going to be posting less often as I will be working most of the time
+                    until the end of July, in addition having to juggle both work and school. For my education, I am a few steps away from
+                    attaining my Bachelor's Degree in Computer Engineering. How cool is that? That will be all for this evening.
+                    Please stay safe, y'all!
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 06/26/2022, 12:40 AM.
+                    By: Ruben Christopher Arevalo. Posted on 06/30/2022, 11:29 PM.
                 </p>
                 <p id="post-content">
-                    Good morning, everyone! I am writing this to let y'all know that on the contact form,
-                    anyone can resize the text box to any size they desire. I decided to include it back
-                    again as some users might have difficulty reading the contents of their message.
+                    In other news, this will be the last post of the month. Like I said in my previous post, I am currently working on
+                    making sure that some aspects of my website automatically update themselves instead of having to be manually
+                    configured everytime should the circumstances change.
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 06/23/2022, 11:41 PM.
+                    By: Ruben Christopher Arevalo. Posted on 06/30/2022, 11:29 PM.
                 </p>
                 <p id="post-content">
-                    If there are any problems, please let me know by contacting me in the "Contact Me" page. Have a wonderful evening!
+                    Good evening, everyone! I am currently working on making sure that some components of this website (such as the progress bar and my age)
+                    are automatically updated. I decided to work on updating the state of the website automatically as it allows me to save time on manually
+                    configuring everything like I would normally do. I have already released a new feature a few days ago whereas the progress bar will
+                    automatically update itself every time at 6 AM. Furthermore, the number of hours it has been since it was last updated will also update
+                    automatically, and is included below the progress bar and the progress percentage.
                 </p>
             </div>
         </div>
