@@ -122,7 +122,7 @@ const Intro = () => {
 
     setTimeout(() => {
         // I will be a fourth-year student from August 29, 2022 at 8 AM to May 13, 2023 at 8 PM.
-        if (Date.now() >= new Date(2022, 5, 29) && Date.now() <= new Date(2023, 4, 13, 20)) {
+        if (Date.now() >= new Date(2022, 7, 29) && Date.now() <= new Date(2023, 4, 13, 20)) {
             setStudentYear("fourth-year")
         } else {
             setStudentYear("third-year")
