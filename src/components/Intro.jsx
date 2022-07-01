@@ -15,12 +15,24 @@ import "nprogress/nprogress.css";
 var current_date = Date.now();
 var graduation_date = new Date(2023, 4, 13, 18);
 
-var birth_date = new Date(2001, 7, 10, 8, 5);
-var birthday = new Date(new Date().getFullYear(), 7, 10, 8, 5)
+var birth_date = new Date(2001, 7, 10);
+var birthday = new Date(new Date().getFullYear(), 7, 10)
 var age_ms = birthday - birth_date;
 var age = age_ms * (0.001 / 1) * (1 / 60) * (1 / 60) * (1 / 24) * (1 / 365)
 age = age.toFixed(0)
-var prevAge = age - 1;
+
+// If birthday date is greater than today's date,
+// then the calculated age will be subtracted
+// by 1.
+if (birthday > current_date)
+{
+    age = age - 1;
+    console.log(age)
+
+// Otherwise, the calculated age will be included
+} else {
+    console.log(age)
+}
 var student_year = "third-year"
 
 function time_greeting() {
@@ -42,8 +54,9 @@ const Intro = () => {
     const [month, setMonth] = useState(new Date().getMonth())
     const [date, setDate] = useState(new Date().getDate())
     const [minutes, setMinutes] = useState(new Date().getMinutes())
-    const [seconds, setSeconds] = useState(new Date().getSeconds() + 2)
+    const [seconds, setSeconds] = useState(new Date().getSeconds() + 1)
     const [hours, setHours] = useState(new Date().getHours())
+    const [dayGreeting, setDayGreeting] = useState(time_greeting())
     
     // This will be a temporary state variable as long as I am a student
     const [studentYear, setStudentYear] = useState(student_year)
@@ -108,15 +121,14 @@ const Intro = () => {
         }
 
         // The owner's age (me) will automatically update on their birthday.
-        if (year === new Date().getFullYear() && month === 7 && date === 10 && hours === 8 && minutes === 5 && seconds === 0)
+        if (birthday > current_date)
         {
-            setCurrentAge(currentAge + 1)
+            setCurrentAge(currentAge)
 
         // Otherwise, the current age will remain the same.
         } else {
-            setCurrentAge(currentAge - 1)
-            if (currentAge === prevAge)
-                setCurrentAge(currentAge)
+            if (date === 10 && month === 7 && hours === 0 && minutes === 0 && seconds === 0)
+                setCurrentAge(currentAge + 1)
         }
     }, 1000)
 
@@ -127,9 +139,22 @@ const Intro = () => {
         } else {
             setStudentYear("third-year")
         }
-    }, 1000)
 
-    console.log(new Date(year, month, date, hours, minutes, seconds))
+        // Time greetings will automatically change throughout the day.
+
+        // 12:00 AM - 11:59 AM
+        if (hours >= 0 && hours <= 11) {
+            setDayGreeting("Good morning, ")
+        
+        // 12:00 PM - 5:59 PM
+        } else if (hours >= 12 && hours <= 17) {
+            setDayGreeting("Good afternoon, ")
+
+        // 6:00 PM - 11:59 PM
+        } else if (hours >= 18 && hours <= 23) {
+            setDayGreeting("Good evening, ")
+        }
+    }, 1000)
 
     useEffect(() => {
         nprogress.configure({ minimum: 0.1, showSpinner: false, easing: 'ease', speed: 800, trickleSpeed: 200 });
@@ -152,7 +177,7 @@ const Intro = () => {
                 <img src={profilepic} alt="profile-pic"></img>
                 <h1 data-aos="fade-down">About the Author</h1>
                 <p data-aos="fade-down" data-aos-delay="500">
-                    {time_greeting()} everyone! My name is Ruben Christopher Arevalo, and I am a {`${currentAge}`} year old {`${studentYear}`} student attending the University of Texas-Rio Grande Valley.
+                    {`${dayGreeting}`} everyone! My name is Ruben Christopher Arevalo, and I am a {`${currentAge}`} year old {`${studentYear}`} student attending the University of Texas-Rio Grande Valley.
                     I am currently pursuing my bachelor's degree in computer engineering with my concentration focusing on software.
                     Fun facts I want to share about myself are that I love to code, listen to music (preferrably lofi, classical, and pop),
                     play video games, and watch movies and shows in my free time.
