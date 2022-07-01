@@ -64,10 +64,6 @@ const ProgressCountdown = () => {
         setMinutes(minutes)
         setSeconds(seconds + 1)
 
-        // console.log("Seconds: ", seconds)
-
-        console.log("%d:%d:%d", hours, minutes, seconds)
-
         // Once the number of seconds reaches 59, the number of minutes will be set
         // back to 0.
         if (seconds === 59) {
