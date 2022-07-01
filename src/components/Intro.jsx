@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from 'react-helmet';
 import profilepic from '../images/June 2022 Profile Pic (Min).jpg';
 
@@ -15,6 +15,14 @@ import "nprogress/nprogress.css";
 var current_date = Date.now();
 var graduation_date = new Date(2023, 4, 13, 18);
 
+var birth_date = new Date(2001, 5, 30, 8, 5);
+var birthday = new Date(new Date().getFullYear(), 5, 30, 23, 2, 59)
+var age_ms = birthday - birth_date;
+var age = age_ms * (0.001 / 1) * (1 / 60) * (1 / 60) * (1 / 24) * (1 / 365)
+age = age.toFixed(0)
+var prevAge = age - 1;
+var student_year = "third-year"
+
 function time_greeting() {
     var hour = new Date().getHours();
 
@@ -28,6 +36,97 @@ function time_greeting() {
 }
 
 const Intro = () => {
+
+    const [currentAge, setCurrentAge] = useState(age)
+    const [year, setYear] = useState(new Date().getFullYear())
+    const [month, setMonth] = useState(new Date().getMonth())
+    const [date, setDate] = useState(new Date().getDate())
+    const [minutes, setMinutes] = useState(new Date().getMinutes())
+    const [seconds, setSeconds] = useState(new Date().getSeconds() + 2)
+    const [hours, setHours] = useState(new Date().getHours())
+    
+    // This will be a temporary state variable as long as I am a student
+    const [studentYear, setStudentYear] = useState(student_year)
+
+    setTimeout(() => {
+        setCurrentAge(currentAge)
+        setYear(year)
+        setMonth(month)
+        setDate(date)
+        setMinutes(minutes)
+        setSeconds(seconds + 1)
+        setHours(hours)
+        setStudentYear(studentYear)
+
+        // Once the number of seconds reaches 59, the number of minutes will be set
+        // back to 0.
+        if (seconds === 59) {
+            setHours(hours)
+            setMinutes(minutes + 1)
+            setSeconds(0)
+        
+        // Once the number of minutes reaches 60, 1 will be added to the number of hours
+        // while the number of seconds and minutes is set back to 0.
+        } if (minutes === 59 && seconds === 59) {
+            setHours(hours + 1)
+            setMinutes(0)
+            setSeconds(0)
+
+        // Once midnight approaches, everything (the number of hours, minutes, date, and seconds) will
+        // be set to 0.
+        } if (hours === 23 && minutes === 59 && seconds === 59) {
+            setHours(0)
+            setMinutes(0)
+            setSeconds(0)
+            setDate(date + 1)
+        
+        // Adjusts the date and time after a month has passed. It will also adjust for months that have 28, 29, or 30 days.
+        }  if (((month === 3 || month === 5 || month === 8 || month === 10) && date === 30 && hours === 23 && minutes === 59 && seconds === 59) || (date === 31 && hours === 23 && minutes === 59 && seconds === 59) || (month === 1 && date === 28 && hours === 23 && minutes === 59 && seconds === 59)) {
+            setMonth(month + 1)
+            setHours(0)
+            setMinutes(0)
+            setSeconds(0)
+            setDate(1)
+        
+        // Does the same function as the if statement above, but this only applies to February in a leap year)
+        } if (month === 1 && date === 29 && hours === 23 && minutes === 59 && seconds === 59) {
+            setMonth(month + 1)
+            setHours(0)
+            setMinutes(0)
+            setSeconds(0)
+            setDate(1)
+
+        // Once midnight on the final day of the year approaches, everything will be set to 0, and
+        // the year will be set to the next year (e.g. 2022 to 2023).
+        } if (date === 31 && month === 11 && hours === 23 && minutes === 59 && seconds === 59) {
+            setDate(1)
+            setMonth(0)
+            setYear(year + 1)
+            setMinutes(0)
+            setSeconds(0)
+            setHours(0)
+
+        // I will be a fourth-year student from August 29, 2022 at 8 AM to May 13, 2023 at 8 PM.
+        } if (Date.now() >= new Date(2022, 7, 29, 8) && Date.now() <= new Date(2023, 4, 13, 20)) {
+            setStudentYear("fourth-year")
+        } else {
+            setStudentYear(studentYear)
+        }
+
+        // The owner's age (me) will automatically update on their birthday.
+        if (year === new Date().getFullYear() && month === 7 && date === 10 && hours === 8 && minutes === 5 && seconds === 0)
+        {
+            setCurrentAge(currentAge + 1)
+
+        // Otherwise, the current age will remain the same.
+        } else {
+            setCurrentAge(currentAge - 1)
+            if (currentAge === prevAge)
+                setCurrentAge(currentAge)
+        }
+    }, 1000)
+
+    console.log(new Date(year, month, date, hours, minutes, seconds))
 
     useEffect(() => {
         nprogress.configure({ minimum: 0.1, showSpinner: false, easing: 'ease', speed: 800, trickleSpeed: 200 });
@@ -50,7 +149,7 @@ const Intro = () => {
                 <img src={profilepic} alt="profile-pic"></img>
                 <h1 data-aos="fade-down">About the Author</h1>
                 <p data-aos="fade-down" data-aos-delay="500">
-                    {time_greeting()} everyone! My name is Ruben Christopher Arevalo, and I am a 20 year old third-year student <b>(soon to be a fourth-year)</b> attending the University of Texas-Rio Grande Valley.
+                    {time_greeting()} everyone! My name is Ruben Christopher Arevalo, and I am a {`${currentAge}`} year old {`${studentYear}`} student attending the University of Texas-Rio Grande Valley.
                     I am currently pursuing my bachelor's degree in computer engineering with my concentration focusing on software.
                     Fun facts I want to share about myself are that I love to code, listen to music (preferrably lofi, classical, and pop),
                     play video games, and watch movies and shows in my free time.
