@@ -63,6 +63,7 @@ const ProgressCountdown = () => {
         setHours(hours)
         setMinutes(minutes)
         setSeconds(seconds + 1)
+        setPrevHours(prevHours)
 
         // Once the number of seconds reaches 59, the number of minutes will be set
         // back to 0.
@@ -85,6 +86,7 @@ const ProgressCountdown = () => {
             setHours(0)
             setMinutes(0)
             setSeconds(0)
+            setPrevHours(prevHours + 1)
 
         // Sets the "last updated" hour count back to 0.
         } if (prevHours === 24) {
