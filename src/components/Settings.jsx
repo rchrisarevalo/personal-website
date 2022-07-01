@@ -114,7 +114,7 @@ const Settings = () => {
                             <button onClick={handleNoticeShow}><IoTrashOutline id="settings-btns" />Clear</button>
                         }
                         {d === null &&
-                            <button onClick={handleNoticeShow} id="settings-disabled" disabled>Clear</button>
+                            <button onClick={handleNoticeShow} id="settings-disabled" disabled><IoTrashOutline id="settings-btns" />Clear</button>
                         }
                         <br></br>
                         <br></br>
