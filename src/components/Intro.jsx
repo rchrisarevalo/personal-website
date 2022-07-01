@@ -15,8 +15,8 @@ import "nprogress/nprogress.css";
 var current_date = Date.now();
 var graduation_date = new Date(2023, 4, 13, 18);
 
-var birth_date = new Date(2001, 5, 30, 8, 5);
-var birthday = new Date(new Date().getFullYear(), 5, 30, 23, 2, 59)
+var birth_date = new Date(2001, 7, 10, 8, 5);
+var birthday = new Date(new Date().getFullYear(), 7, 10, 8, 5)
 var age_ms = birthday - birth_date;
 var age = age_ms * (0.001 / 1) * (1 / 60) * (1 / 60) * (1 / 24) * (1 / 365)
 age = age.toFixed(0)
@@ -105,12 +105,6 @@ const Intro = () => {
             setMinutes(0)
             setSeconds(0)
             setHours(0)
-
-        // I will be a fourth-year student from August 29, 2022 at 8 AM to May 13, 2023 at 8 PM.
-        } if (Date.now() >= new Date(2022, 7, 29, 8) && Date.now() <= new Date(2023, 4, 13, 20)) {
-            setStudentYear("fourth-year")
-        } else {
-            setStudentYear(studentYear)
         }
 
         // The owner's age (me) will automatically update on their birthday.
@@ -123,6 +117,15 @@ const Intro = () => {
             setCurrentAge(currentAge - 1)
             if (currentAge === prevAge)
                 setCurrentAge(currentAge)
+        }
+    }, 1000)
+
+    setTimeout(() => {
+        // I will be a fourth-year student from August 29, 2022 at 8 AM to May 13, 2023 at 8 PM.
+        if (Date.now() >= new Date(2022, 5, 29) && Date.now() <= new Date(2023, 4, 13, 20)) {
+            setStudentYear("fourth-year")
+        } else {
+            setStudentYear("third-year")
         }
     }, 1000)
 
