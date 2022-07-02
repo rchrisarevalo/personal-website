@@ -86,7 +86,7 @@ const ProgressCountdown = () => {
             setHours(0)
             setMinutes(0)
             setSeconds(0)
-            setPrevHours(prevHours + 1)
+            setPrevHours(prevHours + 21)
 
         // Sets the "last updated" hour count back to 0.
         } if (prevHours === 24) {
