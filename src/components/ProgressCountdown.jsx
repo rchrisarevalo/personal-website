@@ -91,6 +91,8 @@ const ProgressCountdown = () => {
         // Sets the "last updated" hour count back to 0.
         } if (prevHours === 24) {
             setPrevHours(0)
+        } if (hours === 0 && minutes === 0 && seconds === 0) {
+            setPrevHours(prevHours + 24)
         }
 
         // If number of days are greater than 1, then print "days".
