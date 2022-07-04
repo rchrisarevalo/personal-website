@@ -10,35 +10,34 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 06/30/2022, 11:29 PM.
+                    By: Ruben Christopher Arevalo. Posted on 07/03/2022, 8:34 PM.
                 </p>
                 <p id="post-content">
-                    Anyways, I hope you all had a wonderful June. I am going to be posting less often as I will be working most of the time
-                    until the end of July, in addition having to juggle both work and school. For my education, I am a few steps away from
-                    attaining my Bachelor's Degree in Computer Engineering. How cool is that? That will be all for this evening.
-                    Please stay safe, y'all!
+                    If you have any questions about anything pertaining to the site, please
+                    feel free to fill the contact form by clicking the "Contact Me"
+                    link in the navigation bar on the top, or by clicking the three
+                    dashed lines in the mobile version of this site.
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 06/30/2022, 11:29 PM.
+                    By: Ruben Christopher Arevalo. Posted on 07/03/2022, 8:34 PM.
                 </p>
                 <p id="post-content">
-                    In other news, this will be the last post of the month. Like I said in my previous post, I am currently working on
-                    making sure that some aspects of my website automatically update themselves instead of having to be manually
-                    configured everytime should the circumstances change.
+                    Furthermore, I will be adding some new features sometime soon in a few months
+                    or so. That will be all the announcements for this evening.
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 06/30/2022, 11:29 PM.
+                    By: Ruben Christopher Arevalo. Posted on 07/03/2022, 8:34 PM.
                 </p>
                 <p id="post-content">
-                    Good evening, everyone! I am currently working on making sure that some components of this website (such as the progress bar and my age)
-                    are automatically updated. I decided to work on updating the state of the website automatically as it allows me to save time on manually
-                    configuring everything like I would normally do. I have already released a new feature a few days ago whereas the progress bar will
-                    automatically update itself every time at 6 AM. Furthermore, the number of hours it has been since it was last updated will also update
-                    automatically, and is included below the progress bar and the progress percentage.
+                    Good evening. This will be the first announcement for this month. As I have
+                    stated in the previous three announcements, I will be updating this website
+                    so that certain components will be updated automatically instead of being
+                    manually configured (i.e progress bar, number of days left until graduation,
+                    etc.).
                 </p>
             </div>
         </div>
