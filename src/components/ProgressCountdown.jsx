@@ -6,6 +6,7 @@ var num_hours = 0;
 var days_passed;
 var progress_countdown, prev_progress_countdown, rate;
 var days_title = ""
+var time_string = ""
 
 var currentHour = new Date().getHours()
 var currentMinute = new Date().getMinutes()
@@ -15,10 +16,15 @@ var currentSeconds = new Date().getSeconds() + 3
 
 var grad_date = new Date(2023, 4, 13, 18)
 var today_date = Date.now()
+var yesterday_date = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate() - 1, 6)
+var today_date_now = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate(), new Date().getHours())
 
 var ms = grad_date - today_date
+var tomorrow_ms = today_date_now - yesterday_date
 
 var days_year = 365
+
+var hours_passed = 0
 
 // The total number of days from today until my expected graduation date
 num_days = ms * (0.001 / 1) * (1 / 60) * (1 / 60) * (1 / 24)
@@ -27,6 +33,10 @@ num_days = num_days.toFixed(0)
 // The total number of hours from today until my expected graduation date
 num_hours = ms * (0.001 / 1) * (1 / 60) * (1 / 60)
 num_hours = num_hours.toFixed(0)
+
+// The total number of hours that have passed since 6 AM yesterday.
+hours_passed = tomorrow_ms * (0.001 / 1) * (1 / 60) * (1 / 60)
+hours_passed = hours_passed.toFixed(0)
 
 // Calculates the total number of days that have passed since the beginning of the set date
 days_passed = days_year - num_days
@@ -54,8 +64,9 @@ const ProgressCountdown = () => {
     const [minutes, setMinutes] = useState(currentMinute)
     const [seconds, setSeconds] = useState(currentSeconds)
     const [hours, setHours] = useState(currentHour)
-    const [prevHours, setPrevHours] = useState(hours - 6)
+    const [prevTime, setPrevTime] = useState(hours_passed)
     const [daysString, setDaysString] = useState(days_title)
+    const [timeString, setTimeString] = useState(time_string)
 
     /* The state will automatically update the time, which will provide for other states to be
        updated automatically. */
@@ -63,7 +74,8 @@ const ProgressCountdown = () => {
         setHours(hours)
         setMinutes(minutes)
         setSeconds(seconds + 1)
-        setPrevHours(prevHours)
+        setPrevTime(prevTime)
+        setTimeString(timeString)
 
         // Once the number of seconds reaches 59, the number of minutes will be set
         // back to 0.
@@ -78,7 +90,7 @@ const ProgressCountdown = () => {
             setHours(hours + 1)
             setMinutes(0)
             setSeconds(0)
-            setPrevHours(prevHours + 1)
+            setPrevTime(parseInt(prevTime) + 1)
 
         // Once midnight approaches, everything (the number of hours, minutes, and seconds) will
         // be set to 0.
@@ -86,13 +98,16 @@ const ProgressCountdown = () => {
             setHours(0)
             setMinutes(0)
             setSeconds(0)
-            setPrevHours(prevHours + 24)
+            setPrevTime(parseInt(prevTime) + 1)
+        }
 
-        // Sets the "last updated" hour count back to 0.
-        } if (prevHours === 24) {
-            setPrevHours(0)
-        } if (hours === 0 && minutes === 0 && seconds === 0) {
-            setPrevHours(prevHours + 24)
+        if (prevTime === 0)
+        {
+            setPrevTime(minutes)
+            setTimeString("minutes")
+        } else if (prevTime > 1) {
+            setPrevTime(prevTime)
+            setTimeString("hours")
         }
 
         // If number of days are greater than 1, then print "days".
@@ -130,7 +145,7 @@ const ProgressCountdown = () => {
             <ProgressBar animated now={`${progressPercentage.toFixed(2)}`} id="progress-bar" data-aos="fade" data-aos-delay="2200" />
             <p id="progress-count" data-aos="fade" data-aos-delay="2400">Progress until graduation day: {`${progressPercentage.toFixed(2)}`}%</p>
             <p id="progress-count" data-aos="fade" data-aos-delay="2400">This section will automatically update each day at 6 AM in the morning.</p>
-            <p id="progress-count" data-aos="fade" data-aos-delay="2400"><i>Last updated: {`${prevHours}`} hours ago</i></p>
+            <p id="progress-count" data-aos="fade" data-aos-delay="2400"><i>Last updated: {`${prevTime} ${timeString}`} ago</i></p>
             <br></br>
         </div>
     )
