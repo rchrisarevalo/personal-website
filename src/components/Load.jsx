@@ -16,7 +16,7 @@ const Load = () => {
 
     setTimeout(() => {
         setPercentage(percentage + 1)
-    }, 30)
+    }, 25)
 
     if (percentage === 100)
     {
