@@ -27,7 +27,6 @@ age = age.toFixed(0)
 if (birthday > current_date)
 {
     age = age - 1;
-    console.log(age)
 
 // Otherwise, the calculated age will be included
 } else {
