@@ -1,17 +1,15 @@
-# Personal Website (v3.1.0)
+# Personal Website (v3.1.1)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on June 23, 2022):
+# UPDATES (made on July 10, 2022):
 
-* I made some earlier changes, as well as new recent ones to the user interface of this site. As I had stated months earlier, I will be switching some components making up this website to those made by Bootstrap's React counterpart.
-
-* I added the ability for the user to clear the contact form entirely whenever they make a mistake.
-
-* There are some users that might experience or might have experienced a zoom in whenever they are filling in the input box. That issue should be fixed.
-
-* I will add a character counter to the contact form sometime in the future. That way, it will be easier for users utilizing it to keep track of how many characters they have left before it is maxed out whilst typing their message on the form.
+* Some bug fixes were made to this website:
+  * The number of hours in which the status of the progress countdown feature has last been updated has been fixed.
+  * The fix was done after I had noticed that from 12 AM-6 AM, the number of hours will be displayed as "-6 minutes ago", etc.
+  * The reason for this was because I am subtracting the current hour by 6 as the section updates at 6 AM each day, which led to an unintentional mathematical error on my part as I forgot to configure the state properly to accommodate the time changes and display the correct amount of hours that have passed since it updated.
+  * I had since made these fixes and everything should be working well, though I cannot make any promises.
 
 # CREDITS:
 * Progress bar by nProgress (author: rstacruz)
