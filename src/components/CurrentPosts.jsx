@@ -20,6 +20,29 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 07/10/2022, 1:23 AM.
+                </p>
+                <p id="post-content">
+                    I am still working on making sure that some aspects of this website, as I have stated
+                    in previous announcements, are automatically updated (for instance, the progress
+                    countdown feature). That will be all for this evening. Thank you everyone, and have a
+                    wonderful rest of the weekend!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 07/10/2022, 1:23 AM.
+                </p>
+                <p id="post-content">
+                    Good evening, everyone! For the past week, I have been making bug fixes on the
+                    progress countdown feature in the "About Me" page (the first page the user is
+                    directed to when entering the website the first time). Everything should be fixed,
+                    but I cannot make any promises when I say that as other bugs can arise in the
+                    future.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 07/03/2022, 8:34 PM.
                 </p>
                 <p id="post-content">

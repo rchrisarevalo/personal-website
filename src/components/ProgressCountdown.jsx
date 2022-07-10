@@ -74,7 +74,7 @@ const ProgressCountdown = () => {
         setPrevHours(prevHours)
         setTimeString(timeString)
 
-        // console.log(new Date(year, month, date, hours, minutes, seconds))
+        console.log(new Date(year, month, date, hours, minutes, seconds))
 
         // Once the number of seconds reaches 59, the number of minutes will be set
         // back to 0.
@@ -110,8 +110,12 @@ const ProgressCountdown = () => {
         if (hours >= 0 && hours <= 6) {
             setPrevHours(prevHours + 24)
 
-            if (prevHours === 19) {
+            if (prevHours >= 19 && prevHours <= 23) {
                 setPrevHours(prevHours)
+            }
+
+            if (minutes === 59 && seconds === 59) {
+                setPrevHours(prevHours + 1)
             }
         }
 
