@@ -66,6 +66,7 @@ hr{
   margin-right: 40%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
+  font-size: 20px;
 }
 
 #closed-msg{
@@ -98,7 +99,7 @@ hr{
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   letter-spacing: none;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
 }
 
@@ -399,6 +400,16 @@ hr{
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
+}
+
+.time-countdown{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.time-countdown p{
+  text-align: center;
 }
 
 #works-title{
