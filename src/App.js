@@ -25,7 +25,6 @@ import Archives from "./components/Archives.jsx";
 import Settings from "./components/Settings.jsx";
 import WebsiteOperation from "./components/policies/WebsiteOperation.jsx";
 import ArchivePolicy from "./components/policies/ArchivePolicy.jsx";
-import ClosedWeb from './components/ClosedWeb.jsx';
 import Error404 from "./components/Error404.jsx";
 
 function App() {
@@ -66,7 +65,6 @@ function App() {
         <Route path="/settings" element={<Settings />} />
         <Route path="/policies/site-operation" element={<WebsiteOperation />} />
         <Route path="/policies/archive" element={<ArchivePolicy />} />
-        {/* <Route path="/closed" element={<ClosedWeb />} /> */}
         <Route path='*' element={<Error404 />} />
       </Routes>
 
