@@ -10,9 +10,12 @@ var time_string = ""
 
 var currentHour = new Date().getHours()
 var currentMinute = new Date().getMinutes()
+var currentMonth = new Date().getMonth()
+var currentYear = new Date().getFullYear()
+var currentDay = new Date().getDate()
 
-// 3 was added to the number of seconds to try and stay in sync with the real-time clock
-var currentSeconds = new Date().getSeconds() + 3
+// 2 was added to the number of seconds to try and stay in sync with the real-time clock
+var currentSeconds = new Date().getSeconds() + 2
 
 var grad_date = new Date(2023, 4, 13, 18)
 var today_date = Date.now()
@@ -51,11 +54,13 @@ const ProgressCountdown = () => {
 
     const [timeLeft, setTimeLeft] = useState(num_days)
     const [progressPercentage, setProgressPercentage] = useState(progress_countdown)
-    const [progressCount, setProgressCount] = useState(parseFloat(0))
     const [minutes, setMinutes] = useState(currentMinute)
     const [seconds, setSeconds] = useState(currentSeconds)
     const [hours, setHours] = useState(currentHour)
-    const [prevHours, setPrevHours] = useState(0)
+    const [date, setDate] = useState(currentDay)
+    const [month, setMonth] = useState(currentMonth)
+    const [year, setYear] = useState(currentYear)
+    const [prevHours, setPrevHours] = useState(hours - 6)
     const [daysString, setDaysString] = useState(days_title)
     const [timeString, setTimeString] = useState(time_string)
 
@@ -65,10 +70,11 @@ const ProgressCountdown = () => {
         setHours(hours)
         setMinutes(minutes)
         setSeconds(seconds + 1)
+        setDate(date)
         setPrevHours(prevHours)
         setTimeString(timeString)
 
-        console.log("%d:%d:%d", hours, minutes, seconds)
+        // console.log(new Date(year, month, date, hours, minutes, seconds))
 
         // Once the number of seconds reaches 59, the number of minutes will be set
         // back to 0.
@@ -76,6 +82,9 @@ const ProgressCountdown = () => {
             setHours(hours)
             setMinutes(minutes + 1)
             setSeconds(0)
+            setPrevHours(prevHours)
+            setMonth(month)
+            setYear(year)
 
             // Once the number of minutes reaches 60, 1 will be added to the number of hours
             // while the number of seconds and minutes is set back to 0.
@@ -84,6 +93,8 @@ const ProgressCountdown = () => {
             setMinutes(0)
             setSeconds(0)
             setPrevHours(parseInt(prevHours) + 1)
+            setMonth(month)
+            setYear(year)
 
             // Once midnight approaches, everything (the number of hours, minutes, and seconds) will
             // be set to 0.
@@ -91,6 +102,17 @@ const ProgressCountdown = () => {
             setHours(0)
             setMinutes(0)
             setSeconds(0)
+            setDate(date + 1)
+            setMonth(month)
+            setYear(year)
+        } 
+
+        if (hours >= 0 && hours <= 6) {
+            setPrevHours(prevHours + 24)
+
+            if (prevHours === 19) {
+                setPrevHours(prevHours)
+            }
         }
 
         // If number of days are greater than 1, then print "days".
@@ -103,19 +125,11 @@ const ProgressCountdown = () => {
         }
 
         // If number of previous hours is greater than 1, then print "hours" instead of minutes
-        if (prevHours >= 1) {
+        if (prevHours >= 1) 
             setTimeString("hours")
-            setPrevHours(hours - 6)
-
-        } else if (prevHours < 1) {
-            setPrevHours(minutes)
-
-            if (prevHours === 1) {
-                setTimeString("minute")
-            } else {
-                setTimeString("minutes")
-            }
-        }
+        else
+            setTimeString("minutes")
+        
     }, 1000)
 
     setTimeout(() => {
@@ -125,7 +139,6 @@ const ProgressCountdown = () => {
         // This section will automatically update the number of days as well as the progress percentage
         // shown in the front page.
         if (hours === 6 && minutes === 0 && seconds === 0) {
-            setProgressCount(progressCount + 1)
             setTimeLeft(parseInt(timeLeft) - parseInt(1))
             setProgressPercentage(parseFloat(progressPercentage) + parseFloat(rate))
         }
@@ -139,10 +152,9 @@ const ProgressCountdown = () => {
                 Time left before graduation: <b>{`${timeLeft} ${daysString}`}</b>
             </p>
             <ProgressBar animated now={`${progressPercentage.toFixed(2)}`} id="progress-bar" data-aos="fade" data-aos-delay="2200" />
-            <p id="progress-count" data-aos="fade" data-aos-delay="2400">Progress until graduation day: {`${progressPercentage.toFixed(2)}`}%</p>
-            <p id="progress-count" data-aos="fade" data-aos-delay="2400">This section will automatically update each day at 6 AM in the morning.</p>
-            <p id="progress-count" data-aos="fade" data-aos-delay="2400"><i>Last updated: {`${prevHours} ${timeString}`} ago</i></p>
-            <br></br>
+            <p id="progress-count" data-aos="fade" data-aos-delay="2000">Progress until graduation day: {`${progressPercentage.toFixed(2)}`}%</p>
+            <p id="progress-count" data-aos="fade" data-aos-delay="2000">This section will automatically update each day at 6 AM in the morning.</p>
+            <p id="progress-count" data-aos="fade" data-aos-delay="2000"><i>Last updated: {`${prevHours} ${timeString}`} ago</i></p>
         </div>
     )
 }
