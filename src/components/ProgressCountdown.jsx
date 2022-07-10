@@ -107,15 +107,34 @@ const ProgressCountdown = () => {
             setYear(year)
         } 
 
-        if (hours >= 0 && hours <= 6) {
+        // From 12 AM to 6 AM, this section will add 24 hours back to accommodate the time change into the
+        // new day. Originally, after 12 AM, the number of hours after the progress countdown has been
+        // last updated would be displayed as "-6 hours/minutes ago", etc.
+
+        // This statement will add 24 to the negative value (e.g. -6 hours + 24 hours = 18 hours ago),
+        // which is the real amount of time that has passed since 6 AM in the morning.
+        if (hours >= 0 && hours < 6) {
             setPrevHours(prevHours + 24)
 
+            // If the number of previous hours is between 18-23, then that amount will
+            // remain the same.
             if (prevHours >= 19 && prevHours <= 23) {
                 setPrevHours(prevHours)
             }
 
+            // This was added as the original statement doesn't want to add to the
+            // number of previous hours due to the logical syntax of the if statements above and here. 
+            // This is the same statement from above. However, it had to be added to properly update 
+            // the number of previous hours.
             if (minutes === 59 && seconds === 59) {
                 setPrevHours(prevHours + 1)
+            }
+        }
+
+        if (hours === 6) {
+            setPrevHours(minutes)
+            if (seconds === 59) {
+                setPrevHours(minutes + 1)
             }
         }
 
@@ -129,10 +148,12 @@ const ProgressCountdown = () => {
         }
 
         // If number of previous hours is greater than 1, then print "hours" instead of minutes
-        if (prevHours >= 1) 
+        if (prevHours >= 1) {
             setTimeString("hours")
-        else
+        }
+        else {
             setTimeString("minutes")
+        }
         
     }, 1000)
 
