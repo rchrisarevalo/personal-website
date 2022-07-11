@@ -10,6 +10,17 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
+                    By: Ruben Christopher Arevalo. Posted on 07/10/2022, 9:31 PM.
+                </p>
+                <p id="post-content">
+                    Just another announcement to let y'all know that I made another round of bug fixes
+                    to the progress countdown feature. Furthermore, I also added a countdown for the
+                    amount of time left before 6 AM when it automatically updates. That's all! Have a
+                    wonderful day!
+                </p>
+            </div>
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+                <p id="post-info-recent">
                     By: Ruben Christopher Arevalo. Posted on 07/10/2022, 1:23 AM.
                 </p>
                 <p id="post-content">
@@ -29,17 +40,6 @@ const RecentPosts = () => {
                     directed to when entering the website the first time). Everything should be fixed,
                     but I cannot make any promises when I say that as other bugs can arise in the
                     future.
-                </p>
-            </div>
-            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
-                <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 07/03/2022, 8:34 PM.
-                </p>
-                <p id="post-content">
-                    If you have any questions about anything pertaining to the site, please
-                    feel free to fill the contact form by clicking the "Contact Me"
-                    link in the navigation bar on the top, or by clicking the three
-                    dashed lines in the mobile version of this site.
                 </p>
             </div>
         </div>
