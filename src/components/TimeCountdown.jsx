@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 
-var currentYear = new Date().getFullYear(),
-    currentDate = new Date().getDate(),
-    currentMonth = new Date().getMonth(),
-    currentHour = new Date().getHours(),
+var currentHour = new Date().getHours(),
     currentMinute = new Date().getMinutes(),
     currentSeconds = new Date().getSeconds() + 2
 
@@ -12,13 +9,13 @@ var other_hour_times = []
 
 var firstDigitSecondsString = '', firstDigitMinutesString = '', firstDigitHoursString = ''
 
-if (currentSeconds >= 0 && currentSeconds < 9) {
+if (currentSeconds >= 0 && currentSeconds <= 9) {
      firstDigitSecondsString = '0'
 } else {
      firstDigitMinutesString = ''
 }
 
-if (currentMinute >= 0 && currentMinute < 9) {
+if (currentMinute >= 0 && currentMinute <= 9) {
     firstDigitMinutesString = '0'
 } else {
     firstDigitMinutesString = ''
@@ -35,19 +32,19 @@ for (var i = 0; i < 24; i++) {
 }
 
 for (var k = 0; k < other_hour_times.length; k++) {
-    if (k === currentHour) {
+    if (k === new Date().getHours()) {
         currentHour = hour_times[k]
     }
 }
 
 const TimeCountdown = () => {
 
-    const [year, setYear] = useState(currentYear)
-    const [date, setDate] = useState(currentDate)
-    const [month, setMonth] = useState(currentMonth)
-    const [hour, setHour] = useState(currentHour)
-    const [minute, setMinute] = useState(currentMinute)
-    const [seconds, setSeconds] = useState(currentSeconds)
+    const [year, setYear] = useState(new Date().getFullYear())
+    const [date, setDate] = useState(new Date().getDate())
+    const [month, setMonth] = useState(new Date().getMonth())
+    const [hour, setHour] = useState(new Date().getHours())
+    const [minute, setMinute] = useState(new Date().getMinutes())
+    const [seconds, setSeconds] = useState(new Date().getSeconds())
     const [firstDigitSeconds, setFirstDigitSeconds] = useState(firstDigitSecondsString)
     const [firstDigitMinutes, setFirstDigitMinutes] = useState(firstDigitMinutesString)
     const [firstDigitHours, setFirstDigitHours] = useState(firstDigitHoursString)
@@ -63,32 +60,31 @@ const TimeCountdown = () => {
         setFirstDigitHours(firstDigitHours)
         setSeconds(seconds + 1)
 
-        if (hour >= 0 && hour < 9) {
+        if ((new Date().getHours() >= 0 && new Date().getHours() <= 10) || (new Date().getHours() >= 13 && new Date().getHours() <= 21)) {
             setFirstDigitHours('0')
         } else {
             setFirstDigitHours('')
         }
 
-        if (minute >= 0 && minute < 9) {
+        if (new Date().getMinutes() >= 0 && new Date().getMinutes() < 10) {
             setFirstDigitMinutes('0')
         } else {
             setFirstDigitMinutes('')
         }
 
-        if (seconds >= 0 && seconds < 9) {
+        if (new Date().getSeconds() >= 0 && new Date().getSeconds() < 10) {
             setFirstDigitSeconds('0')
         } else {
             setFirstDigitSeconds('')
         }
 
-        if (seconds === 59)
+        if (new Date().getSeconds() === 59)
         {
             setSeconds(0)
             setMinute(minute + 1)
-            setFirstDigitSeconds('0')
         }
 
-        if (minute === 59 && seconds === 59)
+        if (new Date().getMinutes() === 59 && new Date().getSeconds() === 59)
         {
             setSeconds(0)
             setMinute(0)
@@ -99,7 +95,7 @@ const TimeCountdown = () => {
     return (
         <div className="time-countdown-container">
             <div className="time-countdown">
-                <p>Current time: {`${firstDigitHours}${hour}:${firstDigitMinutes}${minute}:${firstDigitSeconds}${seconds}`}</p>
+                <p>Current time: {`${firstDigitHours}${currentHour}:${firstDigitMinutes}${new Date().getMinutes()}:${firstDigitSeconds}${new Date().getSeconds()}`}</p>
             </div>
         </div>
     )
