@@ -385,6 +385,7 @@ hr{
   margin-right: 30%;
   background: rgb(30, 116, 245);
   border-radius: 20px;
+  font-size: 18px;
   color: white;
 }
 
@@ -399,6 +400,7 @@ hr{
   margin-right: 15%;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
   font-weight: 800;
 }
 
@@ -1052,8 +1054,8 @@ hr{
     margin-right: 5%;
   }
   #graduation-countdown{
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 13%;
+    margin-right: 13%;
   }
   #progress-count{
     margin-left: 5%;
