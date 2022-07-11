@@ -53,7 +53,7 @@ const ProgressCountdown = () => {
     const [year, setYear] = useState(new Date().getFullYear())
     const [prevHours, setPrevHours] = useState(hours - 6)
     const [updateHoursLeft, setUpdateHoursLeft] = useState(23 - prevHours)
-    const [minutesLeft, setMinutesLeft] = useState(60 - new Date().getMinutes())
+    const [minutesLeft, setMinutesLeft] = useState(59 - new Date().getMinutes())
     const [daysString, setDaysString] = useState(days_title)
     const [timeString, setTimeString] = useState(time_string)
 
@@ -161,7 +161,7 @@ const ProgressCountdown = () => {
             <p id="progress-count" data-aos="fade" data-aos-delay="2000">Progress until graduation day: {`${progressPercentage.toFixed(2)}`}%</p>
             <p id="progress-count" data-aos="fade" data-aos-delay="2000">This section will automatically update each day at 6 AM in the morning.</p>
             <p id="progress-count" data-aos="fade" data-aos-delay="2000"><i>Last updated: {`${prevHours} ${timeString}`} ago</i></p>
-            <p id="progress-count" data-aos="fade" data-aos-delay="2000"><i>Time left before next update: {`${updateHoursLeft} hours, ${60 - new Date().getMinutes()} minutes, and ${60 - new Date().getSeconds()} seconds`} left</i></p>
+            <p id="progress-count" data-aos="fade" data-aos-delay="2000"><i>Time left before next update: {`${updateHoursLeft} hours, ${59 - new Date().getMinutes()} minutes, and ${59 - new Date().getSeconds()} seconds`} left</i></p>
         </div>
     )
 }
