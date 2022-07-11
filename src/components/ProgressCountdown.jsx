@@ -98,8 +98,9 @@ const ProgressCountdown = () => {
         if (new Date().getHours() >= 0 && new Date().getHours() <= 6) {
             // If the number of previous hours is between 18-23, then that amount will
             // remain the same.
-            if (prevHours >= 18 && prevHours <= 23 && new Date().getMinutes() === 0 && new Date().getSeconds() === 0) {
+            if (prevHours === -6 || prevHours === -5 || prevHours === -4 || prevHours === -3 || prevHours === -2 || prevHours === -1) {
                 setPrevHours(prevHours + 24)
+                setUpdateHoursLeft(updateHoursLeft - 24)
             }
 
             // This was added as the original statement doesn't want to add to the
