@@ -20,6 +20,17 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 07/10/2022, 9:31 PM.
+                </p>
+                <p id="post-content">
+                    Just another announcement to let y'all know that I made another round of bug fixes
+                    to the progress countdown feature. Furthermore, I also added a countdown for the
+                    amount of time left before 6 AM when it automatically updates. That's all! Have a
+                    wonderful day!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 07/10/2022, 1:23 AM.
                 </p>
                 <p id="post-content">
