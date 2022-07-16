@@ -10,36 +10,34 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 07/10/2022, 9:31 PM.
+                    By: Ruben Christopher Arevalo. Posted on 07/16/2022, 2:24 AM.
                 </p>
                 <p id="post-content">
-                    Just another announcement to let y'all know that I made another round of bug fixes
-                    to the progress countdown feature. Furthermore, I also added a countdown for the
-                    amount of time left before 6 AM when it automatically updates. That's all! Have a
-                    wonderful day!
+                    I will continue to maintain this website whenever I have time and when the chance occurs, as I will be busy these
+                    next couple of weeks due to school and work, mainly the former. That will be all for today. Thank you and have a
+                    wonderful weekend, everyone!
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 07/10/2022, 1:23 AM.
+                    By: Ruben Christopher Arevalo. Posted on 07/16/2022, 2:24 AM.
                 </p>
                 <p id="post-content">
-                    I am still working on making sure that some aspects of this website, as I have stated
-                    in previous announcements, are automatically updated (for instance, the progress
-                    countdown feature). That will be all for this evening. Thank you everyone, and have a
-                    wonderful rest of the weekend!
+                    The last item on the list is not necessarily a new feature, but rather, an improvement to an already existing feature.
+                    That's right. Whenever one enters this website, the theme will automatically configure itself depending on how you set
+                    up your OS (operating system) settings for your devices, whether it'd be your phone, PC, etc. However, I can't
+                    guarantee that it will work as expected, as bugs can appear at any time.
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 07/10/2022, 1:23 AM.
+                    By: Ruben Christopher Arevalo. Posted on 07/16/2022, 2:24 AM.
                 </p>
                 <p id="post-content">
-                    Good evening, everyone! For the past week, I have been making bug fixes on the
-                    progress countdown feature in the "About Me" page (the first page the user is
-                    directed to when entering the website the first time). Everything should be fixed,
-                    but I cannot make any promises when I say that as other bugs can arise in the
-                    future.
+                    Huge announcement! The following updates have been made during the course of the week:
+                    <br/>
+                    <li>Bug fixes to the UI and the state of the website.</li>
+                    <li>A new feature added to the "Settings" page.</li>
                 </p>
             </div>
         </div>
