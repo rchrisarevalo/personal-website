@@ -11,8 +11,11 @@ import nprogress from "nprogress";
 import "nprogress/nprogress.css";
 
 var d = localStorage.getItem("d_l_mode");
-var clicked = false;
-var clicked2 = false;
+var d_media = localStorage.getItem("dark_media_theme")
+var l_media = localStorage.getItem("light_media_theme")
+var one_time_message = localStorage.getItem("one-time")
+
+var theme_choice;
 
 function clearLocalStorage() {
     var clearNotice = document.getElementById("clear-notice");
@@ -27,7 +30,7 @@ function clearLocalStorage() {
     clearNotice.style.display = 'none';
 
     localStorage.clear();
-    
+
     setTimeout(() => {
         window.location.reload();
     }, 1000)
@@ -37,18 +40,49 @@ function clearLocalStorage() {
 // https://codepen.io/kevinpowell/pen/EMdjOV
 
 function light_dark_mode() {
-    if (clicked === false) {
-        localStorage.setItem("d_l_mode", "changed");
+    theme_choice = document.getElementById("value_check").value
+    console.log(theme_choice)
+
+    if (theme_choice === "dark") {
+        localStorage.setItem("d_l_mode", theme_choice);
         document.body.style.cssText = 'background: #242525; color: white; transition: .5s;'
-        clicked = true;
-    } else if (clicked2 === false && clicked === true) {
-        document.body.style.cssText = 'transition: .5s;';
-        localStorage.setItem("d_l_mode", "normal");
-        clicked = false;
+        localStorage.setItem("dark_media_theme", "false")
+        localStorage.setItem("light_media_theme", "false")
+    } else if (theme_choice === "light") {
+        document.body.style.cssText = 'background: #FFFFFF; color: black; transition: .5s;';
+        localStorage.setItem("d_l_mode", theme_choice);
+        localStorage.setItem("dark_media_theme", "false")
+        localStorage.setItem("light_media_theme", "false")
+    } else if (theme_choice === "default") {
+        if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+            document.body.style.cssText = 'background: #FFFFFF; color: black; transition: .5s;'
+            localStorage.setItem("d_l_mode", `${theme_choice}_light`)
+            localStorage.setItem("light_media_theme", "true")
+            localStorage.setItem("dark_media_theme", "false")
+        } else {
+            document.body.style.cssText = 'background: #242525; color: white; transition: .5s;'
+            localStorage.setItem("d_l_mode", `${theme_choice}_dark`)
+            localStorage.setItem("light_media_theme", "false")
+            localStorage.setItem("dark_media_theme", "true")
+        }
     }
 }
-if (d === "changed") {
-    light_dark_mode();
+
+if (d === "dark" || d === "default_dark") {
+    document.body.style.cssText = 'background: #242525; color: white; transition: .5s;'
+} else if (l_media === "true" || d_media === "true" || (l_media === null && d_media === null)){
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches){
+        document.body.style.cssText = 'background: #242525; color: white; transition: .5s;'
+        localStorage.setItem("dark_media_theme", "true")
+        localStorage.setItem("light_media_theme", "false")
+    }
+    else {
+        document.body.style.cssText = 'background: #FFFFFF; color: black; transition: .5s;'
+        localStorage.setItem("dark_media_theme", "false")
+        localStorage.setItem("light_media_theme", "true")
+    }
+} else if (d === "light" || d === "default_light") {
+    document.body.style.cssText = 'background: #FFFFFF; color: black; transition: .5s;'
 }
 
 // ====================================
@@ -110,27 +144,36 @@ const Settings = () => {
                         <i>Clear all the local storage saved for this website:</i>
                         <br></br>
                         <br></br>
-                        {d !== null &&
+                        {(d !== null || one_time_message !== null) &&
                             <button onClick={handleNoticeShow}><IoTrashOutline id="settings-btns" />Clear</button>
                         }
-                        {d === null &&
+                        {(d === null && one_time_message === null) &&
                             <button onClick={handleNoticeShow} id="settings-disabled" disabled><IoTrashOutline id="settings-btns" />Clear</button>
                         }
                         <br></br>
                         <br></br>
-                        <i>Switch to light or dark mode:</i>
+                        <i>Switch to light mode, dark mode, or your configured device theme:</i>
                         <br></br>
                         <br></br>
-                        {d === "changed" &&
+                        {(d === "default_light" || d === "default_dark" || d === null) &&
                             <select id="value_check" onChange={light_dark_mode}>
-                                <option value="light">Light</option>
-                                <option value="dark" selected>Dark</option>
+                                <option value="default" selected>Device theme</option>
+                                <option value="light">Light theme</option>
+                                <option value="dark">Dark theme</option>
                             </select>
                         }
-                        {(d === "normal" || d === null) &&
+                        {d === "dark" &&
                             <select id="value_check" onChange={light_dark_mode}>
-                                <option value="light" selected>Light</option>
-                                <option value="dark">Dark</option>
+                                <option value="default">Device theme</option>
+                                <option value="light">Light theme</option>
+                                <option value="dark" selected>Dark theme</option>
+                            </select>
+                        }
+                        {d === "light" &&
+                            <select id="value_check" onChange={light_dark_mode}>
+                                <option value="default">Device theme</option>
+                                <option value="light" selected>Light theme</option>
+                                <option value="dark">Dark theme</option>
                             </select>
                         }
                         <br></br>
@@ -141,7 +184,6 @@ const Settings = () => {
                         <button type="submit" onClick={handleSaveShow}><IoSaveOutline id="settings-btns" />Save</button>
                         <br></br>
                         <br></br>
-                        
                         {/* Save modal (from React Bootstrap) */}
                         <Modal
                             show={saveShow}

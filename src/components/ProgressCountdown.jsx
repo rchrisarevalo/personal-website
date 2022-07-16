@@ -69,8 +69,6 @@ const ProgressCountdown = () => {
         setTimeString(timeString)
         setMinutesLeft(minutesLeft)
 
-        console.log(new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate(), new Date().getHours(), new Date().getMinutes(), new Date().getSeconds()))
-
         // Once the number of seconds reaches 59, the number of minutes will be set
         // back to 0.
         if (new Date().getSeconds() === 59) {

@@ -7,6 +7,8 @@ import '../App.css';
 import Spinner from 'react-bootstrap/Spinner';
 
 const theme = localStorage.getItem("d_l_mode");
+const light_media = localStorage.getItem("light_media_theme")
+const dark_media = localStorage.getItem("dark_media_theme")
 
 const Load = () => {
 
@@ -26,7 +28,7 @@ const Load = () => {
     return (
         <div className="loading-screen">
             <div className="loading-animation">
-                { (theme === "normal" || theme === null) && 
+                { ((theme === "light" || light_media === "true")) && 
                     <div>
                         <Spinner animation="grow" variant="dark" id="delay-1" />
                         <Spinner animation="grow" variant="dark" id="delay-2" />
@@ -36,7 +38,7 @@ const Load = () => {
                         <div id="percentage-load">{`${percentage}`}%</div>
                     </div>
                 }
-                { (theme === "changed") && 
+                { ((theme === "dark" || dark_media === "true")) && 
                     <div>
                         <Spinner animation="grow" variant="light" id="delay-1" />
                         <Spinner animation="grow" variant="light" id="delay-2" />
