@@ -12,7 +12,9 @@ const NewFooter = () => {
     const [year, setYear] = useState(current_year)
 
     setTimeout(() => {
-        setYear(year)
+        if (new Date().getMonth() === 11 && new Date().getDate() === 31 && new Date().getMinutes() === 59 && new Date().getHours() === 23 && new Date().getSeconds() === 59) {
+            setYear(year + 1)
+        }
     }, 1000)
 
     return (

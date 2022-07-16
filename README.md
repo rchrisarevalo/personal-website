@@ -1,15 +1,15 @@
-# Personal Website (v3.1.1)
+# Personal Website (v3.2.0)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on July 10, 2022):
+# UPDATES (made on July 16, 2022):
 
-* Some bug fixes were made to this website:
-  * The number of hours in which the status of the progress countdown feature has last been updated has been fixed.
-  * The fix was done after I had noticed that from 12 AM-6 AM, the number of hours will be displayed as "-6 minutes ago", etc.
-  * The reason for this was because I am subtracting the current hour by 6 as the section updates at 6 AM each day, which led to an unintentional mathematical error on my part as I forgot to configure the state properly to accommodate the time changes and display the correct amount of hours that have passed since it updated.
-  * I had since made these fixes and everything should be working well, though I cannot make any promises.
+* I have made the following changes to the website:
+  * I have added a new feature to the "Settings" page. Whenever a user first enters the website, it automatically configured to the theme they chose in their OS (operating system) settings.
+  * Furthermore, I have made some bug fixes, such as fixing style errors in the user interface, as well as improving how the copyright year state automatically updates after New Year's Eve.
+
+* I will continue to **make updates** whenever I have time, as I will get busy later on this month and in early August.
 
 # CREDITS:
 * Progress bar by nProgress (author: rstacruz)

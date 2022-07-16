@@ -303,7 +303,6 @@ hr{
 }
 
 .update-message{
-  display: none;
   font-family: 'Open Sans', sans-serif;
   margin: 0.5em;
   margin-left: 20%;
@@ -809,6 +808,7 @@ hr{
   color: white;
   padding: 5px 20px;
   border-radius: 5px;
+  resize: both;
   transition: .5s;
   font-weight: 500;
 }
@@ -857,6 +857,21 @@ hr{
   font-size: 16px;
 }
 
+#schedule-theme-changer-row{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#schedule-theme-changer-col{
+  text-align: center;
+  align-items: center;
+}
+
+#schedule-theme-changer-col p{
+  font-size: 24px;
+  justify-content: center;
+}
+
 #clear-storage-msg{
   display: none;
   text-align: center;
@@ -880,7 +895,7 @@ hr{
 }
 
 .new-footer{
-  background: #0c0c0c;
+  background: #000000;
   box-shadow: 0 0 4px black;
   padding-top: 35px;
   padding-bottom: 15px;
@@ -1074,6 +1089,18 @@ hr{
   }
   #setting-btn-icon{
     display: block;
+  }
+  #schedule-theme-changer-row{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #schedule-theme-changer-col{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #schedule-theme-changer-col p{
+    padding-top: 15px;
+    font-size: 24px;
   }
   .nav-item{
     margin: 50px;

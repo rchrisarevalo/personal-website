@@ -36,7 +36,8 @@ const Update = () => {
                         <IoAlertCircleOutline size="23px" id="update-icon" /> UPDATE:
                     </p>
                     <p>
-                        This website will be closing in <b>{`${remaining}`}</b> in observance of Memorial Day.
+                        I have made a new update! The theme of this website will now be automatically configured to the theme that
+                        the users chose for their devices (e.g. light mode or dark mode).
                     </p>
                     <p>
                         <i>-- Ruben Christopher Arevalo</i>
