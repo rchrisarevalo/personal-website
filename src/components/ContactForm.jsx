@@ -11,7 +11,6 @@ var total_char_counter = 360
 var msg_text;
 var char_counter_text;
 var current_char_counter = 0;
-var successful_submissions = 0;
 
 function charCounter() {
     msg_text = document.getElementById("msg_txt").value
