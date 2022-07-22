@@ -597,6 +597,33 @@ hr{
   margin-right: .6em;
 }
 
+#contact-steps-row{
+  margin-left: .5vh;
+  margin-right: .5vh;
+}
+
+#contact-steps{
+  background: #FFFF;
+  color: black;
+  margin-left: 60px;
+  margin-right: 60px;
+  resize: none;
+  padding-top: .5vh;
+  padding-bottom: .5vh;
+  border-radius: 25px;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  transition: .5s;
+}
+
+#contact-steps h1{
+  font-weight: 900;
+}
+
+#contact-steps-container{
+  margin: 2em;
+}
+
 .posts-container{
   margin: 1.5em;
   padding-top: 60px;
@@ -857,21 +884,6 @@ hr{
   font-size: 16px;
 }
 
-#schedule-theme-changer-row{
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-#schedule-theme-changer-col{
-  text-align: center;
-  align-items: center;
-}
-
-#schedule-theme-changer-col p{
-  font-size: 24px;
-  justify-content: center;
-}
-
 #clear-storage-msg{
   display: none;
   text-align: center;
@@ -1090,30 +1102,12 @@ hr{
   #setting-btn-icon{
     display: block;
   }
-  #schedule-theme-changer-row{
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  #schedule-theme-changer-col{
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  #schedule-theme-changer-col p{
-    padding-top: 15px;
-    font-size: 24px;
-  }
   .nav-item{
     margin: 50px;
     margin-left: 25%;
     margin-right: 25%;
     text-align: center;
     justify-content: center;
-  }
-  .burger-icon{
-    display: block;
-  }
-  .contact-icon{
-    display: block;
   }
   .works{
     padding-bottom: 30px;
@@ -1157,9 +1151,20 @@ hr{
   #contact-form button{
     font-size: 14px;
   }
+  #contact-steps-row{
+    margin-left: 0;
+    margin-left: 0;
+  }
+  #contact-steps{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   #form-btn-row{
     margin-left: 0%;
     margin-right: 0%;
+  }
+  #char-counter{
+    font-weight: 800;
   }
   .contact-description{
     margin-left: 10%;
