@@ -1,13 +1,14 @@
-# Personal Website (v3.2.0)
+# Personal Website (v3.3.0)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on July 16, 2022):
+# UPDATES (made on July 21, 2022):
 
 * I have made the following changes to the website:
-  * I have added a new feature to the "Settings" page. Whenever a user first enters the website, it automatically configured to the theme they chose in their OS (operating system) settings.
-  * Furthermore, I have made some bug fixes, such as fixing style errors in the user interface, as well as improving how the copyright year state automatically updates after New Year's Eve.
+  * A character counter was added to the form so that it makes it easier for users to keep track of how many characters they have left for their form.
+  * Furthermore, I added new tips on the contact form page as to what one can and cannot do when sending a message through the site.
+  * Some bug fixes.
 
 * I will continue to **make updates** whenever I have time, as I will get busy later on this month and in early August.
 
