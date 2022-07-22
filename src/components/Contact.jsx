@@ -5,13 +5,16 @@ import ContactForm from './ContactForm.jsx';
 import NavContact from '../NavContact.jsx';
 import NewFooter from '../NewFooter.jsx';
 
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'
+
 import nprogress from "nprogress";
 import "nprogress/nprogress.css";
 
 const Contact = () => {
 
     useEffect(() => {
-        nprogress.configure({minimum: 0.1, showSpinner: false, easing: 'ease', speed: 800, trickleSpeed: 200});
+        nprogress.configure({ minimum: 0.1, showSpinner: false, easing: 'ease', speed: 800, trickleSpeed: 200 });
         nprogress.start();
         nprogress.set(0.5);
         nprogress.inc(0.5);
@@ -19,7 +22,7 @@ const Contact = () => {
 
         window.scrollTo(0, 0);
     }, []);
-    
+
     return (
         <div className="contact-page-container">
             <Helmet>
@@ -45,6 +48,36 @@ const Contact = () => {
                 <br></br>
                 <br></br>
                 <ContactForm />
+                <br></br>
+                <br></br>
+                <Row id="contact-steps-row">
+                    <Col xs>
+                        <figure id="contact-steps">
+                            <div id="contact-steps-container">
+                                <h1><u>WHAT TO DO</u></h1>
+                                <br></br>
+                                <li>When contacting me, <b>please state your name and occupation</b> so that I can know who I am talking to.</li>
+                                <br></br>
+                                <li>Feel free to write me a message! However, please state it as clearly as you can. The reason for this is because vague messages can cause me, like others, to be confused, which will leave me unable to properly comprehend the details of your message.</li>
+                                <br></br>
+                                <li>Ask any questions or concerns you might have about the website or the content!</li>
+                            </div>
+                        </figure>
+                    </Col>
+                    <Col xs>
+                        <figure id="contact-steps">
+                            <div id="contact-steps-container">
+                                <h1><u>WHAT NOT TO DO</u></h1>
+                                <br></br>
+                                <li>Please do <b>NOT</b> try and attempt to publish messages with the malicious intent to cause trouble. Such messages will not be read and will be deleted.</li>
+                                <br></br>
+                                <li>Furthermore, messages of a discriminatory and/or violent nature are <b>PROHIBITED</b> and will not receive a reply whatsoever.</li>
+                                <br></br>
+                                <li>Do not try to send more than 10 messages a day unless it is a really long message that exceeds the character limit and requires you to enter another message.</li>
+                            </div>
+                        </figure>
+                    </Col>
+                </Row>
                 <br></br>
                 <br></br>
                 <br></br>
