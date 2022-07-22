@@ -20,6 +20,36 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 07/21/2022, 7:08 PM.
+                </p>
+                <p id="post-content">
+                    That will be for all this evening! I will be a little bit busy for the rest of the month as I have school,
+                    and I have to put my focus into that at the moment. Despite that, I hope to continue making changes to this
+                    website whenever I can. Have a wonderful rest of the day, everyone!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 07/21/2022, 7:08 PM.
+                </p>
+                <p id="post-content">
+                    In addition, I added new tips on the "Contact Me" page that tell you what you can and cannot do when
+                    sending a message. This is to ensure that no spam or other malicious content passes through.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 07/21/2022, 7:08 PM.
+                </p>
+                <p id="post-content">
+                    Good evening, everyone! I am happy to announce that I added a character counter to the contact form.
+                    I added a limit on the amount of characters when one types their message on the form when it was
+                    first established. However, now it's possible to know how many characters you have left when typing
+                    out your message!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 07/16/2022, 2:24 AM.
                 </p>
                 <p id="post-content">
