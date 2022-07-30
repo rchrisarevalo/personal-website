@@ -1,14 +1,13 @@
-# Personal Website (v3.3.0)
+# Personal Website (v3.3.1)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on July 21, 2022):
+# UPDATES (made on July 30, 2022):
 
 * I have made the following changes to the website:
-  * A character counter was added to the form so that it makes it easier for users to keep track of how many characters they have left for their form.
-  * Furthermore, I added new tips on the contact form page as to what one can and cannot do when sending a message through the site.
-  * Some bug fixes.
+  * Bug fix to the loading screen display. Apparently for users who enter the site for the very first time do not get the loading screen and the percentage counter displayed. This has been fixed.
+  * Style changes to the contact tips in the "Contact Me" page made.
 
 * I will continue to **make updates** whenever I have time, as I will get busy later on this month and in early August.
 
