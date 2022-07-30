@@ -21,7 +21,7 @@ const RecentPosts = () => {
                     By: Ruben Christopher Arevalo. Posted on 07/30/2022, 1:22 AM.
                 </p>
                 <p id="post-content">
-                    I am planning to expand my ventures later this year, or next year, as I plan to build a blogging website whenever I have
+                    I am planning to expand my horizons and create new projects either later this year, or next year, as I plan to build a blogging website whenever I have
                     the time to do so. I am going to be very busy starting this Fall, as it is my last year of college, and I have to stay absolutely
                     focused on my academic career if I want to graduate on time!
                 </p>
