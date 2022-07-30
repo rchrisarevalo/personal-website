@@ -20,6 +20,53 @@ const CurrentPosts = () => {
             </p>
             <div className="post" id="post-margin">
                 <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 07/30/2022, 1:22 AM.
+                </p>
+                <p id="post-content">
+                    Now that I am done rambling (lol), I want to wish you all a great weekend! Please enjoy it and stay safe everyone!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 07/30/2022, 1:22 AM.
+                </p>
+                <p id="post-content">
+                    I am planning to expand my ventures later this year, or next year, as I plan to build a blogging website whenever I have
+                    the time to do so. I am going to be very busy starting this Fall, as it is my last year of college, and I have to stay absolutely
+                    focused on my academic career if I want to graduate on time!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 07/30/2022, 1:22 AM.
+                </p>
+                <p id="post-content">
+                    Now that I am done delivering the daily announcements, I want to acknowledge that my website is already a year old now!
+                    I first created this website since June 2021, which was last year at the time of writing this announcement. This site
+                    has come so far in terms of design and improvements, that I cannot wait for what the future has in store!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 07/30/2022, 1:22 AM.
+                </p>
+                <p id="post-content">
+                    In other news, this will also be one of the last few announcements for this month before I clear this page as part of the
+                    archival process.
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
+                    By: Ruben Christopher Arevalo. Posted on 07/30/2022, 1:22 AM.
+                </p>
+                <p id="post-content">
+                    Hi everyone! I know it's been a week since I last posted an announcement on this website. Anyways, I am just writing this to
+                    let y'all know that I am doing well! I am pretty busy with my summer courses, and like always, there is a lot of work!
+                    Despite the immense workload, I am ready to give it my very best!
+                </p>
+            </div>
+            <div className="post" id="post-margin">
+                <p id="post-info">
                     By: Ruben Christopher Arevalo. Posted on 07/21/2022, 7:08 PM.
                 </p>
                 <p id="post-content">
