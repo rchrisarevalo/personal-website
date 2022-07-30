@@ -605,9 +605,10 @@ hr{
 #contact-steps{
   background: #FFFF;
   color: black;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 200px;
+  margin-right: 200px;
   resize: none;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
   padding-top: .5vh;
   padding-bottom: .5vh;
   border-radius: 25px;
@@ -617,6 +618,25 @@ hr{
 }
 
 #contact-steps h1{
+  font-weight: 900;
+}
+
+#contact-steps-dark{
+  background: #242525;
+  color: white;
+  margin-left: 60px;
+  margin-right: 60px;
+  resize: none;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  padding-top: .5vh;
+  padding-bottom: .5vh;
+  border-radius: 25px;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  transition: .5s;
+}
+
+#contact-steps-dark h1{
   font-weight: 900;
 }
 
@@ -1155,7 +1175,7 @@ hr{
     margin-left: 0;
     margin-left: 0;
   }
-  #contact-steps{
+  #contact-steps, #contact-steps-dark{
     margin-left: 10px;
     margin-right: 10px;
   }
