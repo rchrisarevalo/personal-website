@@ -28,7 +28,7 @@ const Load = () => {
     return (
         <div className="loading-screen">
             <div className="loading-animation">
-                { ((theme === "light" || light_media === "true")) && 
+                { ((theme === "light" || light_media === "true" || window.matchMedia("(prefers-color-scheme: light)").matches)) && 
                     <div>
                         <Spinner animation="grow" variant="dark" id="delay-1" />
                         <Spinner animation="grow" variant="dark" id="delay-2" />
@@ -38,7 +38,7 @@ const Load = () => {
                         <div id="percentage-load">{`${percentage}`}%</div>
                     </div>
                 }
-                { ((theme === "dark" || dark_media === "true")) && 
+                { ((theme === "dark" || dark_media === "true" || window.matchMedia("(prefers-color-scheme: dark)").matches)) && 
                     <div>
                         <Spinner animation="grow" variant="light" id="delay-1" />
                         <Spinner animation="grow" variant="light" id="delay-2" />
