@@ -10,32 +10,30 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 07/21/2022, 7:08 PM.
+                    By: Ruben Christopher Arevalo. Posted on 07/30/2022, 1:22 AM.
                 </p>
                 <p id="post-content">
-                    That will be for all this evening! I will be a little bit busy for the rest of the month as I have school,
-                    and I have to put my focus into that at the moment. Despite that, I hope to continue making changes to this
-                    website whenever I can. Have a wonderful rest of the day, everyone!
+                    Now that I am done rambling (lol), I want to wish you all a great weekend! Please enjoy it and stay safe everyone!
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 07/21/2022, 7:08 PM.
+                    By: Ruben Christopher Arevalo. Posted on 07/30/2022, 1:22 AM.
                 </p>
                 <p id="post-content">
-                    In addition, I added new tips on the "Contact Me" page that tell you what you can and cannot do when
-                    sending a message. This is to ensure that no spam or other malicious content passes through.
+                    I am planning to expand my ventures later this year, or next year, as I plan to build a blogging website whenever I have
+                    the time to do so. I am going to be very busy starting this Fall, as it is my last year of college, and I have to stay absolutely
+                    focused on my academic career if I want to graduate on time!
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 07/21/2022, 7:08 PM.
+                    By: Ruben Christopher Arevalo. Posted on 07/30/2022, 1:22 AM.
                 </p>
                 <p id="post-content">
-                    Good evening, everyone! I am happy to announce that I added a character counter to the contact form.
-                    I added a limit on the amount of characters when one types their message on the form when it was
-                    first established. However, now it's possible to know how many characters you have left when typing
-                    out your message!
+                    Now that I am done delivering the daily announcements, I want to acknowledge that my website is already a year old now!
+                    I first created this website since June 2021, which was last year at the time of writing this announcement. This site
+                    has come so far in terms of design and improvements, that I cannot wait for what the future has in store!
                 </p>
             </div>
         </div>
