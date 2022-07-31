@@ -20,6 +20,7 @@ import March2022Posts from './components/2022 Posts Components/March2022Posts.js
 import April2022Posts from './components/2022 Posts Components/April2022Posts.jsx';
 import May2022Posts from './components/2022 Posts Components/May2022Posts.jsx';
 import June2022Posts from './components/2022 Posts Components/June2022Posts.jsx'
+import July2022Posts from './components/2022 Posts Components/July2022Posts.jsx';
 import Contact from './components/Contact.jsx';
 import Archives from "./components/Archives.jsx";
 import Settings from "./components/Settings.jsx";
@@ -61,6 +62,7 @@ function App() {
         {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/April" element={<April2022Posts />} />}
         {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/May" element={<May2022Posts />} />}
         {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/June" element={<June2022Posts />} />}
+        {(Date.now() >= new Date(2022, 7, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/July" element={<July2022Posts />} />}
 
         <Route path="/settings" element={<Settings />} />
         <Route path="/policies/site-operation" element={<WebsiteOperation />} />
