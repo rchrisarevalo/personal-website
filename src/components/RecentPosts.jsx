@@ -10,6 +10,15 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
+                    By: Ruben Christopher Arevalo. Posted on 07/31/2022, 12:17 AM.
+                </p>
+                <p id="post-content">
+                    This will be the last announcement for the month. As usual, I am going to wipe this page clean once
+                    the first day of the August has already approached. Thank you all and have a wonderful rest of the weekend!
+                </p>
+            </div>
+            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
+                <p id="post-info-recent">
                     By: Ruben Christopher Arevalo. Posted on 07/30/2022, 1:22 AM.
                 </p>
                 <p id="post-content">
@@ -24,16 +33,6 @@ const RecentPosts = () => {
                     I am planning to expand my horizons and create new projects either later this year, or next year, as I plan to build a blogging website whenever I have
                     the time to do so. I am going to be very busy starting this Fall, as it is my last year of college, and I have to stay absolutely
                     focused on my academic career if I want to graduate on time!
-                </p>
-            </div>
-            <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
-                <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 07/30/2022, 1:22 AM.
-                </p>
-                <p id="post-content">
-                    Now that I am done delivering the daily announcements, I want to acknowledge that my website is already a year old now!
-                    I first created this website since June 2021, which was last year at the time of writing this announcement. This site
-                    has come so far in terms of design and improvements, that I cannot wait for what the future has in store!
                 </p>
             </div>
         </div>
