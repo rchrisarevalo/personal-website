@@ -14,7 +14,7 @@ const RecentPosts = () => {
                 </p>
                 <p id="post-content">
                     This will be the last announcement for the month. As usual, I am going to wipe this page clean once
-                    the first day of the August has already approached. Thank you all and have a wonderful rest of the weekend!
+                    the first day of the new month has already approached. Thank you all and have a wonderful rest of the weekend!
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
