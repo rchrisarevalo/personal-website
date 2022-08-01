@@ -67,7 +67,7 @@ const Archives = () => {
                         <li><Link to="/announcements/2022/April">April</Link></li>
                         <li><Link to="/announcements/2022/May">May</Link></li>
                         <li><Link to="/announcements/2022/June">June</Link></li>
-                        {(Date.now() >= new Date(2022, 7, 1, 0) && Date.now() <= new Date(2025, 11, 31)) && <li><Link to="/announcements/2022/July">July</Link></li>}
+                        <li><Link to="/announcements/2022/July">July</Link></li>
                     </div>
                     <br></br>
                     <br></br>
