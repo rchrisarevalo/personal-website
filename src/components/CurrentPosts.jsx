@@ -18,7 +18,7 @@ const CurrentPosts = () => {
                     (or the link on the navigation bar). The Archives page gets updated every month for the duration of this Site.
                 </i>
             </p>
-            {Date.now() <= new Date(2022, 8, 1) &&
+            {Date.now() <= new Date(2022, 7, 1) &&
                 <div>
                     <div className="post" id="post-margin">
                         <p id="post-info">
