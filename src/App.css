@@ -149,19 +149,12 @@ hr{
 }
 
 #delay-1{
-  animation-delay: 0s;
-  margin-right: 10px;
-}
-
-#delay-2{
-  animation-delay: 0.1s;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-#delay-3{
-  animation-delay: 0.2s;
-  margin-left: 10px;
+  text-align: center;
+  height: 9vh;
+  width: 9vh;
+  font-size: 50px;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 /* navbar and navbar-toggler class modified (from React Bootstrap) */
@@ -576,6 +569,83 @@ hr{
 }
 
 #contact-form button:active{
+  background: rgb(0, 132, 255);
+  letter-spacing: 2px;
+  color: black;
+  transition: .5s;
+}
+
+#contact-form-dark{
+  background: #242525;
+  box-shadow: 0 0 5px black;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#contact-form-dark h2{
+  font-weight: 800;
+  text-transform: none;
+  font-size: 25px;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-bottom: 20px;
+  text-align: left;
+  color: white;
+}
+
+#contact-form-dark label{
+  font-weight: 400;
+  font-size: 16.5px;
+  color: white;
+}
+
+#contact-form-dark input{
+  padding-bottom: 5px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  font-size: 15px;
+  transition: .25s;
+  font-weight: 400;
+  background: none;
+}
+
+#contact-form-dark textarea{
+  border: 2px solid white;
+  outline: none;
+  font-size: 15px;
+  padding-left: 2px;
+  color: white;
+  font-weight: 400;
+  background: none;
+}
+
+#contact-form-dark button{
+  background: #FFFF;
+  border: 1px solid black;
+  color: black;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 5vh;
+  border-radius: 25px;
+  transition: .5s;
+}
+
+#contact-form-dark button:hover{
+  background: #616161;
+  border: 1px solid white;
+  color: white;
+  font-weight: 800;
+  transition: .5s;
+}
+
+#contact-form-dark button:active{
   background: rgb(0, 132, 255);
   letter-spacing: 2px;
   color: black;
@@ -1171,6 +1241,25 @@ hr{
   #contact-form button{
     font-size: 14px;
   }
+  #contact-form-dark{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #contact-form-dark input{
+    width: 33vh;
+    font-size: 16px;
+    outline: none;
+    background: none;
+  }
+  #contact-form-dark textarea{
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    background: none;
+  }
+  #contact-form-dark button{
+    font-size: 14px;
+  }
   #contact-steps-row{
     margin-left: 0;
     margin-left: 0;
@@ -1180,7 +1269,7 @@ hr{
     margin-right: 10px;
   }
   #form-btn-row{
-    margin-left: 0%;
+    margin-left: 1%;
     margin-right: 0%;
   }
   #char-counter{
