@@ -111,7 +111,7 @@ const ProgressCountdown = () => {
             }
         }
 
-        if (hours === 6) {
+        if (new Date().getHours() === 6) {
             setPrevHours(minutes)
             if (seconds === 59) {
                 setPrevHours(minutes + 1)
