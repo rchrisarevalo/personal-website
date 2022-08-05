@@ -73,28 +73,32 @@ const Intro = () => {
 
         // Once the number of seconds reaches 59, the number of minutes will be set
         // back to 0.
-        if (seconds === 59) {
+        if (new Date().getSeconds() === 59) {
             setHours(hours)
             setMinutes(minutes + 1)
             setSeconds(0)
         
         // Once the number of minutes reaches 60, 1 will be added to the number of hours
         // while the number of seconds and minutes is set back to 0.
-        } if (minutes === 59 && seconds === 59) {
+        } if (new Date().getMinutes() === 59 && new Date().getSeconds() === 59) {
             setHours(hours + 1)
             setMinutes(0)
             setSeconds(0)
 
         // Once midnight approaches, everything (the number of hours, minutes, date, and seconds) will
         // be set to 0.
-        } if (hours === 23 && minutes === 59 && seconds === 59) {
+        } if (new Date().getHours() === 23 && new Date().getMinutes() === 59 && new Date().getSeconds() === 59) {
             setHours(0)
             setMinutes(0)
             setSeconds(0)
             setDate(date + 1)
         
         // Adjusts the date and time after a month has passed. It will also adjust for months that have 28, 29, or 30 days.
-        }  if (((month === 3 || month === 5 || month === 8 || month === 10) && date === 30 && hours === 23 && minutes === 59 && seconds === 59) || (date === 31 && hours === 23 && minutes === 59 && seconds === 59) || (month === 1 && date === 28 && hours === 23 && minutes === 59 && seconds === 59)) {
+        }  if (((new Date().getMonth() === 3 || new Date().getMonth() === 5 || new Date().getMonth() === 8 || new Date().getMonth() === 10) 
+                && new Date().getDate() === 30 && new Date.getHours() === 23 && new Date().getMinutes() === 59 && new Date().getSeconds() === 59) 
+                || (new Date().getDate() === 31 && new Date.getHours() === 23 && new Date().getMinutes() === 59 && new Date().getSeconds() === 59) 
+                || (new Date().getMonth() === 1 && new Date().getDate() === 28 && new Date().getHours() === 23 && new Date().getMinutes() === 59 && 
+                    new Date().getSeconds() === 59)) {
             setMonth(month + 1)
             setHours(0)
             setMinutes(0)
@@ -102,7 +106,7 @@ const Intro = () => {
             setDate(1)
         
         // Does the same function as the if statement above, but this only applies to February in a leap year)
-        } if (month === 1 && date === 29 && hours === 23 && minutes === 59 && seconds === 59) {
+        } if (new Date().getMonth() === 1 && new Date().getDate() === 29 && new Date().getHours() === 23 && new Date().getMinutes() === 59 && new Date().getSeconds() === 59) {
             setMonth(month + 1)
             setHours(0)
             setMinutes(0)
@@ -111,7 +115,7 @@ const Intro = () => {
 
         // Once midnight on the final day of the year approaches, everything will be set to 0, and
         // the year will be set to the next year (e.g. 2022 to 2023).
-        } if (date === 31 && month === 11 && hours === 23 && minutes === 59 && seconds === 59) {
+        } if (new Date().getDate() === 31 && new Date().getMonth() === 11 && new Date().getHours() === 23 && new Date().getMinutes() === 59 && new Date().getSeconds() === 59) {
             setDate(1)
             setMonth(0)
             setYear(year + 1)
@@ -127,7 +131,7 @@ const Intro = () => {
 
         // Otherwise, the current age will remain the same.
         } else {
-            if (date === 10 && month === 7 && hours === 0 && minutes === 0 && seconds === 0)
+            if (new Date().getDate() === 10 && new Date().getMonth() === 7 && new Date().getHours() === 0 && new Date().getMinutes() === 0 && new Date().getSeconds() === 0)
                 setCurrentAge(currentAge + 1)
         }
     }, 1000)
@@ -143,15 +147,15 @@ const Intro = () => {
         // Time greetings will automatically change throughout the day.
 
         // 12:00 AM - 11:59 AM
-        if (hours >= 0 && hours <= 11) {
+        if (new Date().getHours() >= 0 && new Date().getHours() <= 11) {
             setDayGreeting("Good morning, ")
         
         // 12:00 PM - 5:59 PM
-        } else if (hours >= 12 && hours <= 17) {
+        } else if (new Date().getHours() >= 12 && new Date().getHours() <= 17) {
             setDayGreeting("Good afternoon, ")
 
         // 6:00 PM - 11:59 PM
-        } else if (hours >= 18 && hours <= 23) {
+        } else if (new Date().getHours() >= 18 && new Date().getHours() <= 23) {
             setDayGreeting("Good evening, ")
         }
     }, 1000)
