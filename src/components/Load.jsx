@@ -16,6 +16,7 @@ const Load = () => {
 
     const nav = useNavigate();
 
+    // The state of the percentage will update each 25 ms.
     setTimeout(() => {
         setPercentage(percentage + 1)
     }, 25)
@@ -25,6 +26,7 @@ const Load = () => {
     }
 
     return (
+        /* Spinner components are from React Bootstrap, which falls under the MIT License. */
         <div className="loading-screen">
             <div className="loading-animation">
                 {((dark_media === null && window.matchMedia("(prefers-color-scheme: dark)").matches)) &&
