@@ -14,7 +14,7 @@ var d = localStorage.getItem("d_l_mode");
 var d_media = localStorage.getItem("dark_media_theme")
 var l_media = localStorage.getItem("light_media_theme")
 var one_time_message = localStorage.getItem("one-time")
-
+var saved_status = false;
 var theme_choice;
 
 function clearLocalStorage() {
@@ -41,30 +41,59 @@ function clearLocalStorage() {
 
 function light_dark_mode() {
     theme_choice = document.getElementById("value_check").value
-    console.log(theme_choice)
+    var save_button_status = document.getElementById("save-btn")
+    var prevState;
 
-    if (theme_choice === "dark") {
-        localStorage.setItem("d_l_mode", theme_choice);
+    if (theme_choice === "dark" && prevState !== d) {
+        prevState = d
         document.body.style.cssText = 'background: #242525; color: white; transition: .5s;'
-        localStorage.setItem("dark_media_theme", "false")
-        localStorage.setItem("light_media_theme", "false")
-    } else if (theme_choice === "light") {
-        document.body.style.cssText = 'background: #FFFFFF; color: black; transition: .5s;';
         localStorage.setItem("d_l_mode", theme_choice);
         localStorage.setItem("dark_media_theme", "false")
         localStorage.setItem("light_media_theme", "false")
-    } else if (theme_choice === "default") {
+        localStorage.setItem("save_status", "saved")
+    } else if (theme_choice === "light" && prevState !== d) {
+        prevState = d
+        document.body.style.cssText = 'background: #FFFFFF; color: black; transition: .5s;'
+        localStorage.setItem("d_l_mode", theme_choice);
+        localStorage.setItem("dark_media_theme", "false")
+        localStorage.setItem("light_media_theme", "false")
+        localStorage.setItem("save_status", "saved")
+    } else if (theme_choice === "default" && prevState !== d) {
         if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+            prevState = d
             document.body.style.cssText = 'background: #FFFFFF; color: black; transition: .5s;'
             localStorage.setItem("d_l_mode", `${theme_choice}_light`)
+            theme_choice = "default_light"
             localStorage.setItem("light_media_theme", "true")
             localStorage.setItem("dark_media_theme", "false")
+            localStorage.setItem("save_status", "saved")
         } else {
+            prevState = d
             document.body.style.cssText = 'background: #242525; color: white; transition: .5s;'
             localStorage.setItem("d_l_mode", `${theme_choice}_dark`)
+            theme_choice = "default_dark"
             localStorage.setItem("light_media_theme", "false")
             localStorage.setItem("dark_media_theme", "true")
+            localStorage.setItem("save_status", "saved")
         }
+    }
+
+    if (prevState === theme_choice) {
+        console.log("Previous state: ", prevState)
+        console.log("Current state: ", theme_choice)
+        saved_status = false
+        save_button_status.disabled = true
+        save_button_status.style.color = 'grey'
+        save_button_status.style.transition = '.5s'
+        console.log("Change made: ", saved_status)
+    } else if (prevState !== theme_choice) {
+        console.log("Previous state: ", prevState)
+        console.log("Current state: ", theme_choice)
+        saved_status = true
+        save_button_status.disabled = false
+        save_button_status.style.color = 'white'
+        save_button_status.style.transition = '.5s'
+        console.log("Change made: ", saved_status)
     }
 }
 
@@ -86,6 +115,27 @@ if (d === "dark" || d === "default_dark") {
 }
 
 // ====================================
+
+function handleSave() {
+    if (saved_status === false) {
+        failed();
+    } else {
+        save();
+    }
+}
+
+function failed() {
+    var saveNotice = document.getElementById("save-notice");
+    var changesSaved = document.getElementById("clear-storage-msg");
+    var saveModalMessage = document.getElementById("save-modal-title");
+    var buttonSet = document.getElementById("buttonSet-modal");
+
+    saveNotice.style.display = 'none';
+    buttonSet.style.display = 'none';
+    saveModalMessage.innerHTML = 'Failed to save changes'
+    changesSaved.style.display = 'block';
+    changesSaved.innerHTML = '<div style="color: red;">No changes were made.</div><br>Please make some changes to your settings before saving once again.'
+}
 
 function save() {
     var saveNotice = document.getElementById("save-notice");
@@ -181,7 +231,7 @@ const Settings = () => {
                         <i>Reload page for changes to take effect:</i>
                         <br></br>
                         <br></br>
-                        <button type="submit" onClick={handleSaveShow}><IoSaveOutline id="settings-btns" />Save</button>
+                        <button type="submit" id="save-btn" onClick={handleSaveShow} disabled={saved_status}><IoSaveOutline id="settings-btns" />Save</button>
                         <br></br>
                         <br></br>
                         {/* Save modal (from React Bootstrap) */}
@@ -194,7 +244,7 @@ const Settings = () => {
                             id="modal-text"
                         >
                             <Modal.Header closeButton id='closeButton-modal'>
-                                <Modal.Title><b>Save changes?</b></Modal.Title>
+                                <Modal.Title><b id="save-modal-title">Save changes?</b></Modal.Title>
                             </Modal.Header>
                             <Modal.Body>
                                 <div id="save-notice">Are you sure you want to save?</div>
@@ -204,7 +254,7 @@ const Settings = () => {
                                 <Button variant="danger" onClick={handleSaveClose}>
                                     No, not yet.
                                 </Button>
-                                <Button variant="success" onClick={save}>Yes, I am sure.</Button>
+                                <Button variant="success" onClick={handleSave}>Yes, I am sure.</Button>
                             </Modal.Footer>
                         </Modal>
 
