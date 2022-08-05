@@ -9,30 +9,32 @@ const RecentPosts = () => {
                 To view all announcements, click on "Announcements" on the navigation bar.
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
-                <p id="post-info">
-                    By: Ruben Christopher Arevalo. Posted on 08/01/2022, 12:00 AM.
+                <p id="post-info-recent">
+                    By: Ruben Christopher Arevalo. Posted on 08/05/2022, 2:34 PM.
                 </p>
                 <p id="post-content">
-                    That will be everything for the evening. Thank you and have a wonderful evening and great
-                    rest of the day!
+                    That's all I wanted to announce for today, as it is only a change to the way the Save button
+                    works when, again, making changes to the settings in the 'Settings' page. Thank you and have
+                    a wonderful weekend, y'all!
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 08/01/2022, 12:00 AM.
+                    By: Ruben Christopher Arevalo. Posted on 08/05/2022, 2:34 PM.
                 </p>
                 <p id="post-content">
-                    Good evening, everyone! Like other months before, this will be the very first announcement of
-                    August! I am looking forward to what improvements can be made to this website!
+                    In addition, when making the change and selecting the original setting that was either pre-configured by
+                    default or by yourself, the Save button will be disabled until you select a different one.
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 07/31/2022, 12:17 AM.
+                    By: Ruben Christopher Arevalo. Posted on 08/05/2022, 2:34 PM.
                 </p>
                 <p id="post-content">
-                    This will be the last announcement for the month. As usual, I am going to wipe this page clean once
-                    the first day of the new month has already approached. Thank you all and have a wonderful rest of the weekend!
+                    Good afternoon, everyone. I am writing this to announce that I made a few upgrades when saving changes
+                    in the 'Settings' page. When clicking the 'Save' button without actually making any changes to it will
+                    return an error message saying that you have to make them before clicking on the Save button once more.
                 </p>
             </div>
         </div>
