@@ -20,29 +20,40 @@ const Load = () => {
         setPercentage(percentage + 1)
     }, 25)
 
-    if (percentage === 100)
-    {
+    if (percentage === 100) {
         nav("/about")
     }
 
     return (
         <div className="loading-screen">
             <div className="loading-animation">
-                { ((theme === "light" || light_media === "true" || window.matchMedia("(prefers-color-scheme: light)").matches)) && 
+                {((dark_media === null && window.matchMedia("(prefers-color-scheme: dark)").matches)) &&
                     <div>
-                        <Spinner animation="grow" variant="dark" id="delay-1" />
-                        <Spinner animation="grow" variant="dark" id="delay-2" />
-                        <Spinner animation="grow" variant="dark" id="delay-3" />
+                        <Spinner animation="border" variant="light" id="delay-1" />
                         <br></br>
                         <br></br>
                         <div id="percentage-load">{`${percentage}`}%</div>
                     </div>
                 }
-                { ((theme === "dark" || dark_media === "true" || window.matchMedia("(prefers-color-scheme: dark)").matches)) && 
+                {((light_media === null && window.matchMedia("(prefers-color-scheme: light)").matches)) &&
                     <div>
-                        <Spinner animation="grow" variant="light" id="delay-1" />
-                        <Spinner animation="grow" variant="light" id="delay-2" />
-                        <Spinner animation="grow" variant="light" id="delay-3" />
+                        <Spinner animation="border" variant="dark" id="delay-1" />
+                        <br></br>
+                        <br></br>
+                        <div id="percentage-load">{`${percentage}`}%</div>
+                    </div>
+                }
+                {((theme === "light" || light_media === "true")) &&
+                    <div>
+                        <Spinner animation="border" variant="dark" id="delay-1" />
+                        <br></br>
+                        <br></br>
+                        <div id="percentage-load">{`${percentage}`}%</div>
+                    </div>
+                }
+                {((theme === "dark" || dark_media === "true")) &&
+                    <div>
+                        <Spinner animation="border" variant="light" id="delay-1" size="lg" />
                         <br></br>
                         <br></br>
                         <div id="percentage-load">{`${percentage}`}%</div>
