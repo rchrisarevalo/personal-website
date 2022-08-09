@@ -17,7 +17,7 @@ var current_date = Date.now();
 var graduation_date = new Date(2023, 4, 13, 18);
 
 var birth_date = new Date(2001, 7, 10);
-var birthday = new Date(new Date().getFullYear(), 7, 9)
+var birthday = new Date(new Date().getFullYear(), 7, 10)
 var age_ms = birthday - birth_date;
 var age = age_ms * (0.001 / 1) * (1 / 60) * (1 / 60) * (1 / 24) * (1 / 365)
 age = age.toFixed(0)
