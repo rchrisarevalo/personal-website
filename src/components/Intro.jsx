@@ -17,7 +17,7 @@ var current_date = Date.now();
 var graduation_date = new Date(2023, 4, 13, 18);
 
 var birth_date = new Date(2001, 7, 10);
-var birthday = new Date(new Date().getFullYear(), 7, 10)
+var birthday = new Date(new Date().getFullYear(), 7, 9)
 var age_ms = birthday - birth_date;
 var age = age_ms * (0.001 / 1) * (1 / 60) * (1 / 60) * (1 / 24) * (1 / 365)
 age = age.toFixed(0)
@@ -124,15 +124,16 @@ const Intro = () => {
             setHours(0)
         }
 
-        // The owner's age (me) will automatically update on their birthday.
+        // The owner's age (me) will remain the same if the birthday is not reached yet.
         if (birthday > current_date)
         {
             setCurrentAge(currentAge)
 
-        // Otherwise, the current age will remain the same.
+        // Otherwise, the current age will increment by 1.
         } else {
-            if (new Date().getDate() === 10 && new Date().getMonth() === 7 && new Date().getHours() === 0 && new Date().getMinutes() === 0 && new Date().getSeconds() === 0)
-                setCurrentAge(currentAge + 1)
+            if (new Date().getDate() === 10 && new Date().getMonth() === 7 && new Date().getSeconds() === 0 && new Date().getHours() === 0 && new Date().getMinutes() === 0) {
+                setCurrentAge(parseInt(currentAge) + parseInt(1))
+            }
         }
     }, 1000)
 
