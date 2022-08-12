@@ -675,9 +675,8 @@ hr{
 #contact-steps{
   background: #FFFF;
   color: black;
-  margin-left: 200px;
-  margin-right: 200px;
-  resize: none;
+  margin-left: 100px;
+  margin-right: 100px;
   box-shadow: 0 0 10px rgb(0, 0, 0);
   padding-top: .5vh;
   padding-bottom: .5vh;
