@@ -67,7 +67,7 @@ const Contact = () => {
                                             <br></br>
                                             <li>Feel free to write me a message! However, please state it as clearly as you can. The reason for this is because vague messages can cause me, like others, to be confused, which will leave me unable to properly comprehend the details of your message.</li>
                                             <br></br>
-                                            <li>Ask any questions or concerns you might have about the website or the content!</li>
+                                            <li>Ask any questions or concerns you might have about the website or the content! I am happy to answer to answer them as best as I can to address your concerns.</li>
                                         </div>
                                     </figure>
                                 </Col>
@@ -90,7 +90,7 @@ const Contact = () => {
                     {(current_mode === "default_light" || current_mode === "light" || (dark_media_mode === "false" && light_media_mode === "true")) &&
                         <div>
                             <Row id="contact-steps-row">
-                                <Col xs>
+                                <Col id="contact-steps-col">
                                     <figure id="contact-steps-dark">
                                         <div id="contact-steps-container">
                                             <h1><u>WHAT TO DO</u></h1>
@@ -99,11 +99,11 @@ const Contact = () => {
                                             <br></br>
                                             <li>Feel free to write me a message! However, please state it as clearly as you can. The reason for this is because vague messages can cause me, like others, to be confused, which will leave me unable to properly comprehend the details of your message.</li>
                                             <br></br>
-                                            <li>Ask any questions or concerns you might have about the website or the content!</li>
+                                            <li>Ask any questions or concerns you might have about the website or the content! I am happy to answer to answer them as best as I can to address your concerns..</li>
                                         </div>
                                     </figure>
                                 </Col>
-                                <Col xs>
+                                <Col id="contact-steps-col">
                                     <figure id="contact-steps-dark">
                                         <div id="contact-steps-container">
                                             <h1><u>WHAT NOT TO DO</u></h1>
