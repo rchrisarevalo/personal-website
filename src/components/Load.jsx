@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from "axios"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
@@ -9,20 +10,34 @@ import Spinner from 'react-bootstrap/Spinner';
 const theme = localStorage.getItem("d_l_mode");
 const light_media = localStorage.getItem("light_media_theme")
 const dark_media = localStorage.getItem("dark_media_theme")
+var resStatus = 0;
 
 const Load = () => {
 
     const [percentage, setPercentage] = useState(0)
-
+    const milliseconds = 25
+    const [ms, setMs] = useState(milliseconds)
     const nav = useNavigate();
 
-    // The state of the percentage will update each 25 ms.
+    useEffect(() => {
+        axios.get("/").then((res) => {
+            resStatus = res.status
+            setMs(25)
+        }).catch((error) => {
+            resStatus = error.response.status
+            setMs(1000)
+        })
+    }, [])
+
+    // The state of the percentage will update each 50 ms.
     setTimeout(() => {
         setPercentage(percentage + 1)
-    }, 25)
+    }, ms)
 
-    if (percentage === 100) {
+    if (percentage === 100 && resStatus === 200) {
         nav("/about")
+    } else if (percentage === 100 && resStatus === 404){
+        nav("/error")
     }
 
     return (
