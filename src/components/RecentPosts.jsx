@@ -10,31 +10,29 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 08/05/2022, 2:34 PM.
+                    By: Ruben Christopher Arevalo. Posted on 08/13/2022, 2:01 PM.
                 </p>
                 <p id="post-content">
-                    That's all I wanted to announce for today, as it is only a change to the way the Save button
-                    works when, again, making changes to the settings in the 'Settings' page. Thank you and have
-                    a wonderful weekend, y'all!
+                    That will be it for today. I hope you all have a wonderful weekend, and please stay safe, everyone!
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 08/05/2022, 2:34 PM.
+                    By: Ruben Christopher Arevalo. Posted on 08/13/2022, 2:01 PM.
                 </p>
                 <p id="post-content">
-                    In addition, when making the change and selecting the original setting that was either pre-configured by
-                    default or by yourself, the Save button will be disabled until you select a different one.
+                    In other news, I have been gone for over a week, mainly due to college. Since I am about to approach the end of my semester,
+                    I will only have a week left of break before the new Fall semester starts at the end of the month. That means I will try to
+                    make any necessary changes and bug fixes that affect this website.
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 08/05/2022, 2:34 PM.
+                    By: Ruben Christopher Arevalo. Posted on 08/13/2022, 2:01 PM.
                 </p>
                 <p id="post-content">
-                    Good afternoon, everyone. I am writing this to announce that I made a few upgrades when saving changes
-                    in the 'Settings' page. When clicking the 'Save' button without actually making any changes to it will
-                    return an error message saying that you have to make them before clicking on the Save button once more.
+                    Good afternoon, y'all! Since last night, I made a few tweaks to the website. One of these features includes adding an automatic redirect feature
+                    that will take you back to a previous page in 5 seconds if y'all ended up in the Error 404 page.
                 </p>
             </div>
         </div>
