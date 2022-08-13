@@ -31,7 +31,7 @@ if (birthday > current_date)
 
 // Otherwise, the calculated age will be included
 } else {
-    console.log(age)
+    
 }
 var student_year = "third-year"
 
