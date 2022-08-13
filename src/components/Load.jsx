@@ -20,7 +20,7 @@ const Load = () => {
     const nav = useNavigate();
 
     useEffect(() => {
-        axios.get("/").then((res) => {
+        axios.get("https://rchrisarevalo.github.io/personal-website").then((res) => {
             resStatus = res.status
             setMs(25)
         }).catch((error) => {
