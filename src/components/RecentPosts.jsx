@@ -10,29 +10,31 @@ const RecentPosts = () => {
             </p>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 08/13/2022, 2:01 PM.
+                    By: Ruben Christopher Arevalo. Posted on 08/14/2022, 4:11 PM.
                 </p>
                 <p id="post-content">
-                    That will be it for today. I hope you all have a wonderful weekend, and please stay safe, everyone!
+                    I'll let y'all know when it is ready so that way, everything comes out the way it is supposed to.
+                    There will still be bugs, but at a reduced level. That is everything for today. Thank y'all for your
+                    patience and have a wonderful Sunday!
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 08/13/2022, 2:01 PM.
+                    By: Ruben Christopher Arevalo. Posted on 08/14/2022, 4:11 PM.
                 </p>
                 <p id="post-content">
-                    In other news, I have been gone for over a week, mainly due to college. Since I am about to approach the end of my semester,
-                    I will only have a week left of break before the new Fall semester starts at the end of the month. That means I will try to
-                    make any necessary changes and bug fixes that affect this website.
+                    More fixes will be included in the next week or the following week, with more focus being put in
+                    how long has it been since the previous update, as the section does not take minutes into consideration.
                 </p>
             </div>
             <div className="post" id="post-margin" data-aos-delay="500" data-aos="fade">
                 <p id="post-info-recent">
-                    By: Ruben Christopher Arevalo. Posted on 08/13/2022, 2:01 PM.
+                    By: Ruben Christopher Arevalo. Posted on 08/14/2022, 4:11 PM.
                 </p>
                 <p id="post-content">
-                    Good afternoon, y'all! Since last night, I made a few tweaks to the website. One of these features includes adding an automatic redirect feature
-                    that will take you back to a previous page in 5 seconds if y'all ended up in the Error 404 page.
+                    Good afternoon. I am writing this to announce that I have made a few changes to the progress countdown
+                    section in the "About Me" page. Some of these changes include fixing when the counter should update, as well
+                    as upgrading the design of the progress countdown feature itself.
                 </p>
             </div>
         </div>
