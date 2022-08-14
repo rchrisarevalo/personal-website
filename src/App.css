@@ -393,7 +393,8 @@ hr{
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 300;
+  color: white;
 }
 
 .time-countdown{
@@ -404,6 +405,16 @@ hr{
 
 .time-countdown p{
   text-align: center;
+}
+
+#time-text-row{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#time-text{
+  font-size: 35px;
+  font-weight: 600;
 }
 
 #works-title{
