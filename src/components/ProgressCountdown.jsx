@@ -10,7 +10,7 @@ var days_passed;
 var progress_countdown, prev_progress_countdown, rate;
 var days_title = ""
 var time_string = ""
-var update_minute_time_string = ""
+var update_hours_time_string = "", update_minutes_time_string = "", update_seconds_time_string = ""
 
 var grad_date = new Date(2023, 4, 13, 18)
 var today_date = Date.now()
@@ -55,12 +55,15 @@ const ProgressCountdown = () => {
     const [date, setDate] = useState(new Date().getDate())
     const [month, setMonth] = useState(new Date().getMonth())
     const [year, setYear] = useState(new Date().getFullYear())
-    const [prevHours, setPrevHours] = useState(hours - 6)
-    const [updateHoursLeft, setUpdateHoursLeft] = useState(23 - prevHours)
+    const [prevTime, setPrevTime] = useState(hours - 6)
+    const [updateHoursLeft, setUpdateHoursLeft] = useState(23 - prevTime)
     const [minutesLeft, setMinutesLeft] = useState(59 - new Date().getMinutes())
+    const [secondsLeft, setSecondsLeft] = useState(59 - new Date().getSeconds())
     const [daysString, setDaysString] = useState(days_title)
     const [timeString, setTimeString] = useState(time_string)
-    const [updateMinuteTimeString, setUpdateMinuteTimeString] = useState(update_minute_time_string)
+    const [updateHoursTimeString, setUpdateHoursString] = useState(update_hours_time_string)
+    const [updateMinutesTimeString, setUpdateMinutesString] = useState(update_minutes_time_string)
+    const [updateSecondsTimeString, setUpdateSecondsString] = useState(update_seconds_time_string)
 
     /* The state will automatically update the time, which will provide for other states to be
        updated automatically. */
@@ -69,28 +72,42 @@ const ProgressCountdown = () => {
         setMinutes(minutes)
         setSeconds(seconds + 1)
         setDate(date)
-        setPrevHours(prevHours)
+        setPrevTime(prevTime)
         setUpdateHoursLeft(updateHoursLeft)
         setTimeString(timeString)
-        setMinutesLeft(minutesLeft)
-        setUpdateMinuteTimeString(updateMinuteTimeString)
+        setMinutesLeft(59 - new Date().getMinutes())
+        setSecondsLeft(59 - new Date().getSeconds())
+        setUpdateHoursString(updateHoursTimeString)
+        setUpdateMinutesString(updateMinutesTimeString)
+        setUpdateSecondsString(updateSecondsTimeString)
 
         // Once the number of seconds reaches 59, the number of minutes will be set
         // back to 0.
-        if (new Date().getSeconds() === 59) {
+        if (59 - new Date().getSeconds() === 59) {
             setHours(hours)
             setMinutes(minutes + 1)
             setSeconds(0)
-            setPrevHours(prevHours)
-            setMinutesLeft(minutesLeft - 1)
+            
+            if (minutesLeft > 0 && minutesLeft <= 59) {
+                setMinutesLeft(minutesLeft - 1)
+            }
+
             setMonth(month)
             setYear(year)
 
           // Once the number of minutes reaches 60, 1 will be added to the number of hours
           // while the number of seconds and minutes is set back to 0.
-        } if (new Date().getMinutes() === 59 && new Date().getSeconds() === 59) {
-            setPrevHours(parseInt(prevHours) + 1)
+        } if (59 - new Date().getMinutes() === 59 && 59 - new Date().getSeconds() === 59) {
+            setPrevTime(parseInt(prevTime) + 1)
             setUpdateHoursLeft(parseInt(updateHoursLeft) - 1)
+            setMinutesLeft(59)
+            
+            // If the number of previous hours are 0, then set update time left to 23 hours
+            if (prevTime === 0) {
+                setUpdateHoursLeft(23)
+            } else {
+                // DO NOTHING...
+            }
         }
 
         // From 12 AM to 6 AM, this section will add 24 hours back to accommodate the time change into the
@@ -102,8 +119,8 @@ const ProgressCountdown = () => {
         if (new Date().getHours() >= 0 && new Date().getHours() <= 6) {
             // If the number of previous hours is between 18-23, then that amount will
             // remain the same.
-            if (prevHours === -6 || prevHours === -5 || prevHours === -4 || prevHours === -3 || prevHours === -2 || prevHours === -1) {
-                setPrevHours(prevHours + 24)
+            if (prevTime === -6 || prevTime === -5 || prevTime === -4 || prevTime === -3 || prevTime === -2 || prevTime === -1) {
+                setPrevTime(prevTime + 24)
                 setUpdateHoursLeft(updateHoursLeft - 24)
             }
 
@@ -112,16 +129,13 @@ const ProgressCountdown = () => {
             // This is the same statement from above. However, it had to be added to properly update 
             // the number of previous hours.
             if (new Date().getMinutes() === 59 && new Date().getSeconds() === 59) {
-                setPrevHours(prevHours + 1)
+                setPrevTime(prevTime + 1)
                 setUpdateHoursLeft(parseInt(updateHoursLeft) - 1)
             }
         }
 
         if (new Date().getHours() === 6) {
-            setPrevHours(minutes)
-            if (seconds === 59) {
-                setPrevHours(minutes + 1)
-            }
+            setPrevTime(minutes)
         }
 
         // If number of days are greater than 1, then print "days".
@@ -134,19 +148,31 @@ const ProgressCountdown = () => {
         }
 
         // If number of previous hours is greater than 1, then print "hours" instead of minutes
-        if (prevHours > 1) {
+        if (prevTime > 1) {
             setTimeString("hours")
-        } else if (prevHours === 1) {
+        } else if (prevTime === 1) {
             setTimeString("hour")
-        }
-        else {
+        } else {
             setTimeString("minutes")
         }
 
         if (updateHoursLeft > 1) {
-            setUpdateMinuteTimeString("hours")
+            setUpdateHoursString("hours")
         } else if (updateHoursLeft === 1) {
-            setUpdateMinuteTimeString("hour")
+            setUpdateHoursString("hour")
+        }
+
+        if (minutesLeft > 1 || minutesLeft === 0) {
+            setUpdateMinutesString("minutes")
+        } if (59 - new Date().getMinutes() === 1) {
+            setUpdateMinutesString("minute")
+        }
+
+        if (secondsLeft > 1 || (59 - new Date().getSeconds() === 0)) {
+            setUpdateSecondsString("seconds")
+        } 
+        if (59 - new Date().getSeconds() === 1) {
+            setUpdateSecondsString("second")
         }
         
     }, 1000)
@@ -173,17 +199,17 @@ const ProgressCountdown = () => {
             <ProgressBar animated now={`${progressPercentage.toFixed(2)}`} id="progress-bar" data-aos="fade" data-aos-delay="2200" />
             <p id="progress-count" data-aos="fade" data-aos-delay="2000">Progress until graduation day: {`${progressPercentage.toFixed(2)}`}%</p>
             <p id="progress-count" data-aos="fade" data-aos-delay="2000">This section will automatically update each day at 6 AM in the morning.</p>
-            <p id="progress-count" data-aos="fade" data-aos-delay="2000"><i>Last updated: {`${prevHours} ${timeString}`} ago</i></p>
+            <p id="progress-count" data-aos="fade" data-aos-delay="2000"><i>Last updated: {`${prevTime} ${timeString}`} ago</i></p>
             <p id="progress-count" data-aos="fade" data-aos-delay="2000">Time left before next update:</p>
             <Row id="time-text-row" data-aos="fade" data-aos-delay="2000">
                 <Col id="time-text">{`${updateHoursLeft}`}</Col>
-                <Col id="time-text">{`${59 - new Date().getMinutes()}`}</Col>
-                <Col id="time-text">{`${59 - new Date().getSeconds()}`}</Col>
+                <Col id="time-text">{`${minutesLeft}`}</Col>
+                <Col id="time-text">{`${secondsLeft}`}</Col>
             </Row>
             <Row id="time-text-row" data-aos="fade" data-aos-delay="2000">
-                <Col>{`${updateMinuteTimeString}`}</Col>
-                <Col>{`minutes`}</Col>
-                <Col>{`seconds`}</Col>
+                <Col>{`${updateHoursTimeString}`}</Col>
+                <Col>{`${updateMinutesTimeString}`}</Col>
+                <Col>{`${updateSecondsTimeString}`}</Col>
             </Row>
         </div>
     )
