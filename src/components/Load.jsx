@@ -25,7 +25,8 @@ const Load = () => {
             setMs(25)
         }).catch((error) => {
             resStatus = error.response.status
-            setMs(1000)
+            setMs(25)
+            console.log(resStatus)
         })
     }, [])
 
@@ -36,7 +37,7 @@ const Load = () => {
 
     if (percentage === 100 && resStatus === 200) {
         nav("/about")
-    } else if (percentage === 100 && resStatus === 404){
+    } else if (percentage === 100 && (resStatus === 404 || resStatus === 0)){
         nav("/error")
     }
 
