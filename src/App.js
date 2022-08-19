@@ -5,6 +5,8 @@ import { Route, Routes } from "react-router-dom";
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
+import axios from "axios";
+
 // Components that will be used as page routes
 import Load from "./components/Load.jsx";
 import Intro from "./components/Intro.jsx";
@@ -36,6 +38,10 @@ function App() {
       once: true,
     });
     AOS.refresh();
+
+    axios.get("http://localhost:3000").then((res) => {
+      console.log(res.status)
+    })
   }, []);
 
   return (
