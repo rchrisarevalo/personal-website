@@ -39,7 +39,7 @@ function App() {
     });
     AOS.refresh();
 
-    axios.get("http://localhost:3000").then((res) => {
+    axios.get("https://rchrisarevalo.github.io/personal-website").then((res) => {
       console.log(res.status)
     })
   }, []);

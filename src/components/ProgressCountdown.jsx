@@ -130,7 +130,6 @@ const ProgressCountdown = () => {
             // the number of previous hours.
             if (new Date().getMinutes() === 59 && new Date().getSeconds() === 59) {
                 setPrevTime(prevTime + 1)
-                setUpdateHoursLeft(parseInt(updateHoursLeft) - 1)
             }
         }
 

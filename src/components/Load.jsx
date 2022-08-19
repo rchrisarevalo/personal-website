@@ -26,7 +26,6 @@ const Load = () => {
         }).catch((error) => {
             resStatus = error.response.status
             setMs(25)
-            console.log(resStatus)
         })
     }, [])
 
