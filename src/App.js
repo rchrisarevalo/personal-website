@@ -53,7 +53,7 @@ function App() {
         <Route index path="/" element={<Load />} />
         <Route path="/about" element={<Intro />} />
         <Route path="/announcements" element={<Posts />} />
-        <Route path="/announcements/posts" element={<PostsAdmin />} />
+        {/* <Route path="/announcements/posts" element={<PostsAdmin />} /> */}
         <Route path="/contact" element={<Contact />} />
         <Route path="/archives" element={<Archives />} />
 
@@ -72,7 +72,7 @@ function App() {
         {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/May" element={<May2022Posts />} />}
         {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/June" element={<June2022Posts />} />}
         {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/July" element={<July2022Posts />} />}
-        {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/August" element={<August2022Posts />} />}
+        {/* {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/August" element={<August2022Posts />} />} */}
 
         <Route path="/settings" element={<Settings />} />
         <Route path="/policies/site-operation" element={<WebsiteOperation />} />
