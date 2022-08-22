@@ -11,6 +11,7 @@ import axios from "axios";
 import Load from "./components/Load.jsx";
 import Intro from "./components/Intro.jsx";
 import Posts from "./components/Posts.jsx";
+import PostsAdmin from './components/database/PostsAdmin.jsx';
 import August2021Posts from "./components/2021 Posts Components/August2021Posts.jsx";
 import September2021Posts from "./components/2021 Posts Components/September2021Posts.jsx";
 import October2021Posts from "./components/2021 Posts Components/October2021Posts.jsx";
@@ -23,6 +24,7 @@ import April2022Posts from './components/2022 Posts Components/April2022Posts.js
 import May2022Posts from './components/2022 Posts Components/May2022Posts.jsx';
 import June2022Posts from './components/2022 Posts Components/June2022Posts.jsx'
 import July2022Posts from './components/2022 Posts Components/July2022Posts.jsx';
+import August2022Posts from './components/2022 Posts Components/August2022Posts.jsx';
 import Contact from './components/Contact.jsx';
 import Archives from "./components/Archives.jsx";
 import Settings from "./components/Settings.jsx";
@@ -51,6 +53,7 @@ function App() {
         <Route index path="/" element={<Load />} />
         <Route path="/about" element={<Intro />} />
         <Route path="/announcements" element={<Posts />} />
+        <Route path="/announcements/posts" element={<PostsAdmin />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/archives" element={<Archives />} />
 
@@ -69,6 +72,7 @@ function App() {
         {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/May" element={<May2022Posts />} />}
         {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/June" element={<June2022Posts />} />}
         {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/July" element={<July2022Posts />} />}
+        {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/August" element={<August2022Posts />} />}
 
         <Route path="/settings" element={<Settings />} />
         <Route path="/policies/site-operation" element={<WebsiteOperation />} />
