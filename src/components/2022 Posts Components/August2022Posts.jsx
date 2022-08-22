@@ -1,15 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
+
+import { IoArrowBackCircleOutline } from "react-icons/io5";
 
 import axios from "axios";
-import db from "./database/posts.json"
+import db from "../database/posts.json"
 
-const CurrentPosts = () => {
+import NavArchives from "../../NavArchives.jsx";
+import NewFooter from "../../NewFooter.jsx";
+
+const August2022Posts = () => {
 
     const [currentPostNum, setCurrentPostNum] = useState(0)
     const [prevPostNum, setPrevPostNum] = useState(currentPostNum)
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+
         axios.get("https://rchrisarevalo.github.io/posts.json", db.post).then((res) => {
             setPrevPostNum(db.post.length)
             setCurrentPostNum(db.post.length)
@@ -109,27 +117,36 @@ const CurrentPosts = () => {
                 setPrevPostNum(parseInt(prevPostNum) + parseInt(1))
             }
         })
-    }, [])
+    }, []);
 
     return (
-        <div className="posts-container">
-            <h1 id="posts-title">Announcements</h1>
-            <br></br>
-            <p id="posts-description">
-                This is the page where I will be posting regular updates that are being made to this site.
-                Old announcements will be <b>archived</b> on the last day of each month. This means that after the
-                last day of each month has come to pass, then this whole page (minus the archive page) will
-                be wiped out completely and be replaced with announcements for the new month.
-            </p>
-            <p id="posts-description">
-                <i>
-                    To view past announcements, click on the link that will take you to the <Link to="/archives"><b>Archives</b></Link> page
-                    (or the link on the navigation bar). The Archives page gets updated every month for the duration of this Site.
-                </i>
-            </p>
-            <div id="post-catalogue"></div>
+        <div class="posts-main">
+            <Helmet>
+                <title>
+                    Ruben C. Arevalo - Personal Website - Announcements (July 2022)
+                </title>
+            </Helmet>
+            <NavArchives />
+            <div class="posts-container">
+                <Link to="/announcements/2022/June">
+                    <IoArrowBackCircleOutline
+                        id="posts-arrow-left"
+                        title="June 2022 Announcements"
+                        size="40px"
+                    />
+                </Link>
+                <h1 id="posts-title">Announcements (August 2022)</h1>
+                <br></br>
+                <p id="posts-description">
+                    These are all the posts for August 2022 that were archived on this
+                    page. None of these posts will be deleted or edited unless I decide
+                    otherwise.
+                </p>
+                <div id="post-catalogue"></div>
+            </div>
+            <NewFooter />
         </div>
-    )
-}
+    );
+};
 
-export default CurrentPosts;
+export default August2022Posts;

@@ -830,6 +830,14 @@ hr{
   margin-right: 15%;
 }
 
+#title-input{
+  padding: 7px 20px;
+}
+
+#post-input{
+  padding: 7px 20px;
+}
+
 #archive-message{
   margin-left: 15%;
   margin-right: 15%;

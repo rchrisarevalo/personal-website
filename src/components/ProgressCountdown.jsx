@@ -87,7 +87,7 @@ const ProgressCountdown = () => {
             setHours(hours)
             setMinutes(minutes + 1)
             setSeconds(0)
-            
+
             if (minutesLeft > 0 && minutesLeft <= 59) {
                 setMinutesLeft(minutesLeft - 1)
             }
@@ -95,13 +95,13 @@ const ProgressCountdown = () => {
             setMonth(month)
             setYear(year)
 
-          // Once the number of minutes reaches 60, 1 will be added to the number of hours
-          // while the number of seconds and minutes is set back to 0.
+            // Once the number of minutes reaches 60, 1 will be added to the number of hours
+            // while the number of seconds and minutes is set back to 0.
         } if (59 - new Date().getMinutes() === 59 && 59 - new Date().getSeconds() === 59) {
             setPrevTime(parseInt(prevTime) + 1)
             setUpdateHoursLeft(parseInt(updateHoursLeft) - 1)
             setMinutesLeft(59)
-            
+
             // If the number of previous hours are 0, then set update time left to 23 hours
             if (prevTime === 0) {
                 setUpdateHoursLeft(23)
@@ -169,11 +169,11 @@ const ProgressCountdown = () => {
 
         if (secondsLeft > 1 || (59 - new Date().getSeconds() === 0)) {
             setUpdateSecondsString("seconds")
-        } 
+        }
         if (59 - new Date().getSeconds() === 1) {
             setUpdateSecondsString("second")
         }
-        
+
     }, 1000)
 
     setTimeout(() => {
@@ -210,6 +210,7 @@ const ProgressCountdown = () => {
                 <Col>{`${updateMinutesTimeString}`}</Col>
                 <Col>{`${updateSecondsTimeString}`}</Col>
             </Row>
+            <br></br>
         </div>
     )
 }
