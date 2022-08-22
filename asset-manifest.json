@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.f7d4c7af.css",
-    "main.js": "/personal-website/static/js/main.7e702cfc.js",
+    "main.css": "/personal-website/static/css/main.3a72a708.css",
+    "main.js": "/personal-website/static/js/main.2c683a18.js",
     "static/js/27.a26b8b2c.chunk.js": "/personal-website/static/js/27.a26b8b2c.chunk.js",
     "static/media/Dec 5 2021.JPEG": "/personal-website/static/media/Dec 5 2021.9ec8e141599cfdeeb424.JPEG",
     "static/media/SKYMAY2022.JPEG": "/personal-website/static/media/SKYMAY2022.a95844793116034c5c57.JPEG",
@@ -18,7 +18,7 @@
     "index.html": "/personal-website/index.html"
   },
   "entrypoints": [
-    "static/css/main.f7d4c7af.css",
-    "static/js/main.7e702cfc.js"
+    "static/css/main.3a72a708.css",
+    "static/js/main.2c683a18.js"
   ]
 }
