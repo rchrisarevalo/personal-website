@@ -4,8 +4,6 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import PostEnter from './database/PostEnter.jsx';
-
 var num_days = 0;
 var num_hours = 0;
 var days_passed;
