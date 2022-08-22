@@ -1,7 +1,116 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import axios from "axios";
+import db from "./database/posts.json"
+
 const CurrentPosts = () => {
+
+    const [currentPostNum, setCurrentPostNum] = useState(0)
+    const [prevPostNum, setPrevPostNum] = useState(currentPostNum)
+
+    useEffect(() => {
+        axios.get("https://rchrisarevalo.github.io/posts.json", db.post).then((res) => {
+            setPrevPostNum(db.post.length)
+            setCurrentPostNum(db.post.length)
+            console.log("Previous post number: ", prevPostNum)
+            console.log("Current post number: ", currentPostNum)
+            if (currentPostNum === prevPostNum) {
+                for (var i = db.post.length - 1; i >= 0; i--) {
+                    if (db.post[i].month === 8) {
+                        var grandparentDiv = document.getElementById("post-catalogue")
+                        var parentDiv;
+                        var childDiv;
+                        var childDiv2Text;
+                        parentDiv = document.createElement('div')
+                        childDiv = document.createElement('p')
+
+                        childDiv2Text = document.createElement('p')
+                        childDiv2Text.textContent = db.post[i].title
+                        childDiv2Text.style.fontSize = '14px'
+                        childDiv2Text.style.fontStyle = 'italic'
+                        childDiv2Text.style.textAlign = 'left'
+                        childDiv2Text.margin = '.7em'
+
+                        childDiv.textContent = db.post[i].postContent
+                        childDiv.style.fontSize = '16.5px'
+                        childDiv.style.margin = '2em'
+                        childDiv.style.textAlign = 'left'
+
+                        childDiv2Text.setAttribute('id', 'post-info-recent')
+                        childDiv.setAttribute('id', 'post-content')
+
+                        parentDiv.style.background = '#3a3a3a'
+                        parentDiv.style.boxShadow = '0 0 4px black'
+                        parentDiv.style.fontWeight = '200'
+                        parentDiv.style.color = 'white'
+                        parentDiv.style.borderRadius = '5px'
+                        parentDiv.style.margin = '2em'
+                        parentDiv.style.textAlign = 'left'
+                        parentDiv.style.marginLeft = '10%'
+                        parentDiv.style.marginRight = '10%'
+                        parentDiv.style.paddingTop = '10px'
+                        parentDiv.style.paddingBottom = '12px'
+                        parentDiv.style.fontSize = '16.5px'
+
+                        parentDiv.style.marginBottom = '50px'
+                        parentDiv.style.marginTop = '50px'
+
+                        parentDiv.appendChild(childDiv2Text)
+                        parentDiv.appendChild(childDiv)
+                        parentDiv.setAttribute('id', `post${i}`)
+                        parentDiv.setAttribute('class', 'post')
+                        grandparentDiv.appendChild(parentDiv)
+                    }
+                    setPrevPostNum(db.post.length)
+                    setCurrentPostNum(db.post.length + 1)
+                }
+            }
+            else if (currentPostNum > prevPostNum) {
+                parentDiv = document.createElement('div')
+                childDiv = document.createElement('p')
+
+                console.log("This works!")
+
+                childDiv2Text = document.createElement('p')
+                childDiv2Text.textContent = db.post[currentPostNum - 1].title
+                childDiv2Text.style.fontSize = '14px'
+                childDiv2Text.style.fontStyle = 'italic'
+                childDiv2Text.style.textAlign = 'left'
+                childDiv2Text.margin = '.7em'
+
+                childDiv.textContent = db.post[currentPostNum - 1].postContent
+                childDiv.style.fontSize = '16.5px'
+                childDiv.style.margin = '2em'
+                childDiv.style.textAlign = 'left'
+
+                childDiv2Text.setAttribute('id', 'post-info-recent')
+                childDiv.setAttribute('id', 'post-content')
+
+                parentDiv.style.background = '#3a3a3a'
+                parentDiv.style.boxShadow = '0 0 4px black'
+                parentDiv.style.fontWeight = '200'
+                parentDiv.style.color = 'white'
+                parentDiv.style.borderRadius = '5px'
+                parentDiv.style.margin = '2em'
+                parentDiv.style.textAlign = 'left'
+                parentDiv.style.marginLeft = '10%'
+                parentDiv.style.marginRight = '10%'
+                parentDiv.style.paddingTop = '10px'
+                parentDiv.style.paddingBottom = '12px'
+                parentDiv.style.fontSize = '16.5px'
+                parentDiv.style.marginBottom = '50px'
+                parentDiv.style.marginTop = '50px'
+
+                parentDiv.appendChild(childDiv2Text)
+                parentDiv.appendChild(childDiv)
+                parentDiv.setAttribute('id', `post${currentPostNum - 1}`)
+                document.getElementById("post-catalogue").insertBefore(parentDiv, document.getElementById(`post${currentPostNum - 2}`))
+                setPrevPostNum(parseInt(prevPostNum) + parseInt(1))
+            }
+        })
+    }, [])
+
     return (
         <div className="posts-container">
             <h1 id="posts-title">Announcements</h1>
@@ -18,109 +127,7 @@ const CurrentPosts = () => {
                     (or the link on the navigation bar). The Archives page gets updated every month for the duration of this Site.
                 </i>
             </p>
-            <div className="post" id="post-margin">
-                <p id="post-info">
-                    By: Ruben Christopher Arevalo. Posted on 08/14/2022, 4:11 PM.
-                </p>
-                <p id="post-content">
-                    I'll let y'all know when it is ready so that way, everything comes out the way it is supposed to.
-                    There will still be bugs, but at a reduced level. That is everything for today. Thank y'all for your
-                    patience and have a wonderful Sunday!
-                </p>
-            </div>
-            <div className="post" id="post-margin">
-                <p id="post-info">
-                    By: Ruben Christopher Arevalo. Posted on 08/14/2022, 4:11 PM.
-                </p>
-                <p id="post-content">
-                    More fixes will be included in the next week or the following week, with more focus being put in
-                    how long has it been since the previous update, as the section does not take minutes into consideration.
-                </p>
-            </div>
-            <div className="post" id="post-margin">
-                <p id="post-info">
-                    By: Ruben Christopher Arevalo. Posted on 08/14/2022, 4:11 PM.
-                </p>
-                <p id="post-content">
-                    Good afternoon. I am writing this to announce that I have made a few changes to the progress countdown
-                    section in the "About Me" page. Some of these changes include fixing when the counter should update, as well
-                    as upgrading the design of the progress countdown feature itself.
-                </p>
-            </div>
-            <div className="post" id="post-margin">
-                <p id="post-info">
-                    By: Ruben Christopher Arevalo. Posted on 08/13/2022, 2:01 PM.
-                </p>
-                <p id="post-content">
-                    That will be it for today. I hope you all have a wonderful weekend, and please stay safe, everyone!
-                </p>
-            </div>
-            <div className="post" id="post-margin">
-                <p id="post-info">
-                    By: Ruben Christopher Arevalo. Posted on 08/13/2022, 2:01 PM.
-                </p>
-                <p id="post-content">
-                    In other news, I have been gone for over a week, mainly due to college. Since I am about to approach the end of my semester,
-                    I will only have a week left of break before the new Fall semester starts at the end of the month. That means I will try to
-                    make any necessary changes and bug fixes that affect this website.
-                </p>
-            </div>
-            <div className="post" id="post-margin">
-                <p id="post-info">
-                    By: Ruben Christopher Arevalo. Posted on 08/13/2022, 2:01 PM.
-                </p>
-                <p id="post-content">
-                    Good afternoon, y'all! Since last night, I made a few tweaks to the website. One of these features includes adding an automatic redirect feature
-                    that will take you back to a previous page in 5 seconds if y'all ended up in the Error 404 page.
-                </p>
-            </div>
-            <div className="post" id="post-margin">
-                <p id="post-info">
-                    By: Ruben Christopher Arevalo. Posted on 08/05/2022, 2:34 PM.
-                </p>
-                <p id="post-content">
-                    That's all I wanted to announce for today, as it is only a change to the way the Save button
-                    works when, again, making changes to the settings in the 'Settings' page. Thank you and have
-                    a wonderful weekend, y'all!
-                </p>
-            </div>
-            <div className="post" id="post-margin">
-                <p id="post-info">
-                    By: Ruben Christopher Arevalo. Posted on 08/05/2022, 2:34 PM.
-                </p>
-                <p id="post-content">
-                    In addition, when making the change and selecting the original setting that was either pre-configured by
-                    default or by yourself, the Save button will be disabled until you select a different one.
-                </p>
-            </div>
-            <div className="post" id="post-margin">
-                <p id="post-info">
-                    By: Ruben Christopher Arevalo. Posted on 08/05/2022, 2:34 PM.
-                </p>
-                <p id="post-content">
-                    Good afternoon, everyone. I am writing this to announce that I made a few upgrades when saving changes
-                    in the 'Settings' page. When clicking the 'Save' button without actually making any changes to it will
-                    return an error message saying that you have to make them before clicking on the Save button once more.
-                </p>
-            </div>
-            <div className="post" id="post-margin">
-                <p id="post-info">
-                    By: Ruben Christopher Arevalo. Posted on 08/01/2022, 12:00 AM.
-                </p>
-                <p id="post-content">
-                    That will be everything for the evening. Thank you and have a wonderful evening and great
-                    rest of the day!
-                </p>
-            </div>
-            <div className="post" id="post-margin">
-                <p id="post-info">
-                    By: Ruben Christopher Arevalo. Posted on 08/01/2022, 12:00 AM.
-                </p>
-                <p id="post-content">
-                    Good evening, everyone! Like other months before, this will be the very first announcement of
-                    August! I am looking forward to what improvements can be made to this website!
-                </p>
-            </div>
+            <div id="post-catalogue"></div>
         </div>
     )
 }
