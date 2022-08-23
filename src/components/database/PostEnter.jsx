@@ -29,20 +29,20 @@ const PostEnter = () => {
             if (new Date().getHours() >= 0 && new Date().getHours() <= 9) {
                 if (new Date().getMinutes() >= 0 && new Date().getMinutes() <= 9) {
                     hourString = `0${hour}:0${new Date().getMinutes()} AM`
-                } else {
+                } else if (new Date().getHours() >= 10 && new Date().getMinutes() <= 59){
                     hourString = `0${hour}:${new Date().getMinutes()} AM`
                 }
             } else if (new Date().getHours() >= 10 && new Date().getHours() <= 11) {
                 if (new Date().getMinutes() >= 0 && new Date().getMinutes() <= 9) {
-                    hourString = `0${hour}:0${new Date().getMinutes()} AM`
+                    hourString = `${hour}:0${new Date().getMinutes()} AM`
                 } else {
-                    hourString = `0${hour}:${new Date().getMinutes()} AM`
+                    hourString = `${hour}:${new Date().getMinutes()} AM`
                 }
             } else if (new Date().getHours() >= 12) {
                 if (new Date().getMinutes() >= 0 && new Date().getMinutes() <= 9) {
-                    hourString = `0${hour}:0${new Date().getMinutes()} PM`
+                    hourString = `${hour}:0${new Date().getMinutes()} PM`
                 } else {
-                    hourString = `0${hour}:${new Date().getMinutes()} PM`
+                    hourString = `${hour}:${new Date().getMinutes()} PM`
                 }
             } else if (new Date().getHours() >= 13 && new Date().getHours() <= 21) {
                 if (new Date().getMinutes() >= 0 && new Date().getMinutes() <= 9) {
@@ -52,9 +52,9 @@ const PostEnter = () => {
                 }
             } else if (new Date().getHours() >= 22 && new Date().getHours() <= 23) {
                 if (new Date().getMinutes() >= 0 && new Date().getMinutes() <= 9) {
-                    hourString = `0${hour}:0${new Date().getMinutes()} PM`
+                    hourString = `${hour}:0${new Date().getMinutes()} PM`
                 } else {
-                    hourString = `0${hour}:${new Date().getMinutes()} PM`
+                    hourString = `${hour}:${new Date().getMinutes()} PM`
                 }
             }
         }
