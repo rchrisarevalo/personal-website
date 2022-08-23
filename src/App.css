@@ -724,6 +724,11 @@ hr{
   margin: 2em;
 }
 
+#posts-catalogue{
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
 .posts-container{
   margin: 1.5em;
   padding-top: 60px;
