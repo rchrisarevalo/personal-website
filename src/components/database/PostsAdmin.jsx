@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import db from "./posts.json"
@@ -13,15 +14,14 @@ var hours_12_system = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5,
 var hour = 0
 var hourString = ''
 
-const PostsAdmin = () => {
-
+const PostEnter = () => {
     const [id, setID] = useState(0)
     const [currentIdx, setCurrentIdx] = useState(0)
     const [postStatus, setPostStatus] = useState(false)
 
     var totalIndex = db.post.length - 1;
 
-    setInterval(() => {
+    setTimeout(() => {
         for (var i = 0; i < hours_23_system.length; i++) {
             if (new Date().getHours() === hours_23_system[i]) {
                 hour = hours_12_system[i]
@@ -30,20 +30,20 @@ const PostsAdmin = () => {
             if (new Date().getHours() >= 0 && new Date().getHours() <= 9) {
                 if (new Date().getMinutes() >= 0 && new Date().getMinutes() <= 9) {
                     hourString = `0${hour}:0${new Date().getMinutes()} AM`
-                } else {
+                } else if (new Date().getHours() >= 10 && new Date().getMinutes() <= 59){
                     hourString = `0${hour}:${new Date().getMinutes()} AM`
                 }
             } else if (new Date().getHours() >= 10 && new Date().getHours() <= 11) {
                 if (new Date().getMinutes() >= 0 && new Date().getMinutes() <= 9) {
-                    hourString = `0${hour}:0${new Date().getMinutes()} AM`
+                    hourString = `${hour}:0${new Date().getMinutes()} AM`
                 } else {
-                    hourString = `0${hour}:${new Date().getMinutes()} AM`
+                    hourString = `${hour}:${new Date().getMinutes()} AM`
                 }
             } else if (new Date().getHours() >= 12) {
                 if (new Date().getMinutes() >= 0 && new Date().getMinutes() <= 9) {
-                    hourString = `0${hour}:0${new Date().getMinutes()} PM`
+                    hourString = `${hour}:0${new Date().getMinutes()} PM`
                 } else {
-                    hourString = `0${hour}:${new Date().getMinutes()} PM`
+                    hourString = `${hour}:${new Date().getMinutes()} PM`
                 }
             } else if (new Date().getHours() >= 13 && new Date().getHours() <= 21) {
                 if (new Date().getMinutes() >= 0 && new Date().getMinutes() <= 9) {
@@ -53,13 +53,12 @@ const PostsAdmin = () => {
                 }
             } else if (new Date().getHours() >= 22 && new Date().getHours() <= 23) {
                 if (new Date().getMinutes() >= 0 && new Date().getMinutes() <= 9) {
-                    hourString = `0${hour}:0${new Date().getMinutes()} PM`
+                    hourString = `${hour}:0${new Date().getMinutes()} PM`
                 } else {
-                    hourString = `0${hour}:${new Date().getMinutes()} PM`
+                    hourString = `${hour}:${new Date().getMinutes()} PM`
                 }
             }
         }
-        console.log(hourString)
     }, 1000)
 
     useEffect(() => {
@@ -181,7 +180,7 @@ const PostsAdmin = () => {
 
         if (post_input !== "") {
             axios.post("http://localhost:8000/post", {
-                title: `By: Ruben Christopher Arevalo. Posted on 0${new Date().getMonth() + 1}/${new Date().getDate()}/${new Date().getFullYear()}, ${hourString}`,
+                title: `By: Ruben Christopher Arevalo. Posted on ${new Date().getMonth() + 1}/${new Date().getDate()}/${new Date().getFullYear()}, ${hourString}.`,
                 postContent: post_input,
                 month: new Date().getMonth() + 1,
                 date: new Date().getDate(),
@@ -222,7 +221,6 @@ const PostsAdmin = () => {
             <div id="post-catalogue"></div>
         </div>
     )
-    
 }
 
-export default PostsAdmin;
+export default PostEnter;
