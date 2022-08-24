@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import db from "./posts.json"
@@ -179,7 +180,7 @@ const PostEnter = () => {
 
         if (post_input !== "") {
             axios.post("http://localhost:8000/post", {
-                title: `By: Ruben Christopher Arevalo. Posted on 0${new Date().getMonth() + 1}/${new Date().getDate()}/${new Date().getFullYear()}, ${hourString}`,
+                title: `By: Ruben Christopher Arevalo. Posted on ${new Date().getMonth() + 1}/${new Date().getDate()}/${new Date().getFullYear()}, ${hourString}.`,
                 postContent: post_input,
                 month: new Date().getMonth() + 1,
                 date: new Date().getDate(),
