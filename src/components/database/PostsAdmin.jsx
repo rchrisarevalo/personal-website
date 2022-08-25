@@ -219,7 +219,7 @@ const PostEnter = () => {
         var endMinute = document.getElementById("endMinute").value
 
         if (updateMsgInput !== "" && beginMonth !== "" && beginDate !== "" && beginYear !== "" && endMonth !== "" && endDate !== "" && endYear !== "") {
-            axios.put("http://localhost:8000", {
+            axios.put("http://localhost:7000", {
                 updateMessageText: updateMsgInput,
                 beginMonth: beginMonth,
                 beginDate: beginDate,
