@@ -30,7 +30,7 @@ const PostEnter = () => {
             if (new Date().getHours() >= 0 && new Date().getHours() <= 9) {
                 if (new Date().getMinutes() >= 0 && new Date().getMinutes() <= 9) {
                     hourString = `0${hour}:0${new Date().getMinutes()} AM`
-                } else if (new Date().getHours() >= 10 && new Date().getMinutes() <= 59){
+                } else if (new Date().getHours() >= 10 && new Date().getMinutes() <= 59) {
                     hourString = `0${hour}:${new Date().getMinutes()} AM`
                 }
             } else if (new Date().getHours() >= 10 && new Date().getHours() <= 11) {
@@ -116,10 +116,6 @@ const PostEnter = () => {
                     console.log(res)
                     totalPosts++;
                     setCurrentIdx(totalPosts)
-
-                    if (db.post[i].month === 9) {
-                        console.log("Current month: ", i)
-                    }
                 }
                 console.log(currentIdx)
             } else if (postStatus === true) {
@@ -195,30 +191,108 @@ const PostEnter = () => {
         }
     }
     function deletePost() {
-        setID(id + 1)
-        axios.delete(`http://localhost:8000/post/${id}`).then((res) => {
-            console.log(res)
-        })
+        var postID = document.getElementById("postid").value
 
-        if (db.post.length === 0)
-            setID(1)
+        axios.delete(`http://localhost:8000/post/${postID}`).then((res) => {
+            console.log(res)
+            console.log(`Post ${postID} successfully deleted!`)
+        }).catch((error) => {
+            console.log(error)
+            console.log(`Post ${postID} either failed to delete or was not found.`)
+        })
+    }
+
+    function updateNewsMessage() {
+        var updateMsgInput = document.getElementById("update-msg-input").value
+
+        var beginMonth = document.getElementById("beginMonth").value
+        var beginDate = document.getElementById("beginDate").value
+        var beginYear = document.getElementById("beginYear").value
+
+        var endMonth = document.getElementById("endMonth").value
+        var endDate = document.getElementById("endDate").value
+        var endYear = document.getElementById("endYear").value
+
+        var beginHour = document.getElementById("beginHour").value
+        var beginMinute = document.getElementById("beginMinute").value
+        var endHour = document.getElementById("endHour").value
+        var endMinute = document.getElementById("endMinute").value
+
+        if (updateMsgInput !== "" && beginMonth !== "" && beginDate !== "" && beginYear !== "" && endMonth !== "" && endDate !== "" && endYear !== "") {
+            axios.put("http://localhost:7000/update/1", {
+                updateMessageText: updateMsgInput,
+                beginMonth: beginMonth,
+                beginDate: beginDate,
+                beginYear: beginYear,
+                endMonth: endMonth,
+                endDate: endDate,
+                endYear: endYear,
+                beginHour: beginHour,
+                beginMinute: beginMinute,
+                endHour: endHour,
+                endMinute: endMinute
+            }).then((res) => {
+                console.log(res);
+            }).catch((error) => {
+                console.log(error);
+            })
+        }
     }
 
     return (
         <div className="postInputContainer">
+            <h2>Posts input</h2>
+            <br></br>
             <textarea placeholder="Write your post" id="post-input" rows="10" cols="36"></textarea>
             <br></br>
             <br></br>
             <form>
                 <button onClick={writePost}>Create Post</button>
                 <br></br>
-                <button onClick={deletePost}>Clear</button>
+                <br></br>
+                <input placeholder="Enter id number of post to delete" size="40" id="postid"></input>
+                <br></br>
+                <br></br>
+                <button onClick={deletePost}>Delete Post</button>
                 <br></br>
             </form>
             <br></br>
             <br></br>
-            <h2><u><b>Posts</b></u></h2>
-            <div id="post-catalogue"></div>
+            <hr></hr>
+            <br></br>
+            <br></br>
+            <h2>Update message input</h2>
+            <br></br>
+            <form>
+                <textarea placeholder="Write new update message..." id="update-msg-input" rows="10" cols="36"></textarea>
+                <br></br>
+                <label>Begin date:</label>
+                <br></br>
+                <input placeholder="Enter month number: " id="beginMonth"></input>
+                <br></br>
+                <input placeholder="Enter month date:" id="beginDate"></input>
+                <br></br>
+                <input placeholder="Enter year:" id="beginYear"></input>
+                <br></br>
+                <br></br>
+                <label>End date:</label>
+                <br></br>
+                <input placeholder="Enter month number: " id="endMonth"></input>
+                <br></br>
+                <input placeholder="Enter month date:" id="endDate"></input>
+                <br></br>
+                <input placeholder="Enter year:" id="endYear"></input>
+                <br></br>
+                <br></br>
+                <label>At what time: <input id="beginHour"></input>:<input id="beginMinute"></input> to <input id="endHour"></input>:<input id="endMinute"></input></label>
+                <br></br>
+                <br></br>
+                <br></br>
+                <button onClick={updateNewsMessage}>Update message</button>
+                <br></br>
+                <br></br>
+                <button type="reset">Clear form</button>
+            </form>
         </div>
     )
 }
