@@ -175,7 +175,7 @@ const PostEnter = () => {
         post_input = document.getElementById("post-input").value
 
         if (post_input !== "") {
-            axios.post("https://rchrisarevalo.github.io/posts.json", {
+            axios.post("http://localhost:8000", {
                 title: `By: Ruben Christopher Arevalo. Posted on ${new Date().getMonth() + 1}/${new Date().getDate()}/${new Date().getFullYear()}, ${hourString}.`,
                 postContent: post_input,
                 month: new Date().getMonth() + 1,
@@ -193,7 +193,7 @@ const PostEnter = () => {
     function deletePost() {
         var postID = document.getElementById("postid").value
 
-        axios.delete(`https://localhost:8000/post/${postID}`).then((res) => {
+        axios.delete(`http://localhost:8000/post/${postID}`).then((res) => {
             console.log(res)
             console.log(`Post ${postID} successfully deleted!`)
         }).catch((error) => {
@@ -219,7 +219,7 @@ const PostEnter = () => {
         var endMinute = document.getElementById("endMinute").value
 
         if (updateMsgInput !== "" && beginMonth !== "" && beginDate !== "" && beginYear !== "" && endMonth !== "" && endDate !== "" && endYear !== "") {
-            axios.put("https://rchrisarevalo.github.io/update.json", {
+            axios.put("http://localhost:8000", {
                 updateMessageText: updateMsgInput,
                 beginMonth: beginMonth,
                 beginDate: beginDate,
