@@ -41,8 +41,10 @@ function App() {
     });
     AOS.refresh();
 
-    axios.get("https://rchrisarevalo.netlify.app").then((res) => {
+    axios.get("https://rchrisarevalo.github.io/personal-website").then((res) => {
       console.log(res.status)
+    }).catch((error) => {
+      console.log(error.status)
     })
   }, []);
 
@@ -53,7 +55,7 @@ function App() {
         <Route index path="/" element={<Load />} />
         <Route path="/about" element={<Intro />} />
         <Route path="/announcements" element={<Posts />} />
-        <Route path="/TJAoxWjIod" element={<PostsAdmin />} />
+        {/* <Route path="/TJAoxWjIod" element={<PostsAdmin />} /> */}
         <Route path="/contact" element={<Contact />} />
         <Route path="/archives" element={<Archives />} />
 
