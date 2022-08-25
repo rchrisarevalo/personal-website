@@ -14,8 +14,8 @@ const RecentPosts = () => {
         axios.get("https://rchrisarevalo.github.io/posts.json", db.post).then((res) => {
             setPrevPostNum(db.post.length)
             setCurrentPostNum(db.post.length)
-            console.log("Previous post number: ", prevPostNum)
-            console.log("Current post number: ", currentPostNum)
+            // console.log("Previous post number: ", prevPostNum)
+            // console.log("Current post number: ", currentPostNum)
             if (currentPostNum === prevPostNum) {
                 for (var i = db.post.length - 1; i >= db.post.length - 3; i--) {
                     var grandparentDiv = document.getElementById("post-catalogue")
@@ -69,7 +69,7 @@ const RecentPosts = () => {
                 parentDiv = document.createElement('div')
                 childDiv = document.createElement('p')
 
-                console.log("This works!")
+                // console.log("This works!")
 
                 childDiv2Text = document.createElement('p')
                 childDiv2Text.textContent = db.post[currentPostNum - 1].title
