@@ -43,7 +43,7 @@ var endMinute = 0;
 const Update = () => {
 
     useEffect(() => {
-        axios.get("http://localhost:7000/update").then((res) => {
+        axios.get("https://rchrisarevalo.github.io/update.json").then((res) => {
             message = db.update[0].updateMessageText;
             beginDate = db.update[0].beginDate;
             beginMonth = db.update[0].beginMonth;
