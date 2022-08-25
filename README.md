@@ -1,14 +1,17 @@
-# Personal Website (v3.4.0)
+# Personal Website (v3.5.0)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on August 5, 2022):
+# UPDATES (made on August 24, 2022):
 
-* I have made the following changes to the website:
-  * The way the 'Save' button works in the Settings page has been changed. Instead of receiving a success message when saving the page, it will deliver an error message when a change wasn't made. Even if selecting a new option and reverting back to the old one will disable the 'Save' button until the new change is selected.
-  * The background color of the modal messages in the Contact Me page will adjust according to the configured theme of the site (e.g., if the site is in dark mode, then the modals will be white, and vice versa).
-  * The loading icon was changed with a spinning wheel.
+* The following changes have been made to the site:
+  * Instead of manually adding a div element for each post, I used a combination of JSON files
+  and the Axios library to submit GET and POST requests when retrieving the information from
+  the JSON file in the database folder and when creating new posts, respectively.
+  * The same update applies to the Update Message that is displayed every once in a while.
+    * The availability of the Update Message box will be set from the administrator page, which
+    is available only when I activate it when I use VSCode.
 
 
 * I will continue to **make updates** whenever I have time, as I will get busy later on this month and in early August.
