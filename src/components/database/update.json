@@ -1,0 +1,18 @@
+{
+  "update": [
+    {
+      "updateMessageText": "This is a test message that will be displayed until tomorrow midnight.",
+      "beginMonth": "8",
+      "beginDate": "24",
+      "beginYear": "2022",
+      "endMonth": "8",
+      "endDate": "25",
+      "endYear": "2022",
+      "beginHour": "19",
+      "beginMinute": "42",
+      "endHour": "0",
+      "endMinute": "0",
+      "id": 1
+    }
+  ]
+}
