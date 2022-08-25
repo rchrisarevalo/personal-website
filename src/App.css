@@ -795,6 +795,15 @@ hr{
   font-size: 16.5px;
 }
 
+.postInputContainer{
+  text-align: center;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin: .7em;
+}
+
 .post{
   background: #3a3a3a;
   box-shadow: 0 0 4px black;
