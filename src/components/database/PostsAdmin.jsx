@@ -27,10 +27,17 @@ const PostEnter = () => {
                 hour = hours_12_system[i]
             }
 
-            if (new Date().getHours() >= 0 && new Date().getHours() <= 9) {
+            if (new Date().getHours() === 0){
+                if (new Date().getMinutes() >= 0 && new Date().getMinutes() <= 9) {
+                    hourString = `${hour}:0${new Date().getMinutes()} AM`
+                } else if (new Date().getMinutes() >= 10 && new Date().getMinutes() <= 59) {
+                    hourString = `${hour}:${new Date().getMinutes()} AM`
+                }
+            }
+            else if (new Date().getHours() >= 1 && new Date().getHours() <= 9) {
                 if (new Date().getMinutes() >= 0 && new Date().getMinutes() <= 9) {
                     hourString = `0${hour}:0${new Date().getMinutes()} AM`
-                } else if (new Date().getHours() >= 10 && new Date().getMinutes() <= 59) {
+                } else if (new Date().getMinutes() >= 10 && new Date().getMinutes() <= 59) {
                     hourString = `0${hour}:${new Date().getMinutes()} AM`
                 }
             } else if (new Date().getHours() >= 10 && new Date().getHours() <= 11) {
@@ -59,6 +66,7 @@ const PostEnter = () => {
                 }
             }
         }
+        console.log(hourString)
     }, 1000)
 
     useEffect(() => {
@@ -219,7 +227,7 @@ const PostEnter = () => {
         var endMinute = document.getElementById("endMinute").value
 
         if (updateMsgInput !== "" && beginMonth !== "" && beginDate !== "" && beginYear !== "" && endMonth !== "" && endDate !== "" && endYear !== "") {
-            axios.put("http://localhost:7000/update", {
+            axios.put("http://localhost:7000/update/1", {
                 updateMessageText: updateMsgInput,
                 beginMonth: beginMonth,
                 beginDate: beginDate,
