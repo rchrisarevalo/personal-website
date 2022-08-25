@@ -41,7 +41,7 @@ function App() {
     });
     AOS.refresh();
 
-    axios.get("https://rchrisarevalo.github.io/personal-website").then((res) => {
+    axios.get("https://rchrisarevalo.netlify.app").then((res) => {
       console.log(res.status)
     })
   }, []);
