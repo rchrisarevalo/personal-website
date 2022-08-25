@@ -175,7 +175,7 @@ const PostEnter = () => {
         post_input = document.getElementById("post-input").value
 
         if (post_input !== "") {
-            axios.post("http://localhost:8000", {
+            axios.post("http://localhost:8000/post", {
                 title: `By: Ruben Christopher Arevalo. Posted on ${new Date().getMonth() + 1}/${new Date().getDate()}/${new Date().getFullYear()}, ${hourString}.`,
                 postContent: post_input,
                 month: new Date().getMonth() + 1,
@@ -219,7 +219,7 @@ const PostEnter = () => {
         var endMinute = document.getElementById("endMinute").value
 
         if (updateMsgInput !== "" && beginMonth !== "" && beginDate !== "" && beginYear !== "" && endMonth !== "" && endDate !== "" && endYear !== "") {
-            axios.put("http://localhost:7000", {
+            axios.put("http://localhost:7000/update", {
                 updateMessageText: updateMsgInput,
                 beginMonth: beginMonth,
                 beginDate: beginDate,
