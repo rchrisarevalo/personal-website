@@ -177,9 +177,7 @@ const Intro = () => {
                 <title>Ruben C. Arevalo - Personal Website - About Me</title>
             </Helmet>
             <NavAbout />
-            {(Date.now() >= new Date(2022, 6, 16) && Date.now() <= new Date(2022, 6, 20)) && 
-                <Update />
-            }
+            <Update />
             <div className="intro-container" id="about">
                 <img src={profilepic} alt="profile-pic"></img>
                 <h1 data-aos="fade-down">About the Author</h1>
