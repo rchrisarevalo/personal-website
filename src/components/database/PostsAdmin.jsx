@@ -15,13 +15,12 @@ var hour = 0
 var hourString = ''
 
 const PostEnter = () => {
-    const [id, setID] = useState(0)
     const [currentIdx, setCurrentIdx] = useState(0)
     const [postStatus, setPostStatus] = useState(false)
 
     var totalIndex = db.post.length - 1;
 
-    setTimeout(() => {
+    setInterval(() => {
         for (var i = 0; i < hours_23_system.length; i++) {
             if (new Date().getHours() === hours_23_system[i]) {
                 hour = hours_12_system[i]
@@ -46,7 +45,7 @@ const PostEnter = () => {
                 } else {
                     hourString = `${hour}:${new Date().getMinutes()} AM`
                 }
-            } else if (new Date().getHours() >= 12) {
+            } else if (new Date().getHours() === 12) {
                 if (new Date().getMinutes() >= 0 && new Date().getMinutes() <= 9) {
                     hourString = `${hour}:0${new Date().getMinutes()} PM`
                 } else {
@@ -66,7 +65,6 @@ const PostEnter = () => {
                 }
             }
         }
-        console.log(hourString)
     }, 1000)
 
     useEffect(() => {
@@ -192,6 +190,7 @@ const PostEnter = () => {
             })
                 .then((res) => {
                     console.log(res.data.id)
+                    window.location.reload()
                 }).catch((error) => {
                     console.log(error)
                 })
@@ -249,7 +248,7 @@ const PostEnter = () => {
 
     return (
         <div className="postInputContainer">
-            <h2>Posts input</h2>
+            <h2>Posts input {`${new Date().getSeconds()}`}</h2>
             <br></br>
             <textarea placeholder="Write your post" id="post-input" rows="10" cols="36"></textarea>
             <br></br>
