@@ -34,7 +34,7 @@ const July2022Posts = () => {
                         size="40px"
                     />
                 </Link>
-                {Date.now() >= new Date(2022, 7, 31, 15, 44, 30) &&
+                {Date.now() >= new Date(2022, 8, 1, 0, 0, 0) &&
                     <Link to="/announcements/2022/August">
                         <IoArrowForwardCircleOutline
                             id="posts-arrow-right"
