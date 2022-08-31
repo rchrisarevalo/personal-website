@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Route, Routes } from "react-router-dom";
 import AOS from 'aos';
 import "aos/dist/aos.css";
@@ -36,6 +36,8 @@ import db from "./components/database/update.json";
 
 function App() {
 
+  const [dateState, setDateState] = useState(new Date())
+
   useEffect(() => {
     AOS.init({
       duration: 900,
@@ -49,6 +51,10 @@ function App() {
       console.log(error.status)
     })
   }, []);
+
+  setTimeout(() => {
+    setDateState(new Date())
+  })
 
   return (
     <div className="App">

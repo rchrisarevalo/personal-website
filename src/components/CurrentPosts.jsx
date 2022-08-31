@@ -8,6 +8,12 @@ const CurrentPosts = () => {
 
     const [currentPostNum, setCurrentPostNum] = useState(0)
     const [prevPostNum, setPrevPostNum] = useState(currentPostNum)
+    const [dateState, setDateState] = useState(new Date())
+
+    setTimeout(() => {
+        setDateState(new Date())
+        console.log("Date state: ", dateState)
+    }, 1000)
 
     useEffect(() => {
         axios.get("https://rchrisarevalo.github.io/posts.json", db.post).then((res) => {
@@ -120,7 +126,7 @@ const CurrentPosts = () => {
                 This is the page where I will be posting regular updates that are being made to this site.
                 Old announcements will be <b>archived</b> on the last day of each month. This means that after the
                 last day of each month has come to pass, then this whole page (minus the archive page) will
-                be wiped out completely and be replaced with announcements for the new month.
+                be wiped out completely and be replaced with announcements for the new month. 
             </p>
             <p id="posts-description">
                 <i>
