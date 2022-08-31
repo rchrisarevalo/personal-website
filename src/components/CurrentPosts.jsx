@@ -17,7 +17,7 @@ const CurrentPosts = () => {
             console.log("Current post number: ", currentPostNum)
             if (currentPostNum === prevPostNum) {
                 for (var i = db.post.length - 1; i >= 0; i--) {
-                    if (db.post[i].month === 8) {
+                    if (db.post[i].month === new Date().getMonth() + 1) {
                         var grandparentDiv = document.getElementById("post-catalogue")
                         var parentDiv;
                         var childDiv;
