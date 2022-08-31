@@ -36,8 +36,6 @@ import db from "./components/database/update.json";
 
 function App() {
 
-  const [dateState, setDateState] = useState(new Date())
-
   useEffect(() => {
     AOS.init({
       duration: 900,
@@ -51,10 +49,6 @@ function App() {
       console.log(error.status)
     })
   }, []);
-
-  setTimeout(() => {
-    setDateState(new Date())
-  })
 
   return (
     <div className="App">
