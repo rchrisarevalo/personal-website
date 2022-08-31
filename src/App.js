@@ -32,6 +32,8 @@ import WebsiteOperation from "./components/policies/WebsiteOperation.jsx";
 import ArchivePolicy from "./components/policies/ArchivePolicy.jsx";
 import Error404 from "./components/Error404.jsx";
 
+import db from "./components/database/update.json";
+
 function App() {
 
   useEffect(() => {
@@ -74,7 +76,9 @@ function App() {
         {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/May" element={<May2022Posts />} />}
         {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/June" element={<June2022Posts />} />}
         {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/July" element={<July2022Posts />} />}
-        {/* {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/August" element={<August2022Posts />} />} */}
+        {(Date.now() >= new Date(db.archive[0].beginYear, db.archive[0].beginMonth - 1, db.archive[0].beginDate, db.archive[0].beginHour, db.archive[0].beginMinute) && Date.now() <= new Date(db.archive[0].endYear, db.archive[0].endMonth - 1, db.archive[0].endDate, db.archive[0].endHour, db.archive[0].endMinute)) &&
+          <Route path="/announcements/2022/August" element={<August2022Posts />} />
+        }
 
         <Route path="/settings" element={<Settings />} />
         <Route path="/policies/site-operation" element={<WebsiteOperation />} />
