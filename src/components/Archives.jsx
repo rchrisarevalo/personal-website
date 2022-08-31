@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+
+import db from "./database/update.json";
 
 import NavArchives from "../NavArchives.jsx";
 import NewFooter from "../NewFooter.jsx";
@@ -19,6 +21,14 @@ const Archives = () => {
 
         window.scrollTo(0, 0);
     }, []);
+
+    const [seconds, setSeconds] = useState(new Date().getSeconds())
+    const [date, setDate] = useState(new Date())
+
+    setTimeout(() => {
+        setSeconds(new Date().getSeconds())
+        setDate(new Date())
+    }, 1000)
 
     return (
         <div className="archives-container">
@@ -68,6 +78,9 @@ const Archives = () => {
                         <li><Link to="/announcements/2022/May">May</Link></li>
                         <li><Link to="/announcements/2022/June">June</Link></li>
                         <li><Link to="/announcements/2022/July">July</Link></li>
+                        { (Date.now() >= new Date(db.archive[0].beginYear, db.archive[0].beginMonth - 1, db.archive[0].beginDate, db.archive[0].beginHour, db.archive[0].beginMinute) && Date.now() <= new Date(db.archive[0].endYear, db.archive[0].endMonth - 1, db.archive[0].endDate, db.archive[0].endHour, db.archive[0].endMinute)) &&
+                            <li><Link to="/announcements/2022/August">August</Link></li>
+                        } 
                     </div>
                     <br></br>
                     <br></br>
