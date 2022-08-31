@@ -22,7 +22,7 @@ const July2022Posts = () => {
         <div class="posts-main">
             <Helmet>
                 <title>
-                    Ruben C. Arevalo - Personal Website - Announcements (July 2022) {`${new Date().getSeconds()}`}
+                    Ruben C. Arevalo - Personal Website - Announcements (July 2022)
                 </title>
             </Helmet>
             <NavArchives />
