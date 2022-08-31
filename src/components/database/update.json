@@ -1,17 +1,32 @@
 {
   "update": [
     {
-      "updateMessageText": "Hi everyone. I want to let y'all know that I will be taking the rest of the week off to prepare for school on Monday. I need to rest and mentally prepare myself for the challenges that lie ahead. Until then, have a wonderful rest of the week everyone!",
+      "updateMessageText": "This is another test message that will be displayed for only 5 minutes.",
       "beginMonth": "8",
-      "beginDate": "25",
+      "beginDate": "31",
       "beginYear": "2022",
       "endMonth": "8",
-      "endDate": "29",
+      "endDate": "31",
       "endYear": "2022",
-      "beginHour": "1",
-      "beginMinute": "10",
-      "endHour": "6",
-      "endMinute": "0",
+      "beginHour": "11",
+      "beginMinute": "46",
+      "endHour": "11",
+      "endMinute": "51",
+      "id": 1
+    }
+  ],
+  "archive": [
+    {
+      "beginMonth": 9,
+      "beginDate": 1,
+      "beginYear": 2022,
+      "endMonth": 12,
+      "endDate": 31,
+      "endYear": 2025,
+      "beginHour": 0,
+      "beginMinute": 0,
+      "endHour": 23,
+      "endMinute": 59,
       "id": 1
     }
   ]
