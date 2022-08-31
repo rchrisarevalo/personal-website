@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
@@ -12,11 +12,17 @@ const July2022Posts = () => {
         window.scrollTo(0, 0);
     });
 
+    const [dateState, setDateState] = useState(new Date())
+
+    setTimeout(() => {
+        setDateState(new Date())
+    }, 1000)
+
     return (
         <div class="posts-main">
             <Helmet>
                 <title>
-                    Ruben C. Arevalo - Personal Website - Announcements (July 2022)
+                    Ruben C. Arevalo - Personal Website - Announcements (July 2022) {`${new Date().getSeconds()}`}
                 </title>
             </Helmet>
             <NavArchives />
@@ -28,13 +34,15 @@ const July2022Posts = () => {
                         size="40px"
                     />
                 </Link>
-                <Link to="/announcements/2022/August">
-                    <IoArrowBackCircleOutline
-                        id="posts-arrow-right"
-                        title="August 2022 Announcements"
-                        size="40px"
-                    />
-                </Link>
+                {Date.now() >= new Date(2022, 7, 31, 15, 44, 30) &&
+                    <Link to="/announcements/2022/August">
+                        <IoArrowForwardCircleOutline
+                            id="posts-arrow-right"
+                            title="August 2022 Announcements"
+                            size="40px"
+                        />
+                    </Link>
+                }
                 <h1 id="posts-title">Announcements (July 2022)</h1>
                 <br></br>
                 <p id="posts-description">
