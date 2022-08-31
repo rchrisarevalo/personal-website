@@ -33,7 +33,7 @@ if (birthday > current_date)
 } else {
     
 }
-var student_year = "third-year"
+var student_year = "fourth-year"
 
 function time_greeting() {
     var hour = new Date().getHours();
