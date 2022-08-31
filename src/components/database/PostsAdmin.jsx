@@ -246,9 +246,44 @@ const PostEnter = () => {
         }
     }
 
+    function setArchiveDate()
+    {
+        var beginMonth = document.getElementById("beginMonth").value
+        var beginDate = document.getElementById("beginDate").value
+        var beginYear = document.getElementById("beginYear").value
+
+        var endMonth = document.getElementById("endMonth").value
+        var endDate = document.getElementById("endDate").value
+        var endYear = document.getElementById("endYear").value
+
+        var beginHour = document.getElementById("beginHour").value
+        var beginMinute = document.getElementById("beginMinute").value
+        var endHour = document.getElementById("endHour").value
+        var endMinute = document.getElementById("endMinute").value
+
+        if (beginMonth !== "" && beginDate !== "" && beginYear !== "" && endMonth !== "" && endDate !== "" && endYear !== "") {
+            axios.put("http://localhost:7000/archive/1", {
+                beginMonth: parseInt(beginMonth),
+                beginDate: parseInt(beginDate),
+                beginYear: parseInt(beginYear),
+                endMonth: parseInt(endMonth),
+                endDate: parseInt(endDate),
+                endYear: parseInt(endYear),
+                beginHour: parseInt(beginHour),
+                beginMinute: parseInt(beginMinute),
+                endHour: parseInt(endHour),
+                endMinute: parseInt(endMinute)
+            }).then((res) => {
+                console.log(res);
+            }).catch((error) => {
+                console.log(error);
+            })
+        }
+    }
+
     return (
         <div className="postInputContainer">
-            <h2>Posts input {`${new Date().getSeconds()}`}</h2>
+            <h2>Posts input</h2>
             <br></br>
             <textarea placeholder="Write your post" id="post-input" rows="10" cols="36"></textarea>
             <br></br>
@@ -268,7 +303,7 @@ const PostEnter = () => {
             <hr></hr>
             <br></br>
             <br></br>
-            <h2>Update message input</h2>
+            <h2>Update message input/Set archive availability</h2>
             <br></br>
             <form>
                 <textarea placeholder="Write new update message..." id="update-msg-input" rows="10" cols="36"></textarea>
@@ -299,6 +334,9 @@ const PostEnter = () => {
                 <br></br>
                 <br></br>
                 <button type="reset">Clear form</button>
+                <br></br>
+                <br></br>
+                <button onClick={setArchiveDate}>Set archive availability</button>
             </form>
         </div>
     )
