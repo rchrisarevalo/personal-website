@@ -15,9 +15,12 @@ var resStatus = 0;
 const Load = () => {
 
     const [percentage, setPercentage] = useState(0)
+    const [dateState, setDateState] = useState(new Date())
     const milliseconds = 25
     const [ms, setMs] = useState(milliseconds)
     const nav = useNavigate();
+
+    console.log("Today's date: ", dateState);
 
     useEffect(() => {
         axios.get("https://rchrisarevalo.github.io/personal-website").then((res) => {
@@ -32,7 +35,8 @@ const Load = () => {
     // The state of the percentage will update each 50 ms.
     setTimeout(() => {
         setPercentage(percentage + 1)
-    }, ms)
+        setDateState(new Date())
+    }, 25)
 
     if (percentage === 100 && resStatus === 200) {
         nav("/about")
