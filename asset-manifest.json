@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.fc1ba26b.css",
-    "main.js": "/personal-website/static/js/main.5792c438.js",
+    "main.css": "/personal-website/static/css/main.ff1463bb.css",
+    "main.js": "/personal-website/static/js/main.aa809307.js",
     "static/js/27.a26b8b2c.chunk.js": "/personal-website/static/js/27.a26b8b2c.chunk.js",
-    "static/media/Dec 5 2021.JPEG": "/personal-website/static/media/Dec 5 2021.9ec8e141599cfdeeb424.JPEG",
-    "static/media/SKYMAY2022.JPEG": "/personal-website/static/media/SKYMAY2022.a95844793116034c5c57.JPEG",
-    "static/media/sky-palm-shot-november-2020.jpg": "/personal-website/static/media/sky-palm-shot-november-2020.085fb6c922e4194a5191.jpg",
-    "static/media/SKYFEB2022.JPEG": "/personal-website/static/media/SKYFEB2022.20f079b7419d7e24ae1a.JPEG",
-    "static/media/IMG-2012.jpg": "/personal-website/static/media/IMG-2012.461b3f53974c82f7e45d.jpg",
-    "static/media/sky-september-2020.jpg": "/personal-website/static/media/sky-september-2020.4a83c0aef68f869d2f2e.jpg",
-    "static/media/palm tree photo dec 2021.jpg": "/personal-website/static/media/palm tree photo dec 2021.f527b33ba175ca24eb77.jpg",
-    "static/media/look-website.png": "/personal-website/static/media/look-website.1d365c48149bfaa95eb7.png",
-    "static/media/sky-palm-march-2021.jpg": "/personal-website/static/media/sky-palm-march-2021.2d92c4cb8c8436de5727.jpg",
+    "static/media/work_8.jpg": "/personal-website/static/media/work_8.9ec8e141599cfdeeb424.jpg",
+    "static/media/work_11.jpg": "/personal-website/static/media/work_11.a95844793116034c5c57.jpg",
+    "static/media/work_4.jpg": "/personal-website/static/media/work_4.085fb6c922e4194a5191.jpg",
+    "static/media/work_10.jpg": "/personal-website/static/media/work_10.20f079b7419d7e24ae1a.jpg",
+    "static/media/work_9.jpg": "/personal-website/static/media/work_9.461b3f53974c82f7e45d.jpg",
+    "static/media/work_3.jpg": "/personal-website/static/media/work_3.4a83c0aef68f869d2f2e.jpg",
+    "static/media/work_7.jpg": "/personal-website/static/media/work_7.f527b33ba175ca24eb77.jpg",
+    "static/media/work_2.jpg": "/personal-website/static/media/work_2.1d365c48149bfaa95eb7.jpg",
+    "static/media/work_5.jpg": "/personal-website/static/media/work_5.2d92c4cb8c8436de5727.jpg",
     "static/media/June 2022 Profile Pic (Min).jpg": "/personal-website/static/media/June 2022 Profile Pic (Min).aa6c5fc71d4b86fc1da0.jpg",
-    "static/media/sky-palm-july2021.jpg": "/personal-website/static/media/sky-palm-july2021.c9d7133eeb87799029e1.jpg",
-    "static/media/cv-website-education.png": "/personal-website/static/media/cv-website-education.1f5c2914fed0bd8a8a28.png",
+    "static/media/work_6.jpg": "/personal-website/static/media/work_6.c9d7133eeb87799029e1.jpg",
+    "static/media/work_1.jpg": "/personal-website/static/media/work_1.1f5c2914fed0bd8a8a28.jpg",
     "index.html": "/personal-website/index.html"
   },
   "entrypoints": [
-    "static/css/main.fc1ba26b.css",
-    "static/js/main.5792c438.js"
+    "static/css/main.ff1463bb.css",
+    "static/js/main.aa809307.js"
   ]
 }
