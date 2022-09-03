@@ -1,59 +1,225 @@
-import React from "react";
-import thumb1 from './images/cv-website-education.png';
-import thumb2 from './images/look-website.png';
-import skyshot1 from './images/sky-september-2020.jpg';
-import skyshot2 from './images/sky-palm-shot-november-2020.jpg';
-import skyshot3 from './images/sky-palm-march-2021.jpg';
-import skyshot4 from './images/sky-palm-july2021.jpg';
-import skyshot5 from './images/palm tree photo dec 2021.jpg';
-import skyshot6 from './images/Dec 5 2021.JPEG';
-import skyshot7 from './images/IMG-2012.jpg';
-import skyshot8 from './images/SKYFEB2022.JPEG';
-import skyshot9 from './images/SKYMAY2022.JPEG';
+import React, { useState } from "react";
+import work1 from './images/work_1.jpg';
+import work2 from './images/work_2.jpg';
+import work3 from './images/work_3.jpg';
+import work4 from './images/work_4.jpg';
+import work5 from './images/work_5.jpg';
+import work6 from './images/work_6.jpg';
+import work7 from './images/work_7.jpg';
+import work8 from './images/work_8.jpg';
+import work9 from './images/work_9.jpg';
+import work10 from './images/work_10.jpg';
+import work11 from './images/work_11.jpg';
+
+import Modal from 'react-bootstrap/Modal';
+
+function handleImageClick()
+{
+    var work_image = document.getElementById("work")
+
+    work_image.style.pointerEvents = 'none'
+}
 
 const Works = () => {
+
+    const [showImg1, setShowImg1] = useState(false);
+    const [showImg2, setShowImg2] = useState(false);
+    const [showImg3, setShowImg3] = useState(false);
+    const [showImg4, setShowImg4] = useState(false);
+    const [showImg5, setShowImg5] = useState(false);
+    const [showImg6, setShowImg6] = useState(false);
+    const [showImg7, setShowImg7] = useState(false);
+    const [showImg8, setShowImg8] = useState(false);
+    const [showImg9, setShowImg9] = useState(false);
+    const [showImg10, setShowImg10] = useState(false);
+    const [showImg11, setShowImg11] = useState(false);
+
+    const handleClose1 = () => setShowImg1(false);
+    const handleOpen1 = () => setShowImg1(true);
+
+    const handleClose2 = () => setShowImg2(false);
+    const handleOpen2 = () => setShowImg2(true);
+
+    const handleClose3 = () => setShowImg3(false);
+    const handleOpen3 = () => setShowImg3(true);
+
+    const handleClose4 = () => setShowImg4(false);
+    const handleOpen4 = () => setShowImg4(true);
+
+    const handleClose5 = () => setShowImg5(false);
+    const handleOpen5 = () => setShowImg5(true);
+
+    const handleClose6 = () => setShowImg6(false);
+    const handleOpen6 = () => setShowImg6(true);
+
+    const handleClose7 = () => setShowImg7(false);
+    const handleOpen7 = () => setShowImg7(true);
+
+    const handleClose8 = () => setShowImg8(false);
+    const handleOpen8 = () => setShowImg8(true);
+
+    const handleClose9 = () => setShowImg9(false);
+    const handleOpen9 = () => setShowImg9(true);
+
+    const handleClose10 = () => setShowImg10(false);
+    const handleOpen10 = () => setShowImg10(true);
+
+    const handleClose11 = () => setShowImg11(false);
+    const handleOpen11 = () => setShowImg11(true);
+
     return (
         <div className="works-container">
             <h1 id="works-title" data-aos="fade-down">Portfolio</h1>
             <p id="work-description" data-aos="fade-right" data-aos-delay="500">
                 I enjoy doing certain hobbies whenever I have free time during the day. I have also taken some
                 pictures in the outdoors during a sunny day and created other projects outside from
-                photography, like developing website such as this one and my CV website. These pictures represent 
+                photography, like developing website such as this one and my CV website. These pictures represent
                 some of the things I have done so far in my free time, and I enjoyed doing it (and still continue to do so).
             </p>
             <div className="works-display" data-aos="fade" data-aos-delay="500">
-                <img src={thumb1} alt="work-1"></img>
+                <img src={work1} alt="work-1" onClick={handleOpen1} onContextMenu={handleOpen1}></img>
             </div>
             <div className="works-display" data-aos="fade" data-aos-delay="500">
-                <img src={thumb2} alt="work-2"></img>
+                <img src={work2} alt="work-2" onClick={handleOpen2} onContextMenu={handleOpen2}></img>
             </div>
             <div className="works-display" data-aos="fade" data-aos-delay="500">
-                <img src={skyshot1} alt="work-3"></img>
+                <img src={work3} alt="work-3" onClick={handleOpen3} onContextMenu={handleOpen3}></img>
             </div>
             <div className="works-display" data-aos="fade" data-aos-delay="600">
-                <img src={skyshot2} alt="work-4"></img>
+                <img src={work4} alt="work-4" onClick={handleOpen4} onContextMenu={handleOpen4}></img>
             </div>
             <div className="works-display" data-aos="fade" data-aos-delay="600">
-                <img src={skyshot3} alt="work-5"></img>
+                <img src={work5} alt="work-5" onClick={handleOpen5} onContextMenu={handleOpen5}></img>
             </div>
             <div className="works-display" data-aos="fade" data-aos-delay="600">
-                <img src={skyshot4} alt="work-6"></img>
+                <img src={work6} alt="work-6" onClick={handleOpen6} onContextMenu={handleOpen6}></img>
             </div>
             <div className="works-display" data-aos="fade" data-aos-delay="700">
-                <img src={skyshot5} alt="work-7"></img>
+                <img src={work7} alt="work-7" onClick={handleOpen7} onContextMenu={handleOpen7}></img>
             </div>
             <div className="works-display" data-aos="fade" data-aos-delay="700">
-                <img src={skyshot6} alt="work-8"></img>
+                <img src={work8} alt="work-8" onClick={handleOpen8} onContextMenu={handleOpen8}></img>
             </div>
             <div className="works-display" data-aos="fade" data-aos-delay="700">
-                <img src={skyshot7} alt="work-9"></img>
+                <img src={work9} alt="work-9" onClick={handleOpen9} onContextMenu={handleOpen9}></img>
             </div>
             <div className="works-display" data-aos="fade" data-aos-delay="800">
-                <img src={skyshot8} alt="work-10"></img>
+                <img src={work10} alt="work-10" onClick={handleOpen10} onContextMenu={handleOpen10}></img>
             </div>
             <div className="works-display" data-aos="fade" data-aos-delay="800">
-                <img src={skyshot9} alt="work-11"></img>
+                <img src={work11} alt="work-11" onClick={handleOpen11} onContextMenu={handleOpen11}></img>
             </div>
+
+            {/* Modal (from React Bootstrap) */}
+            <Modal
+                show={showImg1}
+                onHide={handleClose1}
+                keyboard={false}
+                centered
+                id="modal-text"
+            >
+               <img src={work1} onContextMenu={handleImageClick} id="work" alt="work-1"></img>
+            </Modal>
+
+            <Modal
+                show={showImg2}
+                onHide={handleClose2}
+                keyboard={false}
+                centered
+                id="modal-text"
+            >
+               <img src={work2} onContextMenu={handleImageClick} id="work" alt="work-2"></img>
+            </Modal>
+
+            <Modal
+                show={showImg3}
+                onHide={handleClose3}
+                keyboard={false}
+                centered
+                id="modal-text"
+            >
+               <img src={work3} onContextMenu={handleImageClick} id="work" alt="work-3"></img>
+            </Modal>
+
+            <Modal
+                show={showImg4}
+                onHide={handleClose4}
+                keyboard={false}
+                centered
+                id="modal-text"
+            >
+               <img src={work4} onContextMenu={handleImageClick} id="work" alt="work-4"></img>
+            </Modal>
+            
+            <Modal
+                show={showImg5}
+                onHide={handleClose5}
+                keyboard={false}
+                centered
+                id="modal-text"
+            >
+               <img src={work5} onContextMenu={handleImageClick} id="work" alt="work-5"></img>
+            </Modal>
+
+            <Modal
+                show={showImg6}
+                onHide={handleClose6}
+                keyboard={false}
+                centered
+                id="modal-text"
+            >
+               <img src={work6} onContextMenu={handleImageClick} id="work" alt="work-6"></img>
+            </Modal>
+
+            <Modal
+                show={showImg7}
+                onHide={handleClose7}
+                keyboard={false}
+                centered
+                id="modal-text"
+            >
+               <img src={work7} onContextMenu={handleImageClick} id="work" alt="work-7"></img>
+            </Modal>
+
+            <Modal
+                show={showImg8}
+                onHide={handleClose8}
+                keyboard={false}
+                centered
+                id="modal-text"
+            >
+               <img src={work8} onContextMenu={handleImageClick} id="work" alt="work-8"></img>
+            </Modal>
+
+            <Modal
+                show={showImg9}
+                onHide={handleClose9}
+                keyboard={false}
+                centered
+                id="modal-text"
+            >
+               <img src={work9} onContextMenu={handleImageClick} id="work" alt="work-9"></img>
+            </Modal>
+
+            <Modal
+                show={showImg10}
+                onHide={handleClose10}
+                keyboard={false}
+                centered
+                id="modal-text"
+            >
+               <img src={work10} alt="work-10" id="work" onContextMenu={handleImageClick}></img>
+            </Modal>
+
+            <Modal
+                show={showImg11}
+                onHide={handleClose11}
+                keyboard={false}
+                centered
+                id="modal-text"
+            >
+               <img src={work11} onContextMenu={handleImageClick} id="work" alt="work-11"></img>
+            </Modal>
         </div>
     );
 }
