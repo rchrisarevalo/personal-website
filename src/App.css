@@ -32,6 +32,10 @@ html{
   scroll-behavior: smooth;
 }
 
+img {
+  pointer-events: none;
+}
+
 hr{
   background: rgb(136, 136, 136);
   margin-left: 1%;
