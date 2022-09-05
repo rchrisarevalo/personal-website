@@ -1,23 +1,23 @@
 {
   "update": [
     {
-      "updateMessageText": "This is another test message that will be displayed for only 5 minutes.",
-      "beginMonth": "8",
-      "beginDate": "31",
+      "updateMessageText": "This is a test how long this message will be available for until it automatically disappears at 12:00 PM. Thank you and have a wonderful day!",
+      "beginMonth": "9",
+      "beginDate": "5",
       "beginYear": "2022",
-      "endMonth": "8",
-      "endDate": "31",
+      "endMonth": "9",
+      "endDate": "5",
       "endYear": "2022",
       "beginHour": "11",
-      "beginMinute": "46",
-      "endHour": "11",
-      "endMinute": "51",
+      "beginMinute": "0",
+      "endHour": "12",
+      "endMinute": "0",
       "id": 1
     }
   ],
   "archive": [
     {
-      "beginMonth": 9,
+      "beginMonth": 10,
       "beginDate": 1,
       "beginYear": 2022,
       "endMonth": 12,
