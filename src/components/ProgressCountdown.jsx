@@ -7,10 +7,10 @@ import Col from 'react-bootstrap/Col';
 var num_days = 0;
 var num_hours = 0;
 var days_passed;
-var progress_countdown, prev_progress_countdown, rate;
+var progress_countdown, prev_progress_countdown, rate, hourly_rate, current_rate, current_progress, prev_time;
 var days_title = ""
 var time_string = ""
-var update_hours_time_string = "", update_minutes_time_string = "", update_seconds_time_string = ""
+var update_minutes_time_string = "", update_seconds_time_string = ""
 
 var grad_date = new Date(2023, 4, 13, 18)
 var today_date = Date.now()
@@ -39,6 +39,20 @@ prev_progress_countdown = ((days_passed - 1) / days_year) * 100
 // Calculates the assumed rate after subtracting the current percentage for today and the previous percentage from yesterday
 rate = progress_countdown - prev_progress_countdown
 
+prev_time = new Date().getHours() - 6
+
+if (prev_time === -6 || prev_time === -5 || prev_time === -4 || prev_time === -3 || prev_time === -2 || prev_time === -1)
+{
+    prev_time = prev_time + 24
+}
+
+console.log(prev_time)
+
+hourly_rate = (rate / 24)
+
+current_rate = hourly_rate * prev_time
+current_progress = (progress_countdown + current_rate)
+
 if (num_days < 1) {
     num_days = [`Graduation day in ${num_hours} hours!`]
 } else {
@@ -48,20 +62,18 @@ if (num_days < 1) {
 const ProgressCountdown = () => {
 
     const [timeLeft, setTimeLeft] = useState(num_days)
-    const [progressPercentage, setProgressPercentage] = useState(progress_countdown)
+    const [progressPercentage, setProgressPercentage] = useState(current_progress)
     const [minutes, setMinutes] = useState(new Date().getMinutes())
     const [seconds, setSeconds] = useState(new Date().getSeconds())
     const [hours, setHours] = useState(new Date().getHours())
     const [date, setDate] = useState(new Date().getDate())
     const [month, setMonth] = useState(new Date().getMonth())
     const [year, setYear] = useState(new Date().getFullYear())
-    const [prevTime, setPrevTime] = useState(hours - 6)
-    const [updateHoursLeft, setUpdateHoursLeft] = useState(23 - prevTime)
     const [minutesLeft, setMinutesLeft] = useState(59 - new Date().getMinutes())
     const [secondsLeft, setSecondsLeft] = useState(59 - new Date().getSeconds())
+    const [prevTime, setPrevTime] = useState(59 - minutesLeft)
     const [daysString, setDaysString] = useState(days_title)
     const [timeString, setTimeString] = useState(time_string)
-    const [updateHoursTimeString, setUpdateHoursString] = useState(update_hours_time_string)
     const [updateMinutesTimeString, setUpdateMinutesString] = useState(update_minutes_time_string)
     const [updateSecondsTimeString, setUpdateSecondsString] = useState(update_seconds_time_string)
 
@@ -73,11 +85,9 @@ const ProgressCountdown = () => {
         setSeconds(seconds + 1)
         setDate(date)
         setPrevTime(prevTime)
-        setUpdateHoursLeft(23 - prevTime)
         setTimeString(timeString)
         setMinutesLeft(59 - new Date().getMinutes())
         setSecondsLeft(59 - new Date().getSeconds())
-        setUpdateHoursString(updateHoursTimeString)
         setUpdateMinutesString(updateMinutesTimeString)
         setUpdateSecondsString(updateSecondsTimeString)
 
@@ -94,20 +104,12 @@ const ProgressCountdown = () => {
 
             setMonth(month)
             setYear(year)
+            setPrevTime(parseInt(prevTime) + 1)
 
             // Once the number of minutes reaches 60, 1 will be added to the number of hours
             // while the number of seconds and minutes is set back to 0.
         } if (59 - new Date().getMinutes() === 59 && 59 - new Date().getSeconds() === 59) {
-            setPrevTime(parseInt(prevTime) + 1)
-            setUpdateHoursLeft(parseInt(updateHoursLeft) - 1)
             setMinutesLeft(59)
-
-            // If the number of previous hours are 0, then set update time left to 23 hours
-            if (prevTime === 0) {
-                setUpdateHoursLeft(23)
-            } else {
-                // DO NOTHING...
-            }
         }
 
         // From 12 AM to 6 AM, this section will add 24 hours back to accommodate the time change into the
@@ -121,7 +123,6 @@ const ProgressCountdown = () => {
             // remain the same.
             if (prevTime === -6 || prevTime === -5 || prevTime === -4 || prevTime === -3 || prevTime === -2 || prevTime === -1) {
                 setPrevTime(prevTime + 24)
-                setUpdateHoursLeft(updateHoursLeft - 24)
             }
 
             // This was added as the original statement doesn't want to add to the
@@ -145,20 +146,11 @@ const ProgressCountdown = () => {
         } else {
             setDaysString("day!")
         }
-
-        // If number of previous hours is greater than 1, then print "hours" instead of minutes
-        if (prevTime > 1) {
-            setTimeString("hours")
-        } else if (prevTime === 1) {
-            setTimeString("hour")
+    
+        if (prevTime === 1) {
+            setTimeString("minute")
         } else {
             setTimeString("minutes")
-        }
-
-        if (updateHoursLeft > 1) {
-            setUpdateHoursString("hours")
-        } else if (updateHoursLeft === 1) {
-            setUpdateHoursString("hour")
         }
 
         if (minutesLeft > 1 || minutesLeft === 0) {
@@ -184,7 +176,12 @@ const ProgressCountdown = () => {
         // shown in the front page.
         if (new Date().getHours() === 6 && new Date().getMinutes() === 0 && new Date().getSeconds() === 0) {
             setTimeLeft(parseInt(timeLeft) - parseInt(1))
-            setProgressPercentage(parseFloat(progressPercentage) + parseFloat(rate))
+        }
+
+        // For every 60 minutes, increase the percentage by the hourly rate.
+        if (new Date().getMinutes() % 60 === 0 && new Date().getSeconds() === 0)
+        {
+            setProgressPercentage(parseFloat(progressPercentage) + parseFloat(hourly_rate))
         }
 
     }, 1000)
@@ -197,16 +194,15 @@ const ProgressCountdown = () => {
             </p>
             <ProgressBar animated now={`${progressPercentage.toFixed(2)}`} id="progress-bar" data-aos="fade" data-aos-delay="2200" />
             <p id="progress-count" data-aos="fade" data-aos-delay="2000">Progress until graduation day: {`${progressPercentage.toFixed(2)}`}%</p>
-            <p id="progress-count" data-aos="fade" data-aos-delay="2000">This section will automatically update each day at 6 AM in the morning.</p>
+            <p id="progress-count" data-aos="fade" data-aos-delay="2000">This section will automatically update on an hourly basis.</p>
+            <p id="progress-count" data-aos="fade" data-aos-delay="2000">The number of days left will update each day at 6 AM.</p>
             <p id="progress-count" data-aos="fade" data-aos-delay="2000"><i>Last updated: {`${prevTime} ${timeString}`} ago</i></p>
             <p id="progress-count" data-aos="fade" data-aos-delay="2000">Time left before next update:</p>
             <Row id="time-text-row" data-aos="fade" data-aos-delay="2000">
-                <Col id="time-text">{`${updateHoursLeft}`}</Col>
                 <Col id="time-text">{`${minutesLeft}`}</Col>
                 <Col id="time-text">{`${secondsLeft}`}</Col>
             </Row>
             <Row id="time-text-row" data-aos="fade" data-aos-delay="2000">
-                <Col>{`${updateHoursTimeString}`}</Col>
                 <Col>{`${updateMinutesTimeString}`}</Col>
                 <Col>{`${updateSecondsTimeString}`}</Col>
             </Row>
