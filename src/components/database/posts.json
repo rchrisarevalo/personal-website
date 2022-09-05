@@ -191,6 +191,70 @@
       "date": 1,
       "year": 2022,
       "id": 24
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 9/5/2022, 10:30 AM.",
+      "postContent": "Good morning, y'all! I am here to announce that there has been an update to the progress countdown feature in the \"About Me\" page.",
+      "month": 9,
+      "date": 5,
+      "year": 2022,
+      "id": 25
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 9/5/2022, 10:31 AM.",
+      "postContent": "Originally, the progress countdown feature updated every 24 hours. Unfortunately, there were some bugs each time the system would try to recalibrate itself.",
+      "month": 9,
+      "date": 5,
+      "year": 2022,
+      "id": 26
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 9/5/2022, 10:31 AM.",
+      "postContent": "For instance, when the time was already 6 AM in the morning, the number of time left was supposed to update back to \"23 hours, 59 minutes, and 59 seconds\". But that did not happen, unfortunately.",
+      "month": 9,
+      "date": 5,
+      "year": 2022,
+      "id": 27
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 9/5/2022, 10:32 AM.",
+      "postContent": "Instead, the only that were displayed whenever a user was at the website at that time were a bunch of random negative numbers.",
+      "month": 9,
+      "date": 5,
+      "year": 2022,
+      "id": 28
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 9/5/2022, 10:32 AM.",
+      "postContent": "So therefore, instead of relying on the progress countdown feature to update every 24 hours, it will instead be updating each hour.",
+      "month": 9,
+      "date": 5,
+      "year": 2022,
+      "id": 29
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 9/5/2022, 10:34 AM.",
+      "postContent": "Now, there will still be bugs, as the system is still pretty new. The percentage increase still works in this new update, as it updates every hour that passes by until it reaches the new percentage that is displayed at 6 AM each day like the previous version.",
+      "month": 9,
+      "date": 5,
+      "year": 2022,
+      "id": 30
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 9/5/2022, 10:37 AM.",
+      "postContent": "This will be a test version, and it will be left on this website for about a week to see how it works in the long run. If this version works, then I am keeping it while I continue to make improvements to it.",
+      "month": 9,
+      "date": 5,
+      "year": 2022,
+      "id": 31
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 9/5/2022, 10:38 AM.",
+      "postContent": "Anyways, that will be all for today. Have a good Labor Day everyone, and please stay safe!",
+      "month": 9,
+      "date": 5,
+      "year": 2022,
+      "id": 32
     }
   ]
 }
