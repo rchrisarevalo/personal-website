@@ -34,15 +34,13 @@ const July2022Posts = () => {
                         size="40px"
                     />
                 </Link>
-                {Date.now() >= new Date(2022, 8, 1, 0, 0, 0) &&
-                    <Link to="/announcements/2022/August">
-                        <IoArrowForwardCircleOutline
-                            id="posts-arrow-right"
-                            title="August 2022 Announcements"
-                            size="40px"
-                        />
-                    </Link>
-                }
+                <Link to="/announcements/2022/August">
+                    <IoArrowForwardCircleOutline
+                        id="posts-arrow-right"
+                        title="August 2022 Announcements"
+                        size="40px"
+                    />
+                </Link>
                 <h1 id="posts-title">Announcements (July 2022)</h1>
                 <br></br>
                 <p id="posts-description">
