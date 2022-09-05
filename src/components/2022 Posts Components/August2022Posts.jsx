@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
-import { IoArrowBackCircleOutline } from "react-icons/io5";
+import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from "react-icons/io5";
 
 import axios from "axios";
 import db from "../database/posts.json"
@@ -123,18 +123,28 @@ const August2022Posts = () => {
         <div class="posts-main">
             <Helmet>
                 <title>
-                    Ruben C. Arevalo - Personal Website - Announcements (July 2022)
+                    Ruben C. Arevalo - Personal Website - Announcements (August 2022)
                 </title>
             </Helmet>
             <NavArchives />
             <div class="posts-container">
-                <Link to="/announcements/2022/June">
+                <Link to="/announcements/2022/July">
                     <IoArrowBackCircleOutline
                         id="posts-arrow-left"
-                        title="June 2022 Announcements"
+                        title="July 2022 Announcements"
                         size="40px"
                     />
                 </Link>
+                
+                {Date.now() >= new Date(2022, 9, 1, 0, 0, 0) &&
+                    <Link to="/announcements/2022/September">
+                        <IoArrowForwardCircleOutline
+                            id="posts-arrow-right"
+                            title="September 2022 Announcements"
+                            size="40px"
+                        />
+                    </Link>
+                }
                 <h1 id="posts-title">Announcements (August 2022)</h1>
                 <br></br>
                 <p id="posts-description">
