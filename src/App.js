@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Route, Routes } from "react-router-dom";
 import AOS from 'aos';
 import "aos/dist/aos.css";
@@ -25,6 +25,7 @@ import May2022Posts from './components/2022 Posts Components/May2022Posts.jsx';
 import June2022Posts from './components/2022 Posts Components/June2022Posts.jsx'
 import July2022Posts from './components/2022 Posts Components/July2022Posts.jsx';
 import August2022Posts from './components/2022 Posts Components/August2022Posts.jsx';
+import September2022Posts from './components/2022 Posts Components/September2022Posts.jsx';
 import Contact from './components/Contact.jsx';
 import Archives from "./components/Archives.jsx";
 import Settings from "./components/Settings.jsx";
@@ -76,8 +77,9 @@ function App() {
         {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/May" element={<May2022Posts />} />}
         {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/June" element={<June2022Posts />} />}
         {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/July" element={<July2022Posts />} />}
+        {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/August" element={<August2022Posts />} />}
         {(Date.now() >= new Date(db.archive[0].beginYear, db.archive[0].beginMonth - 1, db.archive[0].beginDate, db.archive[0].beginHour, db.archive[0].beginMinute) && Date.now() <= new Date(db.archive[0].endYear, db.archive[0].endMonth - 1, db.archive[0].endDate, db.archive[0].endHour, db.archive[0].endMinute)) &&
-          <Route path="/announcements/2022/August" element={<August2022Posts />} />
+          <Route path="/announcements/2022/September" element={<September2022Posts />} />
         }
 
         <Route path="/settings" element={<Settings />} />
