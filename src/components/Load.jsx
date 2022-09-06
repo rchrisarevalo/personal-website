@@ -20,8 +20,6 @@ const Load = () => {
     const [ms, setMs] = useState(milliseconds)
     const nav = useNavigate();
 
-    console.log("Today's date: ", dateState);
-
     useEffect(() => {
         axios.get("https://rchrisarevalo.github.io/personal-website").then((res) => {
             resStatus = res.status
