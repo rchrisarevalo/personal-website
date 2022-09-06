@@ -86,7 +86,7 @@ const ProgressCountdown = () => {
         setMinutes(minutes)
         setSeconds(seconds + 1)
         setDate(date)
-        setPrevTime(prevTime)
+        setPrevTime(new Date().getMinutes())
         setTimeString(timeString)
         setMinutesLeft(59 - new Date().getMinutes())
         setSecondsLeft(59 - new Date().getSeconds())
