@@ -50,6 +50,8 @@ console.log(prev_time)
 
 hourly_rate = (rate / 24)
 
+console.log(hourly_rate)
+
 current_rate = hourly_rate * prev_time
 current_progress = (progress_countdown + current_rate)
 
@@ -71,7 +73,7 @@ const ProgressCountdown = () => {
     const [year, setYear] = useState(new Date().getFullYear())
     const [minutesLeft, setMinutesLeft] = useState(59 - new Date().getMinutes())
     const [secondsLeft, setSecondsLeft] = useState(59 - new Date().getSeconds())
-    const [prevTime, setPrevTime] = useState(59 - minutesLeft)
+    const [prevTime, setPrevTime] = useState(new Date().getMinutes())
     const [daysString, setDaysString] = useState(days_title)
     const [timeString, setTimeString] = useState(time_string)
     const [updateMinutesTimeString, setUpdateMinutesString] = useState(update_minutes_time_string)
@@ -91,6 +93,15 @@ const ProgressCountdown = () => {
         setUpdateMinutesString(updateMinutesTimeString)
         setUpdateSecondsString(updateSecondsTimeString)
 
+        if (new Date().getMinutes() > 1)
+        {
+            setTimeString("minutes")
+        }
+        else if (new Date().getMinutes() === 1)
+        {
+            setTimeString("minute")
+        }
+
         // Once the number of seconds reaches 59, the number of minutes will be set
         // back to 0.
         if (59 - new Date().getSeconds() === 59) {
@@ -104,12 +115,27 @@ const ProgressCountdown = () => {
 
             setMonth(month)
             setYear(year)
-            setPrevTime(parseInt(prevTime) + 1)
+            
+            if (new Date().getMinutes() === 1 && new Date().getSeconds() === 0)
+            {
+                setTimeString("minute")
+                setPrevTime(1)
+            }
+            else if (new Date().getMinutes() > 1 && new Date().getSeconds() === 0)
+            {
+                setPrevTime(new Date().getMinutes())
+                setTimeString("minutes")
+            }
 
             // Once the number of minutes reaches 60, 1 will be added to the number of hours
             // while the number of seconds and minutes is set back to 0.
         } if (59 - new Date().getMinutes() === 59 && 59 - new Date().getSeconds() === 59) {
             setMinutesLeft(59)
+        }
+
+        if (new Date().getMinutes() === 0)
+        {
+            setPrevTime(new Date().getSeconds())
         }
 
         // From 12 AM to 6 AM, this section will add 24 hours back to accommodate the time change into the
@@ -146,12 +172,6 @@ const ProgressCountdown = () => {
         } else {
             setDaysString("day!")
         }
-    
-        if (prevTime === 1) {
-            setTimeString("minute")
-        } else {
-            setTimeString("minutes")
-        }
 
         if (minutesLeft > 1 || minutesLeft === 0) {
             setUpdateMinutesString("minutes")
@@ -164,6 +184,12 @@ const ProgressCountdown = () => {
         }
         if (59 - new Date().getSeconds() === 1) {
             setUpdateSecondsString("second")
+        }
+
+        if (new Date().getMinutes() === 0 && (new Date().getSeconds() > 1 || new Date().getSeconds() === 0)) {
+            setTimeString("seconds")
+        } if (new Date().getMinutes() === 0 && new Date().getSeconds() === 1) {
+            setTimeString("second")
         }
 
     }, 1000)
