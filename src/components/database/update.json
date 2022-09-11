@@ -1,17 +1,17 @@
 {
   "update": [
     {
-      "updateMessageText": "This is a test how long this message will be available for until it automatically disappears at 12:00 PM. Thank you and have a wonderful day!",
+      "updateMessageText": "Hi y'all. I wanted to announce that I won't be maintaining this website for about a week. The reason is because I have to focus on school, and it is important that I do so. Anyways, thank you all for your patience, and have a wonderful rest of the week, y'all!",
       "beginMonth": "9",
-      "beginDate": "5",
+      "beginDate": "11",
       "beginYear": "2022",
       "endMonth": "9",
-      "endDate": "5",
+      "endDate": "18",
       "endYear": "2022",
-      "beginHour": "11",
+      "beginHour": "13",
       "beginMinute": "0",
-      "endHour": "12",
-      "endMinute": "0",
+      "endHour": "23",
+      "endMinute": "59",
       "id": 1
     }
   ],
