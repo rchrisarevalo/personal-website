@@ -12,7 +12,6 @@ const CurrentPosts = () => {
 
     setTimeout(() => {
         setDateState(new Date())
-        console.log("Date state: ", dateState)
     }, 1000)
 
     useEffect(() => {
