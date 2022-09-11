@@ -46,11 +46,7 @@ if (prev_time === -6 || prev_time === -5 || prev_time === -4 || prev_time === -3
     prev_time = prev_time + 24
 }
 
-console.log(prev_time)
-
 hourly_rate = (rate / 24)
-
-console.log(hourly_rate)
 
 current_rate = hourly_rate * prev_time
 current_progress = (progress_countdown + current_rate)
