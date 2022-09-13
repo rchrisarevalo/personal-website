@@ -346,8 +346,8 @@ hr{
   font-weight: 200;
   padding-top: 40px;
   padding-bottom: 40px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .intro h1{
@@ -840,6 +840,11 @@ hr{
 }
 
 #post-margin{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#post-catalogue{
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -1354,6 +1359,10 @@ hr{
   #post-info-recent{
     width: 69%;
   }
+  #post-catalogue{
+    margin-left: 0%;
+    margin-right: 0%;
+  }  
   #post-content{
     text-align: left;
   }
