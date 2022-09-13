@@ -279,6 +279,30 @@
       "date": 11,
       "year": 2022,
       "id": 35
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 9/13/2022, 12:13 AM.",
+      "postContent": "Good morning, everyone! I understand that it is late right now, but I wanted to share a quick update regarding the progress countdown feature. \n\nAs some of you may know, I updated the way in which the progress bar updates in the \"About Me\" page. Instead of updating itself every day, it will be updating hourly.",
+      "month": 9,
+      "date": 13,
+      "year": 2022,
+      "id": 36
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 9/13/2022, 12:14 AM.",
+      "postContent": "It turns out that there were bugs in the ORIGINAL version of the new progress countdown that updates hourly. However, I since have fixed them, and I am happy to say that it working exactly as intended! I will continue to keep an eye on it while I am focusing on college at the moment, in case any bugs arise from it.",
+      "month": 9,
+      "date": 13,
+      "year": 2022,
+      "id": 37
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 9/13/2022, 12:15 AM.",
+      "postContent": "That will be all for today. Thank you all for your patience and have a wonderful week y'all! I will return on Monday, September 19th, to continue to maintain this website and provide updates of its status!",
+      "month": 9,
+      "date": 13,
+      "year": 2022,
+      "id": 38
     }
   ]
 }
