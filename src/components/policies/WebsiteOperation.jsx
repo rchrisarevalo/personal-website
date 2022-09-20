@@ -32,12 +32,11 @@ const WebsiteOperation = () => {
                 <div className="website-operation-policy-description">
                     <h1>Site Operation Policy</h1>
                     <br></br>
-                    <h4><i>Last modified on: June 17, 2022</i></h4>
+                    <h4><i>Last modified on: September 19, 2022</i></h4>
                     <br></br>
                     <p>
-                        Hello everyone. Last month, I introduced a new policy that determined how this website
-                        will operate, especially during the holidays. However, I did not go into further detail
-                        as to how this website will operate. So I am taking the opportunity to specifically
+                        Hello everyone. On January 2022, I introduced a new policy that determined how this website
+                        will operate, especially during the holidays. This page will specifically
                         outline at what certain days the website will be allowed to operate, as well as when it
                         cannot operate.
                     </p>
@@ -121,8 +120,7 @@ const WebsiteOperation = () => {
                     <br></br>
                     <p>
                         Should a personal matter occur, such as the loss of a family member, a friend, or any important person that has played
-                        an important role in my life, the website won't necessarily shut down, but rather, will not be maintained during the hard
-                        times. However, an update (along with an announcement) will be left on the website during the time I will be
+                        an important role in my life, the website won't necessarily shut down, but rather, will not be maintained. However, an update (along with an announcement) will be left on the website during the time I will be
                         out to process the loss. Again, keep in mind that I won't be updating this website for around a week (or two if the loss
                         happens to be profound). I want to continue this Site with a clear and conscious mind rather than let my emotions cloud
                         my judgment, which allows me to decide what is in the best interests for this Site in the future.
@@ -134,7 +132,7 @@ const WebsiteOperation = () => {
                     </p>
                     <p>
                         However, everyday personal problems, such as an argument with a family member, a friend, a partner, a spouse, etc., won't qualify.
-                        Just as I stated above, only major life events mentioned above qualify for the limitation of the
+                        Only major life events mentioned above qualify for the limitation of the
                         operation of this Site.
                     </p>
                     <br></br>
