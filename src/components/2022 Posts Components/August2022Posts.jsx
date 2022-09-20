@@ -21,11 +21,11 @@ const August2022Posts = () => {
         axios.get("https://rchrisarevalo.github.io/posts.json", db.post).then((res) => {
             setPrevPostNum(db.post.length)
             setCurrentPostNum(db.post.length)
-            console.log("Previous post number: ", prevPostNum)
-            console.log("Current post number: ", currentPostNum)
+            // console.log("Previous post number: ", prevPostNum)
+            // console.log("Current post number: ", currentPostNum)
             if (currentPostNum === prevPostNum) {
                 for (var i = db.post.length - 1; i >= 0; i--) {
-                    if (db.post[i].month === 8) {
+                    if (db.post[i].month === 8 && db.post[i].year === 2022) {
                         var grandparentDiv = document.getElementById("post-catalogue")
                         var parentDiv;
                         var childDiv;
