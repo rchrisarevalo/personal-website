@@ -32,14 +32,13 @@ const ArchivePolicy = () => {
                 <div className="archive-policy-description">
                     <h1>Archival Policy</h1>
                     <br></br>
-                    <h4><i>Last modified on: March 5, 2022</i></h4>
+                    <h4><i>Last modified on: September 19, 2022</i></h4>
                     <br></br>
                     <p>
                         Hello everyone. On September 2021, I started to archive posts from the
-                        'Posts' page (now title 'Announcements' as shown on the navigation bar
-                        above) every 30 days or so. Just recently, I developed a separate page
-                        that is titled 'Archives' (so as to not be confused with the 'Archival' link,
-                        as the latter focuses on how announcements from the previous month are archived).
+                        'Posts' page (now titled 'Announcements' as shown on the navigation bar
+                        above) every 30 days or so. These announcements are automatically stored in the 
+                        <b> Archives</b> page after the aforementioned time period has passed.
                     </p>
                     <p>
                         <i>
@@ -60,20 +59,15 @@ const ArchivePolicy = () => {
                     <h3>Archival Time Period</h3>
                     <br></br>
                     <p>
-                        I mentioned once in a previous announcement before the beginning of September that I
-                        will implement (and had already did) a 30 day archive policy. What I meant by this is
-                        that after a 30-day period or after the month is over (since there are 28-29 days in
+                        I mentioned at the end of August 2021 that I will implement (and had already did) a 30 day archive policy. 
+                        What I meant by this is that after a 30-day period or after the month is over (since there are 28-29 days in
                         February and 31 days in some months), the 'Announcements' page will be completely wiped.
-                        After that is said and done, I will include a new announcement for the new month. Please
-                        note that sometimes, the changes won't immediately come into effect, as deployment of
-                        new changes made to this website can sometimes take a while due to a variety of factors,
-                        such as a sometimes slow and overwhelmed laptop, which I use to make the changes here
-                        on this Site.
+                        After that is said and done, I will include a new announcement for the new month.
                     </p>
                     <p>
-                        The changes should usually take effect before 12:30 AM of the first day of the new month.
-                        In a more worse-case scenario, it could take longer than that, either hours or days before
-                        that time. Despite that, I will try my very best to ensure that these changes take effect
+                        The changes automatically take effect at 12:00 AM of the first day of the new month.
+                        In a worst-case scenario, it could take longer than that, as the changes take effect
+                        hours after midnight has passed. Despite that, I will try my very best to ensure that these changes take effect
                         on time and as early as possible.
                     </p>
                     <br></br>
@@ -88,12 +82,11 @@ const ArchivePolicy = () => {
                         page?
                     </p>
                     <p>
-                        As I also mentioned in the introduction section in the first paragraph, I developed a separate page
+                        As I mentioned in the introduction section in the first paragraph, I developed a separate page
                         that is titled 'Archives' (not to be confused with 'Archival' as shown in the footer of this Site).
                         In the page, there is a brief description as to how the page will operate. There are also the months that
-                        have the old announcements, and are catalogued by year. At the time of writing this policy, '2022' has not
-                        appeared yet, as January is still going on and will be included once the month is over. Again, once the 30
-                        day or monthly period passes, I will wipe the 'Announcements' page clean and the announcements for the
+                        have the old announcements, and are catalogued by year. Once the 30
+                        day or monthly period passes, the 'Announcements' page will automatically be wiped clean and the announcements for the
                         previous month will be included in the 'Archives' page by the month and year they were posted. 
                     </p>
                     <br></br>
@@ -108,14 +101,6 @@ const ArchivePolicy = () => {
                         Site permanently, never to be seen again. Requests to bring back posts that have expired past the
                         deadline will automatically be denied, as the posts have already been deleted from this Site
                         and away from user's eyes in the future.
-                    </p>
-                    <p>
-                        Let me summarize. Archives containing posts from a specific past month and/or year will be available
-                        for only 3 years. After those 3 years have passed, an event known as an "archive cleanup" will take
-                        effect every August after the time period has passed. So let's say that the year is 2024, and the month
-                        is August. Starting that month, any announcements from the year 2021 will be completely wiped from the
-                        Site. The next year (2025), will see its 2022 announcements being wiped as well. I think that pattern
-                        has already been clear by now. Note that this will apply to all archives that are 3 years old.
                     </p>
                     <br></br>
                     <br></br>
