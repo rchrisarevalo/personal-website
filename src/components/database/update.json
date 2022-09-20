@@ -1,17 +1,17 @@
 {
   "update": [
     {
-      "updateMessageText": "Hi y'all. I wanted to announce that I won't be maintaining this website for about a week. The reason is because I have to focus on school, and it is important that I do so. Anyways, thank you all for your patience, and have a wonderful rest of the week, y'all!",
+      "updateMessageText": "Hi everyone! I am writing this message to let you all know that both the Site Operation and Archival policies have been updated to fit the latest circumstances at the time of writing this message.\n\nYou can see the new changes in the Archival and the Site Operation links in the footer below.\n\n",
       "beginMonth": "9",
-      "beginDate": "11",
+      "beginDate": "19",
       "beginYear": "2022",
       "endMonth": "9",
-      "endDate": "18",
+      "endDate": "23",
       "endYear": "2022",
-      "beginHour": "13",
-      "beginMinute": "0",
-      "endHour": "23",
-      "endMinute": "59",
+      "beginHour": "22",
+      "beginMinute": "10",
+      "endHour": "0",
+      "endMinute": "0",
       "id": 1
     }
   ],
