@@ -367,6 +367,38 @@
       "date": 29,
       "year": 2022,
       "id": 46
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 9/30/2022, 09:10 PM.",
+      "postContent": "Good evening, everyone! I am writing this announcement to let you all know that starting tomorrow exactly at midnight (12 AM), all the announcements for this month will be automatically archived.",
+      "month": 9,
+      "date": 30,
+      "year": 2022,
+      "id": 47
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 9/30/2022, 09:14 PM.",
+      "postContent": "Furthermore, the posts for the new month will appear automatically in place of those from the previous month (which in this case, will be September).",
+      "month": 9,
+      "date": 30,
+      "year": 2022,
+      "id": 48
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 9/30/2022, 09:15 PM.",
+      "postContent": "That will be it for this evening. Thank you all and have a wonderful rest of the weekend! Please stay safe, y'all!",
+      "month": 9,
+      "date": 30,
+      "year": 2022,
+      "id": 49
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 10/1/2022, 12:00 AM.",
+      "postContent": "Good morning, y'all. This will be the first announcement for the new month, October!",
+      "month": 10,
+      "date": 1,
+      "year": 2022,
+      "id": 50
     }
   ]
 }
