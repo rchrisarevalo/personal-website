@@ -105,6 +105,7 @@ const RecentPosts = () => {
                 parentDiv.setAttribute('id', `post${currentPostNum - 1}`)
                 document.getElementById("post-catalogue").insertBefore(parentDiv, document.getElementById(`post${currentPostNum - 2}`))
                 setPrevPostNum(parseInt(prevPostNum) + parseInt(1))
+                window.location.reload();
             }
         })
     }, [])
