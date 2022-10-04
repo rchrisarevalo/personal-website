@@ -10,7 +10,7 @@
     "@testing-library/user-event": "^14.4.3",
     "aos": "^2.3.4",
     "axios": "^0.27.2",
-    "bootstrap": "^5.2.1",
+    "bootstrap": "^5.2.2",
     "bootstrap-switch-button-react": "^1.2.0",
     "nprogress": "^0.2.0",
     "nth-check": "^2.1.1",
