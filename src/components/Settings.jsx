@@ -58,6 +58,13 @@ function light_dark_mode() {
         localStorage.setItem("dark_media_theme", "false")
         localStorage.setItem("light_media_theme", "false")
         localStorage.setItem("save_status", "saved")
+    } else if (theme_choice === "halloween" && prevState !== d) {
+        prevState = d
+        document.body.style.cssText = 'background: #FF7709; color: black; transition: .5s;'
+        localStorage.setItem("d_l_mode", theme_choice)
+        localStorage.setItem("dark_media_theme", "false")
+        localStorage.setItem("light_media_theme", "false")
+        localStorage.setItem("save_item", "saved")
     } else if (theme_choice === "default" && prevState !== d) {
         if (window.matchMedia("(prefers-color-scheme: light)").matches) {
             prevState = d
@@ -112,6 +119,8 @@ if (d === "dark" || d === "default_dark") {
     }
 } else if (d === "light" || d === "default_light") {
     document.body.style.cssText = 'background: #FFFFFF; color: black; transition: .5s;'
+} else if (d === "halloween") {
+    document.body.style.cssText = 'background: #FF7709; color: black; transition: .5s;'
 }
 
 // ====================================
@@ -155,6 +164,13 @@ function save() {
 }
 
 const Settings = () => {
+
+    const [dateState, setDateState] = useState(new Date());
+
+    setTimeout(() => {
+        setDateState(new Date())
+    }, 1000)
+    console.log(dateState);
 
     useEffect(() => {
         nprogress.configure({ minimum: 0.1, showSpinner: false, easing: 'ease', speed: 800, trickleSpeed: 200 });
@@ -209,7 +225,10 @@ const Settings = () => {
                             <select id="value_check" onChange={light_dark_mode}>
                                 <option value="default" selected>Device theme</option>
                                 <option value="light">Light theme</option>
-                                <option value="dark">Dark theme</option>
+                                <option value="dark">Dark theme</option>\
+                                { (Date.now() >= new Date(2022, 9, 15) && Date.now(2022, 10, 1)) && 
+                                     <option value="halloween">Halloween theme</option>
+                                }
                             </select>
                         }
                         {d === "dark" &&
@@ -217,6 +236,9 @@ const Settings = () => {
                                 <option value="default">Device theme</option>
                                 <option value="light">Light theme</option>
                                 <option value="dark" selected>Dark theme</option>
+                                { (Date.now() >= new Date(2022, 9, 15) && Date.now(2022, 10, 1)) && 
+                                     <option value="halloween">Halloween theme</option>
+                                }
                             </select>
                         }
                         {d === "light" &&
@@ -224,6 +246,17 @@ const Settings = () => {
                                 <option value="default">Device theme</option>
                                 <option value="light" selected>Light theme</option>
                                 <option value="dark">Dark theme</option>
+                                { (Date.now() >= new Date(2022, 9, 15) && Date.now(2022, 10, 1)) && 
+                                     <option value="halloween">Halloween theme</option>
+                                }
+                            </select>
+                        }
+                        {d === "halloween" && (Date.now() >= new Date(2022, 9, 15) && Date.now(2022, 10, 1)) &&
+                            <select id="value_check" onChange={light_dark_mode}>
+                                <option value="default">Device theme</option>
+                                <option value="light">Light theme</option>
+                                <option value="dark">Dark theme</option>
+                                <option value="halloween" selected>Halloween theme</option>
                             </select>
                         }
                         <br></br>

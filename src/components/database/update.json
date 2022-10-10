@@ -1,15 +1,15 @@
 {
   "update": [
     {
-      "updateMessageText": "Hi everyone! I am writing this message to let you all know that both the Site Operation and Archival policies have been updated to fit the latest circumstances at the time of writing this message.\n\nYou can see the new changes in the Archival and the Site Operation links in the footer below.\n\n",
-      "beginMonth": "9",
-      "beginDate": "19",
+      "updateMessageText": "The Halloween theme is available! It can be found on the \"Settings\" page located on the navigation bar above. The option will disappear on November 1st at midnight.",
+      "beginMonth": "10",
+      "beginDate": "15",
       "beginYear": "2022",
-      "endMonth": "9",
-      "endDate": "23",
+      "endMonth": "11",
+      "endDate": "1",
       "endYear": "2022",
-      "beginHour": "22",
-      "beginMinute": "10",
+      "beginHour": "0",
+      "beginMinute": "0",
       "endHour": "0",
       "endMinute": "0",
       "id": 1
