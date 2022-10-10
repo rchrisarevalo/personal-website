@@ -1,15 +1,13 @@
-# Personal Website (v3.6.0)
+# Personal Website (v3.7.0)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on September 13, 2022):
+# UPDATES (made on October 10, 2022):
 
 * The following changes have been made to the site:
-  * The progress countdown feature (represented by the progress bar in the "About Me" page) has received an upgrade in the amount of time it takes to update:
-    * Instead of updating every 24 hours, it will instead update every hour.
-    * The reason for this was to allow for a better user experience, so that users visiting the site can see the percentage dynamically update itself every hour that passes by instead of having to wait 24 long hours.
-    * Furthermore, the section that displays how much time is left in the original version of the progress countdown feature was full of bugs, as it did not update the countdown text properly or the percentage may have updated itself a bit too late.
+  * A new theme for the Halloween season has been implemented.
+  * The changes will take effect on October 15, 2022.
 
 # CREDITS:
 * Progress bar by nProgress (author: rstacruz)
