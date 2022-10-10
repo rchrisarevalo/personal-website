@@ -165,13 +165,6 @@ function save() {
 
 const Settings = () => {
 
-    const [dateState, setDateState] = useState(new Date());
-
-    setTimeout(() => {
-        setDateState(new Date())
-    }, 1000)
-    console.log(dateState);
-
     useEffect(() => {
         nprogress.configure({ minimum: 0.1, showSpinner: false, easing: 'ease', speed: 800, trickleSpeed: 200 });
         nprogress.start();
