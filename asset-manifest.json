@@ -1,15 +1,17 @@
 {
   "files": {
     "main.css": "/personal-website/static/css/main.2032b99a.css",
-    "main.js": "/personal-website/static/js/main.19df8b62.js",
+    "main.js": "/personal-website/static/js/main.8afde78d.js",
     "static/js/27.a26b8b2c.chunk.js": "/personal-website/static/js/27.a26b8b2c.chunk.js",
     "static/media/work_8.jpg": "/personal-website/static/media/work_8.9ec8e141599cfdeeb424.jpg",
     "static/media/work_11.jpg": "/personal-website/static/media/work_11.a95844793116034c5c57.jpg",
     "static/media/work_4.jpg": "/personal-website/static/media/work_4.085fb6c922e4194a5191.jpg",
     "static/media/work_10.jpg": "/personal-website/static/media/work_10.20f079b7419d7e24ae1a.jpg",
     "static/media/work_9.jpg": "/personal-website/static/media/work_9.461b3f53974c82f7e45d.jpg",
+    "static/media/work_12.jpg": "/personal-website/static/media/work_12.679cb052ba44f48f5e4d.jpg",
     "static/media/work_3.jpg": "/personal-website/static/media/work_3.4a83c0aef68f869d2f2e.jpg",
     "static/media/work_7.jpg": "/personal-website/static/media/work_7.f527b33ba175ca24eb77.jpg",
+    "static/media/work_13.jpg": "/personal-website/static/media/work_13.cfad73891fb02df1d8a5.jpg",
     "static/media/work_2.jpg": "/personal-website/static/media/work_2.1d365c48149bfaa95eb7.jpg",
     "static/media/work_5.jpg": "/personal-website/static/media/work_5.2d92c4cb8c8436de5727.jpg",
     "static/media/September 2022 Profile Pic.jpg": "/personal-website/static/media/September 2022 Profile Pic.4ebd5725b63402600513.jpg",
@@ -19,6 +21,6 @@
   },
   "entrypoints": [
     "static/css/main.2032b99a.css",
-    "static/js/main.19df8b62.js"
+    "static/js/main.8afde78d.js"
   ]
 }
