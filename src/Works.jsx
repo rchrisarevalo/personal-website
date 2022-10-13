@@ -10,6 +10,8 @@ import work8 from './images/work_8.jpg';
 import work9 from './images/work_9.jpg';
 import work10 from './images/work_10.jpg';
 import work11 from './images/work_11.jpg';
+import work12 from './images/work_12.jpg';
+import work13 from './images/work_13.jpg';
 
 const Works = () => {
 
@@ -54,6 +56,12 @@ const Works = () => {
             </div>
             <div className="works-display" data-aos="fade" data-aos-delay="800">
                 <img src={work11} alt="work-11"></img>
+            </div>
+            <div className="works-display" data-aos="fade" data-aos-delay="800">
+                <img src={work12} alt="work-12"></img>
+            </div>
+            <div className="works-display" data-aos="fade" data-aos-delay="800">
+                <img src={work13} alt="work-13"></img>
             </div>
         </div>
     );
