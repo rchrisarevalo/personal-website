@@ -62,7 +62,7 @@ const Load = () => {
                         <div id="percentage-load">{`${percentage}`}%</div>
                     </div>
                 }
-                {((theme === "light" || light_media === "true")) &&
+                {((theme === "light" || light_media === "true") || (theme === "halloween")) &&
                     <div>
                         <Spinner animation="border" variant="dark" id="delay-1" />
                         <br></br>
