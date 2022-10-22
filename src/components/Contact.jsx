@@ -87,7 +87,7 @@ const Contact = () => {
                             </Row>
                         </div>
                     }
-                    {(current_mode === "default_light" || current_mode === "light" || (dark_media_mode === "false" && light_media_mode === "true")) &&
+                    {(current_mode === "default_light" || current_mode === "light" || current_mode === "halloween"  || (dark_media_mode === "false" && light_media_mode === "true")) &&
                         <div>
                             <Row id="contact-steps-row">
                                 <Col id="contact-steps-col">
