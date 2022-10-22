@@ -463,6 +463,30 @@
       "date": 10,
       "year": 2022,
       "id": 58
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 10/21/2022, 09:03 PM.",
+      "postContent": "Good evening, everyone! I apologize for not posting an announcement for the last week and a half. I have been very busy during that time and am more likely going to be more busy as the new month approaches.",
+      "month": 10,
+      "date": 21,
+      "year": 2022,
+      "id": 59
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 10/21/2022, 09:05 PM.",
+      "postContent": "I wanted to reiterate that the new theme appeared on October 15, which was nearly a week ago from today. The theme will be available until November 1st at midnight.",
+      "month": 10,
+      "date": 21,
+      "year": 2022,
+      "id": 60
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 10/21/2022, 09:05 PM.",
+      "postContent": "I will be making some bug fixes right now to fix the missing contact form as a result of implementing this theme. I will let you all know when it is fixed!",
+      "month": 10,
+      "date": 21,
+      "year": 2022,
+      "id": 61
     }
   ]
 }
