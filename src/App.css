@@ -407,8 +407,8 @@ hr{
 }
 
 #time-text-row{
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 30%;
+  margin-right: 30%;
   font-weight: 300;
 }
 
@@ -1235,6 +1235,10 @@ hr{
     margin-right: 20%;
     text-align: center;
     justify-content: center;
+  }
+  #time-text-row{
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .works{
     padding-bottom: 30px;
