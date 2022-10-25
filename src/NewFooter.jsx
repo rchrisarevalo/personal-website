@@ -5,16 +5,12 @@ import Col from 'react-bootstrap/Col';
 
 import { Link } from 'react-router-dom';
 
-const current_year = new Date().getFullYear();
-
 const NewFooter = () => {
 
-    const [year, setYear] = useState(current_year)
+    const [year, setYear] = useState(new Date())
 
     setTimeout(() => {
-        if (new Date().getMonth() === 11 && new Date().getDate() === 31 && new Date().getMinutes() === 59 && new Date().getHours() === 23 && new Date().getSeconds() === 59) {
-            setYear(year + 1)
-        }
+        setYear(new Date().getFullYear());
     }, 1000)
 
     return (
