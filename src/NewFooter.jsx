@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const NewFooter = () => {
 
-    const [year, setYear] = useState(new Date())
+    const [year, setYear] = useState(new Date().getFullYear())
 
     setTimeout(() => {
         setYear(new Date().getFullYear());
