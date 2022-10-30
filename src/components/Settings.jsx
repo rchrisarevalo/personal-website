@@ -86,21 +86,16 @@ function light_dark_mode() {
     }
 
     if (prevState === theme_choice) {
-        console.log("Previous state: ", prevState)
-        console.log("Current state: ", theme_choice)
         saved_status = false
         save_button_status.disabled = true
         save_button_status.style.color = 'grey'
         save_button_status.style.transition = '.5s'
-        console.log("Change made: ", saved_status)
     } else if (prevState !== theme_choice) {
-        console.log("Previous state: ", prevState)
-        console.log("Current state: ", theme_choice)
         saved_status = true
+        console.log(saved_status)
         save_button_status.disabled = false
         save_button_status.style.color = 'white'
         save_button_status.style.transition = '.5s'
-        console.log("Change made: ", saved_status)
     }
 }
 
@@ -257,7 +252,7 @@ const Settings = () => {
                         <i>Reload page for changes to take effect:</i>
                         <br></br>
                         <br></br>
-                        <button type="submit" id="save-btn" onClick={handleSaveShow} disabled={saved_status}><IoSaveOutline id="settings-btns" />Save</button>
+                        <button type="submit" id="save-btn" onClick={handleSaveShow}><IoSaveOutline id="settings-btns" />Save</button>
                         <br></br>
                         <br></br>
                         {/* Save modal (from React Bootstrap) */}
