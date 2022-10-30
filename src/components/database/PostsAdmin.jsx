@@ -283,6 +283,9 @@ const PostEnter = () => {
 
     return (
         <div className="postInputContainer">
+            <button><a href="#/about">Home</a></button>
+            <br></br>
+            <br></br>
             <h2>Posts input</h2>
             <br></br>
             <textarea placeholder="Write your post" id="post-input" rows="10" cols="36"></textarea>
