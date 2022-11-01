@@ -136,7 +136,7 @@ const October2022Posts = () => {
                     />
                 </Link>
                 {Date.now() >= new Date(2022, 11, 1, 0, 0, 0) &&
-                    <Link to="/announcements/2022/September">
+                    <Link to="/announcements/2022/November">
                         <IoArrowForwardCircleOutline
                             id="posts-arrow-right"
                             title="November 2022 Announcements"
