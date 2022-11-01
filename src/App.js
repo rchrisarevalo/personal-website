@@ -27,6 +27,7 @@ import July2022Posts from './components/2022 Posts Components/July2022Posts.jsx'
 import August2022Posts from './components/2022 Posts Components/August2022Posts.jsx';
 import September2022Posts from './components/2022 Posts Components/September2022Posts.jsx';
 import October2022Posts from './components/2022 Posts Components/October2022Posts.jsx';
+import November2022Posts from './components/2022 Posts Components/November2022Posts.jsx';
 import Contact from './components/Contact.jsx';
 import Archives from "./components/Archives.jsx";
 import Settings from "./components/Settings.jsx";
@@ -80,8 +81,9 @@ function App() {
         {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/July" element={<July2022Posts />} />}
         {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/August" element={<August2022Posts />} />}
         {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/September" element={<September2022Posts />} />}
+        {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/October" element={<October2022Posts />} />}
         {(Date.now() >= new Date(db.archive[0].beginYear, db.archive[0].beginMonth - 1, db.archive[0].beginDate) && Date.now() <= new Date(db.archive[0].endYear, db.archive[0].endMonth - 1, db.archive[0].endDate)) &&
-          <Route path="/announcements/2022/October" element={<October2022Posts />} />
+          <Route path="/announcements/2022/October" element={<November2022Posts />} />
         }
 
         <Route path="/settings" element={<Settings />} />
