@@ -179,6 +179,12 @@ const Settings = () => {
     const handleNoticeClose = () => setNoticeShow(false);
     const handleNoticeShow = () => setNoticeShow(true);
 
+    const [dateState, setDateState] = useState(new Date())
+
+    setTimeout(() => {
+        setDateState(new Date())
+    }, 1000)
+
     return (
         <div className="settings-container">
             <NavSettings />
@@ -213,9 +219,9 @@ const Settings = () => {
                             <select id="value_check" onChange={light_dark_mode}>
                                 <option value="default" selected>Device theme</option>
                                 <option value="light">Light theme</option>
-                                <option value="dark">Dark theme</option>\
-                                { (Date.now() >= new Date(2022, 9, 15) && Date.now(2022, 10, 1)) && 
-                                     <option value="halloween">Halloween theme</option>
+                                <option value="dark">Dark theme</option>
+                                { (Date.now() >= new Date(2022, 10, 12) && Date.now() <= Date.now(2022, 10, 30)) && 
+                                     <option value="halloween">Thanksgiving theme</option>
                                 }
                             </select>
                         }
@@ -224,8 +230,8 @@ const Settings = () => {
                                 <option value="default">Device theme</option>
                                 <option value="light">Light theme</option>
                                 <option value="dark" selected>Dark theme</option>
-                                { (Date.now() >= new Date(2022, 9, 15) && Date.now(2022, 10, 1)) && 
-                                     <option value="halloween">Halloween theme</option>
+                                { (Date.now() >= new Date(2022, 10, 12) && Date.now() <= Date.now(2022, 10, 30)) && 
+                                     <option value="halloween">Thanksgiving theme</option>
                                 }
                             </select>
                         }
@@ -234,17 +240,17 @@ const Settings = () => {
                                 <option value="default">Device theme</option>
                                 <option value="light" selected>Light theme</option>
                                 <option value="dark">Dark theme</option>
-                                { (Date.now() >= new Date(2022, 9, 15) && Date.now(2022, 10, 1)) && 
-                                     <option value="halloween">Halloween theme</option>
+                                { (Date.now() >= new Date(2022, 10, 12) && Date.now() <= Date.now(2022, 10, 30)) && 
+                                     <option value="halloween">Thanksgiving theme</option>
                                 }
                             </select>
                         }
-                        {d === "halloween" && (Date.now() >= new Date(2022, 9, 15) && Date.now(2022, 10, 1)) &&
+                        {d === "halloween" && (Date.now() >= new Date(2022, 10, 12) && Date.now() <= Date.now(2022, 10, 30)) &&
                             <select id="value_check" onChange={light_dark_mode}>
                                 <option value="default">Device theme</option>
                                 <option value="light">Light theme</option>
                                 <option value="dark">Dark theme</option>
-                                <option value="halloween" selected>Halloween theme</option>
+                                <option value="halloween" selected>Thanksgiving theme</option>
                             </select>
                         }
                         <br></br>
