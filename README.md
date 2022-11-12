@@ -1,12 +1,15 @@
-# Personal Website (v3.7.1)
+# Personal Website (v3.8.0)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on October 17, 2022):
+# UPDATES (made on November 12, 2022):
 
 * The following changes have been made to the site:
-  * A bug fix has been made for the loading screen for the Halloween theme.
+  * The Thanksgiving theme has been created and will appear on November 15th!
+  * Changes to the buttons in the "Settings" page have been made to make them appear
+    more appealing for people visiting this website.
+    * A similar change will occur for the rest of the buttons in the next few weeks.
 
 # CREDITS:
 * Progress bar by nProgress (author: rstacruz)
