@@ -58,9 +58,9 @@ function light_dark_mode() {
         localStorage.setItem("dark_media_theme", "false")
         localStorage.setItem("light_media_theme", "false")
         localStorage.setItem("save_status", "saved")
-    } else if (theme_choice === "halloween" && prevState !== d) {
+    } else if (theme_choice === "thanksgiving" && prevState !== d) {
         prevState = d
-        document.body.style.cssText = 'background: #FF7709; color: black; transition: .5s;'
+        document.body.style.cssText = 'background: #BE5634; color: black; transition: .5s;'
         localStorage.setItem("d_l_mode", theme_choice)
         localStorage.setItem("dark_media_theme", "false")
         localStorage.setItem("light_media_theme", "false")
@@ -94,7 +94,7 @@ function light_dark_mode() {
         saved_status = true
         console.log(saved_status)
         save_button_status.disabled = false
-        save_button_status.style.color = 'white'
+        save_button_status.style.color = 'black'
         save_button_status.style.transition = '.5s'
     }
 }
@@ -114,8 +114,8 @@ if (d === "dark" || d === "default_dark") {
     }
 } else if (d === "light" || d === "default_light") {
     document.body.style.cssText = 'background: #FFFFFF; color: black; transition: .5s;'
-} else if (d === "halloween") {
-    document.body.style.cssText = 'background: #FF7709; color: black; transition: .5s;'
+} else if (d === "thanksgiving") {
+    document.body.style.cssText = 'background: #BE5634; color: black; transition: .5s;'
 }
 
 // ====================================
@@ -205,7 +205,7 @@ const Settings = () => {
                         <br></br>
                         <br></br>
                         {(d !== null || one_time_message !== null) &&
-                            <button onClick={handleNoticeShow}><IoTrashOutline id="settings-btns" />Clear</button>
+                            <button onClick={handleNoticeShow} id="clear_button"><IoTrashOutline id="settings-btns" />Clear</button>
                         }
                         {(d === null && one_time_message === null) &&
                             <button onClick={handleNoticeShow} id="settings-disabled" disabled><IoTrashOutline id="settings-btns" />Clear</button>
@@ -220,8 +220,8 @@ const Settings = () => {
                                 <option value="default" selected>Device theme</option>
                                 <option value="light">Light theme</option>
                                 <option value="dark">Dark theme</option>
-                                { (Date.now() >= new Date(2022, 10, 12) && Date.now() <= Date.now(2022, 10, 30)) && 
-                                     <option value="halloween">Thanksgiving theme</option>
+                                { (Date.now() >= new Date(2022, 10, 15) && Date.now() <= Date.now(2022, 10, 30)) && 
+                                     <option value="thanksgiving">Thanksgiving theme</option>
                                 }
                             </select>
                         }
@@ -230,8 +230,8 @@ const Settings = () => {
                                 <option value="default">Device theme</option>
                                 <option value="light">Light theme</option>
                                 <option value="dark" selected>Dark theme</option>
-                                { (Date.now() >= new Date(2022, 10, 12) && Date.now() <= Date.now(2022, 10, 30)) && 
-                                     <option value="halloween">Thanksgiving theme</option>
+                                { (Date.now() >= new Date(2022, 10, 15) && Date.now() <= Date.now(2022, 10, 30)) && 
+                                     <option value="thanksgiving">Thanksgiving theme</option>
                                 }
                             </select>
                         }
@@ -240,17 +240,17 @@ const Settings = () => {
                                 <option value="default">Device theme</option>
                                 <option value="light" selected>Light theme</option>
                                 <option value="dark">Dark theme</option>
-                                { (Date.now() >= new Date(2022, 10, 12) && Date.now() <= Date.now(2022, 10, 30)) && 
-                                     <option value="halloween">Thanksgiving theme</option>
+                                { (Date.now() >= new Date(2022, 10, 15) && Date.now() <= Date.now(2022, 10, 30)) && 
+                                     <option value="thanksgiving">Thanksgiving theme</option>
                                 }
                             </select>
                         }
-                        {d === "halloween" && (Date.now() >= new Date(2022, 10, 12) && Date.now() <= Date.now(2022, 10, 30)) &&
+                        {d === "thanksgiving" && (Date.now() >= new Date(2022, 10, 15) && Date.now() <= Date.now(2022, 10, 30)) &&
                             <select id="value_check" onChange={light_dark_mode}>
                                 <option value="default">Device theme</option>
                                 <option value="light">Light theme</option>
                                 <option value="dark">Dark theme</option>
-                                <option value="halloween" selected>Thanksgiving theme</option>
+                                <option value="thanksgiving" selected>Thanksgiving theme</option>
                             </select>
                         }
                         <br></br>
