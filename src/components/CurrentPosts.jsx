@@ -18,8 +18,6 @@ const CurrentPosts = () => {
         axios.get("https://rchrisarevalo.github.io/posts.json", db.post).then((res) => {
             setPrevPostNum(db.post.length)
             setCurrentPostNum(db.post.length)
-            console.log("Previous post number: ", prevPostNum)
-            console.log("Current post number: ", currentPostNum)
             if (currentPostNum === prevPostNum) {
                 for (var i = db.post.length - 1; i >= 0; i--) {
                     if (db.post[i].month === new Date().getMonth() + 1) {
