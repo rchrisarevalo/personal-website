@@ -23,18 +23,18 @@ const Load = () => {
     useEffect(() => {
         axios.get("https://rchrisarevalo.github.io/personal-website").then((res) => {
             resStatus = res.status
-            setMs(25)
+            setMs(20)
         }).catch((error) => {
             resStatus = error.response.status
-            setMs(25)
+            setMs(20)
         })
     }, [])
 
-    // The state of the percentage will update each 50 ms.
+    // The state of the percentage will update each 20 ms.
     setTimeout(() => {
         setPercentage(percentage + 1)
         setDateState(new Date())
-    }, 25)
+    }, 20)
 
     if (percentage === 100 && resStatus === 200) {
         nav("/about")
@@ -62,7 +62,7 @@ const Load = () => {
                         <div id="percentage-load">{`${percentage}`}%</div>
                     </div>
                 }
-                {((theme === "light" || light_media === "true") || (theme === "halloween")) &&
+                {((theme === "light" || light_media === "true") || (theme === "thanksgiving")) &&
                     <div>
                         <Spinner animation="border" variant="dark" id="delay-1" />
                         <br></br>
