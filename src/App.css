@@ -261,40 +261,6 @@ hr{
   border-radius: 20px;
 }
 
-.button{
-  padding-bottom: 0px;
-  font-weight: 600;
-}
-
-.button a{
-  border: 1px solid white;
-  color: white;
-  text-decoration: none;
-  border-radius: 25px;
-  padding: 5.5px 20px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  margin-bottom: 2px;
-  text-align: center;
-  align-items: center;
-  cursor: pointer;
-  transition: .5s;
-}
-
-.button a:hover{
-  background: white;
-  font-weight: 900;
-  color: black;
-  border: 2px solid black;
-  transition: .5s;
-}
-
-.button a:active{
-  background: green;
-  color: white;
-  transition: .5s;
-}
-
 .update-message{
   font-family: 'Open Sans', sans-serif;
   margin: 0.5em;
@@ -934,54 +900,74 @@ hr{
   letter-spacing: 0.5px;
 }
 
-.settings-options button{
-  border: 1px solid white;
-  background: rgb(92, 92, 92);
-  color: white;
-  padding: 5px 20px;
-  border-radius: 5px;
+#clear_button{
+  background: rgb(238, 66, 66);
+  color: black;
+  border: none;
+  padding: 4px 18px;
+  font-weight: 700;
+  border-radius: 30px;
+  box-shadow: 0 0 4px black;
   transition: .5s;
-  font-weight: 500
+}
+
+#clear_button:hover{
+  background: rgb(0, 119, 255);
+  font-weight: 700;
+  transition: .5s;
+}
+
+#clear_button:active{
+  letter-spacing: 1px;
+  transition: .5s;
+}
+
+#save-btn{
+  background: rgb(91, 175, 91);
+  color: black;
+  border: none;
+  padding: 4px 18px;
+  font-weight: 700;
+  border-radius: 30px;
+  box-shadow: 0 0 4px black;
+  transition: .5s;
+}
+
+#save-btn:hover{
+  background: rgb(0, 119, 255);
+  font-weight: 700;
+  transition: .5s;
+}
+
+#save-btn:active{
+  letter-spacing: 1px;
+  transition: .5s;
 }
 
 #settings-disabled{
-  background: rgba(73, 73, 73, 0.479);
+  background: rgba(238, 66, 66, 0.295);
   color: rgba(138, 138, 138, 0.644);
   transition: none;
-}
-
-#settings-disabled:hover{
-  transition: none;
-  color: rgba(138, 138, 138, 0.644);
-  font-weight: 500;
+  padding: 4px 18px;
+  border-radius: 30px;
+  color: black;
+  font-weight: 700;
+  border: none;
 }
 
 .settings-options select{
-  border: 1px solid white;
-  background: rgb(92, 92, 92);
-  color: white;
+  background: rgb(189, 182, 182);
+  box-shadow: 0 0 4px black;
+  color: black;
   padding: 5px 20px;
-  border-radius: 5px;
+  border-radius: 50px;
   resize: both;
   transition: .5s;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .settings-options option{
   font-weight: 500;
-}
-
-.settings-options button:hover, .settings-options option:hover{
-  background: rgb(0, 119, 255);
-  color: black;
-  font-weight: 800;
-  transition: .5s;
-}
-
-.settings-options button:active{
-  background: pink;
-  color: black;
-  transition: .5s;
 }
 
 .settings-options h1{
@@ -1140,6 +1126,9 @@ hr{
   .center-message a{
      margin-left: 12%;
      margin-right: 12%;
+  }
+  .center-message p{
+    font-size: 17px;
   }
   #archive-message{
     margin-left: 5%;
