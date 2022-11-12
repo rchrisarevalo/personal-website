@@ -107,7 +107,7 @@ const ContactForm = () => {
                     </div>
                 </form>
             }
-            {(current_mode === "default_light" || current_mode === "light" || current_mode === "halloween" || (dark_media_mode === "false" && light_media_mode === "true")) &&
+            {(current_mode === "default_light" || current_mode === "light" || current_mode === "thanksgiving" || (dark_media_mode === "false" && light_media_mode === "true")) &&
                 <form
                     action="https://formspree.io/f/mayvaojd"
                     method="POST"
