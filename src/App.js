@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Route, Routes } from "react-router-dom";
 import AOS from 'aos';
 import "aos/dist/aos.css";
@@ -34,6 +34,7 @@ import Settings from "./components/Settings.jsx";
 import WebsiteOperation from "./components/policies/WebsiteOperation.jsx";
 import ArchivePolicy from "./components/policies/ArchivePolicy.jsx";
 import Error404 from "./components/Error404.jsx";
+import ClosedWeb from './components/ClosedWeb.jsx';
 
 import db from "./components/database/update.json";
 
@@ -53,45 +54,59 @@ function App() {
     })
   }, []);
 
+  const [dateState, setDateState] = useState(new Date())
+
+  setTimeout(() => {
+    setDateState(new Date())
+  }, 1000)
+
   return (
     <div className="App">
+      {((Date.now() < new Date(2022, 10, 24, 0, 0)) || Date.now() >= new Date(2022, 10, 25, 0, 0)) &&
+        <Routes>
+          <Route index path="/" element={<Load />} />
+          <Route path="/about" element={<Intro />} />
+          <Route path="/announcements" element={<Posts />} />
+          {/* <Route path="/posts" element={<PostsAdmin />} /> */}
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/archives" element={<Archives />} />
 
-      <Routes>
-        <Route index path="/" element={<Load />} />
-        <Route path="/about" element={<Intro />} />
-        <Route path="/announcements" element={<Posts />} />
-        {/* <Route path="/posts" element={<PostsAdmin />} /> */}
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/archives" element={<Archives />} />
+          {/* 2021 archive routes (expire on December 31, 2024) */}
+          {(Date.now() >= new Date(2021, 0, 1) && Date.now() <= new Date(2024, 11, 31)) && <Route path="/announcements/2021/August" element={<August2021Posts />} />}
+          {(Date.now() >= new Date(2021, 0, 1) && Date.now() <= new Date(2024, 11, 31)) && <Route path="/announcements/2021/September" element={<September2021Posts />} />}
+          {(Date.now() >= new Date(2021, 0, 1) && Date.now() <= new Date(2024, 11, 31)) && <Route path="/announcements/2021/October" element={<October2021Posts />} />}
+          {(Date.now() >= new Date(2021, 0, 1) && Date.now() <= new Date(2024, 11, 31)) && <Route path="/announcements/2021/November" element={<November2021Posts />} />}
+          {(Date.now() >= new Date(2021, 0, 1) && Date.now() <= new Date(2024, 11, 31)) && <Route path="/announcements/2021/December" element={<December2021Posts />} />}
 
-        {/* 2021 archive routes (expire on December 31, 2024) */}
-        {(Date.now() >= new Date(2021, 0, 1) && Date.now() <= new Date(2024, 11, 31)) && <Route path="/announcements/2021/August" element={<August2021Posts />} />}
-        {(Date.now() >= new Date(2021, 0, 1) && Date.now() <= new Date(2024, 11, 31)) && <Route path="/announcements/2021/September" element={<September2021Posts />} />}
-        {(Date.now() >= new Date(2021, 0, 1) && Date.now() <= new Date(2024, 11, 31)) && <Route path="/announcements/2021/October" element={<October2021Posts />} />}
-        {(Date.now() >= new Date(2021, 0, 1) && Date.now() <= new Date(2024, 11, 31)) && <Route path="/announcements/2021/November" element={<November2021Posts />} />}
-        {(Date.now() >= new Date(2021, 0, 1) && Date.now() <= new Date(2024, 11, 31)) && <Route path="/announcements/2021/December" element={<December2021Posts />} />}
+          {/* 2022 archive routes (expire on December 31, 2025) */}
+          {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/January" element={<January2022Posts />} />}
+          {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/February" element={<February2022Posts />} />}
+          {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/March" element={<March2022Posts />} />}
+          {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/April" element={<April2022Posts />} />}
+          {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/May" element={<May2022Posts />} />}
+          {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/June" element={<June2022Posts />} />}
+          {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/July" element={<July2022Posts />} />}
+          {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/August" element={<August2022Posts />} />}
+          {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/September" element={<September2022Posts />} />}
+          {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/October" element={<October2022Posts />} />}
+          {(Date.now() >= new Date(db.archive[0].beginYear, db.archive[0].beginMonth - 1, db.archive[0].beginDate) && Date.now() <= new Date(db.archive[0].endYear, db.archive[0].endMonth - 1, db.archive[0].endDate)) &&
+            <Route path="/announcements/2022/October" element={<November2022Posts />} />
+          }
 
-        {/* 2022 archive routes (expire on December 31, 2025) */}
-        {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/January" element={<January2022Posts />} />}
-        {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/February" element={<February2022Posts />} />}
-        {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/March" element={<March2022Posts />} />}
-        {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/April" element={<April2022Posts />} />}
-        {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/May" element={<May2022Posts />} />}
-        {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/June" element={<June2022Posts />} />}
-        {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/July" element={<July2022Posts />} />}
-        {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/August" element={<August2022Posts />} />}
-        {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/September" element={<September2022Posts />} />}
-        {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/October" element={<October2022Posts />} />}
-        {(Date.now() >= new Date(db.archive[0].beginYear, db.archive[0].beginMonth - 1, db.archive[0].beginDate) && Date.now() <= new Date(db.archive[0].endYear, db.archive[0].endMonth - 1, db.archive[0].endDate)) &&
-          <Route path="/announcements/2022/October" element={<November2022Posts />} />
-        }
-
-        <Route path="/settings" element={<Settings />} />
-        <Route path="/policies/site-operation" element={<WebsiteOperation />} />
-        <Route path="/policies/archive" element={<ArchivePolicy />} />
-        <Route path='*' element={<Error404 />} />
-      </Routes>
-
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/policies/site-operation" element={<WebsiteOperation />} />
+          <Route path="/policies/archive" element={<ArchivePolicy />} />
+          <Route path="/closed" element={<ClosedWeb />} />
+          <Route path='*' element={<Error404 />} />
+        </Routes>
+      }
+      {Date.now() >= new Date(2022, 10, 24, 0, 0) && Date.now() < new Date(2022, 10, 25, 0, 0) &&
+        <Routes>
+          <Route index path="/" element={<Load />} />
+          <Route path="/closed" element={<ClosedWeb />} />
+          <Route path='*' element={<Error404 />} />
+        </Routes>
+      }
     </div>
   );
 }
