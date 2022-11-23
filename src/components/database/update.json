@@ -1,12 +1,12 @@
 {
   "update": [
     {
-      "updateMessageText": "The Halloween theme is available! It can be found on the \"Settings\" page located on the navigation bar above. The option will disappear on November 1st at midnight.",
-      "beginMonth": "10",
-      "beginDate": "15",
+      "updateMessageText": "Hi everyone! Because of the holidays tomorrow, this site will be closed until November 25. Please stay safe and have a wonderful day!",
+      "beginMonth": "11",
+      "beginDate": "23",
       "beginYear": "2022",
       "endMonth": "11",
-      "endDate": "1",
+      "endDate": "25",
       "endYear": "2022",
       "beginHour": "0",
       "beginMinute": "0",
