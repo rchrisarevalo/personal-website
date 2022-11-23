@@ -36,10 +36,21 @@ const Load = () => {
         setDateState(new Date())
     }, 20)
 
-    if (percentage === 100 && resStatus === 200) {
-        nav("/about")
-    } else if (percentage === 100 && (resStatus === 404 || resStatus === 0)){
-        nav("/error")
+    if (Date.now() < new Date(2022, 10, 24) || Date.now() >= new Date(2022, 10, 25))
+    {
+        if (percentage === 100 && resStatus === 200) {
+            nav("/about")
+        } else if (percentage === 100 && (resStatus === 404 || resStatus === 0)){
+            nav("/error")
+        }
+    }
+    else
+    {
+        if (percentage === 100 && resStatus === 200) {
+            nav("/closed")
+        } else if (percentage === 100 && (resStatus === 404 || resStatus === 0)){
+            nav("/error")
+        }
     }
 
     return (
