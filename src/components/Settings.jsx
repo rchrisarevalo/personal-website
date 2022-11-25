@@ -220,7 +220,7 @@ const Settings = () => {
                                 <option value="default" selected>Device theme</option>
                                 <option value="light">Light theme</option>
                                 <option value="dark">Dark theme</option>
-                                { (Date.now() >= new Date(2022, 10, 15) && Date.now() <= Date.now(2022, 10, 25, 0, 40)) && 
+                                { (Date.now() >= new Date(2022, 10, 15) && Date.now() <= new Date(2022, 10, 25, 0, 45)) && 
                                      <option value="thanksgiving">Thanksgiving theme</option>
                                 }
                             </select>
@@ -230,7 +230,7 @@ const Settings = () => {
                                 <option value="default">Device theme</option>
                                 <option value="light">Light theme</option>
                                 <option value="dark" selected>Dark theme</option>
-                                { (Date.now() >= new Date(2022, 10, 15) && Date.now() <= Date.now(2022, 10, 25, 0, 40)) && 
+                                { (Date.now() >= new Date(2022, 10, 15) && Date.now() <= new Date(2022, 10, 25, 0, 45)) && 
                                      <option value="thanksgiving">Thanksgiving theme</option>
                                 }
                             </select>
@@ -240,12 +240,12 @@ const Settings = () => {
                                 <option value="default">Device theme</option>
                                 <option value="light" selected>Light theme</option>
                                 <option value="dark">Dark theme</option>
-                                { (Date.now() >= new Date(2022, 10, 15) && Date.now() <= Date.now(2022, 10, 25, 0, 40)) && 
+                                { (Date.now() >= new Date(2022, 10, 15) && Date.now() <= new Date(2022, 10, 25, 0, 45)) && 
                                      <option value="thanksgiving">Thanksgiving theme</option>
                                 }
                             </select>
                         }
-                        {d === "thanksgiving" && (Date.now() >= new Date(2022, 10, 15) && Date.now() <= Date.now(2022, 10, 25, 0, 40)) &&
+                        {d === "thanksgiving" && (Date.now() >= new Date(2022, 10, 15) && Date.now() <= new Date(2022, 10, 25, 0, 45)) &&
                             <select id="value_check" onChange={light_dark_mode}>
                                 <option value="default">Device theme</option>
                                 <option value="light">Light theme</option>
