@@ -96,7 +96,6 @@ function App() {
           <Route path="/settings" element={<Settings />} />
           <Route path="/policies/site-operation" element={<WebsiteOperation />} />
           <Route path="/policies/archive" element={<ArchivePolicy />} />
-          <Route path="/closed" element={<ClosedWeb />} />
           <Route path='*' element={<Error404 />} />
         </Routes>
       }
