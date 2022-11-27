@@ -24,7 +24,7 @@ const ClosedWeb = () => {
             <div className="center-message">
                 <p id="closed-msg">Today's date: <i><b>{currentDate()}</b></i></p>
                 <p id="closed-msg">
-                    This website will be closed in observance of Thanksgiving. It will be reopened on <b>November 25</b> at midnight.
+                    This website will be closed for the weekend in observance of Christmas. It will be reopened on <b>December 26</b> at midnight.
                 </p>
                 <br />
                 <p id="closed-msg">Contact me if you have any questions or concerns.</p>
