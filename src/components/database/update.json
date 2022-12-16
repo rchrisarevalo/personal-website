@@ -1,11 +1,11 @@
 {
   "update": [
     {
-      "updateMessageText": "Hi everyone! Because of the holidays tomorrow, this site will be closed until November 25. Please stay safe and have a wonderful day!",
-      "beginMonth": "11",
-      "beginDate": "23",
+      "updateMessageText": "The website will close on December 25th due to Christmas. It will reopen on December 26th at midnight.",
+      "beginMonth": "12",
+      "beginDate": "20",
       "beginYear": "2022",
-      "endMonth": "11",
+      "endMonth": "12",
       "endDate": "25",
       "endYear": "2022",
       "beginHour": "0",
@@ -17,12 +17,12 @@
   ],
   "archive": [
     {
-      "beginMonth": 12,
+      "beginMonth": 1,
       "beginDate": 1,
-      "beginYear": 2022,
+      "beginYear": 2023,
       "endMonth": 12,
       "endDate": 31,
-      "endYear": 2025,
+      "endYear": 2026,
       "beginHour": 0,
       "beginMinute": 0,
       "endHour": 23,
