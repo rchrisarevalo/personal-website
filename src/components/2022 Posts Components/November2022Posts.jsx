@@ -131,7 +131,7 @@ const November2022Posts = () => {
                 <Link to="/announcements/2022/October">
                     <IoArrowBackCircleOutline
                         id="posts-arrow-left"
-                        title="September 2022 Announcements"
+                        title="October 2022 Announcements"
                         size="40px"
                     />
                 </Link>
