@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
@@ -21,14 +21,6 @@ const Archives = () => {
 
         window.scrollTo(0, 0);
     }, []);
-
-    const [seconds, setSeconds] = useState(new Date().getSeconds())
-    const [date, setDate] = useState(new Date())
-
-    setTimeout(() => {
-        setSeconds(new Date().getSeconds())
-        setDate(new Date())
-    }, 1000)
 
     return (
         <div className="archives-container">
