@@ -28,7 +28,7 @@ const Archives = () => {
                 <title>Ruben C. Arevalo - Personal Website - Archives</title>
             </Helmet>
             <NavArchives />
-            <div className="center-message">
+            <div className="archive-wrap">
                 <p id="archive-message">
                     <br></br>
                     <h1 id="archive-header">Archives Log</h1>
@@ -40,11 +40,104 @@ const Archives = () => {
                 </p>
                 <br></br>
                 <p id="archive-message">
+                    Below is a table which shows which month and year the archives were originally
+                    made available in addition to showing what month and year they are set to
+                    expire:
+                    <div id="table-info">
+                        <table>
+                            <tr>
+                                <th>Archive Month/Year</th>
+                                <th>Expiration Date</th>
+                                <th>Time Left</th>
+                            </tr>
+                            <tr>
+                                <td>August 2021</td>
+                                <td>December 31, 2024</td>
+                                <td>{`${2024 - new Date().getFullYear()} years left`}</td>
+                            </tr>
+                            <tr>
+                                <td>September 2021</td>
+                                <td>December 31, 2024</td>
+                                <td>{`${2024 - new Date().getFullYear()} years left`}</td>
+                            </tr>
+                            <tr>
+                                <td>October 2021</td>
+                                <td>December 31, 2024</td>
+                                <td>{`${2024 - new Date().getFullYear()} years left`}</td>
+                            </tr>
+                            <tr>
+                                <td>November 2021</td>
+                                <td>December 31, 2024</td>
+                                <td>{`${2024 - new Date().getFullYear()} years left`}</td>
+                            </tr>
+                            <tr>
+                                <td>December 2021</td>
+                                <td>December 31, 2024</td>
+                                <td>{`${2024 - new Date().getFullYear()} years left`}</td>
+                            </tr>
+                            <tr>
+                                <td>January 2022</td>
+                                <td>December 31, 2025</td>
+                                <td>{`${2025 - new Date().getFullYear()} years left`}</td>
+                            </tr>
+                            <tr>
+                                <td>February 2022</td>
+                                <td>December 31, 2025</td>
+                                <td>{`${2025 - new Date().getFullYear()} years left`}</td>
+                            </tr>
+                            <tr>
+                                <td>March 2022</td>
+                                <td>December 31, 2025</td>
+                                <td>{`${2025 - new Date().getFullYear()} years left`}</td>
+                            </tr>
+                            <tr>
+                                <td>April 2022</td>
+                                <td>December 31, 2025</td>
+                                <td>{`${2025 - new Date().getFullYear()} years left`}</td>
+                            </tr>
+                            <tr>
+                                <td>May 2022</td>
+                                <td>December 31, 2025</td>
+                                <td>{`${2025 - new Date().getFullYear()} years left`}</td>
+                            </tr>
+                            <tr>
+                                <td>June 2022</td>
+                                <td>December 31, 2025</td>
+                                <td>{`${2025 - new Date().getFullYear()} years left`}</td>
+                            </tr>
+                            <tr>
+                                <td>July 2022</td>
+                                <td>December 31, 2025</td>
+                                <td>{`${2025 - new Date().getFullYear()} years left`}</td>
+                            </tr>
+                            <tr>
+                                <td>August 2022</td>
+                                <td>December 31, 2025</td>
+                                <td>{`${2025 - new Date().getFullYear()} years left`}</td>
+                            </tr>
+                            <tr>
+                                <td>September 2022</td>
+                                <td>December 31, 2025</td>
+                                <td>{`${2025 - new Date().getFullYear()} years left`}</td>
+                            </tr>
+                            <tr>
+                                <td>October 2022</td>
+                                <td>December 31, 2025</td>
+                                <td>{`${2025 - new Date().getFullYear()} years left`}</td>
+                            </tr>
+                            <tr>
+                                <td>November 2022</td>
+                                <td>December 31, 2025</td>
+                                <td>{`${2025 - new Date().getFullYear()} years left`}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </p>
+                <p id="archive-message">
                     Select the month of the associated year below to access the announcement archive for that
                     time period:
                 </p>
             </div>
-            <br></br>
             {(Date.now() >= new Date(2021, 0, 1) && Date.now() <= new Date(2024, 11, 31)) &&
                 <div>
                     <div className="archive-row">
@@ -74,9 +167,9 @@ const Archives = () => {
                         <li><Link to="/announcements/2022/September">September</Link></li>
                         <li><Link to="/announcements/2022/October">October</Link></li>
                         <li><Link to="/announcements/2022/November">November</Link></li>
-                        { (Date.now() >= new Date(db.archive[0].beginYear, db.archive[0].beginMonth - 1, db.archive[0].beginDate, db.archive[0].beginHour, db.archive[0].beginMinute) && Date.now() <= new Date(db.archive[0].endYear, db.archive[0].endMonth - 1, db.archive[0].endDate, db.archive[0].endHour, db.archive[0].endMinute)) &&
+                        {(Date.now() >= new Date(db.archive[0].beginYear, db.archive[0].beginMonth - 1, db.archive[0].beginDate, db.archive[0].beginHour, db.archive[0].beginMinute) && Date.now() <= new Date(db.archive[0].endYear, db.archive[0].endMonth - 1, db.archive[0].endDate, db.archive[0].endHour, db.archive[0].endMinute)) &&
                             <li><Link to="/announcements/2022/December">December</Link></li>
-                        } 
+                        }
                     </div>
                     <br></br>
                     <br></br>
