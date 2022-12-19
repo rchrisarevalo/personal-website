@@ -36,6 +36,31 @@ img {
   pointer-events: none;
 }
 
+#table-info{
+  text-align: center;
+}
+
+table{
+  border: 1px solid white;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+tr{
+  border: 1px solid white;
+}
+
+th{
+  border: 1px solid white;
+  padding: 7px 20px;
+}
+
+td{
+  border: 1px solid white;
+  padding: 7px 20px;
+}
+
 hr{
   background: rgb(136, 136, 136);
   margin-left: 1%;
@@ -823,6 +848,11 @@ hr{
   padding: 7px 20px;
 }
 
+.archive-wrap{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
 #archive-message{
   margin-left: 15%;
   margin-right: 15%;
@@ -1107,6 +1137,13 @@ hr{
 {
   body{
     overflow-x: hidden;
+  }
+  .archive-wrap{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  table{
+    font-size: 15.5px;
   }
   #mobile-remove{
     display: none;
