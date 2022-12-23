@@ -49,7 +49,7 @@ function light_dark_mode() {
     var save_button_status = document.getElementById("save-btn")
     var prevState;
 
-    randomIndex = Math.floor(Math.random() * 2) + 0
+    randomIndex = Math.floor(Math.random() * 11) + 0
 
     if (theme_choice === "dark" && prevState !== d) {
         prevState = d
