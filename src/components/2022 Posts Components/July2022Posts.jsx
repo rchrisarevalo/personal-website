@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
@@ -10,13 +10,7 @@ import NewFooter from "../../NewFooter.jsx";
 const July2022Posts = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-    });
-
-    const [dateState, setDateState] = useState(new Date())
-
-    setTimeout(() => {
-        setDateState(new Date())
-    }, 1000)
+    }, []);
 
     return (
         <div class="posts-main">

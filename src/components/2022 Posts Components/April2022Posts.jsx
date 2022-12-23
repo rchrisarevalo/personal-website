@@ -10,7 +10,7 @@ import NewFooter from "../../NewFooter.jsx";
 const April2022Posts = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-    });
+    }, []);
 
     return (
         <div class="posts-main">
