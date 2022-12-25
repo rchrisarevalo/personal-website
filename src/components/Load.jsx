@@ -15,40 +15,41 @@ var resStatus = 0;
 const Load = () => {
 
     const [percentage, setPercentage] = useState(0)
-    const [dateState, setDateState] = useState(new Date())
-    const milliseconds = 25
-    const [ms, setMs] = useState(milliseconds)
     const nav = useNavigate();
 
     useEffect(() => {
         axios.get("https://rchrisarevalo.github.io/personal-website").then((res) => {
             resStatus = res.status
-            setMs(20)
+            console.log(resStatus)
         }).catch((error) => {
             resStatus = error.response.status
-            setMs(20)
         })
     }, [])
 
     // The state of the percentage will update each 20 ms.
     setTimeout(() => {
         setPercentage(percentage + 1)
-        setDateState(new Date())
     }, 20)
 
-    if (Date.now() < new Date(2022, 11, 24) || Date.now() >= new Date(2022, 11, 25))
+    if (Date.now() >= new Date(2022, 11, 25) && Date.now() < new Date(2022, 11, 26))
     {
-        if (percentage === 100 && resStatus === 200) {
-            nav("/about")
-        } else if (percentage === 100 && (resStatus === 404 || resStatus === 0)){
+        if (resStatus === 200 && percentage === 100)
+        {
+            nav("/closed")
+        }
+        else if (resStatus === 404 && percentage === 100)
+        {
             nav("/error")
         }
     }
     else
     {
-        if (percentage === 100 && resStatus === 200) {
-            nav("/closed")
-        } else if (percentage === 100 && (resStatus === 404 || resStatus === 0)){
+        if (resStatus === 200 && percentage === 100)
+        {
+            nav("/about")
+        }
+        else if (resStatus === 404 && percentage === 100)
+        {
             nav("/error")
         }
     }
