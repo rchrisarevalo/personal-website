@@ -60,7 +60,7 @@ function App() {
   setTimeout(() => {
     setDateState(new Date())
   }, 1000)
-
+  
   return (
     <div className="App">
       {((Date.now() < new Date(2022, 11, 25, 0, 0)) || Date.now() >= new Date(2022, 11, 26, 0, 0)) &&
