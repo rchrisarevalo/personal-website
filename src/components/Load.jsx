@@ -36,7 +36,7 @@ const Load = () => {
         setDateState(new Date())
     }, 20)
 
-    if (Date.now() < new Date(2022, 10, 24) || Date.now() >= new Date(2022, 10, 25))
+    if (Date.now() < new Date(2022, 11, 24) || Date.now() >= new Date(2022, 11, 25))
     {
         if (percentage === 100 && resStatus === 200) {
             nav("/about")
