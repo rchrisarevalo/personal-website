@@ -47,7 +47,10 @@ const Load = () => {
     }
     else if (resStatus === 404 || resStatus === 0)
     {
-        nav("/error")
+        if (percentage === 100)
+        {
+            nav("/error")
+        }
     }
 
     return (
