@@ -1,13 +1,13 @@
 {
   "update": [
     {
-      "updateMessageText": "The website will close on December 25th due to Christmas. It will reopen on December 26th at midnight.",
+      "updateMessageText": "This website will be closed from December 31 to January 1 in observance of New Year's Eve and New Year's. It will be re-opened on January 2.",
       "beginMonth": "12",
-      "beginDate": "20",
+      "beginDate": "31",
       "beginYear": "2022",
-      "endMonth": "12",
-      "endDate": "25",
-      "endYear": "2022",
+      "endMonth": "1",
+      "endDate": "2",
+      "endYear": "2023",
       "beginHour": "0",
       "beginMinute": "0",
       "endHour": "0",
