@@ -121,7 +121,7 @@ const December2022Posts = () => {
         <div class="posts-main">
             <Helmet>
                 <title>
-                    Ruben C. Arevalo - Personal Website - Announcements (November 2022)
+                    Ruben C. Arevalo - Personal Website - Announcements (December 2022)
                 </title>
             </Helmet>
             <NavArchives />
@@ -142,10 +142,10 @@ const December2022Posts = () => {
                         />
                     </Link>
                 }
-                <h1 id="posts-title">Announcements (November 2022)</h1>
+                <h1 id="posts-title">Announcements (December 2022)</h1>
                 <br></br>
                 <p id="posts-description">
-                    These are all the posts for November 2022 that were archived on this
+                    These are all the posts for December 2022 that were archived on this
                     page. None of these posts will be deleted or edited unless I decide
                     otherwise.
                 </p>
