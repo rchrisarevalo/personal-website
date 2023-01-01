@@ -11,23 +11,6 @@ function closeUpdateMsg() {
     localStorage.setItem("one-time", "enabled");
 }
 
-// var ms = Math.abs(Date.now() - new Date(2022, 4, 30, 0));
-
-// var num_days = ms * (0.001 / 1) * (1 / 60) * (1 / 60) * (1 / 24)
-// num_days = num_days.toFixed(0);
-
-// var num_hours = ms * (0.001 / 1) * (1 / 60) * (1 / 60)
-// num_hours = num_hours.toFixed(0);
-
-// var remaining = 0;
-
-// if (num_days > 1)
-//     remaining = [`${num_days} days`]
-// else
-// {
-//     remaining = [`${num_hours} hours`]
-// }
-
 var message = "";
 var beginDate = 0;
 var beginMonth = 0;
