@@ -1,15 +1,15 @@
 {
   "update": [
     {
-      "updateMessageText": "This website will be closed from December 31 to January 1 in observance of New Year's Eve and New Year's. It will be re-opened on January 2.",
-      "beginMonth": "12",
-      "beginDate": "28",
-      "beginYear": "2022",
+      "updateMessageText": "A new feature has been introduced in the \"Settings\" page. Feel free to check it out!",
+      "beginMonth": "1",
+      "beginDate": "9",
+      "beginYear": "2023",
       "endMonth": "1",
-      "endDate": "2",
+      "endDate": "16",
       "endYear": "2023",
-      "beginHour": "0",
-      "beginMinute": "0",
+      "beginHour": "14",
+      "beginMinute": "31",
       "endHour": "0",
       "endMinute": "0",
       "id": 1
