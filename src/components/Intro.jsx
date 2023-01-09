@@ -195,14 +195,14 @@ const Intro = () => {
                     for the better.
                 </p>
                 <p data-aos="fade-down" data-aos-delay="1000">
-                    Feel free to contact me through either Github or Linkedin. The profile links are attached in the footer below
+                    Feel free to contact me through either GitHub or LinkedIn. The profile links are attached in the footer below
                     the page.
                 </p>
                 <p data-aos="fade-down" data-aos-delay="1200">
                     You can also visit my CV website at this link: <a href="https://rchrisarevalo.github.io/cv-website" rel="noopener noreferrer" target="_blank"><b>rchrisarevalo.github.io/cv-website</b></a>
                 </p>
                 {/* This component will be displayed until the graduation date and the hours leading up to it */}
-                {(current_date <= graduation_date) &&
+                {(current_date <= graduation_date) && localStorage.getItem("show_progress") === "true" &&
                     <ProgressCountdown />
                 }
                 <br></br>
