@@ -371,10 +371,12 @@ hr{
   padding: 20px;
   margin-left: 30%;
   margin-right: 30%;
-  background: rgb(30, 116, 245);
+  background: rgb(114, 116, 209);
   border-radius: 20px;
-  font-size: 18px;
-  color: white;
+  box-shadow: 0 0 5px black;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
 }
 
 #progress-bar{
@@ -1239,8 +1241,9 @@ hr{
     margin-right: 5%;
   }
   #graduation-countdown{
-    margin-left: 13%;
-    margin-right: 13%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 15px;
   }
   #progress-count{
     margin-left: 5%;
