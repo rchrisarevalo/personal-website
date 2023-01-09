@@ -1,13 +1,15 @@
-# Personal Website (v3.9.1)
+# Personal Website (v3.10.0)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on December 23, 2022):
+# UPDATES (made on January 9, 2023):
 
 * The following changes have been made to the site:
-  * In the archives ranging from August 2021 to July 2022, as soon as one scrolled down the page, it would automatically redirect the user back to the top of the page.
-  * The bug causing this issue has been fixed, and the user should not be automatically redirected to the top of the page each time they scroll down.
+  * A new feature has been rolled out in the "Settings" page.
+    * This feature will provide the user with the ability to whether display
+    the progress bar in the "About Me" page or not.
+  * This feature will be available until **May 14, 2023**.
 
 # CREDITS:
 * Progress bar by nProgress (author: rstacruz)
@@ -20,4 +22,4 @@
 
 # Copyright Notice
 
-© 2022 Ruben Christopher Arevalo. This repository will not be copied, modified, reproduced, or distributed through unauthorized means.
+© 2023 Ruben Christopher Arevalo. This repository will not be copied, modified, reproduced, or distributed through unauthorized means.
