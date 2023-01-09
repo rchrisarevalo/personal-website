@@ -14,6 +14,8 @@ var d = localStorage.getItem("d_l_mode");
 var d_media = localStorage.getItem("dark_media_theme")
 var l_media = localStorage.getItem("light_media_theme")
 var one_time_message = localStorage.getItem("one-time")
+var show_progress_bar = localStorage.getItem("show_progress")
+
 var saved_status = false;
 var theme_choice;
 
@@ -133,6 +135,19 @@ if (d === "dark" || d === "default_dark") {
 }
 
 // ====================================
+
+function handleHideProgress(){
+    var show_choice = document.getElementById("show_check").value
+    console.log(show_choice)
+    
+    if (show_choice === "show")
+    {
+        localStorage.setItem("show_progress", "true")
+    }
+    else {
+        localStorage.setItem("show_progress", "false")
+    }
+}
 
 function handleSave() {
     if (saved_status === false) {
@@ -263,7 +278,24 @@ const Settings = () => {
                         }
                         <br></br>
                         <br></br>
-                        <i>Reload page for changes to take effect:</i>
+                        <i>Hide progress bar feature <b>(available until May 14, 2023)</b>:</i>
+                        <br></br>
+                        <br></br>
+                        { (show_progress_bar === "true" || show_progress_bar === null) && 
+                            <select id="show_check" onChange={handleHideProgress}>
+                                <option value="show" selected>Show</option>
+                                <option value="hide">Hide</option>
+                            </select>
+                        }
+                        { (show_progress_bar === "false" || show_progress_bar === null) && 
+                            <select id="show_check" onChange={handleHideProgress}>
+                                <option value="show">Show</option>
+                                <option value="hide" selected>Hide</option>
+                            </select>
+                        }
+                        <br></br>
+                        <br></br>
+                        <i>Reload page for changes to take effect (for theme change only):</i>
                         <br></br>
                         <br></br>
                         <button type="submit" id="save-btn" onClick={handleSaveShow}><IoSaveOutline id="settings-btns" />Save</button>
