@@ -5,7 +5,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 var num_days = 0;
-var num_hours = 0;
 var days_passed;
 var progress_countdown, prev_progress_countdown, rate, hourly_rate, current_rate, current_progress, prev_time;
 var days_title = ""
@@ -23,10 +22,6 @@ var days_year = 365
 num_days = ms * (0.001 / 1) * (1 / 60) * (1 / 60) * (1 / 24)
 num_days = num_days.toFixed(0)
 
-// The total number of hours from today until my expected graduation date
-num_hours = ms * (0.001 / 1) * (1 / 60) * (1 / 60)
-num_hours = num_hours.toFixed(0)
-
 // Calculates the total number of days that have passed since the beginning of the set date
 days_passed = days_year - num_days
 
@@ -41,18 +36,17 @@ rate = progress_countdown - prev_progress_countdown
 
 prev_time = new Date().getHours() - 6
 
-if (prev_time === -6 || prev_time === -5 || prev_time === -4 || prev_time === -3 || prev_time === -2 || prev_time === -1)
-{
-    prev_time = prev_time + 24
-}
-
 hourly_rate = (rate / 24)
 
 current_rate = hourly_rate * prev_time
 current_progress = (progress_countdown + current_rate)
 
+// Edge case preventing the percentage from exceeding 100% by over a decimal.
+if (current_progress >= 100)
+    current_progress = 100
+
 if (num_days < 1) {
-    num_days = [`Graduation day in ${num_hours} hours!`]
+    num_days = [`Graduation day!`]
 } else {
     num_days = [`${num_days}`]
 }
@@ -134,39 +128,17 @@ const ProgressCountdown = () => {
             setPrevTime(new Date().getSeconds())
         }
 
-        // From 12 AM to 6 AM, this section will add 24 hours back to accommodate the time change into the
-        // new day. Originally, after 12 AM, the number of hours after the progress countdown has been
-        // last updated would be displayed as "-6 hours/minutes ago", etc.
-
-        // This statement will add 24 to the negative value (e.g. -6 hours + 24 hours = 18 hours ago),
-        // which is the real amount of time that has passed since 6 AM in the morning.
-        if (new Date().getHours() >= 0 && new Date().getHours() <= 6) {
-            // If the number of previous hours is between 18-23, then that amount will
-            // remain the same.
-            if (prevTime === -6 || prevTime === -5 || prevTime === -4 || prevTime === -3 || prevTime === -2 || prevTime === -1) {
-                setPrevTime(prevTime + 24)
-            }
-
-            // This was added as the original statement doesn't want to add to the
-            // number of previous hours due to the logical syntax of the if statements above and here. 
-            // This is the same statement from above. However, it had to be added to properly update 
-            // the number of previous hours.
-            if (new Date().getMinutes() === 59 && new Date().getSeconds() === 59) {
-                setPrevTime(prevTime + 1)
-            }
-        }
-
         if (new Date().getHours() === 6) {
             setPrevTime(minutes)
         }
 
         // If number of days are greater than 1, then print "days".
         if (timeLeft > 1) {
-            setDaysString("days!")
+            setDaysString("days")
 
             // Otherwise, print "day" if there is 1 day left.
-        } else {
-            setDaysString("day!")
+        } else if (timeLeft === 1){
+            setDaysString("day")
         }
 
         if (minutesLeft > 1 || minutesLeft === 0) {
@@ -216,18 +188,22 @@ const ProgressCountdown = () => {
             </p>
             <ProgressBar animated now={`${progressPercentage.toFixed(2)}`} id="progress-bar" data-aos="fade" data-aos-delay="2200" />
             <p id="progress-count" data-aos="fade" data-aos-delay="2000">Progress until graduation day: {`${progressPercentage.toFixed(2)}`}%</p>
-            <p id="progress-count" data-aos="fade" data-aos-delay="2000">This section will automatically update on an hourly basis.</p>
-            <p id="progress-count" data-aos="fade" data-aos-delay="2000">The number of days left will update each day at 6 AM.</p>
-            <p id="progress-count" data-aos="fade" data-aos-delay="2000"><i>Last updated: {`${prevTime} ${timeString}`} ago</i></p>
-            <p id="progress-count" data-aos="fade" data-aos-delay="2000">Time left before next update:</p>
-            <Row id="time-text-row" data-aos="fade" data-aos-delay="2000">
-                <Col id="time-text">{`${minutesLeft}`}</Col>
-                <Col id="time-text">{`${secondsLeft}`}</Col>
-            </Row>
-            <Row id="time-text-row" data-aos="fade" data-aos-delay="2000">
-                <Col>{`${updateMinutesTimeString}`}</Col>
-                <Col>{`${updateSecondsTimeString}`}</Col>
-            </Row>
+            { Date.now() <= new Date(2023, 4, 13, 6) && 
+                <div>
+                    <p id="progress-count" data-aos="fade" data-aos-delay="2000">This section will automatically update on an hourly basis.</p>
+                    <p id="progress-count" data-aos="fade" data-aos-delay="2000">The number of days left will update each day at 6 AM.</p>
+                    <p id="progress-count" data-aos="fade" data-aos-delay="2000"><i>Last updated: {`${prevTime} ${timeString}`} ago</i></p>
+                    <p id="progress-count" data-aos="fade" data-aos-delay="2000">Time left before next update:</p>
+                    <Row id="time-text-row" data-aos="fade" data-aos-delay="2000">
+                        <Col id="time-text">{`${minutesLeft}`}</Col>
+                        <Col id="time-text">{`${secondsLeft}`}</Col>
+                    </Row>
+                    <Row id="time-text-row" data-aos="fade" data-aos-delay="2000">
+                        <Col>{`${updateMinutesTimeString}`}</Col>
+                        <Col>{`${updateSecondsTimeString}`}</Col>
+                    </Row>
+                </div>
+            }
             <br></br>
         </div>
     )
