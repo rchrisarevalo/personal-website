@@ -61,6 +61,10 @@ function App() {
   setTimeout(() => {
     setDateState(new Date())
   }, 1000)
+
+  // Set the status of showing the progress bar to true for the time being.
+  if (localStorage.getItem("show_progress") === null && Date.now() <= new Date(2023, 4, 14))
+    localStorage.setItem("show_progress", "true")
   
   return (
     <div className="App">
@@ -69,7 +73,7 @@ function App() {
           <Route index path="/" element={<Load />} />
           <Route path="/about" element={<Intro />} />
           <Route path="/announcements" element={<Posts />} />
-          {/* <Route path="/posts" element={<PostsAdmin />} /> */}
+          <Route path="/posts" element={<PostsAdmin />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/archives" element={<Archives />} />
 
