@@ -147,6 +147,8 @@ function handleHideProgress(){
     else {
         localStorage.setItem("show_progress", "false")
     }
+
+    window.location.reload();
 }
 
 function handleSave() {
