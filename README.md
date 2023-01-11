@@ -1,15 +1,12 @@
-# Personal Website (v3.10.0)
+# Personal Website (v3.10.1)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on January 9, 2023):
+# UPDATES (made on January 11, 2023):
 
 * The following changes have been made to the site:
-  * A new feature has been rolled out in the "Settings" page.
-    * This feature will provide the user with the ability to whether display
-    the progress bar in the "About Me" page or not.
-  * This feature will be available until **May 14, 2023**.
+  * Bug fixes have been made to the setting that allows the user to either show or hide the progress bar feature.
 
 # CREDITS:
 * Progress bar by nProgress (author: rstacruz)
