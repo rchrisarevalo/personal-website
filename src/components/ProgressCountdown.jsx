@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 
 var num_days = 0;
 var days_passed;
-var progress_countdown, prev_progress_countdown, rate, hourly_rate, current_rate, current_progress, prev_time;
+var progress_countdown, prev_progress_countdown, rate, hourly_rate, current_rate, final_progress, current_progress, prev_time;
 var days_title = ""
 var time_string = ""
 var update_minutes_time_string = "", update_seconds_time_string = ""
@@ -39,17 +39,19 @@ prev_time = new Date().getHours() - 6
 hourly_rate = (rate / 24)
 
 current_rate = hourly_rate * prev_time
-current_progress = (progress_countdown + current_rate)
+final_progress = (progress_countdown + current_rate)
 
 // Edge case preventing the percentage from exceeding 100% by over a decimal.
-if (current_progress >= 100)
-    current_progress = 100
+if (final_progress >= 100)
+    final_progress = 100
 
 if (num_days < 1) {
     num_days = [`Graduation day!`]
 } else {
     num_days = [`${num_days}`]
 }
+
+current_progress = final_progress
 
 const ProgressCountdown = () => {
 
