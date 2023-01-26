@@ -115,8 +115,8 @@ function light_dark_mode() {
 if (d === "dark" || d === "default_dark") {
     document.body.style.cssText = 'background: #242525; color: white; transition: .5s;'
 
-} else if (l_media === "true" || d_media === "true" || (l_media === null && d_media === null)){
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches){
+} else if (l_media === "true" || d_media === "true" || (l_media === null && d_media === null)) {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
         document.body.style.cssText = 'background: #242525; color: white; transition: .5s;'
         localStorage.setItem("dark_media_theme", "true")
         localStorage.setItem("light_media_theme", "false")
@@ -136,12 +136,11 @@ if (d === "dark" || d === "default_dark") {
 
 // ====================================
 
-function handleHideProgress(){
+function handleHideProgress() {
     var show_choice = document.getElementById("show_check").value
     console.log(show_choice)
-    
-    if (show_choice === "show")
-    {
+
+    if (show_choice === "show") {
         localStorage.setItem("show_progress", "true")
     }
     else {
@@ -245,8 +244,8 @@ const Settings = () => {
                                 <option value="default" selected>Device theme</option>
                                 <option value="light">Light theme</option>
                                 <option value="dark">Dark theme</option>
-                                { (Date.now() >= new Date(2022, 11, 23) && Date.now() <= new Date(2022, 11, 26)) && 
-                                     <option value="christmas">Christmas theme</option>
+                                {(Date.now() >= new Date(2022, 11, 23) && Date.now() <= new Date(2022, 11, 26)) &&
+                                    <option value="christmas">Christmas theme</option>
                                 }
                             </select>
                         }
@@ -255,8 +254,8 @@ const Settings = () => {
                                 <option value="default">Device theme</option>
                                 <option value="light">Light theme</option>
                                 <option value="dark" selected>Dark theme</option>
-                                { (Date.now() >= new Date(2022, 11, 23) && Date.now() <= new Date(2022, 11, 26)) && 
-                                     <option value="christmas">Christmas theme</option>
+                                {(Date.now() >= new Date(2022, 11, 23) && Date.now() <= new Date(2022, 11, 26)) &&
+                                    <option value="christmas">Christmas theme</option>
                                 }
                             </select>
                         }
@@ -265,8 +264,8 @@ const Settings = () => {
                                 <option value="default">Device theme</option>
                                 <option value="light" selected>Light theme</option>
                                 <option value="dark">Dark theme</option>
-                                { (Date.now() >= new Date(2022, 11, 23) && Date.now() <= new Date(2022, 11, 26)) && 
-                                     <option value="christmas">Christmas theme</option>
+                                {(Date.now() >= new Date(2022, 11, 23) && Date.now() <= new Date(2022, 11, 26)) &&
+                                    <option value="christmas">Christmas theme</option>
                                 }
                             </select>
                         }
@@ -278,22 +277,26 @@ const Settings = () => {
                                 <option value="christmas" selected>Christmas theme</option>
                             </select>
                         }
-                        <br></br>
-                        <br></br>
-                        <i>Hide progress bar feature <b>(available until May 14, 2023)</b>:</i>
-                        <br></br>
-                        <br></br>
-                        { (show_progress_bar === "true" || show_progress_bar === null) && 
-                            <select id="show_check" onChange={handleHideProgress}>
-                                <option value="show" selected>Show</option>
-                                <option value="hide">Hide</option>
-                            </select>
-                        }
-                        { (show_progress_bar === "false" || show_progress_bar === null) && 
-                            <select id="show_check" onChange={handleHideProgress}>
-                                <option value="show">Show</option>
-                                <option value="hide" selected>Hide</option>
-                            </select>
+                        {Date.now() < new Date(2023, 4, 13, 0, 0) &&
+                            <div>
+                                <br></br>
+                                <br></br>
+                                <i>Hide progress bar feature <b>(available until May 13, 2023)</b>:</i>
+                                <br></br>
+                                <br></br>
+                                {(show_progress_bar === "true" || show_progress_bar === null) &&
+                                    <select id="show_check" onChange={handleHideProgress}>
+                                        <option value="show" selected>Show</option>
+                                        <option value="hide">Hide</option>
+                                    </select>
+                                }
+                                {(show_progress_bar === "false" || show_progress_bar === null) &&
+                                    <select id="show_check" onChange={handleHideProgress}>
+                                        <option value="show">Show</option>
+                                        <option value="hide" selected>Hide</option>
+                                    </select>
+                                }
+                            </div>
                         }
                         <br></br>
                         <br></br>
