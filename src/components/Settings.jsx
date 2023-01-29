@@ -236,6 +236,7 @@ const Settings = () => {
                         }
                         <br></br>
                         <br></br>
+                        <br></br>
                         <i>Switch to light mode, dark mode, or your configured device theme:</i>
                         <br></br>
                         <br></br>
