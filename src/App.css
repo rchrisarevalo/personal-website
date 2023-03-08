@@ -352,21 +352,55 @@ hr{
 .intro h1{
   font-weight: 800;
   font-family: 'Open Sans', sans-serif;
-  text-align: left;
+  text-align: center;
   margin: 0.6em;
   text-transform: uppercase;
 }
 
-.intro img{
-  width: 11%;
-  border-radius: 100%;
+#life-details-web img{
+  width: 50%;
+  border-radius: 10%;
   margin: 1.5em;
-  float: right;
+  justify-content: center;
+}
+
+#life-details-mobile img{
+  width: 50%;
+  border-radius: 10%;
+  margin: 1.5em;
 }
 
 .intro p{
   margin: 1.5em;
   text-align: left;
+}
+
+#life-details-mobile{
+  display: none;
+}
+
+#life-details-web h3, #life-details-mobile h3{
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+#life-details-row{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#contact-details-row{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#contact-details-row h3{
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 21px;
 }
 
 #graduation-countdown{
@@ -456,7 +490,6 @@ hr{
 .works-display img{
   width: 60%;
   align-items: center;
-  margin-right: 20%;
   border-radius: 2%;
   box-shadow: 0 0 4px black;
 }
@@ -736,6 +769,11 @@ hr{
   padding-bottom: 60px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+}
+
+#posts-row{
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 #posts-arrow-left{
@@ -1191,35 +1229,6 @@ hr{
     margin-left: 7%;
     margin-right: 7%;
   }
-  .notification{
-    text-align: center;
-    z-index: 500;
-  }
-  .notification .notification-content{
-    right: 30px;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 2.5em;
-  }
-  .notification.active .notification-content{
-    bottom: -5px;
-  }
-  #notif-1{
-    right: -3px;
-  }
-  #notif-2{
-    padding-top: 25px;
-    padding-bottom: 10px;
-    right: 5px;
-  }
-  #notif-2 p{
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  #background-green{
-    right: 15px;
-  }
   .intro-container{
     margin: 0em;
     margin-left: 0%;
@@ -1229,7 +1238,7 @@ hr{
     margin: 0em;
   }
   .intro img{
-    width: 60%;
+    width: 50%;
     float: none;
   }
   .intro h1{
@@ -1242,6 +1251,14 @@ hr{
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
+  }
+  #life-details-web{
+    display: none;
+  }
+  #life-details-mobile{
+    margin-left: 3%;
+    margin-right: 3%;
+    display: block;
   }
   #graduation-countdown{
     margin-left: 10%;
@@ -1292,7 +1309,7 @@ hr{
     width: 75%;
     align-items: center;
     text-align: center;
-    margin-right: 7%;
+    margin-right: 1%;
   }
   .works-display{
     width: 100%;

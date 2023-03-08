@@ -3,6 +3,9 @@ import React, { useEffect, useState } from 'react';
 import axios from "axios";
 import db from "./database/posts.json"
 
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
 const RecentPosts = () => {
 
     const [currentPostNum, setCurrentPostNum] = useState(0)
@@ -113,11 +116,17 @@ const RecentPosts = () => {
     return (
         <div className="posts-container-intro">
             <h1 id="posts-title-intro" data-aos="fade-down">Recent Announcements</h1>
-            <p id="posts-description-intro" data-aos="fade-right" data-aos-delay="500">
-                The last three recent announcements will be posted here. This page will be updated whenever there are new announcements.
-                To view all announcements, click on "Announcements" on the navigation bar.
-            </p>
-            <div id="post-catalogue" data-aos="fade-up" data-aos-delay="500"></div>
+            <Row id="posts-row">
+                <Col>
+                    <p id="posts-description-intro" data-aos="fade-right" data-aos-delay="500">
+                        The last three recent announcements will be posted here. This page will be updated whenever there are new announcements.
+                        To view all announcements, click on "Announcements" on the navigation bar.
+                    </p>
+                </Col>
+                <Col xs lg={9}>
+                    <div id="post-catalogue" data-aos="fade-up" data-aos-delay="500"></div>
+                </Col>
+            </Row>
         </div>
     );
 }
