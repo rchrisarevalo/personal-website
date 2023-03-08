@@ -192,6 +192,12 @@ const Intro = () => {
                                     {`${dayGreeting}`} everyone! My name is Ruben Christopher Arevalo, and I am a {`${currentAge}`} year old {`${studentYear}`} student attending the University of Texas-Rio Grande Valley.
                                     I am currently pursuing my bachelor's degree in computer engineering with my concentration focusing on software.
                                 </p>
+                                <p data-aos="fade-down" data-aos-delay="700">
+                                    After graduation, my goal is to become either a software engineer or a web developer. After I have chosen
+                                    one of the aforementioned roles, I will update my bio reflecting my current position, which will first take
+                                    effect after I graduate from my university and then again after I have found a job in either aforementioned
+                                    role.
+                                </p>
                             </Col>
                         </Row>
                         <Row id="life-details-row">
@@ -220,6 +226,12 @@ const Intro = () => {
                         <p data-aos="fade-down" data-aos-delay="500">
                             {`${dayGreeting}`} everyone! My name is Ruben Christopher Arevalo, and I am a {`${currentAge}`} year old {`${studentYear}`} student attending the University of Texas-Rio Grande Valley.
                             I am currently pursuing my bachelor's degree in computer engineering with my concentration focusing on software.
+                        </p>
+                        <p data-aos="fade-down" data-aos-delay="700">
+                            After graduation, my goal is to become either a software engineer or a web developer. After I have chosen
+                            one of the aforementioned roles, I will update my bio reflecting my current position, which will first take
+                            effect after I graduate from my university and then again after I have found a job in either aforementioned
+                            role.
                         </p>
                         <Row>
                             <h3>Interests</h3>
@@ -253,6 +265,7 @@ const Intro = () => {
                         You can also visit my CV website at this link: <a href="https://rchrisarevalo.github.io/cv-website" rel="noopener noreferrer" target="_blank"><b>rchrisarevalo.github.io/cv-website</b></a>
                     </Col>
                 </Row>
+                <br></br>
                 {/* This component will be displayed until the graduation date and the hours leading up to it */}
                 {(current_date <= graduation_date) && localStorage.getItem("show_progress") === "true" &&
                     <ProgressCountdown />
