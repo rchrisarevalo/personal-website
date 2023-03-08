@@ -119,7 +119,8 @@ const RecentPosts = () => {
             <Row id="posts-row">
                 <Col>
                     <p id="posts-description-intro" data-aos="fade-right" data-aos-delay="500">
-                        The last three recent announcements will be posted here. This page will be updated whenever there are new announcements.
+                        The last three recent announcements will be posted here in this section as shown on the right hand side. 
+                        This section will be regularly updated whenever there are new announcements.
                         To view all announcements, click on "Announcements" on the navigation bar.
                     </p>
                 </Col>
