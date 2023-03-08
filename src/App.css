@@ -358,7 +358,7 @@ hr{
 }
 
 #life-details-web img{
-  width: 50%;
+  width: 80%;
   border-radius: 10%;
   margin: 1.5em;
   justify-content: center;
@@ -1259,6 +1259,10 @@ hr{
     margin-left: 3%;
     margin-right: 3%;
     display: block;
+  }
+  #contact-details-row{
+    margin-left: 5%;
+    margin-right: 5%;
   }
   #graduation-countdown{
     margin-left: 10%;
