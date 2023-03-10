@@ -1,15 +1,15 @@
 {
   "update": [
     {
-      "updateMessageText": "A new feature has been introduced in the \"Settings\" page. Feel free to check it out!",
-      "beginMonth": "1",
-      "beginDate": "9",
-      "beginYear": "2023",
-      "endMonth": "1",
-      "endDate": "16",
-      "endYear": "2023",
-      "beginHour": "14",
-      "beginMinute": "31",
+      "updateMessageText": "Hi everyone! Because of the spring break, I won't be making any new announcements until March 20. Thank you all for your patience and have a wonderful next week!",
+      "beginMonth": "3",
+      "beginDate": "10",
+      "beginYear": "2022",
+      "endMonth": "3",
+      "endDate": "20",
+      "endYear": "2022",
+      "beginHour": "6",
+      "beginMinute": "30",
       "endHour": "0",
       "endMinute": "0",
       "id": 1
