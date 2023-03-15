@@ -67,6 +67,16 @@ function App() {
   // Set the status of showing the progress bar to true for the time being.
   if (localStorage.getItem("show_progress") === null && Date.now() <= new Date(2023, 4, 14))
     localStorage.setItem("show_progress", "true")
+
+  // Set the default local storage variables for theme.
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+  {
+    localStorage.setItem("light_media_theme", "false")
+    localStorage.setItem("dark_media_theme", "true")
+  } else {
+    localStorage.setItem("light_media_theme", "true")
+    localStorage.setItem("dark_media_theme", "false")
+  }
   
   return (
     <div className="App">
