@@ -62,6 +62,26 @@
     font-family: 'Open Sans', sans-serif;
   }
 
+  .policy-menu{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .policy-menu li{
+    list-style: none;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-top: 5vh;
+    font-weight: 800;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+
+  .policy-menu li a{
+    text-decoration: none;
+    color: white;
+  }
+
   @media screen and (max-width: 1024px) {
     .website-operation-policy-box{
       margin-left: 2%;
