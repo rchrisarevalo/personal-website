@@ -1217,6 +1217,45 @@ hr{
   padding-bottom: 8px;
 }
 
+.error-404-container{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: center;
+}
+
+.error-404-display{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.error-404-display li{
+  list-style: none;
+}
+
+.error-404-display li a{
+  display: inline-block;
+  margin: 20px;
+  padding: 7px 30px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  background: grey;
+  box-shadow: 0 0 7px black;
+  border-radius: 30px;
+  transition: .5s;
+}
+
+.error-404-display a:hover{
+  background: white;
+  color: black;
+  font-weight: 800;
+  transition: .5s;
+}
+
 @media screen and (max-width: 1024px)
 {
   body{
