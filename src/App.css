@@ -82,6 +82,42 @@ hr{
   color: white;
 }
 
+.error-404-container{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 25vh;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.error-404-message{
+  font-weight: 400;
+}
+
+.error-404-message a{
+  text-decoration: none;
+  color: white;
+  padding: 7px 30px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+  background:rgb(90, 90, 90);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 17px;
+  transition: .5s;
+}
+
+.error-404-message a:hover{
+  background-color: rgb(43, 133, 43);
+  color: black;
+  font-weight: 800;
+}
+
 #closed-button{
   padding: 7px 25px;
 }
