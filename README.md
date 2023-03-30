@@ -1,13 +1,12 @@
-# Personal Website (v3.10.2)
+# Personal Website (v3.10.3)
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on March 14, 2023):
+# UPDATES (made on March 30, 2023):
 
 * The following changes have been made to the site:
-  * Bug fixes have been made to the February 2023 archive page. The forward arrow button has been missing when the
-    archive was originally deployed at the beginning of March. However, it should appear now.
+  * Bug fix was made to the theme setting to this website. Apparently, when a user wants to change theme, it would automatically set their browser to their system theme.
 
 # CREDITS:
 * Progress bar by nProgress (author: rstacruz)
