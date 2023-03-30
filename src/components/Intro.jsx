@@ -233,6 +233,7 @@ const Intro = () => {
                             effect after I graduate from my university and then again after I have found a job in either aforementioned
                             role.
                         </p>
+                        <br></br>
                         <Row>
                             <h3>Interests</h3>
                             Even though I am currently a busy college student trying to finish his degree, there are fun facts I want to share about myself. 

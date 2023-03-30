@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import { IoWarningSharp } from "react-icons/io5"
@@ -9,7 +9,7 @@ import Col from 'react-bootstrap/Col';
 const Error404 = () => {
 
     const [seconds, setSeconds] = useState(new Date().getSeconds())
-    const [fiveSecondsCounter, setFiveSecondsCounter] = useState(2000)
+    const [fiveSecondsCounter, setFiveSecondsCounter] = useState(5)
     const nav = useNavigate()
 
     setTimeout(() => {
