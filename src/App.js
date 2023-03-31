@@ -68,6 +68,7 @@ function App() {
   if (localStorage.getItem("show_progress") === null && Date.now() <= new Date(2023, 4, 14))
     localStorage.setItem("show_progress", "true")
     
+  
   return (
     <div className="App">
       {((Date.now() < new Date(2022, 11, 31, 0, 0)) || Date.now() >= new Date(2023, 0, 2, 0, 0)) &&
