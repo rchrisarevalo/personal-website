@@ -62,8 +62,6 @@ const Error404 = () => {
                             <h1>404</h1>
                             <p>Oops! It looks like what you were looking for does not exist on this website!</p>
                             <p>Here are some links below that can help you resolve this issue:</p>
-                        </Col>
-                        <Col>
                             <li>
                                 <Link to="/about">About Me</Link>
                                 <Link to="/announcements">Announcements</Link>
