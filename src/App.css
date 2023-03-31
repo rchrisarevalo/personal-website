@@ -1237,15 +1237,18 @@ hr{
 }
 
 .error-404-display li a{
-  display: inline-block;
+  display: flex;
   margin: 20px;
-  padding: 7px 30px;
+  padding: 15px 20px;
   font-weight: 400;
   text-decoration: none;
   color: white;
-  background: grey;
+  background: rgb(85, 85, 85);
   box-shadow: 0 0 7px black;
   border-radius: 30px;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
   transition: .5s;
 }
 
@@ -1525,6 +1528,20 @@ hr{
   #modal-text, #modal-text-clear{
     margin-left: 10%;
     margin-right: 10%;
+  }
+  .error-404-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .error-404-display{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .error-404-display li a{
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 7px 30px;
   }
   .copyright{
     text-align: center;
