@@ -113,23 +113,37 @@ const RecentPosts = () => {
         })
     }, [])
 
-    return (
-        <div className="posts-container-intro">
-            <h1 id="posts-title-intro" data-aos="fade-down">Recent Announcements</h1>
-            <Row id="posts-row">
-                <Col>
-                    <p id="posts-description-intro" data-aos="fade-right" data-aos-delay="500">
-                        The last three recent announcements will be posted here in this section as shown on the right hand side. 
-                        This section will be regularly updated whenever there are new announcements.
-                        To view all announcements, click on "Announcements" on the navigation bar.
-                    </p>
-                </Col>
-                <Col xs lg={9}>
-                    <div id="post-catalogue" data-aos="fade-up" data-aos-delay="500"></div>
-                </Col>
-            </Row>
-        </div>
-    );
+    if (!window.matchMedia('(max-width: 1024px)').matches) {
+        return (
+            <div className="posts-container-intro">
+                <h1 id="posts-title-intro" data-aos="fade-down">Recent Announcements</h1>
+                <Row id="posts-row">
+                    <Col>
+                        <p id="posts-description-intro" data-aos="fade-right" data-aos-delay="500">
+                            The last three recent announcements will be posted here in this section as shown on the right hand side.
+                            This section will be regularly updated whenever there are new announcements.
+                            To view all announcements, click on "Announcements" on the navigation bar.
+                        </p>
+                    </Col>
+                    <Col xs lg={9}>
+                        <div id="post-catalogue" data-aos="fade-up" data-aos-delay="500"></div>
+                    </Col>
+                </Row>
+            </div>
+        );
+    } else {
+        return (
+            <div className="posts-container-intro">
+                <h1 id="posts-title-intro" data-aos="fade-down">Recent Announcements</h1>
+                <p id="posts-description-intro" data-aos="fade-right" data-aos-delay="500">
+                    The last three recent announcements will be posted here in this section as shown on the right hand side.
+                    This section will be regularly updated whenever there are new announcements.
+                    To view all announcements, click on "Announcements" on the navigation bar.
+                </p>
+                <div id="post-catalogue" data-aos="fade-up" data-aos-delay="500"></div>
+            </div>
+        );
+    }
 }
 
 export default RecentPosts;
