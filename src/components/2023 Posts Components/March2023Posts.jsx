@@ -133,7 +133,7 @@ const March2023Posts = () => {
                         size="40px"
                     />
                 </Link>
-                {Date.now() >= new Date(2023, 3, 1, 0, 0, 0) &&
+                {Date.now() >= new Date(2023, 4, 1, 0, 0, 0) &&
                     <Link to="/announcements/2023/April">
                         <IoArrowForwardCircleOutline
                             id="posts-arrow-right"
