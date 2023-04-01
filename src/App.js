@@ -59,14 +59,16 @@ function App() {
   }, []);
 
   const [dateState, setDateState] = useState(new Date())
+  const [showState, setShowState] = useState(localStorage.getItem("show_progress"))
 
   setTimeout(() => {
     setDateState(new Date())
   }, 1000)
 
   // Set the status of showing the progress bar to true for the time being.
-  if (localStorage.getItem("show_progress") === null && Date.now() <= new Date(2023, 4, 14))
+  if (localStorage.getItem("show_progress") === null && Date.now() <= new Date(2023, 4, 14)) {
     localStorage.setItem("show_progress", "true")
+  }
     
   
   return (
