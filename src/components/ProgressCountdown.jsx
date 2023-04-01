@@ -11,7 +11,7 @@ var days_title = ""
 var time_string = ""
 var update_minutes_time_string = "", update_seconds_time_string = ""
 
-var grad_date = new Date(2023, 4, 12, 18)
+var grad_date = new Date(2023, 4, 12, 8)
 var today_date = Date.now()
 
 var ms = grad_date - today_date
