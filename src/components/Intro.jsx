@@ -52,80 +52,12 @@ function time_greeting() {
 const Intro = () => {
 
     const [currentAge, setCurrentAge] = useState(age)
-    const [year, setYear] = useState(new Date().getFullYear())
-    const [month, setMonth] = useState(new Date().getMonth())
-    const [date, setDate] = useState(new Date().getDate())
-    const [minutes, setMinutes] = useState(new Date().getMinutes())
-    const [seconds, setSeconds] = useState(new Date().getSeconds() + 1)
-    const [hours, setHours] = useState(new Date().getHours())
     const [dayGreeting, setDayGreeting] = useState(time_greeting())
 
     // This will be a temporary state variable as long as I am a student
     const [studentYear, setStudentYear] = useState(student_year)
 
     setTimeout(() => {
-        setCurrentAge(currentAge)
-        setYear(year)
-        setMonth(month)
-        setDate(date)
-        setMinutes(minutes)
-        setSeconds(seconds + 1)
-        setHours(hours)
-        setStudentYear(studentYear)
-
-        // Once the number of seconds reaches 59, the number of minutes will be set
-        // back to 0.
-        if (new Date().getSeconds() === 59) {
-            setHours(hours)
-            setMinutes(minutes + 1)
-            setSeconds(0)
-
-            // Once the number of minutes reaches 60, 1 will be added to the number of hours
-            // while the number of seconds and minutes is set back to 0.
-        } if (new Date().getMinutes() === 59 && new Date().getSeconds() === 59) {
-            setHours(hours + 1)
-            setMinutes(0)
-            setSeconds(0)
-
-            // Once midnight approaches, everything (the number of hours, minutes, date, and seconds) will
-            // be set to 0.
-        } if (new Date().getHours() === 23 && new Date().getMinutes() === 59 && new Date().getSeconds() === 59) {
-            setHours(0)
-            setMinutes(0)
-            setSeconds(0)
-            setDate(date + 1)
-
-            // Adjusts the date and time after a month has passed. It will also adjust for months that have 28, 29, or 30 days.
-        } if (((new Date().getMonth() === 3 || new Date().getMonth() === 5 || new Date().getMonth() === 8 || new Date().getMonth() === 10)
-            && new Date().getDate() === 30 && new Date.getHours() === 23 && new Date().getMinutes() === 59 && new Date().getSeconds() === 59)
-            || (new Date().getDate() === 31 && new Date.getHours() === 23 && new Date().getMinutes() === 59 && new Date().getSeconds() === 59)
-            || (new Date().getMonth() === 1 && new Date().getDate() === 28 && new Date().getHours() === 23 && new Date().getMinutes() === 59 &&
-                new Date().getSeconds() === 59)) {
-            setMonth(month + 1)
-            setHours(0)
-            setMinutes(0)
-            setSeconds(0)
-            setDate(1)
-
-            // Does the same function as the if statement above, but this only applies to February in a leap year)
-        } if (new Date().getMonth() === 1 && new Date().getDate() === 29 && new Date().getHours() === 23 && new Date().getMinutes() === 59 && new Date().getSeconds() === 59) {
-            setMonth(month + 1)
-            setHours(0)
-            setMinutes(0)
-            setSeconds(0)
-            setDate(1)
-
-            // Once midnight on the final day of the year approaches, everything will be set to 0, and
-            // the year will be set to the next year (e.g. 2022 to 2023).
-        } if (new Date().getDate() === 31 && new Date().getMonth() === 11 && new Date().getHours() === 23 && new Date().getMinutes() === 59 && new Date().getSeconds() === 59) {
-            setDate(1)
-            setMonth(0)
-            setYear(year + 1)
-            setMinutes(0)
-            setSeconds(0)
-            setHours(0)
-        }
-
         // The owner's age (me) will remain the same if the birthday is not reached yet.
         if (birthday > current_date) {
             setCurrentAge(currentAge)
