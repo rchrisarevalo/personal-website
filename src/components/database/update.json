@@ -1,15 +1,15 @@
 {
   "update": [
     {
-      "updateMessageText": "Hi everyone! Because of the spring break, I won't be making any new announcements until March 20. Thank you all for your patience and have a wonderful next week!",
-      "beginMonth": "3",
-      "beginDate": "10",
-      "beginYear": "2022",
-      "endMonth": "3",
-      "endDate": "20",
-      "endYear": "2022",
-      "beginHour": "6",
-      "beginMinute": "30",
+      "updateMessageText": "Hello everyone. I am writing this update to let y'all know that Easter is approaching this Sunday. As a result, the website will be closed tomorrow and re-open on April 10th. Thank you all and have a wonderful Easter weekend!",
+      "beginMonth": "4",
+      "beginDate": "7",
+      "beginYear": "2023",
+      "endMonth": "4",
+      "endDate": "10",
+      "endYear": "2023",
+      "beginHour": "0",
+      "beginMinute": "0",
       "endHour": "0",
       "endMinute": "0",
       "id": 1
@@ -17,7 +17,7 @@
   ],
   "archive": [
     {
-      "beginMonth": 4,
+      "beginMonth": 5,
       "beginDate": 1,
       "beginYear": 2023,
       "endMonth": 12,
