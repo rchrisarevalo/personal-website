@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import { IoWarningSharp } from "react-icons/io5"
@@ -21,7 +21,9 @@ const Error404 = () => {
         }
 
         if (fiveSecondsCounter === 1) {
-            nav(-1)
+            nav(localStorage.getItem("current_link"))
+
+            setFiveSecondsCounter(5)
         }
     }, 1000)
 
