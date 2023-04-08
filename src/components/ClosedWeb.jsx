@@ -24,7 +24,7 @@ const ClosedWeb = () => {
             <div className="center-message">
                 <p id="closed-msg">Today's date: <i><b>{currentDate()}</b></i></p>
                 <p id="closed-msg">
-                    This website will be closed from December 31 to January 1 in observance of New Year's Eve and New Year's. It will be re-opened on <b>January 2</b>.
+                    This website will be closed from April 8 to April 9 in observance of Easter. It will be re-opened on <b>April 10</b>.
                 </p>
                 <br />
                 <p id="closed-msg">Contact me if you have any questions or concerns.</p>
