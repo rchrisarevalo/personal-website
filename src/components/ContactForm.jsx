@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { IoSendOutline } from 'react-icons/io5';
 
 import Row from 'react-bootstrap/Row';
@@ -11,10 +11,6 @@ var total_char_counter = 360
 var msg_text;
 var char_counter_text;
 var current_char_counter = 0;
-
-var current_mode = localStorage.getItem("d_l_mode")
-var dark_media_mode = localStorage.getItem("dark_media_theme")
-var light_media_mode = localStorage.getItem("light_media_theme")
 
 function charCounter() {
     msg_text = document.getElementById("msg_txt").value
@@ -45,10 +41,14 @@ const ContactForm = () => {
         window.scrollTo(0, 0);
     }, []);
 
-    return (
-        <div className="form-container">
-            {/* This form is from formspree.io, which was given to me when I registered for my account */}
-            {(current_mode === "default_dark" || current_mode === "dark" || (dark_media_mode === "true" && light_media_mode === "false")) &&
+    const [currentMode, setCurrentMode] = useState(localStorage.getItem("d_l_mode"))
+    const [darkMediaMode, setDarkMediaMode] = useState(localStorage.getItem("dark_media_theme"))
+    const [lightMediaMode, setLightMediaMode] = useState(localStorage.getItem("light_media_theme"))
+
+    if (currentMode === "default_dark" || currentMode === "dark" || (darkMediaMode === "true" && lightMediaMode === "false")) {
+        return (
+            <div className="form-container">
+                {/* This form is from formspree.io, which was given to me when I registered for my account */}
                 <form
                     action="https://formspree.io/f/mayvaojd"
                     method="POST"
@@ -106,8 +106,12 @@ const ContactForm = () => {
                         <br></br>
                     </div>
                 </form>
-            }
-            {(current_mode === "default_light" || current_mode === "light" || current_mode === "christmas" || (dark_media_mode === "false" && light_media_mode === "true")) &&
+                <br></br>
+            </div>
+        )
+    } else if (currentMode === "default_light" || currentMode === "light" || currentMode === "christmas" || (darkMediaMode === "false" && lightMediaMode === "true")) {
+        return (
+            <div className="form-container">
                 <form
                     action="https://formspree.io/f/mayvaojd"
                     method="POST"
@@ -165,10 +169,9 @@ const ContactForm = () => {
                         <br></br>
                     </div>
                 </form>
-            }
-            <br></br>
-        </div>
-    )
+            </div>
+        )
+    }
 }
 
 export default ContactForm;
