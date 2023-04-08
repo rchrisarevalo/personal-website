@@ -17,8 +17,6 @@ const ShowProgressButton = () => {
             localStorage.setItem("show_progress", "false")
             setStatus(false)
         }
-
-        console.log(status)
     }
 
     if (Date.now() < new Date(2023, 4, 13)) {
@@ -50,4 +48,4 @@ const ShowProgressButton = () => {
     }
 }
 
-export default ShowProgressButton
+export default ShowProgressButton;
