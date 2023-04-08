@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 
@@ -12,6 +12,9 @@ const August2021Posts = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
+
+    var route = useLocation().pathname
+    localStorage.setItem("current_link", `${route}`)
 
     return (
         <div className="posts-main">
