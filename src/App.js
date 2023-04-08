@@ -70,7 +70,7 @@ function App() {
   
   return (
     <div className="App">
-      {((Date.now() < new Date(2022, 11, 31, 0, 0)) || Date.now() >= new Date(2023, 0, 2, 0, 0)) &&
+      {((Date.now() < new Date(2023, 3, 8, 0, 0)) || Date.now() >= new Date(2023, 3, 10, 0, 0)) &&
         <Routes>
           <Route index path="/" element={<Load />} />
           <Route path="/about" element={<Intro />} />
@@ -113,7 +113,7 @@ function App() {
           <Route path='*' element={<Error404 />} />
         </Routes>
       }
-      {Date.now() >= new Date(2022, 11, 31, 0, 0) && Date.now() < new Date(2023, 0, 2, 0, 0) &&
+      {Date.now() >= new Date(2023, 3, 8, 0, 0) && Date.now() < new Date(2023, 3, 10, 0, 0) &&
         <Routes>
           <Route index path="/" element={<Load />} />
           <Route path="/closed" element={<ClosedWeb />} />
