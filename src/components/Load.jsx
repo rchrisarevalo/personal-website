@@ -31,14 +31,14 @@ const Load = () => {
         setPercentage(percentage + 1)
     }, 20)
 
-    if (resStatus === 200 && Date.now() >= new Date(2022, 11, 31) && Date.now() < new Date(2023, 0, 2))
+    if (resStatus === 200 && Date.now() >= new Date(2023, 3, 8) && Date.now() < new Date(2023, 3, 10))
     {
         if (percentage === 100)
         {
             nav("/closed")
         }
     }
-    else if (resStatus === 200 && (Date.now() < new Date(2022, 11, 31) || Date.now() >= new Date(2023, 0, 2)))
+    else if (resStatus === 200 && (Date.now() < new Date(2022, 3, 8) || Date.now() >= new Date(2023, 3, 10)))
     {
         if (percentage === 100)
         {
