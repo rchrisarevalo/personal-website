@@ -1375,6 +1375,54 @@
       "date": 31,
       "year": 2023,
       "id": 172
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 4/7/2023, 09:16 PM.",
+      "postContent": "Hi guys. I forgot to post the first announcement for the month, but now that I am writing, I would like to share a few updates in regard to the progress of the development of the new UI.",
+      "month": 4,
+      "date": 7,
+      "year": 2023,
+      "id": 173
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 4/7/2023, 09:18 PM.",
+      "postContent": "So far, I am almost halfway through in making some of the changes needed for the website, such as, for example, changing the color of the form to grey when light theme is implemented in the 'Settings' page, keep the button that shows and hides the progress bar to the current selection instead of resetting back, etc.",
+      "month": 4,
+      "date": 7,
+      "year": 2023,
+      "id": 174
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 4/7/2023, 09:20 PM.",
+      "postContent": "In addition, I wanted to mention that I am also going to be removing the \"Save\" button from the \"Settings\" page. The reason for this change was due to the fact that it was causing some bugs in the website whenever settings are changed through there. So instead, the changes are going to happen themselves after changing the theme, or deciding to hide or show the progress bar.",
+      "month": 4,
+      "date": 7,
+      "year": 2023,
+      "id": 175
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 4/7/2023, 09:21 PM.",
+      "postContent": "As of right now, those are the only notable changes that I have made to the new UI, other than a redesign of the home page and the error page, the latter of which applies to both the mobile and web versions.",
+      "month": 4,
+      "date": 7,
+      "year": 2023,
+      "id": 176
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 4/7/2023, 09:21 PM.",
+      "postContent": "Since the changes are mostly occurring within the web version of the site, the changes to its mobile counterpart will be almost the same.",
+      "month": 4,
+      "date": 7,
+      "year": 2023,
+      "id": 177
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 4/7/2023, 09:22 PM.",
+      "postContent": "Anyways, those are all the announcements I want to make for today. I hope you all have a wonderful Easter weekend and I will see you next week to provide more updates regarding the status of the new UI update!",
+      "month": 4,
+      "date": 7,
+      "year": 2023,
+      "id": 178
     }
   ]
 }
