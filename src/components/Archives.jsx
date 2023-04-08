@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import db from "./database/update.json";
 
@@ -21,6 +21,9 @@ const Archives = () => {
 
         window.scrollTo(0, 0);
     }, []);
+
+    var route = useLocation().pathname
+    localStorage.setItem("current_link", `${route}`)
 
     return (
         <div className="archives-container">
