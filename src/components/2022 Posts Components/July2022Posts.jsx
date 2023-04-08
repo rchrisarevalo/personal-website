@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from "react-icons/io5";
 
@@ -8,9 +8,13 @@ import NavArchives from "../../NavArchives.jsx";
 import NewFooter from "../../NewFooter.jsx";
 
 const July2022Posts = () => {
+    
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    var route = useLocation().pathname
+    localStorage.setItem("current_link", `${route}`)
 
     return (
         <div class="posts-main">
