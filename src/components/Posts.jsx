@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Helmet } from "react-helmet";
+import { useLocation } from 'react-router-dom';
 
 import NavAnnouncements from "../NavAnnouncements.jsx";
 import NewFooter from "../NewFooter.jsx";
@@ -19,6 +20,9 @@ const Posts = () => {
 
         window.scrollTo(0, 0);
     }, []);
+
+    var route = useLocation().pathname
+    localStorage.setItem("current_link", `${route}`)
 
     return (
         <div className="posts-main">
