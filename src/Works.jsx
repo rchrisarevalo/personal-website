@@ -13,6 +13,78 @@ import work11 from './images/work_11.jpg';
 import work12 from './images/work_12.jpg';
 import work13 from './images/work_13.jpg';
 
+import { Gallery } from 'react-grid-gallery';
+import Carousel from 'react-bootstrap/Carousel'
+
+const gallery_images = [
+    {
+        src: work1,
+        width: 2220,
+        height: 2000,
+        caption: "Test image"
+    },
+    {
+        src: work2,
+        width: 2220,
+        height: 2000,
+        caption: "Test image"
+    },
+    {
+        src: work3,
+        width: 2220,
+        height: 2000,
+        caption: "Test image"
+    },
+    {
+        src: work4,
+        width: 2220,
+        height: 2000,
+        caption: "Test image"
+    },
+    {
+        src: work5,
+        width: 2220,
+        height: 2000,
+        caption: "Test image"
+    },
+    {
+        src: work6,
+        width: 2220,
+        height: 2000,
+        caption: "Test image"
+    },
+    {
+        src: work7,
+        width: 2220,
+        height: 2000,
+        caption: "Test image"
+    },
+    {
+        src: work8,
+        width: 2220,
+        height: 2000,
+        caption: "Test image"
+    },
+    {
+        src: work9,
+        width: 2220,
+        height: 2000,
+        caption: "Test image"
+    },
+    {
+        src: work10,
+        width: 2220,
+        height: 2000,
+        caption: "Test image"
+    },
+    {
+        src: work11,
+        width: 2220,
+        height: 2000,
+        caption: "Test image"
+    }
+]
+
 const Works = () => {
 
     return (
@@ -24,45 +96,99 @@ const Works = () => {
                 photography, like developing website such as this one and my CV website. These pictures represent
                 some of the things I have done so far in my free time, and I enjoyed doing it (and still continue to do so).
             </p>
-            <div className="works-display" data-aos="fade" data-aos-delay="500">
-                <img src={work1} alt="work-1"></img>
-            </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="500">
-                <img src={work2} alt="work-2"></img>
-            </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="500">
-                <img src={work3} alt="work-3"></img>
-            </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="600">
-                <img src={work4} alt="work-4"></img>
-            </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="600">
-                <img src={work5} alt="work-5"></img>
-            </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="600">
-                <img src={work6} alt="work-6"></img>
-            </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="700">
-                <img src={work7} alt="work-7"></img>
-            </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="700">
-                <img src={work8} alt="work-8"></img>
-            </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="700">
-                <img src={work9} alt="work-9"></img>
-            </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="800">
-                <img src={work10} alt="work-10"></img>
-            </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="800">
-                <img src={work11} alt="work-11"></img>
-            </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="800">
-                <img src={work12} alt="work-12"></img>
-            </div>
-            <div className="works-display" data-aos="fade" data-aos-delay="800">
-                <img src={work13} alt="work-13"></img>
-            </div>
+            <Carousel indicators={false}>
+                <Carousel.Item interval={5000}>
+                    <img
+                        className="works-display"
+                        src={work1}
+                        alt="Work 1"
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={5000}>
+                    <img
+                        className="works-display"
+                        src={work2}
+                        alt="Work 2"
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={5000}>
+                    <img
+                        className="works-display"
+                        src={work3}
+                        alt="Work 3"
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={5000}>
+                    <img
+                        className="works-display"
+                        src={work4}
+                        alt="Work 4"
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={5000}>
+                    <img
+                        className="works-display"
+                        src={work5}
+                        alt="Work 5"
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={5000}>
+                    <img
+                        className="works-display"
+                        src={work6}
+                        alt="Work 6"
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={5000}>
+                    <img
+                        className="works-display"
+                        src={work7}
+                        alt="Work 7"
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={5000}>
+                    <img
+                        className="works-display"
+                        src={work8}
+                        alt="Work 8"
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={5000}>
+                    <img
+                        className="works-display"
+                        src={work9}
+                        alt="Work 9"
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={5000}>
+                    <img
+                        className="works-display"
+                        src={work10}
+                        alt="Work 10"
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={5000}>
+                    <img
+                        className="works-display"
+                        src={work11}
+                        alt="Work 11"
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={5000}>
+                    <img
+                        className="works-display"
+                        src={work12}
+                        alt="Work 12"
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={5000}>
+                    <img
+                        className="works-display"
+                        src={work13}
+                        alt="Work 13"
+                    />
+                </Carousel.Item>
+            </Carousel>
         </div>
     );
 }
