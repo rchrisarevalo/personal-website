@@ -10,6 +10,7 @@ const Error404 = () => {
 
     const [seconds, setSeconds] = useState(new Date().getSeconds())
     const [fiveSecondsCounter, setFiveSecondsCounter] = useState(5)
+    const [secondString, setSecondString] = useState("seconds")
     const nav = useNavigate()
 
     setTimeout(() => {
@@ -17,13 +18,16 @@ const Error404 = () => {
         setFiveSecondsCounter(60 - new Date().getSeconds())
 
         if (seconds % 1 === 0) {
+            if (fiveSecondsCounter === 2) {
+                setSecondString("second")
+            }
             setFiveSecondsCounter(fiveSecondsCounter - 1)
         }
 
         if (fiveSecondsCounter === 1) {
             nav(localStorage.getItem("current_link"))
-
             setFiveSecondsCounter(5)
+            setSecondString("seconds")
         }
     }, 1000)
 
@@ -36,7 +40,7 @@ const Error404 = () => {
                             <IoWarningSharp size="7vh"></IoWarningSharp>
                             <h1>404</h1>
                             <p>Oops! It looks like what you were looking for does not exist on this website!</p>
-                            <p>Here are some links below that can help you resolve this issue:</p>
+                            <p>Here are some links that can help you resolve this issue:</p>
                         </Col>
                         <Col>
                             <li>
@@ -50,7 +54,7 @@ const Error404 = () => {
                     </Row>
                     <br></br>
                     <br></br>
-                    <p>{`You will be redirected to the previous page in ${fiveSecondsCounter} seconds.`}</p>
+                    <p>{`You will be redirected to the previous page in ${fiveSecondsCounter} ${secondString}.`}</p>
                 </div>
             </div>
         );
@@ -63,7 +67,7 @@ const Error404 = () => {
                             <IoWarningSharp size="7vh"></IoWarningSharp>
                             <h1>404</h1>
                             <p>Oops! It looks like what you were looking for does not exist on this website!</p>
-                            <p>Here are some links below that can help you resolve this issue:</p>
+                            <p>Here are some links that can help you resolve this issue:</p>
                             <li>
                                 <Link to="/about">About Me</Link>
                                 <Link to="/announcements">Announcements</Link>
@@ -75,7 +79,7 @@ const Error404 = () => {
                     </Row>
                     <br></br>
                     <br></br>
-                    <p>{`You will be redirected to the previous page in ${fiveSecondsCounter} seconds.`}</p>
+                    <p>{`You will be redirected to the previous page in ${fiveSecondsCounter} ${secondString}`}</p>
                 </div>
             </div>
         );
