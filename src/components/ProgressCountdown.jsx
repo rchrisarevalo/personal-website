@@ -183,6 +183,11 @@ const ProgressCountdown = () => {
         if (new Date().getMinutes() % 60 === 0 && new Date().getSeconds() === 0)
         {
             setProgressPercentage(parseFloat(progressPercentage) + parseFloat(hourly_rate))
+
+            if (progressPercentage === 100.0)
+            {
+                setProgressPercentage(100.0)
+            }
         }
 
     }, 1000)
