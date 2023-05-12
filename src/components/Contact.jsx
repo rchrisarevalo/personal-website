@@ -41,23 +41,6 @@ const Contact = () => {
                 <div className="contact-page-form">
                     <h1 id="contact-title">Contact Form</h1>
                     <br></br>
-                    <div className="contact-description">
-                        <i id="contact-page-description">
-                            If you have any questions, complaints, or other concerns you might like to
-                            share, feel free to fill out the form below! However, do <b>NOT</b> attempt to send
-                            spam or other potentially dangerous messages.
-                        </i>
-                        <br></br>
-                        <br></br>
-                        <i id="contact-page-description">
-                            Please fill out all the required fields. Otherwise, your message will not be sent when you
-                            attempt to submit the form.
-                        </i>
-                    </div>
-                    <br></br>
-                    <br></br>
-                    <ContactForm />
-                    <br></br>
                     <br></br>
                     <Row id="contact-steps-row">
                         <div>
@@ -91,6 +74,24 @@ const Contact = () => {
                             </Row>
                         </div>
                     </Row>
+                    <br></br>
+                    <div className="contact-description">
+                        <i id="contact-page-description">
+                            If you have any questions, complaints, or other concerns you might like to
+                            share, feel free to fill out the form below! However, do <b>NOT</b> attempt to send
+                            spam or other potentially dangerous messages.
+                        </i>
+                        <br></br>
+                        <br></br>
+                        <i id="contact-page-description">
+                            Please fill out all the required fields. Otherwise, your message will not be sent when you
+                            attempt to submit the form.
+                        </i>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <ContactForm />
+                    <br></br>
                     <br></br>
                     <br></br>
                     <br></br>
@@ -108,23 +109,6 @@ const Contact = () => {
                 <div className="contact-page-form">
                     <h1 id="contact-title">Contact Form</h1>
                     <br></br>
-                    <div className="contact-description">
-                        <i id="contact-page-description">
-                            If you have any questions, complaints, or other concerns you might like to
-                            share, feel free to fill out the form below! However, do <b>NOT</b> attempt to send
-                            spam or other potentially dangerous messages.
-                        </i>
-                        <br></br>
-                        <br></br>
-                        <i id="contact-page-description">
-                            Please fill out all the required fields. Otherwise, your message will not be sent when you
-                            attempt to submit the form.
-                        </i>
-                    </div>
-                    <br></br>
-                    <br></br>
-                    <ContactForm />
-                    <br></br>
                     <br></br>
                     <Row id="contact-steps-row">
                         <div>
@@ -152,13 +136,30 @@ const Contact = () => {
                                             <li>Furthermore, messages of a discriminatory and/or violent nature are <b>PROHIBITED</b> and will not receive a reply whatsoever.</li>
                                             <br></br>
                                             <li>Do not try to send more than 10 messages a day unless it is a really long message that exceeds the character limit and requires you to enter another message.</li>
-                                            <br></br>
                                         </div>
                                     </figure>
                                 </Col>
                             </Row>
                         </div>
                     </Row>
+                    <br></br>
+                    <div className="contact-description">
+                        <i id="contact-page-description">
+                            If you have any questions, complaints, or other concerns you might like to
+                            share, feel free to fill out the form below! However, do <b>NOT</b> attempt to send
+                            spam or other potentially dangerous messages.
+                        </i>
+                        <br></br>
+                        <br></br>
+                        <i id="contact-page-description">
+                            Please fill out all the required fields. Otherwise, your message will not be sent when you
+                            attempt to submit the form.
+                        </i>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <ContactForm />
+                    <br></br>
                     <br></br>
                     <br></br>
                     <br></br>
