@@ -250,6 +250,16 @@ const Archives = () => {
                                     <td>{`${2026 - new Date().getFullYear()} year left`}</td>
                                 }
                             </tr>
+                            <tr>
+                                <td>April 2023</td>
+                                <td>December 31, 2026</td>
+                                {2026 - new Date().getFullYear() > 1 &&
+                                    <td>{`${2026 - new Date().getFullYear()} years left`}</td>
+                                }
+                                {2026 - new Date().getFullYear() === 1 &&
+                                    <td>{`${2026 - new Date().getFullYear()} year left`}</td>
+                                }
+                            </tr>
                         </table>
                     </div>
                 </p>
