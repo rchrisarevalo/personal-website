@@ -17,7 +17,8 @@
   ],
   "archive": [
     {
-      "beginMonth": 5,
+      "beginMonth": 6,
+      "beginDate": 1,
       "beginYear": 2023,
       "endMonth": 12,
       "endDate": 31,
