@@ -84,6 +84,7 @@ const ProgressCountdown = () => {
         setSecondsLeft(59 - new Date().getSeconds())
         setUpdateMinutesString(updateMinutesTimeString)
         setUpdateSecondsString(updateSecondsTimeString)
+        setDaysString(daysString)
 
         if (new Date().getMinutes() > 1)
         {
@@ -138,9 +139,13 @@ const ProgressCountdown = () => {
         if (timeLeft > 1) {
             setDaysString("days")
 
+            console.log(daysString)
+
             // Otherwise, print "day" if there is 1 day left.
-        } else if (timeLeft === 1){
-            setDaysString("day")
+            if (timeLeft === 1){
+                console.log("Yay!")
+                setDaysString("day")
+            }
         }
 
         if (minutesLeft > 1 || minutesLeft === 0) {

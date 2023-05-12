@@ -1,14 +1,14 @@
 {
   "update": [
     {
-      "updateMessageText": "Hello everyone. I am writing this update to let y'all know that Easter is approaching this Sunday. As a result, the website will be closed tomorrow and re-open on April 10th. Thank you all and have a wonderful Easter weekend!",
-      "beginMonth": "4",
-      "beginDate": "7",
+      "updateMessageText": "Hi guys! Since I already graduated, I wanted to let you all know that the progress feature will be coming down on May 13. The feature will no longer be available on the 'Settings' page as well. I hope you all have a wonderful rest of the weekend!",
+      "beginMonth": "5",
+      "beginDate": "12",
       "beginYear": "2023",
-      "endMonth": "4",
-      "endDate": "10",
+      "endMonth": "5",
+      "endDate": "14",
       "endYear": "2023",
-      "beginHour": "0",
+      "beginHour": "14",
       "beginMinute": "0",
       "endHour": "0",
       "endMinute": "0",
@@ -17,7 +17,7 @@
   ],
   "archive": [
     {
-      "beginMonth": 5,
+      "beginMonth": 6,
       "beginDate": 1,
       "beginYear": 2023,
       "endMonth": 12,

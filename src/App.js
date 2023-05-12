@@ -31,7 +31,9 @@ import November2022Posts from './components/2022 Posts Components/November2022Po
 import December2022Posts from './components/2022 Posts Components/December2022Posts.jsx';
 import January2023Posts from './components/2023 Posts Components/January2023Posts.jsx';
 import February2023Posts from './components/2023 Posts Components/February2023Posts.jsx';
-import March2023Posts from './components/2023 Posts Components/March2023Posts';
+import March2023Posts from './components/2023 Posts Components/March2023Posts.jsx';
+import April2023Posts from './components/2023 Posts Components/April2023Posts.jsx';
+import May2023Posts from './components/2023 Posts Components/May2023Posts';
 import Contact from './components/Contact.jsx';
 import Archives from "./components/Archives.jsx";
 import Settings from "./components/Settings.jsx";
@@ -105,8 +107,10 @@ function App() {
           {/* 2023 archive routes (expire on December 31, 2026) */}
           {(Date.now() >= new Date(2023, 0, 1) && Date.now() <= new Date(2026, 11, 31)) && <Route path="/announcements/2023/January" element={<January2023Posts />} />}
           {(Date.now() >= new Date(2023, 0, 1) && Date.now() <= new Date(2026, 11, 31)) && <Route path="/announcements/2023/February" element={<February2023Posts />} />}
+          {(Date.now() >= new Date(2023, 0, 1) && Date.now() <= new Date(2026, 11, 31)) && <Route path="/announcements/2023/March" element={<March2023Posts />} />}
+          {(Date.now() >= new Date(2023, 0, 1) && Date.now() <= new Date(2026, 11, 31)) && <Route path="/announcements/2023/April" element={<April2023Posts />} />}
           {(Date.now() >= new Date(db.archive[0].beginYear, db.archive[0].beginMonth - 1, db.archive[0].beginDate) && Date.now() <= new Date(db.archive[0].endYear, db.archive[0].endMonth - 1, db.archive[0].endDate)) &&
-            <Route path="/announcements/2023/March" element={<March2023Posts />} />
+            <Route path="/announcements/2023/May" element={<May2023Posts />} />
           }
 
           <Route path="/settings" element={<Settings />} />
