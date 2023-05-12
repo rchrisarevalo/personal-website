@@ -13,77 +13,7 @@ import work11 from './images/work_11.jpg';
 import work12 from './images/work_12.jpg';
 import work13 from './images/work_13.jpg';
 
-import { Gallery } from 'react-grid-gallery';
 import Carousel from 'react-bootstrap/Carousel'
-
-const gallery_images = [
-    {
-        src: work1,
-        width: 2220,
-        height: 2000,
-        caption: "Test image"
-    },
-    {
-        src: work2,
-        width: 2220,
-        height: 2000,
-        caption: "Test image"
-    },
-    {
-        src: work3,
-        width: 2220,
-        height: 2000,
-        caption: "Test image"
-    },
-    {
-        src: work4,
-        width: 2220,
-        height: 2000,
-        caption: "Test image"
-    },
-    {
-        src: work5,
-        width: 2220,
-        height: 2000,
-        caption: "Test image"
-    },
-    {
-        src: work6,
-        width: 2220,
-        height: 2000,
-        caption: "Test image"
-    },
-    {
-        src: work7,
-        width: 2220,
-        height: 2000,
-        caption: "Test image"
-    },
-    {
-        src: work8,
-        width: 2220,
-        height: 2000,
-        caption: "Test image"
-    },
-    {
-        src: work9,
-        width: 2220,
-        height: 2000,
-        caption: "Test image"
-    },
-    {
-        src: work10,
-        width: 2220,
-        height: 2000,
-        caption: "Test image"
-    },
-    {
-        src: work11,
-        width: 2220,
-        height: 2000,
-        caption: "Test image"
-    }
-]
 
 const Works = () => {
 
