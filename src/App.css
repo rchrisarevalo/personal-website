@@ -36,28 +36,51 @@ img {
   pointer-events: none;
 }
 
-#table-info{
+#table-info-dark-mode #table-info-light-mode{
   text-align: center;
 }
 
-table{
+#table-info-dark-mode table{
   border: 1px solid white;
   margin: auto;
   margin-top: 5vh;
   margin-bottom: 5vh;
+  text-align: center;
 }
 
-tr{
+#table-info-light-mode table{
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+
+#table-info-dark-mode tr{
   border: 1px solid white;
 }
 
-th{
+#table-info-light-mode tr{
+  border: 1px solid black;
+}
+
+#table-info-dark-mode th{
   border: 1px solid white;
   padding: 7px 20px;
 }
 
-td{
+#table-info-light-mode th{
+  border: 1px solid black;
+  padding: 7px 20px;
+}
+
+#table-info-dark-mode td{
   border: 1px solid white;
+  padding: 7px 20px;
+}
+
+#table-info-light-mode td{
+  border: 1px solid black;
   padding: 7px 20px;
 }
 
