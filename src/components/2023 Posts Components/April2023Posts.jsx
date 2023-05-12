@@ -10,7 +10,7 @@ import db from "../database/posts.json"
 import NavArchives from "../../NavArchives.jsx";
 import NewFooter from "../../NewFooter.jsx";
 
-const March2023Posts = () => {
+const April2023Posts = () => {
 
     const [currentPostNum, setCurrentPostNum] = useState(0)
     const [prevPostNum, setPrevPostNum] = useState(currentPostNum)
@@ -23,7 +23,7 @@ const March2023Posts = () => {
             setCurrentPostNum(db.post.length)
             if (currentPostNum === prevPostNum) {
                 for (var i = db.post.length - 1; i >= 0; i--) {
-                    if (db.post[i].month === 3 && db.post[i].year === 2023) {
+                    if (db.post[i].month === 4 && db.post[i].year === 2023) {
                         var grandparentDiv = document.getElementById("post-catalogue")
                         var parentDiv;
                         var childDiv;
@@ -121,31 +121,31 @@ const March2023Posts = () => {
         <div class="posts-main">
             <Helmet>
                 <title>
-                    Ruben C. Arevalo - Personal Website - Announcements (March 2023)
+                    Ruben C. Arevalo - Personal Website - Announcements (April 2023)
                 </title>
             </Helmet>
             <NavArchives />
             <div class="posts-container">
-                <Link to="/announcements/2023/February">
+                <Link to="/announcements/2023/March">
                     <IoArrowBackCircleOutline
                         id="posts-arrow-left"
-                        title="February 2023 Announcements"
+                        title="March 2023 Announcements"
                         size="40px"
                     />
                 </Link>
-                {Date.now() >= new Date(2023, 4, 1, 0, 0, 0) &&
-                    <Link to="/announcements/2023/April">
+                {Date.now() >= new Date(2023, 5, 1, 0, 0, 0) &&
+                    <Link to="/announcements/2023/May">
                         <IoArrowForwardCircleOutline
                             id="posts-arrow-right"
-                            title="April 2023 Announcements"
+                            title="May 2023 Announcements"
                             size="40px"
                         />
                     </Link>
                 }
-                <h1 id="posts-title">Announcements (March 2023)</h1>
+                <h1 id="posts-title">Announcements (April 2023)</h1>
                 <br></br>
                 <p id="posts-description">
-                    These are all the posts for March 2023 that were archived on this
+                    These are all the posts for April 2023 that were archived on this
                     page. None of these posts will be deleted or edited unless I decide
                     otherwise.
                 </p>
@@ -156,4 +156,4 @@ const March2023Posts = () => {
     );
 };
 
-export default March2023Posts;
+export default April2023Posts;
