@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import nprogress from "nprogress";
 import "nprogress/nprogress.css";
 
-var total_char_counter = 360
+var total_char_counter = 500
 var msg_text;
 var char_counter_text;
 var current_char_counter = 0;
@@ -61,14 +61,14 @@ const ContactForm = () => {
                         <br></br>
                         <h2><IoSendOutline size="25px" id="contact-form-icon" />Contact Me</h2>
                         <label>
-                            <p>Enter your email address:</p>
+                            <p>* Enter your email address:</p>
                         </label>
                         <br></br>
                         <input type="email" name="email" autocomplete="off" size="35" maxlength="320" required></input>
                         <br></br>
                         <br></br>
                         <label>
-                            <p>Please enter your first name:</p>
+                            <p>* Please enter your first name:</p>
                         </label>
                         <br></br>
                         <input type="text" name="first_name" autocomplete="off" size="35" maxlength="40" required></input>
@@ -82,17 +82,17 @@ const ContactForm = () => {
                         <br></br>
                         <br></br>
                         <label>
-                            <p>Please enter your last name:</p>
+                            <p>* Please enter your last name:</p>
                         </label>
                         <br></br>
                         <input type="text" name="last_name" autocomplete="off" size="35" maxlength="40" required></input>
                         <br></br>
                         <br></br>
                         <label>
-                            <p>Type your message (360 character limit):</p>
+                            <p>* Type your message (500 character limit):</p>
                         </label>
                         <br></br>
-                        <textarea name="message" id="msg_txt" autocomplete="off" rows="10" cols="47" maxlength="360" required></textarea>
+                        <textarea name="message" id="msg_txt" autocomplete="off" rows="10" cols="47" maxlength="500" required></textarea>
                         <br></br>
                         <label id="char-counter"></label>
                         <br></br>
@@ -124,14 +124,14 @@ const ContactForm = () => {
                         <br></br>
                         <h2><IoSendOutline size="25px" id="contact-form-icon" />Contact Me</h2>
                         <label>
-                            <p>Enter your email address:</p>
+                            <p>* Enter your email address:</p>
                         </label>
                         <br></br>
                         <input type="email" name="email" autocomplete="off" size="35" maxlength="320" required></input>
                         <br></br>
                         <br></br>
                         <label>
-                            <p>Please enter your first name:</p>
+                            <p>* Please enter your first name:</p>
                         </label>
                         <br></br>
                         <input type="text" name="first_name" autocomplete="off" size="35" maxlength="40" required></input>
@@ -145,17 +145,17 @@ const ContactForm = () => {
                         <br></br>
                         <br></br>
                         <label>
-                            <p>Please enter your last name:</p>
+                            <p>* Please enter your last name:</p>
                         </label>
                         <br></br>
                         <input type="text" name="last_name" autocomplete="off" size="35" maxlength="40" required></input>
                         <br></br>
                         <br></br>
                         <label>
-                            <p>Type your message (360 character limit):</p>
+                            <p>* Type your message (500 character limit):</p>
                         </label>
                         <br></br>
-                        <textarea name="message" id="msg_txt" autocomplete="off" rows="10" cols="47" maxlength="360" required></textarea>
+                        <textarea name="message" id="msg_txt" autocomplete="off" rows="10" cols="47" maxlength="500" required></textarea>
                         <br></br>
                         <label id="char-counter"></label>
                         <br></br>
