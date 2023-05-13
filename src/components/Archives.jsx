@@ -5,7 +5,7 @@ import ArchivesTable from './ArchivesTable.jsx';
 
 import db from "./database/update.json";
 
-import NavArchives from "../NavArchives.jsx";
+import Nav from "../Nav.jsx";
 import NewFooter from "../NewFooter.jsx";
 
 import nprogress from "nprogress";
@@ -31,7 +31,7 @@ const Archives = () => {
             <Helmet>
                 <title>Ruben C. Arevalo - Personal Website - Archives</title>
             </Helmet>
-            <NavArchives />
+            <Nav />
             <div className="archive-wrap">
                 <p id="archive-message">
                     <br></br>
