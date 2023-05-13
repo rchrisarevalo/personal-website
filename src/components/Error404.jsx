@@ -79,7 +79,7 @@ const Error404 = () => {
                     </Row>
                     <br></br>
                     <br></br>
-                    <p>{`You will be redirected to the previous page in ${fiveSecondsCounter} ${secondString}`}</p>
+                    <p>{`You will be redirected to the previous page in ${fiveSecondsCounter} ${secondString}.`}</p>
                 </div>
             </div>
         );
