@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { useLocation } from 'react-router-dom';
 
 import ContactForm from './ContactForm.jsx';
-import NavContact from '../NavContact.jsx';
+import Nav from '../Nav.jsx';
 import NewFooter from '../NewFooter.jsx';
 
 import Row from 'react-bootstrap/Row';
@@ -37,7 +37,7 @@ const Contact = () => {
                 <Helmet>
                     <title>Ruben C. Arevalo - Personal Website - Contact Form</title>
                 </Helmet>
-                <NavContact />
+                <Nav />
                 <div className="contact-page-form">
                     <h1 id="contact-title">Contact Form</h1>
                     <br></br>
@@ -105,7 +105,7 @@ const Contact = () => {
                 <Helmet>
                     <title>Ruben C. Arevalo - Personal Website - Contact Form</title>
                 </Helmet>
-                <NavContact />
+                <Nav />
                 <div className="contact-page-form">
                     <h1 id="contact-title">Contact Form</h1>
                     <br></br>
