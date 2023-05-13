@@ -223,11 +223,11 @@ const NavMain = () => {
               <Nav.Item>
                 <Nav.Link><Link to="/archives"><IoArchiveOutline id="nav-icons-style" size="16px" />Archives</Link></Nav.Link>
               </Nav.Item>
-              <Nav.Item>
-                <Nav.Link><Link to="/settings"><IoSettingsOutline id="nav-icons-style" size="16px" />Settings</Link></Nav.Link>
-              </Nav.Item>
             </Nav>
           </Navbar.Collapse>
+          <Nav>
+            <IoSettingsOutline id="nav-icons-style" size="16px" />
+          </Nav>
         </Container>
       </Navbar>
     );
