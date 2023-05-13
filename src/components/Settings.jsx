@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from 'react-helmet';
 import { useLocation } from "react-router-dom";
-import NavSettings from "../NavSettings.jsx";
+import Nav from "../Nav.jsx";
 import NewFooter from "../NewFooter.jsx";
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button'
@@ -84,7 +84,7 @@ const Settings = () => {
 
     return (
         <div className="settings-container">
-            <NavSettings />
+            <Nav />
             <Helmet>
                 <title>Ruben C. Arevalo - Personal Website - Settings</title>
             </Helmet>
