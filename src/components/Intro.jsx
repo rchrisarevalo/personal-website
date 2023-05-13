@@ -17,7 +17,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 var current_date = Date.now();
-var graduation_date = new Date(2023, 4, 13, 18);
+var graduation_date = new Date(2023, 4, 13, 0);
 
 var birth_date = new Date(2001, 7, 10);
 var birthday = new Date(new Date().getFullYear(), 7, 10)

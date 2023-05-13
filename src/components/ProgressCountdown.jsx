@@ -200,7 +200,7 @@ const ProgressCountdown = () => {
             </p>
             <ProgressBar animated now={`${progressPercentage.toFixed(2)}`} id="progress-bar" data-aos="fade" data-aos-delay="2200" />
             <p id="progress-count" data-aos="fade" data-aos-delay="2000">Progress until graduation day: {`${progressPercentage.toFixed(2)}`}%</p>
-            { Date.now() <= new Date(2023, 4, 13, 6) && 
+            { Date.now() <= new Date(2023, 4, 13, 0) && 
                 <div>
                     <p id="progress-count" data-aos="fade" data-aos-delay="2000">This section will automatically update on an hourly basis.</p>
                     <p id="progress-count" data-aos="fade" data-aos-delay="2000">The number of days left will update each day at 6 AM.</p>
