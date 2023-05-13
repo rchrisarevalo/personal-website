@@ -248,7 +248,7 @@ hr{
 
 /* navbar and navbar-toggler class modified (from React Bootstrap) */
 .navbar{
-  background: black;
+  background: rgba(0, 0, 0, 0.801);
   padding-top: 16px;
   padding-bottom: 16px;
   position: sticky;
