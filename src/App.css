@@ -46,6 +46,7 @@ img {
   margin-top: 5vh;
   margin-bottom: 5vh;
   text-align: center;
+  font-weight: 400;
 }
 
 #table-info-light-mode table{
@@ -54,6 +55,7 @@ img {
   margin-top: 5vh;
   margin-bottom: 5vh;
   text-align: center;
+  font-weight: 400;
 }
 
 #table-info-dark-mode tr{
@@ -421,6 +423,7 @@ hr{
   border-radius: 10%;
   margin: 1.5em;
   justify-content: center;
+  max-width: 60%;
 }
 
 #life-details-mobile img{
