@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from 'react-helmet';
 import profilepic from '../images/February 2023 Profile Pic.jpg';
 
-import NavAbout from "../NavAbout.jsx";
+import Nav from "../Nav.jsx";
 import NewFooter from "../NewFooter.jsx";
 import Update from "./Update.jsx";
 import RecentPosts from './RecentPosts';
@@ -109,7 +109,7 @@ const Intro = () => {
             <Helmet>
                 <title>Ruben C. Arevalo - Personal Website - About Me</title>
             </Helmet>
-            <NavAbout />
+            <Nav />
             <Update />
             <div className="intro-container" id="about">
                 <p data-aos="fade-down" data-aos-delay="500">
