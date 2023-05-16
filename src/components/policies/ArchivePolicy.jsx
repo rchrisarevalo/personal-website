@@ -13,7 +13,7 @@ import "nprogress/nprogress.css";
 const ArchivePolicy = () => {
 
     useEffect(() => {
-        nprogress.configure({minimum: 0.1, showSpinner: false, easing: 'ease', speed: 600, trickleSpeed: 200});
+        nprogress.configure({ minimum: 0.1, showSpinner: false, easing: 'ease', speed: 600, trickleSpeed: 200 });
         nprogress.start();
         nprogress.set(0.5);
         nprogress.inc(1.0);
@@ -37,14 +37,14 @@ const ArchivePolicy = () => {
                     <p>
                         Hello everyone. On September 2021, I started to archive posts from the
                         'Posts' page (now titled 'Announcements' as shown on the navigation bar
-                        above) every 30 days or so. These announcements are automatically stored in the 
+                        above) every 30 days or so. These announcements are automatically stored in the
                         <b> Archives</b> page after the aforementioned time period has passed.
                     </p>
                     <p>
                         <i>
                             Just like the <b>Website Operation policy</b>, this is <b>NOT</b> a legal document.
                             This page is rather my own way of explaining how the archival process works. Topics
-                            that will be gone over will be the time period in which old announcements will be 
+                            that will be gone over will be the time period in which old announcements will be
                             archived, where they will be stored, and how long they are going to be available for.
                         </i>
                     </p>
@@ -56,10 +56,10 @@ const ArchivePolicy = () => {
                     <br></br>
                     <br></br>
                     <br></br>
-                    <h3>Archival Time Period</h3>
+                    <h3 id="archival-time-period">Archival Time Period</h3>
                     <br></br>
                     <p>
-                        I mentioned at the end of August 2021 that I will implement (and had already did) a 30 day archive policy. 
+                        I mentioned at the end of August 2021 that I will implement (and had already did) a 30 day archive policy.
                         What I meant by this is that after a 30-day period or after the month is over (since there are 28-29 days in
                         February and 31 days in some months), the 'Announcements' page will be completely wiped.
                         After that is said and done, I will include a new announcement for the new month.
@@ -73,7 +73,7 @@ const ArchivePolicy = () => {
                     <br></br>
                     <br></br>
                     <br></br>
-                    <h3>Storage of Old Announcements</h3>
+                    <h3 id="storage-announcements">Storage of Old Announcements</h3>
                     <br></br>
                     <p>
                         As I mentioned above, old announcements will be moved somewhere else after the 30 day period
@@ -87,7 +87,7 @@ const ArchivePolicy = () => {
                         In the page, there is a brief description as to how the page will operate. There are also the months that
                         have the old announcements, and are catalogued by year. Once the 30
                         day or monthly period passes, the 'Announcements' page will automatically be wiped clean and the announcements for the
-                        previous month will be included in the 'Archives' page by the month and year they were posted. 
+                        previous month will be included in the 'Archives' page by the month and year they were posted.
                     </p>
                     <br></br>
                     <br></br>
@@ -110,7 +110,7 @@ const ArchivePolicy = () => {
                     </p>
                 </div>
             </div>
-            <NewFooter/>
+            <NewFooter />
         </div>
     )
 }

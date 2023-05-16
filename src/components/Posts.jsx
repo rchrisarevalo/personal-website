@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { Helmet } from "react-helmet";
+import { useLocation } from 'react-router-dom';
 
-import NavAnnouncements from "../NavAnnouncements.jsx";
+import Nav from "../Nav.jsx"
 import NewFooter from "../NewFooter.jsx";
 import CurrentPosts from './CurrentPosts.jsx';
 
@@ -20,12 +21,15 @@ const Posts = () => {
         window.scrollTo(0, 0);
     }, []);
 
+    var route = useLocation().pathname
+    localStorage.setItem("current_link", `${route}`)
+
     return (
         <div className="posts-main">
             <Helmet>
                 <title>Ruben C. Arevalo - Personal Website - Announcements</title>
             </Helmet>
-            <NavAnnouncements />
+            <Nav />
             <CurrentPosts />
             <NewFooter />
         </div>

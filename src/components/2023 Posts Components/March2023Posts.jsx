@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from "react-icons/io5";
 
@@ -14,6 +14,9 @@ const March2023Posts = () => {
 
     const [currentPostNum, setCurrentPostNum] = useState(0)
     const [prevPostNum, setPrevPostNum] = useState(currentPostNum)
+
+    var route = useLocation().pathname
+    localStorage.setItem("current_link", `${route}`)
 
     useEffect(() => {
         window.scrollTo(0, 0);
