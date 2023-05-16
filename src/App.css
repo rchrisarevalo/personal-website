@@ -1157,6 +1157,10 @@ hr{
   font-weight: 700;
 }
 
+#clear-notice{
+  font-weight: 500;
+}
+
 #setting-btn-icon{
   transform: translateY(-1px);
   margin-right: 7px;
