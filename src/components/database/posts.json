@@ -1495,6 +1495,46 @@
       "date": 12,
       "year": 2023,
       "id": 187
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 5/16/2023, 08:45 AM.",
+      "postContent": "Good morning, everyone! As y'all have noticed, a major update was made to the UI. There are still some pages that still look the same, but the changes are evident in the navigation bar, the \"About Me\" page, and the \"Settings\" page, which no longer exists. Speaking of the latter...",
+      "month": 5,
+      "date": 16,
+      "year": 2023,
+      "id": 188
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 5/16/2023, 08:47 AM.",
+      "postContent": "I decided to remove the \"Settings\" page entirely. However, the option is still available, as there is only two settings for the website so far, with the clear local storage and theme changer option being the only ones available, as the progress countdown feature had expired three days ago.",
+      "month": 5,
+      "date": 16,
+      "year": 2023,
+      "id": 189
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 5/16/2023, 08:49 AM.",
+      "postContent": "The \"Contact Me\" page has been given a makeover as well, though the user interface is almost the same as some things within the page have been switched around.",
+      "month": 5,
+      "date": 16,
+      "year": 2023,
+      "id": 190
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 5/16/2023, 08:50 AM.",
+      "postContent": "Furthermore, the \"Contact Me\" page form's character limit has been increased from 300 characters to 500 characters. This decision was made to accommodate any large requests that anyone wants to make regarding the status of this website. However, the same rules that are in the page still apply, as the message cannot be too long and any spam requests or discriminatory/violent messages will be disregarded and discarded immediately.",
+      "month": 5,
+      "date": 16,
+      "year": 2023,
+      "id": 191
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 5/16/2023, 08:58 AM.",
+      "postContent": "If there any suggestions, please feel free to contact me! That will be all for today. Thank you all and have a wonderful rest of the day!",
+      "month": 5,
+      "date": 16,
+      "year": 2023,
+      "id": 192
     }
   ]
 }
