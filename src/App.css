@@ -1131,6 +1131,17 @@ hr{
   margin-right: 20%;
 }
 
+.settings-nav-btn-mobile {
+  background: transparent;
+  border: transparent;
+}
+
+.settings-nav-btn-web {
+  background: transparent;
+  border: transparent;
+  color: white;
+}
+
 #settings-btns{
   transform: translateY(-2px);
   margin-right: 7px;
@@ -1151,6 +1162,11 @@ hr{
   margin-right: 7px;
   color: rgb(177, 177, 177);
   display: none;
+}
+
+#setting-btn-icon-web{
+  color: rgb(177, 177, 177);
+  margin-right: 10px;
 }
 
 #modal-text, #modal-text-clear{
@@ -1384,12 +1400,19 @@ hr{
   .navbar{
     padding-top: 10px;
     padding-bottom: 10px;
+    background: black;
   }
   .navbar-nav{
     height: 93.5vh;
   }
   #setting-btn-icon{
     display: block;
+  }
+  #setting-btn-icon-web{
+    display: none;
+  }
+  .settings-option-web{
+    display: none;
   }
   .nav-item{
     margin: 50px;
