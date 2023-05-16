@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { IoIosInformationCircleOutline, IoIosInformationCircle } from "react-icons/io";
-import { IoSettingsOutline, IoSettingsSharp, IoMailOutline, IoMailOpenSharp, IoMegaphoneOutline, IoMegaphoneSharp, IoArchiveOutline, IoArchiveSharp } from "react-icons/io5";
+import { IoSettingsOutline, IoMailOutline, IoMailOpenSharp, IoMegaphoneOutline, IoMegaphoneSharp, IoArchiveOutline, IoArchiveSharp } from "react-icons/io5";
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -16,23 +16,10 @@ const NavMain = () => {
 
   var getRoute = useLocation().pathname
 
-  const [buttonClick, setButtonClick] = useState(false)
-  const [linkClicked, setLinkClicked] = useState(false)
-
   // From React Bootstrap documentation when closing and opening modal.
   const [noticeShow, setNoticeShow] = useState(false)
   const handleNoticeClose = () => setNoticeShow(false)
   const handleNoticeShow = () => setNoticeShow(true)
-
-  function clickLink() {
-    if (buttonClick === false && setLinkClicked === true) {
-      setButtonClick(true)
-      setLinkClicked(false)
-    } else if (buttonClick === true && linkClicked === true) {
-      setButtonClick(false)
-      setLinkClicked(false)
-    }
-  }
 
   if (getRoute === "/about") {
     return (
@@ -106,7 +93,7 @@ const NavMain = () => {
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
             <Nav>
               <Nav.Item>
-                <Nav.Link><Link to="/about" onClick={clickLink()}><IoIosInformationCircleOutline id="nav-icons-style" size="16px" />About Me</Link></Nav.Link>
+                <Nav.Link><Link to="/about"><IoIosInformationCircleOutline id="nav-icons-style" size="16px" />About Me</Link></Nav.Link>
               </Nav.Item>
               <Nav.Item id="current-link">
                 <Nav.Link><Link to="/announcements"><IoMegaphoneSharp id="nav-icons-style" size="16px" /><b>Announcements</b></Link></Nav.Link>
