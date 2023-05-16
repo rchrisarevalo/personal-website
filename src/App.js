@@ -36,7 +36,6 @@ import April2023Posts from './components/2023 Posts Components/April2023Posts.js
 import May2023Posts from './components/2023 Posts Components/May2023Posts';
 import Contact from './components/Contact.jsx';
 import Archives from "./components/Archives.jsx";
-import Settings from "./components/Settings.jsx";
 import WebsiteOperation from "./components/policies/WebsiteOperation.jsx";
 import ArchivePolicy from "./components/policies/ArchivePolicy.jsx";
 import Error404 from "./components/Error404.jsx";
@@ -68,8 +67,8 @@ function App() {
   }, 1000)
 
   // Set the status of showing the progress bar to true for the time being.
-  if (localStorage.getItem("show_progress") === null && Date.now() <= new Date(2023, 4, 14)) {
-    localStorage.setItem("show_progress", "true")
+  if (localStorage.getItem("show_progress") !== null && Date.now() <= new Date(2023, 4, 17)) {
+    localStorage.removeItem("show_progress")
   }
 
   return (
@@ -113,7 +112,6 @@ function App() {
             <Route path="/announcements/2023/May" element={<May2023Posts />} />
           }
 
-          <Route path="/settings" element={<Settings />} />
           <Route path="/policies/site-operation" element={<WebsiteOperation />} />
           <Route path="/policies/archive" element={<ArchivePolicy />} />
           <Route path='*' element={<Error404 />} />
