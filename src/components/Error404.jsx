@@ -72,7 +72,6 @@ const Error404 = () => {
                                 <Link to="/announcements">Announcements</Link>
                                 <Link to="/contact">Contact Me</Link>
                                 <Link to="/archives">Archives</Link>
-                                <Link to="/settings">Settings</Link>
                             </li>
                         </Col>
                     </Row>
