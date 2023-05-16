@@ -51,6 +51,7 @@ const ThemeChangerButton = () => {
             localStorage.setItem("dark_media_theme", "false")
             localStorage.setItem("light_media_theme", "false")
             localStorage.setItem("save_status", "saved")
+            setTheme("dark")
     
         } else if (theme_choice === "light") {
             document.body.style.cssText = 'background: #FFFFFF; color: black; transition: .5s;'
@@ -58,6 +59,7 @@ const ThemeChangerButton = () => {
             localStorage.setItem("dark_media_theme", "false")
             localStorage.setItem("light_media_theme", "false")
             localStorage.setItem("save_status", "saved")
+            setTheme("light")
     
         } else if (theme_choice === "default") {
             if (window.matchMedia("(prefers-color-scheme: light)").matches) {
@@ -67,6 +69,7 @@ const ThemeChangerButton = () => {
                 localStorage.setItem("light_media_theme", "true")
                 localStorage.setItem("dark_media_theme", "false")
                 localStorage.setItem("save_status", "saved")
+                setTheme("default_light")
     
             } else {
                 document.body.style.cssText = 'background: #242525; color: white; transition: .5s;'
@@ -75,6 +78,7 @@ const ThemeChangerButton = () => {
                 localStorage.setItem("light_media_theme", "false")
                 localStorage.setItem("dark_media_theme", "true")
                 localStorage.setItem("save_status", "saved")
+                setTheme("default_dark")
             }
         }
     }
