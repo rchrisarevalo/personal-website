@@ -154,10 +154,8 @@ const Intro = () => {
                         <img src={profilepic} alt="profile-pic"></img>
                         <h1 data-aos="fade-down">About the Author</h1>
                         <p data-aos="fade-down" data-aos-delay="500">
-                            As part of introducing myself, I want to share some fun facts I want to share about myself.
-                            What I do in my spare time is that I love to code, listen to music (preferrably lofi, classical, and pop),
-                            play video games, and watch movies and shows in my free time. Whenever I have free time, other hobbies that I do
-                            are play soccer, watch anime, and research random topics online.
+                            {`${dayGreeting}`} everyone! My name is Ruben Christopher Arevalo, and I am a {`${currentAge}`} year old {`${studentYear}`} who recently graduated from the University of Texas-Rio Grande Valley.
+                            I pursued and earned my Bachelor's Degree in Computer Engineering with my concentration focusing on software from August 2019 to May 2023.
                         </p>
                         <p data-aos="fade-down" data-aos-delay="700">
                             After graduation, my goal is to become either a software engineer or a web developer. After I have chosen
