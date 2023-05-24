@@ -166,7 +166,7 @@ const Intro = () => {
                         <br></br>
                         <Row>
                             <h3>Interests</h3>
-                            As part of introducing myself, I want to share some fun facts I want to share about myself.
+                            As part of the introduction, I want to share some fun facts I want to share about myself.
                             What I do in my spare time is that I love to code, listen to music (preferrably lofi, classical, and pop),
                             play video games, and watch movies and shows in my free time. Whenever I have free time, other hobbies that I do
                             are play soccer, watch anime, and research random topics online.
