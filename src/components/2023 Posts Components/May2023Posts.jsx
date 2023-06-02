@@ -126,18 +126,18 @@ const May2023Posts = () => {
             </Helmet>
             <NavArchives />
             <div class="posts-container">
-                <Link to="/announcements/2023/March">
+                <Link to="/announcements/2023/April">
                     <IoArrowBackCircleOutline
                         id="posts-arrow-left"
-                        title="March 2023 Announcements"
+                        title="April 2023 Announcements"
                         size="40px"
                     />
                 </Link>
-                {Date.now() >= new Date(2023, 5, 1, 0, 0, 0) &&
-                    <Link to="/announcements/2023/May">
+                {Date.now() >= new Date(2023, 6, 1, 0, 0, 0) &&
+                    <Link to="/announcements/2023/June">
                         <IoArrowForwardCircleOutline
                             id="posts-arrow-right"
-                            title="May 2023 Announcements"
+                            title="June 2023 Announcements"
                             size="40px"
                         />
                     </Link>
