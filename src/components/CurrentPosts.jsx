@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import axios from "axios";
 import db from "./database/posts.json"
 
+var totalPostNum = 0
+
 const CurrentPosts = () => {
 
     const [currentPostNum, setCurrentPostNum] = useState(0)
@@ -67,6 +69,7 @@ const CurrentPosts = () => {
                     }
                     setPrevPostNum(db.post.length)
                     setCurrentPostNum(db.post.length + 1)
+                    totalPostNum = currentPostNum
                 }
             }
             else if (currentPostNum > prevPostNum) {
@@ -110,6 +113,7 @@ const CurrentPosts = () => {
                 parentDiv.setAttribute('id', `post${currentPostNum - 1}`)
                 document.getElementById("post-catalogue").insertBefore(parentDiv, document.getElementById(`post${currentPostNum - 2}`))
                 setPrevPostNum(parseInt(prevPostNum) + parseInt(1))
+                totalPostNum = prevPostNum
                 window.location.reload()
             }
         })
@@ -131,7 +135,8 @@ const CurrentPosts = () => {
                     (or the link on the navigation bar). The Archives page gets updated every month for the duration of this Site.
                 </i>
             </p>
-            <div id="post-catalogue"></div>
+            {totalPostNum === 0 && <div id="post-catalogue-empty"><i>There are no announcements available yet! Come back when new announcements have been made!</i></div>}
+            {totalPostNum > 0 && <div id="post-catalogue"></div>}
         </div>
     )
 }
