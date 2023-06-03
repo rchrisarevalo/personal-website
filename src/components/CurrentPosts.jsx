@@ -135,8 +135,8 @@ const CurrentPosts = () => {
                     (or the link on the navigation bar). The Archives page gets updated every month for the duration of this Site.
                 </i>
             </p>
-            {totalPostNum === 0 && <div id="post-catalogue-empty"><i>There are no announcements available yet! Come back when new announcements have been made!</i></div>}
-            {totalPostNum > 0 && <div id="post-catalogue"></div>}
+            {db.post.length === 0 && <div id="post-catalogue-empty"><i>There are no announcements available yet! Come back when new announcements have been made!</i></div>}
+            {db.post.length > 0 && <div id="post-catalogue"></div>}
         </div>
     )
 }
