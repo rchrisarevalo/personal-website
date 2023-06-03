@@ -27,6 +27,7 @@ const CurrentPosts = () => {
                         var parentDiv;
                         var childDiv;
                         var childDiv2Text;
+
                         parentDiv = document.createElement('div')
                         childDiv = document.createElement('p')
 
@@ -69,7 +70,6 @@ const CurrentPosts = () => {
                     }
                     setPrevPostNum(db.post.length)
                     setCurrentPostNum(db.post.length + 1)
-                    totalPostNum = currentPostNum
                 }
             }
             else if (currentPostNum > prevPostNum) {
@@ -135,8 +135,7 @@ const CurrentPosts = () => {
                     (or the link on the navigation bar). The Archives page gets updated every month for the duration of this Site.
                 </i>
             </p>
-            {db.post.length === 0 && <div id="post-catalogue-empty"><i>There are no announcements available yet! Come back when new announcements have been made!</i></div>}
-            {db.post.length > 0 && <div id="post-catalogue"></div>}
+            <div id="post-catalogue"></div>
         </div>
     )
 }
