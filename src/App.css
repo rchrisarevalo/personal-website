@@ -950,6 +950,10 @@ hr{
   margin-right: 15%;
 }
 
+#post-catalogue-empty{
+  padding: 120px;
+}
+
 #title-input{
   padding: 7px 20px;
 }
