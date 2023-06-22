@@ -10,6 +10,7 @@ const CurrentPosts = () => {
 
     const [currentPostNum, setCurrentPostNum] = useState(0)
     const [prevPostNum, setPrevPostNum] = useState(currentPostNum)
+    const [retrievedPostsNum, setRetrievedPostsNum] = useState(0)
     const [dateState, setDateState] = useState(new Date())
 
     setTimeout(() => {
@@ -23,6 +24,8 @@ const CurrentPosts = () => {
             if (currentPostNum === prevPostNum) {
                 for (var i = db.post.length - 1; i >= 0; i--) {
                     if (db.post[i].month === new Date().getMonth() + 1) {
+                        setRetrievedPostsNum(retrievedPostsNum + 1)
+                        console.log("Number of retrieved posts: ", retrievedPostsNum)
                         var grandparentDiv = document.getElementById("post-catalogue")
                         var parentDiv;
                         var childDiv;
@@ -73,10 +76,11 @@ const CurrentPosts = () => {
                 }
             }
             else if (currentPostNum > prevPostNum) {
+                setRetrievedPostsNum(retrievedPostsNum + 1)
+                console.log("Number of retrieved posts: ", retrievedPostsNum)
+
                 parentDiv = document.createElement('div')
                 childDiv = document.createElement('p')
-
-                console.log("This works!")
 
                 childDiv2Text = document.createElement('p')
                 childDiv2Text.textContent = db.post[currentPostNum - 1].title
