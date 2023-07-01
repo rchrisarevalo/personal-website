@@ -17,7 +17,7 @@
   ],
   "archive": [
     {
-      "beginMonth": 6,
+      "beginMonth": 8,
       "beginDate": 1,
       "beginYear": 2023,
       "endMonth": 12,
@@ -26,7 +26,7 @@
       "beginHour": 0,
       "beginMinute": 0,
       "endHour": 0,
-      "endMinute": 0,
+      "endMinute": null,
       "id": 1
     }
   ]
