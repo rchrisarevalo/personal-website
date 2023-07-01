@@ -33,7 +33,8 @@ import January2023Posts from './components/2023 Posts Components/January2023Post
 import February2023Posts from './components/2023 Posts Components/February2023Posts.jsx';
 import March2023Posts from './components/2023 Posts Components/March2023Posts.jsx';
 import April2023Posts from './components/2023 Posts Components/April2023Posts.jsx';
-import May2023Posts from './components/2023 Posts Components/May2023Posts';
+import May2023Posts from './components/2023 Posts Components/May2023Posts.jsx';
+import June2023Posts from './components/2023 Posts Components/June2023Posts.jsx';
 import Contact from './components/Contact.jsx';
 import Archives from "./components/Archives.jsx";
 import WebsiteOperation from "./components/policies/WebsiteOperation.jsx";
@@ -108,8 +109,10 @@ function App() {
           {(Date.now() >= new Date(2023, 0, 1) && Date.now() <= new Date(2026, 11, 31)) && <Route path="/announcements/2023/February" element={<February2023Posts />} />}
           {(Date.now() >= new Date(2023, 0, 1) && Date.now() <= new Date(2026, 11, 31)) && <Route path="/announcements/2023/March" element={<March2023Posts />} />}
           {(Date.now() >= new Date(2023, 0, 1) && Date.now() <= new Date(2026, 11, 31)) && <Route path="/announcements/2023/April" element={<April2023Posts />} />}
+          {(Date.now() >= new Date(2023, 0, 1) && Date.now() <= new Date(2026, 11, 31)) && <Route path="/announcements/2023/May" element={<May2023Posts />} />}
+          {(Date.now() >= new Date(2023, 0, 1) && Date.now() <= new Date(2026, 11, 31)) && <Route path="/announcements/2023/June" element={<June2023Posts />} />}
           {(Date.now() >= new Date(db.archive[0].beginYear, db.archive[0].beginMonth - 1, db.archive[0].beginDate) && Date.now() <= new Date(db.archive[0].endYear, db.archive[0].endMonth - 1, db.archive[0].endDate)) &&
-            <Route path="/announcements/2023/May" element={<May2023Posts />} />
+            <Route path="/announcements/2023/July" element={<June2023Posts />} />
           }
 
           <Route path="/policies/site-operation" element={<WebsiteOperation />} />
