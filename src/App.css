@@ -14,6 +14,7 @@ body{
   background: white;
   letter-spacing: 0.5px;
   overflow-x: hidden;
+  height: 100%;
 }
 
 #mobile-remove{
