@@ -26,7 +26,7 @@
       "beginHour": 0,
       "beginMinute": 0,
       "endHour": 0,
-      "endMinute": null,
+      "endMinute": 0,
       "id": 1
     }
   ]
