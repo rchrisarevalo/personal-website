@@ -224,6 +224,26 @@ const ArchivesTable = () => {
                             <td>{`${2026 - new Date().getFullYear()} year left`}</td>
                         }
                     </tr>
+                    <tr>
+                        <td>May 2023</td>
+                        <td>December 31, 2026</td>
+                        {2026 - new Date().getFullYear() > 1 &&
+                            <td>{`${2026 - new Date().getFullYear()} years left`}</td>
+                        }
+                        {2026 - new Date().getFullYear() === 1 &&
+                            <td>{`${2026 - new Date().getFullYear()} year left`}</td>
+                        }
+                    </tr>
+                    <tr>
+                        <td>June 2023</td>
+                        <td>December 31, 2026</td>
+                        {2026 - new Date().getFullYear() > 1 &&
+                            <td>{`${2026 - new Date().getFullYear()} years left`}</td>
+                        }
+                        {2026 - new Date().getFullYear() === 1 &&
+                            <td>{`${2026 - new Date().getFullYear()} year left`}</td>
+                        }
+                    </tr>
                 </table>
             </div>
         )
@@ -438,6 +458,26 @@ const ArchivesTable = () => {
                     </tr>
                     <tr>
                         <td>April 2023</td>
+                        <td>December 31, 2026</td>
+                        {2026 - new Date().getFullYear() > 1 &&
+                            <td>{`${2026 - new Date().getFullYear()} years left`}</td>
+                        }
+                        {2026 - new Date().getFullYear() === 1 &&
+                            <td>{`${2026 - new Date().getFullYear()} year left`}</td>
+                        }
+                    </tr>
+                    <tr>
+                        <td>May 2023</td>
+                        <td>December 31, 2026</td>
+                        {2026 - new Date().getFullYear() > 1 &&
+                            <td>{`${2026 - new Date().getFullYear()} years left`}</td>
+                        }
+                        {2026 - new Date().getFullYear() === 1 &&
+                            <td>{`${2026 - new Date().getFullYear()} year left`}</td>
+                        }
+                    </tr>
+                    <tr>
+                        <td>June 2023</td>
                         <td>December 31, 2026</td>
                         {2026 - new Date().getFullYear() > 1 &&
                             <td>{`${2026 - new Date().getFullYear()} years left`}</td>
