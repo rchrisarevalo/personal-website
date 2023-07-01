@@ -1663,6 +1663,38 @@
       "date": 30,
       "year": 2023,
       "id": 208
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 7/1/2023, 02:12 PM.",
+      "postContent": "Good afternoon, everyone! Today is the first day of July, and I would like to take an opportunity to announce some minor changes I made to the style of the website today.",
+      "month": 7,
+      "date": 1,
+      "year": 2023,
+      "id": 209
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 7/1/2023, 02:14 PM.",
+      "postContent": "When changing theme colors in the \"Settings\" option, specifically in the \"Archives\" page, the border color of the table does not change into the desired color as intended (i.e., the border color not changing to white when changing to dark mode, and vice versa).",
+      "month": 7,
+      "date": 1,
+      "year": 2023,
+      "id": 210
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 7/1/2023, 02:15 PM.",
+      "postContent": "Recently, I made a change to that specific page that allows the user to display the border color that they are expecting when changing to either light or dark mode. The light and dark mode feature should also work with the entire website as well.",
+      "month": 7,
+      "date": 1,
+      "year": 2023,
+      "id": 211
+    },
+    {
+      "title": "By: Ruben Christopher Arevalo. Posted on 7/1/2023, 02:15 PM.",
+      "postContent": "That will be all of the announcements that I have for today. Thank you all for your patience and have a wonderful day!",
+      "month": 7,
+      "date": 1,
+      "year": 2023,
+      "id": 212
     }
   ]
 }
