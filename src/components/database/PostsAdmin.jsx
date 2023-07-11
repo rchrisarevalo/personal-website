@@ -177,7 +177,8 @@ const PostEnter = () => {
         })
     }, [])
 
-    function writePost() {
+    function writePost(event) {
+        event.preventDefault()
         post_input = document.getElementById("post-input").value
 
         if (post_input !== "") {
@@ -287,11 +288,11 @@ const PostEnter = () => {
             <br></br>
             <br></br>
             <h2>Posts input</h2>
-            <br></br>
-            <textarea placeholder="Write your post" id="post-input" rows="10" cols="36"></textarea>
-            <br></br>
-            <br></br>
-            <form>
+            <form onSubmit={writePost}>
+                <br></br>
+                <textarea placeholder="Write your post" id="post-input" rows="10" cols="36"></textarea>
+                <br></br>
+                <br></br>
                 <button onClick={writePost}>Create Post</button>
                 <br></br>
                 <br></br>
