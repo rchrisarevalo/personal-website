@@ -117,11 +117,13 @@ const ThemeChangerButton = () => {
             </select>
         )
     } else {
-        <select id="value_check" onChange={light_dark_mode}>
-            <option value="default" selected>Device theme</option>
-            <option value="light">Light theme</option>
-            <option value="dark">Dark theme</option>
-        </select>
+        return (
+            <select id="value_check" onChange={light_dark_mode}>
+                <option value="default" selected>Device theme</option>
+                <option value="light">Light theme</option>
+                <option value="dark">Dark theme</option>
+            </select>
+        )
     }
 }
 
