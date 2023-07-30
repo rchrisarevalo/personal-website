@@ -45,6 +45,12 @@ const ContactForm = () => {
     const [darkMediaMode, setDarkMediaMode] = useState(localStorage.getItem("dark_media_theme"))
     const [lightMediaMode, setLightMediaMode] = useState(localStorage.getItem("light_media_theme"))
 
+    var current_theme = localStorage.getItem("d_l_mode")
+
+    useEffect(() => {
+        setCurrentMode(localStorage.getItem("d_l_mode"))
+    }, [current_theme])
+
     if (currentMode === "default_dark" || currentMode === "dark" || (darkMediaMode === "true" && lightMediaMode === "false")) {
         return (
             <div className="form-container">
