@@ -801,8 +801,8 @@ hr{
 #contact-steps-dark{
   background: #242525;
   color: white;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
   resize: none;
   box-shadow: 0 0 10px rgb(0, 0, 0);
   padding-top: .5vh;
