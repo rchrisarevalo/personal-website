@@ -68,7 +68,7 @@ function App() {
   }, 1000)
 
   // Set the status of showing the progress bar to true for the time being.
-  if (localStorage.getItem("show_progress") !== null && Date.now() <= new Date(2023, 4, 17)) {
+  if (localStorage.getItem("show_progress") !== null && Date.now() >= new Date(2023, 4, 17)) {
     localStorage.removeItem("show_progress")
   }
 
