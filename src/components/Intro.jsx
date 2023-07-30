@@ -121,7 +121,7 @@ const Intro = () => {
                             <Col xs lg={8}>
                                 <h1 data-aos="fade-down">About the Author</h1>
                                 <p data-aos="fade-down" data-aos-delay="500">
-                                    {`${dayGreeting}`} everyone! My name is Ruben Christopher Arevalo, and I am a {`${currentAge}`} year old {`${studentYear}`} who recently graduated from the University of Texas-Rio Grande Valley.
+                                    {`${dayGreeting}`} everyone! My name is Ruben Christopher Arevalo, and I am a {`${currentAge}`} year old {`${studentYear}`} who graduated from the University of Texas-Rio Grande Valley.
                                     I pursued and earned my Bachelor's Degree in Computer Engineering with my concentration focusing on software from August 2019 to May 2023.
                                 </p>
                                 <p data-aos="fade-down" data-aos-delay="700">
@@ -154,7 +154,7 @@ const Intro = () => {
                         <img src={profilepic} alt="profile-pic"></img>
                         <h1 data-aos="fade-down">About the Author</h1>
                         <p data-aos="fade-down" data-aos-delay="500">
-                            {`${dayGreeting}`} everyone! My name is Ruben Christopher Arevalo, and I am a {`${currentAge}`} year old {`${studentYear}`} who recently graduated from the University of Texas-Rio Grande Valley.
+                            {`${dayGreeting}`} everyone! My name is Ruben Christopher Arevalo, and I am a {`${currentAge}`} year old {`${studentYear}`} who graduated from the University of Texas-Rio Grande Valley.
                             I pursued and earned my Bachelor's Degree in Computer Engineering with my concentration focusing on software from August 2019 to May 2023.
                         </p>
                         <p data-aos="fade-down" data-aos-delay="700">
