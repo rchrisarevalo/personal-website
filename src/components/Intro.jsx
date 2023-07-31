@@ -13,6 +13,8 @@ import nprogress from "nprogress";
 import "nprogress/nprogress.css";
 // import TimeCountdown from "./TimeCountdown";
 
+import { useLocation } from 'react-router-dom';
+
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -103,6 +105,9 @@ const Intro = () => {
 
         window.scrollTo(0, 0);
     }, []);
+
+    var route = useLocation().pathname
+    localStorage.setItem("current_link", `${route}`)
 
     return (
         <div className="intro">
