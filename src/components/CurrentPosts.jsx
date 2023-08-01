@@ -23,7 +23,7 @@ const CurrentPosts = () => {
             setCurrentPostNum(db.post.length)
             if (currentPostNum === prevPostNum) {
                 for (var i = db.post.length - 1; i >= 0; i--) {
-                    if (db.post[i].month === new Date().getMonth() + 1) {
+                    if (db.post[i].month === new Date().getMonth() + 1 && db.post[i].year === new Date().getFullYear()) {
                         setRetrievedPostsNum(retrievedPostsNum + 1)
                         console.log("Number of retrieved posts: ", retrievedPostsNum)
                         var grandparentDiv = document.getElementById("post-catalogue")
