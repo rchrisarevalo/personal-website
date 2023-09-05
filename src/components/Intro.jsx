@@ -120,10 +120,10 @@ const Intro = () => {
                 <p data-aos="fade-down" data-aos-delay="500">
                     <div id="life-details-web">
                         <Row id="life-details-row">
-                            <Col>
+                            <Col id="profile-pic-col">
                                 <img src={profilepic} alt="profile-pic"></img>
                             </Col>
-                            <Col xs lg={8}>
+                            <Col xs lg={7}>
                                 <h1 data-aos="fade-down">About the Author</h1>
                                 <p data-aos="fade-down" data-aos-delay="500">
                                     {`${dayGreeting}`} everyone! My name is Ruben Christopher Arevalo, and I am a {`${currentAge}`} year old {`${studentYear}`} who graduated from the University of Texas-Rio Grande Valley.
