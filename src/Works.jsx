@@ -26,99 +26,201 @@ const Works = () => {
                 photography, like developing website such as this one and my CV website. These pictures represent
                 some of the things I have done so far in my free time, and I enjoyed doing it (and still continue to do so).
             </p>
-            <Carousel indicators={false}>
-                <Carousel.Item interval={5000}>
-                    <img
-                        className="works-display"
-                        src={work1}
-                        alt="Work 1"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={5000}>
-                    <img
-                        className="works-display"
-                        src={work2}
-                        alt="Work 2"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={5000}>
-                    <img
-                        className="works-display"
-                        src={work3}
-                        alt="Work 3"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={5000}>
-                    <img
-                        className="works-display"
-                        src={work4}
-                        alt="Work 4"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={5000}>
-                    <img
-                        className="works-display"
-                        src={work5}
-                        alt="Work 5"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={5000}>
-                    <img
-                        className="works-display"
-                        src={work6}
-                        alt="Work 6"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={5000}>
-                    <img
-                        className="works-display"
-                        src={work7}
-                        alt="Work 7"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={5000}>
-                    <img
-                        className="works-display"
-                        src={work8}
-                        alt="Work 8"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={5000}>
-                    <img
-                        className="works-display"
-                        src={work9}
-                        alt="Work 9"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={5000}>
-                    <img
-                        className="works-display"
-                        src={work10}
-                        alt="Work 10"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={5000}>
-                    <img
-                        className="works-display"
-                        src={work11}
-                        alt="Work 11"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={5000}>
-                    <img
-                        className="works-display"
-                        src={work12}
-                        alt="Work 12"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={5000}>
-                    <img
-                        className="works-display"
-                        src={work13}
-                        alt="Work 13"
-                    />
-                </Carousel.Item>
-            </Carousel>
+            {/* Carousel below derived from and implemented using React Bootstrap. */}
+            {(localStorage.getItem("d_l_mode") === "light" || localStorage.getItem("d_l_mode") === "default_light") &&
+                <>
+                    <Carousel indicators={false} variant="dark">
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work1}
+                                alt="Work 1"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work2}
+                                alt="Work 2"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work3}
+                                alt="Work 3"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work4}
+                                alt="Work 4"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work5}
+                                alt="Work 5"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work6}
+                                alt="Work 6"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work7}
+                                alt="Work 7"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work8}
+                                alt="Work 8"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work9}
+                                alt="Work 9"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work10}
+                                alt="Work 10"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work11}
+                                alt="Work 11"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work12}
+                                alt="Work 12"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work13}
+                                alt="Work 13"
+                            />
+                        </Carousel.Item>
+                    </Carousel>
+                </>
+            }
+            {(localStorage.getItem("d_l_mode") === "dark" || localStorage.getItem("d_l_mode") === "default_dark") &&
+                <>
+                    <Carousel indicators={false} variant="gray">
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work1}
+                                alt="Work 1"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work2}
+                                alt="Work 2"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work3}
+                                alt="Work 3"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work4}
+                                alt="Work 4"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work5}
+                                alt="Work 5"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work6}
+                                alt="Work 6"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work7}
+                                alt="Work 7"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work8}
+                                alt="Work 8"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work9}
+                                alt="Work 9"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work10}
+                                alt="Work 10"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work11}
+                                alt="Work 11"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work12}
+                                alt="Work 12"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={5000}>
+                            <img
+                                className="works-display"
+                                src={work13}
+                                alt="Work 13"
+                            />
+                        </Carousel.Item>
+                    </Carousel>
+                </>
+            }
         </div>
     );
 }
