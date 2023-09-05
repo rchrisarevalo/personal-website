@@ -5,8 +5,6 @@ import { Route, Routes } from "react-router-dom";
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
-import axios from "axios";
-
 // Components that will be used as page routes
 import Load from "./components/Load.jsx";
 import Intro from "./components/Intro.jsx";
@@ -54,13 +52,6 @@ function App() {
       once: true,
     });
     AOS.refresh();
-
-    axios.get("https://rchrisarevalo.github.io/personal-website").then((res) => {
-      console.log(res.status)
-    }).catch((error) => {
-      console.log(error.status)
-    })
-
   }, []);
 
   const [dateState, setDateState] = useState(new Date())
@@ -76,12 +67,12 @@ function App() {
 
   return (
     <div className="App">
-      {((Date.now() < new Date(2023, 7, 28, 0, 0)) || Date.now() >= new Date(2023, 8, 13, 0, 0)) &&
+      {((Date.now() < new Date(2023, 7, 31, 0, 0)) || Date.now() >= new Date(2023, 8, 13, 0, 0)) &&
         <Routes>
           <Route index path="/" element={<Load />} />
           <Route path="/about" element={<Intro />} />
           <Route path="/announcements" element={<Posts />} />
-          {/* <Route path="/posts" element={<PostsAdmin />} /> */}
+          <Route path="/posts" element={<PostsAdmin />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/archives" element={<Archives />} />
 
@@ -123,7 +114,7 @@ function App() {
           <Route path='*' element={<Error404 />} />
         </Routes>
       }
-      {Date.now() >= new Date(2023, 7, 28, 0, 0) && Date.now() < new Date(2023, 8, 13, 0, 0) &&
+      {Date.now() >= new Date(2023, 7, 31, 0, 0) && Date.now() < new Date(2023, 8, 13, 0, 0) &&
         <Routes>
           <Route index path="/" element={<Load />} />
           <Route path="/closed" element={<ClosedWeb />} />
