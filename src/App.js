@@ -62,10 +62,7 @@ function App() {
     localStorage.removeItem("show_progress")
   }
 
-  // Filtered archive routes based on their availability.
-  var filtered_archive_routes = db_archives["archives"].filter(result => (Date.now() >= new Date(2022, 7)))
-  console.log(filtered_archive_routes)
-  var original_archive_routes = db_archives["archives"].map(result => <Route path={`/announcements/${result["beginYear"]}/${result["month"]}`} element=<ArchivedPosts monthNum={result["beginMonth"]} yearNum={result["beginYear"]} monthName={result["month"]} /> />)
+  var archive_routes = db_archives["archives"].map(result => <Route path={`/announcements/${result["beginYear"]}/${result["month"]}`} element=<ArchivedPosts monthNum={result["beginMonth"]} yearNum={result["beginYear"]} monthName={result["month"]} /> />)
 
   return (
     <div className="App">
@@ -95,7 +92,7 @@ function App() {
           {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/July" element={<July2022Posts />} />}
 
           {/* 2022-2023 routes sorted. */}
-          {original_archive_routes}
+          {archive_routes}
 
           <Route path="/policies/site-operation" element={<WebsiteOperation />} />
           <Route path="/policies/archive" element={<ArchivePolicy />} />
