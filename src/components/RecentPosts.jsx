@@ -13,8 +13,10 @@ const RecentPosts = () => {
     useEffect(() => {
         // Display the last three recent posts
         axios.post("https://test-server-o898.onrender.com/get_three_recent_posts", db.post).then((res) => {
-            setThreeRecentPosts(res.data)
-            console.log(res.data)
+            if (res.data !== "") {
+                setThreeRecentPosts(res.data)
+                console.log(res.data)
+            }
         }).catch((error) => {
             console.log(error)
         })
@@ -25,7 +27,7 @@ const RecentPosts = () => {
     var recent_posts = recent_month_posts.map(posts => 
         <div className="post" id="post-margin">
             <p id="post-info">{`${posts["title"]}`}</p>
-            <p id="post-content">{`${posts["postContent"]}`}</p>
+            <p id="post-content">{`${posts["post_content"]}`}</p>
         </div>
     )
 
