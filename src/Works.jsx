@@ -27,7 +27,7 @@ const Works = () => {
                 some of the things I have done so far in my free time, and I enjoyed doing it (and still continue to do so).
             </p>
             {/* Carousel below derived from and implemented using React Bootstrap. */}
-            {(localStorage.getItem("d_l_mode") === "light" || localStorage.getItem("d_l_mode") === "default_light") &&
+            {((localStorage.getItem("d_l_mode") === "light" || localStorage.getItem("d_l_mode") === "default_light") || (localStorage.getItem("light_media_theme") === "true")) &&
                 <>
                     <Carousel indicators={false} variant="dark">
                         <Carousel.Item interval={5000}>
@@ -124,7 +124,7 @@ const Works = () => {
                     </Carousel>
                 </>
             }
-            {(localStorage.getItem("d_l_mode") === "dark" || localStorage.getItem("d_l_mode") === "default_dark") &&
+            {((localStorage.getItem("d_l_mode") === "dark" || localStorage.getItem("d_l_mode") === "default_dark") || (localStorage.getItem("dark_media_theme") === "true")) &&
                 <>
                     <Carousel indicators={false} variant="gray">
                         <Carousel.Item interval={5000}>
