@@ -1,127 +1,29 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-
 import axios from "axios";
-import db from "./database/posts.json"
-
-var totalPostNum = 0
 
 const CurrentPosts = () => {
 
-    const [currentPostNum, setCurrentPostNum] = useState(0)
-    const [prevPostNum, setPrevPostNum] = useState(currentPostNum)
-    const [retrievedPostsNum, setRetrievedPostsNum] = useState(0)
-    const [dateState, setDateState] = useState(new Date())
-
-    setTimeout(() => {
-        setDateState(new Date())
-    }, 1000)
+    const [currentPosts, setCurrentPosts] = useState([""])
+    var current_month_posts, posts;
 
     useEffect(() => {
-        axios.get("https://rchrisarevalo.github.io/posts.json", db.post).then((res) => {
-            setPrevPostNum(db.post.length)
-            setCurrentPostNum(db.post.length)
-            if (currentPostNum === prevPostNum) {
-                for (var i = db.post.length - 1; i >= 0; i--) {
-                    if (db.post[i].month === new Date().getMonth() + 1 && db.post[i].year === new Date().getFullYear()) {
-                        setRetrievedPostsNum(retrievedPostsNum + 1)
-                        console.log("Number of retrieved posts: ", retrievedPostsNum)
-                        var grandparentDiv = document.getElementById("post-catalogue")
-                        var parentDiv;
-                        var childDiv;
-                        var childDiv2Text;
-
-                        parentDiv = document.createElement('div')
-                        childDiv = document.createElement('p')
-
-                        childDiv2Text = document.createElement('p')
-                        childDiv2Text.textContent = db.post[i].title
-                        childDiv2Text.style.fontSize = '14px'
-                        childDiv2Text.style.fontStyle = 'italic'
-                        childDiv2Text.style.textAlign = 'left'
-                        childDiv2Text.margin = '.7em'
-
-                        childDiv.textContent = db.post[i].postContent
-                        childDiv.style.fontSize = '16.5px'
-                        childDiv.style.margin = '2em'
-                        childDiv.style.textAlign = 'left'
-
-                        childDiv2Text.setAttribute('id', 'post-info-recent')
-                        childDiv.setAttribute('id', 'post-content')
-
-                        parentDiv.style.background = '#3a3a3a'
-                        parentDiv.style.boxShadow = '0 0 4px black'
-                        parentDiv.style.fontWeight = '200'
-                        parentDiv.style.color = 'white'
-                        parentDiv.style.borderRadius = '5px'
-                        parentDiv.style.margin = '2em'
-                        parentDiv.style.textAlign = 'left'
-                        parentDiv.style.marginLeft = '7%'
-                        parentDiv.style.marginRight = '7%'
-                        parentDiv.style.paddingTop = '10px'
-                        parentDiv.style.paddingBottom = '12px'
-                        parentDiv.style.fontSize = '16.5px'
-
-                        parentDiv.style.marginBottom = '50px'
-                        parentDiv.style.marginTop = '50px'
-
-                        parentDiv.appendChild(childDiv2Text)
-                        parentDiv.appendChild(childDiv)
-                        parentDiv.setAttribute('id', `post${i}`)
-                        parentDiv.setAttribute('class', 'post')
-                        grandparentDiv.appendChild(parentDiv)
-                    }
-                    setPrevPostNum(db.post.length)
-                    setCurrentPostNum(db.post.length + 1)
-                }
-            }
-            else if (currentPostNum > prevPostNum) {
-                setRetrievedPostsNum(retrievedPostsNum + 1)
-                console.log("Number of retrieved posts: ", retrievedPostsNum)
-
-                parentDiv = document.createElement('div')
-                childDiv = document.createElement('p')
-
-                childDiv2Text = document.createElement('p')
-                childDiv2Text.textContent = db.post[currentPostNum - 1].title
-                childDiv2Text.style.fontSize = '14px'
-                childDiv2Text.style.fontStyle = 'italic'
-                childDiv2Text.style.textAlign = 'left'
-                childDiv2Text.margin = '.7em'
-
-                childDiv.textContent = db.post[currentPostNum - 1].postContent
-                childDiv.style.fontSize = '16.5px'
-                childDiv.style.margin = '2em'
-                childDiv.style.textAlign = 'left'
-
-                childDiv2Text.setAttribute('id', 'post-info-recent')
-                childDiv.setAttribute('id', 'post-content')
-
-                parentDiv.style.background = '#3a3a3a'
-                parentDiv.style.boxShadow = '0 0 4px black'
-                parentDiv.style.fontWeight = '200'
-                parentDiv.style.color = 'white'
-                parentDiv.style.borderRadius = '5px'
-                parentDiv.style.margin = '2em'
-                parentDiv.style.textAlign = 'left'
-                parentDiv.style.marginLeft = '7%'
-                parentDiv.style.marginRight = '7%'
-                parentDiv.style.paddingTop = '10px'
-                parentDiv.style.paddingBottom = '12px'
-                parentDiv.style.fontSize = '16.5px'
-                parentDiv.style.marginBottom = '50px'
-                parentDiv.style.marginTop = '50px'
-
-                parentDiv.appendChild(childDiv2Text)
-                parentDiv.appendChild(childDiv)
-                parentDiv.setAttribute('id', `post${currentPostNum - 1}`)
-                document.getElementById("post-catalogue").insertBefore(parentDiv, document.getElementById(`post${currentPostNum - 2}`))
-                setPrevPostNum(parseInt(prevPostNum) + parseInt(1))
-                totalPostNum = prevPostNum
-                window.location.reload()
-            }
+        axios.post("https://test-server-o898.onrender.com/retrieve_posts", { month: new Date().getMonth() + 1, year: new Date().getFullYear() }).then((res) => {
+            setCurrentPosts(res.data)
+            console.log(res.data)
+        }).catch((error) => {
+            console.log(error)
         })
     }, [])
+
+    current_month_posts = currentPosts.filter(posts => posts["month"] === new Date().getMonth() + 1 && posts["year"] === new Date().getFullYear())
+
+    posts = current_month_posts.map(posts =>
+        <div className="post" id="post-margin">
+            <p id="post-info">{`${posts["title"]}`}</p>
+            <p id="post-content">{`${posts["post_content"]}`}</p>
+        </div>
+    )
 
     return (
         <div className="posts-container">
@@ -131,7 +33,7 @@ const CurrentPosts = () => {
                 This is the page where I will be posting regular updates that are being made to this site.
                 Old announcements will be <b>archived</b> on the last day of each month. This means that after the
                 last day of each month has come to pass, then this whole page (minus the archive page) will
-                be wiped out completely and be replaced with announcements for the new month. 
+                be wiped out completely and be replaced with announcements for the new month.
             </p>
             <p id="posts-description">
                 <i>
@@ -139,7 +41,9 @@ const CurrentPosts = () => {
                     (or the link on the navigation bar). The Archives page gets updated every month for the duration of this Site.
                 </i>
             </p>
-            <div id="post-catalogue"></div>
+            <div id="post-catalogue">
+                {posts.length !== 0 ? posts : <p><br></br><br></br><br></br><br></br><br></br>It appears that there are no announcements yet.<br></br><br></br><br></br><br></br><br></br></p>}
+            </div>
         </div>
     )
 }

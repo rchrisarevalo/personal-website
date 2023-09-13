@@ -1,12 +1,12 @@
 {
   "update": [
     {
-      "updateMessageText": "This site will be closed for maintenance from August 28 to September 13. If you have any questions, please feel free to contact me!",
+      "updateMessageText": "This site will be closed for maintenance from August 28 to September 17. If you have any questions, please feel free to contact me!",
       "beginMonth": "8",
       "beginDate": "23",
       "beginYear": "2023",
       "endMonth": "9",
-      "endDate": "13",
+      "endDate": "17",
       "endYear": "2023",
       "beginHour": "0",
       "beginMinute": "0",

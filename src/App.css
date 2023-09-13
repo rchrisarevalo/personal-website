@@ -420,15 +420,18 @@ hr{
 }
 
 #life-details-web img{
-  width: 80%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
   border-radius: 10%;
   margin: 1.5em;
-  justify-content: center;
   max-width: 60%;
 }
 
 #life-details-mobile img{
-  width: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 10%;
   margin: 1.5em;
 }
@@ -453,6 +456,12 @@ hr{
   margin-right: 5%;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+#profile-pic-col{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #contact-details-row{
@@ -545,7 +554,8 @@ hr{
 
 .works-display{
   display: inline-block;
-  width: 30%;
+  width: 500px;
+  height: 500px;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -553,6 +563,7 @@ hr{
 .works-display img{
   width: 60%;
   align-items: center;
+  object-fit: cover;
   border-radius: 10%;
   box-shadow: 0 0 4px black;
 }
@@ -888,12 +899,19 @@ hr{
   font-size: 16.5px;
 }
 
+#posts-description-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #posts-description-intro{
   text-align: left;
   font-family: 'Open Sans', sans-serif;
-  margin-left: 4%;
-  margin-right: 4%;
-  font-weight: 200;
+  margin-left: 0%;
+  margin-right: 0%;
+  font-weight: 300;
+  font-style: italic;
   font-size: 16.5px;
 }
 
@@ -1446,13 +1464,14 @@ hr{
     margin-right: 5%;
   }
   .works-display img{
-    width: 75%;
+    width: 100%;
     align-items: center;
     text-align: center;
-    margin-right: 1%;
+    object-fit: cover;
   }
   .works-display{
-    width: 100%;
+    width: 350px;
+    height: 250px;
   }
   #work-description{
     margin-left: 5%;
@@ -1553,11 +1572,11 @@ hr{
     text-align: center;
     margin-bottom: 45px;
   }
-  #post-info{
-    width: 69%;
+  #posts-description-col{
+    justify-content: left;
   }
-  #post-info-recent{
-    width: 69%;
+  #post-info{
+    text-align: left;
   }
   #post-catalogue{
     margin-left: 0%;

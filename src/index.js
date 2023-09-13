@@ -15,6 +15,9 @@ rt_rend.render(
       <App />
     </HashRouter>
 </React.StrictMode>
+  // <HashRouter>
+  //   <App />
+  // </HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

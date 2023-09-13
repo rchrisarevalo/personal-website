@@ -32,7 +32,9 @@ const Contact = () => {
 
     useEffect(() => {
         setCurrentMode(localStorage.getItem("d_l_mode"))
-    }, [current_theme])
+        setDarkMediaMode(darkMediaMode)
+        setLightMediaMode(lightMediaMode)
+    }, [current_theme, darkMediaMode, lightMediaMode])
 
     var route = useLocation().pathname
     localStorage.setItem("current_link", `${route}`)

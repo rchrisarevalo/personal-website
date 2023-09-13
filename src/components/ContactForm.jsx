@@ -49,7 +49,9 @@ const ContactForm = () => {
 
     useEffect(() => {
         setCurrentMode(localStorage.getItem("d_l_mode"))
-    }, [current_theme])
+        setDarkMediaMode(darkMediaMode)
+        setLightMediaMode(lightMediaMode)
+    }, [current_theme, darkMediaMode, lightMediaMode])
 
     if (currentMode === "default_dark" || currentMode === "dark" || (darkMediaMode === "true" && lightMediaMode === "false")) {
         return (
