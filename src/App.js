@@ -54,7 +54,7 @@ function App() {
 
   return (
     <div className="App">
-      {((Date.now() < new Date(2023, 8, 15, 0, 0)) || Date.now() >= new Date(2023, 8, 17, 0, 0)) &&
+      {((Date.now() < new Date(2023, 7, 28, 0, 0)) || Date.now() >= new Date(2023, 8, 13, 0, 0)) &&
         <Routes>
           <Route index path="/" element={<Load />} />
           <Route path="/about" element={<Intro />} />
