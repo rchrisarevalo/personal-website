@@ -15,7 +15,6 @@ const RecentPosts = () => {
         axios.post("https://test-server-o898.onrender.com/get_three_recent_posts", db.post).then((res) => {
             if (res.data !== "") {
                 setThreeRecentPosts(res.data)
-                console.log(res.data)
             }
         }).catch((error) => {
             console.log(error)

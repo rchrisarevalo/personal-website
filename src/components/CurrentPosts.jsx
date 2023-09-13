@@ -10,7 +10,6 @@ const CurrentPosts = () => {
     useEffect(() => {
         axios.post("https://test-server-o898.onrender.com/retrieve_posts", { month: new Date().getMonth() + 1, year: new Date().getFullYear() }).then((res) => {
             setCurrentPosts(res.data)
-            console.log(res.data)
         }).catch((error) => {
             console.log(error)
         })
