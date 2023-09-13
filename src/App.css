@@ -915,6 +915,31 @@ hr{
   font-size: 16.5px;
 }
 
+.login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50vh;
+  margin-bottom: 50vh;
+  overflow: hidden;
+}
+
+.login-form form label{
+  margin-right: 30px;
+}
+
+.login-form form button {
+  border: 1px solid white;
+  background: none;
+  color: white;
+  padding: 7px 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
 .postInputContainer{
   text-align: center;
   margin-top: 20vh;
