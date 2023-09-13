@@ -174,7 +174,7 @@ const PostEnter = () => {
         var username = document.getElementById("username").value
         var password = document.getElementById("password").value
 
-        axios.post("http://localhost:5000/login", { username: username, password: password })
+        axios.post("https://test-server-o898.onrender.com/login", { username: username, password: password })
             .then((res) => {
                 if (res.data["message"] === true) {
                     setAuthenticated(true)
