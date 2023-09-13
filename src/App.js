@@ -12,18 +12,6 @@ import Load from "./components/Load.jsx";
 import Intro from "./components/Intro.jsx";
 import Posts from "./components/Posts.jsx";
 import PostsAdmin from './components/database/PostsAdmin.jsx';
-import August2021Posts from "./components/2021 Posts Components/August2021Posts.jsx";
-import September2021Posts from "./components/2021 Posts Components/September2021Posts.jsx";
-import October2021Posts from "./components/2021 Posts Components/October2021Posts.jsx";
-import November2021Posts from "./components/2021 Posts Components/November2021Posts.jsx";
-import December2021Posts from './components/2021 Posts Components/December2021Posts.jsx';
-import January2022Posts from './components/2022 Posts Components/January2022Posts.jsx';
-import February2022Posts from './components/2022 Posts Components/February2022Posts.jsx';
-import March2022Posts from './components/2022 Posts Components/March2022Posts.jsx';
-import April2022Posts from './components/2022 Posts Components/April2022Posts.jsx';
-import May2022Posts from './components/2022 Posts Components/May2022Posts.jsx';
-import June2022Posts from './components/2022 Posts Components/June2022Posts.jsx'
-import July2022Posts from './components/2022 Posts Components/July2022Posts.jsx';
 import ArchivedPosts from './components/ArchivedPosts.jsx';
 import Contact from './components/Contact.jsx';
 import Archives from "./components/Archives.jsx";
@@ -75,23 +63,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/archives" element={<Archives />} />
 
-          {/* 2021 archive routes (expire on December 31, 2024) */}
-          {(Date.now() >= new Date(2021, 0, 1) && Date.now() <= new Date(2024, 11, 31)) && <Route path="/announcements/2021/August" element={<August2021Posts />} />}
-          {(Date.now() >= new Date(2021, 0, 1) && Date.now() <= new Date(2024, 11, 31)) && <Route path="/announcements/2021/September" element={<September2021Posts />} />}
-          {(Date.now() >= new Date(2021, 0, 1) && Date.now() <= new Date(2024, 11, 31)) && <Route path="/announcements/2021/October" element={<October2021Posts />} />}
-          {(Date.now() >= new Date(2021, 0, 1) && Date.now() <= new Date(2024, 11, 31)) && <Route path="/announcements/2021/November" element={<November2021Posts />} />}
-          {(Date.now() >= new Date(2021, 0, 1) && Date.now() <= new Date(2024, 11, 31)) && <Route path="/announcements/2021/December" element={<December2021Posts />} />}
-
-          {/* 2022 archive routes (expire on December 31, 2025) */}
-          {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/January" element={<January2022Posts />} />}
-          {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/February" element={<February2022Posts />} />}
-          {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/March" element={<March2022Posts />} />}
-          {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/April" element={<April2022Posts />} />}
-          {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/May" element={<May2022Posts />} />}
-          {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/June" element={<June2022Posts />} />}
-          {(Date.now() >= new Date(2022, 0, 1) && Date.now() <= new Date(2025, 11, 31)) && <Route path="/announcements/2022/July" element={<July2022Posts />} />}
-
-          {/* 2022-2023 routes sorted. */}
+          {/* Routes to all available archives */}
           {archive_routes}
 
           <Route path="/policies/site-operation" element={<WebsiteOperation />} />
