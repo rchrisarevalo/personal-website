@@ -11,13 +11,15 @@ var hourString = ''
 
 const PostEnter = () => {
     const [currentPostInput, setCurrentPostInput] = useState("")
+    const [authenticated, setAuthenticated] = useState(false)
+
     setInterval(() => {
         for (var i = 0; i < hours_23_system.length; i++) {
             if (new Date().getHours() === hours_23_system[i]) {
                 hour = hours_12_system[i]
             }
 
-            if (new Date().getHours() === 0){
+            if (new Date().getHours() === 0) {
                 if (new Date().getMinutes() >= 0 && new Date().getMinutes() <= 9) {
                     hourString = `${hour}:0${new Date().getMinutes()} AM`
                 } else if (new Date().getMinutes() >= 10 && new Date().getMinutes() <= 59) {
@@ -75,12 +77,12 @@ const PostEnter = () => {
                 date: new Date().getDate(),
                 year: new Date().getFullYear()
             })
-            .then((res) => {
-                console.log(res.data)
-                setCurrentPostInput("")
-            }).catch((error) => {
-                console.log(error)
-            })
+                .then((res) => {
+                    console.log(res.data)
+                    setCurrentPostInput("")
+                }).catch((error) => {
+                    console.log(error)
+                })
         }
     }
     function deletePost() {
@@ -132,8 +134,7 @@ const PostEnter = () => {
         }
     }
 
-    function setArchiveDate()
-    {
+    function setArchiveDate() {
         var beginMonth = document.getElementById("beginMonth").value
         var beginDate = document.getElementById("beginDate").value
         var beginYear = document.getElementById("beginYear").value
@@ -167,67 +168,104 @@ const PostEnter = () => {
         }
     }
 
+    function handleLoginSubmission(event) {
+        event.preventDefault()
+
+        var username = document.getElementById("username").value
+        var password = document.getElementById("password").value
+
+        axios.post("http://localhost:5000/login", { username: username, password: password })
+            .then((res) => {
+                if (res.data["message"] === true) {
+                    setAuthenticated(true)
+                }
+            }).catch((error) => {
+                console.log(error.response.status)
+            }).finally(() => {
+                username = ""
+                password = ""
+            })
+    }
+
     return (
-        <div className="postInputContainer">
-            <button><a href="#/about">Home</a></button>
-            <br></br>
-            <br></br>
-            <h2>Posts input</h2>
-            <form onSubmit={writePost}>
-                <br></br>
-                <textarea placeholder="Write your post" id="post-input" rows="10" cols="36" value={currentPostInput} onChange={handlePostInput}></textarea>
-                <br></br>
-                <br></br>
-                <button onClick={writePost}>Create Post</button>
-                <br></br>
-                <br></br>
-                <input placeholder="Enter id number of post to delete" size="40" id="postid"></input>
-                <br></br>
-                <br></br>
-                <button onClick={deletePost}>Delete Post</button>
-                <br></br>
-            </form>
-            <br></br>
-            <br></br>
-            <hr></hr>
-            <br></br>
-            <br></br>
-            <h2>Update message input/Set archive availability</h2>
-            <br></br>
-            <form>
-                <textarea placeholder="Write new update message..." id="update-msg-input" rows="10" cols="36"></textarea>
-                <br></br>
-                <label>Begin date:</label>
-                <br></br>
-                <input placeholder="Enter month number: " id="beginMonth"></input>
-                <br></br>
-                <input placeholder="Enter month date:" id="beginDate"></input>
-                <br></br>
-                <input placeholder="Enter year:" id="beginYear"></input>
-                <br></br>
-                <br></br>
-                <label>End date:</label>
-                <br></br>
-                <input placeholder="Enter month number: " id="endMonth"></input>
-                <br></br>
-                <input placeholder="Enter month date:" id="endDate"></input>
-                <br></br>
-                <input placeholder="Enter year:" id="endYear"></input>
-                <br></br>
-                <br></br>
-                <label>At what time: <input id="beginHour"></input>:<input id="beginMinute"></input> to <input id="endHour"></input>:<input id="endMinute"></input></label>
-                <br></br>
-                <br></br>
-                <br></br>
-                <button onClick={updateNewsMessage}>Update message</button>
-                <br></br>
-                <br></br>
-                <button type="reset">Clear form</button>
-                <br></br>
-                <br></br>
-                <button onClick={setArchiveDate}>Set archive availability</button>
-            </form>
-        </div>
+        <>
+            {!authenticated ?
+                <div className="login-form">
+                    <form onSubmit={handleLoginSubmission}>
+                        <label>Username</label>
+                        <input required id="username"></input>
+                        <br></br>
+                        <br></br>
+                        <label>Password</label>
+                        <input type="password" required id="password"></input>
+                        <br></br>
+                        <br></br>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+                :
+                <div className="postInputContainer">
+                    <button><a href="#/about">Home</a></button>
+                    <br></br>
+                    <br></br>
+                    <h2>Posts input</h2>
+                    <form onSubmit={writePost}>
+                        <br></br>
+                        <textarea placeholder="Write your post" id="post-input" rows="10" cols="36" value={currentPostInput} onChange={handlePostInput}></textarea>
+                        <br></br>
+                        <br></br>
+                        <button onClick={writePost}>Create Post</button>
+                        <br></br>
+                        <br></br>
+                        <input placeholder="Enter id number of post to delete" size="40" id="postid"></input>
+                        <br></br>
+                        <br></br>
+                        <button onClick={deletePost}>Delete Post</button>
+                        <br></br>
+                    </form>
+                    <br></br>
+                    <br></br>
+                    <hr></hr>
+                    <br></br>
+                    <br></br>
+                    <h2>Update message input/Set archive availability</h2>
+                    <br></br>
+                    <form>
+                        <textarea placeholder="Write new update message..." id="update-msg-input" rows="10" cols="36"></textarea>
+                        <br></br>
+                        <label>Begin date:</label>
+                        <br></br>
+                        <input placeholder="Enter month number: " id="beginMonth"></input>
+                        <br></br>
+                        <input placeholder="Enter month date:" id="beginDate"></input>
+                        <br></br>
+                        <input placeholder="Enter year:" id="beginYear"></input>
+                        <br></br>
+                        <br></br>
+                        <label>End date:</label>
+                        <br></br>
+                        <input placeholder="Enter month number: " id="endMonth"></input>
+                        <br></br>
+                        <input placeholder="Enter month date:" id="endDate"></input>
+                        <br></br>
+                        <input placeholder="Enter year:" id="endYear"></input>
+                        <br></br>
+                        <br></br>
+                        <label>At what time: <input id="beginHour"></input>:<input id="beginMinute"></input> to <input id="endHour"></input>:<input id="endMinute"></input></label>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <button onClick={updateNewsMessage}>Update message</button>
+                        <br></br>
+                        <br></br>
+                        <button type="reset">Clear form</button>
+                        <br></br>
+                        <br></br>
+                        <button onClick={setArchiveDate}>Set archive availability</button>
+                    </form>
+                </div>
+            }
+        </>
     )
 }
 
