@@ -18,7 +18,7 @@ const Load = () => {
     const nav = useNavigate();
 
     useEffect(() => {
-        axios.get("https://rchrisarevalo.github.io/personal-website").then((res) => {
+        axios.get("https://personal-website-0oqw.onrender.com/").then((res) => {
             resStatus = res.status
             console.log(resStatus)
         }).catch((error) => {
