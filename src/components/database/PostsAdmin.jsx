@@ -78,7 +78,6 @@ const PostEnter = () => {
                 year: new Date().getFullYear()
             })
                 .then((res) => {
-                    console.log(res.data)
                     setCurrentPostInput("")
                 }).catch((error) => {
                     console.log(error)
