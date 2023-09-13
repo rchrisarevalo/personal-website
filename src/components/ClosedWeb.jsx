@@ -24,7 +24,7 @@ const ClosedWeb = () => {
             <div className="center-message">
                 <p id="closed-msg">Today's date: <i><b>{currentDate()}</b></i></p>
                 <p id="closed-msg">
-                    This website is closed due to maintenance. It will be re-opened on <b>September 13</b>.
+                    This website is closed due to maintenance. The original re-opening date was <b>September 13</b>, but was extended to <b>September 17</b> due to a delay in maintenance work.
                 </p>
                 <br />
                 <p id="closed-msg">Contact me if you have any questions or concerns.</p>
