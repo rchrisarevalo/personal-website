@@ -5,11 +5,13 @@ import axios from "axios";
 const CurrentPosts = () => {
 
     const [currentPosts, setCurrentPosts] = useState([""])
+    const [loaded, setLoaded] = useState(false)
     var current_month_posts, posts;
 
     useEffect(() => {
         axios.post("https://test-server-o898.onrender.com/retrieve_posts", { month: new Date().getMonth() + 1, year: new Date().getFullYear() }).then((res) => {
             setCurrentPosts(res.data)
+            setLoaded(true)
         }).catch((error) => {
             console.log(error)
         })
@@ -41,7 +43,17 @@ const CurrentPosts = () => {
                 </i>
             </p>
             <div id="post-catalogue">
-                {posts.length !== 0 ? posts : <p><br></br><br></br><br></br><br></br><br></br>It appears that there are no announcements yet.<br></br><br></br><br></br><br></br><br></br></p>}
+                {loaded ?
+                    <>
+                    {posts.length ? 
+                        posts 
+                        : 
+                        <p><br></br><br></br><br></br><br></br><br></br>It appears that there are no announcements yet.<br></br><br></br><br></br><br></br><br></br></p>
+                    }
+                    </>
+                    :
+                    <h5 style={{marginTop: '15vh', marginBottom: '10vh'}}>Loading...</h5>
+                }
             </div>
         </div>
     )

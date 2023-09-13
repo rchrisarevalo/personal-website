@@ -10,6 +10,7 @@ import NewFooter from "../NewFooter.jsx";
 const ArchivedPosts = ({monthNum, yearNum, monthName}) => {
 
     const [currentPosts, setCurrentPosts] = useState([""])
+    const [loaded, setLoaded] = useState(false)
 
     var route = useLocation().pathname
     localStorage.setItem("current_link", `${route}`)
@@ -24,6 +25,7 @@ const ArchivedPosts = ({monthNum, yearNum, monthName}) => {
         axios.post("https://test-server-o898.onrender.com/retrieve_posts", { month: monthNum, year: yearNum }).then((res) => {
             if (res.data !== "") {
                 setCurrentPosts(res.data)
+                setLoaded(true)
             }
         }).catch((error) => {
             console.log(error)
@@ -32,14 +34,8 @@ const ArchivedPosts = ({monthNum, yearNum, monthName}) => {
 
     var posts = currentPosts.map(posts =>
         <div className="post" id="post-margin">
-            {(typeof posts["title"] !== "undefined" && typeof posts["post_content"] !== "undefined") ?
-                <>
-                <p id="post-info">{`${posts["title"]}`}</p>
-                <p id="post-content">{`${posts["post_content"]}`}</p>
-                </>
-                :
-                <p id="post-content">{`Loading...`}</p>
-            }
+            <p id="post-info">{`${posts["title"]}`}</p>
+            <p id="post-content">{`${posts["post_content"]}`}</p>
         </div>
     )
 
@@ -47,7 +43,7 @@ const ArchivedPosts = ({monthNum, yearNum, monthName}) => {
         <div class="posts-main">
             <Helmet>
                 <title>
-                    {`Ruben C. Arevalo - Personal Website - Announcements (${monthName} 2022)`}
+                    {`Ruben C. Arevalo - Personal Website - Announcements (${monthName} ${yearNum})`}
                 </title>
             </Helmet>
             <NavArchives />
@@ -59,7 +55,19 @@ const ArchivedPosts = ({monthNum, yearNum, monthName}) => {
                     page. None of these posts will be deleted or edited unless I decide
                     otherwise.
                 </p>
-                <div id="post-catalogue">{posts}</div>
+                <div id="post-catalogue">
+                    {loaded ?
+                        <>
+                        {posts.length !== 0 ?
+                            posts
+                            :
+                            <p>Oops! It looks like there were no posts!</p>
+                        }
+                        </>
+                        :
+                        <h5 style={{marginTop: '20vh', marginBottom: '20vh'}}>Loading...</h5>
+                    }
+                </div>
             </div>
             <NewFooter />
         </div>
