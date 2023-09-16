@@ -172,18 +172,33 @@ const PostEnter = () => {
 
         var username = document.getElementById("username").value
         var password = document.getElementById("password").value
+  
+        axios.get("http://localhost:5000/generate_token")
+        .then((res) => {
+            var c_tok = res.data["X-CSRF-Token"]
 
-        axios.post("https://test-server-o898.onrender.com/login", { username: username, password: password })
-            .then((res) => {
-                if (res.data["message"] === true) {
-                    setAuthenticated(true)
-                }
-            }).catch((error) => {
-                console.log(error.response.status)
-            }).finally(() => {
-                username = ""
-                password = ""
-            })
+            if (c_tok !== "")
+            {
+                axios.post("http://localhost:5000/login", { username: username, password: password }, 
+                { headers: { 'X-CSRF-Token': c_tok } })
+                .then((res) => {
+                    if (res.data["message"] === true) {
+                        setAuthenticated(true)
+                    }
+                }).catch((error) => {
+                    console.log(error)
+                }).finally(() => {
+                    username = ""
+                    password = ""
+                })
+            } 
+            else 
+            {
+                console.log("Missing CSRF token!")
+            }
+        }).catch((error) => {
+            console.log(error)
+        })
     }
 
     return (
@@ -192,11 +207,11 @@ const PostEnter = () => {
                 <div className="login-form">
                     <form onSubmit={handleLoginSubmission}>
                         <label>Username</label>
-                        <input required id="username"></input>
+                        <input required id="username" />
                         <br></br>
                         <br></br>
                         <label>Password</label>
-                        <input type="password" required id="password"></input>
+                        <input type="password" required id="password" />
                         <br></br>
                         <br></br>
                         <button type="submit">Login</button>

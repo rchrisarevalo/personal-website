@@ -11,7 +11,7 @@ import axios from "axios";
 import Load from "./components/Load.jsx";
 import Intro from "./components/Intro.jsx";
 import Posts from "./components/Posts.jsx";
-import PostsAdmin from './components/database/PostsAdmin.jsx';
+import PostEnter from './components/database/PostsAdmin';
 import ArchivedPosts from './components/ArchivedPosts.jsx';
 import Contact from './components/Contact.jsx';
 import Archives from "./components/Archives.jsx";
@@ -34,7 +34,7 @@ function App() {
     axios.get("https://personal-website-0oqw.onrender.com/").then((res) => {
       console.log(res.status)
     }).catch((error) => {
-      console.log(error.status)
+      console.log(error)
     })
 
   }, []);
@@ -59,7 +59,7 @@ function App() {
           <Route index path="/" element={<Load />} />
           <Route path="/about" element={<Intro />} />
           <Route path="/announcements" element={<Posts />} />
-          <Route path="/posts" element={<PostsAdmin />} />
+          <Route path="/posts" element={<PostEnter />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/archives" element={<Archives />} />
 
@@ -71,7 +71,7 @@ function App() {
           <Route path='*' element={<Error404 />} />
         </Routes>
       }
-      {Date.now() >= new Date(2023, 8, 15, 0, 0) && Date.now() < new Date(2023, 8, 17, 0, 0) &&
+      {Date.now() >= new Date(2023, 7, 28, 0, 0) && Date.now() < new Date(2023, 8, 13, 0, 0) &&
         <Routes>
           <Route index path="/" element={<Load />} />
           <Route path="/closed" element={<ClosedWeb />} />
