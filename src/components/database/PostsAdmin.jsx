@@ -173,13 +173,13 @@ const PostEnter = () => {
         var username = document.getElementById("username").value
         var password = document.getElementById("password").value
   
-        axios.get("http://localhost:5000/generate_token")
+        axios.get("https://test-server-o898.onrender.com/generate_token")
         .then((res) => {
             var c_tok = res.data["X-CSRF-Token"]
 
             if (c_tok !== "")
             {
-                axios.post("http://localhost:5000/login", { username: username, password: password }, 
+                axios.post("https://test-server-o898.onrender.com/login", { username: username, password: password }, 
                 { headers: { 'X-CSRF-Token': c_tok } })
                 .then((res) => {
                     if (res.data["message"] === true) {
