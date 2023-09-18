@@ -163,10 +163,8 @@ const Intro = () => {
                             I pursued and earned my Bachelor's Degree in Computer Engineering with my concentration focusing on software from August 2019 to May 2023.
                         </p>
                         <p data-aos="fade-down" data-aos-delay="700">
-                            After graduation, my goal is to become either a software engineer or a web developer. After I have chosen
-                            one of the aforementioned roles, I will update my bio reflecting my current position, which will first take
-                            effect after I graduate from my university and then again after I have found a job in either aforementioned
-                            role.
+                            Now that I have graduated, my goal is to become either a software engineer or a web developer. After I have chosen
+                            one of the aforementioned roles, I will update my bio reflecting the change regarding my current position.
                         </p>
                         <br></br>
                         <Row>
