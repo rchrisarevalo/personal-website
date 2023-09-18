@@ -43,7 +43,11 @@ const RecentPosts = () => {
                         </p>
                     </Col>
                     <Col xs lg={9}>
-                        <div id="post-catalogue" data-aos="fade-up" data-aos-delay="500">{recent_posts}</div>
+                        {recent_posts.length !== 0 ?
+                            <div id="post-catalogue" data-aos="fade-up" data-aos-delay="500">{recent_posts}</div>
+                            :
+                            <><h4>There are no recent posts to display.</h4></>
+                        }
                     </Col>
                 </Row>
             </div>
