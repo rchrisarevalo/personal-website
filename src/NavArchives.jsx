@@ -45,7 +45,7 @@ const NavArchives = () => {
           </Nav>
         </Navbar.Collapse>
         <div className="settings-option-web">
-          <button onClick={handleNoticeShow} className="settings-nav-btn-web"><IoSettingsOutline size="16px" id="setting-btn-icon-web" />Settings</button>
+          <button onClick={handleNoticeShow} className="settings-nav-btn-web"><IoSettingsOutline size="16px" id="setting-btn-icon-web" style={{transform: 'translateY(-7%)'}} />Settings</button>
         </div>
       </Container>
 
