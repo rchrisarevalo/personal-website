@@ -1600,6 +1600,10 @@ hr{
   #posts-description-col{
     justify-content: left;
   }
+  #posts-description-intro{
+    margin-left: 4%;
+    margin-right: 4%;
+  }
   #post-info{
     text-align: left;
   }
