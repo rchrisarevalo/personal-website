@@ -17,7 +17,7 @@ const RecentPosts = () => {
 
     useEffect(() => {
         // Display the last three recent posts
-        axios.post("https://test-server-o898.onrender.com/get_three_recent_posts", db.post).then((res) => {
+        axios.post("https://personal-website-server-icob.onrender.com/get_three_recent_posts", db.post).then((res) => {
             setLoaded(true)
             if (res.data !== "") {
                 setThreeRecentPosts(res.data)
@@ -32,7 +32,7 @@ const RecentPosts = () => {
         // To update three most recent posts section in real-time using
         // Socket.IO.
         connection.on('update-three-recent-posts', (post_status) => {
-            axios.post("https://test-server-o898.onrender.com/get_three_recent_posts", db.post).then((res) => {
+            axios.post("https://personal-website-server-icob.onrender.com/get_three_recent_posts", db.post).then((res) => {
                 setLoaded(true)
                 if (res.data !== "") {
                     setThreeRecentPosts(res.data)
