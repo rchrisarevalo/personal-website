@@ -931,8 +931,13 @@ hr{
 }
 
 .login-form form button {
-  border: 1px solid white;
-  background: none;
+  background: grey;
+  border: none;
+  box-shadow: 0 0 5px black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 1000;
+  letter-spacing: 2px;
   color: white;
   padding: 7px 30px;
   margin-top: 10px;
