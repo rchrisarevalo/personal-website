@@ -22,7 +22,7 @@ import db_archives from './components/database/archives.json'
 
 import { io } from 'socket.io-client'
 
-export var socket_client_conn = io('http://localhost:5000')
+export var socket_client_conn = io('https://test-server-o898.onrender.com/')
 
 function App() {
 
