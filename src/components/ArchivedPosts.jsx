@@ -28,9 +28,11 @@ const ArchivedPosts = ({monthNum, yearNum, monthName}) => {
                 setLoaded(true)
             }
         }).catch((error) => {
+            setLoaded(true)
             console.log(error)
         })
-    }, [monthNum, yearNum]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [monthNum, yearNum])
 
     var posts = currentPosts.map(posts =>
         <div className="post" id="post-margin">
