@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState } from 'react';
 import axios from "axios";
+import { socket_client_conn } from '../../App';
 
 var post_input;
 
@@ -12,6 +13,10 @@ var hourString = ''
 const PostEnter = () => {
     const [currentPostInput, setCurrentPostInput] = useState("")
     const [authenticated, setAuthenticated] = useState(false)
+    const [message, setMessage] = useState("")
+
+    // eslint-disable-next-line no-unused-vars
+    const [connection, setConnection] = useState(socket_client_conn)
 
     setInterval(() => {
         for (var i = 0; i < hours_23_system.length; i++) {
@@ -77,11 +82,12 @@ const PostEnter = () => {
                 date: new Date().getDate(),
                 year: new Date().getFullYear()
             })
-                .then((res) => {
-                    setCurrentPostInput("")
-                }).catch((error) => {
-                    console.log(error)
-                })
+            .then((res) => {
+                setCurrentPostInput("")
+                connection.emit('update-posts', "Go!")
+            }).catch((error) => {
+                console.log(error)
+            })
         }
     }
     function deletePost() {
@@ -173,20 +179,21 @@ const PostEnter = () => {
         var username = document.getElementById("username").value
         var password = document.getElementById("password").value
   
-        axios.get("https://test-server-o898.onrender.com/generate_token")
+        axios.post("https://test-server-o898.onrender.com/generate_token", { username: username })
         .then((res) => {
-            var c_tok = res.data["X-CSRF-Token"]
-
-            if (c_tok !== "")
+            const tok = res.data["token"]
+            if (tok !== "")
             {
                 axios.post("https://test-server-o898.onrender.com/login", { username: username, password: password }, 
-                { headers: { 'X-CSRF-Token': c_tok } })
+                { headers: { Authorization: `Bearer ${tok}` } })
                 .then((res) => {
                     if (res.data["message"] === true) {
                         setAuthenticated(true)
+                        setMessage("Logging in...")
                     }
                 }).catch((error) => {
                     console.log(error)
+                    setMessage("Failed to login!")
                 }).finally(() => {
                     username = ""
                     password = ""
@@ -198,6 +205,7 @@ const PostEnter = () => {
             }
         }).catch((error) => {
             console.log(error)
+            setMessage("Failed to login!")
         })
     }
 
@@ -215,6 +223,7 @@ const PostEnter = () => {
                         <br></br>
                         <br></br>
                         <button type="submit">Login</button>
+                        {message.length !== 0 ? <><br></br><br></br><span>{`${message}`}</span></> : <></>}
                     </form>
                 </div>
                 :

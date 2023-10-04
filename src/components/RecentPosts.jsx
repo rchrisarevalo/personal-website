@@ -1,18 +1,24 @@
 import React, { useEffect, useState } from 'react';
 
 import axios from "axios";
-import db from "./database/posts.json"
+import db from "./database/posts.json";
 
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+import { socket_client_conn } from '../App';
 
 const RecentPosts = () => {
-
+    
     const [threeRecentPosts, setThreeRecentPosts] = useState([""])
+    const [loaded, setLoaded] = useState(false)
+    // eslint-disable-next-line no-unused-vars
+    const [connection, setConnection] = useState(socket_client_conn)
 
     useEffect(() => {
         // Display the last three recent posts
         axios.post("https://test-server-o898.onrender.com/get_three_recent_posts", db.post).then((res) => {
+            setLoaded(true)
             if (res.data !== "") {
                 setThreeRecentPosts(res.data)
             }
@@ -20,6 +26,26 @@ const RecentPosts = () => {
             console.log(error)
         })
     }, [])
+
+    // Connect to socket.
+    useEffect(() => {
+        // To update three most recent posts section in real-time using
+        // Socket.IO.
+        connection.on('update-three-recent-posts', (post_status) => {
+            axios.post("https://test-server-o898.onrender.com/get_three_recent_posts", db.post).then((res) => {
+                setLoaded(true)
+                if (res.data !== "") {
+                    setThreeRecentPosts(res.data)
+                }
+            }).catch((error) => {
+                console.log(error)
+            })
+        })
+
+        return () => {
+            connection.off('update-three-recent-posts')
+        }
+    }, [connection])
 
     var recent_month_posts = threeRecentPosts.filter(posts => posts["month"] === new Date().getMonth() + 1 && posts["year"] === new Date().getFullYear())
 
@@ -43,10 +69,16 @@ const RecentPosts = () => {
                         </p>
                     </Col>
                     <Col xs lg={9}>
-                        {recent_posts.length !== 0 ?
-                            <div id="post-catalogue" data-aos="fade-up" data-aos-delay="500">{recent_posts}</div>
+                        { loaded ? 
+                            <>
+                                {recent_posts.length !== 0 ?
+                                    <div id="post-catalogue" data-aos="fade-up" data-aos-delay="500">{recent_posts}</div>
+                                    :
+                                    <><h4>There are no recent posts to display.</h4></>
+                                }
+                            </>
                             :
-                            <><h4>There are no recent posts to display.</h4></>
+                            <h4 style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around'}}>Loading...</h4>
                         }
                     </Col>
                 </Row>
