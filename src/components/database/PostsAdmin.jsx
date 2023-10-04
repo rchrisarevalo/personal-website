@@ -75,7 +75,7 @@ const PostEnter = () => {
         post_input = document.getElementById("post-input").value
 
         if (post_input !== "") {
-            axios.post("https://test-server-o898.onrender.com/insert_posts", {
+            axios.post("https://personal-website-server-icob.onrender.com/insert_posts", {
                 title: `By: Ruben Christopher Arevalo. Posted on ${new Date().getMonth() + 1}/${new Date().getDate()}/${new Date().getFullYear()}, ${hourString}.`,
                 postContent: post_input,
                 month: new Date().getMonth() + 1,
@@ -179,12 +179,12 @@ const PostEnter = () => {
         var username = document.getElementById("username").value
         var password = document.getElementById("password").value
   
-        axios.post("https://test-server-o898.onrender.com/generate_token", { username: username })
+        axios.post("https://personal-website-server-icob.onrender.com/generate_token", { username: username })
         .then((res) => {
             const tok = res.data["token"]
             if (tok !== "")
             {
-                axios.post("https://test-server-o898.onrender.com/login", { username: username, password: password }, 
+                axios.post("https://personal-website-server-icob.onrender.com/login", { username: username, password: password }, 
                 { headers: { Authorization: `Bearer ${tok}` } })
                 .then((res) => {
                     if (res.data["message"] === true) {
