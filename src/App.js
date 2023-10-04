@@ -5,8 +5,6 @@ import { Route, Routes } from "react-router-dom";
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
-import axios from "axios";
-
 // Components that will be used as page routes
 import Load from "./components/Load.jsx";
 import Intro from "./components/Intro.jsx";
@@ -22,6 +20,10 @@ import ClosedWeb from './components/ClosedWeb.jsx';
 
 import db_archives from './components/database/archives.json'
 
+import { io } from 'socket.io-client'
+
+export var socket_client_conn = io('http://localhost:5000')
+
 function App() {
 
   useEffect(() => {
@@ -31,15 +33,12 @@ function App() {
     });
     AOS.refresh();
 
-    axios.get("https://personal-website-0oqw.onrender.com/").then((res) => {
-      console.log(res.status)
-    }).catch((error) => {
-      console.log(error)
-    })
-
   }, []);
 
+  // eslint-disable-next-line no-unused-vars
   const [dateState, setDateState] = useState(new Date())
+  // eslint-disable-next-line no-unused-vars
+  const [connection, setConnection] = useState(socket_client_conn)
 
   setTimeout(() => {
     setDateState(new Date())
