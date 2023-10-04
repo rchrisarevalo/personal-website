@@ -22,7 +22,7 @@ const ArchivedPosts = ({monthNum, yearNum, monthName}) => {
             setCurrentPosts([""])
         }
 
-        axios.post("https://test-server-o898.onrender.com/retrieve_posts", { month: monthNum, year: yearNum }).then((res) => {
+        axios.post("https://personal-website-server-icob.onrender.com/retrieve_posts", { month: monthNum, year: yearNum }).then((res) => {
             if (res.data !== "") {
                 setCurrentPosts(res.data)
                 setLoaded(true)
