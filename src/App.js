@@ -33,6 +33,10 @@ function App() {
     });
     AOS.refresh();
 
+    socket_client_conn.on('disconnect', () => {
+      socket_client_conn.disconnect()
+    })
+
   }, []);
 
   // eslint-disable-next-line no-unused-vars
