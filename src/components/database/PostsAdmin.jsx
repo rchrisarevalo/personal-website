@@ -20,7 +20,7 @@ const PostEnter = () => {
 
     useEffect(() => {
         console.log(document.cookie.length)
-        axios.post("http://localhost:5000/check_session", { msg: "Hi there!" }, { withCredentials: true })
+        axios.post("https://personal-website-server-icob.onrender.com/check_session", { msg: "Hi there!" }, { withCredentials: true })
             .then((res) => {
                 console.log(res.data)
                 if (res.data["message"] === "Validated") {
@@ -205,7 +205,6 @@ const PostEnter = () => {
         axios.post("https://personal-website-server-icob.onrender.com/generate_token", { username: username }, { withCredentials: true })
             .then((res) => {
                 const tok = res.data["token"]
-                console.log(tok)
                 if (tok !== "") {
                     console.log(document.cookie.length)
                     axios.post("https://personal-website-server-icob.onrender.com/login", { username: username, password: password },
@@ -235,7 +234,7 @@ const PostEnter = () => {
     function handleLogOut(event) {
         event.preventDefault()
 
-        axios.post("http://localhost:5000/logout", {}, { withCredentials: true })
+        axios.post("https://personal-website-server-icob.onrender.com/logout", {}, { withCredentials: true })
         .then((res) => {
             console.log(res.data)
             window.location.reload()
