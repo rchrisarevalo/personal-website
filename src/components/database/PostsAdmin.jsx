@@ -21,7 +21,6 @@ const PostEnter = () => {
     useEffect(() => {
         axios.post("https://personal-website-server-icob.onrender.com/check_session", { msg: "Hi there!" }, { withCredentials: true })
             .then((res) => {
-                console.log(res.data)
                 if (res.data["message"] === "Validated") {
                     setAuthenticated(true)
                 } else {
@@ -205,7 +204,6 @@ const PostEnter = () => {
         axios.post("https://personal-website-server-icob.onrender.com/generate_token", { username: username }, { withCredentials: true })
             .then((res) => {
                 const tok = res.data["token"]
-                console.log(tok)
                 if (tok !== "") {
                     axios.post("https://personal-website-server-icob.onrender.com/login", { username: username, password: password },
                         { headers: { Authorization: `Bearer ${tok}` } })
