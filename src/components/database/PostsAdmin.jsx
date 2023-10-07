@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from "axios";
 import { socket_client_conn } from '../../App';
 
@@ -17,6 +17,21 @@ const PostEnter = () => {
 
     // eslint-disable-next-line no-unused-vars
     const [connection, setConnection] = useState(socket_client_conn)
+
+    useEffect(() => {
+        console.log(document.cookie.length)
+        axios.post("http://localhost:5000/check_session", { msg: "Hi there!" }, { withCredentials: true })
+            .then((res) => {
+                console.log(res.data)
+                if (res.data["message"] === "Validated") {
+                    setAuthenticated(true)
+                } else {
+                    setAuthenticated(false)
+                }
+            }).catch((error) => {
+                setAuthenticated(false)
+            })
+    }, [])
 
     setInterval(() => {
         for (var i = 0; i < hours_23_system.length; i++) {
@@ -75,137 +90,157 @@ const PostEnter = () => {
         post_input = document.getElementById("post-input").value
 
         if (post_input !== "") {
-            axios.post("https://personal-website-server-icob.onrender.com/insert_posts", {
-                title: `By: Ruben Christopher Arevalo. Posted on ${new Date().getMonth() + 1}/${new Date().getDate()}/${new Date().getFullYear()}, ${hourString}.`,
-                postContent: post_input,
-                month: new Date().getMonth() + 1,
-                date: new Date().getDate(),
-                year: new Date().getFullYear()
-            })
-            .then((res) => {
-                setCurrentPostInput("")
-                connection.emit('update-posts', "Go!")
-            }).catch((error) => {
-                console.log(error)
-            })
-        }
-    }
-    function deletePost() {
-        var postID = document.getElementById("postid").value
-
-        axios.delete(`http://localhost:8000/post/${postID}`).then((res) => {
-            console.log(res)
-            console.log(`Post ${postID} successfully deleted!`)
-        }).catch((error) => {
-            console.log(error)
-            console.log(`Post ${postID} either failed to delete or was not found.`)
-        })
-    }
-
-    function updateNewsMessage() {
-        var updateMsgInput = document.getElementById("update-msg-input").value
-
-        var beginMonth = document.getElementById("beginMonth").value
-        var beginDate = document.getElementById("beginDate").value
-        var beginYear = document.getElementById("beginYear").value
-
-        var endMonth = document.getElementById("endMonth").value
-        var endDate = document.getElementById("endDate").value
-        var endYear = document.getElementById("endYear").value
-
-        var beginHour = document.getElementById("beginHour").value
-        var beginMinute = document.getElementById("beginMinute").value
-        var endHour = document.getElementById("endHour").value
-        var endMinute = document.getElementById("endMinute").value
-
-        if (updateMsgInput !== "" && beginMonth !== "" && beginDate !== "" && beginYear !== "" && endMonth !== "" && endDate !== "" && endYear !== "") {
-            axios.put("http://localhost:7000/update/1", {
-                updateMessageText: updateMsgInput,
-                beginMonth: beginMonth,
-                beginDate: beginDate,
-                beginYear: beginYear,
-                endMonth: endMonth,
-                endDate: endDate,
-                endYear: endYear,
-                beginHour: beginHour,
-                beginMinute: beginMinute,
-                endHour: endHour,
-                endMinute: endMinute
-            }).then((res) => {
-                console.log(res);
-            }).catch((error) => {
-                console.log(error);
-            })
+            axios.post("https://personal-website-server-icob.onrender.com/check_session", {}, { withCredentials: true })
+                .then((res) => {
+                    if (res.status === 200) {
+                        axios.post("https://personal-website-server-icob.onrender.com/insert_posts", {
+                            title: `By: Ruben Christopher Arevalo. Posted on ${new Date().getMonth() + 1}/${new Date().getDate()}/${new Date().getFullYear()}, ${hourString}.`,
+                            postContent: post_input,
+                            month: new Date().getMonth() + 1,
+                            date: new Date().getDate(),
+                            year: new Date().getFullYear()
+                        }).then((res) => {
+                            setCurrentPostInput("")
+                            connection.emit('update-posts', "Go!")
+                        }).catch((error) => {
+                            console.log(error)
+                        })
+                    }
+                    else {
+                        setAuthenticated(false)
+                    }
+                })
         }
     }
 
-    function setArchiveDate() {
-        var beginMonth = document.getElementById("beginMonth").value
-        var beginDate = document.getElementById("beginDate").value
-        var beginYear = document.getElementById("beginYear").value
+    // function deletePost() {
+    //     var postID = document.getElementById("postid").value
 
-        var endMonth = document.getElementById("endMonth").value
-        var endDate = document.getElementById("endDate").value
-        var endYear = document.getElementById("endYear").value
+    //     axios.delete(`http://localhost:8000/post/${postID}`).then((res) => {
+    //         console.log(res)
+    //         console.log(`Post ${postID} successfully deleted!`)
+    //     }).catch((error) => {
+    //         console.log(error)
+    //         console.log(`Post ${postID} either failed to delete or was not found.`)
+    //     })
+    // }
 
-        var beginHour = document.getElementById("beginHour").value
-        var beginMinute = document.getElementById("beginMinute").value
-        var endHour = document.getElementById("endHour").value
-        var endMinute = document.getElementById("endMinute").value
+    // function updateNewsMessage() {
+    //     var updateMsgInput = document.getElementById("update-msg-input").value
 
-        if (beginMonth !== "" && beginDate !== "" && beginYear !== "" && endMonth !== "" && endDate !== "" && endYear !== "") {
-            axios.put("http://localhost:7000/archive/1", {
-                beginMonth: parseInt(beginMonth),
-                beginDate: parseInt(beginDate),
-                beginYear: parseInt(beginYear),
-                endMonth: parseInt(endMonth),
-                endDate: parseInt(endDate),
-                endYear: parseInt(endYear),
-                beginHour: parseInt(beginHour),
-                beginMinute: parseInt(beginMinute),
-                endHour: parseInt(endHour),
-                endMinute: parseInt(endMinute)
-            }).then((res) => {
-                console.log(res);
-            }).catch((error) => {
-                console.log(error);
-            })
-        }
-    }
+    //     var beginMonth = document.getElementById("beginMonth").value
+    //     var beginDate = document.getElementById("beginDate").value
+    //     var beginYear = document.getElementById("beginYear").value
+
+    //     var endMonth = document.getElementById("endMonth").value
+    //     var endDate = document.getElementById("endDate").value
+    //     var endYear = document.getElementById("endYear").value
+
+    //     var beginHour = document.getElementById("beginHour").value
+    //     var beginMinute = document.getElementById("beginMinute").value
+    //     var endHour = document.getElementById("endHour").value
+    //     var endMinute = document.getElementById("endMinute").value
+
+    //     if (updateMsgInput !== "" && beginMonth !== "" && beginDate !== "" && beginYear !== "" && endMonth !== "" && endDate !== "" && endYear !== "") {
+    //         axios.put("http://localhost:7000/update/1", {
+    //             updateMessageText: updateMsgInput,
+    //             beginMonth: beginMonth,
+    //             beginDate: beginDate,
+    //             beginYear: beginYear,
+    //             endMonth: endMonth,
+    //             endDate: endDate,
+    //             endYear: endYear,
+    //             beginHour: beginHour,
+    //             beginMinute: beginMinute,
+    //             endHour: endHour,
+    //             endMinute: endMinute
+    //         }).then((res) => {
+    //             console.log(res);
+    //         }).catch((error) => {
+    //             console.log(error);
+    //         })
+    //     }
+    // }
+
+    // function setArchiveDate() {
+    //     var beginMonth = document.getElementById("beginMonth").value
+    //     var beginDate = document.getElementById("beginDate").value
+    //     var beginYear = document.getElementById("beginYear").value
+
+    //     var endMonth = document.getElementById("endMonth").value
+    //     var endDate = document.getElementById("endDate").value
+    //     var endYear = document.getElementById("endYear").value
+
+    //     var beginHour = document.getElementById("beginHour").value
+    //     var beginMinute = document.getElementById("beginMinute").value
+    //     var endHour = document.getElementById("endHour").value
+    //     var endMinute = document.getElementById("endMinute").value
+
+    //     if (beginMonth !== "" && beginDate !== "" && beginYear !== "" && endMonth !== "" && endDate !== "" && endYear !== "") {
+    //         axios.put("http://localhost:7000/archive/1", {
+    //             beginMonth: parseInt(beginMonth),
+    //             beginDate: parseInt(beginDate),
+    //             beginYear: parseInt(beginYear),
+    //             endMonth: parseInt(endMonth),
+    //             endDate: parseInt(endDate),
+    //             endYear: parseInt(endYear),
+    //             beginHour: parseInt(beginHour),
+    //             beginMinute: parseInt(beginMinute),
+    //             endHour: parseInt(endHour),
+    //             endMinute: parseInt(endMinute)
+    //         }).then((res) => {
+    //             console.log(res);
+    //         }).catch((error) => {
+    //             console.log(error);
+    //         })
+    //     }
+    // }
 
     function handleLoginSubmission(event) {
         event.preventDefault()
 
         var username = document.getElementById("username").value
         var password = document.getElementById("password").value
-  
-        axios.post("https://personal-website-server-icob.onrender.com/generate_token", { username: username })
+
+        axios.post("https://personal-website-server-icob.onrender.com/generate_token", { username: username }, { withCredentials: true })
+            .then((res) => {
+                const tok = res.data["token"]
+                console.log(tok)
+                if (tok !== "") {
+                    console.log(document.cookie.length)
+                    axios.post("https://personal-website-server-icob.onrender.com/login", { username: username, password: password },
+                        { headers: { Authorization: `Bearer ${tok}` } })
+                        .then((res) => {
+                            setMessage("Logging in...")
+                            if (res.data["message"] === true) {
+                                setAuthenticated(true)
+                            }
+                        }).catch((error) => {
+                            console.log(error)
+                            setMessage("Failed to login!")
+                        }).finally(() => {
+                            username = ""
+                            password = ""
+                        })
+                }
+                else {
+                    console.log("Missing CSRF token!")
+                }
+            }).catch((error) => {
+                console.log(error)
+                setMessage("Failed to login!")
+            })
+    }
+
+    function handleLogOut(event) {
+        event.preventDefault()
+
+        axios.post("http://localhost:5000/logout", {}, { withCredentials: true })
         .then((res) => {
-            const tok = res.data["token"]
-            if (tok !== "")
-            {
-                axios.post("https://personal-website-server-icob.onrender.com/login", { username: username, password: password }, 
-                { headers: { Authorization: `Bearer ${tok}` } })
-                .then((res) => {
-                    if (res.data["message"] === true) {
-                        setAuthenticated(true)
-                        setMessage("Logging in...")
-                    }
-                }).catch((error) => {
-                    console.log(error)
-                    setMessage("Failed to login!")
-                }).finally(() => {
-                    username = ""
-                    password = ""
-                })
-            } 
-            else 
-            {
-                console.log("Missing CSRF token!")
-            }
+            console.log(res.data)
+            window.location.reload()
         }).catch((error) => {
             console.log(error)
-            setMessage("Failed to login!")
         })
     }
 
@@ -229,6 +264,7 @@ const PostEnter = () => {
                 :
                 <div className="postInputContainer">
                     <button><a href="#/about">Home</a></button>
+                    <button onClick={handleLogOut}>Logout</button>
                     <br></br>
                     <br></br>
                     <h2>Posts input</h2>
@@ -240,13 +276,13 @@ const PostEnter = () => {
                         <button onClick={writePost}>Create Post</button>
                         <br></br>
                         <br></br>
-                        <input placeholder="Enter id number of post to delete" size="40" id="postid"></input>
+                        {/* <input placeholder="Enter id number of post to delete" size="40" id="postid"></input> */}
+                        {/* <br></br>
                         <br></br>
-                        <br></br>
-                        <button onClick={deletePost}>Delete Post</button>
+                        <button onClick={deletePost}>Delete Post</button> */}
                         <br></br>
                     </form>
-                    <br></br>
+                    {/* <br></br>
                     <br></br>
                     <hr></hr>
                     <br></br>
@@ -285,7 +321,7 @@ const PostEnter = () => {
                         <br></br>
                         <br></br>
                         <button onClick={setArchiveDate}>Set archive availability</button>
-                    </form>
+                    </form> */}
                 </div>
             }
         </>
