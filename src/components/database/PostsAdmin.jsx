@@ -19,7 +19,6 @@ const PostEnter = () => {
     const [connection, setConnection] = useState(socket_client_conn)
 
     useEffect(() => {
-        console.log(document.cookie.length)
         axios.post("https://personal-website-server-icob.onrender.com/check_session", { msg: "Hi there!" }, { withCredentials: true })
             .then((res) => {
                 console.log(res.data)
@@ -29,6 +28,7 @@ const PostEnter = () => {
                     setAuthenticated(false)
                 }
             }).catch((error) => {
+                console.log(error)
                 setAuthenticated(false)
             })
     }, [])
@@ -205,8 +205,8 @@ const PostEnter = () => {
         axios.post("https://personal-website-server-icob.onrender.com/generate_token", { username: username }, { withCredentials: true })
             .then((res) => {
                 const tok = res.data["token"]
+                console.log(tok)
                 if (tok !== "") {
-                    console.log(document.cookie.length)
                     axios.post("https://personal-website-server-icob.onrender.com/login", { username: username, password: password },
                         { headers: { Authorization: `Bearer ${tok}` } })
                         .then((res) => {
