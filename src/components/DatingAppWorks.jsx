@@ -17,7 +17,7 @@ const DatingAppWorksDisplay = () => {
             </p>
             {((localStorage.getItem("d_l_mode") === "light" || localStorage.getItem("d_l_mode") === "default_light") || (localStorage.getItem("light_media_theme") === "true")) &&
                 <>
-                    <Carousel indicators={false} variant="dark">
+                    <Carousel indicators={false} variant="light">
                         <Carousel.Item interval={5000}>
                             <img
                                 className="dating-app-works-display"
