@@ -564,7 +564,7 @@ hr{
 .dating-app-works-display {
   width: 100%;
   height: 90vh;
-  object-fit: cover;
+  object-fit: contain;
   align-items: center;
   pointer-events: all;
 }
