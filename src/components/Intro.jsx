@@ -17,6 +17,7 @@ import { useLocation } from 'react-router-dom';
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import DatingAppWorksDisplay from "./DatingAppWorks";
 
 var current_date = Date.now();
 var graduation_date = new Date(2023, 4, 13, 0);
@@ -213,6 +214,11 @@ const Intro = () => {
                 <hr></hr>
                 <br></br>
                 <Works />
+                <br></br>
+                <br></br>
+                <hr></hr>
+                <br></br>
+                <DatingAppWorksDisplay />
             </div>
             <NewFooter />
         </div>
