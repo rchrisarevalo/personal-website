@@ -7,7 +7,8 @@ import { socket_client_conn } from '../App';
 const CurrentPosts = () => {
 
     const [currentPosts, setCurrentPosts] = useState([""])
-    const [loaded, setLoaded] = useState(false)
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState(false)
     // eslint-disable-next-line no-unused-vars
     const [connection, setConnection] = useState(socket_client_conn)
     var current_month_posts, posts;
@@ -16,9 +17,11 @@ const CurrentPosts = () => {
     useEffect(() => {
         axios.post("https://personal-website-server-icob.onrender.com/retrieve_posts", { month: new Date().getMonth() + 1, year: new Date().getFullYear() }).then((res) => {
             setCurrentPosts(res.data)
-            setLoaded(true)
+            setLoading(false)
         }).catch((error) => {
             console.log(error)
+            setLoading(false)
+            setError(true)
         })
     }, [])
 
@@ -27,9 +30,9 @@ const CurrentPosts = () => {
         connection.on('update-current-posts', (post_status) => {
             axios.post("https://personal-website-server-icob.onrender.com/retrieve_posts", { month: new Date().getMonth() + 1, year: new Date().getFullYear() }).then((res) => {
                 setCurrentPosts(res.data)
-                setLoaded(true)
             }).catch((error) => {
                 console.log(error)
+                setError(true)
             })
         })
 
@@ -64,12 +67,18 @@ const CurrentPosts = () => {
                 </i>
             </p>
             <div id="post-catalogue">
-                {loaded ?
+                {!loading ?
                     <>
-                    {posts.length ? 
-                        posts 
-                        : 
-                        <p><br></br><br></br><br></br><br></br><br></br>It appears that there are no announcements yet.<br></br><br></br><br></br><br></br><br></br></p>
+                    {!error ?
+                        <>
+                            {posts.length ? 
+                                posts 
+                                : 
+                                <p><br></br><br></br><br></br><br></br><br></br>It appears that there are no announcements yet.<br></br><br></br><br></br><br></br><br></br></p>
+                            }
+                        </>
+                        :
+                        <p><br></br><br></br><br></br><br></br><br></br>There was an error loading the announcements.<br></br><br></br><br></br><br></br><br></br></p>
                     }
                     </>
                     :
