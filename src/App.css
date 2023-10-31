@@ -916,19 +916,14 @@ hr{
   font-size: 16.5px;
 }
 
+.login-loading-screen,
 .login-form{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 50vh;
-  margin-bottom: 50vh;
-  overflow: hidden;
-}
-
-.login-form form label{
-  margin-right: 30px;
+  height: 100vh;
 }
 
 .login-form form button {
@@ -946,6 +941,32 @@ hr{
   border-radius: 20px;
 }
 
+#login-form-input-box {
+  background: rgb(133, 133, 133);
+  padding: 7px 30px;
+  border-radius: 20px;
+}
+
+#login-form-input-box input {
+  background: none;
+  font-weight: 600;
+  border: none;
+  color: white;
+}
+
+#login-form-input-box input:focus{
+  outline: none;
+  background: none;
+  color: white;
+  font-weight: 600;
+}
+
+#login-form-input-box input::placeholder {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
 .postInputContainer{
   text-align: center;
   margin-top: 20vh;
@@ -953,6 +974,43 @@ hr{
   padding-top: 5vh;
   padding-bottom: 5vh;
   margin: .7em;
+}
+
+.postInputContainer h2 {
+  font-weight: 1000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.postInputNav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.postInputNav button, .postInputContainer button {
+  border: transparent;
+  padding: 7px 30px;
+  border-radius: 20px;
+  font-weight: 1000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.postInputNav button a {
+  text-decoration: none;
+  color: black;
+}
+
+.postInputContainer footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .post{
@@ -1619,6 +1677,17 @@ hr{
   }  
   #post-content{
     text-align: left;
+  }
+  .postInputContainer{
+    margin: 0;
+  }
+  .postInputContainer footer {
+    padding-top: 10vh;
+  }
+  .postInputContainer footer p{
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
   }
   .contact-info{
     margin: 0;
