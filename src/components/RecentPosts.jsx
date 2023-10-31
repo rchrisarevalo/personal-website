@@ -9,21 +9,24 @@ import Col from 'react-bootstrap/Col';
 import { socket_client_conn } from '../App';
 
 const RecentPosts = () => {
-    
+
     const [threeRecentPosts, setThreeRecentPosts] = useState([""])
-    const [loaded, setLoaded] = useState(false)
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState(false)
     // eslint-disable-next-line no-unused-vars
     const [connection, setConnection] = useState(socket_client_conn)
 
     useEffect(() => {
-        // Display the last three recent posts
+        // Display the last three recent posts.
         axios.post("https://personal-website-server-icob.onrender.com/get_three_recent_posts", db.post).then((res) => {
-            setLoaded(true)
+            setLoading(false)
             if (res.data !== "") {
                 setThreeRecentPosts(res.data)
             }
         }).catch((error) => {
             console.log(error)
+            setLoading(false)
+            setError(true)
         })
     }, [])
 
@@ -33,12 +36,12 @@ const RecentPosts = () => {
         // Socket.IO.
         connection.on('update-three-recent-posts', (post_status) => {
             axios.post("https://personal-website-server-icob.onrender.com/get_three_recent_posts", db.post).then((res) => {
-                setLoaded(true)
                 if (res.data !== "") {
                     setThreeRecentPosts(res.data)
                 }
             }).catch((error) => {
                 console.log(error)
+                setError(false)
             })
         })
 
@@ -49,7 +52,7 @@ const RecentPosts = () => {
 
     var recent_month_posts = threeRecentPosts.filter(posts => posts["month"] === new Date().getMonth() + 1 && posts["year"] === new Date().getFullYear())
 
-    var recent_posts = recent_month_posts.map(posts => 
+    var recent_posts = recent_month_posts.map(posts =>
         <div className="post" id="post-margin">
             <p id="post-info">{`${posts["title"]}`}</p>
             <p id="post-content">{`${posts["post_content"]}`}</p>
@@ -64,21 +67,27 @@ const RecentPosts = () => {
                     <Col id="posts-description-col">
                         <p id="posts-description-intro" data-aos="fade-right" data-aos-delay="500">
                             <p>The last three recent announcements will be posted here in this section as shown on the right hand side.
-                            This section will be regularly updated whenever there are new announcements.
-                            To view all announcements, click on "Announcements" on the navigation bar.</p>
+                                This section will be regularly updated whenever there are new announcements.
+                                To view all announcements, click on "Announcements" on the navigation bar.</p>
                         </p>
                     </Col>
                     <Col xs lg={9}>
-                        { loaded ? 
+                        {!loading ?
                             <>
-                                {recent_posts.length !== 0 ?
-                                    <div id="post-catalogue" data-aos="fade-up" data-aos-delay="500">{recent_posts}</div>
+                                {!error ?
+                                    <>
+                                        {recent_posts.length !== 0 ?
+                                            <div id="post-catalogue" data-aos="fade-up" data-aos-delay="500">{recent_posts}</div>
+                                            :
+                                            <><h4>There are no recent announcements to display.</h4></>
+                                        }
+                                    </>
                                     :
-                                    <><h4>There are no recent posts to display.</h4></>
+                                    <><h4 style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around' }}>Failed to load announcements.</h4></>
                                 }
                             </>
                             :
-                            <h4 style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around'}}>Loading...</h4>
+                            <h4 style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around' }}>Loading...</h4>
                         }
                     </Col>
                 </Row>
@@ -93,7 +102,25 @@ const RecentPosts = () => {
                     This section will be regularly updated whenever there are new announcements.
                     To view all announcements, click on "Announcements" on the navigation bar.
                 </p>
-                <div id="post-catalogue" data-aos="fade-up" data-aos-delay="500">{recent_posts}</div>
+                <div id="post-catalogue" data-aos="fade-up" data-aos-delay="500">
+                    {!loading ?
+                        <>
+                            {!error ?
+                                <>
+                                    {recent_posts.length !== 0 ?
+                                        <div id="post-catalogue" data-aos="fade-up" data-aos-delay="500">{recent_posts}</div>
+                                        :
+                                        <><h4>There are no recent announcements to display.</h4></>
+                                    }
+                                </>
+                                :
+                                <><h4 style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around' }}>Failed to load announcements.</h4></>
+                            }
+                        </>
+                        :
+                        <h4 style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around' }}>Loading...</h4>
+                    }
+                </div>
             </div>
         );
     }
