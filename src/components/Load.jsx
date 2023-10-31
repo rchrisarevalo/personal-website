@@ -10,7 +10,6 @@ import Spinner from 'react-bootstrap/Spinner';
 const theme = localStorage.getItem("d_l_mode");
 const light_media = localStorage.getItem("light_media_theme")
 const dark_media = localStorage.getItem("dark_media_theme")
-var resStatus = 0;
 
 const Load = () => {
 
@@ -19,10 +18,9 @@ const Load = () => {
 
     useEffect(() => {
         axios.get("https://personal-website-0oqw.onrender.com/").then((res) => {
-            resStatus = res.status
-            console.log(resStatus)
+            console.log(res)
         }).catch((error) => {
-            resStatus = error.response.status
+            console.log(error)
         })
     }, [])
 
@@ -31,21 +29,21 @@ const Load = () => {
         setPercentage(percentage + 1)
     }, 20)
 
-    if (resStatus === 200 && Date.now() >= new Date(2023, 7, 28) && Date.now() < new Date(2023, 8, 13))
+    if (Date.now() >= new Date(2023, 7, 28) && Date.now() < new Date(2023, 8, 13))
     {
         if (percentage === 100)
         {
             nav("/closed")
         }
     }
-    else if (resStatus === 200 && (Date.now() < new Date(2022, 7, 28) || Date.now() >= new Date(2023, 8, 13)))
+    else if ((Date.now() < new Date(2022, 7, 28) || Date.now() >= new Date(2023, 8, 13)))
     {
         if (percentage === 100)
         {
             nav("/about")
         }
     }
-    else if (resStatus === 404 || resStatus === 0)
+    else
     {
         if (percentage === 100)
         {
