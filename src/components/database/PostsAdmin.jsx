@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
 import { socket_client_conn } from '../../App';
@@ -12,25 +11,27 @@ var hourString = ''
 
 const PostEnter = () => {
     const [currentPostInput, setCurrentPostInput] = useState("")
-    const [authenticated, setAuthenticated] = useState(false)
+    const [authLogin, setAuthLogin] = useState(false)
     const [message, setMessage] = useState("")
 
     // eslint-disable-next-line no-unused-vars
     const [connection, setConnection] = useState(socket_client_conn)
 
+    // const [error, setError] = useState(false)
+    const [loading, setLoading] = useState(true)
+
     useEffect(() => {
-        axios.post("https://personal-website-server-icob.onrender.com/check_session", { msg: "Hi there!" }, { withCredentials: true })
+        axios.post("https://personal-website-server-icob.onrender.com/check_session", {}, { withCredentials: true })
             .then((res) => {
-                if (res.data["message"] === "Validated") {
-                    setAuthenticated(true)
-                } else {
-                    setAuthenticated(false)
-                }
+                // If successful, then login.
+                setAuthLogin(true)
+                setLoading(false)
             }).catch((error) => {
                 console.log(error)
-                setAuthenticated(false)
+                setAuthLogin(false)
+                setLoading(false)
             })
-    }, [])
+    }, [authLogin])
 
     setInterval(() => {
         for (var i = 0; i < hours_23_system.length; i++) {
@@ -88,28 +89,18 @@ const PostEnter = () => {
         event.preventDefault()
         post_input = document.getElementById("post-input").value
 
-        if (post_input !== "") {
-            axios.post("https://personal-website-server-icob.onrender.com/check_session", {}, { withCredentials: true })
-                .then((res) => {
-                    if (res.status === 200) {
-                        axios.post("https://personal-website-server-icob.onrender.com/insert_posts", {
-                            title: `By: Ruben Christopher Arevalo. Posted on ${new Date().getMonth() + 1}/${new Date().getDate()}/${new Date().getFullYear()}, ${hourString}.`,
-                            postContent: post_input,
-                            month: new Date().getMonth() + 1,
-                            date: new Date().getDate(),
-                            year: new Date().getFullYear()
-                        }).then((res) => {
-                            setCurrentPostInput("")
-                            connection.emit('update-posts', "Go!")
-                        }).catch((error) => {
-                            console.log(error)
-                        })
-                    }
-                    else {
-                        setAuthenticated(false)
-                    }
-                })
-        }
+        axios.post("https://personal-website-server-icob.onrender.com/insert_posts", {
+            title: `By: Ruben Christopher Arevalo. Posted on ${new Date().getMonth() + 1}/${new Date().getDate()}/${new Date().getFullYear()}, ${hourString}.`,
+            postContent: post_input,
+            month: new Date().getMonth() + 1,
+            date: new Date().getDate(),
+            year: new Date().getFullYear()
+        }, { withCredentials: true }).then((res) => {
+            setCurrentPostInput("")
+            connection.emit('update-posts', "Go!")
+        }).catch((error) => {
+            console.log(error)
+        })
     }
 
     // function deletePost() {
@@ -198,34 +189,20 @@ const PostEnter = () => {
     function handleLoginSubmission(event) {
         event.preventDefault()
 
+        setMessage("Logging in...")
+
         var username = document.getElementById("username").value
         var password = document.getElementById("password").value
 
-        axios.post("https://personal-website-server-icob.onrender.com/generate_token", { username: username }, { withCredentials: true })
+        axios.post("https://personal-website-server-icob.onrender.com/login", { username: username, password: password }, { withCredentials: true })
             .then((res) => {
-                const tok = res.data["token"]
-                if (tok !== "") {
-                    axios.post("https://personal-website-server-icob.onrender.com/login", { username: username, password: password },
-                        { headers: { Authorization: `Bearer ${tok}` } })
-                        .then((res) => {
-                            setMessage("Logging in...")
-                            if (res.data["message"] === true) {
-                                setAuthenticated(true)
-                            }
-                        }).catch((error) => {
-                            console.log(error)
-                            setMessage("Failed to login!")
-                        }).finally(() => {
-                            username = ""
-                            password = ""
-                        })
-                }
-                else {
-                    console.log("Missing CSRF token!")
-                }
+                setAuthLogin(true)
             }).catch((error) => {
                 console.log(error)
                 setMessage("Failed to login!")
+            }).finally(() => {
+                username = ""
+                password = ""
             })
     }
 
@@ -233,92 +210,111 @@ const PostEnter = () => {
         event.preventDefault()
 
         axios.post("https://personal-website-server-icob.onrender.com/logout", {}, { withCredentials: true })
-        .then((res) => {
-            console.log(res.data)
-            window.location.reload()
-        }).catch((error) => {
-            console.log(error)
-        })
+            .then((res) => {
+                window.location.reload()
+            }).catch((error) => {
+                console.log(error)
+            })
     }
 
     return (
         <>
-            {!authenticated ?
-                <div className="login-form">
-                    <form onSubmit={handleLoginSubmission}>
-                        <label>Username</label>
-                        <input required id="username" />
-                        <br></br>
-                        <br></br>
-                        <label>Password</label>
-                        <input type="password" required id="password" />
-                        <br></br>
-                        <br></br>
-                        <button type="submit">Login</button>
-                        {message.length !== 0 ? <><br></br><br></br><span>{`${message}`}</span></> : <></>}
-                    </form>
-                </div>
+            {!loading ?
+                <>
+                    {!authLogin ?
+                        <>
+                            <div className="login-form">
+                                <form onSubmit={handleLoginSubmission}>
+                                    <div id="login-form-input-box">
+                                        <input required id="username" placeholder="Username"/>
+                                    </div>
+                                    <br></br>
+                                    <br></br>
+                                    <div id="login-form-input-box">
+                                        <input type="password" required id="password" placeholder="Password"/>
+                                    </div>
+                                    <br></br>
+                                    <br></br>
+                                    <button type="submit">Login</button>
+                                    {message.length !== 0 ? <><br></br><br></br><span>{`${message}`}</span></> : <></>}
+                                </form>
+                            </div>
+                        </>
+                        :
+                        <div className="postInputContainer">
+                            <div className="postInputNav">
+                                <button><a href="#/about">Home</a></button>
+                                <button onClick={handleLogOut}>Log Out</button>
+                            </div>
+                            <br></br>
+                            <br></br>
+                            <h2>Write a Post</h2>
+                            <form onSubmit={writePost}>
+                                <br></br>
+                                <textarea placeholder="Write your post" id="post-input" rows="10" cols="36" value={currentPostInput} onChange={handlePostInput}></textarea>
+                                <br></br>
+                                <br></br>
+                                <button onClick={writePost}>Create Post</button>
+                                <br></br>
+                                <br></br>
+                                {/* <input placeholder="Enter id number of post to delete" size="40" id="postid"></input> */}
+                                {/* <br></br>
+                                    <br></br>
+                                    <button onClick={deletePost}>Delete Post</button> */}
+                                <br></br>
+                            </form>
+                            <footer>
+                                <p>These admin tools are not to be used through unauthorized means.</p>
+                                <p>
+                                    Any unauthorized attempts to do so will result in fines and penalties in accordance with applicable laws.
+                                </p>
+                            </footer>
+                            {/* <br></br>
+                                <br></br>
+                                <hr></hr>
+                                <br></br>
+                                <br></br>
+                                <h2>Update message input/Set archive availability</h2>
+                                <br></br>
+                                <form>
+                                    <textarea placeholder="Write new update message..." id="update-msg-input" rows="10" cols="36"></textarea>
+                                    <br></br>
+                                    <label>Begin date:</label>
+                                    <br></br>
+                                    <input placeholder="Enter month number: " id="beginMonth"></input>
+                                    <br></br>
+                                    <input placeholder="Enter month date:" id="beginDate"></input>
+                                    <br></br>
+                                    <input placeholder="Enter year:" id="beginYear"></input>
+                                    <br></br>
+                                    <br></br>
+                                    <label>End date:</label>
+                                    <br></br>
+                                    <input placeholder="Enter month number: " id="endMonth"></input>
+                                    <br></br>
+                                    <input placeholder="Enter month date:" id="endDate"></input>
+                                    <br></br>
+                                    <input placeholder="Enter year:" id="endYear"></input>
+                                    <br></br>
+                                    <br></br>
+                                    <label>At what time: <input id="beginHour"></input>:<input id="beginMinute"></input> to <input id="endHour"></input>:<input id="endMinute"></input></label>
+                                    <br></br>
+                                    <br></br>
+                                    <br></br>
+                                    <button onClick={updateNewsMessage}>Update message</button>
+                                    <br></br>
+                                    <br></br>
+                                    <button type="reset">Clear form</button>
+                                    <br></br>
+                                    <br></br>
+                                    <button onClick={setArchiveDate}>Set archive availability</button>
+                                </form> */}
+                        </div>
+                    }
+                </>
                 :
-                <div className="postInputContainer">
-                    <button><a href="#/about">Home</a></button>
-                    <button onClick={handleLogOut}>Logout</button>
-                    <br></br>
-                    <br></br>
-                    <h2>Posts input</h2>
-                    <form onSubmit={writePost}>
-                        <br></br>
-                        <textarea placeholder="Write your post" id="post-input" rows="10" cols="36" value={currentPostInput} onChange={handlePostInput}></textarea>
-                        <br></br>
-                        <br></br>
-                        <button onClick={writePost}>Create Post</button>
-                        <br></br>
-                        <br></br>
-                        {/* <input placeholder="Enter id number of post to delete" size="40" id="postid"></input> */}
-                        {/* <br></br>
-                        <br></br>
-                        <button onClick={deletePost}>Delete Post</button> */}
-                        <br></br>
-                    </form>
-                    {/* <br></br>
-                    <br></br>
-                    <hr></hr>
-                    <br></br>
-                    <br></br>
-                    <h2>Update message input/Set archive availability</h2>
-                    <br></br>
-                    <form>
-                        <textarea placeholder="Write new update message..." id="update-msg-input" rows="10" cols="36"></textarea>
-                        <br></br>
-                        <label>Begin date:</label>
-                        <br></br>
-                        <input placeholder="Enter month number: " id="beginMonth"></input>
-                        <br></br>
-                        <input placeholder="Enter month date:" id="beginDate"></input>
-                        <br></br>
-                        <input placeholder="Enter year:" id="beginYear"></input>
-                        <br></br>
-                        <br></br>
-                        <label>End date:</label>
-                        <br></br>
-                        <input placeholder="Enter month number: " id="endMonth"></input>
-                        <br></br>
-                        <input placeholder="Enter month date:" id="endDate"></input>
-                        <br></br>
-                        <input placeholder="Enter year:" id="endYear"></input>
-                        <br></br>
-                        <br></br>
-                        <label>At what time: <input id="beginHour"></input>:<input id="beginMinute"></input> to <input id="endHour"></input>:<input id="endMinute"></input></label>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <button onClick={updateNewsMessage}>Update message</button>
-                        <br></br>
-                        <br></br>
-                        <button type="reset">Clear form</button>
-                        <br></br>
-                        <br></br>
-                        <button onClick={setArchiveDate}>Set archive availability</button>
-                    </form> */}
+                <div className="login-loading-screen">
+                    <h1>Loading...</h1>
                 </div>
             }
         </>
