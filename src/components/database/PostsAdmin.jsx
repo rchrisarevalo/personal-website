@@ -17,8 +17,12 @@ const PostEnter = () => {
     // eslint-disable-next-line no-unused-vars
     const [connection, setConnection] = useState(socket_client_conn)
 
-    // const [error, setError] = useState(false)
+    const [error, setError] = useState(false)
+    const [profilePicLoading, setProfilePicLoading] = useState(true)
     const [loading, setLoading] = useState(true)
+
+
+    const [profilePic, setProfilePic] = useState(null)
 
     useEffect(() => {
         axios.post("https://personal-website-server-icob.onrender.com/check_session", {}, { withCredentials: true })
@@ -32,6 +36,18 @@ const PostEnter = () => {
                 setLoading(false)
             })
     }, [authLogin])
+
+    useEffect(() => {
+        axios.post("https://personal-website-server-icob.onrender.com/retrieve_profile_pic", {})
+            .then((res) => {
+                setProfilePic(res.data.photo)
+                setProfilePicLoading(false)
+            }).catch((error) => {
+                setProfilePicLoading(false)
+                setError(true)
+                console.log(error)
+            })  
+    }, [])
 
     setInterval(() => {
         for (var i = 0; i < hours_23_system.length; i++) {
@@ -248,10 +264,40 @@ const PostEnter = () => {
                             </div>
                             <br></br>
                             <br></br>
+                            <h2>Update Profile Picture</h2>
+                            <br></br>
+                            {!profilePicLoading ?
+                                !error ?
+                                    <img src={`data:image/png;base64,${profilePic}`} alt="profile-pic"></img>
+                                    :
+                                    <h4>Error loading profile picture.</h4>
+                                :
+                                <h4>Loading...</h4>
+                            }
+                            <form encType='multipart/form-data' method='POST' action='https://personal-website-server-icob.onrender.com/update_profile_pic'>
+                                <br></br>
+                                <br></br>
+                                <input type="file" accept="image/*" name='profile-pic' required/>
+                                <br></br>
+                                <br></br>
+                                <br></br>
+                                <button type="submit">Update</button>
+                            </form>
+                            <br></br>
+                            {/* Displays flash message if uploaded picture was successful or not. */}
+                            { typeof(document.cookie.split("flash_message=")[1]) !== 'undefined' ?
+                                <b><h4>{`${document.cookie.split("flash_message=")[1]}`}</h4></b>
+                                :
+                                <></>
+                            }
+                            <br></br>
+                            <br></br>
+                            <hr></hr>
+                            <br></br>
                             <h2>Write a Post</h2>
                             <form onSubmit={writePost}>
                                 <br></br>
-                                <textarea placeholder="Write your post" id="post-input" rows="10" cols="36" value={currentPostInput} onChange={handlePostInput}></textarea>
+                                <textarea placeholder="Write your post" id="post-input" rows="10" cols="36" value={currentPostInput} onChange={handlePostInput} required></textarea>
                                 <br></br>
                                 <br></br>
                                 <button onClick={writePost}>Create Post</button>

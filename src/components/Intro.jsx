@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from 'react-helmet';
-import profilepic from '../images/ruben_september_2023.jpg';
 
 import Nav from "../Nav.jsx";
 import NewFooter from "../NewFooter.jsx";
@@ -18,6 +17,7 @@ import { useLocation } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import DatingAppWorksDisplay from "./DatingAppWorks";
+import axios from "axios";
 
 var current_date = Date.now();
 var graduation_date = new Date(2023, 4, 13, 0);
@@ -38,7 +38,6 @@ if (birthday > current_date) {
 } else {
 
 }
-var student_year = "fourth-year"
 
 function time_greeting() {
     var hour = new Date().getHours();
@@ -56,9 +55,13 @@ const Intro = () => {
 
     const [currentAge, setCurrentAge] = useState(age)
     const [dayGreeting, setDayGreeting] = useState(time_greeting())
+    const [profilePicture, setProfilePicture] = useState(null)
 
-    // This will be a temporary state variable as long as I am a student
-    const [studentYear, setStudentYear] = useState(student_year)
+    // State variables for request status.
+    const [requestStatus, setRequestStatus] = useState({
+        loading: true,
+        error: false
+    })
 
     setTimeout(() => {
         // The owner's age (me) will remain the same if the birthday is not reached yet.
@@ -74,13 +77,6 @@ const Intro = () => {
     }, 1000)
 
     setTimeout(() => {
-        // I will be a fourth-year student from August 29, 2022 at 8 AM to May 13, 2023 at 8 PM.
-        if (Date.now() >= new Date(2022, 7, 29) && Date.now() <= new Date(2023, 4, 13, 20)) {
-            setStudentYear("fourth-year")
-        } else {
-            setStudentYear("recent graduate")
-        }
-
         // Time greetings will automatically change throughout the day.
 
         // 12:00 AM - 11:59 AM
@@ -107,6 +103,24 @@ const Intro = () => {
         window.scrollTo(0, 0);
     }, []);
 
+    // To retrieve profile picture.
+    useEffect(() => {
+        axios.post("https://personal-website-server-icob.onrender.com/retrieve_profile_pic", {})
+        .then((res) => {
+            setProfilePicture(res.data.photo)
+            setRequestStatus({
+                loading: false,
+                error: false
+            })
+        }).catch((error) => {
+            setRequestStatus({
+                loading: false,
+                error: true
+            })
+            console.log(error)
+        })
+    }, [])
+
     var route = useLocation().pathname
     localStorage.setItem("current_link", `${route}`)
 
@@ -122,12 +136,22 @@ const Intro = () => {
                     <div id="life-details-web">
                         <Row id="life-details-row">
                             <Col id="profile-pic-col">
-                                <img src={profilepic} alt="profile-pic"></img>
+                                {!requestStatus.loading ?
+                                    <>
+                                    { !requestStatus.error ?
+                                        <img src={`data:image/png;base64,${profilePicture}`} alt="profile-pic"></img>
+                                        :
+                                        <h4 style={{transform: 'translateY(50%)'}}>Failed to load profile picture.</h4>
+                                    }
+                                    </>
+                                    :
+                                    <h4 style={{transform: 'translateY(50%)'}}>Loading...</h4>
+                                }
                             </Col>
                             <Col xs lg={7}>
                                 <h1 data-aos="fade-down">About the Author</h1>
                                 <p data-aos="fade-down" data-aos-delay="500">
-                                    {`${dayGreeting}`} everyone! My name is Ruben Christopher Arevalo, and I am a {`${currentAge}`} year old {`${studentYear}`} who graduated from the University of Texas-Rio Grande Valley.
+                                    {`${dayGreeting}`} everyone! My name is Ruben Christopher Arevalo, and I am a {`${currentAge}`} year old who graduated recently from the University of Texas-Rio Grande Valley.
                                     I pursued and earned my Bachelor's Degree in Computer Engineering with my concentration focusing on software from August 2019 to May 2023.
                                 </p>
                                 <p data-aos="fade-down" data-aos-delay="700">
@@ -157,10 +181,20 @@ const Intro = () => {
                         </Row>
                     </div>
                     <div id="life-details-mobile">
-                        <img src={profilepic} alt="profile-pic"></img>
+                        {!requestStatus.loading ?
+                            <>
+                            { !requestStatus.error ?
+                                <img src={`data:image/png;base64,${profilePicture}`} alt="profile-pic"></img>
+                                :
+                                <h4 style={{transform: 'translateY(50%)'}}>Failed to load profile picture.</h4>
+                            }
+                            </>
+                            :
+                            <h4 style={{transform: 'translateY(50%)'}}>Loading...</h4>
+                        }
                         <h1 data-aos="fade-down">About the Author</h1>
                         <p data-aos="fade-down" data-aos-delay="500">
-                            {`${dayGreeting}`} everyone! My name is Ruben Christopher Arevalo, and I am a {`${currentAge}`} year old {`${studentYear}`} who graduated from the University of Texas-Rio Grande Valley.
+                            {`${dayGreeting}`} everyone! My name is Ruben Christopher Arevalo, and I am a {`${currentAge}`} year old who graduated recently from the University of Texas-Rio Grande Valley.
                             I pursued and earned my Bachelor's Degree in Computer Engineering with my concentration focusing on software from August 2019 to May 2023.
                         </p>
                         <p data-aos="fade-down" data-aos-delay="700">
