@@ -240,7 +240,7 @@ const PostEnter = () => {
                     {!authLogin ?
                         <>
                             <div className="login-form">
-                                <form onSubmit={handleLoginSubmission}>
+                                <form onSubmit={handleLoginSubmission} autoComplete='off'>
                                     <div id="login-form-input-box">
                                         <input required id="username" placeholder="Username"/>
                                     </div>
