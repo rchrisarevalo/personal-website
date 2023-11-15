@@ -15,7 +15,8 @@ const CurrentPosts = () => {
 
     // Retrieve initial posts for the current month.
     useEffect(() => {
-        axios.post("https://personal-website-server-icob.onrender.com/retrieve_posts", { month: new Date().getMonth() + 1, year: new Date().getFullYear() }).then((res) => {
+        axios.post(`https://personal-website-server-icob.onrender.com/retrieve_posts?m=${new Date().getMonth() + 1}&y=${new Date().getFullYear()}`, {})
+        .then((res) => {
             setCurrentPosts(res.data)
             setLoading(false)
         }).catch((error) => {
@@ -28,7 +29,8 @@ const CurrentPosts = () => {
     // To retrieve updated posts in real-time using Socket.IO.
     useEffect(() => {
         connection.on('update-current-posts', (post_status) => {
-            axios.post("https://personal-website-server-icob.onrender.com/retrieve_posts", { month: new Date().getMonth() + 1, year: new Date().getFullYear() }).then((res) => {
+            axios.post(`https://personal-website-server-icob.onrender.com/retrieve_posts?m=${new Date().getMonth() + 1}&y=${new Date().getFullYear()}`, {})
+            .then((res) => {
                 setCurrentPosts(res.data)
             }).catch((error) => {
                 console.log(error)
