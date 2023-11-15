@@ -29,5 +29,20 @@
       "endMinute": 0,
       "id": 1
     }
+  ],
+  "close": [
+    {
+      "beginMonth": 11,
+      "beginDate": 23,
+      "beginYear": 2023,
+      "endMonth": 11,
+      "endDate": 27,
+      "endYear": 2023,
+      "beginHour": 0,
+      "beginMinute": 0,
+      "endHour": 0,
+      "endMinute": 0,
+      "id": 1
+    }
   ]
 }
