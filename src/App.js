@@ -19,6 +19,7 @@ import Error404 from "./components/Error404.jsx";
 import ClosedWeb from './components/ClosedWeb.jsx';
 
 import db_archives from './components/database/archives.json'
+import db_close from './components/database/update.json'
 
 import { io } from 'socket.io-client'
 
@@ -54,10 +55,13 @@ function App() {
   }
 
   var archive_routes = db_archives["archives"].map(result => <Route path={`/announcements/${result["beginYear"]}/${result["month"]}`} element=<ArchivedPosts monthNum={result["beginMonth"]} yearNum={result["beginYear"]} monthName={result["month"]} /> />)
+  var close_date = db_close["close"].map(dates => dates)[0]
 
   return (
     <div className="App">
-      {((Date.now() < new Date(2023, 7, 28, 0, 0)) || Date.now() >= new Date(2023, 8, 13, 0, 0)) &&
+      {(Date.now() < new Date(close_date.closeYear, close_date.closeMonth - 1, close_date.closeDate, close_date.closeHour, close_date.closeMinute) 
+        || Date.now() >= new Date(close_date.openYear, close_date.openMonth - 1, close_date.openDate, close_date.openHour, close_date.openMinute)) 
+        ?
         <Routes>
           <Route index path="/" element={<Load />} />
           <Route path="/about" element={<Intro />} />
@@ -73,14 +77,13 @@ function App() {
           <Route path="/policies/archive" element={<ArchivePolicy />} />
           <Route path='*' element={<Error404 />} />
         </Routes>
-      }
-      {Date.now() >= new Date(2023, 7, 28, 0, 0) && Date.now() < new Date(2023, 8, 13, 0, 0) &&
+        :
         <Routes>
           <Route index path="/" element={<Load />} />
           <Route path="/closed" element={<ClosedWeb />} />
           <Route path='*' element={<Error404 />} />
         </Routes>
-      }
+    }
     </div>
   );
 }
