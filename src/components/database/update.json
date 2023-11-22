@@ -32,16 +32,16 @@
   ],
   "close": [
     {
-      "beginMonth": 11,
-      "beginDate": 23,
-      "beginYear": 2023,
-      "endMonth": 11,
-      "endDate": 27,
-      "endYear": 2023,
-      "beginHour": 0,
-      "beginMinute": 0,
-      "endHour": 0,
-      "endMinute": 0,
+      "closeMonth": 11,
+      "closeDate": 23,
+      "closeYear": 2023,
+      "openMonth": 11,
+      "openDate": 27,
+      "openYear": 2023,
+      "closeHour": 0,
+      "closeMinute": 0,
+      "openHour": 0,
+      "openMinute": 0,
       "id": 1
     }
   ]

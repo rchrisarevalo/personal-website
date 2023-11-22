@@ -7,6 +7,8 @@ import '../App.css';
 
 import Spinner from 'react-bootstrap/Spinner';
 
+import db_close from '../components/database/update.json'
+
 const theme = localStorage.getItem("d_l_mode");
 const light_media = localStorage.getItem("light_media_theme")
 const dark_media = localStorage.getItem("dark_media_theme")
@@ -15,6 +17,8 @@ const Load = () => {
 
     const [percentage, setPercentage] = useState(0)
     const nav = useNavigate();
+
+    var close_date = db_close["close"].map(dates => dates)[0]
 
     useEffect(() => {
         axios.get("https://personal-website-0oqw.onrender.com/").then((res) => {
@@ -29,14 +33,16 @@ const Load = () => {
         setPercentage(percentage + 1)
     }, 20)
 
-    if (Date.now() >= new Date(2023, 7, 28) && Date.now() < new Date(2023, 8, 13))
+    if (Date.now() < new Date(close_date.closeYear, close_date.closeMonth - 1, close_date.closeDate, close_date.closeHour, close_date.closeMinute)
+        && Date.now() >= new Date(close_date.openYear, close_date.openMonth - 1, close_date.openDate, close_date.openHour, close_date.openMinute))
     {
         if (percentage === 100)
         {
             nav("/closed")
         }
     }
-    else if ((Date.now() < new Date(2022, 7, 28) || Date.now() >= new Date(2023, 8, 13)))
+    else if (Date.now() < new Date(close_date.closeYear, close_date.closeMonth - 1, close_date.closeDate, close_date.closeHour, close_date.closeMinute)
+            || Date.now() >= new Date(close_date.openYear, close_date.openMonth - 1, close_date.openDate, close_date.openHour, close_date.openMinute))
     {
         if (percentage === 100)
         {
