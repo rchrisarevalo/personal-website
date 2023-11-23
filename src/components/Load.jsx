@@ -33,28 +33,18 @@ const Load = () => {
         setPercentage(percentage + 1)
     }, 20)
 
-    if (Date.now() < new Date(close_date.closeYear, close_date.closeMonth - 1, close_date.closeDate, close_date.closeHour, close_date.closeMinute)
-        && Date.now() >= new Date(close_date.openYear, close_date.openMonth - 1, close_date.openDate, close_date.openHour, close_date.openMinute))
+    // Close date.
+    const c_date = new Date(close_date.closeYear, close_date.closeMonth - 1, close_date.closeDate, close_date.closeHour, close_date.closeMinute)
+    
+    // Open date.
+    const o_date = new Date(close_date.openYear, close_date.openMonth - 1, close_date.openDate, close_date.openHour, close_date.openMinute)
+    
+    if (Date.now() >= c_date && Date.now() < o_date)
     {
-        if (percentage === 100)
-        {
-            nav("/closed")
-        }
-    }
-    else if (Date.now() < new Date(close_date.closeYear, close_date.closeMonth - 1, close_date.closeDate, close_date.closeHour, close_date.closeMinute)
-            || Date.now() >= new Date(close_date.openYear, close_date.openMonth - 1, close_date.openDate, close_date.openHour, close_date.openMinute))
-    {
-        if (percentage === 100)
-        {
-            nav("/about")
-        }
-    }
-    else
-    {
-        if (percentage === 100)
-        {
-            nav("/error")
-        }
+        nav("/closed")
+    } 
+    else {
+        nav("/about")
     }
 
     return (
