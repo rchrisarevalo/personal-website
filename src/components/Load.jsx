@@ -39,12 +39,14 @@ const Load = () => {
     // Open date.
     const o_date = new Date(close_date.openYear, close_date.openMonth - 1, close_date.openDate, close_date.openHour, close_date.openMinute)
     
-    if (Date.now() >= c_date && Date.now() < o_date)
-    {
-        nav("/closed")
-    } 
-    else {
-        nav("/about")
+    if (percentage === 100) {
+        if (Date.now() >= c_date && Date.now() < o_date)
+        {
+            nav("/closed")
+        } 
+        else {
+            nav("/about")
+        }
     }
 
     return (
