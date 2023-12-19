@@ -1,13 +1,13 @@
 {
   "update": [
     {
-      "updateMessageText": "This site will be closed for maintenance from August 28 to September 17. If you have any questions, please feel free to contact me!",
-      "beginMonth": "8",
-      "beginDate": "23",
+      "updateMessageText": "This site will be closed from December 24 to January 1 in observance of Christmas and New Year's. It will be reopened on January 2 at midnight.",
+      "beginMonth": "12",
+      "beginDate": "18",
       "beginYear": "2023",
-      "endMonth": "9",
-      "endDate": "17",
-      "endYear": "2023",
+      "endMonth": "1",
+      "endDate": "2",
+      "endYear": "2024",
       "beginHour": "0",
       "beginMinute": "0",
       "endHour": "0",
@@ -32,12 +32,12 @@
   ],
   "close": [
     {
-      "closeMonth": 11,
-      "closeDate": 23,
+      "closeMonth": 12,
+      "closeDate": 24,
       "closeYear": 2023,
-      "openMonth": 11,
-      "openDate": 27,
-      "openYear": 2023,
+      "openMonth": 1,
+      "openDate": 2,
+      "openYear": 2024,
       "closeHour": 0,
       "closeMinute": 0,
       "openHour": 0,
