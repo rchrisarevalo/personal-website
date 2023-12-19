@@ -18,7 +18,7 @@ const RecentPosts = () => {
 
     useEffect(() => {
         // Display the last three recent posts.
-        axios.post("https://personal-website-server-icob.onrender.com/get_three_recent_posts", db.post).then((res) => {
+        axios.post("https://personal-website-server-icob.onrender.com/get_three_recent_posts", {}).then((res) => {
             setLoading(false)
             if (res.data !== "") {
                 setThreeRecentPosts(res.data)
