@@ -53,7 +53,7 @@ const Update = () => {
                         {`${message}`}
                     </p>
                     <p>
-                        <i>-- Ruben Christopher Arevalo</i>
+                        <b>-- Ruben Christopher Arevalo</b>
                     </p>
                     <br></br>
                 </div>
