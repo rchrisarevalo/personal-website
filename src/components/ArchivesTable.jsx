@@ -20,6 +20,15 @@ const ArchivesTable = () => {
             {archive["endYear"] - new Date().getFullYear() === 1 &&
                 <td>{`${archive["endYear"] - new Date().getFullYear()} year left`}</td>
             }
+            {archive["endYear"] - new Date().getFullYear() === 0 &&
+                <>
+                    {11 - new Date().getMonth() > 1 ?
+                        <td>{`${11 - new Date().getMonth()} months left`}</td>
+                        :
+                        <td>{`${11 - new Date().getMonth()} month left`}</td>
+                    }
+                </>
+            }
         </tr>
     )
 
