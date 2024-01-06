@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 // Rendering was update to accommodate new React.js version (v18.0.0 and greater)
 const app = document.getElementById('root')
@@ -11,9 +11,9 @@ const rt_rend = createRoot(app)
 
 rt_rend.render(
 <React.StrictMode>
-    <HashRouter basename='/'>
+    <BrowserRouter basename='/'>
       <App />
-    </HashRouter>
+    </BrowserRouter>
 </React.StrictMode>
   // <HashRouter>
   //   <App />
