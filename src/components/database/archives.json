@@ -251,6 +251,15 @@
             "endMonth": 12,
             "endDate": 31,
             "endYear": 2026
+        },
+        {
+            "month": "December",
+            "beginMonth": 12,
+            "beginDate": 1,
+            "beginYear": 2023,
+            "endMonth": 12,
+            "endDate": 31,
+            "endYear": 2026
         }
     ]
 }
