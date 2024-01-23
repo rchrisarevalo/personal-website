@@ -27,7 +27,7 @@
     "react-nprogress": "^0.1.6",
     "react-router-dom": "^6.21.3",
     "react-scripts": "^5.0.1",
-    "socket.io-client": "^4.7.2",
+    "socket.io-client": "^4.7.4",
     "web-vitals": "^3.5.1",
     "write-json-file": "^5.0.0"
   },
