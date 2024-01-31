@@ -104,8 +104,9 @@ const Archives = () => {
                         <li><Link to="/announcements/2023/September">September</Link></li>
                         <li><Link to="/announcements/2023/October">October</Link></li>
                         <li><Link to="/announcements/2023/November">November</Link></li>
+                        <li><Link to="/announcements/2023/December">December</Link></li>
                         {(Date.now() >= new Date(db.archive[0].beginYear, db.archive[0].beginMonth - 1, db.archive[0].beginDate, db.archive[0].beginHour, db.archive[0].beginMinute) && Date.now() <= new Date(db.archive[0].endYear, db.archive[0].endMonth - 1, db.archive[0].endDate, db.archive[0].endHour, db.archive[0].endMinute)) &&
-                            <li><Link to="/announcements/2023/December">December</Link></li>
+                            <li><Link to="/announcements/2024/January">January</Link></li>
                         }
                     </div>
                     <br></br>
