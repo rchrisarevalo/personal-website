@@ -260,15 +260,6 @@
             "endMonth": 12,
             "endDate": 31,
             "endYear": 2026
-        },
-        {
-            "month": "January",
-            "beginMonth": 1,
-            "beginDate": 1,
-            "beginYear": 2024,
-            "endMonth": 12,
-            "endDate": 31,
-            "endYear": 2027
         }
     ]
 }
