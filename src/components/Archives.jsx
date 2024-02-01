@@ -113,11 +113,14 @@ const Archives = () => {
             {(Date.now() >= new Date(2024, 0, 1) && Date.now() <= new Date(2027, 11, 31)) &&
                 <>
                     <div className="archive-row">
+                        <li><b id="archive-year">2024:</b></li>
                         <li><Link to="/announcements/2024/January">January</Link></li>
                         {(Date.now() >= new Date(db.archive[0].beginYear, db.archive[0].beginMonth - 1, db.archive[0].beginDate, db.archive[0].beginHour, db.archive[0].beginMinute) && Date.now() <= new Date(db.archive[0].endYear, db.archive[0].endMonth - 1, db.archive[0].endDate, db.archive[0].endHour, db.archive[0].endMinute)) &&
                             <li><Link to="/announcements/2024/February">February</Link></li>
                         }
                     </div>
+                    <br></br>
+                    <br></br>
                 </>
             }
             <div className="archive-wrap">
