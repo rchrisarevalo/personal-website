@@ -22,6 +22,7 @@ import db_archives from './components/database/archives.json'
 import db_close from './components/database/update.json'
 
 import { io } from 'socket.io-client'
+import { Portfolio } from './components/Portfolio.jsx';
 
 export var socket_client_conn = io('https://personal-website-server-icob.onrender.com')
 
@@ -54,8 +55,8 @@ function App() {
     localStorage.removeItem("show_progress")
   }
 
-  var archive_routes = db_archives["archives"].map(result => <Route path={`/announcements/${result["beginYear"]}/${result["month"]}`} element=<ArchivedPosts monthNum={result["beginMonth"]} yearNum={result["beginYear"]} monthName={result["month"]} /> />)
-  var close_date = db_close["close"].map(dates => dates)[0]
+  const archive_routes = db_archives["archives"].map(result => <Route path={`/announcements/${result["beginYear"]}/${result["month"]}`} element=<ArchivedPosts monthNum={result["beginMonth"]} yearNum={result["beginYear"]} monthName={result["month"]} /> />)
+  const close_date = db_close["close"].map(dates => dates)[0]
 
   return (
     <div className="App">
@@ -69,6 +70,7 @@ function App() {
           <Route path="/posts" element={<PostEnter />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/archives" element={<Archives />} />
+          <Route path="/portfolio" element={<Portfolio />} />
 
           {/* Routes to all available archives */}
           {archive_routes}

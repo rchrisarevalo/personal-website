@@ -5,19 +5,15 @@ import Nav from "../Nav.jsx";
 import NewFooter from "../NewFooter.jsx";
 import Update from "./Update.jsx";
 import RecentPosts from './RecentPosts';
-import Works from "../Works.jsx";
 import ProgressCountdown from "./ProgressCountdown.jsx";
 
 import nprogress from "nprogress";
 import "nprogress/nprogress.css";
-// import TimeCountdown from "./TimeCountdown";
 
 import { useLocation } from 'react-router-dom';
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import DatingAppWorksDisplay from "./DatingAppWorks";
-import axios from "axios";
 
 var current_date = Date.now();
 var graduation_date = new Date(2023, 4, 13, 0);
@@ -105,9 +101,19 @@ const Intro = () => {
 
     // To retrieve profile picture.
     useEffect(() => {
-        axios.post("https://personal-website-server-icob.onrender.com/retrieve_profile_pic", {})
-        .then((res) => {
-            setProfilePicture(res.data.photo)
+        fetch('https://personal-website-server-icob.onrender.com/retrieve_profile_pic', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then((res) => {
+            if (res.ok) {
+                return res.json()
+            } else {
+                throw res.status
+            }
+        }).then((data) => {
+            setProfilePicture(data.photo)
             setRequestStatus({
                 loading: false,
                 error: false
@@ -244,15 +250,6 @@ const Intro = () => {
                 <br></br>
                 <RecentPosts />
                 <br></br>
-                <br></br>
-                <hr></hr>
-                <br></br>
-                <Works />
-                <br></br>
-                <br></br>
-                <hr></hr>
-                <br></br>
-                <DatingAppWorksDisplay />
             </div>
             <NewFooter />
         </div>
