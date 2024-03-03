@@ -315,8 +315,9 @@ hr{
 }
 
 .nav-item{
-  margin-right: 20px;
+  margin-right: 5px;
   border-radius: 5px;
+  margin-left: 5px;
 }
 
 /* nav-item class from React Bootstrap (modified) */
@@ -325,8 +326,11 @@ hr{
   color: white;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  padding: 5px 12px;
-  font-size: 14px;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  font-size: 13.5px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   transition: .5s;
@@ -525,15 +529,26 @@ hr{
   font-weight: 600;
 }
 
+.portfolio-container {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 5vh;
+  text-align: left;
+}
+
 #works-title{
   text-align: left;
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #work-description{
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .works-container,
@@ -546,6 +561,11 @@ hr{
   font-weight: 200;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.works-container p,
+.dating-app-works-container p{
+  text-align: left;
 }
 
 .works h1{
@@ -1568,6 +1588,11 @@ hr{
   .works-display{
     width: 350px;
     height: 250px;
+  }
+  #works-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
   }
   #work-description{
     margin-left: 5%;
