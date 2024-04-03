@@ -9,7 +9,6 @@ import "aos/dist/aos.css";
 import Load from "./components/Load.jsx";
 import Intro from "./components/Intro.jsx";
 import Posts from "./components/Posts.jsx";
-import PostEnter from './components/database/PostsAdmin';
 import ArchivedPosts from './components/ArchivedPosts.jsx';
 import Contact from './components/Contact.jsx';
 import Archives from "./components/Archives.jsx";
@@ -67,7 +66,6 @@ function App() {
           <Route index path="/" element={<Load />} />
           <Route path="/about" element={<Intro />} />
           <Route path="/announcements" element={<Posts />} />
-          <Route path="/posts" element={<PostEnter />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/archives" element={<Archives />} />
           <Route path="/portfolio" element={<Portfolio />} />
