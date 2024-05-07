@@ -287,6 +287,15 @@
             "endMonth": 12,
             "endDate": 31,
             "endYear": 2027
+        },
+        {
+            "month": "April",
+            "beginMonth": 4,
+            "beginDate": 1,
+            "beginYear": 2024,
+            "endMonth": 12,
+            "endDate": 31,
+            "endYear": 2027
         }
     ]
 }
