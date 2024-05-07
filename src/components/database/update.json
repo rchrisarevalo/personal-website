@@ -1,12 +1,12 @@
 {
   "update": [
     {
-      "updateMessageText": "This site will be closed from December 24 to January 1 in observance of Christmas and New Year's. It will be reopened on January 2 at midnight.",
-      "beginMonth": "12",
-      "beginDate": "18",
-      "beginYear": "2023",
-      "endMonth": "1",
-      "endDate": "2",
+      "updateMessageText": "There is a new archive available.",
+      "beginMonth": "5",
+      "beginDate": "7",
+      "beginYear": "2024",
+      "endMonth": "5",
+      "endDate": "14",
       "endYear": "2024",
       "beginHour": "0",
       "beginMinute": "0",
