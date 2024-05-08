@@ -20,7 +20,7 @@
     "react-bootstrap": "^2.10.2",
     "react-countdown": "^2.3.5",
     "react-dom": "^18.3.1",
-    "react-grid-gallery": "^1.0.0",
+    "react-grid-gallery": "^1.0.1",
     "react-helmet": "^6.1.0",
     "react-icons": "^5.1.0",
     "react-loadable": "^5.5.0",
