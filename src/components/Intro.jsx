@@ -101,7 +101,7 @@ const Intro = () => {
 
     // To retrieve profile picture.
     useEffect(() => {
-        fetch('https://personal-website-server-icob.onrender.com/retrieve_profile_pic', {
+        fetch('https://pw-api-server.onrender.com/retrieve_profile_pic', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

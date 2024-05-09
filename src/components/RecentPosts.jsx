@@ -19,7 +19,7 @@ const RecentPosts = () => {
 
     useEffect(() => {
         // Display the last three recent posts.
-        fetch("https://personal-website-server-icob.onrender.com/get_three_recent_posts", {
+        fetch("https://pw-api-server.onrender.com/get_three_recent_posts", {
                 method: 'POST',
                 credentials: 'include',
                 body: JSON.stringify(db.post),
@@ -45,7 +45,7 @@ const RecentPosts = () => {
         // To update three most recent posts section in real-time using
         // Socket.IO.
         connection.on('update-three-recent-posts', (post_status) => {
-            fetch("https://personal-website-server-icob.onrender.com/get_three_recent_posts", {
+            fetch("https://pw-api-server.onrender.com/get_three_recent_posts", {
                 method: 'POST',
                 credentials: 'include',
                 body: JSON.stringify(db.post),

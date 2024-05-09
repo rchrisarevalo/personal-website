@@ -21,7 +21,7 @@ const Load = () => {
     var close_date = db_close["close"].map(dates => dates)[0]
 
     useEffect(() => {
-        axios.get("https://personal-website-0oqw.onrender.com/").then((res) => {
+        axios.get("https://pw-api-server.onrender.com/").then((res) => {
             console.log(res)
         }).catch((error) => {
             console.log(error)

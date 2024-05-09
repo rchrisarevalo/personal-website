@@ -14,7 +14,7 @@ const CurrentPosts = () => {
 
     // Retrieve initial posts for the current month.
     useEffect(() => {
-        fetch(`https://personal-website-server-icob.onrender.com/retrieve_posts?m=${new Date().getMonth() + 1}&y=${new Date().getFullYear()}`, {
+        fetch(`https://pw-api-server.onrender.com/retrieve_posts?m=${new Date().getMonth() + 1}&y=${new Date().getFullYear()}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ const CurrentPosts = () => {
     // To retrieve updated posts in real-time using Socket.IO.
     useEffect(() => {
         connection.on('update-current-posts', (post_status) => {
-            fetch(`https://personal-website-server-icob.onrender.com/retrieve_posts?m=${new Date().getMonth() + 1}&y=${new Date().getFullYear()}`, {
+            fetch(`https://pw-api-server.onrender.com/retrieve_posts?m=${new Date().getMonth() + 1}&y=${new Date().getFullYear()}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
