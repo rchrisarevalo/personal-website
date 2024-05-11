@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import db from './database/archives.json'
+import { useFetchArchives } from '../hooks/useFetchArchives';
 
-const ArchivesTable = () => {
+const ArchivesTable = ({ pending, error, archives }) => {
 
     const [themeState, setThemeState] = useState(localStorage.getItem("d_l_mode"))
     const current_theme = localStorage.getItem("d_l_mode")
@@ -10,17 +11,17 @@ const ArchivesTable = () => {
         setThemeState(localStorage.getItem("d_l_mode"))
     }, [themeState, current_theme])
 
-    const generate_archive_information = db.archives.map(archive =>
+    const generate_archive_information = archives.map(archive =>
         <tr>
-            <td>{`${archive["month"]} ${archive["beginYear"]}`}</td>
-            <td>{`December 31, ${archive["endYear"]}`}</td>
-            {archive["endYear"] - new Date().getFullYear() > 1 &&
-                <td>{`${archive["endYear"] - new Date().getFullYear()} years left`}</td>
+            <td>{`${archive.month} ${archive.beginYear}`}</td>
+            <td>{`December 31, ${archive.endYear}`}</td>
+            {archive.endYear - new Date().getFullYear() > 1 &&
+                <td>{`${archive.endYear - new Date().getFullYear()} years left`}</td>
             }
-            {archive["endYear"] - new Date().getFullYear() === 1 &&
-                <td>{`${archive["endYear"] - new Date().getFullYear()} year left`}</td>
+            {archive.endYear - new Date().getFullYear() === 1 &&
+                <td>{`${archive.endYear - new Date().getFullYear()} year left`}</td>
             }
-            {archive["endYear"] - new Date().getFullYear() === 0 &&
+            {archive.endYear - new Date().getFullYear() === 0 &&
                 <>
                     {11 - new Date().getMonth() > 1 ?
                         <td>{`${11 - new Date().getMonth()} months left`}</td>
@@ -37,14 +38,21 @@ const ArchivesTable = () => {
 
     return (
         <div id={(themeState === "default_dark" || themeState === "dark") ? "table-info-dark-mode" : "table-info-light-mode"}>
-            <table>
-                <tr>
-                    <th>Archive Month/Year</th>
-                    <th>Expiration Date</th>
-                    <th>Time Left</th>
-                </tr>
-                {generate_archive_information}
-            </table>
+            {!pending ?
+                !error ?
+                    <table>
+                        <tr>
+                            <th>Archive Month/Year</th>
+                            <th>Expiration Date</th>
+                            <th>Time Left</th>
+                        </tr>
+                        {generate_archive_information}
+                    </table>
+                    :
+                    <h5 style={{display: 'flex', alignItems: 'center', justifyContent: 'center', paddingTop: '30px', paddingBottom: '20px'}}>Error!</h5>
+                :
+                <h5 style={{display: 'flex', alignItems: 'center', justifyContent: 'center', paddingTop: '30px', paddingBottom: '20px'}}>Loading table...</h5>
+            }
         </div>
     )
 }
