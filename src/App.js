@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import React, { useEffect, useState } from 'react';
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
@@ -21,6 +21,7 @@ import db_close from './components/database/update.json'
 
 import { Portfolio } from './components/Portfolio.jsx';
 import { useFetchArchives } from './hooks/useFetchArchives.jsx';
+import { useFetchAPIStatus } from './hooks/useFetchAPIStatus.jsx';
 
 function App() {
 
@@ -32,70 +33,75 @@ function App() {
     AOS.refresh();
   }, []);
 
+  const { api_loading, api_error } = useFetchAPIStatus()
   const { pending, error, archives } = useFetchArchives()
 
   // eslint-disable-next-line no-unused-vars
   const [dateState, setDateState] = useState(new Date())
 
-  setTimeout(() => {
-    setDateState(new Date())
-  }, 1000)
+  // setTimeout(() => {
+  //   setDateState(new Date())
+  // }, 1000)
 
   // Set the status of showing the progress bar to true for the time being.
   if (localStorage.getItem("show_progress") !== null && Date.now() >= new Date(2023, 4, 17)) {
     localStorage.removeItem("show_progress")
   }
 
-  const archive_routes = archives.map(result => 
-    <Route 
-      path={`/announcements/${result.beginYear}/${result.month}`} 
-      element=<ArchivedPosts 
-                monthNum={result.beginMonth} 
-                yearNum={result.beginYear} 
-                monthName={result.month} 
-              /> 
+  const archive_routes = archives.map(result =>
+    <Route
+      path={`/announcements/${result.beginYear}/${result.month}`}
+      element=<ArchivedPosts
+        monthNum={result.beginMonth}
+        yearNum={result.beginYear}
+        monthName={result.month}
+      />
     />
   )
   const close_date = db_close["close"].map(dates => dates)[0]
 
   return (
     <div className="App">
-      {(Date.now() < new Date(close_date.closeYear, close_date.closeMonth - 1, close_date.closeDate, close_date.closeHour, close_date.closeMinute) 
-        || Date.now() >= new Date(close_date.openYear, close_date.openMonth - 1, close_date.openDate, close_date.openHour, close_date.openMinute)) 
+      {(Date.now() < new Date(close_date.closeYear, close_date.closeMonth - 1, close_date.closeDate, close_date.closeHour, close_date.closeMinute)
+        || Date.now() >= new Date(close_date.openYear, close_date.openMonth - 1, close_date.openDate, close_date.openHour, close_date.openMinute))
         ?
-        <Routes>
-          <Route index path="/" element={<Load />} />
-          <Route path="/about" element={<Intro />} />
-          <Route path="/announcements" element={<Posts />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/archives" element={<Archives 
-            pending={pending}
-            error={error}
-            archives={archives}
-          />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+        !api_loading ?
+          !api_error ?
+            <Routes>
+              <Route path="/" element={<Intro />} />
+              <Route path="/announcements" element={<Posts />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/archives" element={<Archives
+                pending={pending}
+                error={error}
+                archives={archives}
+              />} />
+              <Route path="/portfolio" element={<Portfolio />} />
 
-          {/* Routes to all available archives */}
-          {!pending ?
-            !error ?
-              archive_routes
-              :
-              <></>
+              {/* Routes to all available archives */}
+              {!pending ?
+                !error ?
+                  archive_routes
+                  :
+                  <></>
+                :
+                <></>
+              }
+
+              <Route path="/policies/site-operation" element={<WebsiteOperation />} />
+              <Route path="/policies/archive" element={<ArchivePolicy />} />
+              <Route path='*' element={<Error404 />} />
+            </Routes>
             :
-            <></>
-          }
-
-          <Route path="/policies/site-operation" element={<WebsiteOperation />} />
-          <Route path="/policies/archive" element={<ArchivePolicy />} />
-          <Route path='*' element={<Error404 />} />
-        </Routes>
+            <Load api_loading={api_loading} api_error={api_error} />
+          :
+          <Load api_loading={api_loading} api_error={api_error} />
         :
         <Routes>
-          <Route index path="/" element={<Load />} />
-          <Route path="/closed" element={<ClosedWeb />} />
+          <Route index path="/closed" element={<ClosedWeb />} />
           <Route path='*' element={<Error404 />} />
         </Routes>
-    }
+      }
     </div>
   );
 }

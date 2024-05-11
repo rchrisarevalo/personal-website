@@ -31,13 +31,13 @@ const NavMain = () => {
         <button onClick={handleNoticeShow} className="settings-nav-btn-mobile"><IoSettingsOutline size="25px" id="setting-btn-icon" /></button>
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
           <Nav>
-            {getRoute === "/about" ?
+            {getRoute === "/" ?
               <Nav.Item id="current-link">
-                <Nav.Link><Link to="/about"><IoIosInformationCircle id="nav-icons-style" size="16px" /><b>About Me</b></Link></Nav.Link>
+                <Nav.Link><Link to="/"><IoIosInformationCircle id="nav-icons-style" size="16px" /><b>About Me</b></Link></Nav.Link>
               </Nav.Item>
               :
               <Nav.Item>
-                <Nav.Link><Link to="/about"><IoIosInformationCircleOutline id="nav-icons-style" size="16px" />About Me</Link></Nav.Link>
+                <Nav.Link><Link to="/"><IoIosInformationCircleOutline id="nav-icons-style" size="16px" />About Me</Link></Nav.Link>
               </Nav.Item>
             }
             {getRoute === "/announcements" ?

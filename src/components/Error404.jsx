@@ -44,7 +44,7 @@ const Error404 = () => {
                         </Col>
                         <Col>
                             <li>
-                                <Link to="/about">About Me</Link>
+                                <Link to="/">About Me</Link>
                                 <Link to="/announcements">Announcements</Link>
                                 <Link to="/contact">Contact Me</Link>
                                 <Link to="/archives">Archives</Link>
@@ -68,7 +68,7 @@ const Error404 = () => {
                             <p>Oops! It looks like what you were looking for does not exist on this website!</p>
                             <p>Here are some links that can help you resolve this issue:</p>
                             <li>
-                                <Link to="/about">About Me</Link>
+                                <Link to="/">About Me</Link>
                                 <Link to="/announcements">Announcements</Link>
                                 <Link to="/contact">Contact Me</Link>
                                 <Link to="/archives">Archives</Link>
