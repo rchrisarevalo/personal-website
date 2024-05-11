@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from "axios"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
@@ -14,24 +13,9 @@ const light_media = localStorage.getItem("light_media_theme")
 const dark_media = localStorage.getItem("dark_media_theme")
 
 const Load = () => {
-
-    const [percentage, setPercentage] = useState(0)
     const nav = useNavigate();
 
     var close_date = db_close["close"].map(dates => dates)[0]
-
-    useEffect(() => {
-        axios.get("https://pw-api-server.onrender.com/").then((res) => {
-            console.log(res)
-        }).catch((error) => {
-            console.log(error)
-        })
-    }, [])
-
-    // The state of the percentage will update each 20 ms.
-    setTimeout(() => {
-        setPercentage(percentage + 1)
-    }, 20)
 
     // Close date.
     const c_date = new Date(close_date.closeYear, close_date.closeMonth - 1, close_date.closeDate, close_date.closeHour, close_date.closeMinute)
@@ -58,7 +42,7 @@ const Load = () => {
                         <Spinner animation="border" variant="light" id="delay-1" />
                         <br></br>
                         <br></br>
-                        <div id="percentage-load">{`${percentage}`}%</div>
+                        <div id="percentage-load">Loading...</div>
                     </div>
                 }
                 {((light_media === null && window.matchMedia("(prefers-color-scheme: light)").matches)) &&
@@ -66,7 +50,7 @@ const Load = () => {
                         <Spinner animation="border" variant="dark" id="delay-1" />
                         <br></br>
                         <br></br>
-                        <div id="percentage-load">{`${percentage}`}%</div>
+                        <div id="percentage-load">Loading...</div>
                     </div>
                 }
                 {((theme === "light" || light_media === "true") || (theme === "christmas")) &&
@@ -74,7 +58,7 @@ const Load = () => {
                         <Spinner animation="border" variant="dark" id="delay-1" />
                         <br></br>
                         <br></br>
-                        <div id="percentage-load">{`${percentage}`}%</div>
+                        <div id="percentage-load">Loading...</div>
                     </div>
                 }
                 {((theme === "dark" || dark_media === "true")) &&
@@ -82,7 +66,7 @@ const Load = () => {
                         <Spinner animation="border" variant="light" id="delay-1" size="lg" />
                         <br></br>
                         <br></br>
-                        <div id="percentage-load">{`${percentage}`}%</div>
+                        <div id="percentage-load">Loading...</div>
                     </div>
                 }
             </div>
