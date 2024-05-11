@@ -17,14 +17,10 @@ import ArchivePolicy from "./components/policies/ArchivePolicy.jsx";
 import Error404 from "./components/Error404.jsx";
 import ClosedWeb from './components/ClosedWeb.jsx';
 
-import db_archives from './components/database/archives.json'
 import db_close from './components/database/update.json'
 
-import { io } from 'socket.io-client'
 import { Portfolio } from './components/Portfolio.jsx';
 import { useFetchArchives } from './hooks/useFetchArchives.jsx';
-
-export var socket_client_conn = io('https://personal-website-server-icob.onrender.com')
 
 function App() {
 
@@ -34,19 +30,12 @@ function App() {
       once: true,
     });
     AOS.refresh();
-
-    socket_client_conn.on('disconnect', () => {
-      socket_client_conn.disconnect()
-    })
-
   }, []);
 
   const { pending, error, archives } = useFetchArchives()
 
   // eslint-disable-next-line no-unused-vars
   const [dateState, setDateState] = useState(new Date())
-  // eslint-disable-next-line no-unused-vars
-  const [connection, setConnection] = useState(socket_client_conn)
 
   setTimeout(() => {
     setDateState(new Date())

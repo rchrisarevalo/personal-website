@@ -1,28 +1,22 @@
 import React, { useEffect, useState } from 'react';
 
-import db from "./database/posts.json";
-
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import MediaQuery from 'react-responsive';
-
-import { socket_client_conn } from '../App';
 
 const RecentPosts = () => {
 
     const [threeRecentPosts, setThreeRecentPosts] = useState([""])
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(false)
-    // eslint-disable-next-line no-unused-vars
-    const [connection, setConnection] = useState(socket_client_conn)
 
     useEffect(() => {
         // Display the last three recent posts.
         fetch("https://pw-api-server.onrender.com/get_three_recent_posts", {
                 method: 'POST',
                 credentials: 'include',
-                body: JSON.stringify(db.post),
+                body: JSON.stringify({}),
                 headers: {
                     'Content-Type': 'application/json'
                 }
@@ -39,34 +33,6 @@ const RecentPosts = () => {
                 setError(true)
             })
     }, [])
-
-    // Connect to socket.
-    useEffect(() => {
-        // To update three most recent posts section in real-time using
-        // Socket.IO.
-        connection.on('update-three-recent-posts', (post_status) => {
-            fetch("https://pw-api-server.onrender.com/get_three_recent_posts", {
-                method: 'POST',
-                credentials: 'include',
-                body: JSON.stringify(db.post),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            }).then((res) => {
-                if (res.ok) {
-                    return res.json()
-                }
-            }).then((data) => {
-                setThreeRecentPosts(data)
-            }).catch((error) => {
-                setError(true)
-            })
-        })
-
-        return () => {
-            connection.off('update-three-recent-posts')
-        }
-    }, [connection])
 
     var recent_month_posts = threeRecentPosts.filter(posts => posts["month"] === new Date().getMonth() + 1 && posts["year"] === new Date().getFullYear())
 
