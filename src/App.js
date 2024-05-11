@@ -22,6 +22,7 @@ import db_close from './components/database/update.json'
 
 import { io } from 'socket.io-client'
 import { Portfolio } from './components/Portfolio.jsx';
+import { useFetchArchives } from './hooks/useFetchArchives.jsx';
 
 export var socket_client_conn = io('https://personal-website-server-icob.onrender.com')
 
@@ -40,6 +41,8 @@ function App() {
 
   }, []);
 
+  const { pending, error, archives } = useFetchArchives()
+
   // eslint-disable-next-line no-unused-vars
   const [dateState, setDateState] = useState(new Date())
   // eslint-disable-next-line no-unused-vars
@@ -54,7 +57,16 @@ function App() {
     localStorage.removeItem("show_progress")
   }
 
-  const archive_routes = db_archives["archives"].map(result => <Route path={`/announcements/${result["beginYear"]}/${result["month"]}`} element=<ArchivedPosts monthNum={result["beginMonth"]} yearNum={result["beginYear"]} monthName={result["month"]} /> />)
+  const archive_routes = archives.map(result => 
+    <Route 
+      path={`/announcements/${result.beginYear}/${result.month}`} 
+      element=<ArchivedPosts 
+                monthNum={result.beginMonth} 
+                yearNum={result.beginYear} 
+                monthName={result.month} 
+              /> 
+    />
+  )
   const close_date = db_close["close"].map(dates => dates)[0]
 
   return (
@@ -67,11 +79,22 @@ function App() {
           <Route path="/about" element={<Intro />} />
           <Route path="/announcements" element={<Posts />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/archives" element={<Archives />} />
+          <Route path="/archives" element={<Archives 
+            pending={pending}
+            error={error}
+            archives={archives}
+          />} />
           <Route path="/portfolio" element={<Portfolio />} />
 
           {/* Routes to all available archives */}
-          {archive_routes}
+          {!pending ?
+            !error ?
+              archive_routes
+              :
+              <></>
+            :
+            <></>
+          }
 
           <Route path="/policies/site-operation" element={<WebsiteOperation />} />
           <Route path="/policies/archive" element={<ArchivePolicy />} />

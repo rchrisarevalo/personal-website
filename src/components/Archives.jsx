@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from "react-helmet";
 import { Link, useLocation } from "react-router-dom";
 import ArchivesTable from './ArchivesTable.jsx';
@@ -11,7 +11,7 @@ import NewFooter from "../NewFooter.jsx";
 import nprogress from "nprogress";
 import "nprogress/nprogress.css";
 
-const Archives = () => {
+const Archives = ({ pending, error, archives }) => {
 
     useEffect(() => {
         nprogress.configure({ minimum: 0.1, showSpinner: false, easing: 'ease', speed: 800, trickleSpeed: 200 });
@@ -25,6 +25,12 @@ const Archives = () => {
 
     var route = useLocation().pathname
     localStorage.setItem("current_link", `${route}`)
+
+    const [archivePageLink, setArchivePageLink] = useState({
+        link: "Month/Year",
+    })
+
+    console.log(archivePageLink)
 
     return (
         <div className="archives-container">
@@ -47,14 +53,43 @@ const Archives = () => {
                     Below is a table which shows which month and year the archives were originally
                     made available in addition to showing what month and year they are set to
                     expire:
-                    <ArchivesTable />
+                    <ArchivesTable
+                        pending={pending}
+                        error={error}
+                        archives={archives}
+                    />
                 </p>
                 <p id="archive-message">
                     Select the month of the associated year below to access the announcement archive for that
                     time period:
                 </p>
             </div>
-            {(Date.now() >= new Date(2021, 0, 1) && Date.now() <= new Date(2024, 11, 31)) &&
+            <div className="archive-row">
+                {!pending ?
+                    !error ?
+                        <select onChange={(e) => setArchivePageLink({link: e.target.value})}>
+                            <option>Month/Year</option>
+                            {archives.map(archive =>
+                                <option
+                                    value={`/announcements/${archive.beginYear}/${archive.month}`}
+                                >
+                                    {`${archive.month} ${archive.beginYear}`}
+                                </option>
+                            )}
+                        </select>
+                        :
+                        <h5>Failed to load archives.</h5>
+                    :
+                    <h5>Loading...</h5>
+                }
+            </div>
+            <br></br>
+            {(archivePageLink.link !== "Month/Year" && archivePageLink.link !== "") && 
+                <div className="archive-row">
+                    <li><Link to={archivePageLink.link}>Proceed</Link></li>
+                </div>
+            }
+            {/* {(Date.now() >= new Date(2021, 0, 1) && Date.now() <= new Date(2024, 11, 31)) &&
                 <>
                     <div className="archive-row">
                         <li><b id="archive-year">2021:</b></li>
@@ -125,7 +160,7 @@ const Archives = () => {
                     <br></br>
                     <br></br>
                 </>
-            }
+            } */}
             <div className="archive-wrap">
                 <p id="archive-message">
                     I will continue adding to this page as time progresses. Just like every month, I will wipe the <b>Announcements</b> page clean after
