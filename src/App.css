@@ -17,6 +17,14 @@ body{
   height: 100%;
 }
 
+video::-internal-media-controls-download-button {
+  display: none;
+}
+
+video::-webkit-media-controls-enclosure {
+  overflow: hidden;
+}
+
 #mobile-remove{
   transform: translateY(-1px);
 }
