@@ -17,7 +17,7 @@ import dating_app_work_1 from './images/work_14.png';
 import dating_app_work_2 from './images/work_15.png';
 import dating_app_work_3 from './images/work_16.png';
 import dating_app_work_4 from './images/work_17.png';
-// import dating_app_work_5 from './videos/dating_web_app_progress_feb_2024.mp4';
+import dating_app_work_5 from './videos/Dating Web App Demo (May 2024) - Made with Clipchamp.mp4';
 
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
@@ -113,18 +113,18 @@ const Works = () => {
                     <i style={{ width: '80%' }}>The profile page of a user's account in my dating web app that is viewed once the user logs in or navigates to it.</i>
                 </Col>
             </Row>
-            {/* <Row style={{ marginLeft: '10%', marginRight: '10% '}}>
+            <Row style={{ marginLeft: '10%', marginRight: '10% '}}>
                 <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
                     <h4 style={{ width: '80%', fontWeight: '900' }}>Dating Web App Demo</h4>
                 </Col>
             </Row>
             <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <video controls controlsList="nodownload" onClick={(e) => e.preventDefault()} loop autoPlay height="450" width="1050">
+                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', zIndex: 2 }}>
+                    <video height="450" width="1050" controls controlsList="nodownload" id="works-video" loop autoPlay>
                         <source src={dating_app_work_5} type="video/mp4"></source>
                     </video>
                 </Col>
-            </Row> */}
+            </Row>
             <br></br>
             <hr></hr>
             <br></br>
