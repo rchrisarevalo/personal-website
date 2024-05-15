@@ -120,7 +120,7 @@ const Works = () => {
             </Row>
             <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
                 <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', zIndex: 2 }}>
-                    <video height="450" width="1050" controls controlsList="nodownload" id="works-video" loop autoPlay>
+                    <video height="450" width="1050" controls controlsList="nodownload" id="works-video" loop>
                         <source src={dating_app_work_5} type="video/mp4"></source>
                     </video>
                 </Col>
