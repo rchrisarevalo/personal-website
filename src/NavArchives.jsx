@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { IoIosInformationCircleOutline } from "react-icons/io";
-import { IoSettingsOutline, IoMegaphoneOutline, IoArchiveSharp, IoMailOutline } from "react-icons/io5";
+import { IoSettingsOutline, IoMegaphoneOutline, IoArchiveSharp, IoMailOutline, IoFolderOutline } from "react-icons/io5";
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -35,6 +35,9 @@ const NavArchives = () => {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link><Link to="/announcements"><IoMegaphoneOutline id="nav-icons-style" size="16px" />Announcements</Link></Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link><Link to="/portfolio"><IoFolderOutline id="nav-icons-style" size="16px" />Portfolio</Link></Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link><Link to="/contact"><IoMailOutline id="nav-icons-style" size="16px" />Contact Me</Link></Nav.Link>
