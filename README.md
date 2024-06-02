@@ -1,14 +1,9 @@
-# Personal Website (v3.11.1)
+# Personal Website
 
 * This website was made using React.js.
 * Updates are made every week or so, depending on how busy I am.
 
-# UPDATES (made on July 30, 2023):
-
-* The following changes have been made to the site:
-  * Vulnerabilities have been addressed with some dependencies in the package-lock.json file.
-
-# CREDITS:
+# CREDITS TO OWNERS OF DEPENDENCIES USED FOR THIS PROJECT:
 * Progress bar by nProgress (Author: rstacruz)
 
 * Light to dark theme feature (inspired by and credited to: Kevin Powell)
@@ -21,4 +16,4 @@
 
 # Copyright Notice
 
-© 2023 Ruben Christopher Arevalo. This repository will not be copied, modified, reproduced, or distributed through unauthorized means.
+© 2024 Ruben Christopher Arevalo. This repository will not be copied, modified, reproduced, or distributed through unauthorized means.
