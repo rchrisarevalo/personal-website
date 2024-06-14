@@ -71,11 +71,13 @@ function App() {
               <Route path="/" element={<Intro />} />
               <Route path="/announcements" element={<Posts />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/archives" element={<Archives
-                pending={pending}
-                error={error}
-                archives={archives}
-              />} />
+              <Route path="/archives" element={
+                  <Archives
+                    pending={pending}
+                    error={error}
+                    archives={archives}
+                  />
+              } />
               <Route path="/portfolio" element={<Portfolio />} />
 
               {/* Routes to all available archives */}
