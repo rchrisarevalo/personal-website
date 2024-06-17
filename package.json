@@ -4,7 +4,7 @@
   "version": "3.11.1",
   "private": true,
   "dependencies": {
-    "@adobe/css-tools": "4.3.3",
+    "@adobe/css-tools": "4.4.0",
     "@testing-library/dom": "^10.1.0",
     "@testing-library/jest-dom": "^6.4.5",
     "@testing-library/react": "^15.0.7",
