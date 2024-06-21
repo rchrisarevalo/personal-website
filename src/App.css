@@ -582,6 +582,8 @@ hr{
   height: 550px;
   padding-top: 25px;
   padding-bottom: 25px;
+  border-radius: 10%;
+  object-fit: cover;
 }
 
 #photo{
