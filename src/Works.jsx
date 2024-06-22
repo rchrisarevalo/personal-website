@@ -1,6 +1,4 @@
 import React from "react";
-import work1 from './images/work_1.jpg';
-import work2 from './images/work_2.jpg';
 import work3 from './images/work_3.jpg';
 import work4 from './images/work_4.jpg';
 import work5 from './images/work_5.jpg';
@@ -17,13 +15,27 @@ import dating_app_work_1 from './images/work_14.png';
 import dating_app_work_2 from './images/work_15.png';
 import dating_app_work_3 from './images/work_16.png';
 import dating_app_work_4 from './images/work_17.png';
-import dating_app_work_5 from './videos/Dating Web App Demo (May 2024) - Made with Clipchamp.mp4';
+
+import pw_work_1 from './images/pw_work_1.png';
+import pw_work_2 from './images/pw_work_2.png';
+import pw_work_3 from './images/pw_work_3.png';
+import pw_work_4 from './images/pw_work_4.png';
 
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
+import { Carousel } from "react-bootstrap";
+import MediaQuery from "react-responsive";
 
 const Works = () => {
-
+    {
+        /* 
+            The carousel component from the React Bootstrap library 
+            and documentation has been used for this page.
+             
+            Reference used to help build this page: 
+            https://react-bootstrap.netlify.app/docs/components/carousel/
+        */
+    }
     return (
         <div className="works-container">
             <h1 id="works-title" data-aos="fade-down">Portfolio</h1>
@@ -34,242 +46,209 @@ const Works = () => {
                 some of the things I have done so far in my free time, and I enjoyed doing it (and still continue to do so).
             </p>
             <br></br>
-            <h5 id="works-title" style={{textDecoration: 'underline', textAlign: 'center'}}>Personal Projects</h5>
+            <MediaQuery minWidth={1024}><h5 id="works-title" style={{ textDecoration: 'underline', textAlign: 'left', marginLeft: '10%', marginRight: '10%' }}>Personal Projects</h5></MediaQuery>
+            <MediaQuery maxWidth={1024}><h5 id="works-title" style={{ textDecoration: 'underline', textAlign: 'left' }}>Personal Projects</h5></MediaQuery>
             <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work1}
-                        alt="Work 1"
-                        id="works-image"
-                    />
-                </Col>
                 <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>Sample of my CV website, with the image displaying the "Education" section in the site.</i>
+                    <Row>
+                        <header style={{ width: '80%', paddingTop: '20px', paddingBottom: '20px' }}><b><i>Dating Web App</i></b></header>
+                        <ul>
+                            <li>Developing a dating web app with React.js, CSS, and TypeScript, along with FastAPI, Express.js and PostgreSQL for backend processes.</li>
+                            <li>Creating a design that will emphasize self-esteem and lay the foundation for a successful relationship.</li>
+                            <li>Designing a matching algorithm that matches people based on attributes, such as location and bio, with planned future refinements that will improve the user experience with the selection of 10 random matches.</li>
+                        </ul>
+                    </Row>
                 </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
                 <Col>
-                    <img
-                        className="works-display"
-                        src={work2}
-                        alt="Work 2"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>Sample of my parent's photography business website, which was never release due to operations ceasing due to the COVID-19 pandemic.</i>
+                    <Carousel>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={dating_app_work_1}
+                                alt="Dating App Work 1"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={dating_app_work_2}
+                                alt="Dating App Work 2"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={dating_app_work_3}
+                                alt="Dating App Work 3"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={dating_app_work_4}
+                                alt="Dating App Work 4"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                    </Carousel>
                 </Col>
             </Row>
             <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
+                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
+                    <Row>
+                        <header style={{ width: '80%', paddingTop: '20px', paddingBottom: '20px' }}><b><i>Personal Website</i></b></header>
+                        <ul>
+                            <li>Created a website using React.js as the main framework while also using CSS and React Bootstrap to stylize the UI.</li>
+                            <li>Integrated a RESTful API with FastAPI to handle and display announcements on website, with 3 of the most recent ones displayed in the 'About Me' page.</li>
+                            <li>Designed a portfolio page that displays 7 samples from various personal projects in addition to 11 samples of photos taken as part of personal hobbies.</li>
+                        </ul>
+                    </Row>
+                </Col>
                 <Col>
-                    <img
-                        className="works-display"
-                        src={dating_app_work_1}
-                        alt="Dating App Work 1"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>A picture depicting my account's profile account settings in my dating web app.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={dating_app_work_2}
-                        alt="Dating App Work 2"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>The search page viewed from my account in my dating web app.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={dating_app_work_3}
-                        alt="Dating App Work 3"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>Another part of the search page viewed from my account in my dating web app.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={dating_app_work_4}
-                        alt="Dating App Work 4"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>The profile page of a user's account in my dating web app that is viewed once the user logs in or navigates to it.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10% '}}>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
-                    <h4 style={{ width: '80%', fontWeight: '900' }}>Dating Web App Demo</h4>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', zIndex: 2 }}>
-                    <video height="450" width="1050" controls controlsList="nodownload" id="works-video" loop>
-                        <source src={dating_app_work_5} type="video/mp4"></source>
-                    </video>
+                    <Carousel>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={pw_work_1}
+                                alt="Personal Website Work 1"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={pw_work_2}
+                                alt="Personal Website Work 2"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={pw_work_3}
+                                alt="Personal Website Work 3"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={pw_work_4}
+                                alt="Personal Website Work 4"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                    </Carousel>
                 </Col>
             </Row>
             <br></br>
             <hr></hr>
             <br></br>
-            <h5 id="works-title" style={{textDecoration: 'underline', textAlign: 'center'}}>Personal Photography</h5>
+            <MediaQuery minWidth={1024}><h5 id="works-title" style={{ textDecoration: 'underline', textAlign: 'left', marginLeft: '10%', marginRight: '10%' }}>Personal Photography</h5></MediaQuery>
+            <MediaQuery maxWidth={1024}><h5 id="works-title" style={{ textDecoration: 'underline', textAlign: 'left' }}>Personal Photography</h5></MediaQuery>
             <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work3}
-                        alt="Work 3"
-                        id="works-image"
-                    />
-                </Col>
                 <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>One of the first nature photography photos I have taken out, with the picture containing one of the palms in my house with the sun setting in the background.</i>
+                    <Row>
+                        <ul>
+                            <li>Took photos of nature during my personal time.</li>
+                            <li>Photos were taken throughout various times of each day.</li>
+                        </ul>
+                    </Row>
                 </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
                 <Col>
-                    <img
-                        className="works-display"
-                        src={work4}
-                        alt="Work 4"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>Another photo I took of the sky, with another one of the palms I had at home looming over in the photo.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work5}
-                        alt="Work 5"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>Yet another photo I took of the sky, with two palms being shown as opposed to the previous two photos, which contained only one palm each.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work6}
-                        alt="Work 6"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>A photo I took of the sky, with three palms looming over my home.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work7}
-                        alt="Work 7"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>A photo of the sky, with clouds looming in the background along with two palms.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work8}
-                        alt="Work 8"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>A photo of the sky, just before the sun set fully, with palms in the background along with two, separate trails left by planes that passed by.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work9}
-                        alt="Work 9"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>A photo taken from the third floor of one of the buildings of the university I attended from 2019 to 2023.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work10}
-                        alt="Work 10"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>A clear sky's day with two palms in my home hanging in the background.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work11}
-                        alt="Work 11"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>A view of the sky, with clouds hanging above, along with the inclusion of a tree coming from my backyard, where this photo was taken from.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work12}
-                        alt="Work 12"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>A photo of the skyline that I took while I was heading to school during the Fall 2022 semester.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work13}
-                        alt="Work 13"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>A photo of the skyline taken during a beautiful, sunny day, with clouds in the background, in addition to three or four palm trees, the latter of which is partially shown on the right.</i>
+                    <Carousel>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work3}
+                                alt="Work 3"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work4}
+                                alt="Work 4"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work5}
+                                alt="Work 5"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work6}
+                                alt="Work 6"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work7}
+                                alt="Work 7"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work8}
+                                alt="Work 8"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work9}
+                                alt="Work 9"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work10}
+                                alt="Work 10"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work11}
+                                alt="Work 11"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work12}
+                                alt="Work 12"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work13}
+                                alt="Work 13"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                    </Carousel>
                 </Col>
             </Row>
         </div>
