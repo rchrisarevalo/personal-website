@@ -15,6 +15,8 @@ import { Link } from "react-router-dom";
 const NavArchives = () => {
 
   // From React Bootstrap documentation when closing and opening modal.
+  // Reference to documentation for modals:
+  // https://react-bootstrap.netlify.app/docs/components/modal/ 
   const [noticeShow, setNoticeShow] = useState(false)
   const handleNoticeClose = () => setNoticeShow(false)
   const handleNoticeShow = () => setNoticeShow(true)

@@ -27,6 +27,15 @@ import { Carousel } from "react-bootstrap";
 import MediaQuery from "react-responsive";
 
 const Works = () => {
+    {
+        /* 
+            The carousel component from the React Bootstrap library 
+            and documentation has been used for this page.
+             
+            Reference used to help build this page: 
+            https://react-bootstrap.netlify.app/docs/components/carousel/
+        */
+    }
     return (
         <div className="works-container">
             <h1 id="works-title" data-aos="fade-down">Portfolio</h1>
@@ -37,8 +46,8 @@ const Works = () => {
                 some of the things I have done so far in my free time, and I enjoyed doing it (and still continue to do so).
             </p>
             <br></br>
-            <MediaQuery minWidth={1024}><h5 id="works-title" style={{textDecoration: 'underline', textAlign: 'left', marginLeft: '10%', marginRight: '10%'}}>Personal Projects</h5></MediaQuery>
-            <MediaQuery maxWidth={1024}><h5 id="works-title" style={{textDecoration: 'underline', textAlign: 'left'}}>Personal Projects</h5></MediaQuery>
+            <MediaQuery minWidth={1024}><h5 id="works-title" style={{ textDecoration: 'underline', textAlign: 'left', marginLeft: '10%', marginRight: '10%' }}>Personal Projects</h5></MediaQuery>
+            <MediaQuery maxWidth={1024}><h5 id="works-title" style={{ textDecoration: 'underline', textAlign: 'left' }}>Personal Projects</h5></MediaQuery>
             <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
                 <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
                     <Row>
@@ -138,148 +147,108 @@ const Works = () => {
             <br></br>
             <hr></hr>
             <br></br>
-            <h5 id="works-title" style={{textDecoration: 'underline', textAlign: 'center'}}>Personal Photography</h5>
+            <MediaQuery minWidth={1024}><h5 id="works-title" style={{ textDecoration: 'underline', textAlign: 'left', marginLeft: '10%', marginRight: '10%' }}>Personal Photography</h5></MediaQuery>
+            <MediaQuery maxWidth={1024}><h5 id="works-title" style={{ textDecoration: 'underline', textAlign: 'left' }}>Personal Photography</h5></MediaQuery>
             <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work3}
-                        alt="Work 3"
-                        id="works-image"
-                    />
-                </Col>
                 <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>One of the first nature photography photos I have taken out, with the picture containing one of the palms in my house with the sun setting in the background.</i>
+                    <Row>
+                        <ul>
+                            <li>Took photos of nature during my personal time.</li>
+                            <li>Photos were taken throughout various times of each day.</li>
+                        </ul>
+                    </Row>
                 </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
                 <Col>
-                    <img
-                        className="works-display"
-                        src={work4}
-                        alt="Work 4"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>Another photo I took of the sky, with another one of the palms I had at home looming over in the photo.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work5}
-                        alt="Work 5"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>Yet another photo I took of the sky, with two palms being shown as opposed to the previous two photos, which contained only one palm each.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work6}
-                        alt="Work 6"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>A photo I took of the sky, with three palms looming over my home.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work7}
-                        alt="Work 7"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>A photo of the sky, with clouds looming in the background along with two palms.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work8}
-                        alt="Work 8"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>A photo of the sky, just before the sun set fully, with palms in the background along with two, separate trails left by planes that passed by.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work9}
-                        alt="Work 9"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>A photo taken from the third floor of one of the buildings of the university I attended from 2019 to 2023.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work10}
-                        alt="Work 10"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>A clear sky's day with two palms in my home hanging in the background.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work11}
-                        alt="Work 11"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>A view of the sky, with clouds hanging above, along with the inclusion of a tree coming from my backyard, where this photo was taken from.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work12}
-                        alt="Work 12"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>A photo of the skyline that I took while I was heading to school during the Fall 2022 semester.</i>
-                </Col>
-            </Row>
-            <Row style={{ marginLeft: '10%', marginRight: '10%' }}>
-                <Col>
-                    <img
-                        className="works-display"
-                        src={work13}
-                        alt="Work 13"
-                        id="works-image"
-                    />
-                </Col>
-                <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-                    <i style={{ width: '80%' }}>A photo of the skyline taken during a beautiful, sunny day, with clouds in the background, in addition to three or four palm trees, the latter of which is partially shown on the right.</i>
+                    <Carousel>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work3}
+                                alt="Work 3"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work4}
+                                alt="Work 4"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work5}
+                                alt="Work 5"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work6}
+                                alt="Work 6"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work7}
+                                alt="Work 7"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work8}
+                                alt="Work 8"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work9}
+                                alt="Work 9"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work10}
+                                alt="Work 10"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work11}
+                                alt="Work 11"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work12}
+                                alt="Work 12"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="works-display"
+                                src={work13}
+                                alt="Work 13"
+                                id="works-image"
+                            />
+                        </Carousel.Item>
+                    </Carousel>
                 </Col>
             </Row>
         </div>
