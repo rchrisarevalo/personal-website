@@ -103,7 +103,7 @@ const Works = () => {
                         <ul>
                             <li>Created a website using React.js as the main framework while also using CSS and React Bootstrap to stylize the UI.</li>
                             <li>Integrated a RESTful API with FastAPI to handle and display announcements on website, with 3 of the most recent ones displayed in the 'About Me' page.</li>
-                            <li>Designed a portfolio page that displays 7 samples from various personal projects in addition to 11 samples of photos taken as part of personal hobbies.</li>
+                            <li>Designed a portfolio page that displays 8 samples from 2 personal projects in addition to 11 samples of photos taken as part of personal hobbies.</li>
                         </ul>
                     </Row>
                 </Col>
