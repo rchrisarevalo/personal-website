@@ -133,7 +133,9 @@ const Intro = () => {
     return (
         <div className="intro">
             <Helmet>
+                <meta charSet="utf-8" />
                 <title>Ruben C. Arevalo - Personal Website - About Me</title>
+                <meta name="description" content={`${dayGreeting} everyone! My name is Ruben Christopher Arevalo, and I am a ${currentAge} year old who graduated recently from...`} />
             </Helmet>
             <Nav />
             <Update />
