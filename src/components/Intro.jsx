@@ -135,7 +135,9 @@ const Intro = () => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Ruben C. Arevalo - Personal Website - About Me</title>
-                <meta alt="Ruben Arevalo - Software Engineer Fellow" name="description" content={`${dayGreeting} everyone! My name is Ruben Christopher Arevalo, and I am a ${currentAge} year old who graduated recently from...`} />
+                <meta name="description" content={`${dayGreeting} everyone! My name is Ruben Christopher Arevalo, and I am a ${currentAge} year old who graduated recently from...`} />
+                <meta name="author" content="Ruben Arevalo"></meta>
+                <meta name="keywords" content={"Ruben Arevalo, Ruben C. Arevalo, rchrisarevalo, Aspiring Software Developer, Software Engineer Fellow"} />
             </Helmet>
             <Nav />
             <Update />
