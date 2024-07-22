@@ -65,7 +65,7 @@ const Works = () => {
                             <img
                                 className="works-display"
                                 src={dating_app_work_1}
-                                alt="Dating App Work 1"
+                                alt="Ruben Arevalo Dating App Work 1"
                                 id="works-image"
                             />
                         </Carousel.Item>
@@ -73,7 +73,7 @@ const Works = () => {
                             <img
                                 className="works-display"
                                 src={dating_app_work_2}
-                                alt="Dating App Work 2"
+                                alt="Ruben Arevalo Dating App Work 2"
                                 id="works-image"
                             />
                         </Carousel.Item>
@@ -81,7 +81,7 @@ const Works = () => {
                             <img
                                 className="works-display"
                                 src={dating_app_work_3}
-                                alt="Dating App Work 3"
+                                alt="Ruben Arevalo Dating App Work 3"
                                 id="works-image"
                             />
                         </Carousel.Item>
@@ -89,7 +89,7 @@ const Works = () => {
                             <img
                                 className="works-display"
                                 src={dating_app_work_4}
-                                alt="Dating App Work 4"
+                                alt="Ruben Arevalo Dating App Work 4"
                                 id="works-image"
                             />
                         </Carousel.Item>
@@ -113,7 +113,7 @@ const Works = () => {
                             <img
                                 className="works-display"
                                 src={pw_work_1}
-                                alt="Personal Website Work 1"
+                                alt="Ruben Arevalo Personal Website Work 1"
                                 id="works-image"
                             />
                         </Carousel.Item>
@@ -121,7 +121,7 @@ const Works = () => {
                             <img
                                 className="works-display"
                                 src={pw_work_2}
-                                alt="Personal Website Work 2"
+                                alt="Ruben Arevalo Personal Website Work 2"
                                 id="works-image"
                             />
                         </Carousel.Item>
@@ -129,7 +129,7 @@ const Works = () => {
                             <img
                                 className="works-display"
                                 src={pw_work_3}
-                                alt="Personal Website Work 3"
+                                alt="Ruben Arevalo Personal Website Work 3"
                                 id="works-image"
                             />
                         </Carousel.Item>
@@ -137,7 +137,7 @@ const Works = () => {
                             <img
                                 className="works-display"
                                 src={pw_work_4}
-                                alt="Personal Website Work 4"
+                                alt="Ruben Arevalo Personal Website Work 4"
                                 id="works-image"
                             />
                         </Carousel.Item>
@@ -164,7 +164,7 @@ const Works = () => {
                             <img
                                 className="works-display"
                                 src={work3}
-                                alt="Work 3"
+                                alt="Ruben Arevalo Work 3"
                                 id="works-image"
                             />
                         </Carousel.Item>
@@ -172,7 +172,7 @@ const Works = () => {
                             <img
                                 className="works-display"
                                 src={work4}
-                                alt="Work 4"
+                                alt="Ruben Arevalo Work 4"
                                 id="works-image"
                             />
                         </Carousel.Item>
@@ -180,7 +180,7 @@ const Works = () => {
                             <img
                                 className="works-display"
                                 src={work5}
-                                alt="Work 5"
+                                alt="Ruben Arevalo Work 5"
                                 id="works-image"
                             />
                         </Carousel.Item>
@@ -188,7 +188,7 @@ const Works = () => {
                             <img
                                 className="works-display"
                                 src={work6}
-                                alt="Work 6"
+                                alt="Ruben Arevalo Work 6"
                                 id="works-image"
                             />
                         </Carousel.Item>
@@ -196,7 +196,7 @@ const Works = () => {
                             <img
                                 className="works-display"
                                 src={work7}
-                                alt="Work 7"
+                                alt="Ruben Arevalo Work 7"
                                 id="works-image"
                             />
                         </Carousel.Item>
@@ -204,7 +204,7 @@ const Works = () => {
                             <img
                                 className="works-display"
                                 src={work8}
-                                alt="Work 8"
+                                alt="Ruben Arevalo Work 8"
                                 id="works-image"
                             />
                         </Carousel.Item>
@@ -212,7 +212,7 @@ const Works = () => {
                             <img
                                 className="works-display"
                                 src={work9}
-                                alt="Work 9"
+                                alt="Ruben Arevalo Work 9"
                                 id="works-image"
                             />
                         </Carousel.Item>
@@ -220,7 +220,7 @@ const Works = () => {
                             <img
                                 className="works-display"
                                 src={work10}
-                                alt="Work 10"
+                                alt="Ruben Arevalo Work 10"
                                 id="works-image"
                             />
                         </Carousel.Item>
@@ -228,7 +228,7 @@ const Works = () => {
                             <img
                                 className="works-display"
                                 src={work11}
-                                alt="Work 11"
+                                alt="Ruben Arevalo Work 11"
                                 id="works-image"
                             />
                         </Carousel.Item>
@@ -236,7 +236,7 @@ const Works = () => {
                             <img
                                 className="works-display"
                                 src={work12}
-                                alt="Work 12"
+                                alt="Ruben Arevalo Work 12"
                                 id="works-image"
                             />
                         </Carousel.Item>
@@ -244,7 +244,7 @@ const Works = () => {
                             <img
                                 className="works-display"
                                 src={work13}
-                                alt="Work 13"
+                                alt="Ruben Arevalo Work 13"
                                 id="works-image"
                             />
                         </Carousel.Item>

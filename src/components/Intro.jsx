@@ -135,7 +135,7 @@ const Intro = () => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Ruben C. Arevalo - Personal Website - About Me</title>
-                <meta name="description" content={`${dayGreeting} everyone! My name is Ruben Christopher Arevalo, and I am a ${currentAge} year old who graduated recently from...`} />
+                <meta alt="Ruben Arevalo - Software Engineer Fellow" name="description" content={`${dayGreeting} everyone! My name is Ruben Christopher Arevalo, and I am a ${currentAge} year old who graduated recently from...`} />
             </Helmet>
             <Nav />
             <Update />
@@ -147,7 +147,7 @@ const Intro = () => {
                                 {!requestStatus.loading ?
                                     <>
                                     { !requestStatus.error ?
-                                        <img src={`data:image/png;base64,${profilePicture}`} alt="profile-pic"></img>
+                                        <img src={`data:image/png;base64,${profilePicture}`} alt="Ruben Arevalo Profile Pic"></img>
                                         :
                                         <h4 style={{transform: 'translateY(50%)'}}>Failed to load profile picture.</h4>
                                     }
@@ -192,7 +192,7 @@ const Intro = () => {
                         {!requestStatus.loading ?
                             <>
                             { !requestStatus.error ?
-                                <img src={`data:image/png;base64,${profilePicture}`} alt="profile-pic"></img>
+                                <img src={`data:image/png;base64,${profilePicture}`} alt="Ruben Arevalo Profile Pic"></img>
                                 :
                                 <h4 style={{transform: 'translateY(50%)'}}>Failed to load profile picture.</h4>
                             }
