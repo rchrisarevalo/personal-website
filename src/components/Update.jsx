@@ -8,7 +8,7 @@ var one_time_msg = localStorage.getItem("one-time");
 function closeUpdateMsg() {
     var e = document.querySelector(".update-message");
     e.classList.toggle("close");
-    localStorage.setItem("one-time", "enabled");
+    // localStorage.setItem("one-time", "enabled");
 }
 
 var message = "";
@@ -47,7 +47,7 @@ const Update = () => {
                 <div className="update-message" id="close-msg">
                     <IoCloseCircleOutline onClick={closeUpdateMsg} id="close-icon" />
                     <p id="update-title">
-                        <IoAlertCircleOutline size="23px" id="update-icon" /> UPDATE {`(expires on ${endMonth}/${endDate}/${endYear})`}
+                        <IoAlertCircleOutline size="23px" id="update-icon" /> CRITICAL UPDATE
                     </p>
                     <p>
                         {`${message}`}
