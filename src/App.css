@@ -310,6 +310,17 @@ hr{
   margin-right: 10px;
 }
 
+.settings-option-web {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.settings-option-web button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 #current-link{
   box-shadow: 0 0 3px rgb(133, 133, 133);
   border-radius: 5px;
@@ -1552,6 +1563,10 @@ hr{
   }
   .settings-option-web{
     display: none;
+  }
+  .settings-nav-btn-mobile {
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .nav-item{
     margin: 50px;
