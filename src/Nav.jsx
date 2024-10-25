@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { IoIosInformationCircleOutline, IoIosInformationCircle } from "react-icons/io";
-import { IoSettingsOutline, IoMailOutline, IoMailOpenSharp, IoMegaphoneOutline, IoMegaphoneSharp, IoArchiveOutline, IoArchiveSharp, IoFolderOutline, IoFolderOpenSharp } from "react-icons/io5";
+import { IoSettingsOutline, IoMailOutline, IoMailOpenSharp, IoMegaphoneOutline, IoMegaphoneSharp, IoArchiveOutline, IoArchiveSharp, IoFolderOutline, IoFolderOpenSharp, IoDesktopOutline } from "react-icons/io5";
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -24,11 +24,14 @@ const NavMain = () => {
   return (
     <Navbar expand="lg" variant="dark">
       <Container>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <div className="logo">
           <Navbar.Brand href="./">Ruben C. Arevalo</Navbar.Brand>
         </div>
-        <button onClick={handleNoticeShow} className="settings-nav-btn-mobile"><IoSettingsOutline size="25px" id="setting-btn-icon" /></button>
+        <div style={{display: 'flex', flexDirection: 'row'}}>
+          <button onClick={handleNoticeShow} className="settings-nav-btn-mobile"><IoSettingsOutline size="25px" id="setting-btn-icon" /></button>
+          <button onClick={() => window.location.href = "https://rubenarevalo.com"} className="settings-nav-btn-mobile"><IoDesktopOutline size="25px" id="setting-btn-icon" /></button>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        </div>
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
           <Nav>
             {getRoute === "/" ?
@@ -80,6 +83,7 @@ const NavMain = () => {
         </Navbar.Collapse>
         <div className="settings-option-web">
           <button onClick={handleNoticeShow} className="settings-nav-btn-web"><IoSettingsOutline size="13px" id="setting-btn-icon-web" />Settings</button>
+          <button onClick={() => window.location.href = "https://rubenarevalo.com"} className="settings-nav-btn-web"><IoDesktopOutline size="13px" id="setting-btn-icon-web" />New Site</button>
         </div>
       </Container>
       {/* Clear local storage modal (modal from React Bootstrap) */}
